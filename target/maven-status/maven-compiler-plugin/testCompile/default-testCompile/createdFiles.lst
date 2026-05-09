@@ -1,0 +1,3 @@
+com/inventario/steps/LoginStepDefinitions.class
+com/inventario/runners/CucumberTestRunner.class
+com/inventario/pages/LoginPage.class
