@@ -1,6 +1,7 @@
 com/inventario/pages/LoginPage.class
 com/inventario/steps/RegistrarEmpleadoStepDefinitions.class
 com/inventario/pages/EmpleadosPage.class
+com/inventario/steps/ListarEmpleadosStepDefinitions.class
 com/inventario/pages/DashboardPage.class
 com/inventario/steps/RolesStepDefinitions.class
 com/inventario/pages/RegistrarEmpleadoPage.class

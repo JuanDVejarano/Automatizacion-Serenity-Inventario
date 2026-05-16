@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.inventario.runners.CucumberTestRunner" time="120.611" tests="42" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.inventario.runners.CucumberTestRunner" time="149.528" tests="50" errors="1" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ES"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-21-openjdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/juanj/Projects-Test/serenity-inventario-login/target/surefire/surefirebooter-20260516164521271_3.jar /home/juanj/Projects-Test/serenity-inventario-login/target/surefire 2026-05-16T16-45-21_183-jvmRun1 surefire-20260516164521271_1tmp surefire_0-20260516164521271_2tmp"/>
+    <property name="sun.java.command" value="/home/juanj/Projects-Test/serenity-inventario-login/target/surefire/surefirebooter-20260516170721152_3.jar /home/juanj/Projects-Test/serenity-inventario-login/target/surefire 2026-05-16T17-07-21_072-jvmRun1 surefire-20260516170721152_1tmp surefire_0-20260516170721152_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/juanj/Projects-Test/serenity-inventario-login/target/test-classes:/home/juanj/Projects-Test/serenity-inventario-login/target/classes:/home/juanj/.m2/repository/net/serenity-bdd/serenity-core/4.1.20/serenity-core-4.1.20.jar:/home/juanj/.m2/repository/net/serenity-bdd/serenity-model/4.1.20/serenity-model-4.1.20.jar:/home/juanj/.m2/repository/org/apache/commons/commons-text/1.11.0/commons-text-1.11.0.jar:/home/juanj/.m2/repository/commons-net/commons-net/3.10.0/commons-net-3.10.0.jar:/home/juanj/.m2/repository/com/google/guava/guava/33.1.0-jre/guava-33.1.0-jre.jar:/home/juanj/.m2/repository/com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.jar:/home/juanj/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/juanj/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/home/juanj/.m2/repository/org/checkerframework/checker-qual/3.42.0/checker-qual-3.42.0.jar:/home/juanj/.m2/repository/com/google/errorprone/error_prone_annotations/2.26.1/error_prone_annotations-2.26.1.jar:/home/juanj/.m2/repository/com/google/j2objc/j2objc-annotations/3.0.0/j2objc-annotations-3.0.0.jar:/home/juanj/.m2/repository/org/jsoup/jsoup/1.15.4/jsoup-1.15.4.jar:/home/juanj/.m2/repository/com/thoughtworks/xstream/xstream/1.4.20/xstream-1.4.20.jar:/home/juanj/.m2/repository/io/github/x-stream/mxparser/1.2.2/mxparser-1.2.2.jar:/home/juanj/.m2/repository/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.jar:/home/juanj/.m2/repository/com/typesafe/config/1.4.3/config-1.4.3.jar:/home/juanj/.m2/repository/org/imgscalr/imgscalr-lib/4.2/imgscalr-lib-4.2.jar:/home/juanj/.m2/repository/org/awaitility/awaitility/4.2.0/awaitility-4.2.0.jar:/home/juanj/.m2/repository/org/freemarker/freemarker/2.3.32/freemarker-2.3.32.jar:/home/juanj/.m2/repository/io/github/classgraph/classgraph/4.8.157/classgraph-4.8.157.jar:/home/juanj/.m2/repository/com/github/ben-manes/caffeine/caffeine/2.9.2/caffeine-2.9.2.jar:/home/juanj/.m2/repository/org/ehcache/ehcache/3.10.8/ehcache-3.10.8.jar:/home/juanj/.m2/repository/javax/cache/cache-api/1.1.0/cache-api-1.1.0.jar:/home/juanj/.m2/repository/net/sourceforge/jexcelapi/jxl/2.6.12/jxl-2.6.12.jar:/home/juanj/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.15/byte-buddy-agent-1.14.15.jar:/home/juanj/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-all/0.64.8/flexmark-all-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark/0.64.8/flexmark-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-abbreviation/0.64.8/flexmark-ext-abbreviation-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-admonition/0.64.8/flexmark-ext-admonition-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-anchorlink/0.64.8/flexmark-ext-anchorlink-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-aside/0.64.8/flexmark-ext-aside-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-attributes/0.64.8/flexmark-ext-attributes-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-autolink/0.64.8/flexmark-ext-autolink-0.64.8.jar:/home/juanj/.m2/repository/org/nibor/autolink/autolink/0.6.0/autolink-0.6.0.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-definition/0.64.8/flexmark-ext-definition-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-emoji/0.64.8/flexmark-ext-emoji-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-enumerated-reference/0.64.8/flexmark-ext-enumerated-reference-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-escaped-character/0.64.8/flexmark-ext-escaped-character-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-footnotes/0.64.8/flexmark-ext-footnotes-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-gfm-issues/0.64.8/flexmark-ext-gfm-issues-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-gfm-strikethrough/0.64.8/flexmark-ext-gfm-strikethrough-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-gfm-tasklist/0.64.8/flexmark-ext-gfm-tasklist-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-gfm-users/0.64.8/flexmark-ext-gfm-users-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-gitlab/0.64.8/flexmark-ext-gitlab-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-jekyll-front-matter/0.64.8/flexmark-ext-jekyll-front-matter-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-jekyll-tag/0.64.8/flexmark-ext-jekyll-tag-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-media-tags/0.64.8/flexmark-ext-media-tags-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-macros/0.64.8/flexmark-ext-macros-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-ins/0.64.8/flexmark-ext-ins-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-xwiki-macros/0.64.8/flexmark-ext-xwiki-macros-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-superscript/0.64.8/flexmark-ext-superscript-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-toc/0.64.8/flexmark-ext-toc-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-typographic/0.64.8/flexmark-ext-typographic-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-wikilink/0.64.8/flexmark-ext-wikilink-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-yaml-front-matter/0.64.8/flexmark-ext-yaml-front-matter-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-youtube-embedded/0.64.8/flexmark-ext-youtube-embedded-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-html2md-converter/0.64.8/flexmark-html2md-converter-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-jira-converter/0.64.8/flexmark-jira-converter-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-pdf-converter/0.64.8/flexmark-pdf-converter-0.64.8.jar:/home/juanj/.m2/repository/com/openhtmltopdf/openhtmltopdf-core/1.0.10/openhtmltopdf-core-1.0.10.jar:/home/juanj/.m2/repository/com/openhtmltopdf/openhtmltopdf-pdfbox/1.0.10/openhtmltopdf-pdfbox-1.0.10.jar:/home/juanj/.m2/repository/org/apache/pdfbox/pdfbox/2.0.24/pdfbox-2.0.24.jar:/home/juanj/.m2/repository/org/apache/pdfbox/fontbox/2.0.24/fontbox-2.0.24.jar:/home/juanj/.m2/repository/org/apache/pdfbox/xmpbox/2.0.24/xmpbox-2.0.24.jar:/home/juanj/.m2/repository/de/rototor/pdfbox/graphics2d/0.32/graphics2d-0.32.jar:/home/juanj/.m2/repository/com/openhtmltopdf/openhtmltopdf-rtl-support/1.0.10/openhtmltopdf-rtl-support-1.0.10.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-profile-pegdown/0.64.8/flexmark-profile-pegdown-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util-ast/0.64.8/flexmark-util-ast-0.64.8.jar:/home/juanj/.m2/repository/org/jetbrains/annotations/24.0.1/annotations-24.0.1.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util-builder/0.64.8/flexmark-util-builder-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util-collection/0.64.8/flexmark-util-collection-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util-data/0.64.8/flexmark-util-data-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util-dependency/0.64.8/flexmark-util-dependency-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util-format/0.64.8/flexmark-util-format-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util-html/0.64.8/flexmark-util-html-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util-misc/0.64.8/flexmark-util-misc-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util-options/0.64.8/flexmark-util-options-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util-sequence/0.64.8/flexmark-util-sequence-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util-visitor/0.64.8/flexmark-util-visitor-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-youtrack-converter/0.64.8/flexmark-youtrack-converter-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-resizable-image/0.64.8/flexmark-ext-resizable-image-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-tables/0.64.8/flexmark-ext-tables-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util/0.64.8/flexmark-util-0.64.8.jar:/home/juanj/.m2/repository/net/serenity-bdd/serenity-reports/4.1.20/serenity-reports-4.1.20.jar:/home/juanj/.m2/repository/net/serenity-bdd/serenity-stats/4.1.20/serenity-stats-4.1.20.jar:/home/juanj/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/1.9.24/kotlin-stdlib-1.9.24.jar:/home/juanj/.m2/repository/net/serenity-bdd/serenity-reports-configuration/4.1.20/serenity-reports-configuration-4.1.20.jar:/home/juanj/.m2/repository/com/ibm/icu/icu4j/72.1/icu4j-72.1.jar:/home/juanj/.m2/repository/es/nitaur/markdown/txtmark/0.16/txtmark-0.16.jar:/home/juanj/.m2/repository/net/serenity-bdd/serenity-report-resources/4.1.20/serenity-report-resources-4.1.20.jar:/home/juanj/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/home/juanj/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.0/jackson-core-2.17.0.jar:/home/juanj/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.0/jackson-databind-2.17.0.jar:/home/juanj/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.0/jackson-annotations-2.17.0.jar:/home/juanj/.m2/repository/commons-codec/commons-codec/1.16.1/commons-codec-1.16.1.jar:/home/juanj/.m2/repository/commons-io/commons-io/2.15.1/commons-io-2.15.1.jar:/home/juanj/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/juanj/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/home/juanj/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-java/4.21.0/selenium-java-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v123/4.21.0/selenium-devtools-v123-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v124/4.21.0/selenium-devtools-v124-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v125/4.21.0/selenium-devtools-v125-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.21.0/selenium-devtools-v85-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.21.0/selenium-remote-driver-4.21.0.jar:/home/juanj/.m2/repository/io/opentelemetry/semconv/opentelemetry-semconv/1.25.0-alpha/opentelemetry-semconv-1.25.0-alpha.jar:/home/juanj/.m2/repository/io/opentelemetry/opentelemetry-api/1.38.0/opentelemetry-api-1.38.0.jar:/home/juanj/.m2/repository/io/opentelemetry/opentelemetry-context/1.38.0/opentelemetry-context-1.38.0.jar:/home/juanj/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.38.0/opentelemetry-exporter-logging-1.38.0.jar:/home/juanj/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.38.0/opentelemetry-sdk-common-1.38.0.jar:/home/juanj/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.38.0/opentelemetry-sdk-extension-autoconfigure-spi-1.38.0.jar:/home/juanj/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.38.0/opentelemetry-sdk-extension-autoconfigure-1.38.0.jar:/home/juanj/.m2/repository/io/opentelemetry/opentelemetry-api-incubator/1.38.0-alpha/opentelemetry-api-incubator-1.38.0-alpha.jar:/home/juanj/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.38.0/opentelemetry-sdk-trace-1.38.0.jar:/home/juanj/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.38.0/opentelemetry-sdk-1.38.0.jar:/home/juanj/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.38.0/opentelemetry-sdk-metrics-1.38.0.jar:/home/juanj/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.38.0/opentelemetry-sdk-logs-1.38.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-os/4.21.0/selenium-os-4.21.0.jar:/home/juanj/.m2/repository/org/apache/commons/commons-exec/1.4.0/commons-exec-1.4.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.21.0/selenium-safari-driver-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-api/4.21.0/selenium-api-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-support/4.21.0/selenium-support-4.21.0.jar:/home/juanj/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-json/4.21.0/selenium-json-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.21.0/selenium-chrome-driver-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.21.0/selenium-chromium-driver-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.21.0/selenium-manager-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.21.0/selenium-firefox-driver-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-http/4.21.0/selenium-http-4.21.0.jar:/home/juanj/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.21.0/selenium-edge-driver-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.21.0/selenium-ie-driver-4.21.0.jar:/home/juanj/.m2/repository/org/htmlunit/htmlunit/4.1.0/htmlunit-4.1.0.jar:/home/juanj/.m2/repository/org/apache/httpcomponents/httpmime/4.5.14/httpmime-4.5.14.jar:/home/juanj/.m2/repository/org/htmlunit/htmlunit-core-js/4.1.0/htmlunit-core-js-4.1.0.jar:/home/juanj/.m2/repository/org/htmlunit/neko-htmlunit/4.1.0/neko-htmlunit-4.1.0.jar:/home/juanj/.m2/repository/org/htmlunit/htmlunit-cssparser/4.1.0/htmlunit-cssparser-4.1.0.jar:/home/juanj/.m2/repository/org/htmlunit/htmlunit-xpath/4.1.0/htmlunit-xpath-4.1.0.jar:/home/juanj/.m2/repository/org/htmlunit/htmlunit-csp/4.1.0/htmlunit-csp-4.1.0.jar:/home/juanj/.m2/repository/org/htmlunit/htmlunit-websocket-client/4.1.0/htmlunit-websocket-client-4.1.0.jar:/home/juanj/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/htmlunit3-driver/4.21.0/htmlunit3-driver-4.21.0.jar:/home/juanj/.m2/repository/io/appium/java-client/9.2.2/java-client-9.2.2.jar:/home/juanj/.m2/repository/org/apache/groovy/groovy/4.0.13/groovy-4.0.13.jar:/home/juanj/.m2/repository/net/sf/opencsv/opencsv/2.1/opencsv-2.1.jar:/home/juanj/.m2/repository/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar:/home/juanj/.m2/repository/org/apache/commons/commons-compress/1.26.0/commons-compress-1.26.0.jar:/home/juanj/.m2/repository/org/fluentlenium/fluentlenium-core/0.10.2/fluentlenium-core-0.10.2.jar:/home/juanj/.m2/repository/com/jhlabs/filters/2.0.235/filters-2.0.235.jar:/home/juanj/.m2/repository/com/paulhammant/ngwebdriver/1.1.6/ngwebdriver-1.1.6.jar:/home/juanj/.m2/repository/joda-time/joda-time/2.12.7/joda-time-2.12.7.jar:/home/juanj/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/juanj/.m2/repository/com/google/jimfs/jimfs/1.3.0/jimfs-1.3.0.jar:/home/juanj/.m2/repository/org/mockito/mockito-core/3.3.3/mockito-core-3.3.3.jar:/home/juanj/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/home/juanj/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/home/juanj/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-core-2.3.0.1.jar:/home/juanj/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.3/jaxb-impl-2.3.3.jar:/home/juanj/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/home/juanj/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/home/juanj/.m2/repository/javax/activation/activation/1.1.1/activation-1.1.1.jar:/home/juanj/.m2/repository/net/serenity-bdd/serenity-cucumber/4.1.20/serenity-cucumber-4.1.20.jar:/home/juanj/.m2/repository/net/serenity-bdd/serenity-screenplay/4.1.20/serenity-screenplay-4.1.20.jar:/home/juanj/.m2/repository/net/serenity-bdd/serenity-screenplay-webdriver/4.1.20/serenity-screenplay-webdriver-4.1.20.jar:/home/juanj/.m2/repository/io/cucumber/cucumber-core/7.17.0/cucumber-core-7.17.0.jar:/home/juanj/.m2/repository/io/cucumber/cucumber-gherkin/7.17.0/cucumber-gherkin-7.17.0.jar:/home/juanj/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.17.0/cucumber-gherkin-messages-7.17.0.jar:/home/juanj/.m2/repository/io/cucumber/gherkin/28.0.0/gherkin-28.0.0.jar:/home/juanj/.m2/repository/io/cucumber/messages/24.1.0/messages-24.1.0.jar:/home/juanj/.m2/repository/io/cucumber/testng-xml-formatter/0.1.0/testng-xml-formatter-0.1.0.jar:/home/juanj/.m2/repository/io/cucumber/query/12.2.0/query-12.2.0.jar:/home/juanj/.m2/repository/io/cucumber/tag-expressions/6.1.0/tag-expressions-6.1.0.jar:/home/juanj/.m2/repository/io/cucumber/cucumber-expressions/17.1.0/cucumber-expressions-17.1.0.jar:/home/juanj/.m2/repository/io/cucumber/datatable/7.17.0/datatable-7.17.0.jar:/home/juanj/.m2/repository/io/cucumber/cucumber-plugin/7.17.0/cucumber-plugin-7.17.0.jar:/home/juanj/.m2/repository/io/cucumber/docstring/7.17.0/docstring-7.17.0.jar:/home/juanj/.m2/repository/io/cucumber/html-formatter/21.3.1/html-formatter-21.3.1.jar:/home/juanj/.m2/repository/io/cucumber/junit-xml-formatter/0.4.0/junit-xml-formatter-0.4.0.jar:/home/juanj/.m2/repository/io/cucumber/ci-environment/10.0.1/ci-environment-10.0.1.jar:/home/juanj/.m2/repository/io/cucumber/cucumber-java/7.17.0/cucumber-java-7.17.0.jar:/home/juanj/.m2/repository/io/cucumber/cucumber-junit/7.17.0/cucumber-junit-7.17.0.jar:/home/juanj/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/juanj/.m2/repository/org/apache/commons/commons-csv/1.5/commons-csv-1.5.jar:/home/juanj/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/home/juanj/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/juanj/.m2/repository/org/assertj/assertj-core/3.25.3/assertj-core-3.25.3.jar:/home/juanj/.m2/repository/net/bytebuddy/byte-buddy/1.14.11/byte-buddy-1.14.11.jar:/home/juanj/.m2/repository/org/slf4j/slf4j-simple/2.0.12/slf4j-simple-2.0.12.jar:/home/juanj/.m2/repository/org/slf4j/slf4j-api/2.0.12/slf4j-api-2.0.12.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -27,7 +27,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/home/juanj/Projects-Test/serenity-inventario-login/target/surefire/surefirebooter-20260516164521271_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/juanj/Projects-Test/serenity-inventario-login/target/surefire/surefirebooter-20260516170721152_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.10+7-Ubuntu-122.04"/>
     <property name="user.name" value="juanj"/>
@@ -54,7 +54,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="Edicion exitosa de informacion general" classname="HU-05 Editar informacion de empleado" time="5.608">
+  <testcase name="Edicion exitosa de informacion general" classname="HU-05 Editar informacion de empleado" time="5.855">
     <system-out><![CDATA[
 Scenario: Edicion exitosa de informacion general                                             &amp#27;[90m# src/test/resources/features/editar-empleado.feature:9&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel administrador ha iniciado sesion para edicion de empleados&amp#27;[0m                        &amp#27;[90m# com.inventario.steps.EditarEmpleadoStepDefinitions.elAdministradorHaIniciadoSesionParaEdicionDeEmpleados()&amp#27;[0m
@@ -82,6 +82,7 @@ Scenario: Edicion exitosa de informacion general                                
 -------------------------------------------------------------------------------------
 
 [main] INFO  - Test Suite Started: HU-05 Editar informacion de empleado
+[main] INFO  - Test Suite Started: HU-06 Listar y buscar empleados
 [main] INFO  - Test Suite Started: HU-01 Iniciar sesion en el sistema
 [main] INFO  - Test Suite Started: HU-02 Cerrar sesion del sistema
 [main] INFO  - Test Suite Started: HU-04 Registrar empleado
@@ -97,9 +98,9 @@ Edicion exitosa de informacion general(hu-05-editar-informacion-de-empleado;edic
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 4:45:23 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 5:07:23 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 4:45:23 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 5:07:23 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -111,7 +112,7 @@ Edicion exitosa de informacion general
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Edicion de cedula por Administrador" classname="HU-05 Editar informacion de empleado" time="4.467">
+  <testcase name="Edicion de cedula por Administrador" classname="HU-05 Editar informacion de empleado" time="4.805">
     <system-out><![CDATA[
 Scenario: Edicion de cedula por Administrador                                                &amp#27;[90m# src/test/resources/features/editar-empleado.feature:16&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel administrador ha iniciado sesion para edicion de empleados&amp#27;[0m                        &amp#27;[90m# com.inventario.steps.EditarEmpleadoStepDefinitions.elAdministradorHaIniciadoSesionParaEdicionDeEmpleados()&amp#27;[0m
@@ -131,9 +132,9 @@ Edicion de cedula por Administrador(hu-05-editar-informacion-de-empleado;edicion
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 4:45:28 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 5:07:28 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 4:45:28 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 5:07:28 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -145,7 +146,7 @@ Edicion de cedula por Administrador
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Campo cedula deshabilitado para rol Recursos Humanos" classname="HU-05 Editar informacion de empleado" time="4.098">
+  <testcase name="Campo cedula deshabilitado para rol Recursos Humanos" classname="HU-05 Editar informacion de empleado" time="4.096">
     <system-out><![CDATA[
 Scenario: Campo cedula deshabilitado para rol Recursos Humanos        &amp#27;[90m# src/test/resources/features/editar-empleado.feature:23&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel administrador ha iniciado sesion para edicion de empleados&amp#27;[0m &amp#27;[90m# com.inventario.steps.EditarEmpleadoStepDefinitions.elAdministradorHaIniciadoSesionParaEdicionDeEmpleados()&amp#27;[0m
@@ -164,9 +165,9 @@ Campo cedula deshabilitado para rol Recursos Humanos(hu-05-editar-informacion-de
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 4:45:32 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 5:07:33 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 4:45:32 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 5:07:33 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -178,7 +179,7 @@ Campo cedula deshabilitado para rol Recursos Humanos
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Correo duplicado al editar" classname="HU-05 Editar informacion de empleado" time="5.118">
+  <testcase name="Correo duplicado al editar" classname="HU-05 Editar informacion de empleado" time="4.932">
     <system-out><![CDATA[
 Scenario: Correo duplicado al editar                                                            &amp#27;[90m# src/test/resources/features/editar-empleado.feature:29&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel administrador ha iniciado sesion para edicion de empleados&amp#27;[0m                           &amp#27;[90m# com.inventario.steps.EditarEmpleadoStepDefinitions.elAdministradorHaIniciadoSesionParaEdicionDeEmpleados()&amp#27;[0m
@@ -196,9 +197,9 @@ Correo duplicado al editar(hu-05-editar-informacion-de-empleado;correo-duplicado
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 4:45:36 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 5:07:37 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 4:45:36 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 5:07:37 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -210,7 +211,7 @@ Correo duplicado al editar
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Cedula duplicada al editar" classname="HU-05 Editar informacion de empleado" time="4.939">
+  <testcase name="Cedula duplicada al editar" classname="HU-05 Editar informacion de empleado" time="5.167">
     <system-out><![CDATA[
 Scenario: Cedula duplicada al editar                                                            &amp#27;[90m# src/test/resources/features/editar-empleado.feature:34&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel administrador ha iniciado sesion para edicion de empleados&amp#27;[0m                           &amp#27;[90m# com.inventario.steps.EditarEmpleadoStepDefinitions.elAdministradorHaIniciadoSesionParaEdicionDeEmpleados()&amp#27;[0m
@@ -228,9 +229,9 @@ Cedula duplicada al editar(hu-05-editar-informacion-de-empleado;cedula-duplicada
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 4:45:41 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 5:07:42 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 4:45:41 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 5:07:42 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -242,7 +243,7 @@ Cedula duplicada al editar
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Campos obligatorios vacios al editar" classname="HU-05 Editar informacion de empleado" time="4.255">
+  <testcase name="Campos obligatorios vacios al editar" classname="HU-05 Editar informacion de empleado" time="4.364">
     <system-out><![CDATA[
 Scenario: Campos obligatorios vacios al editar                                                                   &amp#27;[90m# src/test/resources/features/editar-empleado.feature:39&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel administrador ha iniciado sesion para edicion de empleados&amp#27;[0m                                            &amp#27;[90m# com.inventario.steps.EditarEmpleadoStepDefinitions.elAdministradorHaIniciadoSesionParaEdicionDeEmpleados()&amp#27;[0m
@@ -262,9 +263,9 @@ Campos obligatorios vacios al editar(hu-05-editar-informacion-de-empleado;campos
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 4:45:46 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 5:07:47 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 4:45:46 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 5:07:47 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -276,7 +277,7 @@ Campos obligatorios vacios al editar
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Acceso no autorizado al modulo de lista de empleados" classname="HU-05 Editar informacion de empleado" time="2.703">
+  <testcase name="Acceso no autorizado al modulo de lista de empleados" classname="HU-05 Editar informacion de empleado" time="2.677">
     <system-out><![CDATA[
 Scenario: Acceso no autorizado al modulo de lista de empleados                     &amp#27;[90m# src/test/resources/features/editar-empleado.feature:46&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel administrador ha iniciado sesion para edicion de empleados&amp#27;[0m              &amp#27;[90m# com.inventario.steps.EditarEmpleadoStepDefinitions.elAdministradorHaIniciadoSesionParaEdicionDeEmpleados()&amp#27;[0m
@@ -295,9 +296,9 @@ Acceso no autorizado al modulo de lista de empleados(hu-05-editar-informacion-de
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 4:45:51 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 5:07:51 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 4:45:51 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 5:07:51 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -309,7 +310,320 @@ Acceso no autorizado al modulo de lista de empleados
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Inicio de sesion exitoso con credenciales validas" classname="HU-01 Iniciar sesion en el sistema" time="3.098">
+  <testcase name="Listar todos los empleados con sus datos" classname="HU-06 Listar y buscar empleados" time="3.765">
+    <system-out><![CDATA[
+Scenario: Listar todos los empleados con sus datos                              &amp#27;[90m# src/test/resources/features/listar-empleados.feature:9&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel administrador ha iniciado sesion para consulta de empleados&amp#27;[0m          &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.elAdministradorHaIniciadoSesionParaConsultaDeEmpleados()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mexiste al menos un empleado registrado en el sistema&amp#27;[0m                    &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.existeAlMenosUnEmpleadoRegistradoEnElSistema()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario navega al modulo de listado de empleados&amp#27;[0m                      &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.elUsuarioNavegaAlModuloDeListadoDeEmpleados()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra la tabla con las columnas de informacion de empleados&amp#27;[0m &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.elSistemaMuestraLaTablaConLasColumnasDeInformacionDeEmpleados()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mla tabla contiene al menos un empleado registrado&amp#27;[0m                         &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.laTablaContieneAlMenosUnEmpleadoRegistrado()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[[main] INFO  - Test Suite Started: HU-06 Listar y buscar empleados
+[main] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Listar todos los empleados con sus datos(hu-06-listar-y-buscar-empleados;listar-todos-los-empleados-con-sus-datos)
+--------------------------------------------------------------------------------
+[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
+may 16, 2026 5:07:54 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find CDP implementation matching 148
+may 16, 2026 5:07:54 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[main] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Listar todos los empleados con sus datos
+----------------------------------------------------------------------
+]]></system-err>
+  </testcase>
+  <testcase name="Buscar empleado por nombre" classname="HU-06 Listar y buscar empleados" time="3.952">
+    <system-out><![CDATA[
+Scenario: Buscar empleado por nombre                                   &amp#27;[90m# src/test/resources/features/listar-empleados.feature:15&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel administrador ha iniciado sesion para consulta de empleados&amp#27;[0m &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.elAdministradorHaIniciadoSesionParaConsultaDeEmpleados()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mexiste un empleado registrado para busqueda en la lista&amp#27;[0m        &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.existeUnEmpleadoRegistradoParaBusquedaEnLaLista()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario busca el empleado por nombre en la lista&amp#27;[0m             &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.elUsuarioBuscaElEmpleadoPorNombreEnLaLista()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra el empleado en los resultados de busqueda&amp#27;[0m    &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.elSistemaMuestraElEmpleadoEnLosResultadosDeBusqueda()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[[main] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Buscar empleado por nombre(hu-06-listar-y-buscar-empleados;buscar-empleado-por-nombre)
+--------------------------------------------------------------------------------
+[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
+may 16, 2026 5:07:58 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find CDP implementation matching 148
+may 16, 2026 5:07:58 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[main] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Buscar empleado por nombre
+----------------------------------------------------------------------
+]]></system-err>
+  </testcase>
+  <testcase name="Busqueda por nombre sin resultados" classname="HU-06 Listar y buscar empleados" time="3.291">
+    <system-out><![CDATA[
+Scenario: Busqueda por nombre sin resultados                                                                &amp#27;[90m# src/test/resources/features/listar-empleados.feature:20&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel administrador ha iniciado sesion para consulta de empleados&amp#27;[0m                                      &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.elAdministradorHaIniciadoSesionParaConsultaDeEmpleados()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario navega al modulo de listado de empleados&amp#27;[0m                                                  &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.elUsuarioNavegaAlModuloDeListadoDeEmpleados()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel usuario busca por &amp#27;[0m&amp#27;[32m&amp#27;[1m"XYZNOEXISTE99999"&amp#27;[0m&amp#27;[32m en la lista de empleados&amp#27;[0m                                      &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.elUsuarioBuscaPorEnLaListaDeEmpleados(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra en la lista el mensaje &amp#27;[0m&amp#27;[32m&amp#27;[1m"No se encontraron empleados con ese criterio de busqueda"&amp#27;[0m &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.elSistemaMuestraEnLaListaElMensaje(java.lang.String)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[[main] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Busqueda por nombre sin resultados(hu-06-listar-y-buscar-empleados;busqueda-por-nombre-sin-resultados)
+--------------------------------------------------------------------------------
+[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
+may 16, 2026 5:08:02 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find CDP implementation matching 148
+may 16, 2026 5:08:02 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[main] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Busqueda por nombre sin resultados
+----------------------------------------------------------------------
+]]></system-err>
+  </testcase>
+  <testcase name="Buscar empleado por cedula" classname="HU-06 Listar y buscar empleados" time="3.703">
+    <system-out><![CDATA[
+Scenario: Buscar empleado por cedula                                        &amp#27;[90m# src/test/resources/features/listar-empleados.feature:25&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel administrador ha iniciado sesion para consulta de empleados&amp#27;[0m      &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.elAdministradorHaIniciadoSesionParaConsultaDeEmpleados()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mexiste un empleado registrado para busqueda en la lista&amp#27;[0m             &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.existeUnEmpleadoRegistradoParaBusquedaEnLaLista()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario busca el empleado por cedula en la lista&amp#27;[0m                  &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.elUsuarioBuscaElEmpleadoPorCedulaEnLaLista()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra exactamente un empleado en la tabla de resultados&amp#27;[0m &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.elSistemaMuestraExactamenteUnEmpleadoEnLaTablaDeResultados()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[[main] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Buscar empleado por cedula(hu-06-listar-y-buscar-empleados;buscar-empleado-por-cedula)
+--------------------------------------------------------------------------------
+[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
+may 16, 2026 5:08:05 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find CDP implementation matching 148
+may 16, 2026 5:08:05 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[main] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Buscar empleado por cedula
+----------------------------------------------------------------------
+]]></system-err>
+  </testcase>
+  <testcase name="Busqueda por cedula sin resultados" classname="HU-06 Listar y buscar empleados" time="3.107">
+    <system-out><![CDATA[
+Scenario: Busqueda por cedula sin resultados                                                                &amp#27;[90m# src/test/resources/features/listar-empleados.feature:30&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel administrador ha iniciado sesion para consulta de empleados&amp#27;[0m                                      &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.elAdministradorHaIniciadoSesionParaConsultaDeEmpleados()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario navega al modulo de listado de empleados&amp#27;[0m                                                  &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.elUsuarioNavegaAlModuloDeListadoDeEmpleados()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel usuario busca por &amp#27;[0m&amp#27;[32m&amp#27;[1m"00000001"&amp#27;[0m&amp#27;[32m en la lista de empleados&amp#27;[0m                                              &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.elUsuarioBuscaPorEnLaListaDeEmpleados(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra en la lista el mensaje &amp#27;[0m&amp#27;[32m&amp#27;[1m"No se encontraron empleados con ese criterio de busqueda"&amp#27;[0m &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.elSistemaMuestraEnLaListaElMensaje(java.lang.String)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[[main] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Busqueda por cedula sin resultados(hu-06-listar-y-buscar-empleados;busqueda-por-cedula-sin-resultados)
+--------------------------------------------------------------------------------
+[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
+may 16, 2026 5:08:09 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find CDP implementation matching 148
+may 16, 2026 5:08:09 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[main] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Busqueda por cedula sin resultados
+----------------------------------------------------------------------
+]]></system-err>
+  </testcase>
+  <testcase name="Filtrar empleados por estado activo" classname="HU-06 Listar y buscar empleados" time="3.708">
+    <system-out><![CDATA[
+Scenario: Filtrar empleados por estado activo                          &amp#27;[90m# src/test/resources/features/listar-empleados.feature:35&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel administrador ha iniciado sesion para consulta de empleados&amp#27;[0m &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.elAdministradorHaIniciadoSesionParaConsultaDeEmpleados()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mexiste al menos un empleado registrado en el sistema&amp#27;[0m           &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.existeAlMenosUnEmpleadoRegistradoEnElSistema()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario navega al modulo de listado de empleados&amp#27;[0m             &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.elUsuarioNavegaAlModuloDeListadoDeEmpleados()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel usuario filtra los empleados por estado &amp#27;[0m&amp#27;[32m&amp#27;[1m"activos"&amp#27;[0m             &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.elUsuarioFiltraLosEmpleadosPorEstado(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mtodos los empleados mostrados tienen el estado Activo&amp#27;[0m           &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.todosLosEmpleadosMostradosTienenElEstadoActivo()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[[main] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Filtrar empleados por estado activo(hu-06-listar-y-buscar-empleados;filtrar-empleados-por-estado-activo)
+--------------------------------------------------------------------------------
+[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
+may 16, 2026 5:08:12 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find CDP implementation matching 148
+may 16, 2026 5:08:12 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[main] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Filtrar empleados por estado activo
+----------------------------------------------------------------------
+]]></system-err>
+  </testcase>
+  <testcase name="Lista vacia de empleados" classname="HU-06 Listar y buscar empleados" time="2.868">
+    <error message="javascript error: ng.markDirty is not a function&#10;  (Session info: chrome=148.0.7778.167)&#10;Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;&#10;System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.6.114.1-microsoft-standard-WSL2&apos;, java.version: &apos;21.0.10&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [800d622324bc75e54cad1600e9e46e0f, executeScript {args=[], script=var el = document.querySelector(&apos;app-empleados&apos;);var comp = ng.getComponent(el);comp.empleados.set([]);comp.cargando.set(false);ng.markDirty(comp);}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:44197}, goog:processID: 15624, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:44197/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 800d622324bc75e54cad1600e9e46e0f" type="org.openqa.selenium.JavascriptException"><![CDATA[org.openqa.selenium.JavascriptException: 
+javascript error: ng.markDirty is not a function
+  (Session info: chrome=148.0.7778.167)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.6.114.1-microsoft-standard-WSL2', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [800d622324bc75e54cad1600e9e46e0f, executeScript {args=[], script=var el = document.querySelector('app-empleados');var comp = ng.getComponent(el);comp.empleados.set([]);comp.cargando.set(false);ng.markDirty(comp);}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:44197}, goog:processID: 15624, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:44197/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 800d622324bc75e54cad1600e9e46e0f
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:463)
+	at net.thucydides.core.webdriver.javascript.JavascriptExecutorFacade.executeScript(JavascriptExecutorFacade.java:65)
+	at net.serenitybdd.core.pages.PageObject.evaluateJavascript(PageObject.java:1328)
+	at com.inventario.pages.EmpleadosPage.simulateEmptyList(EmpleadosPage.java:175)
+	at com.inventario.steps.ListarEmpleadosStepDefinitions.seSimulaQueNoHayEmpleadosEnElSistema(ListarEmpleadosStepDefinitions.java:107)
+	at ✽.se simula que no hay empleados en el sistema(file:///home/juanj/Projects-Test/serenity-inventario-login/src/test/resources/features/listar-empleados.feature:43)
+]]></error>
+    <system-out><![CDATA[
+Scenario: Lista vacia de empleados                                              &amp#27;[90m# src/test/resources/features/listar-empleados.feature:41&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel administrador ha iniciado sesion para consulta de empleados&amp#27;[0m          &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.elAdministradorHaIniciadoSesionParaConsultaDeEmpleados()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario navega al modulo de listado de empleados&amp#27;[0m                      &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.elUsuarioNavegaAlModuloDeListadoDeEmpleados()&amp#27;[0m
+  &amp#27;[31mAnd &amp#27;[0m&amp#27;[31mse simula que no hay empleados en el sistema&amp#27;[0m                              &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.seSimulaQueNoHayEmpleadosEnElSistema()&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.JavascriptException: javascript error: ng.markDirty is not a function
+  (Session info: chrome=148.0.7778.167)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.6.114.1-microsoft-standard-WSL2', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [800d622324bc75e54cad1600e9e46e0f, executeScript {args=[], script=var el = document.querySelector('app-empleados');var comp = ng.getComponent(el);comp.empleados.set([]);comp.cargando.set(false);ng.markDirty(comp);}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:44197}, goog:processID: 15624, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:44197/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 800d622324bc75e54cad1600e9e46e0f
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:463)
+	at net.thucydides.core.webdriver.javascript.JavascriptExecutorFacade.executeScript(JavascriptExecutorFacade.java:65)
+	at net.serenitybdd.core.pages.PageObject.evaluateJavascript(PageObject.java:1328)
+	at com.inventario.pages.EmpleadosPage.simulateEmptyList(EmpleadosPage.java:175)
+	at com.inventario.steps.ListarEmpleadosStepDefinitions.seSimulaQueNoHayEmpleadosEnElSistema(ListarEmpleadosStepDefinitions.java:107)
+	at ✽.se simula que no hay empleados en el sistema(file:///home/juanj/Projects-Test/serenity-inventario-login/src/test/resources/features/listar-empleados.feature:43)
+&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mel sistema muestra en la lista el mensaje &amp#27;[0m&amp#27;[36m&amp#27;[1m"No hay empleados registrados"&amp#27;[0m &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.elSistemaMuestraEnLaListaElMensaje(java.lang.String)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[[main] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Lista vacia de empleados(hu-06-listar-y-buscar-empleados;lista-vacia-de-empleados)
+--------------------------------------------------------------------------------
+[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
+may 16, 2026 5:08:15 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find CDP implementation matching 148
+may 16, 2026 5:08:15 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Acceso denegado para roles no autorizados al modulo de empleados" classname="HU-06 Listar y buscar empleados" time="2.893">
+    <system-out><![CDATA[
+Scenario: Acceso denegado para roles no autorizados al modulo de empleados         &amp#27;[90m# src/test/resources/features/listar-empleados.feature:46&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel administrador ha iniciado sesion para consulta de empleados&amp#27;[0m             &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.elAdministradorHaIniciadoSesionParaConsultaDeEmpleados()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario inicia sesion con el rol &amp#27;[0m&amp#27;[32m&amp#27;[1m"Ventas"&amp#27;[0m                               &amp#27;[90m# com.inventario.steps.RolesStepDefinitions.elUsuarioIniciaSesionConElRol(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario intenta acceder al modulo de lista de empleados&amp#27;[0m                  &amp#27;[90m# com.inventario.steps.EditarEmpleadoStepDefinitions.elUsuarioIntentaAccederAlModuloDeListaDeEmpleados()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra la pagina de acceso denegado&amp#27;[0m                             &amp#27;[90m# com.inventario.steps.RolesStepDefinitions.elSistemaMuestraLaPaginaDeAccesoDenegado()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel sistema muestra el mensaje &amp#27;[0m&amp#27;[32m&amp#27;[1m"No tiene permisos para acceder a este modulo"&amp#27;[0m &amp#27;[90m# com.inventario.steps.RolesStepDefinitions.elSistemaMuestraElMensaje(java.lang.String)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[[main] ERROR  - 
+  _____   ___   ___   _____     ___   ___   ___    ___    ___ 
+ |_   _| | __| / __| |_   _|   | __| | _ \ | _ \  / _ \  | _ \
+   | |   | _|  \__ \   | |     | _|  |   / |   / | (_) | |   /
+   |_|   |___| |___/   |_|     |___| |_|_\ |_|_\  \___/  |_|_\
+
+Lista vacia de empleados
+---------------------------------------------------------------
+[main] ERROR  -     Test failed at step: And se simula que no hay empleados en el sistema
+[main] ERROR  -     javascript error: ng.markDirty is not a function
+[main] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Acceso denegado para roles no autorizados al modulo de empleados(hu-06-listar-y-buscar-empleados;acceso-denegado-para-roles-no-autorizados-al-modulo-de-empleados)
+--------------------------------------------------------------------------------
+[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
+may 16, 2026 5:08:18 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find CDP implementation matching 148
+may 16, 2026 5:08:18 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[main] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Acceso denegado para roles no autorizados al modulo de empleados
+----------------------------------------------------------------------
+]]></system-err>
+  </testcase>
+  <testcase name="Inicio de sesion exitoso con credenciales validas" classname="HU-01 Iniciar sesion en el sistema" time="3.21">
     <system-out><![CDATA[
 Scenario: Inicio de sesion exitoso con credenciales validas &amp#27;[90m# src/test/resources/features/login.feature:9&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario navega a la pagina de login&amp#27;[0m              &amp#27;[90m# com.inventario.steps.LoginStepDefinitions.elUsuarioNavegaALaPaginaDeLogin()&amp#27;[0m
@@ -329,9 +643,9 @@ Inicio de sesion exitoso con credenciales validas(hu-01-iniciar-sesion-en-el-sis
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 4:45:53 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 5:08:21 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 4:45:53 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 5:08:21 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -343,7 +657,7 @@ Inicio de sesion exitoso con credenciales validas
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Error al ingresar contrasena de 6 caracteres o menos" classname="HU-01 Iniciar sesion en el sistema" time="2.848">
+  <testcase name="Error al ingresar contrasena de 6 caracteres o menos" classname="HU-01 Iniciar sesion en el sistema" time="2.814">
     <system-out><![CDATA[
 Scenario: Error al ingresar contrasena de 6 caracteres o menos                               &amp#27;[90m# src/test/resources/features/login.feature:15&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario navega a la pagina de login&amp#27;[0m                                               &amp#27;[90m# com.inventario.steps.LoginStepDefinitions.elUsuarioNavegaALaPaginaDeLogin()&amp#27;[0m
@@ -362,9 +676,9 @@ Error al ingresar contrasena de 6 caracteres o menos(hu-01-iniciar-sesion-en-el-
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 4:45:56 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 5:08:24 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 4:45:56 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 5:08:24 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -376,7 +690,7 @@ Error al ingresar contrasena de 6 caracteres o menos
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Error al ingresar credenciales incorrectas" classname="HU-01 Iniciar sesion en el sistema" time="2.935">
+  <testcase name="Error al ingresar credenciales incorrectas" classname="HU-01 Iniciar sesion en el sistema" time="2.893">
     <system-out><![CDATA[
 Scenario: Error al ingresar credenciales incorrectas                             &amp#27;[90m# src/test/resources/features/login.feature:21&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario navega a la pagina de login&amp#27;[0m                                   &amp#27;[90m# com.inventario.steps.LoginStepDefinitions.elUsuarioNavegaALaPaginaDeLogin()&amp#27;[0m
@@ -395,9 +709,9 @@ Error al ingresar credenciales incorrectas(hu-01-iniciar-sesion-en-el-sistema;er
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 4:45:59 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 5:08:27 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 4:45:59 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 5:08:27 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -409,7 +723,7 @@ Error al ingresar credenciales incorrectas
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Error al dejar los campos vacios" classname="HU-01 Iniciar sesion en el sistema" time="2.23">
+  <testcase name="Error al dejar los campos vacios" classname="HU-01 Iniciar sesion en el sistema" time="2.315">
     <system-out><![CDATA[
 Scenario: Error al dejar los campos vacios                                        &amp#27;[90m# src/test/resources/features/login.feature:27&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario navega a la pagina de login&amp#27;[0m                                    &amp#27;[90m# com.inventario.steps.LoginStepDefinitions.elUsuarioNavegaALaPaginaDeLogin()&amp#27;[0m
@@ -426,9 +740,9 @@ Error al dejar los campos vacios(hu-01-iniciar-sesion-en-el-sistema;error-al-dej
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 4:46:02 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 5:08:30 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 4:46:02 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 5:08:30 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -440,7 +754,7 @@ Error al dejar los campos vacios
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Redireccion al login cuando el token JWT esta expirado" classname="HU-01 Iniciar sesion en el sistema" time="2.342">
+  <testcase name="Redireccion al login cuando el token JWT esta expirado" classname="HU-01 Iniciar sesion en el sistema" time="2.216">
     <system-out><![CDATA[
 Scenario: Redireccion al login cuando el token JWT esta expirado                                    &amp#27;[90m# src/test/resources/features/login.feature:31&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario navega a la pagina de login&amp#27;[0m                                                      &amp#27;[90m# com.inventario.steps.LoginStepDefinitions.elUsuarioNavegaALaPaginaDeLogin()&amp#27;[0m
@@ -459,9 +773,9 @@ Redireccion al login cuando el token JWT esta expirado(hu-01-iniciar-sesion-en-e
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 4:46:04 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 5:08:32 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 4:46:04 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 5:08:32 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -473,7 +787,7 @@ Redireccion al login cuando el token JWT esta expirado
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Cierre de sesion exitoso" classname="HU-02 Cerrar sesion del sistema" time="2.634">
+  <testcase name="Cierre de sesion exitoso" classname="HU-02 Cerrar sesion del sistema" time="2.749">
     <system-out><![CDATA[
 Scenario: Cierre de sesion exitoso                               &amp#27;[90m# src/test/resources/features/logout.feature:9&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario tiene una sesion activa en el dashboard&amp#27;[0m       &amp#27;[90m# com.inventario.steps.LogoutStepDefinitions.elUsuarioTieneUnaSesionActivaEnElDashboard()&amp#27;[0m
@@ -493,9 +807,9 @@ Cierre de sesion exitoso(hu-02-cerrar-sesion-del-sistema;cierre-de-sesion-exitos
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 4:46:07 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 5:08:35 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 4:46:07 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 5:08:35 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -507,7 +821,7 @@ Cierre de sesion exitoso
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Intento de acceso tras cerrar sesion" classname="HU-02 Cerrar sesion del sistema" time="2.376">
+  <testcase name="Intento de acceso tras cerrar sesion" classname="HU-02 Cerrar sesion del sistema" time="2.416">
     <system-out><![CDATA[
 Scenario: Intento de acceso tras cerrar sesion                    &amp#27;[90m# src/test/resources/features/logout.feature:15&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario tiene una sesion activa en el dashboard&amp#27;[0m        &amp#27;[90m# com.inventario.steps.LogoutStepDefinitions.elUsuarioTieneUnaSesionActivaEnElDashboard()&amp#27;[0m
@@ -525,9 +839,9 @@ Intento de acceso tras cerrar sesion(hu-02-cerrar-sesion-del-sistema;intento-de-
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 4:46:09 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 5:08:37 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 4:46:09 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 5:08:37 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -539,7 +853,7 @@ Intento de acceso tras cerrar sesion
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Cierre de sesion detectado desde otra pestana" classname="HU-02 Cerrar sesion del sistema" time="2.865">
+  <testcase name="Cierre de sesion detectado desde otra pestana" classname="HU-02 Cerrar sesion del sistema" time="3.14">
     <system-out><![CDATA[
 Scenario: Cierre de sesion detectado desde otra pestana                                            &amp#27;[90m# src/test/resources/features/logout.feature:20&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario tiene una sesion activa en el dashboard&amp#27;[0m                                         &amp#27;[90m# com.inventario.steps.LogoutStepDefinitions.elUsuarioTieneUnaSesionActivaEnElDashboard()&amp#27;[0m
@@ -557,9 +871,9 @@ Cierre de sesion detectado desde otra pestana(hu-02-cerrar-sesion-del-sistema;ci
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 4:46:12 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 5:08:40 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 4:46:12 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 5:08:40 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -571,7 +885,7 @@ Cierre de sesion detectado desde otra pestana
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Registro exitoso de empleado" classname="HU-04 Registrar empleado" time="3.391">
+  <testcase name="Registro exitoso de empleado" classname="HU-04 Registrar empleado" time="3.399">
     <system-out><![CDATA[
 Scenario: Registro exitoso de empleado                                           &amp#27;[90m# src/test/resources/features/registrar-empleado.feature:9&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario esta autenticado en el modulo de registro de empleados&amp#27;[0m        &amp#27;[90m# com.inventario.steps.RegistrarEmpleadoStepDefinitions.elUsuarioEstaAutenticadoEnElModuloDeRegistroDeEmpleados()&amp#27;[0m
@@ -589,9 +903,9 @@ Registro exitoso de empleado(hu-04-registrar-empleado;registro-exitoso-de-emplea
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 4:46:15 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 5:08:43 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 4:46:15 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 5:08:43 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -603,7 +917,7 @@ Registro exitoso de empleado
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Registro con telefono secundario" classname="HU-04 Registrar empleado" time="4.348">
+  <testcase name="Registro con telefono secundario" classname="HU-04 Registrar empleado" time="3.07">
     <system-out><![CDATA[
 Scenario: Registro con telefono secundario                                       &amp#27;[90m# src/test/resources/features/registrar-empleado.feature:13&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario esta autenticado en el modulo de registro de empleados&amp#27;[0m        &amp#27;[90m# com.inventario.steps.RegistrarEmpleadoStepDefinitions.elUsuarioEstaAutenticadoEnElModuloDeRegistroDeEmpleados()&amp#27;[0m
@@ -620,9 +934,9 @@ Registro con telefono secundario(hu-04-registrar-empleado;registro-con-telefono-
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 4:46:18 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 5:08:46 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 4:46:18 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 5:08:46 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -634,7 +948,7 @@ Registro con telefono secundario
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Cedula duplicada" classname="HU-04 Registrar empleado" time="4.251">
+  <testcase name="Cedula duplicada" classname="HU-04 Registrar empleado" time="4.022">
     <system-out><![CDATA[
 Scenario: Cedula duplicada                                                                        &amp#27;[90m# src/test/resources/features/registrar-empleado.feature:17&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario esta autenticado en el modulo de registro de empleados&amp#27;[0m                         &amp#27;[90m# com.inventario.steps.RegistrarEmpleadoStepDefinitions.elUsuarioEstaAutenticadoEnElModuloDeRegistroDeEmpleados()&amp#27;[0m
@@ -652,9 +966,9 @@ Cedula duplicada(hu-04-registrar-empleado;cedula-duplicada)
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 4:46:22 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 5:08:50 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 4:46:22 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 5:08:50 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -666,7 +980,7 @@ Cedula duplicada
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Correo duplicado" classname="HU-04 Registrar empleado" time="4.12">
+  <testcase name="Correo duplicado" classname="HU-04 Registrar empleado" time="4.372">
     <system-out><![CDATA[
 Scenario: Correo duplicado                                                                        &amp#27;[90m# src/test/resources/features/registrar-empleado.feature:22&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario esta autenticado en el modulo de registro de empleados&amp#27;[0m                         &amp#27;[90m# com.inventario.steps.RegistrarEmpleadoStepDefinitions.elUsuarioEstaAutenticadoEnElModuloDeRegistroDeEmpleados()&amp#27;[0m
@@ -684,9 +998,9 @@ Correo duplicado(hu-04-registrar-empleado;correo-duplicado)
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 4:46:27 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 5:08:54 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 4:46:27 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 5:08:54 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -698,7 +1012,7 @@ Correo duplicado
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Campos obligatorios vacios" classname="HU-04 Registrar empleado" time="2.689">
+  <testcase name="Campos obligatorios vacios" classname="HU-04 Registrar empleado" time="2.519">
     <system-out><![CDATA[
 Scenario: Campos obligatorios vacios                                                                               &amp#27;[90m# src/test/resources/features/registrar-empleado.feature:27&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario esta autenticado en el modulo de registro de empleados&amp#27;[0m                                          &amp#27;[90m# com.inventario.steps.RegistrarEmpleadoStepDefinitions.elUsuarioEstaAutenticadoEnElModuloDeRegistroDeEmpleados()&amp#27;[0m
@@ -715,9 +1029,9 @@ Campos obligatorios vacios(hu-04-registrar-empleado;campos-obligatorios-vacios)
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 4:46:31 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 5:08:58 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 4:46:31 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 5:08:58 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -729,7 +1043,7 @@ Campos obligatorios vacios
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Acceso no autorizado al modulo de registro de empleados" classname="HU-04 Registrar empleado" time="2.762">
+  <testcase name="Acceso no autorizado al modulo de registro de empleados" classname="HU-04 Registrar empleado" time="2.861">
     <system-out><![CDATA[
 Scenario: Acceso no autorizado al modulo de registro de empleados                  &amp#27;[90m# src/test/resources/features/registrar-empleado.feature:31&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario esta autenticado en el modulo de registro de empleados&amp#27;[0m          &amp#27;[90m# com.inventario.steps.RegistrarEmpleadoStepDefinitions.elUsuarioEstaAutenticadoEnElModuloDeRegistroDeEmpleados()&amp#27;[0m
@@ -748,9 +1062,9 @@ Acceso no autorizado al modulo de registro de empleados(hu-04-registrar-empleado
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 4:46:33 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 5:09:00 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 4:46:33 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 5:09:00 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -762,7 +1076,7 @@ Acceso no autorizado al modulo de registro de empleados
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Los modulos del dashboard reflejan el acceso segun el rol asignado #1" classname="HU-03 Roles predefinidos del sistema" time="2.52">
+  <testcase name="Los modulos del dashboard reflejan el acceso segun el rol asignado #1" classname="HU-03 Roles predefinidos del sistema" time="2.47">
     <system-out><![CDATA[
 Scenario Outline: Los modulos del dashboard reflejan el acceso segun el rol asignado &amp#27;[90m# src/test/resources/features/roles.feature:13&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario inicia sesion con el rol &amp#27;[0m&amp#27;[32m&amp#27;[1m"Administrador"&amp#27;[0m                          &amp#27;[90m# com.inventario.steps.RolesStepDefinitions.elUsuarioIniciaSesionConElRol(java.lang.String)&amp#27;[0m
@@ -780,9 +1094,9 @@ Los modulos del dashboard reflejan el acceso segun el rol asignado(hu-03-roles-p
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 4:46:36 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 5:09:03 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 4:46:36 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 5:09:03 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -794,7 +1108,7 @@ Los modulos del dashboard reflejan el acceso segun el rol asignado
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Los modulos del dashboard reflejan el acceso segun el rol asignado #2" classname="HU-03 Roles predefinidos del sistema" time="2.398">
+  <testcase name="Los modulos del dashboard reflejan el acceso segun el rol asignado #2" classname="HU-03 Roles predefinidos del sistema" time="2.633">
     <system-out><![CDATA[
 Scenario Outline: Los modulos del dashboard reflejan el acceso segun el rol asignado &amp#27;[90m# src/test/resources/features/roles.feature:14&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario inicia sesion con el rol &amp#27;[0m&amp#27;[32m&amp#27;[1m"Administrador"&amp#27;[0m                          &amp#27;[90m# com.inventario.steps.RolesStepDefinitions.elUsuarioIniciaSesionConElRol(java.lang.String)&amp#27;[0m
@@ -803,9 +1117,9 @@ Scenario Outline: Los modulos del dashboard reflejan el acceso segun el rol asig
 ]]></system-out>
     <system-err><![CDATA[[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 4:46:39 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 5:09:06 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 4:46:39 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 5:09:06 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -817,7 +1131,7 @@ Los modulos del dashboard reflejan el acceso segun el rol asignado
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Los modulos del dashboard reflejan el acceso segun el rol asignado #3" classname="HU-03 Roles predefinidos del sistema" time="2.316">
+  <testcase name="Los modulos del dashboard reflejan el acceso segun el rol asignado #3" classname="HU-03 Roles predefinidos del sistema" time="2.509">
     <system-out><![CDATA[
 Scenario Outline: Los modulos del dashboard reflejan el acceso segun el rol asignado &amp#27;[90m# src/test/resources/features/roles.feature:15&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario inicia sesion con el rol &amp#27;[0m&amp#27;[32m&amp#27;[1m"Administrador"&amp#27;[0m                          &amp#27;[90m# com.inventario.steps.RolesStepDefinitions.elUsuarioIniciaSesionConElRol(java.lang.String)&amp#27;[0m
@@ -826,13 +1140,13 @@ Scenario Outline: Los modulos del dashboard reflejan el acceso segun el rol asig
 ]]></system-out>
     <system-err><![CDATA[[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 4:46:41 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 5:09:08 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 4:46:41 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 5:09:08 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="Los modulos del dashboard reflejan el acceso segun el rol asignado #4" classname="HU-03 Roles predefinidos del sistema" time="2.38">
+  <testcase name="Los modulos del dashboard reflejan el acceso segun el rol asignado #4" classname="HU-03 Roles predefinidos del sistema" time="2.491">
     <system-out><![CDATA[
 Scenario Outline: Los modulos del dashboard reflejan el acceso segun el rol asignado &amp#27;[90m# src/test/resources/features/roles.feature:16&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario inicia sesion con el rol &amp#27;[0m&amp#27;[32m&amp#27;[1m"Administrador"&amp#27;[0m                          &amp#27;[90m# com.inventario.steps.RolesStepDefinitions.elUsuarioIniciaSesionConElRol(java.lang.String)&amp#27;[0m
@@ -841,13 +1155,13 @@ Scenario Outline: Los modulos del dashboard reflejan el acceso segun el rol asig
 ]]></system-out>
     <system-err><![CDATA[[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 4:46:43 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 5:09:11 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 4:46:43 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 5:09:11 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="Los modulos del dashboard reflejan el acceso segun el rol asignado #5" classname="HU-03 Roles predefinidos del sistema" time="2.029">
+  <testcase name="Los modulos del dashboard reflejan el acceso segun el rol asignado #5" classname="HU-03 Roles predefinidos del sistema" time="2.155">
     <system-out><![CDATA[
 Scenario Outline: Los modulos del dashboard reflejan el acceso segun el rol asignado &amp#27;[90m# src/test/resources/features/roles.feature:17&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario inicia sesion con el rol &amp#27;[0m&amp#27;[32m&amp#27;[1m"Ventas"&amp#27;[0m                                 &amp#27;[90m# com.inventario.steps.RolesStepDefinitions.elUsuarioIniciaSesionConElRol(java.lang.String)&amp#27;[0m
@@ -856,13 +1170,13 @@ Scenario Outline: Los modulos del dashboard reflejan el acceso segun el rol asig
 ]]></system-out>
     <system-err><![CDATA[[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 4:46:46 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 5:09:13 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 4:46:46 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 5:09:13 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="Los modulos del dashboard reflejan el acceso segun el rol asignado #6" classname="HU-03 Roles predefinidos del sistema" time="2.037">
+  <testcase name="Los modulos del dashboard reflejan el acceso segun el rol asignado #6" classname="HU-03 Roles predefinidos del sistema" time="2.301">
     <system-out><![CDATA[
 Scenario Outline: Los modulos del dashboard reflejan el acceso segun el rol asignado &amp#27;[90m# src/test/resources/features/roles.feature:18&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario inicia sesion con el rol &amp#27;[0m&amp#27;[32m&amp#27;[1m"Ventas"&amp#27;[0m                                 &amp#27;[90m# com.inventario.steps.RolesStepDefinitions.elUsuarioIniciaSesionConElRol(java.lang.String)&amp#27;[0m
@@ -871,13 +1185,13 @@ Scenario Outline: Los modulos del dashboard reflejan el acceso segun el rol asig
 ]]></system-out>
     <system-err><![CDATA[[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 4:46:48 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 5:09:16 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 4:46:48 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 5:09:16 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="Los modulos del dashboard reflejan el acceso segun el rol asignado #7" classname="HU-03 Roles predefinidos del sistema" time="1.96">
+  <testcase name="Los modulos del dashboard reflejan el acceso segun el rol asignado #7" classname="HU-03 Roles predefinidos del sistema" time="2.165">
     <system-out><![CDATA[
 Scenario Outline: Los modulos del dashboard reflejan el acceso segun el rol asignado &amp#27;[90m# src/test/resources/features/roles.feature:19&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario inicia sesion con el rol &amp#27;[0m&amp#27;[32m&amp#27;[1m"Tesoreria"&amp#27;[0m                              &amp#27;[90m# com.inventario.steps.RolesStepDefinitions.elUsuarioIniciaSesionConElRol(java.lang.String)&amp#27;[0m
@@ -886,13 +1200,13 @@ Scenario Outline: Los modulos del dashboard reflejan el acceso segun el rol asig
 ]]></system-out>
     <system-err><![CDATA[[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 4:46:50 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 5:09:18 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 4:46:50 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 5:09:18 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="Los modulos del dashboard reflejan el acceso segun el rol asignado #8" classname="HU-03 Roles predefinidos del sistema" time="2.057">
+  <testcase name="Los modulos del dashboard reflejan el acceso segun el rol asignado #8" classname="HU-03 Roles predefinidos del sistema" time="2.172">
     <system-out><![CDATA[
 Scenario Outline: Los modulos del dashboard reflejan el acceso segun el rol asignado &amp#27;[90m# src/test/resources/features/roles.feature:20&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario inicia sesion con el rol &amp#27;[0m&amp#27;[32m&amp#27;[1m"Tesoreria"&amp#27;[0m                              &amp#27;[90m# com.inventario.steps.RolesStepDefinitions.elUsuarioIniciaSesionConElRol(java.lang.String)&amp#27;[0m
@@ -901,13 +1215,13 @@ Scenario Outline: Los modulos del dashboard reflejan el acceso segun el rol asig
 ]]></system-out>
     <system-err><![CDATA[[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 4:46:52 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 5:09:20 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 4:46:52 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 5:09:20 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="Los modulos del dashboard reflejan el acceso segun el rol asignado #9" classname="HU-03 Roles predefinidos del sistema" time="2.103">
+  <testcase name="Los modulos del dashboard reflejan el acceso segun el rol asignado #9" classname="HU-03 Roles predefinidos del sistema" time="2.156">
     <system-out><![CDATA[
 Scenario Outline: Los modulos del dashboard reflejan el acceso segun el rol asignado &amp#27;[90m# src/test/resources/features/roles.feature:21&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario inicia sesion con el rol &amp#27;[0m&amp#27;[32m&amp#27;[1m"Produccion"&amp#27;[0m                             &amp#27;[90m# com.inventario.steps.RolesStepDefinitions.elUsuarioIniciaSesionConElRol(java.lang.String)&amp#27;[0m
@@ -916,13 +1230,13 @@ Scenario Outline: Los modulos del dashboard reflejan el acceso segun el rol asig
 ]]></system-out>
     <system-err><![CDATA[[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 4:46:54 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 5:09:22 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 4:46:54 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 5:09:22 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="Los modulos del dashboard reflejan el acceso segun el rol asignado #10" classname="HU-03 Roles predefinidos del sistema" time="2.027">
+  <testcase name="Los modulos del dashboard reflejan el acceso segun el rol asignado #10" classname="HU-03 Roles predefinidos del sistema" time="2.142">
     <system-out><![CDATA[
 Scenario Outline: Los modulos del dashboard reflejan el acceso segun el rol asignado &amp#27;[90m# src/test/resources/features/roles.feature:22&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario inicia sesion con el rol &amp#27;[0m&amp#27;[32m&amp#27;[1m"Produccion"&amp#27;[0m                             &amp#27;[90m# com.inventario.steps.RolesStepDefinitions.elUsuarioIniciaSesionConElRol(java.lang.String)&amp#27;[0m
@@ -931,13 +1245,13 @@ Scenario Outline: Los modulos del dashboard reflejan el acceso segun el rol asig
 ]]></system-out>
     <system-err><![CDATA[[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 4:46:56 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 5:09:24 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 4:46:56 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 5:09:24 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="Los modulos del dashboard reflejan el acceso segun el rol asignado #11" classname="HU-03 Roles predefinidos del sistema" time="2.013">
+  <testcase name="Los modulos del dashboard reflejan el acceso segun el rol asignado #11" classname="HU-03 Roles predefinidos del sistema" time="2.135">
     <system-out><![CDATA[
 Scenario Outline: Los modulos del dashboard reflejan el acceso segun el rol asignado &amp#27;[90m# src/test/resources/features/roles.feature:23&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario inicia sesion con el rol &amp#27;[0m&amp#27;[32m&amp#27;[1m"Recursos Humanos"&amp#27;[0m                       &amp#27;[90m# com.inventario.steps.RolesStepDefinitions.elUsuarioIniciaSesionConElRol(java.lang.String)&amp#27;[0m
@@ -946,13 +1260,13 @@ Scenario Outline: Los modulos del dashboard reflejan el acceso segun el rol asig
 ]]></system-out>
     <system-err><![CDATA[[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 4:46:58 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 5:09:26 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 4:46:58 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 5:09:26 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="Los modulos del dashboard reflejan el acceso segun el rol asignado #12" classname="HU-03 Roles predefinidos del sistema" time="2.051">
+  <testcase name="Los modulos del dashboard reflejan el acceso segun el rol asignado #12" classname="HU-03 Roles predefinidos del sistema" time="2.07">
     <system-out><![CDATA[
 Scenario Outline: Los modulos del dashboard reflejan el acceso segun el rol asignado &amp#27;[90m# src/test/resources/features/roles.feature:24&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario inicia sesion con el rol &amp#27;[0m&amp#27;[32m&amp#27;[1m"Recursos Humanos"&amp#27;[0m                       &amp#27;[90m# com.inventario.steps.RolesStepDefinitions.elUsuarioIniciaSesionConElRol(java.lang.String)&amp#27;[0m
@@ -961,13 +1275,13 @@ Scenario Outline: Los modulos del dashboard reflejan el acceso segun el rol asig
 ]]></system-out>
     <system-err><![CDATA[[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 4:47:00 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 5:09:29 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 4:47:00 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 5:09:29 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="Los roles no pueden gestionarse desde la interfaz" classname="HU-03 Roles predefinidos del sistema" time="2.379">
+  <testcase name="Los roles no pueden gestionarse desde la interfaz" classname="HU-03 Roles predefinidos del sistema" time="2.432">
     <system-out><![CDATA[
 Scenario: Los roles no pueden gestionarse desde la interfaz   &amp#27;[90m# src/test/resources/features/roles.feature:26&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario inicia sesion con el rol &amp#27;[0m&amp#27;[32m&amp#27;[1m"Administrador"&amp#27;[0m   &amp#27;[90m# com.inventario.steps.RolesStepDefinitions.elUsuarioIniciaSesionConElRol(java.lang.String)&amp#27;[0m
@@ -984,9 +1298,9 @@ Los roles no pueden gestionarse desde la interfaz(hu-03-roles-predefinidos-del-s
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 4:47:02 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 5:09:31 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 4:47:02 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 5:09:31 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -998,7 +1312,7 @@ Los roles no pueden gestionarse desde la interfaz
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Acceso denegado al intentar acceder a un modulo no permitido #1" classname="HU-03 Roles predefinidos del sistema" time="2.096">
+  <testcase name="Acceso denegado al intentar acceder a un modulo no permitido #1" classname="HU-03 Roles predefinidos del sistema" time="2.187">
     <system-out><![CDATA[
 Scenario Outline: Acceso denegado al intentar acceder a un modulo no permitido     &amp#27;[90m# src/test/resources/features/roles.feature:39&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario inicia sesion con el rol &amp#27;[0m&amp#27;[32m&amp#27;[1m"Ventas"&amp#27;[0m                               &amp#27;[90m# com.inventario.steps.RolesStepDefinitions.elUsuarioIniciaSesionConElRol(java.lang.String)&amp#27;[0m
@@ -1016,9 +1330,9 @@ Acceso denegado al intentar acceder a un modulo no permitido(hu-03-roles-predefi
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 4:47:04 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 5:09:33 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 4:47:04 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 5:09:33 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -1030,7 +1344,7 @@ Acceso denegado al intentar acceder a un modulo no permitido
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Acceso denegado al intentar acceder a un modulo no permitido #2" classname="HU-03 Roles predefinidos del sistema" time="2.067">
+  <testcase name="Acceso denegado al intentar acceder a un modulo no permitido #2" classname="HU-03 Roles predefinidos del sistema" time="2.148">
     <system-out><![CDATA[
 Scenario Outline: Acceso denegado al intentar acceder a un modulo no permitido     &amp#27;[90m# src/test/resources/features/roles.feature:40&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario inicia sesion con el rol &amp#27;[0m&amp#27;[32m&amp#27;[1m"Ventas"&amp#27;[0m                               &amp#27;[90m# com.inventario.steps.RolesStepDefinitions.elUsuarioIniciaSesionConElRol(java.lang.String)&amp#27;[0m
@@ -1040,9 +1354,9 @@ Scenario Outline: Acceso denegado al intentar acceder a un modulo no permitido  
 ]]></system-out>
     <system-err><![CDATA[[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 4:47:06 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 5:09:35 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 4:47:06 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 5:09:35 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -1054,7 +1368,7 @@ Acceso denegado al intentar acceder a un modulo no permitido
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Acceso denegado al intentar acceder a un modulo no permitido #3" classname="HU-03 Roles predefinidos del sistema" time="1.986">
+  <testcase name="Acceso denegado al intentar acceder a un modulo no permitido #3" classname="HU-03 Roles predefinidos del sistema" time="2.201">
     <system-out><![CDATA[
 Scenario Outline: Acceso denegado al intentar acceder a un modulo no permitido     &amp#27;[90m# src/test/resources/features/roles.feature:41&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario inicia sesion con el rol &amp#27;[0m&amp#27;[32m&amp#27;[1m"Tesoreria"&amp#27;[0m                            &amp#27;[90m# com.inventario.steps.RolesStepDefinitions.elUsuarioIniciaSesionConElRol(java.lang.String)&amp#27;[0m
@@ -1064,13 +1378,13 @@ Scenario Outline: Acceso denegado al intentar acceder a un modulo no permitido  
 ]]></system-out>
     <system-err><![CDATA[[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 4:47:08 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 5:09:37 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 4:47:08 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 5:09:37 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="Acceso denegado al intentar acceder a un modulo no permitido #4" classname="HU-03 Roles predefinidos del sistema" time="2.807">
+  <testcase name="Acceso denegado al intentar acceder a un modulo no permitido #4" classname="HU-03 Roles predefinidos del sistema" time="2.307">
     <system-out><![CDATA[
 Scenario Outline: Acceso denegado al intentar acceder a un modulo no permitido     &amp#27;[90m# src/test/resources/features/roles.feature:42&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario inicia sesion con el rol &amp#27;[0m&amp#27;[32m&amp#27;[1m"Tesoreria"&amp#27;[0m                            &amp#27;[90m# com.inventario.steps.RolesStepDefinitions.elUsuarioIniciaSesionConElRol(java.lang.String)&amp#27;[0m
@@ -1080,13 +1394,13 @@ Scenario Outline: Acceso denegado al intentar acceder a un modulo no permitido  
 ]]></system-out>
     <system-err><![CDATA[[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 4:47:11 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 5:09:40 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 4:47:11 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 5:09:40 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="Acceso denegado al intentar acceder a un modulo no permitido #5" classname="HU-03 Roles predefinidos del sistema" time="1.995">
+  <testcase name="Acceso denegado al intentar acceder a un modulo no permitido #5" classname="HU-03 Roles predefinidos del sistema" time="2.166">
     <system-out><![CDATA[
 Scenario Outline: Acceso denegado al intentar acceder a un modulo no permitido     &amp#27;[90m# src/test/resources/features/roles.feature:43&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario inicia sesion con el rol &amp#27;[0m&amp#27;[32m&amp#27;[1m"Produccion"&amp#27;[0m                           &amp#27;[90m# com.inventario.steps.RolesStepDefinitions.elUsuarioIniciaSesionConElRol(java.lang.String)&amp#27;[0m
@@ -1096,13 +1410,13 @@ Scenario Outline: Acceso denegado al intentar acceder a un modulo no permitido  
 ]]></system-out>
     <system-err><![CDATA[[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 4:47:13 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 5:09:42 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 4:47:13 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 5:09:42 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="Acceso denegado al intentar acceder a un modulo no permitido #6" classname="HU-03 Roles predefinidos del sistema" time="2.083">
+  <testcase name="Acceso denegado al intentar acceder a un modulo no permitido #6" classname="HU-03 Roles predefinidos del sistema" time="2.116">
     <system-out><![CDATA[
 Scenario Outline: Acceso denegado al intentar acceder a un modulo no permitido     &amp#27;[90m# src/test/resources/features/roles.feature:44&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario inicia sesion con el rol &amp#27;[0m&amp#27;[32m&amp#27;[1m"Produccion"&amp#27;[0m                           &amp#27;[90m# com.inventario.steps.RolesStepDefinitions.elUsuarioIniciaSesionConElRol(java.lang.String)&amp#27;[0m
@@ -1112,13 +1426,13 @@ Scenario Outline: Acceso denegado al intentar acceder a un modulo no permitido  
 ]]></system-out>
     <system-err><![CDATA[[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 4:47:15 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 5:09:44 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 4:47:15 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 5:09:44 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="Acceso denegado al intentar acceder a un modulo no permitido #7" classname="HU-03 Roles predefinidos del sistema" time="2.306">
+  <testcase name="Acceso denegado al intentar acceder a un modulo no permitido #7" classname="HU-03 Roles predefinidos del sistema" time="2.165">
     <system-out><![CDATA[
 Scenario Outline: Acceso denegado al intentar acceder a un modulo no permitido     &amp#27;[90m# src/test/resources/features/roles.feature:45&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario inicia sesion con el rol &amp#27;[0m&amp#27;[32m&amp#27;[1m"Recursos Humanos"&amp#27;[0m                     &amp#27;[90m# com.inventario.steps.RolesStepDefinitions.elUsuarioIniciaSesionConElRol(java.lang.String)&amp#27;[0m
@@ -1128,13 +1442,13 @@ Scenario Outline: Acceso denegado al intentar acceder a un modulo no permitido  
 ]]></system-out>
     <system-err><![CDATA[[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 4:47:17 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 5:09:46 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 4:47:17 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 5:09:46 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="Acceso denegado al intentar acceder a un modulo no permitido #8" classname="HU-03 Roles predefinidos del sistema" time="2.15">
+  <testcase name="Acceso denegado al intentar acceder a un modulo no permitido #8" classname="HU-03 Roles predefinidos del sistema" time="2.29">
     <system-out><![CDATA[
 Scenario Outline: Acceso denegado al intentar acceder a un modulo no permitido     &amp#27;[90m# src/test/resources/features/roles.feature:46&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario inicia sesion con el rol &amp#27;[0m&amp#27;[32m&amp#27;[1m"Recursos Humanos"&amp#27;[0m                     &amp#27;[90m# com.inventario.steps.RolesStepDefinitions.elUsuarioIniciaSesionConElRol(java.lang.String)&amp#27;[0m
@@ -1144,9 +1458,9 @@ Scenario Outline: Acceso denegado al intentar acceder a un modulo no permitido  
 ]]></system-out>
     <system-err><![CDATA[[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 4:47:20 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 5:09:48 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 4:47:20 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 5:09:48 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>

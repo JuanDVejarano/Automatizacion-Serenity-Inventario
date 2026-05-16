@@ -126,4 +126,62 @@ public class EmpleadosPage extends PageObject {
         waitFor(modalErrorAlert);
         return modalErrorAlert.getText().trim();
     }
+
+    // ── HU-06: listado y búsqueda ────────────────────────────────────────────
+
+    @FindBy(css = ".estado-vacio p")
+    private WebElementFacade estadoVacioMessage;
+
+    public void searchByText(String text) {
+        waitFor(searchInput);
+        searchInput.clear();
+        searchInput.type(text);
+    }
+
+    // Selecciona el filtro de estado via JS para garantizar que Angular detecte el cambio
+    public void filterByEstado(String value) {
+        evaluateJavascript(
+            "var el = document.querySelector('select.select-estado');" +
+            "el.value = '" + value + "';" +
+            "el.dispatchEvent(new Event('change', {bubbles:true}));");
+    }
+
+    public int getVisibleRowCount() {
+        Object count = evaluateJavascript(
+            "return document.querySelectorAll('table.tabla tbody tr').length;");
+        return count instanceof Long ? ((Long) count).intValue() : 0;
+    }
+
+    // Verifica que las columnas requeridas existan (normaliza tildes en JS)
+    public boolean hasRequiredColumns() {
+        return Boolean.TRUE.equals(evaluateJavascript(
+            "function norm(s){return s.normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').toLowerCase();}" +
+            "var ths = Array.from(document.querySelectorAll('table.tabla thead th'));" +
+            "var texts = ths.map(function(th){return norm(th.textContent.trim());});" +
+            "var required = ['cedula','nombre','correo','ciudad','telefono','fecha','estado'];" +
+            "return required.every(function(r){return texts.some(function(t){return t.includes(r);});});"));
+    }
+
+    // Verifica que todos los badges visibles son 'badge--activo'
+    public boolean allVisibleBadgesAreActive() {
+        return Boolean.TRUE.equals(evaluateJavascript(
+            "var badges = document.querySelectorAll('table.tabla tbody tr .badge');" +
+            "return badges.length > 0 && " +
+            "Array.from(badges).every(function(b){return b.classList.contains('badge--activo');});"));
+    }
+
+    // Simula lista vacía usando la API de Angular ng.getComponent (disponible en modo dev)
+    public void simulateEmptyList() {
+        evaluateJavascript(
+            "var el = document.querySelector('app-empleados');" +
+            "var comp = ng.getComponent(el);" +
+            "comp.empleados.set([]);" +
+            "comp.cargando.set(false);" +
+            "ng.markDirty(comp);");
+    }
+
+    public String getEstadoVacioMessage() {
+        waitFor(estadoVacioMessage);
+        return estadoVacioMessage.getText().trim();
+    }
 }
