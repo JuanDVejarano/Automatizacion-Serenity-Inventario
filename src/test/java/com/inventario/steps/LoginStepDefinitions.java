@@ -57,6 +57,39 @@ public class LoginStepDefinitions {
             .containsIgnoringCase(mensajeEsperadoNorm);
     }
 
+    @Given("el usuario tiene un token JWT expirado almacenado")
+    public void elUsuarioTieneUnTokenJwtExpiradoAlmacenado() {
+        loginPage.setExpiredTokenInLocalStorage();
+    }
+
+    @When("el usuario intenta acceder al dashboard")
+    public void elUsuarioIntentaAccederAlDashboard() {
+        loginPage.navigateToDashboard();
+    }
+
+    @Then("el sistema redirige a la pagina de login")
+    public void elSistemaRedirigeALaPaginaDeLogin() {
+        String currentUrl = loginPage.getCurrentUrl();
+        assertThat(currentUrl)
+            .as("Debe redirigir al login cuando el token esta expirado")
+            .contains("/login");
+    }
+
+    @And("el sistema muestra el mensaje de sesion {string}")
+    public void elSistemaMuestraElMensajeDeSesion(String mensajeEsperado) {
+        assertThat(loginPage.isSessionWarningVisible())
+            .as("El mensaje de sesion expirada debe ser visible en pantalla")
+            .isTrue();
+
+        String mensajeActual = loginPage.getSessionWarningMessage();
+        String mensajeActualNorm = normalizarTexto(mensajeActual);
+        String mensajeEsperadoNorm = normalizarTexto(mensajeEsperado);
+
+        assertThat(mensajeActualNorm)
+            .as("El mensaje de sesion debe coincidir con el esperado")
+            .containsIgnoringCase(mensajeEsperadoNorm);
+    }
+
     private String normalizarTexto(String texto) {
         return texto
             .replace("á", "a").replace("é", "e").replace("í", "i")

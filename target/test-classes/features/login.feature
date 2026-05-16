@@ -27,3 +27,9 @@ Feature: HU-01 Iniciar sesion en el sistema
         Scenario: Error al dejar los campos vacios
              When el usuario hace clic en el boton iniciar sesion
              Then el sistema muestra el mensaje de error "Todos los campos son obligatorios"
+
+        Scenario: Redireccion al login cuando el token JWT esta expirado
+             Given el usuario tiene un token JWT expirado almacenado
+              When el usuario intenta acceder al dashboard
+             Then el sistema redirige a la pagina de login
+              And el sistema muestra el mensaje de sesion "Sesion expirada, por favor inicie sesion nuevamente"

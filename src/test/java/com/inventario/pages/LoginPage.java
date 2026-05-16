@@ -20,6 +20,15 @@ public class LoginPage extends PageObject {
     @FindBy(css = ".alert.alert--error")
     private WebElementFacade errorAlert;
 
+    @FindBy(css = ".alert.alert--warning")
+    private WebElementFacade sessionWarningAlert;
+
+    // exp: 1000000000 = 2001-09-09, siempre expirado
+    private static final String EXPIRED_TOKEN =
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9" +
+        ".eyJpZFVzdWFyaW8iOjEsInVzdWFyaW8iOiJhZG1pbiIsInJvbCI6ImFkbWluIiwiZXhwIjoxMDAwMDAwMDAwfQ" +
+        ".fakesignature";
+
     public void enterUsername(String username) {
         usernameField.clear();
         usernameField.type(username);
@@ -45,5 +54,22 @@ public class LoginPage extends PageObject {
 
     public String getCurrentUrl() {
         return getDriver().getCurrentUrl();
+    }
+
+    public void setExpiredTokenInLocalStorage() {
+        evaluateJavascript("localStorage.setItem('access_token', '" + EXPIRED_TOKEN + "')");
+    }
+
+    public void navigateToDashboard() {
+        getDriver().navigate().to("http://localhost:4200/dashboard");
+    }
+
+    public boolean isSessionWarningVisible() {
+        return sessionWarningAlert.isPresent() && sessionWarningAlert.isCurrentlyVisible();
+    }
+
+    public String getSessionWarningMessage() {
+        waitFor(sessionWarningAlert);
+        return sessionWarningAlert.getText().trim();
     }
 }

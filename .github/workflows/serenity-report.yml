@@ -1,0 +1,59 @@
+name: Serenity Tests & Deploy Report
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  test:
+    name: Run Serenity Tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: temurin
+          cache: maven
+
+      - name: Setup Chrome
+        uses: browser-actions/setup-chrome@v1
+        with:
+          chrome-version: stable
+
+      - name: Run tests and generate Serenity report
+        run: |
+          mvn verify \
+            -Dmaven.test.failure.ignore=true \
+            -Dwebdriver.base.url=http://localhost:4200
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: target/site/serenity
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: test
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: https://juandvejarano.github.io/Automatizacion-Serenity-Inventario/
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
