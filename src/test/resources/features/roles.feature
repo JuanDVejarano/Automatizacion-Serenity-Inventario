@@ -1,3 +1,4 @@
+@roles
 Feature: HU-03 Roles predefinidos del sistema
   Como administrador del sistema
   Quiero que el sistema tenga roles predefinidos

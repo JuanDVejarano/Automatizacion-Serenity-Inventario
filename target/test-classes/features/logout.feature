@@ -1,3 +1,4 @@
+@autenticacion
 Feature: HU-02 Cerrar sesion del sistema
   Como usuario autenticado en el sistema
   Quiero cerrar mi sesion

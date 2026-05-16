@@ -1,9 +1,11 @@
+/home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/pages/CrearUsuarioPage.java
 /home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/pages/DashboardPage.java
 /home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/pages/EmpleadosPage.java
 /home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/pages/LoginPage.java
 /home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/pages/RegistrarEmpleadoPage.java
 /home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/pages/UnauthorizedPage.java
 /home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/runners/CucumberTestRunner.java
+/home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/steps/CrearUsuarioStepDefinitions.java
 /home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/steps/EditarEmpleadoStepDefinitions.java
 /home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/steps/ListarEmpleadosStepDefinitions.java
 /home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/steps/LoginStepDefinitions.java

@@ -1,0 +1,546 @@
+<html lang='en'><head><link href='prism/prism.css' rel='stylesheet' /></head><body><script src='prism/prism.js'></script><body><div><pre><code class='language-html'>&lt;html lang="en"&gt;<br/>
+ &lt;head&gt;<br/>
+  &lt;script type="module" src="/@vite/client"&gt;&lt;/script&gt;<br/>
+  &lt;meta charset="utf-8"&gt;<br/>
+  &lt;title&gt;Inventario — Sistema de Gestión&lt;/title&gt;<br/>
+  &lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;<br/>
+  &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""&gt;<br/>
+  &lt;link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"&gt;&lt;base href="/"&gt;<br/>
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;<br/>
+  &lt;link rel="icon" type="image/x-icon" href="favicon.ico"&gt;<br/>
+  &lt;link rel="stylesheet" href="styles.css"&gt;<br/>
+  &lt;style&gt;<br/>
+<br/>
+[_nghost-ng-c2915204389] {<br/>
+  display: flex;<br/>
+  min-height: 100vh;<br/>
+}<br/>
+.shell[_ngcontent-ng-c2915204389] {<br/>
+  display: flex;<br/>
+  width: 100%;<br/>
+  min-height: 100vh;<br/>
+  background: var(--clr-bg);<br/>
+}<br/>
+.sidebar[_ngcontent-ng-c2915204389] {<br/>
+  width: 260px;<br/>
+  flex-shrink: 0;<br/>
+  background: #0f1117;<br/>
+  display: flex;<br/>
+  flex-direction: column;<br/>
+  padding: 0 0 1.5rem;<br/>
+  position: sticky;<br/>
+  top: 0;<br/>
+  height: 100vh;<br/>
+  overflow-y: auto;<br/>
+}<br/>
+@media (max-width: 768px) {<br/>
+  .sidebar[_ngcontent-ng-c2915204389] {<br/>
+    display: none;<br/>
+  }<br/>
+}<br/>
+.sidebar-brand[_ngcontent-ng-c2915204389] {<br/>
+  display: flex;<br/>
+  align-items: center;<br/>
+  gap: 0.75rem;<br/>
+  padding: 1.5rem 1.5rem 1rem;<br/>
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);<br/>
+  margin-bottom: 0.75rem;<br/>
+  text-decoration: none;<br/>
+  color: inherit;<br/>
+  transition: opacity 0.15s;<br/>
+}<br/>
+.sidebar-brand[_ngcontent-ng-c2915204389]:hover {<br/>
+  opacity: 0.8;<br/>
+  text-decoration: none;<br/>
+}<br/>
+.sidebar-brand[_ngcontent-ng-c2915204389]   .brand-icon[_ngcontent-ng-c2915204389] {<br/>
+  width: 36px;<br/>
+  height: 36px;<br/>
+  background: var(--clr-primary);<br/>
+  border-radius: 9px;<br/>
+  display: flex;<br/>
+  align-items: center;<br/>
+  justify-content: center;<br/>
+  flex-shrink: 0;<br/>
+}<br/>
+.sidebar-brand[_ngcontent-ng-c2915204389]   .brand-icon[_ngcontent-ng-c2915204389]   svg[_ngcontent-ng-c2915204389] {<br/>
+  width: 18px;<br/>
+  height: 18px;<br/>
+  color: #fff;<br/>
+}<br/>
+.sidebar-brand[_ngcontent-ng-c2915204389]   .brand-name[_ngcontent-ng-c2915204389] {<br/>
+  font-size: 1rem;<br/>
+  font-weight: 700;<br/>
+  color: #f1f5f9;<br/>
+}<br/>
+.sidebar-brand[_ngcontent-ng-c2915204389]   .brand-sub[_ngcontent-ng-c2915204389] {<br/>
+  font-size: 0.7rem;<br/>
+  color: #94a3b8;<br/>
+}<br/>
+.nav-section[_ngcontent-ng-c2915204389] {<br/>
+  padding: 0 0.75rem;<br/>
+  margin-bottom: 0.75rem;<br/>
+}<br/>
+.nav-label[_ngcontent-ng-c2915204389] {<br/>
+  font-size: 0.65rem;<br/>
+  font-weight: 600;<br/>
+  letter-spacing: 0.08em;<br/>
+  text-transform: uppercase;<br/>
+  color: #94a3b8;<br/>
+  padding: 0.5rem 0.75rem 0.25rem;<br/>
+}<br/>
+.nav-item[_ngcontent-ng-c2915204389] {<br/>
+  display: flex;<br/>
+  align-items: center;<br/>
+  gap: 0.625rem;<br/>
+  padding: 0.55rem 0.75rem;<br/>
+  border-radius: 8px;<br/>
+  font-size: 0.875rem;<br/>
+  color: #94a3b8;<br/>
+  cursor: pointer;<br/>
+  text-decoration: none;<br/>
+  transition: background 0.15s, color 0.15s;<br/>
+}<br/>
+.nav-item[_ngcontent-ng-c2915204389]   svg[_ngcontent-ng-c2915204389] {<br/>
+  width: 16px;<br/>
+  height: 16px;<br/>
+  flex-shrink: 0;<br/>
+}<br/>
+.nav-item[_ngcontent-ng-c2915204389]:hover {<br/>
+  background: rgba(255, 255, 255, 0.05);<br/>
+  color: #e2e8f0;<br/>
+  text-decoration: none;<br/>
+}<br/>
+.nav-item.active[_ngcontent-ng-c2915204389] {<br/>
+  background: rgba(236, 72, 153, 0.12);<br/>
+  color: #f472b6;<br/>
+}<br/>
+.nav-item--disabled[_ngcontent-ng-c2915204389] {<br/>
+  opacity: 0.35;<br/>
+  cursor: not-allowed;<br/>
+  pointer-events: none;<br/>
+}<br/>
+.sidebar-footer[_ngcontent-ng-c2915204389] {<br/>
+  margin-top: auto;<br/>
+  padding: 0 0.75rem;<br/>
+}<br/>
+.user-card[_ngcontent-ng-c2915204389] {<br/>
+  display: flex;<br/>
+  align-items: center;<br/>
+  gap: 0.625rem;<br/>
+  background: rgba(255, 255, 255, 0.04);<br/>
+  border-radius: 10px;<br/>
+  padding: 0.625rem 0.75rem;<br/>
+}<br/>
+.avatar[_ngcontent-ng-c2915204389] {<br/>
+  width: 32px;<br/>
+  height: 32px;<br/>
+  background: #ec4899;<br/>
+  border-radius: 50%;<br/>
+  display: flex;<br/>
+  align-items: center;<br/>
+  justify-content: center;<br/>
+  font-size: 0.8rem;<br/>
+  font-weight: 700;<br/>
+  color: #fff;<br/>
+  flex-shrink: 0;<br/>
+}<br/>
+.user-info[_ngcontent-ng-c2915204389] {<br/>
+  flex: 1;<br/>
+  min-width: 0;<br/>
+}<br/>
+.user-name[_ngcontent-ng-c2915204389] {<br/>
+  font-size: 0.8rem;<br/>
+  font-weight: 600;<br/>
+  color: #e2e8f0;<br/>
+  white-space: nowrap;<br/>
+  overflow: hidden;<br/>
+  text-overflow: ellipsis;<br/>
+}<br/>
+.user-role[_ngcontent-ng-c2915204389] {<br/>
+  font-size: 0.7rem;<br/>
+  color: #94a3b8;<br/>
+  white-space: nowrap;<br/>
+  overflow: hidden;<br/>
+  text-overflow: ellipsis;<br/>
+}<br/>
+.btn-logout-icon[_ngcontent-ng-c2915204389] {<br/>
+  background: none;<br/>
+  border: none;<br/>
+  cursor: pointer;<br/>
+  color: #94a3b8;<br/>
+  padding: 4px;<br/>
+}<br/>
+.btn-logout-icon[_ngcontent-ng-c2915204389]   svg[_ngcontent-ng-c2915204389] {<br/>
+  width: 16px;<br/>
+  height: 16px;<br/>
+  display: block;<br/>
+}<br/>
+.btn-logout-icon[_ngcontent-ng-c2915204389]:hover {<br/>
+  color: #e2e8f0;<br/>
+}<br/>
+.main[_ngcontent-ng-c2915204389] {<br/>
+  flex: 1;<br/>
+  display: flex;<br/>
+  flex-direction: column;<br/>
+  min-width: 0;<br/>
+  background: #0f1117;<br/>
+}<br/>
+/*# sourceMappingURL=/rrhh-layout.css.map */&lt;/style&gt;<br/>
+  &lt;style&gt;<br/>
+<br/>
+.page-content[_ngcontent-ng-c3017799233] {<br/>
+  display: flex;<br/>
+  flex-direction: column;<br/>
+  flex: 1;<br/>
+  min-height: 100vh;<br/>
+}<br/>
+.topbar[_ngcontent-ng-c3017799233] {<br/>
+  display: flex;<br/>
+  align-items: center;<br/>
+  justify-content: space-between;<br/>
+  padding: 1rem 2rem;<br/>
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);<br/>
+  background: #0f1117;<br/>
+  position: sticky;<br/>
+  top: 0;<br/>
+  z-index: 10;<br/>
+}<br/>
+.topbar-title[_ngcontent-ng-c3017799233]   h2[_ngcontent-ng-c3017799233], <br/>
+.topbar-title[_ngcontent-ng-c3017799233]   h1[_ngcontent-ng-c3017799233] {<br/>
+  font-size: 1.1rem;<br/>
+  font-weight: 700;<br/>
+  color: #f1f5f9;<br/>
+  margin: 0;<br/>
+}<br/>
+.topbar-title[_ngcontent-ng-c3017799233]   span[_ngcontent-ng-c3017799233], <br/>
+.topbar-title[_ngcontent-ng-c3017799233]   p[_ngcontent-ng-c3017799233] {<br/>
+  font-size: 0.75rem;<br/>
+  color: #94a3b8;<br/>
+}<br/>
+.content[_ngcontent-ng-c3017799233] {<br/>
+  flex: 1;<br/>
+  padding: 2rem;<br/>
+}<br/>
+.proximamente-card[_ngcontent-ng-c3017799233] {<br/>
+  background: #161b27;<br/>
+  border: 1px solid rgba(255, 255, 255, 0.06);<br/>
+  border-radius: 16px;<br/>
+  padding: 3rem 2.5rem;<br/>
+  width: 100%;<br/>
+  max-width: 560px;<br/>
+  display: flex;<br/>
+  flex-direction: column;<br/>
+  align-items: center;<br/>
+  text-align: center;<br/>
+  gap: 1rem;<br/>
+  margin: 2rem auto 0;<br/>
+}<br/>
+.proximamente-card[_ngcontent-ng-c3017799233]   h3[_ngcontent-ng-c3017799233] {<br/>
+  font-size: 1.15rem;<br/>
+  font-weight: 700;<br/>
+  color: #f1f5f9;<br/>
+  margin: 0;<br/>
+}<br/>
+.proximamente-card[_ngcontent-ng-c3017799233]   p[_ngcontent-ng-c3017799233] {<br/>
+  font-size: 0.875rem;<br/>
+  color: #94a3b8;<br/>
+  line-height: 1.6;<br/>
+  margin: 0;<br/>
+  max-width: 380px;<br/>
+}<br/>
+.prox-icon[_ngcontent-ng-c3017799233] {<br/>
+  width: 56px;<br/>
+  height: 56px;<br/>
+  background: rgba(236, 72, 153, 0.1);<br/>
+  border-radius: 14px;<br/>
+  display: flex;<br/>
+  align-items: center;<br/>
+  justify-content: center;<br/>
+}<br/>
+.prox-icon[_ngcontent-ng-c3017799233]   svg[_ngcontent-ng-c3017799233] {<br/>
+  width: 28px;<br/>
+  height: 28px;<br/>
+  color: #ec4899;<br/>
+}<br/>
+.badge-soon[_ngcontent-ng-c3017799233] {<br/>
+  display: inline-block;<br/>
+  font-size: 0.72rem;<br/>
+  font-weight: 600;<br/>
+  letter-spacing: 0.04em;<br/>
+  background: rgba(236, 72, 153, 0.12);<br/>
+  color: #f472b6;<br/>
+  border: 1px solid rgba(236, 72, 153, 0.25);<br/>
+  border-radius: 20px;<br/>
+  padding: 0.25rem 0.85rem;<br/>
+  margin-top: 0.25rem;<br/>
+}<br/>
+.form-card[_ngcontent-ng-c3017799233] {<br/>
+  background: #161b27;<br/>
+  border: 1px solid rgba(255, 255, 255, 0.06);<br/>
+  border-radius: 16px;<br/>
+  padding: 2rem;<br/>
+  width: 100%;<br/>
+  max-width: 760px;<br/>
+}<br/>
+.form-card-header[_ngcontent-ng-c3017799233] {<br/>
+  display: flex;<br/>
+  align-items: center;<br/>
+  gap: 0.75rem;<br/>
+  margin-bottom: 1.75rem;<br/>
+}<br/>
+.form-card-header[_ngcontent-ng-c3017799233]   h3[_ngcontent-ng-c3017799233] {<br/>
+  font-size: 1.1rem;<br/>
+  font-weight: 700;<br/>
+  color: #f1f5f9;<br/>
+  margin: 0;<br/>
+}<br/>
+.form-card-icon[_ngcontent-ng-c3017799233] {<br/>
+  width: 40px;<br/>
+  height: 40px;<br/>
+  background: rgba(236, 72, 153, 0.12);<br/>
+  border-radius: 10px;<br/>
+  display: flex;<br/>
+  align-items: center;<br/>
+  justify-content: center;<br/>
+  flex-shrink: 0;<br/>
+}<br/>
+.form-card-icon[_ngcontent-ng-c3017799233]   svg[_ngcontent-ng-c3017799233] {<br/>
+  width: 20px;<br/>
+  height: 20px;<br/>
+  color: #ec4899;<br/>
+}<br/>
+.loading-row[_ngcontent-ng-c3017799233] {<br/>
+  display: flex;<br/>
+  align-items: center;<br/>
+  gap: 0.75rem;<br/>
+  padding: 1.5rem 0;<br/>
+  color: #94a3b8;<br/>
+  font-size: 0.9rem;<br/>
+}<br/>
+.spinner[_ngcontent-ng-c3017799233] {<br/>
+  width: 18px;<br/>
+  height: 18px;<br/>
+  border: 2px solid rgba(255, 255, 255, 0.1);<br/>
+  border-top-color: #ec4899;<br/>
+  border-radius: 50%;<br/>
+  animation: _ngcontent-ng-c3017799233_spin 0.7s linear infinite;<br/>
+}<br/>
+@keyframes _ngcontent-ng-c3017799233_spin {<br/>
+  to {<br/>
+    transform: rotate(360deg);<br/>
+  }<br/>
+}<br/>
+.alert[_ngcontent-ng-c3017799233] {<br/>
+  border-radius: 8px;<br/>
+  padding: 0.75rem 1rem;<br/>
+  font-size: 0.875rem;<br/>
+  margin-bottom: 1.25rem;<br/>
+}<br/>
+.alert-error[_ngcontent-ng-c3017799233] {<br/>
+  background: rgba(239, 68, 68, 0.12);<br/>
+  border: 1px solid rgba(239, 68, 68, 0.3);<br/>
+  color: #fca5a5;<br/>
+}<br/>
+.alert-success[_ngcontent-ng-c3017799233] {<br/>
+  background: rgba(34, 197, 94, 0.1);<br/>
+  border: 1px solid rgba(34, 197, 94, 0.3);<br/>
+  color: #86efac;<br/>
+}<br/>
+.form-grid[_ngcontent-ng-c3017799233] {<br/>
+  display: grid;<br/>
+  grid-template-columns: 1fr 1fr;<br/>
+  gap: 1.25rem 1.5rem;<br/>
+}<br/>
+@media (max-width: 600px) {<br/>
+  .form-grid[_ngcontent-ng-c3017799233] {<br/>
+    grid-template-columns: 1fr;<br/>
+  }<br/>
+}<br/>
+.form-group[_ngcontent-ng-c3017799233] {<br/>
+  display: flex;<br/>
+  flex-direction: column;<br/>
+  gap: 0.4rem;<br/>
+}<br/>
+.form-group[_ngcontent-ng-c3017799233]   label[_ngcontent-ng-c3017799233] {<br/>
+  font-size: 0.8rem;<br/>
+  font-weight: 500;<br/>
+  color: #94a3b8;<br/>
+}<br/>
+.form-group[_ngcontent-ng-c3017799233]   input[_ngcontent-ng-c3017799233], <br/>
+.form-group[_ngcontent-ng-c3017799233]   select[_ngcontent-ng-c3017799233] {<br/>
+  background: #0f1117;<br/>
+  border: 1px solid rgba(255, 255, 255, 0.1);<br/>
+  border-radius: 8px;<br/>
+  padding: 0.55rem 0.85rem;<br/>
+  font-size: 0.9rem;<br/>
+  color: #e2e8f0;<br/>
+  outline: none;<br/>
+  transition: border-color 0.15s;<br/>
+}<br/>
+.form-group[_ngcontent-ng-c3017799233]   input[_ngcontent-ng-c3017799233]::placeholder, <br/>
+.form-group[_ngcontent-ng-c3017799233]   select[_ngcontent-ng-c3017799233]::placeholder {<br/>
+  color: #475569;<br/>
+}<br/>
+.form-group[_ngcontent-ng-c3017799233]   input[_ngcontent-ng-c3017799233]:focus, <br/>
+.form-group[_ngcontent-ng-c3017799233]   select[_ngcontent-ng-c3017799233]:focus {<br/>
+  border-color: #ec4899;<br/>
+}<br/>
+.form-group[_ngcontent-ng-c3017799233]   select[_ngcontent-ng-c3017799233] {<br/>
+  cursor: pointer;<br/>
+}<br/>
+.form-group[_ngcontent-ng-c3017799233]   select[_ngcontent-ng-c3017799233]   option[_ngcontent-ng-c3017799233] {<br/>
+  background: #161b27;<br/>
+  color: #e2e8f0;<br/>
+}<br/>
+.required[_ngcontent-ng-c3017799233] {<br/>
+  color: #f87171;<br/>
+}<br/>
+.form-actions[_ngcontent-ng-c3017799233] {<br/>
+  grid-column: 1/-1;<br/>
+  display: flex;<br/>
+  justify-content: flex-end;<br/>
+  padding-top: 0.5rem;<br/>
+}<br/>
+.btn-primary[_ngcontent-ng-c3017799233] {<br/>
+  background: #ec4899;<br/>
+  color: #fff;<br/>
+  border: none;<br/>
+  border-radius: 9px;<br/>
+  padding: 0.65rem 1.75rem;<br/>
+  font-size: 0.9rem;<br/>
+  font-weight: 600;<br/>
+  cursor: pointer;<br/>
+  transition: background 0.15s, opacity 0.15s;<br/>
+}<br/>
+.btn-primary[_ngcontent-ng-c3017799233]:hover:not(:disabled) {<br/>
+  background: #db2777;<br/>
+}<br/>
+.btn-primary[_ngcontent-ng-c3017799233]:disabled {<br/>
+  opacity: 0.5;<br/>
+  cursor: not-allowed;<br/>
+}<br/>
+/*# sourceMappingURL=/crear-usuario.css.map */&lt;/style&gt;<br/>
+ &lt;/head&gt;<br/>
+ &lt;body&gt;&lt;app-root ng-version="20.3.12"&gt;<br/>
+   &lt;router-outlet&gt;&lt;/router-outlet&gt;<br/>
+   &lt;app-rrhh-layout _nghost-ng-c2915204389=""&gt;<br/>
+    &lt;a _ngcontent-ng-c2915204389="" href="#main-content" class="skip-link"&gt;Saltar al contenido principal&lt;/a&gt;<br/>
+    &lt;div _ngcontent-ng-c2915204389="" class="shell"&gt;<br/>
+     &lt;aside _ngcontent-ng-c2915204389="" aria-label="Gestión de Empleados — navegación" class="sidebar"&gt;<br/>
+      &lt;a _ngcontent-ng-c2915204389="" routerlink="/dashboard" aria-label="InvSystem — Volver al dashboard" class="sidebar-brand" href="/dashboard"&gt;<br/>
+       &lt;div _ngcontent-ng-c2915204389="" aria-hidden="true" class="brand-icon"&gt;<br/>
+        &lt;svg _ngcontent-ng-c2915204389="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+         &lt;path _ngcontent-ng-c2915204389="" stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10"&gt;&lt;/path&gt;<br/>
+        &lt;/svg&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div _ngcontent-ng-c2915204389=""&gt;<br/>
+        &lt;div _ngcontent-ng-c2915204389="" class="brand-name"&gt;<br/>
+         InvSystem<br/>
+        &lt;/div&gt;<br/>
+        &lt;div _ngcontent-ng-c2915204389="" class="brand-sub"&gt;<br/>
+         v1.0<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;&lt;/a&gt;<br/>
+      &lt;nav _ngcontent-ng-c2915204389="" aria-label="Gestión de Empleados"&gt;<br/>
+       &lt;div _ngcontent-ng-c2915204389="" class="nav-section"&gt;<br/>
+        &lt;p _ngcontent-ng-c2915204389="" aria-hidden="true" class="nav-label"&gt;Principal&lt;/p&gt;<br/>
+        &lt;ul _ngcontent-ng-c2915204389="" class="nav-list"&gt;<br/>
+         &lt;li _ngcontent-ng-c2915204389=""&gt;&lt;a _ngcontent-ng-c2915204389="" routerlink="/dashboard" class="nav-item" href="/dashboard"&gt;<br/>
+           &lt;svg _ngcontent-ng-c2915204389="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+            &lt;rect _ngcontent-ng-c2915204389="" x="3" y="3" width="7" height="7"&gt;&lt;/rect&gt;&lt;rect _ngcontent-ng-c2915204389="" x="14" y="3" width="7" height="7"&gt;&lt;/rect&gt;&lt;rect _ngcontent-ng-c2915204389="" x="14" y="14" width="7" height="7"&gt;&lt;/rect&gt;&lt;rect _ngcontent-ng-c2915204389="" x="3" y="14" width="7" height="7"&gt;&lt;/rect&gt;<br/>
+           &lt;/svg&gt; Dashboard &lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div _ngcontent-ng-c2915204389="" class="nav-section"&gt;<br/>
+        &lt;p _ngcontent-ng-c2915204389="" aria-hidden="true" class="nav-label"&gt;Empleados&lt;/p&gt;<br/>
+        &lt;ul _ngcontent-ng-c2915204389="" class="nav-list"&gt;<br/>
+         &lt;li _ngcontent-ng-c2915204389=""&gt;&lt;a _ngcontent-ng-c2915204389="" routerlink="/rrhh/registrar-empleado" routerlinkactive="active" ariacurrentwhenactive="page" class="nav-item" href="/rrhh/registrar-empleado"&gt;<br/>
+           &lt;svg _ngcontent-ng-c2915204389="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+            &lt;path _ngcontent-ng-c2915204389="" stroke-linecap="round" stroke-linejoin="round" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"&gt;&lt;/path&gt;<br/>
+           &lt;/svg&gt; Registrar empleado &lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li _ngcontent-ng-c2915204389=""&gt;&lt;a _ngcontent-ng-c2915204389="" routerlink="/rrhh/empleados" routerlinkactive="active" ariacurrentwhenactive="page" class="nav-item" href="/rrhh/empleados"&gt;<br/>
+           &lt;svg _ngcontent-ng-c2915204389="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+            &lt;path _ngcontent-ng-c2915204389="" stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;<br/>
+           &lt;/svg&gt; Ver empleados &lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div _ngcontent-ng-c2915204389="" class="nav-section"&gt;<br/>
+        &lt;p _ngcontent-ng-c2915204389="" aria-hidden="true" class="nav-label"&gt;Usuarios&lt;/p&gt;<br/>
+        &lt;ul _ngcontent-ng-c2915204389="" class="nav-list"&gt;<br/>
+         &lt;li _ngcontent-ng-c2915204389=""&gt;&lt;a _ngcontent-ng-c2915204389="" routerlink="/rrhh/crear-usuario" routerlinkactive="active" ariacurrentwhenactive="page" class="nav-item active" href="/rrhh/crear-usuario" aria-current="page"&gt;<br/>
+           &lt;svg _ngcontent-ng-c2915204389="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+            &lt;path _ngcontent-ng-c2915204389="" stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"&gt;&lt;/path&gt;<br/>
+           &lt;/svg&gt; Crear usuario &lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li _ngcontent-ng-c2915204389=""&gt;&lt;a _ngcontent-ng-c2915204389="" routerlink="/rrhh/usuarios" routerlinkactive="active" ariacurrentwhenactive="page" class="nav-item" href="/rrhh/usuarios"&gt;<br/>
+           &lt;svg _ngcontent-ng-c2915204389="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+            &lt;path _ngcontent-ng-c2915204389="" stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"&gt;&lt;/path&gt;<br/>
+           &lt;/svg&gt; Gestionar usuarios &lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/nav&gt;<br/>
+      &lt;div _ngcontent-ng-c2915204389="" class="sidebar-footer"&gt;<br/>
+       &lt;div _ngcontent-ng-c2915204389="" class="user-card"&gt;<br/>
+        &lt;div _ngcontent-ng-c2915204389="" aria-hidden="true" class="avatar"&gt;<br/>
+         A<br/>
+        &lt;/div&gt;<br/>
+        &lt;div _ngcontent-ng-c2915204389="" class="user-info"&gt;<br/>
+         &lt;div _ngcontent-ng-c2915204389="" class="user-name"&gt;<br/>
+          admin<br/>
+         &lt;/div&gt;<br/>
+         &lt;div _ngcontent-ng-c2915204389="" class="user-role"&gt;<br/>
+          Administrador<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;&lt;button _ngcontent-ng-c2915204389="" aria-label="Cerrar sesión" class="btn-logout-icon"&gt;<br/>
+         &lt;svg _ngcontent-ng-c2915204389="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+          &lt;path _ngcontent-ng-c2915204389="" stroke-linecap="round" stroke-linejoin="round" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"&gt;&lt;/path&gt;<br/>
+         &lt;/svg&gt;&lt;/button&gt;<br/>
+       &lt;/div&gt;&lt;!--container--&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/aside&gt;<br/>
+     &lt;main _ngcontent-ng-c2915204389="" id="main-content" class="main"&gt;<br/>
+      &lt;router-outlet _ngcontent-ng-c2915204389=""&gt;&lt;/router-outlet&gt;&lt;app-crear-usuario _nghost-ng-c3017799233=""&gt;<br/>
+       &lt;div _ngcontent-ng-c3017799233="" class="page-content"&gt;<br/>
+        &lt;header _ngcontent-ng-c3017799233="" class="topbar"&gt;<br/>
+         &lt;div _ngcontent-ng-c3017799233="" class="topbar-title"&gt;<br/>
+          &lt;h2 _ngcontent-ng-c3017799233=""&gt;Crear usuario&lt;/h2&gt;&lt;span _ngcontent-ng-c3017799233=""&gt;Recursos Humanos&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/header&gt;<br/>
+        &lt;div _ngcontent-ng-c3017799233="" class="content"&gt;<br/>
+         &lt;div _ngcontent-ng-c3017799233="" class="form-card"&gt;<br/>
+          &lt;div _ngcontent-ng-c3017799233="" class="form-card-header"&gt;<br/>
+           &lt;div _ngcontent-ng-c3017799233="" class="form-card-icon"&gt;<br/>
+            &lt;svg _ngcontent-ng-c3017799233="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+             &lt;path _ngcontent-ng-c3017799233="" stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"&gt;&lt;/path&gt;<br/>
+            &lt;/svg&gt;<br/>
+           &lt;/div&gt;<br/>
+           &lt;h3 _ngcontent-ng-c3017799233=""&gt;Nuevo usuario del sistema&lt;/h3&gt;<br/>
+          &lt;/div&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;!--container--&gt;<br/>
+          &lt;form _ngcontent-ng-c3017799233="" novalidate class="form-grid ng-valid ng-dirty ng-touched"&gt;<br/>
+           &lt;div _ngcontent-ng-c3017799233="" class="form-group"&gt;<br/>
+            &lt;label _ngcontent-ng-c3017799233="" for="usuario"&gt;Nombre de usuario &lt;span _ngcontent-ng-c3017799233="" class="required"&gt;*&lt;/span&gt;&lt;/label&gt;&lt;input _ngcontent-ng-c3017799233="" id="usuario" type="text" placeholder="Ej: jperez" name="usuario" autocomplete="off" class="ng-valid ng-dirty ng-touched"&gt;<br/>
+           &lt;/div&gt;<br/>
+           &lt;div _ngcontent-ng-c3017799233="" class="form-group"&gt;<br/>
+            &lt;label _ngcontent-ng-c3017799233="" for="clave"&gt;Contraseña &lt;span _ngcontent-ng-c3017799233="" class="required"&gt;*&lt;/span&gt;&lt;/label&gt;&lt;input _ngcontent-ng-c3017799233="" id="clave" type="password" placeholder="Mínimo 7 caracteres" name="clave" autocomplete="new-password" class="ng-untouched ng-valid ng-dirty"&gt;<br/>
+           &lt;/div&gt;<br/>
+           &lt;div _ngcontent-ng-c3017799233="" class="form-group"&gt;<br/>
+            &lt;label _ngcontent-ng-c3017799233="" for="fkRol"&gt;Rol &lt;span _ngcontent-ng-c3017799233="" class="required"&gt;*&lt;/span&gt;&lt;/label&gt;&lt;select _ngcontent-ng-c3017799233="" id="fkRol" name="fkRol" class="ng-untouched ng-pristine ng-valid"&gt;&lt;option _ngcontent-ng-c3017799233="" disabled value="0: null"&gt;Seleccione un rol&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="1: 1"&gt;Administrador&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="2: 2"&gt;Ventas&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="3: 3"&gt;Tesorería&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="4: 4"&gt;Producción&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="5: 5"&gt;Recursos Humanos&lt;/option&gt;&lt;!--container--&gt;&lt;/select&gt;<br/>
+           &lt;/div&gt;<br/>
+           &lt;div _ngcontent-ng-c3017799233="" class="form-group"&gt;<br/>
+            &lt;label _ngcontent-ng-c3017799233="" for="fkEmpleado"&gt;Empleado asociado &lt;span _ngcontent-ng-c3017799233="" class="required"&gt;*&lt;/span&gt;&lt;/label&gt;&lt;select _ngcontent-ng-c3017799233="" id="fkEmpleado" name="fkEmpleado" class="ng-untouched ng-pristine ng-valid"&gt;&lt;option _ngcontent-ng-c3017799233="" disabled value="0: null"&gt;Seleccione un empleado&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="1: 123456789"&gt;Admin — 123456789&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="2: 73306687"&gt;Nombre Actualizado Test — 73306687&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="3: 80762878"&gt;Empleado Edicion — 80762878&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="4: 55030484"&gt;Empleado Edicion — 55030484&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="5: 42857923"&gt;Empleado Edicion Uno — 42857923&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="6: 61549425"&gt;Empleado Edicion Dos — 61549425&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="7: 17111687"&gt;Empleado Edicion Uno — 17111687&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="8: 74331189"&gt;Empleado Edicion Dos — 74331189&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="9: 44026539"&gt;Empleado Edicion — 44026539&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="10: 63569190"&gt;Empleado Lista 63569190 — 63569190&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="11: 86349596"&gt;BusqTest 86349596 — 86349596&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="12: 78889968"&gt;BusqTest 78889968 — 78889968&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="13: 32960561"&gt;Empleado Lista 32960561 — 32960561&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="14: 28165892"&gt;Juan Perez — 28165892&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="15: 19516850"&gt;Maria Lopez — 19516850&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="16: 26907244"&gt;Empleado Previo — 26907244&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="17: 76153201"&gt;Empleado Previo — 76153201&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="18: 47378969"&gt;Nombre Actualizado Test — 47378969&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="19: 89051191"&gt;Empleado Edicion — 89051191&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="20: 17599610"&gt;Empleado Edicion — 17599610&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="21: 90831875"&gt;Empleado Edicion Uno — 90831875&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="22: 18412236"&gt;Empleado Edicion Dos — 18412236&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="23: 35047326"&gt;Empleado Edicion Uno — 35047326&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="24: 26539976"&gt;Empleado Edicion Dos — 26539976&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="25: 69464519"&gt;Empleado Edicion — 69464519&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="26: 34174880"&gt;Empleado Lista 34174880 — 34174880&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="27: 86300634"&gt;BusqTest 86300634 — 86300634&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="28: 37139735"&gt;BusqTest 37139735 — 37139735&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="29: 82752524"&gt;Empleado Lista 82752524 — 82752524&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="30: 39102637"&gt;Juan Perez — 39102637&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="31: 53473532"&gt;Maria Lopez — 53473532&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="32: 60434940"&gt;Empleado Previo — 60434940&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="33: 22348317"&gt;Empleado Previo — 22348317&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="34: 59673840"&gt;Empleado Usuario 59673840 — 59673840&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="35: 33544146"&gt;Empleado Usuario 33544146 — 33544146&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="36: 91645425"&gt;Empleado Usuario 91645425 — 91645425&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="37: 67291005"&gt;Empleado Usuario 67291005 — 67291005&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="38: 61366267"&gt;Nombre Actualizado Test — 61366267&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="39: 56174612"&gt;Empleado Edicion — 56174612&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="40: 73026612"&gt;Empleado Edicion — 73026612&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="41: 68106496"&gt;Empleado Edicion Uno — 68106496&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="42: 61649180"&gt;Empleado Edicion Dos — 61649180&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="43: 49846139"&gt;Empleado Edicion Uno — 49846139&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="44: 95059490"&gt;Empleado Edicion Dos — 95059490&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="45: 90133676"&gt;Empleado Edicion — 90133676&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="46: 99544126"&gt;Empleado Lista 99544126 — 99544126&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="47: 89602995"&gt;BusqTest 89602995 — 89602995&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="48: 35184081"&gt;BusqTest 35184081 — 35184081&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="49: 33643877"&gt;Empleado Lista 33643877 — 33643877&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="50: 55567370"&gt;Juan Perez — 55567370&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="51: 87147968"&gt;Maria Lopez — 87147968&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="52: 70727448"&gt;Empleado Previo — 70727448&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="53: 39386874"&gt;Empleado Previo — 39386874&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="54: 10318738"&gt;Empleado Usuario 10318738 — 10318738&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="55: 80855919"&gt;Empleado Usuario 80855919 — 80855919&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="56: 42592305"&gt;Empleado Usuario 42592305 — 42592305&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="57: 19587195"&gt;Empleado Usuario 19587195 — 19587195&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="58: 33751631"&gt;Nombre Actualizado Test — 33751631&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="59: 93522044"&gt;Empleado Edicion — 93522044&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="60: 19335933"&gt;Empleado Edicion — 19335933&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="61: 17559306"&gt;Empleado Edicion Uno — 17559306&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="62: 18206235"&gt;Empleado Edicion Dos — 18206235&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="63: 59994953"&gt;Empleado Edicion Uno — 59994953&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="64: 31465359"&gt;Empleado Edicion Dos — 31465359&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="65: 47722224"&gt;Empleado Edicion — 47722224&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="66: 45472481"&gt;Empleado Lista 45472481 — 45472481&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="67: 33165651"&gt;BusqTest 33165651 — 33165651&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="68: 64405340"&gt;BusqTest 64405340 — 64405340&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="69: 52214211"&gt;Empleado Lista 52214211 — 52214211&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="70: 15660905"&gt;Juan Perez — 15660905&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="71: 10182480"&gt;Maria Lopez — 10182480&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="72: 71993149"&gt;Empleado Previo — 71993149&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="73: 15642917"&gt;Empleado Previo — 15642917&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="74: 84904586"&gt;Empleado Usuario 84904586 — 84904586&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="75: 52878425"&gt;Empleado Usuario 52878425 — 52878425&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="76: 25659554"&gt;Empleado Usuario 25659554 — 25659554&lt;/option&gt;&lt;option _ngcontent-ng-c3017799233="" value="77: 88008956"&gt;Empleado Usuario 88008956 — 88008956&lt;/option&gt;&lt;!--container--&gt;&lt;/select&gt;<br/>
+           &lt;/div&gt;<br/>
+           &lt;div _ngcontent-ng-c3017799233="" class="form-actions"&gt;<br/>
+            &lt;button _ngcontent-ng-c3017799233="" type="submit" class="btn-primary"&gt; Crear usuario &lt;/button&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/form&gt;&lt;!--container--&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/app-crear-usuario&gt;&lt;!--container--&gt;<br/>
+     &lt;/main&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/app-rrhh-layout&gt;&lt;!--container--&gt;<br/>
+  &lt;/app-root&gt;<br/>
+  &lt;script src="main.js" type="module"&gt;&lt;/script&gt;<br/>
+ &lt;/body&gt;<br/>
+&lt;/html&gt;</code></pre></div></body></html>

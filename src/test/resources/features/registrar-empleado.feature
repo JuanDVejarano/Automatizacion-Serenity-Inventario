@@ -1,3 +1,4 @@
+@empleados
 Feature: HU-04 Registrar empleado
   Como usuario con rol Recursos Humanos
   Quiero registrar un nuevo empleado en el sistema

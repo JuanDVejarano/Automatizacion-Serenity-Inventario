@@ -225,7 +225,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 16-05-2026 16:40:58</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 16-05-2026 18:02:59</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -240,7 +240,7 @@
                         <td width="375px" valign="top">
                             <div class="test-count-summary">
                                 <div class="test-count-title">
-                                    1 test
+                                    2 tests
 
                                      |
                                         <a href="results.csv" title="Download CSV"> <i class="bi bi-cloud-arrow-down"
@@ -313,60 +313,60 @@
                     <td>
                         <i class="bi bi-card-checklist"></i> Number of Scenarios
                     </td>
-                    <td>1</td>
+                    <td>2</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-caret-right"></i> Total Number of Test Cases
                     </td>
-                    <td>1</td>
+                    <td>2</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-flag-fill"></i> Tests Started
                     </td>
-                    <td>May 16, 2026 16:39:05</td>
+                    <td>May 16, 2026 17:41:24</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stop-circle"></i> Tests
                         Finished
                     </td>
-                    <td>May 16, 2026 16:39:15</td>
+                    <td>May 16, 2026 17:41:49</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stopwatch"></i> Total
                         Duration
                     </td>
-                    <td>9s</td>
+                    <td>24s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-trophy"></i> Fastest Test
                     </td>
-                    <td>9s</td>
+                    <td>8s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-skip-start"></i> Slowest
                         Test
                     </td>
-                    <td>9s</td>
+                    <td>11s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stopwatch"></i> Average
                         Execution Time
                     </td>
-                    <td>9s</td>
+                    <td>10s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stopwatch-fill"></i> Total
                         Execution Time
                     </td>
-                    <td>9s</td>
+                    <td>20s</td>
                 </tr>
                 </tbody>
             </table>
@@ -398,17 +398,20 @@
                                                                         <tbody>
                                                                                 <tr>
                                                                                     <td>
-                                                                                            <a href="09ad04306b0120eebec8aa391510177b3afbc423e9810972099d6f04edec1543.html"> HU-05 Editar informacion de empleado</a>
+                                                                                            <a href="f42783cc88fc4153ba445620ba5787cca5517c67e51653366ffe6186606f3e10.html"> HU-07 Crear usuario del sistema</a>
                                                                                     </td>
-                                                                                    <td>1</td>
-                                                                                    <td>Given el administrador ha iniciado sesion para edicion de empleados
-Given existe un empleado registrado para la prueba de edicion
-When el usuario busca y abre el modal de edicion del empleado
-And el usuario borra los campos obligatorios del modal de edicion
-And el usuario guarda los cambios en el modal
-Then el sistema muestra el mensaje de error de edicion "Todos los campos obligatorios deben ser diligenciados"
+                                                                                    <td>2</td>
+                                                                                    <td>Given el administrador ha iniciado sesion para gestion de usuarios
+Given existe un empleado activo disponible para asignar usuario
+When el usuario diligencia el formulario de creacion de usuario
+Then el sistema muestra el mensaje de exito de usuario "Usuario creado exitosamente"
+Given el administrador ha iniciado sesion para gestion de usuarios
+Given existe un empleado activo disponible para asignar usuario
+And el usuario crea un usuario de prueba para verificar duplicado
+When el usuario intenta crear otro usuario con el mismo nombre de usuario
+Then el sistema muestra el mensaje de error de usuario "Ya existe un usuario con ese nombre de usuario"
 </td>
-                                                                                    <td>1</td>
+                                                                                    <td>2</td>
                                                                                     <td>0%</td>
                                                                                     <td>
                                                                                             <a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon ' title='ERROR'></i></a>
@@ -418,7 +421,7 @@ Then el sistema muestra el mensaje de error de edicion "Todos los campos obligat
                                                                                                 <div class="progress-bar"
                                                                                                      role="progressbar"
                                                                                                      style="width: 100%; background-color: #fe6c2d"
-                                                                                                     aria-valuenow="1"
+                                                                                                     aria-valuenow="2"
                                                                                                      title="100% error"
                                                                                                      aria-valuemin="0"
                                                                                                      aria-valuemax="100">
@@ -446,7 +449,7 @@ Then el sistema muestra el mensaje de error de edicion "Todos los campos obligat
                                                                             <a href="969603a654f469abaa0b1329f030558b68dfd26948a74e5667f38486a662316b.html"><a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon ' title='ERROR'></i></a> Timeout exception</a>
                                                                         </td>
                                                                         <td><span
-                                                                                    class="badge failure-badge">1</span>
+                                                                                    class="badge failure-badge">2</span>
                                                                         </td>
                                                                     </tr>
                                                                 </tbody>
@@ -458,7 +461,7 @@ Then el sistema muestra el mensaje de error de edicion "Todos los campos obligat
                                                                 <tbody>
                                                                     <tr>
                                                                         <td class="failure-color top-list-title">
-                                                                            <a href="09ad04306b0120eebec8aa391510177b3afbc423e9810972099d6f04edec1543.html">HU-05 Editar informacion de empleado</a>
+                                                                            <a href="f42783cc88fc4153ba445620ba5787cca5517c67e51653366ffe6186606f3e10.html">HU-07 Crear usuario del sistema</a>
                                                                         </td>
                                                                         <td>
                                                                             <span class="badge failure-badge">100%</span>
@@ -479,7 +482,7 @@ Then el sistema muestra el mensaje de error de edicion "Todos los campos obligat
                             <div>
                                     <a href="46b54d9084ba9783130da16408afb27a4e4620f6bd966e731510c7395b9ddf5c.html">
                                     <span class="tag-badge badge" style="background-color:#fe6c2d; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Chrome, Linux&nbsp;&nbsp;&nbsp;1
+                                        <i class="bi bi-tag-fill"></i> Chrome, Linux&nbsp;&nbsp;&nbsp;2
                                     </span>
                                     </a>
                             </div>
@@ -502,22 +505,22 @@ Then el sistema muestra el mensaje de error de edicion "Todos los campos obligat
                     <td>
                         <i class="bi bi-card-checklist"></i> Number of Scenarios
                     </td>
-                    <td>1</td>
+                    <td>2</td>
                     <td>
                         <i class="bi bi-stopwatch"></i> Total
                         Duration
                     </td>
-                    <td>9s</td>
+                    <td>24s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-caret-right"></i> Total Number of Test Cases
                     </td>
-                    <td>1</td>
+                    <td>2</td>
                     <td>
                         <i class="bi bi-trophy"></i> Fastest Test
                     </td>
-                    <td>9s</td>
+                    <td>8s</td>
                 </tr>
                 <tr scope="row">
                     <td>
@@ -528,30 +531,30 @@ Then el sistema muestra el mensaje de error de edicion "Todos los campos obligat
                         <i class="bi bi-skip-start"></i> Slowest
                         Test
                     </td>
-                    <td>9s</td>
+                    <td>11s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-flag-fill"></i> Tests Started
                     </td>
-                    <td>May 16, 2026 16:39:05</td>
+                    <td>May 16, 2026 17:41:24</td>
                     <td>
                         <i class="bi bi-stopwatch"></i> Average
                         Execution Time
                     </td>
-                    <td>9s</td>
+                    <td>10s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stop-circle"></i> Tests
                         Finished
                     </td>
-                    <td>May 16, 2026 16:39:15</td>
+                    <td>May 16, 2026 17:41:49</td>
                     <td>
                         <i class="bi bi-stopwatch-fill"></i> Total
                         Execution Time
                     </td>
-                    <td>9s</td>
+                    <td>20s</td>
                 </tr>
                 </tbody>
             </table>
@@ -576,23 +579,43 @@ Then el sistema muestra el mensaje de error de edicion "Todos los campos obligat
                                                                 <tbody>
                                                                     <tr class="scenario-result ERROR">
                                                                         <td>
-                                                                                <a href="09ad04306b0120eebec8aa391510177b3afbc423e9810972099d6f04edec1543.html">HU-05 Editar informacion de empleado</a>
+                                                                                <a href="f42783cc88fc4153ba445620ba5787cca5517c67e51653366ffe6186606f3e10.html">HU-07 Crear usuario del sistema</a>
                                                                         </td>
-                                                                        <td data-order="Campos obligatorios vacios al editar">
-                                                                                    <a href="ced41a98131aaf122b21bbe714708297e63d4efe85236f2e84e5e14f00a3f86f.html">Campos obligatorios vacios al editar</a>
+                                                                        <td data-order="Creacion exitosa de usuario">
+                                                                                    <a href="85516cbaa47356be9d5d8ca163e80d657164c274db06f52c618ca73e0b8645e4.html">Creacion exitosa de usuario</a>
                                                                         </td>
                                                                         <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
                                                                         </td>
-                                                                        <td>6</td>
-                                                                        <td>Given el administrador ha iniciado sesion para edicion de empleados
-Given existe un empleado registrado para la prueba de edicion
-When el usuario busca y abre el modal de edicion del empleado
-And el usuario borra los campos obligatorios del modal de edicion
-And el usuario guarda los cambios en el modal
-Then el sistema muestra el mensaje de error de edicion "Todos los campos obligatorios deben ser diligenciados"
+                                                                        <td>4</td>
+                                                                        <td>Given el administrador ha iniciado sesion para gestion de usuarios
+Given existe un empleado activo disponible para asignar usuario
+When el usuario diligencia el formulario de creacion de usuario
+Then el sistema muestra el mensaje de exito de usuario "Usuario creado exitosamente"
 </td>
-                                                                        <td data-order="1778967545">16:39:05</td>
-                                                                        <td>9s 475ms</td>
+                                                                        <td data-order="1778971284">17:41:24</td>
+                                                                        <td>11s 398ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon ' title='ERROR'></i></a> <span
+                                                                                    style="display:none">ERROR</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result ERROR">
+                                                                        <td>
+                                                                                <a href="f42783cc88fc4153ba445620ba5787cca5517c67e51653366ffe6186606f3e10.html">HU-07 Crear usuario del sistema</a>
+                                                                        </td>
+                                                                        <td data-order="Nombre de usuario duplicado">
+                                                                                    <a href="4b0616f40b989a4b710cdaeb66bd6a765386f0cbcd280d823b38533dffdd641a.html">Nombre de usuario duplicado</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
+                                                                        </td>
+                                                                        <td>5</td>
+                                                                        <td>Given el administrador ha iniciado sesion para gestion de usuarios
+Given existe un empleado activo disponible para asignar usuario
+And el usuario crea un usuario de prueba para verificar duplicado
+When el usuario intenta crear otro usuario con el mismo nombre de usuario
+Then el sistema muestra el mensaje de error de usuario "Ya existe un usuario con ese nombre de usuario"
+</td>
+                                                                        <td data-order="1778971300">17:41:40</td>
+                                                                        <td>8s 697ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon ' title='ERROR'></i></a> <span
                                                                                     style="display:none">ERROR</span>
                                                                         </td>
@@ -622,7 +645,7 @@ Then el sistema muestra el mensaje de error de edicion "Todos los campos obligat
                             <div>
                                     <a href="46b54d9084ba9783130da16408afb27a4e4620f6bd966e731510c7395b9ddf5c.html">
                                     <span class="tag-badge badge" style="background-color:#fe6c2d; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Chrome, Linux&nbsp;&nbsp;&nbsp;1
+                                        <i class="bi bi-tag-fill"></i> Chrome, Linux&nbsp;&nbsp;&nbsp;2
                                     </span>
                                     </a>
                             </div>
@@ -676,7 +699,7 @@ Then el sistema muestra el mensaje de error de edicion "Todos los campos obligat
             datasets: [{
                 label: 'Test Results',
                 fill: false,
-                data: [0,0,0,0,0,0,1,0],
+                data: [0,0,0,0,0,0,2,0],
                 backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                 borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                 borderWidth: 1,
@@ -772,7 +795,7 @@ Then el sistema muestra el mensaje de error de edicion "Todos los campos obligat
             datasets: [
                 {
                     label: 'Automated',
-                    data: [0,0,0,0,0,0,1,0],
+                    data: [0,0,0,0,0,0,2,0],
                     backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                     borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                     borderWidth: 1
@@ -855,7 +878,7 @@ Then el sistema muestra el mensaje de error de edicion "Todos los campos obligat
             datasets: [{
                 label: 'Number of tests per duration',
                 fill: false,
-                data: ['0','1','0','0','0','0','0','0'],
+                data: ['0','1','1','0','0','0','0','0'],
                 backgroundColor: 'rgba(83, 146, 255,0.5)',
                 borderColor: 'rgba(83, 146, 255, 1)',
             }]
@@ -918,14 +941,14 @@ Then el sistema muestra el mensaje de error de edicion "Todos los campos obligat
 
         const coverageReports = [
             {
-                title: 'HU-05 Editar informacion de empleado',
+                title: 'HU-07 Crear usuario del sistema',
                 result: 'ERROR',
-                link: "09ad04306b0120eebec8aa391510177b3afbc423e9810972099d6f04edec1543.html"
+                link: "f42783cc88fc4153ba445620ba5787cca5517c67e51653366ffe6186606f3e10.html"
             },
         ]
         const coverageData = {
             labels: [
-                'HU-05 Editar informacion de empleado',
+                'HU-07 Crear usuario del sistema',
             ],
             datasets: [
                 {
@@ -960,7 +983,7 @@ Then el sistema muestra el mensaje de error de edicion "Todos los campos obligat
                 },
                 {
                     label: ['Errors'],
-                    data: [1],
+                    data: [2],
                     backgroundColor: [ 'rgba(255, 97, 8, 0.5)' ]
                 },
                 {

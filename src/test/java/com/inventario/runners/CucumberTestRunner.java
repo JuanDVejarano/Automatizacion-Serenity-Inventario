@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
         "pretty",
         "json:target/cucumber-reports/cucumber.json"
     },
-    tags = ""
+    tags = "@autenticacion or @roles or @empleados or @usuarios"
 )
 public class CucumberTestRunner {
 }

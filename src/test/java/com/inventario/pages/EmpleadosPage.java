@@ -172,12 +172,11 @@ public class EmpleadosPage extends PageObject {
 
     // Simula lista vacía usando la API de Angular ng.getComponent (disponible en modo dev)
     public void simulateEmptyList() {
+        // Angular 17 signals: .set() en un signal programa el re-render automaticamente
         evaluateJavascript(
-            "var el = document.querySelector('app-empleados');" +
-            "var comp = ng.getComponent(el);" +
+            "var comp = ng.getComponent(document.querySelector('app-empleados'));" +
             "comp.empleados.set([]);" +
-            "comp.cargando.set(false);" +
-            "ng.markDirty(comp);");
+            "comp.cargando.set(false);");
     }
 
     public String getEstadoVacioMessage() {

@@ -1,3 +1,4 @@
+@empleados
 Feature: HU-06 Listar y buscar empleados
   Como usuario con rol Recursos Humanos o Administrador
   Quiero listar y buscar empleados en el sistema

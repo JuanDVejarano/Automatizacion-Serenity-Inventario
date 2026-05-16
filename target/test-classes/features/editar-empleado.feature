@@ -1,3 +1,4 @@
+@empleados
 Feature: HU-05 Editar informacion de empleado
   Como usuario con rol Recursos Humanos o Administrador
   Quiero editar la informacion de un empleado

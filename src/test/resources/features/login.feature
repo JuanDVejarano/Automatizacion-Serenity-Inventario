@@ -1,3 +1,4 @@
+@autenticacion
 Feature: HU-01 Iniciar sesion en el sistema
   Como usuario del sistema
   Quiero iniciar sesion con mis credenciales
