@@ -1,5 +1,7 @@
 com/inventario/steps/LoginStepDefinitions.class
+com/inventario/pages/UnauthorizedPage.class
 com/inventario/steps/LogoutStepDefinitions.class
 com/inventario/pages/LoginPage.class
 com/inventario/pages/DashboardPage.class
 com/inventario/runners/CucumberTestRunner.class
+com/inventario/steps/RolesStepDefinitions.class

@@ -17,19 +17,18 @@ public class DashboardPage extends PageObject {
     private WebElementFacade logoutButton;
 
     // exp: 9999999999 = año 2286, siempre vigente
-    private static final String VALID_TOKEN = buildToken();
+    public void setValidSession() {
+        setSessionWithRole("Administrador");
+    }
 
-    private static String buildToken() {
+    public void setSessionWithRole(String role) {
         Base64.Encoder enc = Base64.getUrlEncoder().withoutPadding();
         String header = enc.encodeToString(
             "{\"alg\":\"HS256\",\"typ\":\"JWT\"}".getBytes(StandardCharsets.UTF_8));
-        String payload = enc.encodeToString(
-            "{\"idUsuario\":1,\"usuario\":\"admin\",\"rol\":\"Administrador\",\"exp\":9999999999}".getBytes(StandardCharsets.UTF_8));
-        return header + "." + payload + ".fakesignature";
-    }
-
-    public void setValidSession() {
-        evaluateJavascript("localStorage.setItem('access_token', '" + VALID_TOKEN + "')");
+        String payloadJson = "{\"idUsuario\":1,\"usuario\":\"admin\",\"rol\":\"" + role + "\",\"exp\":9999999999}";
+        String payload = enc.encodeToString(payloadJson.getBytes(StandardCharsets.UTF_8));
+        String token = header + "." + payload + ".fakesignature";
+        evaluateJavascript("localStorage.setItem('access_token', '" + token + "')");
     }
 
     public void clearSession() {
@@ -71,5 +70,38 @@ public class DashboardPage extends PageObject {
 
     public int getOpenTabCount() {
         return getDriver().getWindowHandles().size();
+    }
+
+    public void navigateTo(String path) {
+        getDriver().navigate().to("http://localhost:4200" + path);
+    }
+
+    // Normaliza tildes con NFD para comparar nombres de módulos feature↔DOM
+    private static final String NORM_FN =
+        "function norm(s){return s.normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').toLowerCase();}";
+
+    public boolean isModuleEnabled(String moduleName) {
+        String script = NORM_FN +
+            "var t='" + moduleName + "';" +
+            "return Array.from(document.querySelectorAll('a.module-card'))" +
+            ".some(function(e){var m=e.querySelector('.module-name');" +
+            "return m&&norm(m.textContent.trim())===norm(t);});";
+        return Boolean.TRUE.equals(evaluateJavascript(script));
+    }
+
+    public boolean isModuleDisabled(String moduleName) {
+        String script = NORM_FN +
+            "var t='" + moduleName + "';" +
+            "return Array.from(document.querySelectorAll('.module-card--disabled'))" +
+            ".some(function(e){var m=e.querySelector('.module-name');" +
+            "return m&&norm(m.textContent.trim())===norm(t);});";
+        return Boolean.TRUE.equals(evaluateJavascript(script));
+    }
+
+    public boolean hasRolesManagementModule() {
+        String script =
+            "return Array.from(document.querySelectorAll('.module-name'))" +
+            ".some(function(e){return e.textContent.toLowerCase().includes('rol');});";
+        return Boolean.TRUE.equals(evaluateJavascript(script));
     }
 }
