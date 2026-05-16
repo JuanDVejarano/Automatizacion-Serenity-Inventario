@@ -1,9 +1,11 @@
 com/inventario/pages/LoginPage.class
 com/inventario/steps/RegistrarEmpleadoStepDefinitions.class
+com/inventario/pages/EmpleadosPage.class
 com/inventario/pages/DashboardPage.class
 com/inventario/steps/RolesStepDefinitions.class
 com/inventario/pages/RegistrarEmpleadoPage.class
 com/inventario/steps/LoginStepDefinitions.class
+com/inventario/steps/EditarEmpleadoStepDefinitions.class
 com/inventario/pages/UnauthorizedPage.class
 com/inventario/steps/LogoutStepDefinitions.class
 com/inventario/runners/CucumberTestRunner.class

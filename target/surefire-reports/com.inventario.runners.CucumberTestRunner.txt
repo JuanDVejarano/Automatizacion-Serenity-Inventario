@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.inventario.runners.CucumberTestRunner
 -------------------------------------------------------------------------------
-Tests run: 35, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 85.20 s -- in com.inventario.runners.CucumberTestRunner
+Tests run: 42, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 120.6 s -- in com.inventario.runners.CucumberTestRunner
