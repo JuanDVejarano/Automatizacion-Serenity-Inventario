@@ -7,7 +7,7 @@ Proyecto de automatización de pruebas para la HU-01 (Inicio de sesión) del sis
 ## Requisitos previos
 
 | Herramienta | Versión mínima |
-|-------------|----------------|
+| ----------- | -------------- |
 | Java        | 17             |
 | Maven       | 3.8+           |
 
@@ -64,12 +64,12 @@ explorer.exe $(wslpath -w target/site/serenity/index.html)
 
 ## Escenarios cubiertos (HU-01)
 
-| Escenario | Datos de entrada | Resultado esperado |
-|-----------|------------------|--------------------|
-| Login exitoso | usuario: `admin`, clave: `admin1412` | Redirige a `/dashboard` |
-| Contraseña muy corta | clave de 6 caracteres o menos | Mensaje: _"La contraseña debe tener más de 6 caracteres"_ |
-| Credenciales incorrectas | usuario/clave que no existen | Mensaje: _"Usuario o contraseña incorrectos"_ |
-| Campos vacíos | Sin ingresar nada | Mensaje: _"Todos los campos son obligatorios"_ |
+| Escenario                | Datos de entrada                     | Resultado esperado                                        |
+| ------------------------ | ------------------------------------ | --------------------------------------------------------- |
+| Login exitoso            | usuario: `admin`, clave: `admin1412` | Redirige a `/dashboard`                                   |
+| Contraseña muy corta     | clave de 6 caracteres o menos        | Mensaje: _"La contraseña debe tener más de 6 caracteres"_ |
+| Credenciales incorrectas | usuario/clave que no existen         | Mensaje: _"Usuario o contraseña incorrectos"_             |
+| Campos vacíos            | Sin ingresar nada                    | Mensaje: _"Todos los campos son obligatorios"_            |
 
 ---
 
@@ -120,9 +120,10 @@ Verifica que el servidor esté corriendo antes de lanzar los tests.
 
 **Chrome no inicia / libgbm error**
 Las librerías en `.libs/` resuelven esto automáticamente. Si el error persiste, instala la dependencia del sistema:
+
 ```bash
 sudo apt-get install -y libgbm1
 ```
 
 **Los tests fallan por timeout**
-El login hace una petición al backend. Verifica que la API también esté corriendo (`http://localhost:3000` o el puerto configurado).
+El login hace una petición al backend. Verifica que la API también esté corriendo (`http://localhost:3000` o el puerto configurado)
