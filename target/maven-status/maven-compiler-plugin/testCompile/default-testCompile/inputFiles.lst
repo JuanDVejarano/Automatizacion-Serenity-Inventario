@@ -1,3 +1,5 @@
+/home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/pages/DashboardPage.java
 /home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/pages/LoginPage.java
 /home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/runners/CucumberTestRunner.java
 /home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/steps/LoginStepDefinitions.java
+/home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/steps/LogoutStepDefinitions.java
