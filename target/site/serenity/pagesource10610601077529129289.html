@@ -1,0 +1,691 @@
+<html lang='en'><head><link href='prism/prism.css' rel='stylesheet' /></head><body><script src='prism/prism.js'></script><body><div><pre><code class='language-html'>&lt;html lang="en"&gt;<br/>
+ &lt;head&gt;<br/>
+  &lt;script type="module" src="/@vite/client"&gt;&lt;/script&gt;<br/>
+  &lt;meta charset="utf-8"&gt;<br/>
+  &lt;title&gt;Inventario — Sistema de Gestión&lt;/title&gt;<br/>
+  &lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;<br/>
+  &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""&gt;<br/>
+  &lt;link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"&gt;&lt;base href="/"&gt;<br/>
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;<br/>
+  &lt;link rel="icon" type="image/x-icon" href="favicon.ico"&gt;<br/>
+  &lt;link rel="stylesheet" href="styles.css"&gt;<br/>
+  &lt;style&gt;<br/>
+<br/>
+[_nghost-ng-c2231970034] {<br/>
+  display: flex;<br/>
+  min-height: 100vh;<br/>
+}<br/>
+.shell[_ngcontent-ng-c2231970034] {<br/>
+  display: flex;<br/>
+  width: 100%;<br/>
+  min-height: 100vh;<br/>
+  background: var(--clr-bg);<br/>
+}<br/>
+.sidebar[_ngcontent-ng-c2231970034] {<br/>
+  width: 260px;<br/>
+  flex-shrink: 0;<br/>
+  background: #0f1117;<br/>
+  display: flex;<br/>
+  flex-direction: column;<br/>
+  padding: 0 0 1.5rem;<br/>
+  position: sticky;<br/>
+  top: 0;<br/>
+  height: 100vh;<br/>
+  overflow-y: auto;<br/>
+}<br/>
+@media (max-width: 768px) {<br/>
+  .sidebar[_ngcontent-ng-c2231970034] {<br/>
+    display: none;<br/>
+  }<br/>
+}<br/>
+.sidebar-brand[_ngcontent-ng-c2231970034] {<br/>
+  display: flex;<br/>
+  align-items: center;<br/>
+  gap: 0.75rem;<br/>
+  padding: 1.5rem 1.5rem 1rem;<br/>
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);<br/>
+  margin-bottom: 0.75rem;<br/>
+  text-decoration: none;<br/>
+  color: inherit;<br/>
+  transition: opacity var(--transition);<br/>
+}<br/>
+.sidebar-brand[_ngcontent-ng-c2231970034]:hover {<br/>
+  opacity: 0.8;<br/>
+  text-decoration: none;<br/>
+}<br/>
+.sidebar-brand[_ngcontent-ng-c2231970034]   .brand-icon[_ngcontent-ng-c2231970034] {<br/>
+  width: 36px;<br/>
+  height: 36px;<br/>
+  background: var(--clr-primary);<br/>
+  border-radius: 9px;<br/>
+  display: flex;<br/>
+  align-items: center;<br/>
+  justify-content: center;<br/>
+  flex-shrink: 0;<br/>
+}<br/>
+.sidebar-brand[_ngcontent-ng-c2231970034]   .brand-icon[_ngcontent-ng-c2231970034]   svg[_ngcontent-ng-c2231970034] {<br/>
+  width: 18px;<br/>
+  height: 18px;<br/>
+  color: #fff;<br/>
+}<br/>
+.sidebar-brand[_ngcontent-ng-c2231970034]   .brand-name[_ngcontent-ng-c2231970034] {<br/>
+  font-size: 1rem;<br/>
+  font-weight: 700;<br/>
+  color: #fff;<br/>
+  letter-spacing: -0.3px;<br/>
+}<br/>
+.sidebar-brand[_ngcontent-ng-c2231970034]   .brand-sub[_ngcontent-ng-c2231970034] {<br/>
+  font-size: 0.7rem;<br/>
+  color: rgba(255, 255, 255, 0.35);<br/>
+  letter-spacing: 0.3px;<br/>
+  text-transform: uppercase;<br/>
+}<br/>
+.nav-section[_ngcontent-ng-c2231970034] {<br/>
+  padding: 0 0.75rem;<br/>
+  margin-bottom: 0.25rem;<br/>
+}<br/>
+.nav-section[_ngcontent-ng-c2231970034]   .nav-label[_ngcontent-ng-c2231970034] {<br/>
+  font-size: 0.68rem;<br/>
+  font-weight: 600;<br/>
+  letter-spacing: 0.8px;<br/>
+  text-transform: uppercase;<br/>
+  color: rgba(255, 255, 255, 0.25);<br/>
+  padding: 0.75rem 0.75rem 0.4rem;<br/>
+}<br/>
+.nav-item[_ngcontent-ng-c2231970034] {<br/>
+  display: flex;<br/>
+  align-items: center;<br/>
+  gap: 0.75rem;<br/>
+  padding: 0.6rem 0.85rem;<br/>
+  border-radius: var(--radius-sm);<br/>
+  color: rgba(255, 255, 255, 0.55);<br/>
+  font-size: 0.875rem;<br/>
+  font-weight: 500;<br/>
+  text-decoration: none;<br/>
+  transition: background var(--transition), color var(--transition);<br/>
+  cursor: pointer;<br/>
+}<br/>
+.nav-item[_ngcontent-ng-c2231970034]   svg[_ngcontent-ng-c2231970034] {<br/>
+  width: 18px;<br/>
+  height: 18px;<br/>
+  flex-shrink: 0;<br/>
+}<br/>
+.nav-item[_ngcontent-ng-c2231970034]:hover {<br/>
+  background: rgba(255, 255, 255, 0.06);<br/>
+  color: rgba(255, 255, 255, 0.9);<br/>
+}<br/>
+.nav-item.active[_ngcontent-ng-c2231970034] {<br/>
+  background: rgba(67, 97, 238, 0.2);<br/>
+  color: #818cf8;<br/>
+}<br/>
+.nav-item.active[_ngcontent-ng-c2231970034]   svg[_ngcontent-ng-c2231970034] {<br/>
+  color: #818cf8;<br/>
+}<br/>
+.nav-item--disabled[_ngcontent-ng-c2231970034] {<br/>
+  opacity: 0.35;<br/>
+  cursor: not-allowed;<br/>
+  pointer-events: none;<br/>
+}<br/>
+.sidebar-footer[_ngcontent-ng-c2231970034] {<br/>
+  margin-top: auto;<br/>
+  padding: 0 0.75rem;<br/>
+  border-top: 1px solid rgba(255, 255, 255, 0.06);<br/>
+  padding-top: 1rem;<br/>
+}<br/>
+.user-card[_ngcontent-ng-c2231970034] {<br/>
+  display: flex;<br/>
+  align-items: center;<br/>
+  gap: 0.75rem;<br/>
+  padding: 0.75rem;<br/>
+  border-radius: var(--radius-md);<br/>
+  background: rgba(255, 255, 255, 0.04);<br/>
+}<br/>
+.user-card[_ngcontent-ng-c2231970034]   .avatar[_ngcontent-ng-c2231970034] {<br/>
+  width: 36px;<br/>
+  height: 36px;<br/>
+  background:<br/>
+    linear-gradient(<br/>
+      135deg,<br/>
+      var(--clr-primary),<br/>
+      var(--clr-accent));<br/>
+  border-radius: 50%;<br/>
+  display: flex;<br/>
+  align-items: center;<br/>
+  justify-content: center;<br/>
+  font-size: 0.875rem;<br/>
+  font-weight: 700;<br/>
+  color: #fff;<br/>
+  flex-shrink: 0;<br/>
+}<br/>
+.user-card[_ngcontent-ng-c2231970034]   .user-info[_ngcontent-ng-c2231970034] {<br/>
+  flex: 1;<br/>
+  overflow: hidden;<br/>
+}<br/>
+.user-card[_ngcontent-ng-c2231970034]   .user-info[_ngcontent-ng-c2231970034]   .user-name[_ngcontent-ng-c2231970034] {<br/>
+  font-size: 0.875rem;<br/>
+  font-weight: 600;<br/>
+  color: #fff;<br/>
+  white-space: nowrap;<br/>
+  overflow: hidden;<br/>
+  text-overflow: ellipsis;<br/>
+}<br/>
+.user-card[_ngcontent-ng-c2231970034]   .user-info[_ngcontent-ng-c2231970034]   .user-role[_ngcontent-ng-c2231970034] {<br/>
+  font-size: 0.72rem;<br/>
+  color: rgba(255, 255, 255, 0.4);<br/>
+  white-space: nowrap;<br/>
+  overflow: hidden;<br/>
+  text-overflow: ellipsis;<br/>
+}<br/>
+.user-card[_ngcontent-ng-c2231970034]   .btn-logout-icon[_ngcontent-ng-c2231970034] {<br/>
+  width: 28px;<br/>
+  height: 28px;<br/>
+  display: flex;<br/>
+  align-items: center;<br/>
+  justify-content: center;<br/>
+  border-radius: var(--radius-sm);<br/>
+  color: rgba(255, 255, 255, 0.3);<br/>
+  transition: background var(--transition), color var(--transition);<br/>
+  flex-shrink: 0;<br/>
+}<br/>
+.user-card[_ngcontent-ng-c2231970034]   .btn-logout-icon[_ngcontent-ng-c2231970034]   svg[_ngcontent-ng-c2231970034] {<br/>
+  width: 16px;<br/>
+  height: 16px;<br/>
+}<br/>
+.user-card[_ngcontent-ng-c2231970034]   .btn-logout-icon[_ngcontent-ng-c2231970034]:hover {<br/>
+  background: rgba(239, 68, 68, 0.15);<br/>
+  color: #f87171;<br/>
+}<br/>
+.main[_ngcontent-ng-c2231970034] {<br/>
+  flex: 1;<br/>
+  display: flex;<br/>
+  flex-direction: column;<br/>
+  overflow: hidden;<br/>
+}<br/>
+.topbar[_ngcontent-ng-c2231970034] {<br/>
+  display: flex;<br/>
+  align-items: center;<br/>
+  justify-content: space-between;<br/>
+  padding: 1rem 2rem;<br/>
+  background: var(--clr-surface);<br/>
+  border-bottom: 1px solid var(--clr-border);<br/>
+  position: sticky;<br/>
+  top: 0;<br/>
+  z-index: 10;<br/>
+}<br/>
+.topbar[_ngcontent-ng-c2231970034]   .topbar-title[_ngcontent-ng-c2231970034]   h1[_ngcontent-ng-c2231970034], <br/>
+.topbar[_ngcontent-ng-c2231970034]   .topbar-title[_ngcontent-ng-c2231970034]   h2[_ngcontent-ng-c2231970034] {<br/>
+  font-size: 1.125rem;<br/>
+  font-weight: 700;<br/>
+  color: var(--clr-text);<br/>
+  margin-bottom: 1px;<br/>
+}<br/>
+.topbar[_ngcontent-ng-c2231970034]   .topbar-title[_ngcontent-ng-c2231970034]   p[_ngcontent-ng-c2231970034], <br/>
+.topbar[_ngcontent-ng-c2231970034]   .topbar-title[_ngcontent-ng-c2231970034]   span[_ngcontent-ng-c2231970034] {<br/>
+  font-size: 0.8rem;<br/>
+  color: var(--clr-text-muted);<br/>
+}<br/>
+.topbar[_ngcontent-ng-c2231970034]   .topbar-actions[_ngcontent-ng-c2231970034] {<br/>
+  display: flex;<br/>
+  align-items: center;<br/>
+  gap: 0.75rem;<br/>
+}<br/>
+.badge-role[_ngcontent-ng-c2231970034] {<br/>
+  padding: 0.3rem 0.75rem;<br/>
+  background: var(--clr-primary-light);<br/>
+  color: var(--clr-primary-dark);<br/>
+  border-radius: var(--radius-full);<br/>
+  font-size: 0.75rem;<br/>
+  font-weight: 600;<br/>
+}<br/>
+.btn-logout[_ngcontent-ng-c2231970034] {<br/>
+  display: flex;<br/>
+  align-items: center;<br/>
+  gap: 0.5rem;<br/>
+  padding: 0.45rem 0.9rem;<br/>
+  border: 1.5px solid var(--clr-border);<br/>
+  border-radius: var(--radius-md);<br/>
+  font-size: 0.8125rem;<br/>
+  font-weight: 500;<br/>
+  color: var(--clr-text-muted);<br/>
+  background: transparent;<br/>
+  transition:<br/>
+    border-color var(--transition),<br/>
+    color var(--transition),<br/>
+    background var(--transition);<br/>
+}<br/>
+.btn-logout[_ngcontent-ng-c2231970034]   svg[_ngcontent-ng-c2231970034] {<br/>
+  width: 15px;<br/>
+  height: 15px;<br/>
+}<br/>
+.btn-logout[_ngcontent-ng-c2231970034]:hover {<br/>
+  border-color: var(--clr-danger);<br/>
+  color: var(--clr-danger);<br/>
+  background: var(--clr-danger-bg);<br/>
+}<br/>
+@media (min-width: 769px) {<br/>
+  .btn-logout[_ngcontent-ng-c2231970034] {<br/>
+    display: none;<br/>
+  }<br/>
+}<br/>
+.content[_ngcontent-ng-c2231970034] {<br/>
+  flex: 1;<br/>
+  padding: 2rem;<br/>
+  overflow-y: auto;<br/>
+}<br/>
+.welcome-banner[_ngcontent-ng-c2231970034] {<br/>
+  background:<br/>
+    linear-gradient(<br/>
+      120deg,<br/>
+      #0f1117 0%,<br/>
+      #302b63 100%);<br/>
+  border-radius: var(--radius-lg);<br/>
+  padding: 2rem 2.5rem;<br/>
+  margin-bottom: 2rem;<br/>
+  display: flex;<br/>
+  align-items: center;<br/>
+  justify-content: space-between;<br/>
+  gap: 1.5rem;<br/>
+  overflow: hidden;<br/>
+  position: relative;<br/>
+}<br/>
+.welcome-banner[_ngcontent-ng-c2231970034]::after {<br/>
+  content: "";<br/>
+  position: absolute;<br/>
+  width: 300px;<br/>
+  height: 300px;<br/>
+  background: rgba(76, 201, 240, 0.08);<br/>
+  border-radius: 50%;<br/>
+  right: -80px;<br/>
+  top: -80px;<br/>
+  pointer-events: none;<br/>
+}<br/>
+.welcome-banner[_ngcontent-ng-c2231970034]   .banner-text[_ngcontent-ng-c2231970034] {<br/>
+  z-index: 1;<br/>
+}<br/>
+.welcome-banner[_ngcontent-ng-c2231970034]   .banner-text[_ngcontent-ng-c2231970034]   h3[_ngcontent-ng-c2231970034] {<br/>
+  font-size: 1.4rem;<br/>
+  font-weight: 800;<br/>
+  color: #fff;<br/>
+  letter-spacing: -0.4px;<br/>
+  margin-bottom: 0.35rem;<br/>
+}<br/>
+.welcome-banner[_ngcontent-ng-c2231970034]   .banner-text[_ngcontent-ng-c2231970034]   p[_ngcontent-ng-c2231970034] {<br/>
+  color: rgba(255, 255, 255, 0.55);<br/>
+  font-size: 0.9rem;<br/>
+}<br/>
+.welcome-banner[_ngcontent-ng-c2231970034]   .banner-icon[_ngcontent-ng-c2231970034] {<br/>
+  width: 64px;<br/>
+  height: 64px;<br/>
+  background: rgba(255, 255, 255, 0.06);<br/>
+  border-radius: var(--radius-md);<br/>
+  display: flex;<br/>
+  align-items: center;<br/>
+  justify-content: center;<br/>
+  flex-shrink: 0;<br/>
+  z-index: 1;<br/>
+}<br/>
+.welcome-banner[_ngcontent-ng-c2231970034]   .banner-icon[_ngcontent-ng-c2231970034]   svg[_ngcontent-ng-c2231970034] {<br/>
+  width: 32px;<br/>
+  height: 32px;<br/>
+  color: #4cc9f0;<br/>
+}<br/>
+.stats-grid[_ngcontent-ng-c2231970034] {<br/>
+  display: grid;<br/>
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));<br/>
+  gap: 1.25rem;<br/>
+  margin-bottom: 2rem;<br/>
+}<br/>
+.stat-card[_ngcontent-ng-c2231970034] {<br/>
+  background: var(--clr-surface);<br/>
+  border: 1px solid var(--clr-border);<br/>
+  border-radius: var(--radius-md);<br/>
+  padding: 1.25rem 1.5rem;<br/>
+  display: flex;<br/>
+  align-items: center;<br/>
+  gap: 1rem;<br/>
+  transition: box-shadow var(--transition), transform var(--transition);<br/>
+}<br/>
+.stat-card[_ngcontent-ng-c2231970034]:hover {<br/>
+  box-shadow: var(--shadow-md);<br/>
+  transform: translateY(-2px);<br/>
+}<br/>
+.stat-card[_ngcontent-ng-c2231970034]   .stat-icon[_ngcontent-ng-c2231970034] {<br/>
+  width: 44px;<br/>
+  height: 44px;<br/>
+  border-radius: var(--radius-md);<br/>
+  display: flex;<br/>
+  align-items: center;<br/>
+  justify-content: center;<br/>
+  flex-shrink: 0;<br/>
+}<br/>
+.stat-card[_ngcontent-ng-c2231970034]   .stat-icon[_ngcontent-ng-c2231970034]   svg[_ngcontent-ng-c2231970034] {<br/>
+  width: 22px;<br/>
+  height: 22px;<br/>
+}<br/>
+.stat-card[_ngcontent-ng-c2231970034]   .stat-icon.blue[_ngcontent-ng-c2231970034] {<br/>
+  background: rgba(67, 97, 238, 0.1);<br/>
+  color: var(--clr-primary);<br/>
+}<br/>
+.stat-card[_ngcontent-ng-c2231970034]   .stat-icon.green[_ngcontent-ng-c2231970034] {<br/>
+  background: rgba(16, 185, 129, 0.1);<br/>
+  color: var(--clr-success);<br/>
+}<br/>
+.stat-card[_ngcontent-ng-c2231970034]   .stat-icon.amber[_ngcontent-ng-c2231970034] {<br/>
+  background: rgba(245, 158, 11, 0.1);<br/>
+  color: var(--clr-warning);<br/>
+}<br/>
+.stat-card[_ngcontent-ng-c2231970034]   .stat-icon.cyan[_ngcontent-ng-c2231970034] {<br/>
+  background: rgba(76, 201, 240, 0.12);<br/>
+  color: #0ea5e9;<br/>
+}<br/>
+.stat-card[_ngcontent-ng-c2231970034]   .stat-body[_ngcontent-ng-c2231970034]   .stat-label[_ngcontent-ng-c2231970034] {<br/>
+  font-size: 0.78rem;<br/>
+  color: var(--clr-text-muted);<br/>
+  font-weight: 500;<br/>
+  margin-bottom: 0.15rem;<br/>
+}<br/>
+.stat-card[_ngcontent-ng-c2231970034]   .stat-body[_ngcontent-ng-c2231970034]   .stat-value[_ngcontent-ng-c2231970034] {<br/>
+  font-size: 1.5rem;<br/>
+  font-weight: 800;<br/>
+  color: var(--clr-text);<br/>
+  letter-spacing: -0.5px;<br/>
+  line-height: 1.2;<br/>
+}<br/>
+.section-title[_ngcontent-ng-c2231970034] {<br/>
+  font-size: 0.875rem;<br/>
+  font-weight: 600;<br/>
+  color: var(--clr-text-muted);<br/>
+  text-transform: uppercase;<br/>
+  letter-spacing: 0.5px;<br/>
+  margin-bottom: 1rem;<br/>
+}<br/>
+.modules-grid[_ngcontent-ng-c2231970034] {<br/>
+  display: grid;<br/>
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));<br/>
+  gap: 1.25rem;<br/>
+  list-style: none;<br/>
+  padding: 0;<br/>
+  margin: 0;<br/>
+}<br/>
+.module-card[_ngcontent-ng-c2231970034] {<br/>
+  display: block;<br/>
+  background: var(--clr-surface);<br/>
+  border: 1px solid var(--clr-border);<br/>
+  border-radius: var(--radius-md);<br/>
+  padding: 1.5rem;<br/>
+  cursor: pointer;<br/>
+  text-decoration: none;<br/>
+  color: inherit;<br/>
+  transition:<br/>
+    box-shadow var(--transition),<br/>
+    transform var(--transition),<br/>
+    border-color var(--transition);<br/>
+}<br/>
+.module-card[_ngcontent-ng-c2231970034]:hover {<br/>
+  text-decoration: none;<br/>
+}<br/>
+.module-card[_ngcontent-ng-c2231970034]:not(.module-card--disabled):hover {<br/>
+  box-shadow: var(--shadow-md);<br/>
+  transform: translateY(-3px);<br/>
+  border-color: var(--clr-primary);<br/>
+}<br/>
+.module-card--disabled[_ngcontent-ng-c2231970034] {<br/>
+  opacity: 0.55;<br/>
+  cursor: default;<br/>
+  pointer-events: none;<br/>
+}<br/>
+.module-card[_ngcontent-ng-c2231970034]   .module-icon[_ngcontent-ng-c2231970034] {<br/>
+  width: 48px;<br/>
+  height: 48px;<br/>
+  border-radius: var(--radius-md);<br/>
+  display: flex;<br/>
+  align-items: center;<br/>
+  justify-content: center;<br/>
+  margin-bottom: 1rem;<br/>
+}<br/>
+.module-card[_ngcontent-ng-c2231970034]   .module-icon[_ngcontent-ng-c2231970034]   svg[_ngcontent-ng-c2231970034] {<br/>
+  width: 24px;<br/>
+  height: 24px;<br/>
+}<br/>
+.module-card[_ngcontent-ng-c2231970034]   .module-icon.blue[_ngcontent-ng-c2231970034] {<br/>
+  background: rgba(67, 97, 238, 0.1);<br/>
+  color: var(--clr-primary);<br/>
+}<br/>
+.module-card[_ngcontent-ng-c2231970034]   .module-icon.green[_ngcontent-ng-c2231970034] {<br/>
+  background: rgba(16, 185, 129, 0.1);<br/>
+  color: var(--clr-success);<br/>
+}<br/>
+.module-card[_ngcontent-ng-c2231970034]   .module-icon.amber[_ngcontent-ng-c2231970034] {<br/>
+  background: rgba(245, 158, 11, 0.1);<br/>
+  color: var(--clr-warning);<br/>
+}<br/>
+.module-card[_ngcontent-ng-c2231970034]   .module-icon.purple[_ngcontent-ng-c2231970034] {<br/>
+  background: rgba(139, 92, 246, 0.1);<br/>
+  color: #8b5cf6;<br/>
+}<br/>
+.module-card[_ngcontent-ng-c2231970034]   .module-icon.cyan[_ngcontent-ng-c2231970034] {<br/>
+  background: rgba(76, 201, 240, 0.12);<br/>
+  color: #0ea5e9;<br/>
+}<br/>
+.module-card[_ngcontent-ng-c2231970034]   .module-icon.pink[_ngcontent-ng-c2231970034] {<br/>
+  background: rgba(236, 72, 153, 0.1);<br/>
+  color: #ec4899;<br/>
+}<br/>
+.module-card[_ngcontent-ng-c2231970034]   .module-name[_ngcontent-ng-c2231970034] {<br/>
+  font-size: 0.9375rem;<br/>
+  font-weight: 700;<br/>
+  color: var(--clr-text);<br/>
+  margin-bottom: 0.3rem;<br/>
+}<br/>
+.module-card[_ngcontent-ng-c2231970034]   .module-desc[_ngcontent-ng-c2231970034] {<br/>
+  font-size: 0.8rem;<br/>
+  color: var(--clr-text-muted);<br/>
+  line-height: 1.5;<br/>
+}<br/>
+.module-badge[_ngcontent-ng-c2231970034] {<br/>
+  display: inline-block;<br/>
+  margin-top: 0.75rem;<br/>
+  font-size: 0.7rem;<br/>
+  font-weight: 600;<br/>
+  padding: 0.2rem 0.5rem;<br/>
+  border-radius: var(--radius-full);<br/>
+  background: rgba(245, 158, 11, 0.12);<br/>
+  color: var(--clr-warning);<br/>
+}<br/>
+.module-badge--locked[_ngcontent-ng-c2231970034] {<br/>
+  background: rgba(100, 116, 139, 0.12);<br/>
+  color: var(--clr-text-muted);<br/>
+}<br/>
+.nav-badge[_ngcontent-ng-c2231970034] {<br/>
+  margin-left: auto;<br/>
+  font-size: 0.6rem;<br/>
+  font-weight: 700;<br/>
+  padding: 0.15rem 0.45rem;<br/>
+  border-radius: var(--radius-full);<br/>
+  background: rgba(245, 158, 11, 0.15);<br/>
+  color: rgba(245, 158, 11, 0.9);<br/>
+  text-transform: uppercase;<br/>
+  letter-spacing: 0.04em;<br/>
+}<br/>
+.section-title[_ngcontent-ng-c2231970034] {<br/>
+  font-size: 0.75rem;<br/>
+  font-weight: 600;<br/>
+  color: var(--clr-text-muted);<br/>
+  text-transform: uppercase;<br/>
+  letter-spacing: 0.5px;<br/>
+  margin-bottom: 1rem;<br/>
+}<br/>
+.banner-greeting[_ngcontent-ng-c2231970034] {<br/>
+  font-size: 1.4rem;<br/>
+  font-weight: 800;<br/>
+  color: #fff;<br/>
+  letter-spacing: -0.4px;<br/>
+  margin-bottom: 0.35rem;<br/>
+}<br/>
+/*# sourceMappingURL=/dashboard.css.map */&lt;/style&gt;<br/>
+ &lt;/head&gt;<br/>
+ &lt;body&gt;&lt;app-root ng-version="20.3.12"&gt;<br/>
+   &lt;router-outlet&gt;&lt;/router-outlet&gt;<br/>
+   &lt;app-dashboard _nghost-ng-c2231970034=""&gt;<br/>
+    &lt;a _ngcontent-ng-c2231970034="" href="#main-content" class="skip-link"&gt;Saltar al contenido principal&lt;/a&gt;<br/>
+    &lt;div _ngcontent-ng-c2231970034="" class="shell"&gt;<br/>
+     &lt;aside _ngcontent-ng-c2231970034="" aria-label="Barra lateral de navegación" class="sidebar"&gt;<br/>
+      &lt;a _ngcontent-ng-c2231970034="" routerlink="/dashboard" aria-label="InvSystem — Ir al dashboard" class="sidebar-brand" href="/dashboard"&gt;<br/>
+       &lt;div _ngcontent-ng-c2231970034="" aria-hidden="true" class="brand-icon"&gt;<br/>
+        &lt;svg _ngcontent-ng-c2231970034="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+         &lt;path _ngcontent-ng-c2231970034="" stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10"&gt;&lt;/path&gt;<br/>
+        &lt;/svg&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div _ngcontent-ng-c2231970034=""&gt;<br/>
+        &lt;div _ngcontent-ng-c2231970034="" class="brand-name"&gt;<br/>
+         InvSystem<br/>
+        &lt;/div&gt;<br/>
+        &lt;div _ngcontent-ng-c2231970034="" class="brand-sub"&gt;<br/>
+         v1.0<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;&lt;/a&gt;<br/>
+      &lt;nav _ngcontent-ng-c2231970034="" aria-label="Módulos del sistema"&gt;<br/>
+       &lt;div _ngcontent-ng-c2231970034="" class="nav-section"&gt;<br/>
+        &lt;p _ngcontent-ng-c2231970034="" aria-hidden="true" class="nav-label"&gt;Principal&lt;/p&gt;<br/>
+        &lt;ul _ngcontent-ng-c2231970034="" class="nav-list"&gt;<br/>
+         &lt;li _ngcontent-ng-c2231970034=""&gt;&lt;a _ngcontent-ng-c2231970034="" routerlink="/dashboard" aria-current="page" class="nav-item active" href="/dashboard"&gt;<br/>
+           &lt;svg _ngcontent-ng-c2231970034="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+            &lt;rect _ngcontent-ng-c2231970034="" x="3" y="3" width="7" height="7"&gt;&lt;/rect&gt;&lt;rect _ngcontent-ng-c2231970034="" x="14" y="3" width="7" height="7"&gt;&lt;/rect&gt;&lt;rect _ngcontent-ng-c2231970034="" x="14" y="14" width="7" height="7"&gt;&lt;/rect&gt;&lt;rect _ngcontent-ng-c2231970034="" x="3" y="14" width="7" height="7"&gt;&lt;/rect&gt;<br/>
+           &lt;/svg&gt; Dashboard &lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div _ngcontent-ng-c2231970034="" class="nav-section"&gt;<br/>
+        &lt;p _ngcontent-ng-c2231970034="" aria-hidden="true" class="nav-label"&gt;Módulos&lt;/p&gt;<br/>
+        &lt;ul _ngcontent-ng-c2231970034="" class="nav-list"&gt;<br/>
+         &lt;li _ngcontent-ng-c2231970034=""&gt;&lt;a _ngcontent-ng-c2231970034="" routerlink="/ventas/ventas" class="nav-item" href="/ventas/ventas"&gt;<br/>
+           &lt;svg _ngcontent-ng-c2231970034="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+            &lt;path _ngcontent-ng-c2231970034="" stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2 9m5-9v9m4-9v9m5-9l-2 9"&gt;&lt;/path&gt;<br/>
+           &lt;/svg&gt; Ventas &lt;/a&gt;&lt;/li&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;!--container--&gt;<br/>
+        &lt;/ul&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/nav&gt;<br/>
+      &lt;div _ngcontent-ng-c2231970034="" class="sidebar-footer"&gt;<br/>
+       &lt;div _ngcontent-ng-c2231970034="" class="user-card"&gt;<br/>
+        &lt;div _ngcontent-ng-c2231970034="" aria-hidden="true" class="avatar"&gt;<br/>
+         A<br/>
+        &lt;/div&gt;<br/>
+        &lt;div _ngcontent-ng-c2231970034="" class="user-info"&gt;<br/>
+         &lt;div _ngcontent-ng-c2231970034="" class="user-name"&gt;<br/>
+          admin<br/>
+         &lt;/div&gt;<br/>
+         &lt;div _ngcontent-ng-c2231970034="" class="user-role"&gt;<br/>
+          Ventas<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;&lt;button _ngcontent-ng-c2231970034="" aria-label="Cerrar sesión" class="btn-logout-icon"&gt;<br/>
+         &lt;svg _ngcontent-ng-c2231970034="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+          &lt;path _ngcontent-ng-c2231970034="" stroke-linecap="round" stroke-linejoin="round" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"&gt;&lt;/path&gt;<br/>
+         &lt;/svg&gt;&lt;/button&gt;<br/>
+       &lt;/div&gt;&lt;!--container--&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/aside&gt;<br/>
+     &lt;main _ngcontent-ng-c2231970034="" id="main-content" class="main"&gt;<br/>
+      &lt;header _ngcontent-ng-c2231970034="" class="topbar"&gt;<br/>
+       &lt;div _ngcontent-ng-c2231970034="" class="topbar-title"&gt;<br/>
+        &lt;h1 _ngcontent-ng-c2231970034=""&gt;Dashboard&lt;/h1&gt;<br/>
+        &lt;p _ngcontent-ng-c2231970034=""&gt;Resumen general del sistema&lt;/p&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div _ngcontent-ng-c2231970034="" class="topbar-actions"&gt;<br/>
+        &lt;span _ngcontent-ng-c2231970034="" class="badge-role"&gt;&lt;span _ngcontent-ng-c2231970034="" class="sr-only"&gt;Rol actual: &lt;/span&gt;Ventas &lt;/span&gt;&lt;!--container--&gt;&lt;button _ngcontent-ng-c2231970034="" aria-label="Cerrar sesión" class="btn-logout"&gt;<br/>
+         &lt;svg _ngcontent-ng-c2231970034="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+          &lt;path _ngcontent-ng-c2231970034="" stroke-linecap="round" stroke-linejoin="round" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"&gt;&lt;/path&gt;<br/>
+         &lt;/svg&gt; Salir &lt;/button&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/header&gt;<br/>
+      &lt;div _ngcontent-ng-c2231970034="" class="content"&gt;<br/>
+       &lt;div _ngcontent-ng-c2231970034="" role="region" aria-label="Bienvenida" class="welcome-banner"&gt;<br/>
+        &lt;div _ngcontent-ng-c2231970034="" class="banner-text"&gt;<br/>
+         &lt;p _ngcontent-ng-c2231970034="" class="banner-greeting"&gt;Hola, &lt;strong _ngcontent-ng-c2231970034=""&gt;admin&lt;/strong&gt;&lt;/p&gt;<br/>
+         &lt;p _ngcontent-ng-c2231970034=""&gt;Tienes acceso como &lt;strong _ngcontent-ng-c2231970034=""&gt;Ventas&lt;/strong&gt;. Selecciona un módulo para comenzar.&lt;/p&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div _ngcontent-ng-c2231970034="" aria-hidden="true" class="banner-icon"&gt;<br/>
+         &lt;svg _ngcontent-ng-c2231970034="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="1.5"&gt;<br/>
+          &lt;path _ngcontent-ng-c2231970034="" stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10"&gt;&lt;/path&gt;<br/>
+         &lt;/svg&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;&lt;!--container--&gt;<br/>
+       &lt;section _ngcontent-ng-c2231970034="" aria-labelledby="modulos-heading"&gt;<br/>
+        &lt;h2 _ngcontent-ng-c2231970034="" id="modulos-heading" class="section-title"&gt;Módulos disponibles&lt;/h2&gt;<br/>
+        &lt;ul _ngcontent-ng-c2231970034="" class="modules-grid"&gt;<br/>
+         &lt;li _ngcontent-ng-c2231970034=""&gt;&lt;a _ngcontent-ng-c2231970034="" routerlink="/ventas/ventas" aria-label="Ir al módulo Ventas" class="module-card" href="/ventas/ventas"&gt;<br/>
+           &lt;div _ngcontent-ng-c2231970034="" aria-hidden="true" class="module-icon green"&gt;<br/>
+            &lt;svg _ngcontent-ng-c2231970034="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+             &lt;path _ngcontent-ng-c2231970034="" stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2 9m5-9v9m4-9v9m5-9l-2 9"&gt;&lt;/path&gt;<br/>
+            &lt;/svg&gt;<br/>
+           &lt;/div&gt;<br/>
+           &lt;div _ngcontent-ng-c2231970034="" class="module-name"&gt;<br/>
+            Ventas<br/>
+           &lt;/div&gt;<br/>
+           &lt;div _ngcontent-ng-c2231970034="" class="module-desc"&gt;<br/>
+            Registro y seguimiento de ventas<br/>
+           &lt;/div&gt;&lt;/a&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;/li&gt;<br/>
+         &lt;li _ngcontent-ng-c2231970034=""&gt;&lt;!--container--&gt;<br/>
+          &lt;div _ngcontent-ng-c2231970034="" aria-disabled="true" class="module-card module-card--disabled"&gt;<br/>
+           &lt;div _ngcontent-ng-c2231970034="" aria-hidden="true" class="module-icon purple"&gt;<br/>
+            &lt;svg _ngcontent-ng-c2231970034="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+             &lt;path _ngcontent-ng-c2231970034="" stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;<br/>
+            &lt;/svg&gt;<br/>
+           &lt;/div&gt;<br/>
+           &lt;div _ngcontent-ng-c2231970034="" class="module-name"&gt;<br/>
+            Gestión de Empleados<br/>
+           &lt;/div&gt;<br/>
+           &lt;div _ngcontent-ng-c2231970034="" class="module-desc"&gt;<br/>
+            Empleados, usuarios y roles del sistema<br/>
+           &lt;/div&gt;&lt;span _ngcontent-ng-c2231970034="" class="module-badge module-badge--locked"&gt;Sin acceso&lt;/span&gt;<br/>
+          &lt;/div&gt;&lt;!--container--&gt;&lt;/li&gt;<br/>
+         &lt;li _ngcontent-ng-c2231970034=""&gt;&lt;!--container--&gt;<br/>
+          &lt;div _ngcontent-ng-c2231970034="" aria-disabled="true" class="module-card module-card--disabled"&gt;<br/>
+           &lt;div _ngcontent-ng-c2231970034="" aria-hidden="true" class="module-icon cyan"&gt;<br/>
+            &lt;svg _ngcontent-ng-c2231970034="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+             &lt;path _ngcontent-ng-c2231970034="" stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"&gt;&lt;/path&gt;<br/>
+            &lt;/svg&gt;<br/>
+           &lt;/div&gt;<br/>
+           &lt;div _ngcontent-ng-c2231970034="" class="module-name"&gt;<br/>
+            Finanzas<br/>
+           &lt;/div&gt;<br/>
+           &lt;div _ngcontent-ng-c2231970034="" class="module-desc"&gt;<br/>
+            Gestión de caja, movimientos e historial<br/>
+           &lt;/div&gt;&lt;span _ngcontent-ng-c2231970034="" class="module-badge module-badge--locked"&gt;Sin acceso&lt;/span&gt;<br/>
+          &lt;/div&gt;&lt;!--container--&gt;&lt;/li&gt;<br/>
+         &lt;li _ngcontent-ng-c2231970034=""&gt;&lt;!--container--&gt;<br/>
+          &lt;div _ngcontent-ng-c2231970034="" aria-disabled="true" class="module-card module-card--disabled"&gt;<br/>
+           &lt;div _ngcontent-ng-c2231970034="" aria-hidden="true" class="module-icon amber"&gt;<br/>
+            &lt;svg _ngcontent-ng-c2231970034="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+             &lt;path _ngcontent-ng-c2231970034="" stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"&gt;&lt;/path&gt;<br/>
+            &lt;/svg&gt;<br/>
+           &lt;/div&gt;<br/>
+           &lt;div _ngcontent-ng-c2231970034="" class="module-name"&gt;<br/>
+            Producción<br/>
+           &lt;/div&gt;<br/>
+           &lt;div _ngcontent-ng-c2231970034="" class="module-desc"&gt;<br/>
+            Productos, materias primas y proveedores<br/>
+           &lt;/div&gt;&lt;span _ngcontent-ng-c2231970034="" class="module-badge module-badge--locked"&gt;Sin acceso&lt;/span&gt;<br/>
+          &lt;/div&gt;&lt;!--container--&gt;&lt;/li&gt;<br/>
+         &lt;li _ngcontent-ng-c2231970034=""&gt;&lt;!--container--&gt;<br/>
+          &lt;div _ngcontent-ng-c2231970034="" aria-disabled="true" class="module-card module-card--disabled"&gt;<br/>
+           &lt;div _ngcontent-ng-c2231970034="" aria-hidden="true" class="module-icon indigo"&gt;<br/>
+            &lt;svg _ngcontent-ng-c2231970034="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+             &lt;path _ngcontent-ng-c2231970034="" stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"&gt;&lt;/path&gt;<br/>
+            &lt;/svg&gt;<br/>
+           &lt;/div&gt;<br/>
+           &lt;div _ngcontent-ng-c2231970034="" class="module-name"&gt;<br/>
+            Asistente IA<br/>
+           &lt;/div&gt;<br/>
+           &lt;div _ngcontent-ng-c2231970034="" class="module-desc"&gt;<br/>
+            Chat inteligente con acceso al sistema<br/>
+           &lt;/div&gt;&lt;span _ngcontent-ng-c2231970034="" class="module-badge module-badge--locked"&gt;Sin acceso&lt;/span&gt;<br/>
+          &lt;/div&gt;&lt;!--container--&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;<br/>
+       &lt;/section&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/main&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/app-dashboard&gt;&lt;!--container--&gt;<br/>
+  &lt;/app-root&gt;<br/>
+  &lt;script src="main.js" type="module"&gt;&lt;/script&gt;<br/>
+ &lt;/body&gt;<br/>
+&lt;/html&gt;</code></pre></div></body></html>
