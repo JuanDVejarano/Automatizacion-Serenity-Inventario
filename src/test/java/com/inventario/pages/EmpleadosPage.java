@@ -170,9 +170,9 @@ public class EmpleadosPage extends PageObject {
             "Array.from(badges).every(function(b){return b.classList.contains('badge--activo');});"));
     }
 
-    // Simula lista vacía usando la API de Angular ng.getComponent (disponible en modo dev)
+    // Requiere base de datos vacía para ser una prueba real.
+    // Se usa junto con el tag @pendiente para no ejecutarse en el suite normal.
     public void simulateEmptyList() {
-        // Angular 17 signals: .set() en un signal programa el re-render automaticamente
         evaluateJavascript(
             "var comp = ng.getComponent(document.querySelector('app-empleados'));" +
             "comp.empleados.set([]);" +

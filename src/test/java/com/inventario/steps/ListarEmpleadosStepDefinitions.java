@@ -4,6 +4,7 @@ import com.inventario.pages.DashboardPage;
 import com.inventario.pages.EmpleadosPage;
 import com.inventario.pages.LoginPage;
 import com.inventario.pages.RegistrarEmpleadoPage;
+import io.cucumber.java.PendingException;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -99,12 +100,15 @@ public class ListarEmpleadosStepDefinitions {
         empleadosPage.filterByEstado(estado);
     }
 
-    // ── Simulacion lista vacia ───────────────────────────────────────────────
+    // ── Simulacion lista vacia (@pendiente) ──────────────────────────────────
 
     @And("se simula que no hay empleados en el sistema")
     public void seSimulaQueNoHayEmpleadosEnElSistema() {
-        // Usa ng.getComponent() (disponible con ng serve en modo dev) para vaciar el signal
-        empleadosPage.simulateEmptyList();
+        // Requiere BD vacía para ejecutarse de forma real y confiable.
+        // PendingException marca el escenario como Pendiente en el reporte (amarillo),
+        // sin pasarlo ni fallarlo, hasta que exista un entorno con datos limpios.
+        throw new PendingException(
+            "Este escenario requiere una base de datos sin empleados registrados.");
     }
 
     // ── Assertions ───────────────────────────────────────────────────────────

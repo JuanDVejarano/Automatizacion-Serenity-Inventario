@@ -131,7 +131,7 @@ explorer.exe $(wslpath -w target/site/serenity/index.html)
 | HU-06 | Buscar empleado por cédula |
 | HU-06 | Búsqueda por cédula sin resultados |
 | HU-06 | Filtrar empleados por estado activo |
-| HU-06 | Lista vacía de empleados |
+| HU-06 | Lista vacía de empleados _(requiere BD vacía — tag `@pendiente`, excluido por defecto)_ |
 | HU-06 | Acceso denegado para roles no autorizados |
 
 ### `@usuarios` — HU-07

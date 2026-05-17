@@ -39,6 +39,7 @@ Feature: HU-06 Listar y buscar empleados
     And el usuario filtra los empleados por estado "activos"
     Then todos los empleados mostrados tienen el estado Activo
 
+  @pendiente
   Scenario: Lista vacia de empleados
     When el usuario navega al modulo de listado de empleados
     And se simula que no hay empleados en el sistema
