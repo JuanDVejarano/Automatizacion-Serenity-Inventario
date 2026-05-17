@@ -158,6 +158,13 @@ explorer.exe $(wslpath -w target/site/serenity/index.html)
 | HU-10 | Correo duplicado en clientes |
 | HU-10 | Campos obligatorios vacíos |
 | HU-10 | Acceso no autorizado al módulo de clientes |
+| HU-11 | Edición exitosa de información general del cliente |
+| HU-11 | Edición de cédula o NIT por Administrador |
+| HU-11 | Campo cédula deshabilitado para rol Ventas |
+| HU-11 | Correo duplicado al editar cliente |
+| HU-11 | Cédula duplicada al editar cliente |
+| HU-11 | Campos obligatorios vacíos al editar cliente |
+| HU-11 | Acceso no autorizado al módulo de edición de clientes |
 
 ---
 

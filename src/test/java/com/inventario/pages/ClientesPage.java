@@ -11,6 +11,12 @@ public class ClientesPage extends PageObject {
     @FindBy(css = "button.btn-nuevo")
     private WebElementFacade nuevoClienteButton;
 
+    @FindBy(css = "input.search-input")
+    private WebElementFacade searchInput;
+
+    @FindBy(css = "button.btn-editar")
+    private WebElementFacade firstEditButton;
+
     @FindBy(css = "button.btn-guardar")
     private WebElementFacade submitButton;
 
@@ -71,6 +77,62 @@ public class ClientesPage extends PageObject {
     }
 
     public String getFormErrorMessage() {
+        waitFor(modalErrorAlert);
+        return modalErrorAlert.getText().trim();
+    }
+
+    // ── Edición: buscar + abrir modal ────────────────────────────────────────
+
+    public void searchClient(String cedula) {
+        waitFor(searchInput);
+        searchInput.clear();
+        searchInput.type(cedula);
+    }
+
+    public void clickFirstEditButton() {
+        waitFor(firstEditButton);
+        firstEditButton.click();
+        waitFor(submitButton); // espera que el modal de edición esté abierto
+    }
+
+    // Campos del modal de edición — mismo patrón que el modal de registro (name="editXxx")
+    private void setEditFieldByName(String name, String value) {
+        evaluateJavascript(
+            "var el = document.querySelector(\"input[name='" + name + "']\");" +
+            "if(el){ el.value='" + value + "'; el.dispatchEvent(new Event('input',{bubbles:true})); }");
+    }
+
+    private void clearEditFieldByName(String name) {
+        evaluateJavascript(
+            "var el = document.querySelector(\"input[name='" + name + "']\");" +
+            "if(el){ el.value=''; el.dispatchEvent(new Event('input',{bubbles:true})); el.dispatchEvent(new Event('change',{bubbles:true})); }");
+    }
+
+    public void setEditNombre(String value)  { setEditFieldByName("editNombre",    value); }
+    public void setEditCorreo(String value)  { setEditFieldByName("editCorreo",    value); }
+    public void setEditCedula(String value)  { setEditFieldByName("editCedula",    value); }
+
+    public void clearEditRequiredFields() {
+        clearEditFieldByName("editNombre");
+        clearEditFieldByName("editCorreo");
+        clearEditFieldByName("editCiudad");
+        clearEditFieldByName("editDireccion");
+        clearEditFieldByName("editTelefono");
+    }
+
+    // esAdmin() en clientes usa el mismo computed() lazy — mismo truco que HU-05
+    public boolean isEditCedulaDisabled() {
+        return Boolean.TRUE.equals(
+            evaluateJavascript(
+                "return document.querySelector(\"input[name='editCedula']\").disabled;"));
+    }
+
+    public String getEditSuccessMessage() {
+        waitFor(modalSuccessAlert);
+        return modalSuccessAlert.getText().trim();
+    }
+
+    public String getEditErrorMessage() {
         waitFor(modalErrorAlert);
         return modalErrorAlert.getText().trim();
     }
