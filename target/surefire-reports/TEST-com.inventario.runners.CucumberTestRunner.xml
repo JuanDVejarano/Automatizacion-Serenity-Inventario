@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.inventario.runners.CucumberTestRunner" time="83.885" tests="21" errors="1" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.inventario.runners.CucumberTestRunner" time="50.382" tests="13" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ES"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-21-openjdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/juanj/Projects-Test/serenity-inventario-login/target/surefire/surefirebooter-20260516201732016_3.jar /home/juanj/Projects-Test/serenity-inventario-login/target/surefire 2026-05-16T20-17-31_935-jvmRun1 surefire-20260516201732016_1tmp surefire_0-20260516201732016_2tmp"/>
+    <property name="sun.java.command" value="/home/juanj/Projects-Test/serenity-inventario-login/target/surefire/surefirebooter-20260516203332064_3.jar /home/juanj/Projects-Test/serenity-inventario-login/target/surefire 2026-05-16T20-33-31_991-jvmRun1 surefire-20260516203332064_1tmp surefire_0-20260516203332064_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/juanj/Projects-Test/serenity-inventario-login/target/test-classes:/home/juanj/Projects-Test/serenity-inventario-login/target/classes:/home/juanj/.m2/repository/net/serenity-bdd/serenity-core/4.1.20/serenity-core-4.1.20.jar:/home/juanj/.m2/repository/net/serenity-bdd/serenity-model/4.1.20/serenity-model-4.1.20.jar:/home/juanj/.m2/repository/org/apache/commons/commons-text/1.11.0/commons-text-1.11.0.jar:/home/juanj/.m2/repository/commons-net/commons-net/3.10.0/commons-net-3.10.0.jar:/home/juanj/.m2/repository/com/google/guava/guava/33.1.0-jre/guava-33.1.0-jre.jar:/home/juanj/.m2/repository/com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.jar:/home/juanj/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/juanj/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/home/juanj/.m2/repository/org/checkerframework/checker-qual/3.42.0/checker-qual-3.42.0.jar:/home/juanj/.m2/repository/com/google/errorprone/error_prone_annotations/2.26.1/error_prone_annotations-2.26.1.jar:/home/juanj/.m2/repository/com/google/j2objc/j2objc-annotations/3.0.0/j2objc-annotations-3.0.0.jar:/home/juanj/.m2/repository/org/jsoup/jsoup/1.15.4/jsoup-1.15.4.jar:/home/juanj/.m2/repository/com/thoughtworks/xstream/xstream/1.4.20/xstream-1.4.20.jar:/home/juanj/.m2/repository/io/github/x-stream/mxparser/1.2.2/mxparser-1.2.2.jar:/home/juanj/.m2/repository/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.jar:/home/juanj/.m2/repository/com/typesafe/config/1.4.3/config-1.4.3.jar:/home/juanj/.m2/repository/org/imgscalr/imgscalr-lib/4.2/imgscalr-lib-4.2.jar:/home/juanj/.m2/repository/org/awaitility/awaitility/4.2.0/awaitility-4.2.0.jar:/home/juanj/.m2/repository/org/freemarker/freemarker/2.3.32/freemarker-2.3.32.jar:/home/juanj/.m2/repository/io/github/classgraph/classgraph/4.8.157/classgraph-4.8.157.jar:/home/juanj/.m2/repository/com/github/ben-manes/caffeine/caffeine/2.9.2/caffeine-2.9.2.jar:/home/juanj/.m2/repository/org/ehcache/ehcache/3.10.8/ehcache-3.10.8.jar:/home/juanj/.m2/repository/javax/cache/cache-api/1.1.0/cache-api-1.1.0.jar:/home/juanj/.m2/repository/net/sourceforge/jexcelapi/jxl/2.6.12/jxl-2.6.12.jar:/home/juanj/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.15/byte-buddy-agent-1.14.15.jar:/home/juanj/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-all/0.64.8/flexmark-all-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark/0.64.8/flexmark-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-abbreviation/0.64.8/flexmark-ext-abbreviation-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-admonition/0.64.8/flexmark-ext-admonition-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-anchorlink/0.64.8/flexmark-ext-anchorlink-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-aside/0.64.8/flexmark-ext-aside-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-attributes/0.64.8/flexmark-ext-attributes-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-autolink/0.64.8/flexmark-ext-autolink-0.64.8.jar:/home/juanj/.m2/repository/org/nibor/autolink/autolink/0.6.0/autolink-0.6.0.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-definition/0.64.8/flexmark-ext-definition-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-emoji/0.64.8/flexmark-ext-emoji-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-enumerated-reference/0.64.8/flexmark-ext-enumerated-reference-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-escaped-character/0.64.8/flexmark-ext-escaped-character-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-footnotes/0.64.8/flexmark-ext-footnotes-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-gfm-issues/0.64.8/flexmark-ext-gfm-issues-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-gfm-strikethrough/0.64.8/flexmark-ext-gfm-strikethrough-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-gfm-tasklist/0.64.8/flexmark-ext-gfm-tasklist-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-gfm-users/0.64.8/flexmark-ext-gfm-users-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-gitlab/0.64.8/flexmark-ext-gitlab-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-jekyll-front-matter/0.64.8/flexmark-ext-jekyll-front-matter-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-jekyll-tag/0.64.8/flexmark-ext-jekyll-tag-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-media-tags/0.64.8/flexmark-ext-media-tags-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-macros/0.64.8/flexmark-ext-macros-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-ins/0.64.8/flexmark-ext-ins-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-xwiki-macros/0.64.8/flexmark-ext-xwiki-macros-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-superscript/0.64.8/flexmark-ext-superscript-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-toc/0.64.8/flexmark-ext-toc-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-typographic/0.64.8/flexmark-ext-typographic-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-wikilink/0.64.8/flexmark-ext-wikilink-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-yaml-front-matter/0.64.8/flexmark-ext-yaml-front-matter-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-youtube-embedded/0.64.8/flexmark-ext-youtube-embedded-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-html2md-converter/0.64.8/flexmark-html2md-converter-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-jira-converter/0.64.8/flexmark-jira-converter-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-pdf-converter/0.64.8/flexmark-pdf-converter-0.64.8.jar:/home/juanj/.m2/repository/com/openhtmltopdf/openhtmltopdf-core/1.0.10/openhtmltopdf-core-1.0.10.jar:/home/juanj/.m2/repository/com/openhtmltopdf/openhtmltopdf-pdfbox/1.0.10/openhtmltopdf-pdfbox-1.0.10.jar:/home/juanj/.m2/repository/org/apache/pdfbox/pdfbox/2.0.24/pdfbox-2.0.24.jar:/home/juanj/.m2/repository/org/apache/pdfbox/fontbox/2.0.24/fontbox-2.0.24.jar:/home/juanj/.m2/repository/org/apache/pdfbox/xmpbox/2.0.24/xmpbox-2.0.24.jar:/home/juanj/.m2/repository/de/rototor/pdfbox/graphics2d/0.32/graphics2d-0.32.jar:/home/juanj/.m2/repository/com/openhtmltopdf/openhtmltopdf-rtl-support/1.0.10/openhtmltopdf-rtl-support-1.0.10.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-profile-pegdown/0.64.8/flexmark-profile-pegdown-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util-ast/0.64.8/flexmark-util-ast-0.64.8.jar:/home/juanj/.m2/repository/org/jetbrains/annotations/24.0.1/annotations-24.0.1.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util-builder/0.64.8/flexmark-util-builder-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util-collection/0.64.8/flexmark-util-collection-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util-data/0.64.8/flexmark-util-data-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util-dependency/0.64.8/flexmark-util-dependency-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util-format/0.64.8/flexmark-util-format-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util-html/0.64.8/flexmark-util-html-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util-misc/0.64.8/flexmark-util-misc-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util-options/0.64.8/flexmark-util-options-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util-sequence/0.64.8/flexmark-util-sequence-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util-visitor/0.64.8/flexmark-util-visitor-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-youtrack-converter/0.64.8/flexmark-youtrack-converter-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-resizable-image/0.64.8/flexmark-ext-resizable-image-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-tables/0.64.8/flexmark-ext-tables-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util/0.64.8/flexmark-util-0.64.8.jar:/home/juanj/.m2/repository/net/serenity-bdd/serenity-reports/4.1.20/serenity-reports-4.1.20.jar:/home/juanj/.m2/repository/net/serenity-bdd/serenity-stats/4.1.20/serenity-stats-4.1.20.jar:/home/juanj/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/1.9.24/kotlin-stdlib-1.9.24.jar:/home/juanj/.m2/repository/net/serenity-bdd/serenity-reports-configuration/4.1.20/serenity-reports-configuration-4.1.20.jar:/home/juanj/.m2/repository/com/ibm/icu/icu4j/72.1/icu4j-72.1.jar:/home/juanj/.m2/repository/es/nitaur/markdown/txtmark/0.16/txtmark-0.16.jar:/home/juanj/.m2/repository/net/serenity-bdd/serenity-report-resources/4.1.20/serenity-report-resources-4.1.20.jar:/home/juanj/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/home/juanj/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.0/jackson-core-2.17.0.jar:/home/juanj/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.0/jackson-databind-2.17.0.jar:/home/juanj/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.0/jackson-annotations-2.17.0.jar:/home/juanj/.m2/repository/commons-codec/commons-codec/1.16.1/commons-codec-1.16.1.jar:/home/juanj/.m2/repository/commons-io/commons-io/2.15.1/commons-io-2.15.1.jar:/home/juanj/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/juanj/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/home/juanj/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-java/4.21.0/selenium-java-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v123/4.21.0/selenium-devtools-v123-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v124/4.21.0/selenium-devtools-v124-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v125/4.21.0/selenium-devtools-v125-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.21.0/selenium-devtools-v85-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.21.0/selenium-remote-driver-4.21.0.jar:/home/juanj/.m2/repository/io/opentelemetry/semconv/opentelemetry-semconv/1.25.0-alpha/opentelemetry-semconv-1.25.0-alpha.jar:/home/juanj/.m2/repository/io/opentelemetry/opentelemetry-api/1.38.0/opentelemetry-api-1.38.0.jar:/home/juanj/.m2/repository/io/opentelemetry/opentelemetry-context/1.38.0/opentelemetry-context-1.38.0.jar:/home/juanj/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.38.0/opentelemetry-exporter-logging-1.38.0.jar:/home/juanj/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.38.0/opentelemetry-sdk-common-1.38.0.jar:/home/juanj/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.38.0/opentelemetry-sdk-extension-autoconfigure-spi-1.38.0.jar:/home/juanj/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.38.0/opentelemetry-sdk-extension-autoconfigure-1.38.0.jar:/home/juanj/.m2/repository/io/opentelemetry/opentelemetry-api-incubator/1.38.0-alpha/opentelemetry-api-incubator-1.38.0-alpha.jar:/home/juanj/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.38.0/opentelemetry-sdk-trace-1.38.0.jar:/home/juanj/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.38.0/opentelemetry-sdk-1.38.0.jar:/home/juanj/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.38.0/opentelemetry-sdk-metrics-1.38.0.jar:/home/juanj/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.38.0/opentelemetry-sdk-logs-1.38.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-os/4.21.0/selenium-os-4.21.0.jar:/home/juanj/.m2/repository/org/apache/commons/commons-exec/1.4.0/commons-exec-1.4.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.21.0/selenium-safari-driver-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-api/4.21.0/selenium-api-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-support/4.21.0/selenium-support-4.21.0.jar:/home/juanj/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-json/4.21.0/selenium-json-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.21.0/selenium-chrome-driver-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.21.0/selenium-chromium-driver-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.21.0/selenium-manager-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.21.0/selenium-firefox-driver-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-http/4.21.0/selenium-http-4.21.0.jar:/home/juanj/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.21.0/selenium-edge-driver-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.21.0/selenium-ie-driver-4.21.0.jar:/home/juanj/.m2/repository/org/htmlunit/htmlunit/4.1.0/htmlunit-4.1.0.jar:/home/juanj/.m2/repository/org/apache/httpcomponents/httpmime/4.5.14/httpmime-4.5.14.jar:/home/juanj/.m2/repository/org/htmlunit/htmlunit-core-js/4.1.0/htmlunit-core-js-4.1.0.jar:/home/juanj/.m2/repository/org/htmlunit/neko-htmlunit/4.1.0/neko-htmlunit-4.1.0.jar:/home/juanj/.m2/repository/org/htmlunit/htmlunit-cssparser/4.1.0/htmlunit-cssparser-4.1.0.jar:/home/juanj/.m2/repository/org/htmlunit/htmlunit-xpath/4.1.0/htmlunit-xpath-4.1.0.jar:/home/juanj/.m2/repository/org/htmlunit/htmlunit-csp/4.1.0/htmlunit-csp-4.1.0.jar:/home/juanj/.m2/repository/org/htmlunit/htmlunit-websocket-client/4.1.0/htmlunit-websocket-client-4.1.0.jar:/home/juanj/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/htmlunit3-driver/4.21.0/htmlunit3-driver-4.21.0.jar:/home/juanj/.m2/repository/io/appium/java-client/9.2.2/java-client-9.2.2.jar:/home/juanj/.m2/repository/org/apache/groovy/groovy/4.0.13/groovy-4.0.13.jar:/home/juanj/.m2/repository/net/sf/opencsv/opencsv/2.1/opencsv-2.1.jar:/home/juanj/.m2/repository/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar:/home/juanj/.m2/repository/org/apache/commons/commons-compress/1.26.0/commons-compress-1.26.0.jar:/home/juanj/.m2/repository/org/fluentlenium/fluentlenium-core/0.10.2/fluentlenium-core-0.10.2.jar:/home/juanj/.m2/repository/com/jhlabs/filters/2.0.235/filters-2.0.235.jar:/home/juanj/.m2/repository/com/paulhammant/ngwebdriver/1.1.6/ngwebdriver-1.1.6.jar:/home/juanj/.m2/repository/joda-time/joda-time/2.12.7/joda-time-2.12.7.jar:/home/juanj/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/juanj/.m2/repository/com/google/jimfs/jimfs/1.3.0/jimfs-1.3.0.jar:/home/juanj/.m2/repository/org/mockito/mockito-core/3.3.3/mockito-core-3.3.3.jar:/home/juanj/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/home/juanj/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/home/juanj/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-core-2.3.0.1.jar:/home/juanj/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.3/jaxb-impl-2.3.3.jar:/home/juanj/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/home/juanj/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/home/juanj/.m2/repository/javax/activation/activation/1.1.1/activation-1.1.1.jar:/home/juanj/.m2/repository/net/serenity-bdd/serenity-cucumber/4.1.20/serenity-cucumber-4.1.20.jar:/home/juanj/.m2/repository/net/serenity-bdd/serenity-screenplay/4.1.20/serenity-screenplay-4.1.20.jar:/home/juanj/.m2/repository/net/serenity-bdd/serenity-screenplay-webdriver/4.1.20/serenity-screenplay-webdriver-4.1.20.jar:/home/juanj/.m2/repository/io/cucumber/cucumber-core/7.17.0/cucumber-core-7.17.0.jar:/home/juanj/.m2/repository/io/cucumber/cucumber-gherkin/7.17.0/cucumber-gherkin-7.17.0.jar:/home/juanj/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.17.0/cucumber-gherkin-messages-7.17.0.jar:/home/juanj/.m2/repository/io/cucumber/gherkin/28.0.0/gherkin-28.0.0.jar:/home/juanj/.m2/repository/io/cucumber/messages/24.1.0/messages-24.1.0.jar:/home/juanj/.m2/repository/io/cucumber/testng-xml-formatter/0.1.0/testng-xml-formatter-0.1.0.jar:/home/juanj/.m2/repository/io/cucumber/query/12.2.0/query-12.2.0.jar:/home/juanj/.m2/repository/io/cucumber/tag-expressions/6.1.0/tag-expressions-6.1.0.jar:/home/juanj/.m2/repository/io/cucumber/cucumber-expressions/17.1.0/cucumber-expressions-17.1.0.jar:/home/juanj/.m2/repository/io/cucumber/datatable/7.17.0/datatable-7.17.0.jar:/home/juanj/.m2/repository/io/cucumber/cucumber-plugin/7.17.0/cucumber-plugin-7.17.0.jar:/home/juanj/.m2/repository/io/cucumber/docstring/7.17.0/docstring-7.17.0.jar:/home/juanj/.m2/repository/io/cucumber/html-formatter/21.3.1/html-formatter-21.3.1.jar:/home/juanj/.m2/repository/io/cucumber/junit-xml-formatter/0.4.0/junit-xml-formatter-0.4.0.jar:/home/juanj/.m2/repository/io/cucumber/ci-environment/10.0.1/ci-environment-10.0.1.jar:/home/juanj/.m2/repository/io/cucumber/cucumber-java/7.17.0/cucumber-java-7.17.0.jar:/home/juanj/.m2/repository/io/cucumber/cucumber-junit/7.17.0/cucumber-junit-7.17.0.jar:/home/juanj/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/juanj/.m2/repository/org/apache/commons/commons-csv/1.5/commons-csv-1.5.jar:/home/juanj/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/home/juanj/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/juanj/.m2/repository/org/assertj/assertj-core/3.25.3/assertj-core-3.25.3.jar:/home/juanj/.m2/repository/net/bytebuddy/byte-buddy/1.14.11/byte-buddy-1.14.11.jar:/home/juanj/.m2/repository/org/slf4j/slf4j-simple/2.0.12/slf4j-simple-2.0.12.jar:/home/juanj/.m2/repository/org/slf4j/slf4j-api/2.0.12/slf4j-api-2.0.12.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -27,7 +27,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/home/juanj/Projects-Test/serenity-inventario-login/target/surefire/surefirebooter-20260516201732016_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/juanj/Projects-Test/serenity-inventario-login/target/surefire/surefirebooter-20260516203332064_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.10+7-Ubuntu-122.04"/>
     <property name="user.name" value="juanj"/>
@@ -42,7 +42,7 @@
     <property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-21"/>
     <property name="java.io.tmpdir" value="/tmp"/>
     <property name="java.version" value="21.0.10"/>
-    <property name="cucumber.filter.tags" value="@empleados"/>
+    <property name="cucumber.filter.tags" value="@usuarios"/>
     <property name="user.dir" value="/home/juanj/Projects-Test/serenity-inventario-login"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
@@ -55,16 +55,14 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="Edicion exitosa de informacion general" classname="HU-05 Editar informacion de empleado" time="5.897">
+  <testcase name="Desactivar un usuario activo" classname="HU-09 Activar y desactivar usuario" time="5.295">
     <system-out><![CDATA[
-@empleados
-Scenario: Edicion exitosa de informacion general                                             &amp#27;[90m# src/test/resources/features/editar-empleado.feature:10&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel administrador ha iniciado sesion para edicion de empleados&amp#27;[0m                        &amp#27;[90m# com.inventario.steps.EditarEmpleadoStepDefinitions.elAdministradorHaIniciadoSesionParaEdicionDeEmpleados()&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mexiste un empleado registrado para la prueba de edicion&amp#27;[0m                              &amp#27;[90m# com.inventario.steps.EditarEmpleadoStepDefinitions.existeUnEmpleadoRegistradoParaLaPruebaDeEdicion()&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario busca y abre el modal de edicion del empleado&amp#27;[0m                              &amp#27;[90m# com.inventario.steps.EditarEmpleadoStepDefinitions.elUsuarioBuscaYAbreElModalDeEdicionDelEmpleado()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel usuario actualiza el nombre en el modal a &amp#27;[0m&amp#27;[32m&amp#27;[1m"Nombre Actualizado Test"&amp#27;[0m                 &amp#27;[90m# com.inventario.steps.EditarEmpleadoStepDefinitions.elUsuarioActualizaElNombreEnElModal(java.lang.String)&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel usuario guarda los cambios en el modal&amp#27;[0m                                              &amp#27;[90m# com.inventario.steps.EditarEmpleadoStepDefinitions.elUsuarioGuardaLosCambiosEnElModal()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra el mensaje de exito de edicion &amp#27;[0m&amp#27;[32m&amp#27;[1m"Empleado actualizado exitosamente"&amp#27;[0m &amp#27;[90m# com.inventario.steps.EditarEmpleadoStepDefinitions.elSistemaMuestraElMensajeDeExitoDeEdicion(java.lang.String)&amp#27;[0m
+@usuarios
+Scenario: Desactivar un usuario activo                                    &amp#27;[90m# src/test/resources/features/activar-desactivar-usuario.feature:10&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel administrador ha iniciado sesion para gestion de usuarios&amp#27;[0m      &amp#27;[90m# com.inventario.steps.CrearUsuarioStepDefinitions.elAdministradorHaIniciadoSesionParaGestionDeUsuarios()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mexiste un usuario de prueba activo para la gestion de estado&amp#27;[0m      &amp#27;[90m# com.inventario.steps.ActivarDesactivarUsuarioStepDefinitions.existeUnUsuarioDePruebaActivoParaLaGestionDeEstado()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel administrador desactiva al usuario de prueba&amp#27;[0m                    &amp#27;[90m# com.inventario.steps.ActivarDesactivarUsuarioStepDefinitions.elAdministradorDesactivaAlUsuarioDePrueba()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel usuario de prueba aparece como Inactivo en la lista de usuarios&amp#27;[0m &amp#27;[90m# com.inventario.steps.ActivarDesactivarUsuarioStepDefinitions.elUsuarioDePruebaApareceComoInactivoEnLaListaDeUsuarios()&amp#27;[0m
 ]]></system-out>
     <system-err><![CDATA[[main] INFO  - 
 
@@ -83,6 +81,7 @@ Scenario: Edicion exitosa de informacion general                                
  Join the Serenity Community on Gitter: https://gitter.im/serenity-bdd/serenity-core 
 -------------------------------------------------------------------------------------
 
+[main] INFO  - Test Suite Started: HU-09 Activar y desactivar usuario
 [main] INFO  - Test Suite Started: HU-08 Asignar rol a usuario
 [main] INFO  - Test Suite Started: HU-07 Crear usuario del sistema
 [main] INFO  - Test Suite Started: HU-05 Editar informacion de empleado
@@ -91,20 +90,20 @@ Scenario: Edicion exitosa de informacion general                                
 [main] INFO  - Test Suite Started: HU-02 Cerrar sesion del sistema
 [main] INFO  - Test Suite Started: HU-04 Registrar empleado
 [main] INFO  - Test Suite Started: HU-03 Roles predefinidos del sistema
-[main] INFO  - Test Suite Started: HU-05 Editar informacion de empleado
+[main] INFO  - Test Suite Started: HU-09 Activar y desactivar usuario
 [main] INFO  - 
   _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
  |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
    | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
    |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
 
-Edicion exitosa de informacion general(hu-05-editar-informacion-de-empleado;edicion-exitosa-de-informacion-general)
+Desactivar un usuario activo(hu-09-activar-y-desactivar-usuario;desactivar-un-usuario-activo)
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 8:17:33 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 8:33:34 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 8:17:33 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 8:33:34 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -112,20 +111,18 @@ ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may ne
    | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
    |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
 
-Edicion exitosa de informacion general
+Desactivar un usuario activo
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Edicion de cedula por Administrador" classname="HU-05 Editar informacion de empleado" time="5.024">
+  <testcase name="Activar un usuario inactivo" classname="HU-09 Activar y desactivar usuario" time="4.509">
     <system-out><![CDATA[
-@empleados
-Scenario: Edicion de cedula por Administrador                                                &amp#27;[90m# src/test/resources/features/editar-empleado.feature:17&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel administrador ha iniciado sesion para edicion de empleados&amp#27;[0m                        &amp#27;[90m# com.inventario.steps.EditarEmpleadoStepDefinitions.elAdministradorHaIniciadoSesionParaEdicionDeEmpleados()&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mexiste un empleado registrado para la prueba de edicion&amp#27;[0m                              &amp#27;[90m# com.inventario.steps.EditarEmpleadoStepDefinitions.existeUnEmpleadoRegistradoParaLaPruebaDeEdicion()&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario busca y abre el modal de edicion del empleado&amp#27;[0m                              &amp#27;[90m# com.inventario.steps.EditarEmpleadoStepDefinitions.elUsuarioBuscaYAbreElModalDeEdicionDelEmpleado()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel Administrador cambia la cedula del empleado por un valor nuevo&amp#27;[0m                      &amp#27;[90m# com.inventario.steps.EditarEmpleadoStepDefinitions.elAdministradorCambiaLaCedulaDelEmpleadoPorUnValorNuevo()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel usuario guarda los cambios en el modal&amp#27;[0m                                              &amp#27;[90m# com.inventario.steps.EditarEmpleadoStepDefinitions.elUsuarioGuardaLosCambiosEnElModal()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra el mensaje de exito de edicion &amp#27;[0m&amp#27;[32m&amp#27;[1m"Empleado actualizado exitosamente"&amp#27;[0m &amp#27;[90m# com.inventario.steps.EditarEmpleadoStepDefinitions.elSistemaMuestraElMensajeDeExitoDeEdicion(java.lang.String)&amp#27;[0m
+@usuarios
+Scenario: Activar un usuario inactivo                                   &amp#27;[90m# src/test/resources/features/activar-desactivar-usuario.feature:15&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel administrador ha iniciado sesion para gestion de usuarios&amp#27;[0m    &amp#27;[90m# com.inventario.steps.CrearUsuarioStepDefinitions.elAdministradorHaIniciadoSesionParaGestionDeUsuarios()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mexiste un usuario de prueba inactivo para la gestion de estado&amp#27;[0m  &amp#27;[90m# com.inventario.steps.ActivarDesactivarUsuarioStepDefinitions.existeUnUsuarioDePruebaInactivoParaLaGestionDeEstado()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel administrador activa al usuario de prueba&amp#27;[0m                     &amp#27;[90m# com.inventario.steps.ActivarDesactivarUsuarioStepDefinitions.elAdministradorActivaAlUsuarioDePrueba()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel usuario de prueba aparece como Activo en la lista de usuarios&amp#27;[0m &amp#27;[90m# com.inventario.steps.ActivarDesactivarUsuarioStepDefinitions.elUsuarioDePruebaApareceComoActivoEnLaListaDeUsuarios()&amp#27;[0m
 ]]></system-out>
     <system-err><![CDATA[[main] INFO  - 
   _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
@@ -133,13 +130,13 @@ Scenario: Edicion de cedula por Administrador                                   
    | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
    |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
 
-Edicion de cedula por Administrador(hu-05-editar-informacion-de-empleado;edicion-de-cedula-por-administrador)
+Activar un usuario inactivo(hu-09-activar-y-desactivar-usuario;activar-un-usuario-inactivo)
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 8:17:39 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 8:33:38 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 8:17:39 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 8:33:38 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -147,152 +144,17 @@ ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may ne
    | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
    |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
 
-Edicion de cedula por Administrador
+Activar un usuario inactivo
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Campo cedula deshabilitado para rol Recursos Humanos" classname="HU-05 Editar informacion de empleado" time="4.337">
+  <testcase name="Acceso no autorizado al modulo de activacion de usuarios" classname="HU-09 Activar y desactivar usuario" time="2.985">
     <system-out><![CDATA[
-@empleados
-Scenario: Campo cedula deshabilitado para rol Recursos Humanos        &amp#27;[90m# src/test/resources/features/editar-empleado.feature:24&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel administrador ha iniciado sesion para edicion de empleados&amp#27;[0m &amp#27;[90m# com.inventario.steps.EditarEmpleadoStepDefinitions.elAdministradorHaIniciadoSesionParaEdicionDeEmpleados()&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mexiste un empleado registrado para la prueba de edicion&amp#27;[0m       &amp#27;[90m# com.inventario.steps.EditarEmpleadoStepDefinitions.existeUnEmpleadoRegistradoParaLaPruebaDeEdicion()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mse establece el token de sesion con rol Recursos Humanos&amp#27;[0m        &amp#27;[90m# com.inventario.steps.EditarEmpleadoStepDefinitions.seEstableceElTokenDeSesionConRolRecursosHumanos()&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario busca y abre el modal de edicion del empleado&amp#27;[0m       &amp#27;[90m# com.inventario.steps.EditarEmpleadoStepDefinitions.elUsuarioBuscaYAbreElModalDeEdicionDelEmpleado()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel campo cedula esta deshabilitado en el modal de edicion&amp#27;[0m      &amp#27;[90m# com.inventario.steps.EditarEmpleadoStepDefinitions.elCampoCedulaEstaDeshabilitadoEnElModalDeEdicion()&amp#27;[0m
-]]></system-out>
-    <system-err><![CDATA[[main] INFO  - 
-  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
- |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
-   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
-   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
-
-Campo cedula deshabilitado para rol Recursos Humanos(hu-05-editar-informacion-de-empleado;campo-cedula-deshabilitado-para-rol-recursos-humanos)
---------------------------------------------------------------------------------
-[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
-[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 8:17:44 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 8:17:44 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-[main] INFO  - 
-  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
- |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
-   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
-   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
-
-Campo cedula deshabilitado para rol Recursos Humanos
-----------------------------------------------------------------------
-]]></system-err>
-  </testcase>
-  <testcase name="Correo duplicado al editar" classname="HU-05 Editar informacion de empleado" time="6.006">
-    <system-out><![CDATA[
-@empleados
-Scenario: Correo duplicado al editar                                                            &amp#27;[90m# src/test/resources/features/editar-empleado.feature:30&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel administrador ha iniciado sesion para edicion de empleados&amp#27;[0m                           &amp#27;[90m# com.inventario.steps.EditarEmpleadoStepDefinitions.elAdministradorHaIniciadoSesionParaEdicionDeEmpleados()&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mexisten dos empleados registrados para la prueba de duplicados en edicion&amp#27;[0m               &amp#27;[90m# com.inventario.steps.EditarEmpleadoStepDefinitions.existenDosEmpleadosRegistradosParaLaPruebaDeDuplicadosEnEdicion()&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario abre el modal del primer empleado e ingresa el correo del segundo&amp#27;[0m             &amp#27;[90m# com.inventario.steps.EditarEmpleadoStepDefinitions.elUsuarioAbreElModalDelPrimerEmpleadoEIngresaElCorreoDelSegundo()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra el mensaje de error de edicion &amp#27;[0m&amp#27;[32m&amp#27;[1m"Ya existe un empleado con ese correo"&amp#27;[0m &amp#27;[90m# com.inventario.steps.EditarEmpleadoStepDefinitions.elSistemaMuestraElMensajeDeErrorDeEdicion(java.lang.String)&amp#27;[0m
-]]></system-out>
-    <system-err><![CDATA[[main] INFO  - 
-  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
- |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
-   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
-   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
-
-Correo duplicado al editar(hu-05-editar-informacion-de-empleado;correo-duplicado-al-editar)
---------------------------------------------------------------------------------
-[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
-[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 8:17:48 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 8:17:48 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-[main] INFO  - 
-  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
- |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
-   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
-   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
-
-Correo duplicado al editar
-----------------------------------------------------------------------
-]]></system-err>
-  </testcase>
-  <testcase name="Cedula duplicada al editar" classname="HU-05 Editar informacion de empleado" time="5.566">
-    <system-out><![CDATA[
-@empleados
-Scenario: Cedula duplicada al editar                                                            &amp#27;[90m# src/test/resources/features/editar-empleado.feature:35&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel administrador ha iniciado sesion para edicion de empleados&amp#27;[0m                           &amp#27;[90m# com.inventario.steps.EditarEmpleadoStepDefinitions.elAdministradorHaIniciadoSesionParaEdicionDeEmpleados()&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mexisten dos empleados registrados para la prueba de duplicados en edicion&amp#27;[0m               &amp#27;[90m# com.inventario.steps.EditarEmpleadoStepDefinitions.existenDosEmpleadosRegistradosParaLaPruebaDeDuplicadosEnEdicion()&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario abre el modal del primer empleado e ingresa la cedula del segundo&amp#27;[0m             &amp#27;[90m# com.inventario.steps.EditarEmpleadoStepDefinitions.elUsuarioAbreElModalDelPrimerEmpleadoEIngresaLaCedulaDelSegundo()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra el mensaje de error de edicion &amp#27;[0m&amp#27;[32m&amp#27;[1m"Ya existe un empleado con esa cedula"&amp#27;[0m &amp#27;[90m# com.inventario.steps.EditarEmpleadoStepDefinitions.elSistemaMuestraElMensajeDeErrorDeEdicion(java.lang.String)&amp#27;[0m
-]]></system-out>
-    <system-err><![CDATA[[main] INFO  - 
-  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
- |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
-   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
-   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
-
-Cedula duplicada al editar(hu-05-editar-informacion-de-empleado;cedula-duplicada-al-editar)
---------------------------------------------------------------------------------
-[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
-[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 8:17:54 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 8:17:54 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-[main] INFO  - 
-  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
- |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
-   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
-   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
-
-Cedula duplicada al editar
-----------------------------------------------------------------------
-]]></system-err>
-  </testcase>
-  <testcase name="Campos obligatorios vacios al editar" classname="HU-05 Editar informacion de empleado" time="4.636">
-    <system-out><![CDATA[
-@empleados
-Scenario: Campos obligatorios vacios al editar                                                                   &amp#27;[90m# src/test/resources/features/editar-empleado.feature:40&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel administrador ha iniciado sesion para edicion de empleados&amp#27;[0m                                            &amp#27;[90m# com.inventario.steps.EditarEmpleadoStepDefinitions.elAdministradorHaIniciadoSesionParaEdicionDeEmpleados()&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mexiste un empleado registrado para la prueba de edicion&amp#27;[0m                                                  &amp#27;[90m# com.inventario.steps.EditarEmpleadoStepDefinitions.existeUnEmpleadoRegistradoParaLaPruebaDeEdicion()&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario busca y abre el modal de edicion del empleado&amp#27;[0m                                                  &amp#27;[90m# com.inventario.steps.EditarEmpleadoStepDefinitions.elUsuarioBuscaYAbreElModalDeEdicionDelEmpleado()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel usuario borra los campos obligatorios del modal de edicion&amp#27;[0m                                              &amp#27;[90m# com.inventario.steps.EditarEmpleadoStepDefinitions.elUsuarioBorraLosCamposObligatoriosDelModal()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel usuario guarda los cambios en el modal&amp#27;[0m                                                                  &amp#27;[90m# com.inventario.steps.EditarEmpleadoStepDefinitions.elUsuarioGuardaLosCambiosEnElModal()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra el mensaje de error de edicion &amp#27;[0m&amp#27;[32m&amp#27;[1m"Todos los campos obligatorios deben ser diligenciados"&amp#27;[0m &amp#27;[90m# com.inventario.steps.EditarEmpleadoStepDefinitions.elSistemaMuestraElMensajeDeErrorDeEdicion(java.lang.String)&amp#27;[0m
-]]></system-out>
-    <system-err><![CDATA[[main] INFO  - 
-  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
- |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
-   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
-   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
-
-Campos obligatorios vacios al editar(hu-05-editar-informacion-de-empleado;campos-obligatorios-vacios-al-editar)
---------------------------------------------------------------------------------
-[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
-[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 8:18:00 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 8:18:00 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-[main] INFO  - 
-  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
- |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
-   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
-   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
-
-Campos obligatorios vacios al editar
-----------------------------------------------------------------------
-]]></system-err>
-  </testcase>
-  <testcase name="Acceso no autorizado al modulo de lista de empleados" classname="HU-05 Editar informacion de empleado" time="2.943">
-    <system-out><![CDATA[
-@empleados
-Scenario: Acceso no autorizado al modulo de lista de empleados                     &amp#27;[90m# src/test/resources/features/editar-empleado.feature:47&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel administrador ha iniciado sesion para edicion de empleados&amp#27;[0m              &amp#27;[90m# com.inventario.steps.EditarEmpleadoStepDefinitions.elAdministradorHaIniciadoSesionParaEdicionDeEmpleados()&amp#27;[0m
+@usuarios
+Scenario: Acceso no autorizado al modulo de activacion de usuarios                 &amp#27;[90m# src/test/resources/features/activar-desactivar-usuario.feature:20&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel administrador ha iniciado sesion para gestion de usuarios&amp#27;[0m               &amp#27;[90m# com.inventario.steps.CrearUsuarioStepDefinitions.elAdministradorHaIniciadoSesionParaGestionDeUsuarios()&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario inicia sesion con el rol &amp#27;[0m&amp#27;[32m&amp#27;[1m"Ventas"&amp#27;[0m                               &amp#27;[90m# com.inventario.steps.RolesStepDefinitions.elUsuarioIniciaSesionConElRol(java.lang.String)&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario intenta acceder al modulo de lista de empleados&amp#27;[0m                  &amp#27;[90m# com.inventario.steps.EditarEmpleadoStepDefinitions.elUsuarioIntentaAccederAlModuloDeListaDeEmpleados()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario intenta acceder al modulo de gestion de usuarios&amp#27;[0m                 &amp#27;[90m# com.inventario.steps.AsignarRolStepDefinitions.elUsuarioIntentaAccederAlModuloDeGestionDeUsuarios()&amp#27;[0m
   &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra la pagina de acceso denegado&amp#27;[0m                             &amp#27;[90m# com.inventario.steps.RolesStepDefinitions.elSistemaMuestraLaPaginaDeAccesoDenegado()&amp#27;[0m
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel sistema muestra el mensaje &amp#27;[0m&amp#27;[32m&amp#27;[1m"No tiene permisos para acceder a este modulo"&amp#27;[0m &amp#27;[90m# com.inventario.steps.RolesStepDefinitions.elSistemaMuestraElMensaje(java.lang.String)&amp#27;[0m
 ]]></system-out>
@@ -302,13 +164,13 @@ Scenario: Acceso no autorizado al modulo de lista de empleados                  
    | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
    |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
 
-Acceso no autorizado al modulo de lista de empleados(hu-05-editar-informacion-de-empleado;acceso-no-autorizado-al-modulo-de-lista-de-empleados)
+Acceso no autorizado al modulo de activacion de usuarios(hu-09-activar-y-desactivar-usuario;acceso-no-autorizado-al-modulo-de-activacion-de-usuarios)
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 8:18:04 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 8:33:43 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 8:18:04 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 8:33:43 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -316,34 +178,35 @@ ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may ne
    | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
    |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
 
-Acceso no autorizado al modulo de lista de empleados
+Acceso no autorizado al modulo de activacion de usuarios
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Listar todos los empleados con sus datos" classname="HU-06 Listar y buscar empleados" time="3.846">
+  <testcase name="Asignacion exitosa de rol" classname="HU-08 Asignar rol a usuario" time="4.214">
     <system-out><![CDATA[
-@empleados
-Scenario: Listar todos los empleados con sus datos                              &amp#27;[90m# src/test/resources/features/listar-empleados.feature:10&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel administrador ha iniciado sesion para consulta de empleados&amp#27;[0m          &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.elAdministradorHaIniciadoSesionParaConsultaDeEmpleados()&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mexiste al menos un empleado registrado en el sistema&amp#27;[0m                    &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.existeAlMenosUnEmpleadoRegistradoEnElSistema()&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario navega al modulo de listado de empleados&amp#27;[0m                      &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.elUsuarioNavegaAlModuloDeListadoDeEmpleados()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra la tabla con las columnas de informacion de empleados&amp#27;[0m &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.elSistemaMuestraLaTablaConLasColumnasDeInformacionDeEmpleados()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mla tabla contiene al menos un empleado registrado&amp#27;[0m                         &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.laTablaContieneAlMenosUnEmpleadoRegistrado()&amp#27;[0m
+@usuarios
+Scenario: Asignacion exitosa de rol                                                     &amp#27;[90m# src/test/resources/features/asignar-rol.feature:10&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel administrador ha iniciado sesion para gestion de usuarios&amp#27;[0m                    &amp#27;[90m# com.inventario.steps.CrearUsuarioStepDefinitions.elAdministradorHaIniciadoSesionParaGestionDeUsuarios()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mexiste un usuario registrado para la prueba de asignacion de rol&amp#27;[0m                &amp#27;[90m# com.inventario.steps.AsignarRolStepDefinitions.existeUnUsuarioRegistradoParaLaPruebaDeAsignacionDeRol()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario abre el modal de asignacion de rol del primer usuario&amp#27;[0m                 &amp#27;[90m# com.inventario.steps.AsignarRolStepDefinitions.elUsuarioAbreElModalDeAsignacionDeRolDelPrimerUsuario()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel usuario selecciona un rol diferente al actual&amp#27;[0m                                  &amp#27;[90m# com.inventario.steps.AsignarRolStepDefinitions.elUsuarioSeleccionaUnRolDiferenteAlActual()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel usuario confirma la asignacion de rol&amp#27;[0m                                          &amp#27;[90m# com.inventario.steps.AsignarRolStepDefinitions.elUsuarioConfirmaLaAsignacionDeRol()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra el mensaje de exito de asignacion &amp#27;[0m&amp#27;[32m&amp#27;[1m"Rol asignado exitosamente"&amp#27;[0m &amp#27;[90m# com.inventario.steps.AsignarRolStepDefinitions.elSistemaMuestraElMensajeDeExitoDeAsignacion(java.lang.String)&amp#27;[0m
 ]]></system-out>
-    <system-err><![CDATA[[main] INFO  - Test Suite Started: HU-06 Listar y buscar empleados
+    <system-err><![CDATA[[main] INFO  - Test Suite Started: HU-08 Asignar rol a usuario
 [main] INFO  - 
   _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
  |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
    | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
    |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
 
-Listar todos los empleados con sus datos(hu-06-listar-y-buscar-empleados;listar-todos-los-empleados-con-sus-datos)
+Asignacion exitosa de rol(hu-08-asignar-rol-a-usuario;asignacion-exitosa-de-rol)
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 8:18:07 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 8:33:46 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 8:18:07 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 8:33:46 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -351,51 +214,19 @@ ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may ne
    | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
    |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
 
-Listar todos los empleados con sus datos
+Asignacion exitosa de rol
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Buscar empleado por nombre" classname="HU-06 Listar y buscar empleados" time="4.071">
+  <testcase name="Intento de asignar el mismo rol actual" classname="HU-08 Asignar rol a usuario" time="4.102">
     <system-out><![CDATA[
-@empleados
-Scenario: Buscar empleado por nombre                                   &amp#27;[90m# src/test/resources/features/listar-empleados.feature:16&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel administrador ha iniciado sesion para consulta de empleados&amp#27;[0m &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.elAdministradorHaIniciadoSesionParaConsultaDeEmpleados()&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mexiste un empleado registrado para busqueda en la lista&amp#27;[0m        &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.existeUnEmpleadoRegistradoParaBusquedaEnLaLista()&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario busca el empleado por nombre en la lista&amp#27;[0m             &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.elUsuarioBuscaElEmpleadoPorNombreEnLaLista()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra el empleado en los resultados de busqueda&amp#27;[0m    &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.elSistemaMuestraElEmpleadoEnLosResultadosDeBusqueda()&amp#27;[0m
-]]></system-out>
-    <system-err><![CDATA[[main] INFO  - 
-  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
- |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
-   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
-   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
-
-Buscar empleado por nombre(hu-06-listar-y-buscar-empleados;buscar-empleado-por-nombre)
---------------------------------------------------------------------------------
-[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
-[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 8:18:11 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 8:18:11 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-[main] INFO  - 
-  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
- |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
-   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
-   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
-
-Buscar empleado por nombre
-----------------------------------------------------------------------
-]]></system-err>
-  </testcase>
-  <testcase name="Busqueda por nombre sin resultados" classname="HU-06 Listar y buscar empleados" time="3.291">
-    <system-out><![CDATA[
-@empleados
-Scenario: Busqueda por nombre sin resultados                                                                &amp#27;[90m# src/test/resources/features/listar-empleados.feature:21&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel administrador ha iniciado sesion para consulta de empleados&amp#27;[0m                                      &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.elAdministradorHaIniciadoSesionParaConsultaDeEmpleados()&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario navega al modulo de listado de empleados&amp#27;[0m                                                  &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.elUsuarioNavegaAlModuloDeListadoDeEmpleados()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel usuario busca por &amp#27;[0m&amp#27;[32m&amp#27;[1m"XYZNOEXISTE99999"&amp#27;[0m&amp#27;[32m en la lista de empleados&amp#27;[0m                                      &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.elUsuarioBuscaPorEnLaListaDeEmpleados(java.lang.String)&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra en la lista el mensaje &amp#27;[0m&amp#27;[32m&amp#27;[1m"No se encontraron empleados con ese criterio de busqueda"&amp#27;[0m &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.elSistemaMuestraEnLaListaElMensaje(java.lang.String)&amp#27;[0m
+@usuarios
+Scenario: Intento de asignar el mismo rol actual                                                   &amp#27;[90m# src/test/resources/features/asignar-rol.feature:17&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel administrador ha iniciado sesion para gestion de usuarios&amp#27;[0m                               &amp#27;[90m# com.inventario.steps.CrearUsuarioStepDefinitions.elAdministradorHaIniciadoSesionParaGestionDeUsuarios()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mexiste un usuario registrado para la prueba de asignacion de rol&amp#27;[0m                           &amp#27;[90m# com.inventario.steps.AsignarRolStepDefinitions.existeUnUsuarioRegistradoParaLaPruebaDeAsignacionDeRol()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario abre el modal de asignacion de rol del primer usuario&amp#27;[0m                            &amp#27;[90m# com.inventario.steps.AsignarRolStepDefinitions.elUsuarioAbreElModalDeAsignacionDeRolDelPrimerUsuario()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel usuario confirma la asignacion de rol&amp#27;[0m                                                     &amp#27;[90m# com.inventario.steps.AsignarRolStepDefinitions.elUsuarioConfirmaLaAsignacionDeRol()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra el mensaje de error de asignacion &amp#27;[0m&amp#27;[32m&amp#27;[1m"El usuario ya tiene ese rol asignado"&amp#27;[0m &amp#27;[90m# com.inventario.steps.AsignarRolStepDefinitions.elSistemaMuestraElMensajeDeErrorDeAsignacion(java.lang.String)&amp#27;[0m
 ]]></system-out>
     <system-err><![CDATA[[main] INFO  - 
   _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
@@ -403,13 +234,13 @@ Scenario: Busqueda por nombre sin resultados                                    
    | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
    |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
 
-Busqueda por nombre sin resultados(hu-06-listar-y-buscar-empleados;busqueda-por-nombre-sin-resultados)
+Intento de asignar el mismo rol actual(hu-08-asignar-rol-a-usuario;intento-de-asignar-el-mismo-rol-actual)
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 8:18:15 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 8:33:50 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 8:18:15 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 8:33:50 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -417,18 +248,20 @@ ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may ne
    | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
    |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
 
-Busqueda por nombre sin resultados
+Intento de asignar el mismo rol actual
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Buscar empleado por cedula" classname="HU-06 Listar y buscar empleados" time="3.933">
+  <testcase name="Seleccion de rol vacia al asignar" classname="HU-08 Asignar rol a usuario" time="4.483">
     <system-out><![CDATA[
-@empleados
-Scenario: Buscar empleado por cedula                                        &amp#27;[90m# src/test/resources/features/listar-empleados.feature:26&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel administrador ha iniciado sesion para consulta de empleados&amp#27;[0m      &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.elAdministradorHaIniciadoSesionParaConsultaDeEmpleados()&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mexiste un empleado registrado para busqueda en la lista&amp#27;[0m             &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.existeUnEmpleadoRegistradoParaBusquedaEnLaLista()&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario busca el empleado por cedula en la lista&amp#27;[0m                  &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.elUsuarioBuscaElEmpleadoPorCedulaEnLaLista()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra exactamente un empleado en la tabla de resultados&amp#27;[0m &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.elSistemaMuestraExactamenteUnEmpleadoEnLaTablaDeResultados()&amp#27;[0m
+@usuarios
+Scenario: Seleccion de rol vacia al asignar                                           &amp#27;[90m# src/test/resources/features/asignar-rol.feature:23&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel administrador ha iniciado sesion para gestion de usuarios&amp#27;[0m                  &amp#27;[90m# com.inventario.steps.CrearUsuarioStepDefinitions.elAdministradorHaIniciadoSesionParaGestionDeUsuarios()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mexiste un usuario registrado para la prueba de asignacion de rol&amp#27;[0m              &amp#27;[90m# com.inventario.steps.AsignarRolStepDefinitions.existeUnUsuarioRegistradoParaLaPruebaDeAsignacionDeRol()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario abre el modal de asignacion de rol del primer usuario&amp#27;[0m               &amp#27;[90m# com.inventario.steps.AsignarRolStepDefinitions.elUsuarioAbreElModalDeAsignacionDeRolDelPrimerUsuario()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel usuario limpia la seleccion de rol en el modal&amp#27;[0m                               &amp#27;[90m# com.inventario.steps.AsignarRolStepDefinitions.elUsuarioLimpiaLaSeleccionDeRolEnElModal()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel usuario confirma la asignacion de rol&amp#27;[0m                                        &amp#27;[90m# com.inventario.steps.AsignarRolStepDefinitions.elUsuarioConfirmaLaAsignacionDeRol()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra el mensaje de error de asignacion &amp#27;[0m&amp#27;[32m&amp#27;[1m"Debe seleccionar un rol"&amp#27;[0m &amp#27;[90m# com.inventario.steps.AsignarRolStepDefinitions.elSistemaMuestraElMensajeDeErrorDeAsignacion(java.lang.String)&amp#27;[0m
 ]]></system-out>
     <system-err><![CDATA[[main] INFO  - 
   _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
@@ -436,13 +269,13 @@ Scenario: Buscar empleado por cedula                                        &amp
    | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
    |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
 
-Buscar empleado por cedula(hu-06-listar-y-buscar-empleados;buscar-empleado-por-cedula)
+Seleccion de rol vacia al asignar(hu-08-asignar-rol-a-usuario;seleccion-de-rol-vacia-al-asignar)
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 8:18:19 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 8:33:54 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 8:18:19 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 8:33:54 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -450,141 +283,33 @@ ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may ne
    | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
    |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
 
-Buscar empleado por cedula
+Seleccion de rol vacia al asignar
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Busqueda por cedula sin resultados" classname="HU-06 Listar y buscar empleados" time="3.335">
+  <testcase name="Acceso no autorizado al modulo de gestion de usuarios" classname="HU-08 Asignar rol a usuario" time="2.921">
     <system-out><![CDATA[
-@empleados
-Scenario: Busqueda por cedula sin resultados                                                                &amp#27;[90m# src/test/resources/features/listar-empleados.feature:31&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel administrador ha iniciado sesion para consulta de empleados&amp#27;[0m                                      &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.elAdministradorHaIniciadoSesionParaConsultaDeEmpleados()&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario navega al modulo de listado de empleados&amp#27;[0m                                                  &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.elUsuarioNavegaAlModuloDeListadoDeEmpleados()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel usuario busca por &amp#27;[0m&amp#27;[32m&amp#27;[1m"00000001"&amp#27;[0m&amp#27;[32m en la lista de empleados&amp#27;[0m                                              &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.elUsuarioBuscaPorEnLaListaDeEmpleados(java.lang.String)&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra en la lista el mensaje &amp#27;[0m&amp#27;[32m&amp#27;[1m"No se encontraron empleados con ese criterio de busqueda"&amp#27;[0m &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.elSistemaMuestraEnLaListaElMensaje(java.lang.String)&amp#27;[0m
-]]></system-out>
-    <system-err><![CDATA[[main] INFO  - 
-  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
- |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
-   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
-   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
-
-Busqueda por cedula sin resultados(hu-06-listar-y-buscar-empleados;busqueda-por-cedula-sin-resultados)
---------------------------------------------------------------------------------
-[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
-[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 8:18:22 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 8:18:22 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-[main] INFO  - 
-  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
- |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
-   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
-   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
-
-Busqueda por cedula sin resultados
-----------------------------------------------------------------------
-]]></system-err>
-  </testcase>
-  <testcase name="Filtrar empleados por estado activo" classname="HU-06 Listar y buscar empleados" time="3.698">
-    <system-out><![CDATA[
-@empleados
-Scenario: Filtrar empleados por estado activo                          &amp#27;[90m# src/test/resources/features/listar-empleados.feature:36&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel administrador ha iniciado sesion para consulta de empleados&amp#27;[0m &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.elAdministradorHaIniciadoSesionParaConsultaDeEmpleados()&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mexiste al menos un empleado registrado en el sistema&amp#27;[0m           &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.existeAlMenosUnEmpleadoRegistradoEnElSistema()&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario navega al modulo de listado de empleados&amp#27;[0m             &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.elUsuarioNavegaAlModuloDeListadoDeEmpleados()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel usuario filtra los empleados por estado &amp#27;[0m&amp#27;[32m&amp#27;[1m"activos"&amp#27;[0m             &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.elUsuarioFiltraLosEmpleadosPorEstado(java.lang.String)&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mtodos los empleados mostrados tienen el estado Activo&amp#27;[0m           &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.todosLosEmpleadosMostradosTienenElEstadoActivo()&amp#27;[0m
-]]></system-out>
-    <system-err><![CDATA[[main] INFO  - 
-  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
- |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
-   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
-   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
-
-Filtrar empleados por estado activo(hu-06-listar-y-buscar-empleados;filtrar-empleados-por-estado-activo)
---------------------------------------------------------------------------------
-[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
-[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 8:18:26 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 8:18:26 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-[main] INFO  - 
-  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
- |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
-   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
-   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
-
-Filtrar empleados por estado activo
-----------------------------------------------------------------------
-]]></system-err>
-  </testcase>
-  <testcase name="Lista vacia de empleados" classname="HU-06 Listar y buscar empleados" time="2.98">
-    <error message="Este escenario requiere una base de datos sin empleados registrados." type="io.cucumber.java.PendingException"><![CDATA[io.cucumber.java.PendingException: Este escenario requiere una base de datos sin empleados registrados.
-	at com.inventario.steps.ListarEmpleadosStepDefinitions.seSimulaQueNoHayEmpleadosEnElSistema(ListarEmpleadosStepDefinitions.java:110)
-	at ✽.se simula que no hay empleados en el sistema(file:///home/juanj/Projects-Test/serenity-inventario-login/src/test/resources/features/listar-empleados.feature:45)
-]]></error>
-    <system-out><![CDATA[
-@empleados @pendiente
-Scenario: Lista vacia de empleados                                              &amp#27;[90m# src/test/resources/features/listar-empleados.feature:43&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel administrador ha iniciado sesion para consulta de empleados&amp#27;[0m          &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.elAdministradorHaIniciadoSesionParaConsultaDeEmpleados()&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario navega al modulo de listado de empleados&amp#27;[0m                      &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.elUsuarioNavegaAlModuloDeListadoDeEmpleados()&amp#27;[0m
-  &amp#27;[33mAnd &amp#27;[0m&amp#27;[33mse simula que no hay empleados en el sistema&amp#27;[0m                              &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.seSimulaQueNoHayEmpleadosEnElSistema()&amp#27;[0m
-      &amp#27;[33mio.cucumber.java.PendingException: Este escenario requiere una base de datos sin empleados registrados.
-	at com.inventario.steps.ListarEmpleadosStepDefinitions.seSimulaQueNoHayEmpleadosEnElSistema(ListarEmpleadosStepDefinitions.java:110)
-	at ✽.se simula que no hay empleados en el sistema(file:///home/juanj/Projects-Test/serenity-inventario-login/src/test/resources/features/listar-empleados.feature:45)
-&amp#27;[0m
-  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mel sistema muestra en la lista el mensaje &amp#27;[0m&amp#27;[36m&amp#27;[1m"No hay empleados registrados"&amp#27;[0m &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.elSistemaMuestraEnLaListaElMensaje(java.lang.String)&amp#27;[0m
-]]></system-out>
-    <system-err><![CDATA[[main] INFO  - 
-  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
- |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
-   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
-   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
-
-Lista vacia de empleados(hu-06-listar-y-buscar-empleados;lista-vacia-de-empleados)
---------------------------------------------------------------------------------
-[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
-[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 8:18:29 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 8:18:29 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-]]></system-err>
-  </testcase>
-  <testcase name="Acceso denegado para roles no autorizados al modulo de empleados" classname="HU-06 Listar y buscar empleados" time="3.142">
-    <system-out><![CDATA[
-@empleados
-Scenario: Acceso denegado para roles no autorizados al modulo de empleados         &amp#27;[90m# src/test/resources/features/listar-empleados.feature:48&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel administrador ha iniciado sesion para consulta de empleados&amp#27;[0m             &amp#27;[90m# com.inventario.steps.ListarEmpleadosStepDefinitions.elAdministradorHaIniciadoSesionParaConsultaDeEmpleados()&amp#27;[0m
+@usuarios
+Scenario: Acceso no autorizado al modulo de gestion de usuarios                    &amp#27;[90m# src/test/resources/features/asignar-rol.feature:30&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel administrador ha iniciado sesion para gestion de usuarios&amp#27;[0m               &amp#27;[90m# com.inventario.steps.CrearUsuarioStepDefinitions.elAdministradorHaIniciadoSesionParaGestionDeUsuarios()&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario inicia sesion con el rol &amp#27;[0m&amp#27;[32m&amp#27;[1m"Ventas"&amp#27;[0m                               &amp#27;[90m# com.inventario.steps.RolesStepDefinitions.elUsuarioIniciaSesionConElRol(java.lang.String)&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario intenta acceder al modulo de lista de empleados&amp#27;[0m                  &amp#27;[90m# com.inventario.steps.EditarEmpleadoStepDefinitions.elUsuarioIntentaAccederAlModuloDeListaDeEmpleados()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario intenta acceder al modulo de gestion de usuarios&amp#27;[0m                 &amp#27;[90m# com.inventario.steps.AsignarRolStepDefinitions.elUsuarioIntentaAccederAlModuloDeGestionDeUsuarios()&amp#27;[0m
   &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra la pagina de acceso denegado&amp#27;[0m                             &amp#27;[90m# com.inventario.steps.RolesStepDefinitions.elSistemaMuestraLaPaginaDeAccesoDenegado()&amp#27;[0m
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel sistema muestra el mensaje &amp#27;[0m&amp#27;[32m&amp#27;[1m"No tiene permisos para acceder a este modulo"&amp#27;[0m &amp#27;[90m# com.inventario.steps.RolesStepDefinitions.elSistemaMuestraElMensaje(java.lang.String)&amp#27;[0m
 ]]></system-out>
     <system-err><![CDATA[[main] INFO  - 
-  _____   ___   ___   _____     ___   ___   _  _   ___    ___   _  _    ___ 
- |_   _| | __| / __| |_   _|   | _ \ | __| | \| | |   \  |_ _| | \| |  / __|
-   | |   | _|  \__ \   | |     |  _/ | _|  | .` | | |) |  | |  | .` | | (_ |
-   |_|   |___| |___/   |_|     |_|   |___| |_|\_| |___/  |___| |_|\_|  \___|
-
-Lista vacia de empleados
------------------------------------------------------------------------------
-[main] INFO  - 
   _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
  |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
    | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
    |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
 
-Acceso denegado para roles no autorizados al modulo de empleados(hu-06-listar-y-buscar-empleados;acceso-denegado-para-roles-no-autorizados-al-modulo-de-empleados)
+Acceso no autorizado al modulo de gestion de usuarios(hu-08-asignar-rol-a-usuario;acceso-no-autorizado-al-modulo-de-gestion-de-usuarios)
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 8:18:33 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 8:33:58 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 8:18:33 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 8:33:58 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -592,32 +317,33 @@ ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may ne
    | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
    |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
 
-Acceso denegado para roles no autorizados al modulo de empleados
+Acceso no autorizado al modulo de gestion de usuarios
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Registro exitoso de empleado" classname="HU-04 Registrar empleado" time="3.381">
+  <testcase name="Creacion exitosa de usuario" classname="HU-07 Crear usuario del sistema" time="3.842">
     <system-out><![CDATA[
-@empleados
-Scenario: Registro exitoso de empleado                                           &amp#27;[90m# src/test/resources/features/registrar-empleado.feature:10&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario esta autenticado en el modulo de registro de empleados&amp#27;[0m        &amp#27;[90m# com.inventario.steps.RegistrarEmpleadoStepDefinitions.elUsuarioEstaAutenticadoEnElModuloDeRegistroDeEmpleados()&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario registra un empleado con todos los campos obligatorios&amp#27;[0m         &amp#27;[90m# com.inventario.steps.RegistrarEmpleadoStepDefinitions.elUsuarioRegistraUnEmpleadoConTodosLosCamposObligatorios()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra el mensaje de exito &amp#27;[0m&amp#27;[32m&amp#27;[1m"Empleado registrado exitosamente"&amp#27;[0m &amp#27;[90m# com.inventario.steps.RegistrarEmpleadoStepDefinitions.elSistemaMuestraElMensajeDeExito(java.lang.String)&amp#27;[0m
+@usuarios
+Scenario: Creacion exitosa de usuario                                                  &amp#27;[90m# src/test/resources/features/crear-usuario.feature:10&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel administrador ha iniciado sesion para gestion de usuarios&amp#27;[0m                   &amp#27;[90m# com.inventario.steps.CrearUsuarioStepDefinitions.elAdministradorHaIniciadoSesionParaGestionDeUsuarios()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mexiste un empleado activo disponible para asignar usuario&amp#27;[0m                      &amp#27;[90m# com.inventario.steps.CrearUsuarioStepDefinitions.existeUnEmpleadoActivoDisponibleParaAsignarUsuario()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario diligencia el formulario de creacion de usuario&amp#27;[0m                      &amp#27;[90m# com.inventario.steps.CrearUsuarioStepDefinitions.elUsuarioDiligenciaElFormularioDeCreacionDeUsuario()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra el mensaje de exito de usuario &amp#27;[0m&amp#27;[32m&amp#27;[1m"Usuario creado exitosamente"&amp#27;[0m &amp#27;[90m# com.inventario.steps.CrearUsuarioStepDefinitions.elSistemaMuestraElMensajeDeExitoDeUsuario(java.lang.String)&amp#27;[0m
 ]]></system-out>
-    <system-err><![CDATA[[main] INFO  - Test Suite Started: HU-04 Registrar empleado
+    <system-err><![CDATA[[main] INFO  - Test Suite Started: HU-07 Crear usuario del sistema
 [main] INFO  - 
   _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
  |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
    | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
    |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
 
-Registro exitoso de empleado(hu-04-registrar-empleado;registro-exitoso-de-empleado)
+Creacion exitosa de usuario(hu-07-crear-usuario-del-sistema;creacion-exitosa-de-usuario)
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 8:18:36 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 8:34:01 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 8:18:36 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 8:34:01 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -625,17 +351,19 @@ ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may ne
    | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
    |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
 
-Registro exitoso de empleado
+Creacion exitosa de usuario
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Registro con telefono secundario" classname="HU-04 Registrar empleado" time="4.207">
+  <testcase name="Empleado con multiples usuarios" classname="HU-07 Crear usuario del sistema" time="4.342">
     <system-out><![CDATA[
-@empleados
-Scenario: Registro con telefono secundario                                       &amp#27;[90m# src/test/resources/features/registrar-empleado.feature:14&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario esta autenticado en el modulo de registro de empleados&amp#27;[0m        &amp#27;[90m# com.inventario.steps.RegistrarEmpleadoStepDefinitions.elUsuarioEstaAutenticadoEnElModuloDeRegistroDeEmpleados()&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario registra un empleado incluyendo el telefono secundario&amp#27;[0m         &amp#27;[90m# com.inventario.steps.RegistrarEmpleadoStepDefinitions.elUsuarioRegistraUnEmpleadoIncluyendoElTelefonoSecundario()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra el mensaje de exito &amp#27;[0m&amp#27;[32m&amp#27;[1m"Empleado registrado exitosamente"&amp#27;[0m &amp#27;[90m# com.inventario.steps.RegistrarEmpleadoStepDefinitions.elSistemaMuestraElMensajeDeExito(java.lang.String)&amp#27;[0m
+@usuarios
+Scenario: Empleado con multiples usuarios                                              &amp#27;[90m# src/test/resources/features/crear-usuario.feature:15&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel administrador ha iniciado sesion para gestion de usuarios&amp#27;[0m                   &amp#27;[90m# com.inventario.steps.CrearUsuarioStepDefinitions.elAdministradorHaIniciadoSesionParaGestionDeUsuarios()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mexiste un empleado activo disponible para asignar usuario&amp#27;[0m                      &amp#27;[90m# com.inventario.steps.CrearUsuarioStepDefinitions.existeUnEmpleadoActivoDisponibleParaAsignarUsuario()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario crea un primer usuario para ese empleado con rol &amp#27;[0m&amp#27;[32m&amp#27;[1m"Ventas"&amp#27;[0m            &amp#27;[90m# com.inventario.steps.CrearUsuarioStepDefinitions.elUsuarioCreaUnPrimerUsuarioParaEseEmpleadoConRol(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel usuario crea un segundo usuario para el mismo empleado con rol &amp#27;[0m&amp#27;[32m&amp#27;[1m"Produccion"&amp#27;[0m   &amp#27;[90m# com.inventario.steps.CrearUsuarioStepDefinitions.elUsuarioCreaUnSegundoUsuarioParaElMismoEmpleadoConRol(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra el mensaje de exito de usuario &amp#27;[0m&amp#27;[32m&amp#27;[1m"Usuario creado exitosamente"&amp#27;[0m &amp#27;[90m# com.inventario.steps.CrearUsuarioStepDefinitions.elSistemaMuestraElMensajeDeExitoDeUsuario(java.lang.String)&amp#27;[0m
 ]]></system-out>
     <system-err><![CDATA[[main] INFO  - 
   _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
@@ -643,13 +371,13 @@ Scenario: Registro con telefono secundario                                      
    | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
    |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
 
-Registro con telefono secundario(hu-04-registrar-empleado;registro-con-telefono-secundario)
+Empleado con multiples usuarios(hu-07-crear-usuario-del-sistema;empleado-con-multiples-usuarios)
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 8:18:39 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 8:34:05 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 8:18:39 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 8:34:05 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -657,18 +385,19 @@ ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may ne
    | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
    |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
 
-Registro con telefono secundario
+Empleado con multiples usuarios
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Cedula duplicada" classname="HU-04 Registrar empleado" time="3.805">
+  <testcase name="Nombre de usuario duplicado" classname="HU-07 Crear usuario del sistema" time="4.037">
     <system-out><![CDATA[
-@empleados
-Scenario: Cedula duplicada                                                                        &amp#27;[90m# src/test/resources/features/registrar-empleado.feature:18&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario esta autenticado en el modulo de registro de empleados&amp#27;[0m                         &amp#27;[90m# com.inventario.steps.RegistrarEmpleadoStepDefinitions.elUsuarioEstaAutenticadoEnElModuloDeRegistroDeEmpleados()&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario registra previamente un empleado en el sistema&amp#27;[0m                                 &amp#27;[90m# com.inventario.steps.RegistrarEmpleadoStepDefinitions.elUsuarioRegistraPreviamenteUnEmpleadoEnElSistema()&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario intenta registrar otro empleado con la misma cedula&amp#27;[0m                             &amp#27;[90m# com.inventario.steps.RegistrarEmpleadoStepDefinitions.elUsuarioIntentaRegistrarOtroEmpleadoConLaMismaCedula()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra el mensaje de error del empleado &amp#27;[0m&amp#27;[32m&amp#27;[1m"Ya existe un empleado con esa cedula"&amp#27;[0m &amp#27;[90m# com.inventario.steps.RegistrarEmpleadoStepDefinitions.elSistemaMuestraElMensajeDeErrorDelEmpleado(java.lang.String)&amp#27;[0m
+@usuarios
+Scenario: Nombre de usuario duplicado                                                                     &amp#27;[90m# src/test/resources/features/crear-usuario.feature:21&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel administrador ha iniciado sesion para gestion de usuarios&amp#27;[0m                                      &amp#27;[90m# com.inventario.steps.CrearUsuarioStepDefinitions.elAdministradorHaIniciadoSesionParaGestionDeUsuarios()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mexiste un empleado activo disponible para asignar usuario&amp#27;[0m                                         &amp#27;[90m# com.inventario.steps.CrearUsuarioStepDefinitions.existeUnEmpleadoActivoDisponibleParaAsignarUsuario()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel usuario crea un usuario de prueba para verificar duplicado&amp#27;[0m                                       &amp#27;[90m# com.inventario.steps.CrearUsuarioStepDefinitions.elUsuarioCreaUnUsuarioDePruebaParaVerificarDuplicado()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario intenta crear otro usuario con el mismo nombre de usuario&amp#27;[0m                               &amp#27;[90m# com.inventario.steps.CrearUsuarioStepDefinitions.elUsuarioIntentaCrearOtroUsuarioConElMismoNombreDeUsuario()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra el mensaje de error de usuario &amp#27;[0m&amp#27;[32m&amp#27;[1m"Ya existe un usuario con ese nombre de usuario"&amp#27;[0m &amp#27;[90m# com.inventario.steps.CrearUsuarioStepDefinitions.elSistemaMuestraElMensajeDeErrorDeUsuario(java.lang.String)&amp#27;[0m
 ]]></system-out>
     <system-err><![CDATA[[main] INFO  - 
   _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
@@ -676,13 +405,13 @@ Scenario: Cedula duplicada                                                      
    | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
    |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
 
-Cedula duplicada(hu-04-registrar-empleado;cedula-duplicada)
+Nombre de usuario duplicado(hu-07-crear-usuario-del-sistema;nombre-de-usuario-duplicado)
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 8:18:43 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 8:34:10 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 8:18:43 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 8:34:10 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -690,18 +419,18 @@ ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may ne
    | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
    |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
 
-Cedula duplicada
+Nombre de usuario duplicado
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Correo duplicado" classname="HU-04 Registrar empleado" time="3.866">
+  <testcase name="Contrasena invalida" classname="HU-07 Crear usuario del sistema" time="3.454">
     <system-out><![CDATA[
-@empleados
-Scenario: Correo duplicado                                                                        &amp#27;[90m# src/test/resources/features/registrar-empleado.feature:23&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario esta autenticado en el modulo de registro de empleados&amp#27;[0m                         &amp#27;[90m# com.inventario.steps.RegistrarEmpleadoStepDefinitions.elUsuarioEstaAutenticadoEnElModuloDeRegistroDeEmpleados()&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario registra previamente un empleado en el sistema&amp#27;[0m                                 &amp#27;[90m# com.inventario.steps.RegistrarEmpleadoStepDefinitions.elUsuarioRegistraPreviamenteUnEmpleadoEnElSistema()&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario intenta registrar otro empleado con el mismo correo&amp#27;[0m                             &amp#27;[90m# com.inventario.steps.RegistrarEmpleadoStepDefinitions.elUsuarioIntentaRegistrarOtroEmpleadoConElMismoCorreo()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra el mensaje de error del empleado &amp#27;[0m&amp#27;[32m&amp#27;[1m"Ya existe un empleado con ese correo"&amp#27;[0m &amp#27;[90m# com.inventario.steps.RegistrarEmpleadoStepDefinitions.elSistemaMuestraElMensajeDeErrorDelEmpleado(java.lang.String)&amp#27;[0m
+@usuarios
+Scenario: Contrasena invalida                                                                           &amp#27;[90m# src/test/resources/features/crear-usuario.feature:27&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel administrador ha iniciado sesion para gestion de usuarios&amp#27;[0m                                    &amp#27;[90m# com.inventario.steps.CrearUsuarioStepDefinitions.elAdministradorHaIniciadoSesionParaGestionDeUsuarios()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mexiste un empleado activo disponible para asignar usuario&amp#27;[0m                                       &amp#27;[90m# com.inventario.steps.CrearUsuarioStepDefinitions.existeUnEmpleadoActivoDisponibleParaAsignarUsuario()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario ingresa todos los campos con una contrasena de 6 caracteres&amp#27;[0m                           &amp#27;[90m# com.inventario.steps.CrearUsuarioStepDefinitions.elUsuarioIngresaTodosLosCamposConUnaContrasenaDeSeisCaracteres()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra el mensaje de error de usuario &amp#27;[0m&amp#27;[32m&amp#27;[1m"La contrasena debe tener mas de 6 caracteres"&amp#27;[0m &amp#27;[90m# com.inventario.steps.CrearUsuarioStepDefinitions.elSistemaMuestraElMensajeDeErrorDeUsuario(java.lang.String)&amp#27;[0m
 ]]></system-out>
     <system-err><![CDATA[[main] INFO  - 
   _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
@@ -709,13 +438,13 @@ Scenario: Correo duplicado                                                      
    | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
    |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
 
-Correo duplicado(hu-04-registrar-empleado;correo-duplicado)
+Contrasena invalida(hu-07-crear-usuario-del-sistema;contrasena-invalida)
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 8:18:47 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 8:34:14 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 8:18:47 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 8:34:14 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -723,17 +452,18 @@ ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may ne
    | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
    |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
 
-Correo duplicado
+Contrasena invalida
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Campos obligatorios vacios" classname="HU-04 Registrar empleado" time="2.323">
+  <testcase name="Campos obligatorios vacios" classname="HU-07 Crear usuario del sistema" time="2.503">
     <system-out><![CDATA[
-@empleados
-Scenario: Campos obligatorios vacios                                                                               &amp#27;[90m# src/test/resources/features/registrar-empleado.feature:28&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario esta autenticado en el modulo de registro de empleados&amp#27;[0m                                          &amp#27;[90m# com.inventario.steps.RegistrarEmpleadoStepDefinitions.elUsuarioEstaAutenticadoEnElModuloDeRegistroDeEmpleados()&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario intenta registrar un empleado sin diligenciar los campos obligatorios&amp#27;[0m                            &amp#27;[90m# com.inventario.steps.RegistrarEmpleadoStepDefinitions.elUsuarioIntentaRegistrarUnEmpleadoSinDiligenciarLosCamposObligatorios()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra el mensaje de error del empleado &amp#27;[0m&amp#27;[32m&amp#27;[1m"Todos los campos obligatorios deben ser diligenciados"&amp#27;[0m &amp#27;[90m# com.inventario.steps.RegistrarEmpleadoStepDefinitions.elSistemaMuestraElMensajeDeErrorDelEmpleado(java.lang.String)&amp#27;[0m
+@usuarios
+Scenario: Campos obligatorios vacios                                                         &amp#27;[90m# src/test/resources/features/crear-usuario.feature:32&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel administrador ha iniciado sesion para gestion de usuarios&amp#27;[0m                         &amp#27;[90m# com.inventario.steps.CrearUsuarioStepDefinitions.elAdministradorHaIniciadoSesionParaGestionDeUsuarios()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario navega al formulario de creacion de usuarios&amp#27;[0m                               &amp#27;[90m# com.inventario.steps.CrearUsuarioStepDefinitions.elUsuarioNavegaAlFormularioDeCreacionDeUsuarios()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel usuario intenta crear un usuario sin diligenciar los campos&amp#27;[0m                         &amp#27;[90m# com.inventario.steps.CrearUsuarioStepDefinitions.elUsuarioIntentaCrearUnUsuarioSinDiligenciarLosCampos()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra el mensaje de error de usuario &amp#27;[0m&amp#27;[32m&amp#27;[1m"Todos los campos son obligatorios"&amp#27;[0m &amp#27;[90m# com.inventario.steps.CrearUsuarioStepDefinitions.elSistemaMuestraElMensajeDeErrorDeUsuario(java.lang.String)&amp#27;[0m
 ]]></system-out>
     <system-err><![CDATA[[main] INFO  - 
   _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
@@ -741,13 +471,13 @@ Scenario: Campos obligatorios vacios                                            
    | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
    |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
 
-Campos obligatorios vacios(hu-04-registrar-empleado;campos-obligatorios-vacios)
+Campos obligatorios vacios(hu-07-crear-usuario-del-sistema;campos-obligatorios-vacios)
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 8:18:51 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 8:34:17 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 8:18:51 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 8:34:17 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -759,13 +489,13 @@ Campos obligatorios vacios
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Acceso no autorizado al modulo de registro de empleados" classname="HU-04 Registrar empleado" time="2.719">
+  <testcase name="Acceso no autorizado al modulo de creacion de usuarios" classname="HU-07 Crear usuario del sistema" time="2.896">
     <system-out><![CDATA[
-@empleados
-Scenario: Acceso no autorizado al modulo de registro de empleados                  &amp#27;[90m# src/test/resources/features/registrar-empleado.feature:32&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario esta autenticado en el modulo de registro de empleados&amp#27;[0m          &amp#27;[90m# com.inventario.steps.RegistrarEmpleadoStepDefinitions.elUsuarioEstaAutenticadoEnElModuloDeRegistroDeEmpleados()&amp#27;[0m
+@usuarios
+Scenario: Acceso no autorizado al modulo de creacion de usuarios                   &amp#27;[90m# src/test/resources/features/crear-usuario.feature:37&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel administrador ha iniciado sesion para gestion de usuarios&amp#27;[0m               &amp#27;[90m# com.inventario.steps.CrearUsuarioStepDefinitions.elAdministradorHaIniciadoSesionParaGestionDeUsuarios()&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario inicia sesion con el rol &amp#27;[0m&amp#27;[32m&amp#27;[1m"Ventas"&amp#27;[0m                               &amp#27;[90m# com.inventario.steps.RolesStepDefinitions.elUsuarioIniciaSesionConElRol(java.lang.String)&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario intenta acceder al modulo de registro de empleados&amp#27;[0m               &amp#27;[90m# com.inventario.steps.RegistrarEmpleadoStepDefinitions.elUsuarioIntentaAccederAlModuloDeRegistroDeEmpleados()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario intenta acceder al modulo de creacion de usuarios&amp#27;[0m                &amp#27;[90m# com.inventario.steps.CrearUsuarioStepDefinitions.elUsuarioIntentaAccederAlModuloDeCreacionDeUsuarios()&amp#27;[0m
   &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra la pagina de acceso denegado&amp#27;[0m                             &amp#27;[90m# com.inventario.steps.RolesStepDefinitions.elSistemaMuestraLaPaginaDeAccesoDenegado()&amp#27;[0m
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel sistema muestra el mensaje &amp#27;[0m&amp#27;[32m&amp#27;[1m"No tiene permisos para acceder a este modulo"&amp#27;[0m &amp#27;[90m# com.inventario.steps.RolesStepDefinitions.elSistemaMuestraElMensaje(java.lang.String)&amp#27;[0m
 ]]></system-out>
@@ -775,13 +505,13 @@ Scenario: Acceso no autorizado al modulo de registro de empleados               
    | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
    |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
 
-Acceso no autorizado al modulo de registro de empleados(hu-04-registrar-empleado;acceso-no-autorizado-al-modulo-de-registro-de-empleados)
+Acceso no autorizado al modulo de creacion de usuarios(hu-07-crear-usuario-del-sistema;acceso-no-autorizado-al-modulo-de-creacion-de-usuarios)
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 8:18:53 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 8:34:20 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 8:18:53 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 8:34:20 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -789,7 +519,7 @@ ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may ne
    | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
    |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
 
-Acceso no autorizado al modulo de registro de empleados
+Acceso no autorizado al modulo de creacion de usuarios
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>

@@ -1,9 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.inventario.runners.CucumberTestRunner
 -------------------------------------------------------------------------------
-Tests run: 21, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 83.89 s <<< FAILURE! -- in com.inventario.runners.CucumberTestRunner
-HU-06 Listar y buscar empleados.Lista vacia de empleados -- Time elapsed: 2.980 s <<< ERROR!
-io.cucumber.java.PendingException: Este escenario requiere una base de datos sin empleados registrados.
-	at com.inventario.steps.ListarEmpleadosStepDefinitions.seSimulaQueNoHayEmpleadosEnElSistema(ListarEmpleadosStepDefinitions.java:110)
-	at ✽.se simula que no hay empleados en el sistema(file:///home/juanj/Projects-Test/serenity-inventario-login/src/test/resources/features/listar-empleados.feature:45)
-
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 50.38 s -- in com.inventario.runners.CucumberTestRunner

@@ -5,6 +5,7 @@ com/inventario/pages/RegistrarEmpleadoPage.class
 com/inventario/steps/LoginStepDefinitions.class
 com/inventario/steps/EditarEmpleadoStepDefinitions.class
 com/inventario/steps/LogoutStepDefinitions.class
+com/inventario/steps/ActivarDesactivarUsuarioStepDefinitions.class
 com/inventario/pages/CrearUsuarioPage.class
 com/inventario/steps/ListarEmpleadosStepDefinitions.class
 com/inventario/pages/DashboardPage.class

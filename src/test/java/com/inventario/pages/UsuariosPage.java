@@ -66,6 +66,34 @@ public class UsuariosPage extends PageObject {
         saveButton.click();
     }
 
+    // Hace clic en el btn-toggle de la fila que contiene ese username
+    public void clickToggleForUser(String username) {
+        evaluateJavascript(
+            "var rows = Array.from(document.querySelectorAll('table.tabla tbody tr'));" +
+            "var row = rows.find(function(r){" +
+            "  return r.querySelector('.cell-usuario')?.textContent.trim().includes('" + username + "');" +
+            "});" +
+            "if(row){ var btn = row.querySelector('button.btn-toggle'); if(btn) btn.click(); }");
+    }
+
+    // Espera hasta 8 segundos que el badge del usuario muestre la clase esperada.
+    // El toggle es asíncrono (PATCH al backend), por eso se necesita polling.
+    public boolean waitForUserBadge(String username, String expectedBadgeClass) {
+        long deadline = System.currentTimeMillis() + 8_000;
+        while (System.currentTimeMillis() < deadline) {
+            Object found = evaluateJavascript(
+                "var rows = Array.from(document.querySelectorAll('table.tabla tbody tr'));" +
+                "var row = rows.find(function(r){" +
+                "  return r.querySelector('.cell-usuario')?.textContent.trim().includes('" + username + "');" +
+                "});" +
+                "var badge = row?.querySelector('.badge');" +
+                "return badge ? badge.classList.contains('" + expectedBadgeClass + "') : false;");
+            if (Boolean.TRUE.equals(found)) return true;
+            try { Thread.sleep(300); } catch (InterruptedException e) { Thread.currentThread().interrupt(); break; }
+        }
+        return false;
+    }
+
     public String getModalSuccessMessage() {
         waitFor(modalSuccessAlert);
         return modalSuccessAlert.getText().trim();
