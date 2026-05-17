@@ -17,6 +17,9 @@ public class ClientesPage extends PageObject {
     @FindBy(css = "button.btn-editar")
     private WebElementFacade firstEditButton;
 
+    @FindBy(css = ".estado-vacio p")
+    private WebElementFacade estadoVacioMessage;
+
     @FindBy(css = "button.btn-guardar")
     private WebElementFacade submitButton;
 
@@ -79,6 +82,38 @@ public class ClientesPage extends PageObject {
     public String getFormErrorMessage() {
         waitFor(modalErrorAlert);
         return modalErrorAlert.getText().trim();
+    }
+
+    // ── HU-12: listado y búsqueda ────────────────────────────────────────────
+
+    public void waitForList() {
+        waitFor(firstEditButton);
+    }
+
+    public void searchByText(String text) {
+        waitFor(searchInput);
+        searchInput.clear();
+        searchInput.type(text);
+    }
+
+    public int getVisibleRowCount() {
+        Object count = evaluateJavascript(
+            "return document.querySelectorAll('table.tabla tbody tr').length;");
+        return count instanceof Long ? ((Long) count).intValue() : 0;
+    }
+
+    public boolean hasRequiredColumns() {
+        return Boolean.TRUE.equals(evaluateJavascript(
+            "function norm(s){return s.normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').toLowerCase();}" +
+            "var ths = Array.from(document.querySelectorAll('table.tabla thead th'));" +
+            "var texts = ths.map(function(th){return norm(th.textContent.trim());});" +
+            "var required = ['cedula','nombre','correo','ciudad','telefono'];" +
+            "return required.every(function(r){return texts.some(function(t){return t.includes(r);});});"));
+    }
+
+    public String getEstadoVacioMessage() {
+        waitFor(estadoVacioMessage);
+        return estadoVacioMessage.getText().trim();
     }
 
     // ── Edición: buscar + abrir modal ────────────────────────────────────────

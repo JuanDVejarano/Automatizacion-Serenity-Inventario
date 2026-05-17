@@ -12,6 +12,7 @@
 /home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/steps/CrearUsuarioStepDefinitions.java
 /home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/steps/EditarClienteStepDefinitions.java
 /home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/steps/EditarEmpleadoStepDefinitions.java
+/home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/steps/ListarClientesStepDefinitions.java
 /home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/steps/ListarEmpleadosStepDefinitions.java
 /home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/steps/LoginStepDefinitions.java
 /home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/steps/LogoutStepDefinitions.java

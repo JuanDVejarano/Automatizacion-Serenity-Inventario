@@ -221,7 +221,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 16-05-2026 20:56:24</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 16-05-2026 21:09:45</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -236,7 +236,7 @@
                         <td width="375px" valign="top">
                             <div class="test-count-summary">
                                 <div class="test-count-title">
-                                    76 tests
+                                    83 tests
 
                                     
 
@@ -306,13 +306,13 @@
                     <td>
                         <i class="bi bi-card-checklist"></i> Number of Scenarios
                     </td>
-                    <td>58</td>
+                    <td>65</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-caret-right"></i> Total Number of Test Cases
                     </td>
-                    <td>76</td>
+                    <td>83</td>
                 </tr>
                 <tr scope="row">
                     <td>
@@ -325,14 +325,14 @@
                         <i class="bi bi-stop-circle"></i> Tests
                         Finished
                     </td>
-                    <td>May 16, 2026 20:56:12</td>
+                    <td>May 16, 2026 21:08:44</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stopwatch"></i> Total
                         Duration
                     </td>
-                    <td> 57m 20s</td>
+                    <td> 1h  9m 52s</td>
                 </tr>
                 <tr scope="row">
                     <td>
@@ -359,7 +359,7 @@
                         <i class="bi bi-stopwatch-fill"></i> Total
                         Execution Time
                     </td>
-                    <td> 4m 12s</td>
+                    <td> 4m 34s</td>
                 </tr>
                 </tbody>
             </table>
@@ -645,6 +645,68 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                                                                                 </tr>
                                                                                 <tr>
                                                                                     <td>
+                                                                                            <a href="89584cbc147852c3504fa4b3e50850f3bd8ff1ce84784ed32d78cc8eee4e489e.html"> HU-12 Listar y buscar clientes</a>
+                                                                                    </td>
+                                                                                    <td>7</td>
+                                                                                    <td>Given el usuario ha iniciado sesion en el modulo de clientes
+Given existe al menos un cliente registrado en el sistema
+When el usuario navega al modulo de listado de clientes
+Then el sistema muestra la tabla de clientes con las columnas requeridas
+And la tabla contiene al menos un cliente registrado
+Given el usuario ha iniciado sesion en el modulo de clientes
+Given existe un cliente registrado para busqueda en la lista de clientes
+When el usuario busca el cliente por nombre en la lista de clientes
+Then el sistema muestra el cliente en los resultados de busqueda de clientes
+Given el usuario ha iniciado sesion en el modulo de clientes
+When el usuario navega al modulo de listado de clientes
+And el usuario busca por "XYZNOEXISTECLIENTE99" en la lista de clientes
+Then el sistema muestra en la lista de clientes el mensaje "No se encontraron clientes con ese criterio de busqueda"
+Given el usuario ha iniciado sesion en el modulo de clientes
+Given existe un cliente registrado para busqueda en la lista de clientes
+When el usuario busca el cliente por cedula en la lista de clientes
+Then el sistema muestra exactamente un cliente en la tabla de resultados de clientes
+Given el usuario ha iniciado sesion en el modulo de clientes
+When el usuario navega al modulo de listado de clientes
+And el usuario busca por "00000001" en la lista de clientes
+Then el sistema muestra en la lista de clientes el mensaje "No se encontraron clientes con ese criterio de busqueda"
+Given el usuario ha iniciado sesion en el modulo de clientes
+When el usuario navega al modulo de listado de clientes
+And se simula que no hay clientes en el sistema
+Then el sistema muestra en la lista de clientes el mensaje "No hay clientes registrados"
+Given el usuario ha iniciado sesion en el modulo de clientes
+Given el usuario inicia sesion con el rol "Produccion"
+When el usuario intenta acceder al modulo de clientes
+Then el sistema muestra la pagina de acceso denegado
+And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
+</td>
+                                                                                    <td>7</td>
+                                                                                    <td>86%</td>
+                                                                                    <td>
+                                                                                            <a href='##beforetable'><i class='bi bi-hourglass-top pending-icon ' title='PENDING'></i></a>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <div class="progress">
+                                                                                                <div class="progress-bar"
+                                                                                                     role="progressbar"
+                                                                                                     style="width: 85.714286%; background-color: #b0cf73"
+                                                                                                     aria-valuenow="6"
+                                                                                                     title="86% success"
+                                                                                                     aria-valuemin="0"
+                                                                                                     aria-valuemax="100">
+                                                                                                </div>
+                                                                                                <div class="progress-bar"
+                                                                                                     role="progressbar"
+                                                                                                     style="width: 14.285714%; background-color: #a5c7ed"
+                                                                                                     aria-valuenow="1"
+                                                                                                     title="14% pending"
+                                                                                                     aria-valuemin="0"
+                                                                                                     aria-valuemax="100">
+                                                                                                </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>
                                                                                             <a href="6be9193e8ae8fdbf538649435538a63892bd61637ec1bfecc8e5a6fdc10fdf86.html"> HU-06 Listar y buscar empleados</a>
                                                                                     </td>
                                                                                     <td>8</td>
@@ -824,17 +886,25 @@ Then el sistema muestra la pagina de acceso denegado
 And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
 </td>
                                                                                     <td>6</td>
-                                                                                    <td>100%</td>
+                                                                                    <td>83%</td>
                                                                                     <td>
-                                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                                                                            <a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon ' title='FAILURE'></i></a>
                                                                                     </td>
                                                                                     <td>
                                                                                         <div class="progress">
                                                                                                 <div class="progress-bar"
                                                                                                      role="progressbar"
-                                                                                                     style="width: 100%; background-color: #b0cf73"
-                                                                                                     aria-valuenow="6"
-                                                                                                     title="100% success"
+                                                                                                     style="width: 83.333333%; background-color: #b0cf73"
+                                                                                                     aria-valuenow="5"
+                                                                                                     title="83% success"
+                                                                                                     aria-valuemin="0"
+                                                                                                     aria-valuemax="100">
+                                                                                                </div>
+                                                                                                <div class="progress-bar"
+                                                                                                     role="progressbar"
+                                                                                                     style="width: 16.666667%; background-color: #fd938e"
+                                                                                                     aria-valuenow="1"
+                                                                                                     title="17% failure"
                                                                                                      aria-valuemin="0"
                                                                                                      aria-valuemax="100">
                                                                                                 </div>
@@ -1007,6 +1077,43 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                                                         </div>
                                                     </div>
 
+                                                    <div class="row">
+                                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                                            <h3>Test Failure Overview</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                                            <h4>Most Frequent Failures</h4>
+                                                            <table class="table" style="width:40vw;">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="failure-color top-list-title">
+                                                                            <a href="a0ace456df350117335ad374e8d62c0d8c978db868ea1469e0c5ba32aac965ea.html"><a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon ' title='FAILURE'></i></a> Assertion error</a>
+                                                                        </td>
+                                                                        <td><span
+                                                                                    class="badge failure-badge">1</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                                            <h4>Most Unstable Features</h4>
+                                                            <table class="table" style="width:40vw;">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="failure-color top-list-title">
+                                                                            <a href="e09e83f8a4a088ab68c1032ae830984b0dd98e982f9cb221333ce41005810ecf.html">HU-10 Registrar cliente</a>
+                                                                        </td>
+                                                                        <td>
+                                                                            <span class="badge failure-badge">16%</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
                                             </div>
                                             <div class="container-fluid">
         <div class="row">
@@ -1017,12 +1124,12 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                             <div>
                                     <a href="e173e6e85602d9be589a9f0ed1a67e5dba634f57cc053f2565e96d857854da7f.html">
                                     <span class="tag-badge badge" style="background-color:#a5c7ed; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Pendiente&nbsp;&nbsp;&nbsp;1
+                                        <i class="bi bi-tag-fill"></i> Pendiente&nbsp;&nbsp;&nbsp;2
                                     </span>
                                     </a>
                                     <a href="0e6526d506a8a0c1396ab20dbfcad94ad30533372cdf8874f7c88f3d03d954be.html">
-                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Clientes&nbsp;&nbsp;&nbsp;13
+                                    <span class="tag-badge badge" style="background-color:#fd938e; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Clientes&nbsp;&nbsp;&nbsp;20
                                     </span>
                                     </a>
                                     <a href="76cc7f5d307a675a7adedd9999901990879c858ed6be1ab63d0a80722b07317f.html">
@@ -1053,8 +1160,8 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                                 <h5 class="card-title">Context</h5>
                             <div>
                                     <a href="46b54d9084ba9783130da16408afb27a4e4620f6bd966e731510c7395b9ddf5c.html">
-                                    <span class="tag-badge badge" style="background-color:#a5c7ed; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Chrome, Linux&nbsp;&nbsp;&nbsp;76
+                                    <span class="tag-badge badge" style="background-color:#fd938e; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Chrome, Linux&nbsp;&nbsp;&nbsp;83
                                     </span>
                                     </a>
                             </div>
@@ -1077,18 +1184,18 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                     <td>
                         <i class="bi bi-card-checklist"></i> Number of Scenarios
                     </td>
-                    <td>58</td>
+                    <td>65</td>
                     <td>
                         <i class="bi bi-stopwatch"></i> Total
                         Duration
                     </td>
-                    <td> 57m 20s</td>
+                    <td> 1h  9m 52s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-caret-right"></i> Total Number of Test Cases
                     </td>
-                    <td>76</td>
+                    <td>83</td>
                     <td>
                         <i class="bi bi-trophy"></i> Fastest Test
                     </td>
@@ -1121,12 +1228,12 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                         <i class="bi bi-stop-circle"></i> Tests
                         Finished
                     </td>
-                    <td>May 16, 2026 20:56:12</td>
+                    <td>May 16, 2026 21:08:44</td>
                     <td>
                         <i class="bi bi-stopwatch-fill"></i> Total
                         Execution Time
                     </td>
-                    <td> 4m 12s</td>
+                    <td> 4m 34s</td>
                 </tr>
                 </tbody>
             </table>
@@ -1449,8 +1556,8 @@ And el usuario actualiza el nombre del cliente a "Nombre Cliente Editado"
 And el usuario guarda los cambios del cliente
 Then el sistema muestra el mensaje de exito de edicion de cliente "Cliente actualizado exitosamente"
 </td>
-                                                                        <td data-order="1778982914">20:55:14</td>
-                                                                        <td>6s 262ms</td>
+                                                                        <td data-order="1778983643">21:07:23</td>
+                                                                        <td>6s 470ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1472,8 +1579,8 @@ And el Administrador cambia la cedula del cliente por un valor nuevo
 And el usuario guarda los cambios del cliente
 Then el sistema muestra el mensaje de exito de edicion de cliente "Cliente actualizado exitosamente"
 </td>
-                                                                        <td data-order="1778982921">20:55:21</td>
-                                                                        <td>4s 955ms</td>
+                                                                        <td data-order="1778983650">21:07:30</td>
+                                                                        <td>4s 946ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1494,8 +1601,8 @@ And se establece el token de sesion con rol Ventas para clientes
 When el usuario busca y abre el modal de edicion del cliente
 Then el campo cedula o NIT esta deshabilitado en el modal de edicion del cliente
 </td>
-                                                                        <td data-order="1778982926">20:55:26</td>
-                                                                        <td>4s 632ms</td>
+                                                                        <td data-order="1778983655">21:07:35</td>
+                                                                        <td>4s 358ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1515,8 +1622,8 @@ Given existen dos clientes registrados para la prueba de duplicados en edicion
 When el usuario abre el modal del primer cliente e ingresa el correo del segundo cliente
 Then el sistema muestra el mensaje de error de edicion de cliente "Ya existe un cliente con ese correo"
 </td>
-                                                                        <td data-order="1778982930">20:55:30</td>
-                                                                        <td>6s 298ms</td>
+                                                                        <td data-order="1778983659">21:07:39</td>
+                                                                        <td>6s 520ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1536,8 +1643,8 @@ Given existen dos clientes registrados para la prueba de duplicados en edicion
 When el usuario abre el modal del primer cliente e ingresa la cedula del segundo cliente
 Then el sistema muestra el mensaje de error de edicion de cliente "Ya existe un cliente con esa cedula"
 </td>
-                                                                        <td data-order="1778982937">20:55:37</td>
-                                                                        <td>6s 582ms</td>
+                                                                        <td data-order="1778983666">21:07:46</td>
+                                                                        <td>6s 352ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1559,8 +1666,8 @@ And el usuario borra los campos obligatorios del modal de edicion del cliente
 And el usuario guarda los cambios del cliente
 Then el sistema muestra el mensaje de error de edicion de cliente "Todos los campos obligatorios deben ser diligenciados"
 </td>
-                                                                        <td data-order="1778982943">20:55:43</td>
-                                                                        <td>4s 971ms</td>
+                                                                        <td data-order="1778983672">21:07:52</td>
+                                                                        <td>4s 817ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1581,8 +1688,8 @@ When el usuario intenta acceder al modulo de clientes
 Then el sistema muestra la pagina de acceso denegado
 And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
 </td>
-                                                                        <td data-order="1778982948">20:55:48</td>
-                                                                        <td>2s 968ms</td>
+                                                                        <td data-order="1778983677">21:07:57</td>
+                                                                        <td>2s 790ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1738,6 +1845,155 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
 </td>
                                                                         <td data-order="1778980684">20:18:04</td>
                                                                         <td>2s 869ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="89584cbc147852c3504fa4b3e50850f3bd8ff1ce84784ed32d78cc8eee4e489e.html">HU-12 Listar y buscar clientes</a>
+                                                                        </td>
+                                                                        <td data-order="Listar todos los clientes con sus datos">
+                                                                                    <a href="fb44239d0a23711a7065d97a2f4687137ce6064b992a60324ceded250d5d7446.html">Listar todos los clientes con sus datos</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
+                                                                        </td>
+                                                                        <td>5</td>
+                                                                        <td>Given el usuario ha iniciado sesion en el modulo de clientes
+Given existe al menos un cliente registrado en el sistema
+When el usuario navega al modulo de listado de clientes
+Then el sistema muestra la tabla de clientes con las columnas requeridas
+And la tabla contiene al menos un cliente registrado
+</td>
+                                                                        <td data-order="1778983680">21:08:00</td>
+                                                                        <td>4s 288ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="89584cbc147852c3504fa4b3e50850f3bd8ff1ce84784ed32d78cc8eee4e489e.html">HU-12 Listar y buscar clientes</a>
+                                                                        </td>
+                                                                        <td data-order="Buscar cliente por nombre">
+                                                                                    <a href="4a5f746c96e2ae02090a3cfda29bfb28ff24fc79e606e3c2f8c4e5c3e7a31b58.html">Buscar cliente por nombre</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
+                                                                        </td>
+                                                                        <td>4</td>
+                                                                        <td>Given el usuario ha iniciado sesion en el modulo de clientes
+Given existe un cliente registrado para busqueda en la lista de clientes
+When el usuario busca el cliente por nombre en la lista de clientes
+Then el sistema muestra el cliente en los resultados de busqueda de clientes
+</td>
+                                                                        <td data-order="1778983684">21:08:04</td>
+                                                                        <td>4s 610ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="89584cbc147852c3504fa4b3e50850f3bd8ff1ce84784ed32d78cc8eee4e489e.html">HU-12 Listar y buscar clientes</a>
+                                                                        </td>
+                                                                        <td data-order="Busqueda por nombre sin resultados">
+                                                                                    <a href="37d3c3ca2e62ea0364896e6a737826b5c204f57691b06e622e1f26768edc0526.html">Busqueda por nombre sin resultados</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
+                                                                        </td>
+                                                                        <td>4</td>
+                                                                        <td>Given el usuario ha iniciado sesion en el modulo de clientes
+When el usuario navega al modulo de listado de clientes
+And el usuario busca por "XYZNOEXISTECLIENTE99" en la lista de clientes
+Then el sistema muestra en la lista de clientes el mensaje "No se encontraron clientes con ese criterio de busqueda"
+</td>
+                                                                        <td data-order="1778983689">21:08:09</td>
+                                                                        <td>2s 575ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="89584cbc147852c3504fa4b3e50850f3bd8ff1ce84784ed32d78cc8eee4e489e.html">HU-12 Listar y buscar clientes</a>
+                                                                        </td>
+                                                                        <td data-order="Buscar cliente por cedula o NIT">
+                                                                                    <a href="4060c4cf6a44db9c45a9c8f3da081ea2e901fe616562210cabab9f09ddb0045a.html">Buscar cliente por cedula o NIT</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
+                                                                        </td>
+                                                                        <td>4</td>
+                                                                        <td>Given el usuario ha iniciado sesion en el modulo de clientes
+Given existe un cliente registrado para busqueda en la lista de clientes
+When el usuario busca el cliente por cedula en la lista de clientes
+Then el sistema muestra exactamente un cliente en la tabla de resultados de clientes
+</td>
+                                                                        <td data-order="1778983692">21:08:12</td>
+                                                                        <td>4s 104ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="89584cbc147852c3504fa4b3e50850f3bd8ff1ce84784ed32d78cc8eee4e489e.html">HU-12 Listar y buscar clientes</a>
+                                                                        </td>
+                                                                        <td data-order="Busqueda por cedula sin resultados">
+                                                                                    <a href="ad06da4b553576509b5e83b21e27cb7ab3b9a40c1c02100be990b63fef0907d3.html">Busqueda por cedula sin resultados</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
+                                                                        </td>
+                                                                        <td>4</td>
+                                                                        <td>Given el usuario ha iniciado sesion en el modulo de clientes
+When el usuario navega al modulo de listado de clientes
+And el usuario busca por "00000001" en la lista de clientes
+Then el sistema muestra en la lista de clientes el mensaje "No se encontraron clientes con ese criterio de busqueda"
+</td>
+                                                                        <td data-order="1778983696">21:08:16</td>
+                                                                        <td>2s 525ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result PENDING">
+                                                                        <td>
+                                                                                <a href="89584cbc147852c3504fa4b3e50850f3bd8ff1ce84784ed32d78cc8eee4e489e.html">HU-12 Listar y buscar clientes</a>
+                                                                        </td>
+                                                                        <td data-order="Lista vacia de clientes">
+                                                                                    <a href="23e730c61ad1c39f8b98cd3e8107c73bd9a78a6cadc6e70f2dbe5b7a88789e49.html">Lista vacia de clientes</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
+                                                                        </td>
+                                                                        <td>4</td>
+                                                                        <td>Given el usuario ha iniciado sesion en el modulo de clientes
+When el usuario navega al modulo de listado de clientes
+And se simula que no hay clientes en el sistema
+Then el sistema muestra en la lista de clientes el mensaje "No hay clientes registrados"
+</td>
+                                                                        <td data-order="1778983699">21:08:19</td>
+                                                                        <td>2s 293ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-hourglass-top pending-icon ' title='PENDING'></i></a> <span
+                                                                                    style="display:none">PENDING</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="89584cbc147852c3504fa4b3e50850f3bd8ff1ce84784ed32d78cc8eee4e489e.html">HU-12 Listar y buscar clientes</a>
+                                                                        </td>
+                                                                        <td data-order="Acceso no autorizado al modulo de listado de clientes">
+                                                                                    <a href="54fbea01238e327e9f7f0c5991cad129a63242c7b60fae30bdd8fe42eca62d77.html">Acceso no autorizado al modulo de listado de clientes</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
+                                                                        </td>
+                                                                        <td>5</td>
+                                                                        <td>Given el usuario ha iniciado sesion en el modulo de clientes
+Given el usuario inicia sesion con el rol "Produccion"
+When el usuario intenta acceder al modulo de clientes
+Then el sistema muestra la pagina de acceso denegado
+And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
+</td>
+                                                                        <td data-order="1778983701">21:08:21</td>
+                                                                        <td>2s 836ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -2099,8 +2355,8 @@ Then las demas pestanas son redirigidas al login con el mensaje "Sesion cerrada 
 When el usuario registra un cliente con todos los campos obligatorios
 Then el sistema muestra el mensaje de exito de cliente "Cliente registrado exitosamente"
 </td>
-                                                                        <td data-order="1778982951">20:55:51</td>
-                                                                        <td>2s 858ms</td>
+                                                                        <td data-order="1778983704">21:08:24</td>
+                                                                        <td>2s 988ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -2119,8 +2375,8 @@ Then el sistema muestra el mensaje de exito de cliente "Cliente registrado exito
 When el usuario registra un cliente incluyendo el telefono secundario
 Then el sistema muestra el mensaje de exito de cliente "Cliente registrado exitosamente"
 </td>
-                                                                        <td data-order="1778982954">20:55:54</td>
-                                                                        <td>2s 571ms</td>
+                                                                        <td data-order="1778983707">21:08:27</td>
+                                                                        <td>2s 615ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -2140,8 +2396,8 @@ Given el usuario registra previamente un cliente en el sistema
 When el usuario intenta registrar otro cliente con la misma cedula o NIT
 Then el sistema muestra el mensaje de error de cliente "Ya existe un cliente con esa cedula"
 </td>
-                                                                        <td data-order="1778982957">20:55:57</td>
-                                                                        <td>4s 532ms</td>
+                                                                        <td data-order="1778983710">21:08:30</td>
+                                                                        <td>3s 973ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -2161,8 +2417,8 @@ Given el usuario registra previamente un cliente en el sistema
 When el usuario intenta registrar otro cliente con el mismo correo
 Then el sistema muestra el mensaje de error de cliente "Ya existe un cliente con ese correo"
 </td>
-                                                                        <td data-order="1778982962">20:56:02</td>
-                                                                        <td>4s 660ms</td>
+                                                                        <td data-order="1778983714">21:08:34</td>
+                                                                        <td>4s 425ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -2182,13 +2438,13 @@ When el usuario abre el formulario de registro de cliente
 And el usuario intenta registrar el cliente sin diligenciar los campos
 Then el sistema muestra el mensaje de error de cliente "Todos los campos obligatorios deben ser diligenciados"
 </td>
-                                                                        <td data-order="1778982966">20:56:06</td>
-                                                                        <td>2s 395ms</td>
+                                                                        <td data-order="1778983718">21:08:38</td>
+                                                                        <td>2s 677ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
                                                                     </tr>
-                                                                    <tr class="scenario-result SUCCESS">
+                                                                    <tr class="scenario-result FAILURE">
                                                                         <td>
                                                                                 <a href="e09e83f8a4a088ab68c1032ae830984b0dd98e982f9cb221333ce41005810ecf.html">HU-10 Registrar cliente</a>
                                                                         </td>
@@ -2204,10 +2460,10 @@ When el usuario intenta acceder al modulo de clientes
 Then el sistema muestra la pagina de acceso denegado
 And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
 </td>
-                                                                        <td data-order="1778982969">20:56:09</td>
+                                                                        <td data-order="1778983721">21:08:41</td>
                                                                         <td>2s 694ms</td>
-                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
-                                                                                    style="display:none">SUCCESS</span>
+                                                                        <td><a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon ' title='FAILURE'></i></a> <span
+                                                                                    style="display:none">FAILURE</span>
                                                                         </td>
                                                                     </tr>
                                                                     <tr class="scenario-result SUCCESS">
@@ -2429,12 +2685,12 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                             <div>
                                     <a href="e173e6e85602d9be589a9f0ed1a67e5dba634f57cc053f2565e96d857854da7f.html">
                                     <span class="tag-badge badge" style="background-color:#a5c7ed; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Pendiente&nbsp;&nbsp;&nbsp;1
+                                        <i class="bi bi-tag-fill"></i> Pendiente&nbsp;&nbsp;&nbsp;2
                                     </span>
                                     </a>
                                     <a href="0e6526d506a8a0c1396ab20dbfcad94ad30533372cdf8874f7c88f3d03d954be.html">
-                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Clientes&nbsp;&nbsp;&nbsp;13
+                                    <span class="tag-badge badge" style="background-color:#fd938e; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Clientes&nbsp;&nbsp;&nbsp;20
                                     </span>
                                     </a>
                                     <a href="76cc7f5d307a675a7adedd9999901990879c858ed6be1ab63d0a80722b07317f.html">
@@ -2465,8 +2721,8 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                                 <h5 class="card-title">Context</h5>
                             <div>
                                     <a href="46b54d9084ba9783130da16408afb27a4e4620f6bd966e731510c7395b9ddf5c.html">
-                                    <span class="tag-badge badge" style="background-color:#a5c7ed; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Chrome, Linux&nbsp;&nbsp;&nbsp;76
+                                    <span class="tag-badge badge" style="background-color:#fd938e; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Chrome, Linux&nbsp;&nbsp;&nbsp;83
                                     </span>
                                     </a>
                             </div>
@@ -2520,7 +2776,7 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
             datasets: [{
                 label: 'Test Results',
                 fill: false,
-                data: [75,1,0,0,0,0,0,0],
+                data: [80,2,0,0,0,1,0,0],
                 backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                 borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                 borderWidth: 1,
@@ -2571,7 +2827,7 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                         ctx.font = fontSize + "em sans-serif";
                         ctx.textBaseline = "middle";
 
-                        var text = "99%"
+                        var text = "96%"
                         textX = 10 + Math.round((width - ctx.measureText(text).width) / 2);
                         textY = (height / 2) - 40;
 
@@ -2616,7 +2872,7 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
             datasets: [
                 {
                     label: 'Automated',
-                    data: [75,1,0,0,0,0,0,0],
+                    data: [80,2,0,0,0,1,0,0],
                     backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                     borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                     borderWidth: 1
@@ -2699,7 +2955,7 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
             datasets: [{
                 label: 'Number of tests per duration',
                 fill: false,
-                data: ['0','76','0','0','0','0','0','0'],
+                data: ['0','83','0','0','0','0','0','0'],
                 backgroundColor: 'rgba(83, 146, 255,0.5)',
                 borderColor: 'rgba(83, 146, 255, 1)',
             }]
@@ -2787,6 +3043,11 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                 link: "09ad04306b0120eebec8aa391510177b3afbc423e9810972099d6f04edec1543.html"
             },
             {
+                title: 'HU-12 Listar y buscar clientes',
+                result: 'PENDING',
+                link: "89584cbc147852c3504fa4b3e50850f3bd8ff1ce84784ed32d78cc8eee4e489e.html"
+            },
+            {
                 title: 'HU-06 Listar y buscar empleados',
                 result: 'PENDING',
                 link: "6be9193e8ae8fdbf538649435538a63892bd61637ec1bfecc8e5a6fdc10fdf86.html"
@@ -2803,7 +3064,7 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
             },
             {
                 title: 'HU-10 Registrar cliente',
-                result: 'SUCCESS',
+                result: 'FAILURE',
                 link: "e09e83f8a4a088ab68c1032ae830984b0dd98e982f9cb221333ce41005810ecf.html"
             },
             {
@@ -2824,6 +3085,7 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                 'HU-07 Crear usuario del sistema',
                 'HU-11 Editar informacion de cliente',
                 'HU-05 Editar informacion de empleado',
+                'HU-12 Listar y buscar clientes',
                 'HU-06 Listar y buscar empleados',
                 'HU-01 Iniciar sesion en el sistema',
                 'HU-02 Cerrar sesion del sistema',
@@ -2834,42 +3096,42 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
             datasets: [
                 {
                     label: ['Passing Tests'],
-                    data: [3,4,6,7,7,7,5,3,6,6,21],
+                    data: [3,4,6,7,7,6,7,5,3,5,6,21],
                     backgroundColor: [ 'rgba(153,204,51,0.5)' ]
                 },
                 {
                     label: ['Pending Tests'],
-                    data: [0,0,0,0,0,1,0,0,0,0,0],
+                    data: [0,0,0,0,0,1,1,0,0,0,0,0],
                     backgroundColor: [ 'rgba(165, 199, 238, 0.5)' ]
                 },
                 {
                     label: ['Ignored Tests'],
-                    data: [0,0,0,0,0,0,0,0,0,0,0],
+                    data: [0,0,0,0,0,0,0,0,0,0,0,0],
                     backgroundColor: [ 'rgba(168, 168, 168, 0.5)' ]
                 },
                 {
                     label: ['Skipped Tests'],
-                    data: [0,0,0,0,0,0,0,0,0,0,0],
+                    data: [0,0,0,0,0,0,0,0,0,0,0,0],
                     backgroundColor: [ 'rgba(238, 224, 152, 0.75)' ]
                 },
                 {
                     label: ['Aborted Tests'],
-                    data: [0,0,0,0,0,0,0,0,0,0,0],
+                    data: [0,0,0,0,0,0,0,0,0,0,0,0],
                     backgroundColor: [ 'rgba(255, 153, 102, 0.5)' ]
                 },
                 {
                     label: ['Failed Tests'],
-                    data: [0,0,0,0,0,0,0,0,0,0,0],
+                    data: [0,0,0,0,0,0,0,0,0,1,0,0],
                     backgroundColor: [ 'rgba(255, 22, 49, 0.5)' ]
                 },
                 {
                     label: ['Errors'],
-                    data: [0,0,0,0,0,0,0,0,0,0,0],
+                    data: [0,0,0,0,0,0,0,0,0,0,0,0],
                     backgroundColor: [ 'rgba(255, 97, 8, 0.5)' ]
                 },
                 {
                     label: ['Compromised Tests'],
-                    data: [0,0,0,0,0,0,0,0,0,0,0],
+                    data: [0,0,0,0,0,0,0,0,0,0,0,0],
                     backgroundColor: [ 'rgba(255, 104, 255, 0.5)' ]
                 },
             ]

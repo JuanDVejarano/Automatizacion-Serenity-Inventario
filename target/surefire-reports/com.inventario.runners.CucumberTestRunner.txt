@@ -1,4 +1,19 @@
 -------------------------------------------------------------------------------
 Test set: com.inventario.runners.CucumberTestRunner
 -------------------------------------------------------------------------------
-Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 58.38 s -- in com.inventario.runners.CucumberTestRunner
+Tests run: 20, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 81.64 s <<< FAILURE! -- in com.inventario.runners.CucumberTestRunner
+HU-12 Listar y buscar clientes.Lista vacia de clientes -- Time elapsed: 2.297 s <<< ERROR!
+io.cucumber.java.PendingException: Este escenario requiere una base de datos sin clientes registrados.
+	at com.inventario.steps.ListarClientesStepDefinitions.seSimulaQueNoHayClientesEnElSistema(ListarClientesStepDefinitions.java:77)
+	at ✽.se simula que no hay clientes en el sistema(file:///home/juanj/Projects-Test/serenity-inventario-login/src/test/resources/features/listar-clientes.feature:39)
+
+HU-10 Registrar cliente.Acceso no autorizado al modulo de clientes -- Time elapsed: 2.696 s <<< FAILURE!
+java.lang.AssertionError: 
+[El roleGuard debe redirigir a /unauthorized al acceder sin permisos] 
+Expecting actual:
+  "http://localhost:4200/ventas/clientes"
+to contain:
+  "/unauthorized" 
+	at com.inventario.steps.RolesStepDefinitions.elSistemaMuestraLaPaginaDeAccesoDenegado(RolesStepDefinitions.java:72)
+	at ✽.el sistema muestra la pagina de acceso denegado(file:///home/juanj/Projects-Test/serenity-inventario-login/src/test/resources/features/registrar-cliente.feature:36)
+

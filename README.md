@@ -165,6 +165,13 @@ explorer.exe $(wslpath -w target/site/serenity/index.html)
 | HU-11 | Cédula duplicada al editar cliente |
 | HU-11 | Campos obligatorios vacíos al editar cliente |
 | HU-11 | Acceso no autorizado al módulo de edición de clientes |
+| HU-12 | Listar todos los clientes con sus datos |
+| HU-12 | Buscar cliente por nombre |
+| HU-12 | Búsqueda por nombre sin resultados |
+| HU-12 | Buscar cliente por cédula o NIT |
+| HU-12 | Búsqueda por cédula sin resultados |
+| HU-12 | Lista vacía de clientes _(requiere BD vacía — `@pendiente`)_ |
+| HU-12 | Acceso no autorizado al módulo de listado de clientes |
 
 ---
 

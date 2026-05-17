@@ -16,5 +16,6 @@ com/inventario/steps/RolesStepDefinitions.class
 com/inventario/steps/AsignarRolStepDefinitions.class
 com/inventario/pages/UnauthorizedPage.class
 com/inventario/steps/CrearUsuarioStepDefinitions.class
+com/inventario/steps/ListarClientesStepDefinitions.class
 com/inventario/pages/UsuariosPage.class
 com/inventario/runners/CucumberTestRunner.class
