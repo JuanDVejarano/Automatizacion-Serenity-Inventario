@@ -226,7 +226,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 17-05-2026 00:01:19</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 17-05-2026 00:11:30</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -241,7 +241,7 @@
                         <td width="375px" valign="top">
                             <div class="test-count-summary">
                                 <div class="test-count-title">
-                                    142 tests
+                                    150 tests
 
                                      |
                                         <a href="46b54d9084ba9783130da16408afb27a4e4620f6bd966e731510c7395b9ddf5c.csv" title="Download CSV"> <i class="bi bi-cloud-arrow-down"
@@ -314,13 +314,13 @@
                     <td>
                         <i class="bi bi-card-checklist"></i> Number of Scenarios
                     </td>
-                    <td>124</td>
+                    <td>132</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-caret-right"></i> Total Number of Test Cases
                     </td>
-                    <td>142</td>
+                    <td>150</td>
                 </tr>
                 <tr scope="row">
                     <td>
@@ -333,14 +333,14 @@
                         <i class="bi bi-stop-circle"></i> Tests
                         Finished
                     </td>
-                    <td>May 17, 2026 00:00:53</td>
+                    <td>May 17, 2026 00:11:15</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stopwatch"></i> Total
                         Duration
                     </td>
-                    <td> 18m 20s</td>
+                    <td> 28m 42s</td>
                 </tr>
                 <tr scope="row">
                     <td>
@@ -353,21 +353,21 @@
                         <i class="bi bi-skip-start"></i> Slowest
                         Test
                     </td>
-                    <td>6s</td>
+                    <td>20s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stopwatch"></i> Average
                         Execution Time
                     </td>
-                    <td>2s</td>
+                    <td>3s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stopwatch-fill"></i> Total
                         Execution Time
                     </td>
-                    <td> 7m 5s</td>
+                    <td> 8m 34s</td>
                 </tr>
                 </tbody>
             </table>
@@ -526,6 +526,68 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                                                                                                      style="width: 100%; background-color: #b0cf73"
                                                                                                      aria-valuenow="4"
                                                                                                      title="100% success"
+                                                                                                     aria-valuemin="0"
+                                                                                                     aria-valuemax="100">
+                                                                                                </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                            <a href="de6883593bd01403075c618b2f7b617352e4e9d20f9e60e4695c73211505228f.html"> HU-21 Asociar materia prima a producto</a>
+                                                                                    </td>
+                                                                                    <td>8</td>
+                                                                                    <td>Given el usuario accede al modulo de asociar materia prima
+When el usuario selecciona el primer producto y asocia la primera materia prima con cantidad 5
+Then la materia prima queda registrada en la lista de asociaciones del producto
+Given el usuario accede al modulo de asociar materia prima
+When el usuario selecciona el primer producto y asocia la primera materia prima con cantidad 3
+And el usuario asocia la segunda materia prima disponible con cantidad 2
+Then el sistema muestra 2 materias primas asociadas al producto
+Given el usuario accede al modulo de asociar materia prima
+Given existe al menos una materia prima asociada al producto seleccionado
+When el usuario intenta asociar la misma materia prima al mismo producto nuevamente
+Then el sistema muestra el mensaje de error de asociacion "Esa materia prima ya esta asociada a este producto"
+Given el usuario accede al modulo de asociar materia prima
+When el usuario selecciona el primer producto y una materia prima con cantidad invalida de cero
+Then el sistema muestra el mensaje de error de asociacion "La cantidad debe ser mayor a 0"
+Given el usuario accede al modulo de asociar materia prima
+Given existe al menos una materia prima asociada al producto seleccionado
+When el usuario edita la cantidad de la primera materia prima asociada a 10
+Then el sistema muestra el mensaje de exito de edicion de asociacion "Cantidad actualizada exitosamente"
+Given el usuario accede al modulo de asociar materia prima
+Given existe al menos una materia prima asociada al producto seleccionado
+When el usuario elimina la primera materia prima asociada al producto
+Then la asociacion queda eliminada de la lista del producto
+Given el usuario accede al modulo de asociar materia prima
+When el usuario selecciona el primer producto y no hay materias primas en el sistema
+Then el sistema muestra la advertencia de que no hay materias primas disponibles
+Given el usuario accede al modulo de asociar materia prima
+Given el usuario inicia sesion con el rol "Ventas"
+When el usuario intenta acceder al modulo de asociar materia prima a producto
+Then el sistema muestra la pagina de acceso denegado
+And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
+</td>
+                                                                                    <td>8</td>
+                                                                                    <td>75%</td>
+                                                                                    <td>
+                                                                                            <a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon ' title='FAILURE'></i></a>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <div class="progress">
+                                                                                                <div class="progress-bar"
+                                                                                                     role="progressbar"
+                                                                                                     style="width: 75%; background-color: #b0cf73"
+                                                                                                     aria-valuenow="6"
+                                                                                                     title="75% success"
+                                                                                                     aria-valuemin="0"
+                                                                                                     aria-valuemax="100">
+                                                                                                </div>
+                                                                                                <div class="progress-bar"
+                                                                                                     role="progressbar"
+                                                                                                     style="width: 25%; background-color: #fd938e"
+                                                                                                     aria-valuenow="2"
+                                                                                                     title="25% failure"
                                                                                                      aria-valuemin="0"
                                                                                                      aria-valuemax="100">
                                                                                                 </div>
@@ -1618,7 +1680,7 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                                                                             <a href="a0ace456df350117335ad374e8d62c0d8c978db868ea1469e0c5ba32aac965ea.html"><a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon ' title='FAILURE'></i></a> Assertion error</a>
                                                                         </td>
                                                                         <td><span
-                                                                                    class="badge failure-badge">2</span>
+                                                                                    class="badge failure-badge">4</span>
                                                                         </td>
                                                                     </tr>
                                                                 </tbody>
@@ -1628,6 +1690,14 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                                                             <h4>Most Unstable Features</h4>
                                                             <table class="table" style="width:40vw;">
                                                                 <tbody>
+                                                                    <tr>
+                                                                        <td class="failure-color top-list-title">
+                                                                            <a href="de6883593bd01403075c618b2f7b617352e4e9d20f9e60e4695c73211505228f.html">HU-21 Asociar materia prima a producto</a>
+                                                                        </td>
+                                                                        <td>
+                                                                            <span class="badge failure-badge">25%</span>
+                                                                        </td>
+                                                                    </tr>
                                                                     <tr>
                                                                         <td class="failure-color top-list-title">
                                                                             <a href="09ad04306b0120eebec8aa391510177b3afbc423e9810972099d6f04edec1543.html">HU-05 Editar informacion de empleado</a>
@@ -1705,8 +1775,8 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                                     </span>
                                     </a>
                                     <a href="20457f8d775ec86ef6f6dab99b8613662d370802469eb99f3df39e3e8912ec9e.html">
-                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Materia Prima&nbsp;&nbsp;&nbsp;5
+                                    <span class="tag-badge badge" style="background-color:#fd938e; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Materia Prima&nbsp;&nbsp;&nbsp;13
                                     </span>
                                     </a>
                                     <a href="12ad6c996178bc603652e3adc5c58c81a7e87f1c2679ebb066e02fe6f40cdaed.html">
@@ -1723,7 +1793,7 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                             <div>
                                     <a href="46b54d9084ba9783130da16408afb27a4e4620f6bd966e731510c7395b9ddf5c.html">
                                     <span class="tag-badge badge" style="background-color:#fd938e; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Chrome, Linux&nbsp;&nbsp;&nbsp;142
+                                        <i class="bi bi-tag-fill"></i> Chrome, Linux&nbsp;&nbsp;&nbsp;150
                                     </span>
                                     </a>
                             </div>
@@ -1746,18 +1816,18 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                     <td>
                         <i class="bi bi-card-checklist"></i> Number of Scenarios
                     </td>
-                    <td>124</td>
+                    <td>132</td>
                     <td>
                         <i class="bi bi-stopwatch"></i> Total
                         Duration
                     </td>
-                    <td> 18m 20s</td>
+                    <td> 28m 42s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-caret-right"></i> Total Number of Test Cases
                     </td>
-                    <td>142</td>
+                    <td>150</td>
                     <td>
                         <i class="bi bi-trophy"></i> Fastest Test
                     </td>
@@ -1772,7 +1842,7 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                         <i class="bi bi-skip-start"></i> Slowest
                         Test
                     </td>
-                    <td>6s</td>
+                    <td>20s</td>
                 </tr>
                 <tr scope="row">
                     <td>
@@ -1783,19 +1853,19 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                         <i class="bi bi-stopwatch"></i> Average
                         Execution Time
                     </td>
-                    <td>2s</td>
+                    <td>3s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stop-circle"></i> Tests
                         Finished
                     </td>
-                    <td>May 17, 2026 00:00:53</td>
+                    <td>May 17, 2026 00:11:15</td>
                     <td>
                         <i class="bi bi-stopwatch-fill"></i> Total
                         Execution Time
                     </td>
-                    <td> 7m 5s</td>
+                    <td> 8m 34s</td>
                 </tr>
                 </tbody>
             </table>
@@ -2098,6 +2168,172 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
 </td>
                                                                         <td data-order="1778992997">23:43:17</td>
                                                                         <td>2s 667ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="de6883593bd01403075c618b2f7b617352e4e9d20f9e60e4695c73211505228f.html">HU-21 Asociar materia prima a producto</a>
+                                                                        </td>
+                                                                        <td data-order="Asociacion exitosa de materia prima a producto">
+                                                                                    <a href="a9b8147b6f2aba0b9d3f5eb1e0aeb87ebb1b73715bb15348085b3f7d198aaaf4.html">Asociacion exitosa de materia prima a producto</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
+                                                                        </td>
+                                                                        <td>3</td>
+                                                                        <td>Given el usuario accede al modulo de asociar materia prima
+When el usuario selecciona el primer producto y asocia la primera materia prima con cantidad 5
+Then la materia prima queda registrada en la lista de asociaciones del producto
+</td>
+                                                                        <td data-order="1778994569">00:09:29</td>
+                                                                        <td>13s 025ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result FAILURE">
+                                                                        <td>
+                                                                                <a href="de6883593bd01403075c618b2f7b617352e4e9d20f9e60e4695c73211505228f.html">HU-21 Asociar materia prima a producto</a>
+                                                                        </td>
+                                                                        <td data-order="Asociar multiples materias primas a un producto">
+                                                                                    <a href="96bc043c61c5d341f18d78cb7690e37acf04556438f23378fd09d31f86543503.html">Asociar multiples materias primas a un producto</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
+                                                                        </td>
+                                                                        <td>4</td>
+                                                                        <td>Given el usuario accede al modulo de asociar materia prima
+When el usuario selecciona el primer producto y asocia la primera materia prima con cantidad 3
+And el usuario asocia la segunda materia prima disponible con cantidad 2
+Then el sistema muestra 2 materias primas asociadas al producto
+</td>
+                                                                        <td data-order="1778994583">00:09:43</td>
+                                                                        <td>19s 878ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon ' title='FAILURE'></i></a> <span
+                                                                                    style="display:none">FAILURE</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="de6883593bd01403075c618b2f7b617352e4e9d20f9e60e4695c73211505228f.html">HU-21 Asociar materia prima a producto</a>
+                                                                        </td>
+                                                                        <td data-order="Materia prima ya asociada al producto">
+                                                                                    <a href="555c44467008546b89bf979fc75c3e89f6974c4c74d4febb4c895c121d2fc39b.html">Materia prima ya asociada al producto</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
+                                                                        </td>
+                                                                        <td>4</td>
+                                                                        <td>Given el usuario accede al modulo de asociar materia prima
+Given existe al menos una materia prima asociada al producto seleccionado
+When el usuario intenta asociar la misma materia prima al mismo producto nuevamente
+Then el sistema muestra el mensaje de error de asociacion "Esa materia prima ya esta asociada a este producto"
+</td>
+                                                                        <td data-order="1778994602">00:10:02</td>
+                                                                        <td>11s 726ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="de6883593bd01403075c618b2f7b617352e4e9d20f9e60e4695c73211505228f.html">HU-21 Asociar materia prima a producto</a>
+                                                                        </td>
+                                                                        <td data-order="Cantidad invalida al asociar">
+                                                                                    <a href="6e08f88b6eaa0836d1c2865115bfe161dbbfa5de3a3aa94e9753b9435a17a927.html">Cantidad invalida al asociar</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
+                                                                        </td>
+                                                                        <td>3</td>
+                                                                        <td>Given el usuario accede al modulo de asociar materia prima
+When el usuario selecciona el primer producto y una materia prima con cantidad invalida de cero
+Then el sistema muestra el mensaje de error de asociacion "La cantidad debe ser mayor a 0"
+</td>
+                                                                        <td data-order="1778994614">00:10:14</td>
+                                                                        <td>3s 515ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="de6883593bd01403075c618b2f7b617352e4e9d20f9e60e4695c73211505228f.html">HU-21 Asociar materia prima a producto</a>
+                                                                        </td>
+                                                                        <td data-order="Editar cantidad de materia prima asociada">
+                                                                                    <a href="ec207e16c09af3f09b5ccf3620c35fa8c34bfe92aee673965ecf1b6b15372334.html">Editar cantidad de materia prima asociada</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
+                                                                        </td>
+                                                                        <td>4</td>
+                                                                        <td>Given el usuario accede al modulo de asociar materia prima
+Given existe al menos una materia prima asociada al producto seleccionado
+When el usuario edita la cantidad de la primera materia prima asociada a 10
+Then el sistema muestra el mensaje de exito de edicion de asociacion "Cantidad actualizada exitosamente"
+</td>
+                                                                        <td data-order="1778994618">00:10:18</td>
+                                                                        <td>12s 603ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result FAILURE">
+                                                                        <td>
+                                                                                <a href="de6883593bd01403075c618b2f7b617352e4e9d20f9e60e4695c73211505228f.html">HU-21 Asociar materia prima a producto</a>
+                                                                        </td>
+                                                                        <td data-order="Eliminar asociacion de materia prima">
+                                                                                    <a href="1b1c1bc5f259ba9d80ee930da45827e9a63db940a2ef5a9b7b719f08f00fc328.html">Eliminar asociacion de materia prima</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
+                                                                        </td>
+                                                                        <td>4</td>
+                                                                        <td>Given el usuario accede al modulo de asociar materia prima
+Given existe al menos una materia prima asociada al producto seleccionado
+When el usuario elimina la primera materia prima asociada al producto
+Then la asociacion queda eliminada de la lista del producto
+</td>
+                                                                        <td data-order="1778994631">00:10:31</td>
+                                                                        <td>20s 530ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon ' title='FAILURE'></i></a> <span
+                                                                                    style="display:none">FAILURE</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="de6883593bd01403075c618b2f7b617352e4e9d20f9e60e4695c73211505228f.html">HU-21 Asociar materia prima a producto</a>
+                                                                        </td>
+                                                                        <td data-order="No hay materias primas registradas">
+                                                                                    <a href="5d7dfa372d8ea7771ad881b4690dca3e066d15d263171fe73969b9144ddf256a.html">No hay materias primas registradas</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
+                                                                        </td>
+                                                                        <td>3</td>
+                                                                        <td>Given el usuario accede al modulo de asociar materia prima
+When el usuario selecciona el primer producto y no hay materias primas en el sistema
+Then el sistema muestra la advertencia de que no hay materias primas disponibles
+</td>
+                                                                        <td data-order="1778994651">00:10:51</td>
+                                                                        <td>4s 266ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="de6883593bd01403075c618b2f7b617352e4e9d20f9e60e4695c73211505228f.html">HU-21 Asociar materia prima a producto</a>
+                                                                        </td>
+                                                                        <td data-order="Modulo no visible para roles no autorizados">
+                                                                                    <a href="ced19e9aa57a7833b464befd74ef143083bf2672ccdfa91d05f36005606d7ab5.html">Modulo no visible para roles no autorizados</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
+                                                                        </td>
+                                                                        <td>5</td>
+                                                                        <td>Given el usuario accede al modulo de asociar materia prima
+Given el usuario inicia sesion con el rol "Ventas"
+When el usuario intenta acceder al modulo de asociar materia prima a producto
+Then el sistema muestra la pagina de acceso denegado
+And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
+</td>
+                                                                        <td data-order="1778994656">00:10:56</td>
+                                                                        <td>4s 284ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -3964,8 +4200,8 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
 When el usuario registra una materia prima con nombre valido
 Then el sistema muestra el mensaje de exito de materia prima "Materia prima registrada exitosamente"
 </td>
-                                                                        <td data-order="1778994037">00:00:37</td>
-                                                                        <td>4s 081ms</td>
+                                                                        <td data-order="1778994660">00:11:00</td>
+                                                                        <td>2s 586ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -3984,8 +4220,8 @@ Then el sistema muestra el mensaje de exito de materia prima "Materia prima regi
 When el usuario registra una materia prima con nombre y descripcion
 Then el sistema muestra el mensaje de exito de materia prima "Materia prima registrada exitosamente"
 </td>
-                                                                        <td data-order="1778994041">00:00:41</td>
-                                                                        <td>2s 642ms</td>
+                                                                        <td data-order="1778994663">00:11:03</td>
+                                                                        <td>3s 069ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -4005,8 +4241,8 @@ Given existe una materia prima registrada en el sistema
 When el usuario intenta registrar una materia prima con el mismo nombre
 Then el sistema muestra el mensaje de error de materia prima "Ya existe una materia prima con ese nombre"
 </td>
-                                                                        <td data-order="1778994044">00:00:44</td>
-                                                                        <td>3s 037ms</td>
+                                                                        <td data-order="1778994666">00:11:06</td>
+                                                                        <td>3s 238ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -4025,8 +4261,8 @@ Then el sistema muestra el mensaje de error de materia prima "Ya existe una mate
 When el usuario intenta registrar una materia prima sin diligenciar el nombre
 Then el sistema muestra el mensaje de error de materia prima "El nombre de la materia prima es obligatorio"
 </td>
-                                                                        <td data-order="1778994047">00:00:47</td>
-                                                                        <td>2s 494ms</td>
+                                                                        <td data-order="1778994669">00:11:09</td>
+                                                                        <td>2s 801ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -4047,8 +4283,8 @@ When el usuario intenta acceder al modulo de registro de materia prima
 Then el sistema muestra la pagina de acceso denegado
 And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
 </td>
-                                                                        <td data-order="1778994050">00:00:50</td>
-                                                                        <td>3s 277ms</td>
+                                                                        <td data-order="1778994672">00:11:12</td>
+                                                                        <td>3s 030ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -4562,8 +4798,8 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                                     </span>
                                     </a>
                                     <a href="20457f8d775ec86ef6f6dab99b8613662d370802469eb99f3df39e3e8912ec9e.html">
-                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Materia Prima&nbsp;&nbsp;&nbsp;5
+                                    <span class="tag-badge badge" style="background-color:#fd938e; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Materia Prima&nbsp;&nbsp;&nbsp;13
                                     </span>
                                     </a>
                                     <a href="12ad6c996178bc603652e3adc5c58c81a7e87f1c2679ebb066e02fe6f40cdaed.html">
@@ -4580,7 +4816,7 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                             <div>
                                     <a href="46b54d9084ba9783130da16408afb27a4e4620f6bd966e731510c7395b9ddf5c.html">
                                     <span class="tag-badge badge" style="background-color:#fd938e; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Chrome, Linux&nbsp;&nbsp;&nbsp;142
+                                        <i class="bi bi-tag-fill"></i> Chrome, Linux&nbsp;&nbsp;&nbsp;150
                                     </span>
                                     </a>
                             </div>
@@ -4634,7 +4870,7 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
             datasets: [{
                 label: 'Test Results',
                 fill: false,
-                data: [128,11,0,0,0,3,0,0],
+                data: [134,11,0,0,0,5,0,0],
                 backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                 borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                 borderWidth: 1,
@@ -4685,7 +4921,7 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                         ctx.font = fontSize + "em sans-serif";
                         ctx.textBaseline = "middle";
 
-                        var text = "90%"
+                        var text = "89%"
                         textX = 10 + Math.round((width - ctx.measureText(text).width) / 2);
                         textY = (height / 2) - 40;
 
@@ -4730,7 +4966,7 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
             datasets: [
                 {
                     label: 'Automated',
-                    data: [128,11,0,0,0,3,0,0],
+                    data: [134,11,0,0,0,5,0,0],
                     backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                     borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                     borderWidth: 1
@@ -4813,7 +5049,7 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
             datasets: [{
                 label: 'Number of tests per duration',
                 fill: false,
-                data: ['15','127','0','0','0','0','0','0'],
+                data: ['15','130','5','0','0','0','0','0'],
                 backgroundColor: 'rgba(83, 146, 255,0.5)',
                 borderColor: 'rgba(83, 146, 255, 1)',
             }]
@@ -4889,6 +5125,11 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                 title: 'HU-08 Asignar rol a usuario',
                 result: 'SUCCESS',
                 link: "7e45b9bd1bcf6f48929d7b1b58f8b3713abded053c547e77f4771337ba2e2500.html"
+            },
+            {
+                title: 'HU-21 Asociar materia prima a producto',
+                result: 'FAILURE',
+                link: "de6883593bd01403075c618b2f7b617352e4e9d20f9e60e4695c73211505228f.html"
             },
             {
                 title: 'HU-07 Crear usuario del sistema',
@@ -4981,6 +5222,7 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                 'HU-09 Activar y desactivar usuario',
                 'HU-14 Agregar productos al detalle de venta',
                 'HU-08 Asignar rol a usuario',
+                'HU-21 Asociar materia prima a producto',
                 'HU-07 Crear usuario del sistema',
                 'HU-11 Editar informacion de cliente',
                 'HU-05 Editar informacion de empleado',
@@ -5002,42 +5244,42 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
             datasets: [
                 {
                     label: ['Passing Tests'],
-                    data: [3,6,4,6,7,6,8,7,6,6,5,3,8,6,6,5,6,4,6,20],
+                    data: [3,6,4,6,6,7,6,8,7,6,6,5,3,8,6,6,5,6,4,6,20],
                     backgroundColor: [ 'rgba(153,204,51,0.5)' ]
                 },
                 {
                     label: ['Pending Tests'],
-                    data: [0,0,0,0,0,0,0,1,1,1,0,0,7,0,0,0,0,0,1,0],
+                    data: [0,0,0,0,0,0,0,0,1,1,1,0,0,7,0,0,0,0,0,1,0],
                     backgroundColor: [ 'rgba(165, 199, 238, 0.5)' ]
                 },
                 {
                     label: ['Ignored Tests'],
-                    data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                    data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
                     backgroundColor: [ 'rgba(168, 168, 168, 0.5)' ]
                 },
                 {
                     label: ['Skipped Tests'],
-                    data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                    data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
                     backgroundColor: [ 'rgba(238, 224, 152, 0.75)' ]
                 },
                 {
                     label: ['Aborted Tests'],
-                    data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                    data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
                     backgroundColor: [ 'rgba(255, 153, 102, 0.5)' ]
                 },
                 {
                     label: ['Failed Tests'],
-                    data: [0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,1],
+                    data: [0,0,0,2,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,1],
                     backgroundColor: [ 'rgba(255, 22, 49, 0.5)' ]
                 },
                 {
                     label: ['Errors'],
-                    data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                    data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
                     backgroundColor: [ 'rgba(255, 97, 8, 0.5)' ]
                 },
                 {
                     label: ['Compromised Tests'],
-                    data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                    data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
                     backgroundColor: [ 'rgba(255, 104, 255, 0.5)' ]
                 },
             ]

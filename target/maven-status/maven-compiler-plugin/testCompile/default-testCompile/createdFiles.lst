@@ -1,6 +1,7 @@
 com/inventario/pages/ClientesPage.class
 com/inventario/pages/EditarProductoPage.class
 com/inventario/pages/RegistrarEmpleadoPage.class
+com/inventario/pages/AsociarMateriaPrimaPage.class
 com/inventario/steps/LoginStepDefinitions.class
 com/inventario/steps/EditarEmpleadoStepDefinitions.class
 com/inventario/steps/LogoutStepDefinitions.class
@@ -28,6 +29,7 @@ com/inventario/steps/RegistrarProductoStepDefinitions.class
 com/inventario/pages/RegistrarMateriaPrimaPage.class
 com/inventario/steps/RegistrarTipoProductoStepDefinitions.class
 com/inventario/steps/RegistrarVentaStepDefinitions.class
+com/inventario/steps/AsociarMateriaPrimaStepDefinitions.class
 com/inventario/steps/ListarEmpleadosStepDefinitions.class
 com/inventario/steps/AsignarRolStepDefinitions.class
 com/inventario/pages/UnauthorizedPage.class
