@@ -53,8 +53,11 @@ mvn verify -Dcucumber.filter.tags="@roles"
 # HU-04, HU-05 y HU-06 — Gestión de empleados
 mvn verify -Dcucumber.filter.tags="@empleados"
 
-# HU-07 — Usuarios del sistema
+# HU-07, HU-08 y HU-09 — Usuarios del sistema
 mvn verify -Dcucumber.filter.tags="@usuarios"
+
+# HU-10 — Clientes
+mvn verify -Dcucumber.filter.tags="@clientes"
 ```
 
 ### Combinar tags
@@ -144,6 +147,17 @@ explorer.exe $(wslpath -w target/site/serenity/index.html)
 | HU-07 | Contraseña inválida |
 | HU-07 | Campos obligatorios vacíos |
 | HU-07 | Acceso no autorizado al módulo de creación de usuarios |
+
+### `@clientes` — HU-10
+
+| HU | Escenario |
+|----|-----------|
+| HU-10 | Registro exitoso de cliente |
+| HU-10 | Registro con teléfono secundario |
+| HU-10 | Cédula o NIT duplicado |
+| HU-10 | Correo duplicado en clientes |
+| HU-10 | Campos obligatorios vacíos |
+| HU-10 | Acceso no autorizado al módulo de clientes |
 
 ---
 
