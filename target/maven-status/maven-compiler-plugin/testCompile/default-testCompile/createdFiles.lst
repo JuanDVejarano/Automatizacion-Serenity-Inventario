@@ -1,5 +1,6 @@
 com/inventario/pages/RegistrarVentaPage.class
 com/inventario/steps/RegistrarClienteStepDefinitions.class
+com/inventario/steps/ConsultarHistorialVentasStepDefinitions.class
 com/inventario/pages/ClientesPage.class
 com/inventario/pages/LoginPage.class
 com/inventario/steps/RegistrarEmpleadoStepDefinitions.class
