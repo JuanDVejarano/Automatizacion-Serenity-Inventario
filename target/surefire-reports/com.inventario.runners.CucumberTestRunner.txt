@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.inventario.runners.CucumberTestRunner
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 35.20 s <<< FAILURE! -- in com.inventario.runners.CucumberTestRunner
-HU-13 Crear venta.Venta completada genera movimiento en caja -- Time elapsed: 2.523 s <<< ERROR!
+Tests run: 13, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 52.23 s <<< FAILURE! -- in com.inventario.runners.CucumberTestRunner
+HU-13 Crear venta.Venta completada genera movimiento en caja -- Time elapsed: 2.390 s <<< ERROR!
 io.cucumber.java.PendingException: Este escenario requiere crear una venta y verificar el movimiento en el modulo de Caja.
 	at com.inventario.steps.RegistrarVentaStepDefinitions.existeUnaVentaCreadaEnEstadoALaEsperaDeReparto(RegistrarVentaStepDefinitions.java:65)
 	at ✽.existe una venta creada en estado A la espera de reparto(file:///home/juanj/Projects-Test/serenity-inventario-login/src/test/resources/features/registrar-venta.feature:41)

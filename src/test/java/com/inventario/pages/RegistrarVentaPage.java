@@ -97,4 +97,92 @@ public class RegistrarVentaPage extends PageObject {
         waitFor(generalError);
         return generalError.getText().trim();
     }
+
+    // ── HU-14: detalle de venta ──────────────────────────────────────────────
+
+    // Busca por nombre, obtiene el ID del primer resultado y lo agrega via barcode.
+    // Necesario para testear la ruta de barcode sin conocer IDs de productos a priori.
+    public void addFirstProductByBarcode(String searchTerm) {
+        // Paso 1: búsqueda por nombre para obtener un ID de producto real
+        waitFor(productNameInput);
+        productNameInput.clear();
+        productNameInput.type(searchTerm);
+        searchButton.click();
+        waitFor(firstAddButton);
+
+        // Paso 2: leer el ID del primer resultado
+        Object id = evaluateJavascript(
+            "var comp = ng.getComponent(document.querySelector('app-registrar-venta'));" +
+            "var r = comp.productosResultados();" +
+            "return r.length > 0 ? r[0].id : null;");
+
+        if (!(id instanceof Long) || (Long) id <= 0) {
+            throw new IllegalStateException("No hay productos disponibles para la busqueda: " + searchTerm);
+        }
+        int productId = ((Long) id).intValue();
+
+        // Paso 3: limpiar resultados de nombre y buscar por "código de barras" (ID)
+        evaluateJavascript(
+            "var comp = ng.getComponent(document.querySelector('app-registrar-venta'));" +
+            "comp.productosResultados.set([]);" +
+            "comp.busquedaProducto.set('');" +
+            "comp.barcodeInput.set('" + productId + "');" +
+            "comp.buscarPorBarcode();");
+
+        // Esperar que el producto aparezca en el carrito
+        long deadline = System.currentTimeMillis() + 5_000;
+        while (System.currentTimeMillis() < deadline) {
+            Object count = evaluateJavascript(
+                "return document.querySelectorAll('.carrito-table tbody tr').length;");
+            if (count instanceof Long && (Long) count > 0) return;
+            try { Thread.sleep(200); } catch (InterruptedException e) { break; }
+        }
+    }
+
+    public void searchInvalidBarcode() {
+        evaluateJavascript(
+            "var comp = ng.getComponent(document.querySelector('app-registrar-venta'));" +
+            "comp.barcodeInput.set('999999999');" +
+            "comp.buscarPorBarcode();");
+    }
+
+    public double getTotal() {
+        Object t = evaluateJavascript(
+            "return ng.getComponent(document.querySelector('app-registrar-venta')).total();");
+        if (t instanceof Long) return ((Long) t).doubleValue();
+        if (t instanceof Double) return (Double) t;
+        return 0;
+    }
+
+    public int getCartItemCount() {
+        Object count = evaluateJavascript(
+            "return document.querySelectorAll('.carrito-table tbody tr').length;");
+        return count instanceof Long ? ((Long) count).intValue() : 0;
+    }
+
+    // Modifica la cantidad del primer item del carrito via el método del componente
+    public void updateFirstItemQuantity(int newQty) {
+        evaluateJavascript(
+            "ng.getComponent(document.querySelector('app-registrar-venta'))" +
+            ".actualizarCantidad(0, " + newQty + ");");
+    }
+
+    public int getFirstItemQuantity() {
+        Object qty = evaluateJavascript(
+            "var comp = ng.getComponent(document.querySelector('app-registrar-venta'));" +
+            "var items = comp.items();" +
+            "return items.length > 0 ? items[0].cantidad : 0;");
+        return qty instanceof Long ? ((Long) qty).intValue() : 0;
+    }
+
+    public void removeFirstItem() {
+        evaluateJavascript(
+            "ng.getComponent(document.querySelector('app-registrar-venta'))" +
+            ".eliminarItem(0);");
+    }
+
+    public boolean isCartEmpty() {
+        return Boolean.TRUE.equals(
+            evaluateJavascript("return document.querySelector('.carrito-vacio') !== null;"));
+    }
 }
