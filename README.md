@@ -173,6 +173,18 @@ explorer.exe $(wslpath -w target/site/serenity/index.html)
 | HU-12 | Lista vacía de clientes _(requiere BD vacía — `@pendiente`)_ |
 | HU-12 | Acceso no autorizado al módulo de listado de clientes |
 
+### `@ventas` — HU-13
+
+| HU | Escenario |
+|----|-----------|
+| HU-13 | Creación exitosa de venta |
+| HU-13 | Agregar múltiples productos al detalle |
+| HU-13 | Stock insuficiente |
+| HU-13 | Venta sin productos en el detalle |
+| HU-13 | Venta completada genera movimiento en caja _(requiere módulo Caja — `@pendiente`)_ |
+| HU-13 | Venta cancelada |
+| HU-13 | Acceso no autorizado al módulo de ventas |
+
 ---
 
 ## Estructura del proyecto

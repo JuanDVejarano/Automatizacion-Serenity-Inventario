@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.inventario.runners.CucumberTestRunner" time="81.642" tests="20" errors="1" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.inventario.runners.CucumberTestRunner" time="35.203" tests="7" errors="1" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ES"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-21-openjdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/juanj/Projects-Test/serenity-inventario-login/target/surefire/surefirebooter-20260516210722614_3.jar /home/juanj/Projects-Test/serenity-inventario-login/target/surefire 2026-05-16T21-07-22_533-jvmRun1 surefire-20260516210722614_1tmp surefire_0-20260516210722614_2tmp"/>
+    <property name="sun.java.command" value="/home/juanj/Projects-Test/serenity-inventario-login/target/surefire/surefirebooter-20260516213936309_3.jar /home/juanj/Projects-Test/serenity-inventario-login/target/surefire 2026-05-16T21-39-36_229-jvmRun1 surefire-20260516213936309_1tmp surefire_0-20260516213936309_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/juanj/Projects-Test/serenity-inventario-login/target/test-classes:/home/juanj/Projects-Test/serenity-inventario-login/target/classes:/home/juanj/.m2/repository/net/serenity-bdd/serenity-core/4.1.20/serenity-core-4.1.20.jar:/home/juanj/.m2/repository/net/serenity-bdd/serenity-model/4.1.20/serenity-model-4.1.20.jar:/home/juanj/.m2/repository/org/apache/commons/commons-text/1.11.0/commons-text-1.11.0.jar:/home/juanj/.m2/repository/commons-net/commons-net/3.10.0/commons-net-3.10.0.jar:/home/juanj/.m2/repository/com/google/guava/guava/33.1.0-jre/guava-33.1.0-jre.jar:/home/juanj/.m2/repository/com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.jar:/home/juanj/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/juanj/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/home/juanj/.m2/repository/org/checkerframework/checker-qual/3.42.0/checker-qual-3.42.0.jar:/home/juanj/.m2/repository/com/google/errorprone/error_prone_annotations/2.26.1/error_prone_annotations-2.26.1.jar:/home/juanj/.m2/repository/com/google/j2objc/j2objc-annotations/3.0.0/j2objc-annotations-3.0.0.jar:/home/juanj/.m2/repository/org/jsoup/jsoup/1.15.4/jsoup-1.15.4.jar:/home/juanj/.m2/repository/com/thoughtworks/xstream/xstream/1.4.20/xstream-1.4.20.jar:/home/juanj/.m2/repository/io/github/x-stream/mxparser/1.2.2/mxparser-1.2.2.jar:/home/juanj/.m2/repository/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.jar:/home/juanj/.m2/repository/com/typesafe/config/1.4.3/config-1.4.3.jar:/home/juanj/.m2/repository/org/imgscalr/imgscalr-lib/4.2/imgscalr-lib-4.2.jar:/home/juanj/.m2/repository/org/awaitility/awaitility/4.2.0/awaitility-4.2.0.jar:/home/juanj/.m2/repository/org/freemarker/freemarker/2.3.32/freemarker-2.3.32.jar:/home/juanj/.m2/repository/io/github/classgraph/classgraph/4.8.157/classgraph-4.8.157.jar:/home/juanj/.m2/repository/com/github/ben-manes/caffeine/caffeine/2.9.2/caffeine-2.9.2.jar:/home/juanj/.m2/repository/org/ehcache/ehcache/3.10.8/ehcache-3.10.8.jar:/home/juanj/.m2/repository/javax/cache/cache-api/1.1.0/cache-api-1.1.0.jar:/home/juanj/.m2/repository/net/sourceforge/jexcelapi/jxl/2.6.12/jxl-2.6.12.jar:/home/juanj/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.15/byte-buddy-agent-1.14.15.jar:/home/juanj/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-all/0.64.8/flexmark-all-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark/0.64.8/flexmark-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-abbreviation/0.64.8/flexmark-ext-abbreviation-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-admonition/0.64.8/flexmark-ext-admonition-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-anchorlink/0.64.8/flexmark-ext-anchorlink-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-aside/0.64.8/flexmark-ext-aside-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-attributes/0.64.8/flexmark-ext-attributes-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-autolink/0.64.8/flexmark-ext-autolink-0.64.8.jar:/home/juanj/.m2/repository/org/nibor/autolink/autolink/0.6.0/autolink-0.6.0.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-definition/0.64.8/flexmark-ext-definition-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-emoji/0.64.8/flexmark-ext-emoji-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-enumerated-reference/0.64.8/flexmark-ext-enumerated-reference-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-escaped-character/0.64.8/flexmark-ext-escaped-character-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-footnotes/0.64.8/flexmark-ext-footnotes-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-gfm-issues/0.64.8/flexmark-ext-gfm-issues-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-gfm-strikethrough/0.64.8/flexmark-ext-gfm-strikethrough-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-gfm-tasklist/0.64.8/flexmark-ext-gfm-tasklist-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-gfm-users/0.64.8/flexmark-ext-gfm-users-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-gitlab/0.64.8/flexmark-ext-gitlab-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-jekyll-front-matter/0.64.8/flexmark-ext-jekyll-front-matter-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-jekyll-tag/0.64.8/flexmark-ext-jekyll-tag-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-media-tags/0.64.8/flexmark-ext-media-tags-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-macros/0.64.8/flexmark-ext-macros-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-ins/0.64.8/flexmark-ext-ins-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-xwiki-macros/0.64.8/flexmark-ext-xwiki-macros-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-superscript/0.64.8/flexmark-ext-superscript-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-toc/0.64.8/flexmark-ext-toc-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-typographic/0.64.8/flexmark-ext-typographic-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-wikilink/0.64.8/flexmark-ext-wikilink-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-yaml-front-matter/0.64.8/flexmark-ext-yaml-front-matter-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-youtube-embedded/0.64.8/flexmark-ext-youtube-embedded-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-html2md-converter/0.64.8/flexmark-html2md-converter-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-jira-converter/0.64.8/flexmark-jira-converter-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-pdf-converter/0.64.8/flexmark-pdf-converter-0.64.8.jar:/home/juanj/.m2/repository/com/openhtmltopdf/openhtmltopdf-core/1.0.10/openhtmltopdf-core-1.0.10.jar:/home/juanj/.m2/repository/com/openhtmltopdf/openhtmltopdf-pdfbox/1.0.10/openhtmltopdf-pdfbox-1.0.10.jar:/home/juanj/.m2/repository/org/apache/pdfbox/pdfbox/2.0.24/pdfbox-2.0.24.jar:/home/juanj/.m2/repository/org/apache/pdfbox/fontbox/2.0.24/fontbox-2.0.24.jar:/home/juanj/.m2/repository/org/apache/pdfbox/xmpbox/2.0.24/xmpbox-2.0.24.jar:/home/juanj/.m2/repository/de/rototor/pdfbox/graphics2d/0.32/graphics2d-0.32.jar:/home/juanj/.m2/repository/com/openhtmltopdf/openhtmltopdf-rtl-support/1.0.10/openhtmltopdf-rtl-support-1.0.10.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-profile-pegdown/0.64.8/flexmark-profile-pegdown-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util-ast/0.64.8/flexmark-util-ast-0.64.8.jar:/home/juanj/.m2/repository/org/jetbrains/annotations/24.0.1/annotations-24.0.1.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util-builder/0.64.8/flexmark-util-builder-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util-collection/0.64.8/flexmark-util-collection-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util-data/0.64.8/flexmark-util-data-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util-dependency/0.64.8/flexmark-util-dependency-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util-format/0.64.8/flexmark-util-format-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util-html/0.64.8/flexmark-util-html-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util-misc/0.64.8/flexmark-util-misc-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util-options/0.64.8/flexmark-util-options-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util-sequence/0.64.8/flexmark-util-sequence-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util-visitor/0.64.8/flexmark-util-visitor-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-youtrack-converter/0.64.8/flexmark-youtrack-converter-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-resizable-image/0.64.8/flexmark-ext-resizable-image-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-tables/0.64.8/flexmark-ext-tables-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util/0.64.8/flexmark-util-0.64.8.jar:/home/juanj/.m2/repository/net/serenity-bdd/serenity-reports/4.1.20/serenity-reports-4.1.20.jar:/home/juanj/.m2/repository/net/serenity-bdd/serenity-stats/4.1.20/serenity-stats-4.1.20.jar:/home/juanj/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/1.9.24/kotlin-stdlib-1.9.24.jar:/home/juanj/.m2/repository/net/serenity-bdd/serenity-reports-configuration/4.1.20/serenity-reports-configuration-4.1.20.jar:/home/juanj/.m2/repository/com/ibm/icu/icu4j/72.1/icu4j-72.1.jar:/home/juanj/.m2/repository/es/nitaur/markdown/txtmark/0.16/txtmark-0.16.jar:/home/juanj/.m2/repository/net/serenity-bdd/serenity-report-resources/4.1.20/serenity-report-resources-4.1.20.jar:/home/juanj/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/home/juanj/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.0/jackson-core-2.17.0.jar:/home/juanj/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.0/jackson-databind-2.17.0.jar:/home/juanj/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.0/jackson-annotations-2.17.0.jar:/home/juanj/.m2/repository/commons-codec/commons-codec/1.16.1/commons-codec-1.16.1.jar:/home/juanj/.m2/repository/commons-io/commons-io/2.15.1/commons-io-2.15.1.jar:/home/juanj/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/juanj/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/home/juanj/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-java/4.21.0/selenium-java-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v123/4.21.0/selenium-devtools-v123-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v124/4.21.0/selenium-devtools-v124-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v125/4.21.0/selenium-devtools-v125-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.21.0/selenium-devtools-v85-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.21.0/selenium-remote-driver-4.21.0.jar:/home/juanj/.m2/repository/io/opentelemetry/semconv/opentelemetry-semconv/1.25.0-alpha/opentelemetry-semconv-1.25.0-alpha.jar:/home/juanj/.m2/repository/io/opentelemetry/opentelemetry-api/1.38.0/opentelemetry-api-1.38.0.jar:/home/juanj/.m2/repository/io/opentelemetry/opentelemetry-context/1.38.0/opentelemetry-context-1.38.0.jar:/home/juanj/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.38.0/opentelemetry-exporter-logging-1.38.0.jar:/home/juanj/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.38.0/opentelemetry-sdk-common-1.38.0.jar:/home/juanj/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.38.0/opentelemetry-sdk-extension-autoconfigure-spi-1.38.0.jar:/home/juanj/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.38.0/opentelemetry-sdk-extension-autoconfigure-1.38.0.jar:/home/juanj/.m2/repository/io/opentelemetry/opentelemetry-api-incubator/1.38.0-alpha/opentelemetry-api-incubator-1.38.0-alpha.jar:/home/juanj/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.38.0/opentelemetry-sdk-trace-1.38.0.jar:/home/juanj/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.38.0/opentelemetry-sdk-1.38.0.jar:/home/juanj/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.38.0/opentelemetry-sdk-metrics-1.38.0.jar:/home/juanj/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.38.0/opentelemetry-sdk-logs-1.38.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-os/4.21.0/selenium-os-4.21.0.jar:/home/juanj/.m2/repository/org/apache/commons/commons-exec/1.4.0/commons-exec-1.4.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.21.0/selenium-safari-driver-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-api/4.21.0/selenium-api-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-support/4.21.0/selenium-support-4.21.0.jar:/home/juanj/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-json/4.21.0/selenium-json-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.21.0/selenium-chrome-driver-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.21.0/selenium-chromium-driver-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.21.0/selenium-manager-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.21.0/selenium-firefox-driver-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-http/4.21.0/selenium-http-4.21.0.jar:/home/juanj/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.21.0/selenium-edge-driver-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.21.0/selenium-ie-driver-4.21.0.jar:/home/juanj/.m2/repository/org/htmlunit/htmlunit/4.1.0/htmlunit-4.1.0.jar:/home/juanj/.m2/repository/org/apache/httpcomponents/httpmime/4.5.14/httpmime-4.5.14.jar:/home/juanj/.m2/repository/org/htmlunit/htmlunit-core-js/4.1.0/htmlunit-core-js-4.1.0.jar:/home/juanj/.m2/repository/org/htmlunit/neko-htmlunit/4.1.0/neko-htmlunit-4.1.0.jar:/home/juanj/.m2/repository/org/htmlunit/htmlunit-cssparser/4.1.0/htmlunit-cssparser-4.1.0.jar:/home/juanj/.m2/repository/org/htmlunit/htmlunit-xpath/4.1.0/htmlunit-xpath-4.1.0.jar:/home/juanj/.m2/repository/org/htmlunit/htmlunit-csp/4.1.0/htmlunit-csp-4.1.0.jar:/home/juanj/.m2/repository/org/htmlunit/htmlunit-websocket-client/4.1.0/htmlunit-websocket-client-4.1.0.jar:/home/juanj/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/htmlunit3-driver/4.21.0/htmlunit3-driver-4.21.0.jar:/home/juanj/.m2/repository/io/appium/java-client/9.2.2/java-client-9.2.2.jar:/home/juanj/.m2/repository/org/apache/groovy/groovy/4.0.13/groovy-4.0.13.jar:/home/juanj/.m2/repository/net/sf/opencsv/opencsv/2.1/opencsv-2.1.jar:/home/juanj/.m2/repository/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar:/home/juanj/.m2/repository/org/apache/commons/commons-compress/1.26.0/commons-compress-1.26.0.jar:/home/juanj/.m2/repository/org/fluentlenium/fluentlenium-core/0.10.2/fluentlenium-core-0.10.2.jar:/home/juanj/.m2/repository/com/jhlabs/filters/2.0.235/filters-2.0.235.jar:/home/juanj/.m2/repository/com/paulhammant/ngwebdriver/1.1.6/ngwebdriver-1.1.6.jar:/home/juanj/.m2/repository/joda-time/joda-time/2.12.7/joda-time-2.12.7.jar:/home/juanj/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/juanj/.m2/repository/com/google/jimfs/jimfs/1.3.0/jimfs-1.3.0.jar:/home/juanj/.m2/repository/org/mockito/mockito-core/3.3.3/mockito-core-3.3.3.jar:/home/juanj/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/home/juanj/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/home/juanj/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-core-2.3.0.1.jar:/home/juanj/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.3/jaxb-impl-2.3.3.jar:/home/juanj/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/home/juanj/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/home/juanj/.m2/repository/javax/activation/activation/1.1.1/activation-1.1.1.jar:/home/juanj/.m2/repository/net/serenity-bdd/serenity-cucumber/4.1.20/serenity-cucumber-4.1.20.jar:/home/juanj/.m2/repository/net/serenity-bdd/serenity-screenplay/4.1.20/serenity-screenplay-4.1.20.jar:/home/juanj/.m2/repository/net/serenity-bdd/serenity-screenplay-webdriver/4.1.20/serenity-screenplay-webdriver-4.1.20.jar:/home/juanj/.m2/repository/io/cucumber/cucumber-core/7.17.0/cucumber-core-7.17.0.jar:/home/juanj/.m2/repository/io/cucumber/cucumber-gherkin/7.17.0/cucumber-gherkin-7.17.0.jar:/home/juanj/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.17.0/cucumber-gherkin-messages-7.17.0.jar:/home/juanj/.m2/repository/io/cucumber/gherkin/28.0.0/gherkin-28.0.0.jar:/home/juanj/.m2/repository/io/cucumber/messages/24.1.0/messages-24.1.0.jar:/home/juanj/.m2/repository/io/cucumber/testng-xml-formatter/0.1.0/testng-xml-formatter-0.1.0.jar:/home/juanj/.m2/repository/io/cucumber/query/12.2.0/query-12.2.0.jar:/home/juanj/.m2/repository/io/cucumber/tag-expressions/6.1.0/tag-expressions-6.1.0.jar:/home/juanj/.m2/repository/io/cucumber/cucumber-expressions/17.1.0/cucumber-expressions-17.1.0.jar:/home/juanj/.m2/repository/io/cucumber/datatable/7.17.0/datatable-7.17.0.jar:/home/juanj/.m2/repository/io/cucumber/cucumber-plugin/7.17.0/cucumber-plugin-7.17.0.jar:/home/juanj/.m2/repository/io/cucumber/docstring/7.17.0/docstring-7.17.0.jar:/home/juanj/.m2/repository/io/cucumber/html-formatter/21.3.1/html-formatter-21.3.1.jar:/home/juanj/.m2/repository/io/cucumber/junit-xml-formatter/0.4.0/junit-xml-formatter-0.4.0.jar:/home/juanj/.m2/repository/io/cucumber/ci-environment/10.0.1/ci-environment-10.0.1.jar:/home/juanj/.m2/repository/io/cucumber/cucumber-java/7.17.0/cucumber-java-7.17.0.jar:/home/juanj/.m2/repository/io/cucumber/cucumber-junit/7.17.0/cucumber-junit-7.17.0.jar:/home/juanj/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/juanj/.m2/repository/org/apache/commons/commons-csv/1.5/commons-csv-1.5.jar:/home/juanj/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/home/juanj/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/juanj/.m2/repository/org/assertj/assertj-core/3.25.3/assertj-core-3.25.3.jar:/home/juanj/.m2/repository/net/bytebuddy/byte-buddy/1.14.11/byte-buddy-1.14.11.jar:/home/juanj/.m2/repository/org/slf4j/slf4j-simple/2.0.12/slf4j-simple-2.0.12.jar:/home/juanj/.m2/repository/org/slf4j/slf4j-api/2.0.12/slf4j-api-2.0.12.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -27,7 +27,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/home/juanj/Projects-Test/serenity-inventario-login/target/surefire/surefirebooter-20260516210722614_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/juanj/Projects-Test/serenity-inventario-login/target/surefire/surefirebooter-20260516213936309_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.10+7-Ubuntu-122.04"/>
     <property name="user.name" value="juanj"/>
@@ -42,7 +42,7 @@
     <property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-21"/>
     <property name="java.io.tmpdir" value="/tmp"/>
     <property name="java.version" value="21.0.10"/>
-    <property name="cucumber.filter.tags" value="@clientes"/>
+    <property name="cucumber.filter.tags" value="@ventas"/>
     <property name="user.dir" value="/home/juanj/Projects-Test/serenity-inventario-login"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
@@ -55,16 +55,17 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="Edicion exitosa de informacion general del cliente" classname="HU-11 Editar informacion de cliente" time="6.753">
+  <testcase name="Creacion exitosa de venta" classname="HU-13 Crear venta" time="6.584">
     <system-out><![CDATA[
-@clientes
-Scenario: Edicion exitosa de informacion general del cliente                                           &amp#27;[90m# src/test/resources/features/editar-cliente.feature:10&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario ha iniciado sesion en el modulo de clientes&amp#27;[0m                                         &amp#27;[90m# com.inventario.steps.RegistrarClienteStepDefinitions.elUsuarioHaIniciadoSesionEnElModuloDeClientes()&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mexiste un cliente registrado para la prueba de edicion&amp#27;[0m                                         &amp#27;[90m# com.inventario.steps.EditarClienteStepDefinitions.existeUnClienteRegistradoParaLaPruebaDeEdicion()&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario busca y abre el modal de edicion del cliente&amp#27;[0m                                         &amp#27;[90m# com.inventario.steps.EditarClienteStepDefinitions.elUsuarioBuscaYAbreElModalDeEdicionDelCliente()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel usuario actualiza el nombre del cliente a &amp#27;[0m&amp#27;[32m&amp#27;[1m"Nombre Cliente Editado"&amp#27;[0m                            &amp#27;[90m# com.inventario.steps.EditarClienteStepDefinitions.elUsuarioActualizaElNombreDelClienteA(java.lang.String)&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel usuario guarda los cambios del cliente&amp#27;[0m                                                        &amp#27;[90m# com.inventario.steps.EditarClienteStepDefinitions.elUsuarioGuardaLosCambiosDelCliente()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra el mensaje de exito de edicion de cliente &amp#27;[0m&amp#27;[32m&amp#27;[1m"Cliente actualizado exitosamente"&amp#27;[0m &amp#27;[90m# com.inventario.steps.EditarClienteStepDefinitions.elSistemaMuestraElMensajeDeExitoDeEdicionDeCliente(java.lang.String)&amp#27;[0m
+@ventas
+Scenario: Creacion exitosa de venta                                                     &amp#27;[90m# src/test/resources/features/registrar-venta.feature:10&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario ha iniciado sesion en el modulo de ventas&amp#27;[0m                            &amp#27;[90m# com.inventario.steps.RegistrarVentaStepDefinitions.elUsuarioHaIniciadoSesionEnElModuloDeVentas()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mexiste un cliente registrado para las pruebas de venta&amp#27;[0m                          &amp#27;[90m# com.inventario.steps.RegistrarVentaStepDefinitions.existeUnClienteRegistradoParaLasPruebasDeVenta()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario navega a registrar una nueva venta&amp#27;[0m                                    &amp#27;[90m# com.inventario.steps.RegistrarVentaStepDefinitions.elUsuarioNavegaARegistrarUnaNuevaVenta()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel usuario selecciona el cliente de prueba en el paso 1&amp#27;[0m                           &amp#27;[90m# com.inventario.steps.RegistrarVentaStepDefinitions.elUsuarioSeleccionaElClienteDePruebaEnElPaso1()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel usuario busca y agrega un producto disponible al carrito&amp#27;[0m                       &amp#27;[90m# com.inventario.steps.RegistrarVentaStepDefinitions.elUsuarioBuscaYAgregaUnProductoDisponibleAlCarrito()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel usuario confirma la venta&amp#27;[0m                                                      &amp#27;[90m# com.inventario.steps.RegistrarVentaStepDefinitions.elUsuarioConfirmaLaVenta()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra el mensaje de exito en ventas &amp#27;[0m&amp#27;[32m&amp#27;[1m"Venta registrada exitosamente"&amp#27;[0m &amp#27;[90m# com.inventario.steps.RegistrarVentaStepDefinitions.elSistemaMuestraElMensajeDeExitoEnVentas(java.lang.String)&amp#27;[0m
 ]]></system-out>
     <system-err><![CDATA[[main] INFO  - 
 
@@ -94,21 +95,22 @@ Scenario: Edicion exitosa de informacion general del cliente                    
 [main] INFO  - Test Suite Started: HU-02 Cerrar sesion del sistema
 [main] INFO  - Test Suite Started: HU-10 Registrar cliente
 [main] INFO  - Test Suite Started: HU-04 Registrar empleado
+[main] INFO  - Test Suite Started: HU-13 Crear venta
 [main] INFO  - Test Suite Started: HU-03 Roles predefinidos del sistema
-[main] INFO  - Test Suite Started: HU-11 Editar informacion de cliente
+[main] INFO  - Test Suite Started: HU-13 Crear venta
 [main] INFO  - 
   _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
  |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
    | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
    |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
 
-Edicion exitosa de informacion general del cliente(hu-11-editar-informacion-de-cliente;edicion-exitosa-de-informacion-general-del-cliente)
+Creacion exitosa de venta(hu-13-crear-venta;creacion-exitosa-de-venta)
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 9:07:25 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 9:39:38 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 9:07:25 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 9:39:38 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -116,20 +118,21 @@ ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may ne
    | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
    |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
 
-Edicion exitosa de informacion general del cliente
+Creacion exitosa de venta
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Edicion de cedula o NIT por Administrador" classname="HU-11 Editar informacion de cliente" time="5.032">
+  <testcase name="Agregar multiples productos al detalle" classname="HU-13 Crear venta" time="6.137">
     <system-out><![CDATA[
-@clientes
-Scenario: Edicion de cedula o NIT por Administrador                                                    &amp#27;[90m# src/test/resources/features/editar-cliente.feature:17&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario ha iniciado sesion en el modulo de clientes&amp#27;[0m                                         &amp#27;[90m# com.inventario.steps.RegistrarClienteStepDefinitions.elUsuarioHaIniciadoSesionEnElModuloDeClientes()&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mexiste un cliente registrado para la prueba de edicion&amp#27;[0m                                         &amp#27;[90m# com.inventario.steps.EditarClienteStepDefinitions.existeUnClienteRegistradoParaLaPruebaDeEdicion()&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario busca y abre el modal de edicion del cliente&amp#27;[0m                                         &amp#27;[90m# com.inventario.steps.EditarClienteStepDefinitions.elUsuarioBuscaYAbreElModalDeEdicionDelCliente()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel Administrador cambia la cedula del cliente por un valor nuevo&amp#27;[0m                                 &amp#27;[90m# com.inventario.steps.EditarClienteStepDefinitions.elAdministradorCambiaLaCedulaDelClientePorUnValorNuevo()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel usuario guarda los cambios del cliente&amp#27;[0m                                                        &amp#27;[90m# com.inventario.steps.EditarClienteStepDefinitions.elUsuarioGuardaLosCambiosDelCliente()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra el mensaje de exito de edicion de cliente &amp#27;[0m&amp#27;[32m&amp#27;[1m"Cliente actualizado exitosamente"&amp#27;[0m &amp#27;[90m# com.inventario.steps.EditarClienteStepDefinitions.elSistemaMuestraElMensajeDeExitoDeEdicionDeCliente(java.lang.String)&amp#27;[0m
+@ventas
+Scenario: Agregar multiples productos al detalle                                        &amp#27;[90m# src/test/resources/features/registrar-venta.feature:18&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario ha iniciado sesion en el modulo de ventas&amp#27;[0m                            &amp#27;[90m# com.inventario.steps.RegistrarVentaStepDefinitions.elUsuarioHaIniciadoSesionEnElModuloDeVentas()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mexiste un cliente registrado para las pruebas de venta&amp#27;[0m                          &amp#27;[90m# com.inventario.steps.RegistrarVentaStepDefinitions.existeUnClienteRegistradoParaLasPruebasDeVenta()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario navega a registrar una nueva venta&amp#27;[0m                                    &amp#27;[90m# com.inventario.steps.RegistrarVentaStepDefinitions.elUsuarioNavegaARegistrarUnaNuevaVenta()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel usuario selecciona el cliente de prueba en el paso 1&amp#27;[0m                           &amp#27;[90m# com.inventario.steps.RegistrarVentaStepDefinitions.elUsuarioSeleccionaElClienteDePruebaEnElPaso1()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel usuario agrega mas de un producto al carrito de la venta&amp#27;[0m                       &amp#27;[90m# com.inventario.steps.RegistrarVentaStepDefinitions.elUsuarioAgregaMasDeUnProductoAlCarritoDeLaVenta()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel usuario confirma la venta&amp#27;[0m                                                      &amp#27;[90m# com.inventario.steps.RegistrarVentaStepDefinitions.elUsuarioConfirmaLaVenta()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra el mensaje de exito en ventas &amp#27;[0m&amp#27;[32m&amp#27;[1m"Venta registrada exitosamente"&amp#27;[0m &amp#27;[90m# com.inventario.steps.RegistrarVentaStepDefinitions.elSistemaMuestraElMensajeDeExitoEnVentas(java.lang.String)&amp#27;[0m
 ]]></system-out>
     <system-err><![CDATA[[main] INFO  - 
   _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
@@ -137,13 +140,13 @@ Scenario: Edicion de cedula o NIT por Administrador                             
    | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
    |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
 
-Edicion de cedula o NIT por Administrador(hu-11-editar-informacion-de-cliente;edicion-de-cedula-o-nit-por-administrador)
+Agregar multiples productos al detalle(hu-13-crear-venta;agregar-multiples-productos-al-detalle)
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 9:07:30 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 9:39:44 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 9:07:30 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 9:39:44 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -151,19 +154,20 @@ ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may ne
    | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
    |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
 
-Edicion de cedula o NIT por Administrador
+Agregar multiples productos al detalle
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Campo cedula deshabilitado para rol Ventas" classname="HU-11 Editar informacion de cliente" time="4.439">
+  <testcase name="Stock insuficiente" classname="HU-13 Crear venta" time="5.052">
     <system-out><![CDATA[
-@clientes
-Scenario: Campo cedula deshabilitado para rol Ventas                               &amp#27;[90m# src/test/resources/features/editar-cliente.feature:24&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario ha iniciado sesion en el modulo de clientes&amp#27;[0m                     &amp#27;[90m# com.inventario.steps.RegistrarClienteStepDefinitions.elUsuarioHaIniciadoSesionEnElModuloDeClientes()&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mexiste un cliente registrado para la prueba de edicion&amp#27;[0m                     &amp#27;[90m# com.inventario.steps.EditarClienteStepDefinitions.existeUnClienteRegistradoParaLaPruebaDeEdicion()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mse establece el token de sesion con rol Ventas para clientes&amp#27;[0m                 &amp#27;[90m# com.inventario.steps.EditarClienteStepDefinitions.seEstableceElTokenDeSesionConRolVentasParaClientes()&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario busca y abre el modal de edicion del cliente&amp#27;[0m                     &amp#27;[90m# com.inventario.steps.EditarClienteStepDefinitions.elUsuarioBuscaYAbreElModalDeEdicionDelCliente()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel campo cedula o NIT esta deshabilitado en el modal de edicion del cliente&amp#27;[0m &amp#27;[90m# com.inventario.steps.EditarClienteStepDefinitions.elCampoCedulaONITEstaDeshabilitadoEnElModalDeEdicionDelCliente()&amp#27;[0m
+@ventas
+Scenario: Stock insuficiente                                                                               &amp#27;[90m# src/test/resources/features/registrar-venta.feature:26&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario ha iniciado sesion en el modulo de ventas&amp#27;[0m                                               &amp#27;[90m# com.inventario.steps.RegistrarVentaStepDefinitions.elUsuarioHaIniciadoSesionEnElModuloDeVentas()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mexiste un cliente registrado para las pruebas de venta&amp#27;[0m                                             &amp#27;[90m# com.inventario.steps.RegistrarVentaStepDefinitions.existeUnClienteRegistradoParaLasPruebasDeVenta()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario navega a registrar una nueva venta&amp#27;[0m                                                       &amp#27;[90m# com.inventario.steps.RegistrarVentaStepDefinitions.elUsuarioNavegaARegistrarUnaNuevaVenta()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel usuario selecciona el cliente de prueba en el paso 1&amp#27;[0m                                              &amp#27;[90m# com.inventario.steps.RegistrarVentaStepDefinitions.elUsuarioSeleccionaElClienteDePruebaEnElPaso1()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel usuario intenta agregar al carrito un producto con stock cero&amp#27;[0m                                     &amp#27;[90m# com.inventario.steps.RegistrarVentaStepDefinitions.elUsuarioIntentaAgregarAlCarritoUnProductoConStockCero()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra el mensaje de error en ventas &amp#27;[0m&amp#27;[32m&amp#27;[1m"Stock insuficiente para el producto seleccionado"&amp#27;[0m &amp#27;[90m# com.inventario.steps.RegistrarVentaStepDefinitions.elSistemaMuestraElMensajeDeErrorEnVentas(java.lang.String)&amp#27;[0m
 ]]></system-out>
     <system-err><![CDATA[[main] INFO  - 
   _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
@@ -171,13 +175,13 @@ Scenario: Campo cedula deshabilitado para rol Ventas                            
    | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
    |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
 
-Campo cedula deshabilitado para rol Ventas(hu-11-editar-informacion-de-cliente;campo-cedula-deshabilitado-para-rol-ventas)
+Stock insuficiente(hu-13-crear-venta;stock-insuficiente)
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 9:07:35 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 9:39:50 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 9:07:35 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 9:39:50 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -185,18 +189,19 @@ ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may ne
    | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
    |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
 
-Campo cedula deshabilitado para rol Ventas
+Stock insuficiente
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Correo duplicado al editar cliente" classname="HU-11 Editar informacion de cliente" time="6.602">
+  <testcase name="Venta sin productos en el detalle" classname="HU-13 Crear venta" time="4.791">
     <system-out><![CDATA[
-@clientes
-Scenario: Correo duplicado al editar cliente                                                              &amp#27;[90m# src/test/resources/features/editar-cliente.feature:30&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario ha iniciado sesion en el modulo de clientes&amp#27;[0m                                            &amp#27;[90m# com.inventario.steps.RegistrarClienteStepDefinitions.elUsuarioHaIniciadoSesionEnElModuloDeClientes()&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mexisten dos clientes registrados para la prueba de duplicados en edicion&amp#27;[0m                          &amp#27;[90m# com.inventario.steps.EditarClienteStepDefinitions.existenDosClientesRegistradosParaLaPruebaDeDuplicadosEnEdicion()&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario abre el modal del primer cliente e ingresa el correo del segundo cliente&amp#27;[0m                &amp#27;[90m# com.inventario.steps.EditarClienteStepDefinitions.elUsuarioAbreElModalDelPrimerClienteEIngresaElCorreoDelSegundoCliente()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra el mensaje de error de edicion de cliente &amp#27;[0m&amp#27;[32m&amp#27;[1m"Ya existe un cliente con ese correo"&amp#27;[0m &amp#27;[90m# com.inventario.steps.EditarClienteStepDefinitions.elSistemaMuestraElMensajeDeErrorDeEdicionDeCliente(java.lang.String)&amp#27;[0m
+@ventas
+Scenario: Venta sin productos en el detalle                                          &amp#27;[90m# src/test/resources/features/registrar-venta.feature:33&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario ha iniciado sesion en el modulo de ventas&amp#27;[0m                         &amp#27;[90m# com.inventario.steps.RegistrarVentaStepDefinitions.elUsuarioHaIniciadoSesionEnElModuloDeVentas()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mexiste un cliente registrado para las pruebas de venta&amp#27;[0m                       &amp#27;[90m# com.inventario.steps.RegistrarVentaStepDefinitions.existeUnClienteRegistradoParaLasPruebasDeVenta()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario navega a registrar una nueva venta&amp#27;[0m                                 &amp#27;[90m# com.inventario.steps.RegistrarVentaStepDefinitions.elUsuarioNavegaARegistrarUnaNuevaVenta()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel usuario selecciona el cliente de prueba en el paso 1&amp#27;[0m                        &amp#27;[90m# com.inventario.steps.RegistrarVentaStepDefinitions.elUsuarioSeleccionaElClienteDePruebaEnElPaso1()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel boton de confirmar venta esta deshabilitado mientras el carrito esta vacio&amp#27;[0m &amp#27;[90m# com.inventario.steps.RegistrarVentaStepDefinitions.elBotonDeConfirmarVentaEstaDeshabilitadoMientrasElCarritoEstaVacio()&amp#27;[0m
 ]]></system-out>
     <system-err><![CDATA[[main] INFO  - 
   _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
@@ -204,13 +209,13 @@ Scenario: Correo duplicado al editar cliente                                    
    | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
    |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
 
-Correo duplicado al editar cliente(hu-11-editar-informacion-de-cliente;correo-duplicado-al-editar-cliente)
+Venta sin productos en el detalle(hu-13-crear-venta;venta-sin-productos-en-el-detalle)
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 9:07:40 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 9:39:55 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 9:07:40 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 9:39:55 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -218,295 +223,26 @@ ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may ne
    | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
    |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
 
-Correo duplicado al editar cliente
+Venta sin productos en el detalle
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Cedula duplicada al editar cliente" classname="HU-11 Editar informacion de cliente" time="6.429">
-    <system-out><![CDATA[
-@clientes
-Scenario: Cedula duplicada al editar cliente                                                              &amp#27;[90m# src/test/resources/features/editar-cliente.feature:35&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario ha iniciado sesion en el modulo de clientes&amp#27;[0m                                            &amp#27;[90m# com.inventario.steps.RegistrarClienteStepDefinitions.elUsuarioHaIniciadoSesionEnElModuloDeClientes()&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mexisten dos clientes registrados para la prueba de duplicados en edicion&amp#27;[0m                          &amp#27;[90m# com.inventario.steps.EditarClienteStepDefinitions.existenDosClientesRegistradosParaLaPruebaDeDuplicadosEnEdicion()&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario abre el modal del primer cliente e ingresa la cedula del segundo cliente&amp#27;[0m                &amp#27;[90m# com.inventario.steps.EditarClienteStepDefinitions.elUsuarioAbreElModalDelPrimerClienteEIngresaLaCedulaDelSegundoCliente()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra el mensaje de error de edicion de cliente &amp#27;[0m&amp#27;[32m&amp#27;[1m"Ya existe un cliente con esa cedula"&amp#27;[0m &amp#27;[90m# com.inventario.steps.EditarClienteStepDefinitions.elSistemaMuestraElMensajeDeErrorDeEdicionDeCliente(java.lang.String)&amp#27;[0m
-]]></system-out>
-    <system-err><![CDATA[[main] INFO  - 
-  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
- |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
-   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
-   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
-
-Cedula duplicada al editar cliente(hu-11-editar-informacion-de-cliente;cedula-duplicada-al-editar-cliente)
---------------------------------------------------------------------------------
-[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
-[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 9:07:46 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 9:07:46 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-[main] INFO  - 
-  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
- |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
-   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
-   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
-
-Cedula duplicada al editar cliente
-----------------------------------------------------------------------
-]]></system-err>
-  </testcase>
-  <testcase name="Campos obligatorios vacios al editar cliente" classname="HU-11 Editar informacion de cliente" time="4.892">
-    <system-out><![CDATA[
-@clientes
-Scenario: Campos obligatorios vacios al editar cliente                                                                      &amp#27;[90m# src/test/resources/features/editar-cliente.feature:40&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario ha iniciado sesion en el modulo de clientes&amp#27;[0m                                                              &amp#27;[90m# com.inventario.steps.RegistrarClienteStepDefinitions.elUsuarioHaIniciadoSesionEnElModuloDeClientes()&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mexiste un cliente registrado para la prueba de edicion&amp#27;[0m                                                              &amp#27;[90m# com.inventario.steps.EditarClienteStepDefinitions.existeUnClienteRegistradoParaLaPruebaDeEdicion()&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario busca y abre el modal de edicion del cliente&amp#27;[0m                                                              &amp#27;[90m# com.inventario.steps.EditarClienteStepDefinitions.elUsuarioBuscaYAbreElModalDeEdicionDelCliente()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel usuario borra los campos obligatorios del modal de edicion del cliente&amp#27;[0m                                             &amp#27;[90m# com.inventario.steps.EditarClienteStepDefinitions.elUsuarioBorraLosCamposObligatoriosDelModalDeEdicionDelCliente()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel usuario guarda los cambios del cliente&amp#27;[0m                                                                             &amp#27;[90m# com.inventario.steps.EditarClienteStepDefinitions.elUsuarioGuardaLosCambiosDelCliente()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra el mensaje de error de edicion de cliente &amp#27;[0m&amp#27;[32m&amp#27;[1m"Todos los campos obligatorios deben ser diligenciados"&amp#27;[0m &amp#27;[90m# com.inventario.steps.EditarClienteStepDefinitions.elSistemaMuestraElMensajeDeErrorDeEdicionDeCliente(java.lang.String)&amp#27;[0m
-]]></system-out>
-    <system-err><![CDATA[[main] INFO  - 
-  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
- |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
-   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
-   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
-
-Campos obligatorios vacios al editar cliente(hu-11-editar-informacion-de-cliente;campos-obligatorios-vacios-al-editar-cliente)
---------------------------------------------------------------------------------
-[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
-[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 9:07:53 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 9:07:53 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-[main] INFO  - 
-  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
- |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
-   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
-   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
-
-Campos obligatorios vacios al editar cliente
-----------------------------------------------------------------------
-]]></system-err>
-  </testcase>
-  <testcase name="Acceso no autorizado al modulo de edicion de clientes" classname="HU-11 Editar informacion de cliente" time="2.867">
-    <system-out><![CDATA[
-@clientes
-Scenario: Acceso no autorizado al modulo de edicion de clientes                    &amp#27;[90m# src/test/resources/features/editar-cliente.feature:47&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario ha iniciado sesion en el modulo de clientes&amp#27;[0m                     &amp#27;[90m# com.inventario.steps.RegistrarClienteStepDefinitions.elUsuarioHaIniciadoSesionEnElModuloDeClientes()&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario inicia sesion con el rol &amp#27;[0m&amp#27;[32m&amp#27;[1m"Produccion"&amp#27;[0m                           &amp#27;[90m# com.inventario.steps.RolesStepDefinitions.elUsuarioIniciaSesionConElRol(java.lang.String)&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario intenta acceder al modulo de clientes&amp#27;[0m                            &amp#27;[90m# com.inventario.steps.RegistrarClienteStepDefinitions.elUsuarioIntentaAccederAlModuloDeClientes()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra la pagina de acceso denegado&amp#27;[0m                             &amp#27;[90m# com.inventario.steps.RolesStepDefinitions.elSistemaMuestraLaPaginaDeAccesoDenegado()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel sistema muestra el mensaje &amp#27;[0m&amp#27;[32m&amp#27;[1m"No tiene permisos para acceder a este modulo"&amp#27;[0m &amp#27;[90m# com.inventario.steps.RolesStepDefinitions.elSistemaMuestraElMensaje(java.lang.String)&amp#27;[0m
-]]></system-out>
-    <system-err><![CDATA[[main] INFO  - 
-  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
- |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
-   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
-   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
-
-Acceso no autorizado al modulo de edicion de clientes(hu-11-editar-informacion-de-cliente;acceso-no-autorizado-al-modulo-de-edicion-de-clientes)
---------------------------------------------------------------------------------
-[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
-[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 9:07:58 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 9:07:58 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-[main] INFO  - 
-  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
- |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
-   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
-   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
-
-Acceso no autorizado al modulo de edicion de clientes
-----------------------------------------------------------------------
-]]></system-err>
-  </testcase>
-  <testcase name="Listar todos los clientes con sus datos" classname="HU-12 Listar y buscar clientes" time="4.366">
-    <system-out><![CDATA[
-@clientes
-Scenario: Listar todos los clientes con sus datos                          &amp#27;[90m# src/test/resources/features/listar-clientes.feature:10&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario ha iniciado sesion en el modulo de clientes&amp#27;[0m             &amp#27;[90m# com.inventario.steps.RegistrarClienteStepDefinitions.elUsuarioHaIniciadoSesionEnElModuloDeClientes()&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mexiste al menos un cliente registrado en el sistema&amp#27;[0m                &amp#27;[90m# com.inventario.steps.ListarClientesStepDefinitions.existeAlMenosUnClienteRegistradoEnElSistema()&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario navega al modulo de listado de clientes&amp#27;[0m                  &amp#27;[90m# com.inventario.steps.ListarClientesStepDefinitions.elUsuarioNavegaAlModuloDeListadoDeClientes()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra la tabla de clientes con las columnas requeridas&amp#27;[0m &amp#27;[90m# com.inventario.steps.ListarClientesStepDefinitions.elSistemaMuestraLaTablaDeClientesConLasColumnasRequeridas()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mla tabla contiene al menos un cliente registrado&amp#27;[0m                     &amp#27;[90m# com.inventario.steps.ListarClientesStepDefinitions.laTablaContieneAlMenosUnClienteRegistrado()&amp#27;[0m
-]]></system-out>
-    <system-err><![CDATA[[main] INFO  - Test Suite Started: HU-12 Listar y buscar clientes
-[main] INFO  - 
-  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
- |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
-   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
-   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
-
-Listar todos los clientes con sus datos(hu-12-listar-y-buscar-clientes;listar-todos-los-clientes-con-sus-datos)
---------------------------------------------------------------------------------
-[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
-[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 9:08:01 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 9:08:01 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-[main] INFO  - 
-  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
- |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
-   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
-   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
-
-Listar todos los clientes con sus datos
-----------------------------------------------------------------------
-]]></system-err>
-  </testcase>
-  <testcase name="Buscar cliente por nombre" classname="HU-12 Listar y buscar clientes" time="4.686">
-    <system-out><![CDATA[
-@clientes
-Scenario: Buscar cliente por nombre                                            &amp#27;[90m# src/test/resources/features/listar-clientes.feature:16&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario ha iniciado sesion en el modulo de clientes&amp#27;[0m                 &amp#27;[90m# com.inventario.steps.RegistrarClienteStepDefinitions.elUsuarioHaIniciadoSesionEnElModuloDeClientes()&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mexiste un cliente registrado para busqueda en la lista de clientes&amp#27;[0m     &amp#27;[90m# com.inventario.steps.ListarClientesStepDefinitions.existeUnClienteRegistradoParaBusquedaEnLaListaDeClientes()&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario busca el cliente por nombre en la lista de clientes&amp#27;[0m          &amp#27;[90m# com.inventario.steps.ListarClientesStepDefinitions.elUsuarioBuscaElClientePorNombreEnLaListaDeClientes()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra el cliente en los resultados de busqueda de clientes&amp#27;[0m &amp#27;[90m# com.inventario.steps.ListarClientesStepDefinitions.elSistemaMuestraElClienteEnLosResultadosDeBusquedaDeClientes()&amp#27;[0m
-]]></system-out>
-    <system-err><![CDATA[[main] INFO  - 
-  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
- |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
-   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
-   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
-
-Buscar cliente por nombre(hu-12-listar-y-buscar-clientes;buscar-cliente-por-nombre)
---------------------------------------------------------------------------------
-[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
-[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 9:08:05 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 9:08:05 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-[main] INFO  - 
-  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
- |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
-   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
-   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
-
-Buscar cliente por nombre
-----------------------------------------------------------------------
-]]></system-err>
-  </testcase>
-  <testcase name="Busqueda por nombre sin resultados" classname="HU-12 Listar y buscar clientes" time="2.652">
-    <system-out><![CDATA[
-@clientes
-Scenario: Busqueda por nombre sin resultados                                                                           &amp#27;[90m# src/test/resources/features/listar-clientes.feature:21&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario ha iniciado sesion en el modulo de clientes&amp#27;[0m                                                         &amp#27;[90m# com.inventario.steps.RegistrarClienteStepDefinitions.elUsuarioHaIniciadoSesionEnElModuloDeClientes()&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario navega al modulo de listado de clientes&amp#27;[0m                                                              &amp#27;[90m# com.inventario.steps.ListarClientesStepDefinitions.elUsuarioNavegaAlModuloDeListadoDeClientes()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel usuario busca por &amp#27;[0m&amp#27;[32m&amp#27;[1m"XYZNOEXISTECLIENTE99"&amp#27;[0m&amp#27;[32m en la lista de clientes&amp#27;[0m                                              &amp#27;[90m# com.inventario.steps.ListarClientesStepDefinitions.elUsuarioBuscaPorEnLaListaDeClientes(java.lang.String)&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra en la lista de clientes el mensaje &amp#27;[0m&amp#27;[32m&amp#27;[1m"No se encontraron clientes con ese criterio de busqueda"&amp#27;[0m &amp#27;[90m# com.inventario.steps.ListarClientesStepDefinitions.elSistemaMuestraEnLaListaDeClientesElMensaje(java.lang.String)&amp#27;[0m
-]]></system-out>
-    <system-err><![CDATA[[main] INFO  - 
-  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
- |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
-   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
-   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
-
-Busqueda por nombre sin resultados(hu-12-listar-y-buscar-clientes;busqueda-por-nombre-sin-resultados)
---------------------------------------------------------------------------------
-[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
-[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 9:08:10 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 9:08:10 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-[main] INFO  - 
-  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
- |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
-   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
-   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
-
-Busqueda por nombre sin resultados
-----------------------------------------------------------------------
-]]></system-err>
-  </testcase>
-  <testcase name="Buscar cliente por cedula o NIT" classname="HU-12 Listar y buscar clientes" time="4.179">
-    <system-out><![CDATA[
-@clientes
-Scenario: Buscar cliente por cedula o NIT                                              &amp#27;[90m# src/test/resources/features/listar-clientes.feature:26&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario ha iniciado sesion en el modulo de clientes&amp#27;[0m                         &amp#27;[90m# com.inventario.steps.RegistrarClienteStepDefinitions.elUsuarioHaIniciadoSesionEnElModuloDeClientes()&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mexiste un cliente registrado para busqueda en la lista de clientes&amp#27;[0m             &amp#27;[90m# com.inventario.steps.ListarClientesStepDefinitions.existeUnClienteRegistradoParaBusquedaEnLaListaDeClientes()&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario busca el cliente por cedula en la lista de clientes&amp#27;[0m                  &amp#27;[90m# com.inventario.steps.ListarClientesStepDefinitions.elUsuarioBuscaElClientePorCedulaEnLaListaDeClientes()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra exactamente un cliente en la tabla de resultados de clientes&amp#27;[0m &amp#27;[90m# com.inventario.steps.ListarClientesStepDefinitions.elSistemaMuestraExactamenteUnClienteEnLaTablaDeResultadosDeClientes()&amp#27;[0m
-]]></system-out>
-    <system-err><![CDATA[[main] INFO  - 
-  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
- |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
-   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
-   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
-
-Buscar cliente por cedula o NIT(hu-12-listar-y-buscar-clientes;buscar-cliente-por-cedula-o-nit)
---------------------------------------------------------------------------------
-[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
-[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 9:08:12 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 9:08:12 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-[main] INFO  - 
-  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
- |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
-   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
-   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
-
-Buscar cliente por cedula o NIT
-----------------------------------------------------------------------
-]]></system-err>
-  </testcase>
-  <testcase name="Busqueda por cedula sin resultados" classname="HU-12 Listar y buscar clientes" time="2.6">
-    <system-out><![CDATA[
-@clientes
-Scenario: Busqueda por cedula sin resultados                                                                           &amp#27;[90m# src/test/resources/features/listar-clientes.feature:31&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario ha iniciado sesion en el modulo de clientes&amp#27;[0m                                                         &amp#27;[90m# com.inventario.steps.RegistrarClienteStepDefinitions.elUsuarioHaIniciadoSesionEnElModuloDeClientes()&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario navega al modulo de listado de clientes&amp#27;[0m                                                              &amp#27;[90m# com.inventario.steps.ListarClientesStepDefinitions.elUsuarioNavegaAlModuloDeListadoDeClientes()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel usuario busca por &amp#27;[0m&amp#27;[32m&amp#27;[1m"00000001"&amp#27;[0m&amp#27;[32m en la lista de clientes&amp#27;[0m                                                          &amp#27;[90m# com.inventario.steps.ListarClientesStepDefinitions.elUsuarioBuscaPorEnLaListaDeClientes(java.lang.String)&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra en la lista de clientes el mensaje &amp#27;[0m&amp#27;[32m&amp#27;[1m"No se encontraron clientes con ese criterio de busqueda"&amp#27;[0m &amp#27;[90m# com.inventario.steps.ListarClientesStepDefinitions.elSistemaMuestraEnLaListaDeClientesElMensaje(java.lang.String)&amp#27;[0m
-]]></system-out>
-    <system-err><![CDATA[[main] INFO  - 
-  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
- |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
-   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
-   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
-
-Busqueda por cedula sin resultados(hu-12-listar-y-buscar-clientes;busqueda-por-cedula-sin-resultados)
---------------------------------------------------------------------------------
-[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
-[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 9:08:16 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 9:08:16 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-[main] INFO  - 
-  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
- |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
-   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
-   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
-
-Busqueda por cedula sin resultados
-----------------------------------------------------------------------
-]]></system-err>
-  </testcase>
-  <testcase name="Lista vacia de clientes" classname="HU-12 Listar y buscar clientes" time="2.297">
-    <error message="Este escenario requiere una base de datos sin clientes registrados." type="io.cucumber.java.PendingException"><![CDATA[io.cucumber.java.PendingException: Este escenario requiere una base de datos sin clientes registrados.
-	at com.inventario.steps.ListarClientesStepDefinitions.seSimulaQueNoHayClientesEnElSistema(ListarClientesStepDefinitions.java:77)
-	at ✽.se simula que no hay clientes en el sistema(file:///home/juanj/Projects-Test/serenity-inventario-login/src/test/resources/features/listar-clientes.feature:39)
+  <testcase name="Venta completada genera movimiento en caja" classname="HU-13 Crear venta" time="2.523">
+    <error message="Este escenario requiere crear una venta y verificar el movimiento en el modulo de Caja." type="io.cucumber.java.PendingException"><![CDATA[io.cucumber.java.PendingException: Este escenario requiere crear una venta y verificar el movimiento en el modulo de Caja.
+	at com.inventario.steps.RegistrarVentaStepDefinitions.existeUnaVentaCreadaEnEstadoALaEsperaDeReparto(RegistrarVentaStepDefinitions.java:65)
+	at ✽.existe una venta creada en estado A la espera de reparto(file:///home/juanj/Projects-Test/serenity-inventario-login/src/test/resources/features/registrar-venta.feature:41)
 ]]></error>
     <system-out><![CDATA[
-@clientes @pendiente
-Scenario: Lista vacia de clientes                                                          &amp#27;[90m# src/test/resources/features/listar-clientes.feature:37&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario ha iniciado sesion en el modulo de clientes&amp#27;[0m                             &amp#27;[90m# com.inventario.steps.RegistrarClienteStepDefinitions.elUsuarioHaIniciadoSesionEnElModuloDeClientes()&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario navega al modulo de listado de clientes&amp#27;[0m                                  &amp#27;[90m# com.inventario.steps.ListarClientesStepDefinitions.elUsuarioNavegaAlModuloDeListadoDeClientes()&amp#27;[0m
-  &amp#27;[33mAnd &amp#27;[0m&amp#27;[33mse simula que no hay clientes en el sistema&amp#27;[0m                                          &amp#27;[90m# com.inventario.steps.ListarClientesStepDefinitions.seSimulaQueNoHayClientesEnElSistema()&amp#27;[0m
-      &amp#27;[33mio.cucumber.java.PendingException: Este escenario requiere una base de datos sin clientes registrados.
-	at com.inventario.steps.ListarClientesStepDefinitions.seSimulaQueNoHayClientesEnElSistema(ListarClientesStepDefinitions.java:77)
-	at ✽.se simula que no hay clientes en el sistema(file:///home/juanj/Projects-Test/serenity-inventario-login/src/test/resources/features/listar-clientes.feature:39)
+@ventas @pendiente
+Scenario: Venta completada genera movimiento en caja                                 &amp#27;[90m# src/test/resources/features/registrar-venta.feature:40&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario ha iniciado sesion en el modulo de ventas&amp#27;[0m                         &amp#27;[90m# com.inventario.steps.RegistrarVentaStepDefinitions.elUsuarioHaIniciadoSesionEnElModuloDeVentas()&amp#27;[0m
+  &amp#27;[33mGiven &amp#27;[0m&amp#27;[33mexiste una venta creada en estado A la espera de reparto&amp#27;[0m                     &amp#27;[90m# com.inventario.steps.RegistrarVentaStepDefinitions.existeUnaVentaCreadaEnEstadoALaEsperaDeReparto()&amp#27;[0m
+      &amp#27;[33mio.cucumber.java.PendingException: Este escenario requiere crear una venta y verificar el movimiento en el modulo de Caja.
+	at com.inventario.steps.RegistrarVentaStepDefinitions.existeUnaVentaCreadaEnEstadoALaEsperaDeReparto(RegistrarVentaStepDefinitions.java:65)
+	at ✽.existe una venta creada en estado A la espera de reparto(file:///home/juanj/Projects-Test/serenity-inventario-login/src/test/resources/features/registrar-venta.feature:41)
 &amp#27;[0m
-  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mel sistema muestra en la lista de clientes el mensaje &amp#27;[0m&amp#27;[36m&amp#27;[1m"No hay clientes registrados"&amp#27;[0m &amp#27;[90m# com.inventario.steps.ListarClientesStepDefinitions.elSistemaMuestraEnLaListaDeClientesElMensaje(java.lang.String)&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mel usuario cambia el estado de la venta a Completada&amp#27;[0m                          &amp#27;[90m# com.inventario.steps.RegistrarVentaStepDefinitions.elUsuarioCambiaElEstadoDeLaVentaACompletada()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mel sistema registra un movimiento de ingreso en caja por el total de la venta&amp#27;[0m &amp#27;[90m# com.inventario.steps.RegistrarVentaStepDefinitions.elSistemaRegistraUnMovimientoDeIngreso()&amp#27;[0m
 ]]></system-out>
     <system-err><![CDATA[[main] INFO  - 
   _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
@@ -514,25 +250,28 @@ Scenario: Lista vacia de clientes                                               
    | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
    |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
 
-Lista vacia de clientes(hu-12-listar-y-buscar-clientes;lista-vacia-de-clientes)
+Venta completada genera movimiento en caja(hu-13-crear-venta;venta-completada-genera-movimiento-en-caja)
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 9:08:19 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 9:40:00 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 9:08:19 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 9:40:00 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="Acceso no autorizado al modulo de listado de clientes" classname="HU-12 Listar y buscar clientes" time="2.91">
+  <testcase name="Venta cancelada" classname="HU-13 Crear venta" time="6.069">
     <system-out><![CDATA[
-@clientes
-Scenario: Acceso no autorizado al modulo de listado de clientes                    &amp#27;[90m# src/test/resources/features/listar-clientes.feature:42&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario ha iniciado sesion en el modulo de clientes&amp#27;[0m                     &amp#27;[90m# com.inventario.steps.RegistrarClienteStepDefinitions.elUsuarioHaIniciadoSesionEnElModuloDeClientes()&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario inicia sesion con el rol &amp#27;[0m&amp#27;[32m&amp#27;[1m"Produccion"&amp#27;[0m                           &amp#27;[90m# com.inventario.steps.RolesStepDefinitions.elUsuarioIniciaSesionConElRol(java.lang.String)&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario intenta acceder al modulo de clientes&amp#27;[0m                            &amp#27;[90m# com.inventario.steps.RegistrarClienteStepDefinitions.elUsuarioIntentaAccederAlModuloDeClientes()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra la pagina de acceso denegado&amp#27;[0m                             &amp#27;[90m# com.inventario.steps.RolesStepDefinitions.elSistemaMuestraLaPaginaDeAccesoDenegado()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel sistema muestra el mensaje &amp#27;[0m&amp#27;[32m&amp#27;[1m"No tiene permisos para acceder a este modulo"&amp#27;[0m &amp#27;[90m# com.inventario.steps.RolesStepDefinitions.elSistemaMuestraElMensaje(java.lang.String)&amp#27;[0m
+@ventas
+Scenario: Venta cancelada                                                                          &amp#27;[90m# src/test/resources/features/registrar-venta.feature:45&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario ha iniciado sesion en el modulo de ventas&amp#27;[0m                                       &amp#27;[90m# com.inventario.steps.RegistrarVentaStepDefinitions.elUsuarioHaIniciadoSesionEnElModuloDeVentas()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mexiste un cliente registrado para las pruebas de venta&amp#27;[0m                                     &amp#27;[90m# com.inventario.steps.RegistrarVentaStepDefinitions.existeUnClienteRegistradoParaLasPruebasDeVenta()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario navega a registrar una nueva venta&amp#27;[0m                                               &amp#27;[90m# com.inventario.steps.RegistrarVentaStepDefinitions.elUsuarioNavegaARegistrarUnaNuevaVenta()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel usuario selecciona el cliente de prueba en el paso 1&amp#27;[0m                                      &amp#27;[90m# com.inventario.steps.RegistrarVentaStepDefinitions.elUsuarioSeleccionaElClienteDePruebaEnElPaso1()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel usuario busca y agrega un producto disponible al carrito&amp#27;[0m                                  &amp#27;[90m# com.inventario.steps.RegistrarVentaStepDefinitions.elUsuarioBuscaYAgregaUnProductoDisponibleAlCarrito()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel usuario confirma la venta&amp#27;[0m                                                                 &amp#27;[90m# com.inventario.steps.RegistrarVentaStepDefinitions.elUsuarioConfirmaLaVenta()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel usuario cancela la venta recien creada&amp#27;[0m                                                    &amp#27;[90m# com.inventario.steps.RegistrarVentaStepDefinitions.elUsuarioCancelaLaVentaRecienCreada()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra el mensaje de exito en ventas &amp#27;[0m&amp#27;[32m&amp#27;[1m"Estado de venta actualizado exitosamente"&amp#27;[0m &amp#27;[90m# com.inventario.steps.RegistrarVentaStepDefinitions.elSistemaMuestraElMensajeDeExitoEnVentas(java.lang.String)&amp#27;[0m
 ]]></system-out>
     <system-err><![CDATA[[main] INFO  - 
   _____   ___   ___   _____     ___   ___   _  _   ___    ___   _  _    ___ 
@@ -540,7 +279,7 @@ Scenario: Acceso no autorizado al modulo de listado de clientes                 
    | |   | _|  \__ \   | |     |  _/ | _|  | .` | | |) |  | |  | .` | | (_ |
    |_|   |___| |___/   |_|     |_|   |___| |_|\_| |___/  |___| |_|\_|  \___|
 
-Lista vacia de clientes
+Venta completada genera movimiento en caja
 -----------------------------------------------------------------------------
 [main] INFO  - 
   _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
@@ -548,13 +287,13 @@ Lista vacia de clientes
    | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
    |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
 
-Acceso no autorizado al modulo de listado de clientes(hu-12-listar-y-buscar-clientes;acceso-no-autorizado-al-modulo-de-listado-de-clientes)
+Venta cancelada(hu-13-crear-venta;venta-cancelada)
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 9:08:21 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 9:40:02 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 9:08:21 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 9:40:02 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -562,200 +301,19 @@ ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may ne
    | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
    |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
 
-Acceso no autorizado al modulo de listado de clientes
+Venta cancelada
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Registro exitoso de cliente" classname="HU-10 Registrar cliente" time="3.061">
+  <testcase name="Acceso no autorizado al modulo de ventas" classname="HU-13 Crear venta" time="3.213">
     <system-out><![CDATA[
-@clientes
-Scenario: Registro exitoso de cliente                                                      &amp#27;[90m# src/test/resources/features/registrar-cliente.feature:10&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario ha iniciado sesion en el modulo de clientes&amp#27;[0m                             &amp#27;[90m# com.inventario.steps.RegistrarClienteStepDefinitions.elUsuarioHaIniciadoSesionEnElModuloDeClientes()&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario registra un cliente con todos los campos obligatorios&amp#27;[0m                    &amp#27;[90m# com.inventario.steps.RegistrarClienteStepDefinitions.elUsuarioRegistraUnClienteConTodosLosCamposObligatorios()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra el mensaje de exito de cliente &amp#27;[0m&amp#27;[32m&amp#27;[1m"Cliente registrado exitosamente"&amp#27;[0m &amp#27;[90m# com.inventario.steps.RegistrarClienteStepDefinitions.elSistemaMuestraElMensajeDeExitoDeCliente(java.lang.String)&amp#27;[0m
-]]></system-out>
-    <system-err><![CDATA[[main] INFO  - Test Suite Started: HU-10 Registrar cliente
-[main] INFO  - 
-  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
- |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
-   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
-   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
-
-Registro exitoso de cliente(hu-10-registrar-cliente;registro-exitoso-de-cliente)
---------------------------------------------------------------------------------
-[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
-[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 9:08:24 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 9:08:24 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-[main] INFO  - 
-  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
- |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
-   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
-   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
-
-Registro exitoso de cliente
-----------------------------------------------------------------------
-]]></system-err>
-  </testcase>
-  <testcase name="Registro con telefono secundario" classname="HU-10 Registrar cliente" time="2.689">
-    <system-out><![CDATA[
-@clientes
-Scenario: Registro con telefono secundario                                                 &amp#27;[90m# src/test/resources/features/registrar-cliente.feature:14&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario ha iniciado sesion en el modulo de clientes&amp#27;[0m                             &amp#27;[90m# com.inventario.steps.RegistrarClienteStepDefinitions.elUsuarioHaIniciadoSesionEnElModuloDeClientes()&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario registra un cliente incluyendo el telefono secundario&amp#27;[0m                    &amp#27;[90m# com.inventario.steps.RegistrarClienteStepDefinitions.elUsuarioRegistraUnClienteIncluyendoElTelefonoSecundario()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra el mensaje de exito de cliente &amp#27;[0m&amp#27;[32m&amp#27;[1m"Cliente registrado exitosamente"&amp#27;[0m &amp#27;[90m# com.inventario.steps.RegistrarClienteStepDefinitions.elSistemaMuestraElMensajeDeExitoDeCliente(java.lang.String)&amp#27;[0m
-]]></system-out>
-    <system-err><![CDATA[[main] INFO  - 
-  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
- |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
-   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
-   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
-
-Registro con telefono secundario(hu-10-registrar-cliente;registro-con-telefono-secundario)
---------------------------------------------------------------------------------
-[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
-[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 9:08:27 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 9:08:27 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-[main] INFO  - 
-  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
- |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
-   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
-   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
-
-Registro con telefono secundario
-----------------------------------------------------------------------
-]]></system-err>
-  </testcase>
-  <testcase name="Cedula o NIT duplicado" classname="HU-10 Registrar cliente" time="4.047">
-    <system-out><![CDATA[
-@clientes
-Scenario: Cedula o NIT duplicado                                                               &amp#27;[90m# src/test/resources/features/registrar-cliente.feature:18&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario ha iniciado sesion en el modulo de clientes&amp#27;[0m                                 &amp#27;[90m# com.inventario.steps.RegistrarClienteStepDefinitions.elUsuarioHaIniciadoSesionEnElModuloDeClientes()&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario registra previamente un cliente en el sistema&amp#27;[0m                               &amp#27;[90m# com.inventario.steps.RegistrarClienteStepDefinitions.elUsuarioRegistraPreviamenteUnClienteEnElSistema()&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario intenta registrar otro cliente con la misma cedula o NIT&amp#27;[0m                     &amp#27;[90m# com.inventario.steps.RegistrarClienteStepDefinitions.elUsuarioIntentaRegistrarOtroClienteConLaMismaCedulaONIT()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra el mensaje de error de cliente &amp#27;[0m&amp#27;[32m&amp#27;[1m"Ya existe un cliente con esa cedula"&amp#27;[0m &amp#27;[90m# com.inventario.steps.RegistrarClienteStepDefinitions.elSistemaMuestraElMensajeDeErrorDeCliente(java.lang.String)&amp#27;[0m
-]]></system-out>
-    <system-err><![CDATA[[main] INFO  - 
-  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
- |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
-   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
-   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
-
-Cedula o NIT duplicado(hu-10-registrar-cliente;cedula-o-nit-duplicado)
---------------------------------------------------------------------------------
-[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
-[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 9:08:30 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 9:08:30 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-[main] INFO  - 
-  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
- |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
-   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
-   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
-
-Cedula o NIT duplicado
-----------------------------------------------------------------------
-]]></system-err>
-  </testcase>
-  <testcase name="Correo duplicado en clientes" classname="HU-10 Registrar cliente" time="4.501">
-    <system-out><![CDATA[
-@clientes
-Scenario: Correo duplicado en clientes                                                         &amp#27;[90m# src/test/resources/features/registrar-cliente.feature:23&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario ha iniciado sesion en el modulo de clientes&amp#27;[0m                                 &amp#27;[90m# com.inventario.steps.RegistrarClienteStepDefinitions.elUsuarioHaIniciadoSesionEnElModuloDeClientes()&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario registra previamente un cliente en el sistema&amp#27;[0m                               &amp#27;[90m# com.inventario.steps.RegistrarClienteStepDefinitions.elUsuarioRegistraPreviamenteUnClienteEnElSistema()&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario intenta registrar otro cliente con el mismo correo&amp#27;[0m                           &amp#27;[90m# com.inventario.steps.RegistrarClienteStepDefinitions.elUsuarioIntentaRegistrarOtroClienteConElMismoCorreo()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra el mensaje de error de cliente &amp#27;[0m&amp#27;[32m&amp#27;[1m"Ya existe un cliente con ese correo"&amp#27;[0m &amp#27;[90m# com.inventario.steps.RegistrarClienteStepDefinitions.elSistemaMuestraElMensajeDeErrorDeCliente(java.lang.String)&amp#27;[0m
-]]></system-out>
-    <system-err><![CDATA[[main] INFO  - 
-  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
- |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
-   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
-   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
-
-Correo duplicado en clientes(hu-10-registrar-cliente;correo-duplicado-en-clientes)
---------------------------------------------------------------------------------
-[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
-[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 9:08:34 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 9:08:34 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-[main] INFO  - 
-  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
- |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
-   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
-   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
-
-Correo duplicado en clientes
-----------------------------------------------------------------------
-]]></system-err>
-  </testcase>
-  <testcase name="Campos obligatorios vacios en clientes" classname="HU-10 Registrar cliente" time="2.75">
-    <system-out><![CDATA[
-@clientes
-Scenario: Campos obligatorios vacios en clientes                                                                 &amp#27;[90m# src/test/resources/features/registrar-cliente.feature:28&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario ha iniciado sesion en el modulo de clientes&amp#27;[0m                                                   &amp#27;[90m# com.inventario.steps.RegistrarClienteStepDefinitions.elUsuarioHaIniciadoSesionEnElModuloDeClientes()&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario abre el formulario de registro de cliente&amp#27;[0m                                                      &amp#27;[90m# com.inventario.steps.RegistrarClienteStepDefinitions.elUsuarioAbreElFormularioDeRegistroDeCliente()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel usuario intenta registrar el cliente sin diligenciar los campos&amp#27;[0m                                         &amp#27;[90m# com.inventario.steps.RegistrarClienteStepDefinitions.elUsuarioIntentaRegistrarElClienteSinDiligenciarLosCampos()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra el mensaje de error de cliente &amp#27;[0m&amp#27;[32m&amp#27;[1m"Todos los campos obligatorios deben ser diligenciados"&amp#27;[0m &amp#27;[90m# com.inventario.steps.RegistrarClienteStepDefinitions.elSistemaMuestraElMensajeDeErrorDeCliente(java.lang.String)&amp#27;[0m
-]]></system-out>
-    <system-err><![CDATA[[main] INFO  - 
-  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
- |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
-   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
-   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
-
-Campos obligatorios vacios en clientes(hu-10-registrar-cliente;campos-obligatorios-vacios-en-clientes)
---------------------------------------------------------------------------------
-[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
-[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 9:08:39 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 9:08:39 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-[main] INFO  - 
-  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
- |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
-   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
-   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
-
-Campos obligatorios vacios en clientes
-----------------------------------------------------------------------
-]]></system-err>
-  </testcase>
-  <testcase name="Acceso no autorizado al modulo de clientes" classname="HU-10 Registrar cliente" time="2.696">
-    <failure message="[El roleGuard debe redirigir a /unauthorized al acceder sin permisos] &#10;Expecting actual:&#10;  &quot;http://localhost:4200/ventas/clientes&quot;&#10;to contain:&#10;  &quot;/unauthorized&quot; " type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
-[El roleGuard debe redirigir a /unauthorized al acceder sin permisos] 
-Expecting actual:
-  "http://localhost:4200/ventas/clientes"
-to contain:
-  "/unauthorized" 
-	at com.inventario.steps.RolesStepDefinitions.elSistemaMuestraLaPaginaDeAccesoDenegado(RolesStepDefinitions.java:72)
-	at ✽.el sistema muestra la pagina de acceso denegado(file:///home/juanj/Projects-Test/serenity-inventario-login/src/test/resources/features/registrar-cliente.feature:36)
-]]></failure>
-    <system-out><![CDATA[
-@clientes
-Scenario: Acceso no autorizado al modulo de clientes                               &amp#27;[90m# src/test/resources/features/registrar-cliente.feature:33&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario ha iniciado sesion en el modulo de clientes&amp#27;[0m                     &amp#27;[90m# com.inventario.steps.RegistrarClienteStepDefinitions.elUsuarioHaIniciadoSesionEnElModuloDeClientes()&amp#27;[0m
+@ventas
+Scenario: Acceso no autorizado al modulo de ventas                                 &amp#27;[90m# src/test/resources/features/registrar-venta.feature:54&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario ha iniciado sesion en el modulo de ventas&amp#27;[0m                       &amp#27;[90m# com.inventario.steps.RegistrarVentaStepDefinitions.elUsuarioHaIniciadoSesionEnElModuloDeVentas()&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario inicia sesion con el rol &amp#27;[0m&amp#27;[32m&amp#27;[1m"Produccion"&amp#27;[0m                           &amp#27;[90m# com.inventario.steps.RolesStepDefinitions.elUsuarioIniciaSesionConElRol(java.lang.String)&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario intenta acceder al modulo de clientes&amp#27;[0m                            &amp#27;[90m# com.inventario.steps.RegistrarClienteStepDefinitions.elUsuarioIntentaAccederAlModuloDeClientes()&amp#27;[0m
-  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mel sistema muestra la pagina de acceso denegado&amp#27;[0m                             &amp#27;[90m# com.inventario.steps.RolesStepDefinitions.elSistemaMuestraLaPaginaDeAccesoDenegado()&amp#27;[0m
-      &amp#27;[31mjava.lang.AssertionError: [El roleGuard debe redirigir a /unauthorized al acceder sin permisos] 
-Expecting actual:
-  "http://localhost:4200/ventas/clientes"
-to contain:
-  "/unauthorized" 
-	at com.inventario.steps.RolesStepDefinitions.elSistemaMuestraLaPaginaDeAccesoDenegado(RolesStepDefinitions.java:72)
-	at ✽.el sistema muestra la pagina de acceso denegado(file:///home/juanj/Projects-Test/serenity-inventario-login/src/test/resources/features/registrar-cliente.feature:36)
-&amp#27;[0m
-  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mel sistema muestra el mensaje &amp#27;[0m&amp#27;[36m&amp#27;[1m"No tiene permisos para acceder a este modulo"&amp#27;[0m &amp#27;[90m# com.inventario.steps.RolesStepDefinitions.elSistemaMuestraElMensaje(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario intenta acceder al modulo de lista de ventas&amp#27;[0m                     &amp#27;[90m# com.inventario.steps.RegistrarVentaStepDefinitions.elUsuarioIntentaAccederAlModuloDeListaDeVentas()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra la pagina de acceso denegado&amp#27;[0m                             &amp#27;[90m# com.inventario.steps.RolesStepDefinitions.elSistemaMuestraLaPaginaDeAccesoDenegado()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel sistema muestra el mensaje &amp#27;[0m&amp#27;[32m&amp#27;[1m"No tiene permisos para acceder a este modulo"&amp#27;[0m &amp#27;[90m# com.inventario.steps.RolesStepDefinitions.elSistemaMuestraElMensaje(java.lang.String)&amp#27;[0m
 ]]></system-out>
     <system-err><![CDATA[[main] INFO  - 
   _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
@@ -763,14 +321,22 @@ to contain:
    | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
    |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
 
-Acceso no autorizado al modulo de clientes(hu-10-registrar-cliente;acceso-no-autorizado-al-modulo-de-clientes)
+Acceso no autorizado al modulo de ventas(hu-13-crear-venta;acceso-no-autorizado-al-modulo-de-ventas)
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 16, 2026 9:08:41 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 16, 2026 9:40:08 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 16, 2026 9:08:41 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 16, 2026 9:40:08 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[main] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Acceso no autorizado al modulo de ventas
+----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
 </testsuite>

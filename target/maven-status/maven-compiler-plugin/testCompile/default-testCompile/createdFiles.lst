@@ -1,3 +1,4 @@
+com/inventario/pages/RegistrarVentaPage.class
 com/inventario/steps/RegistrarClienteStepDefinitions.class
 com/inventario/pages/ClientesPage.class
 com/inventario/pages/LoginPage.class
@@ -9,6 +10,8 @@ com/inventario/steps/LoginStepDefinitions.class
 com/inventario/steps/EditarEmpleadoStepDefinitions.class
 com/inventario/steps/LogoutStepDefinitions.class
 com/inventario/steps/ActivarDesactivarUsuarioStepDefinitions.class
+com/inventario/pages/ListaVentasPage.class
+com/inventario/steps/RegistrarVentaStepDefinitions.class
 com/inventario/pages/CrearUsuarioPage.class
 com/inventario/steps/ListarEmpleadosStepDefinitions.class
 com/inventario/pages/DashboardPage.class
