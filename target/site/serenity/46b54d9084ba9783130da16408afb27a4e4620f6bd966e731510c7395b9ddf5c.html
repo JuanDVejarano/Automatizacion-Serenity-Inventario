@@ -226,7 +226,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 16-05-2026 22:19:32</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 16-05-2026 22:34:49</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -241,7 +241,7 @@
                         <td width="375px" valign="top">
                             <div class="test-count-summary">
                                 <div class="test-count-title">
-                                    114 tests
+                                    122 tests
 
                                      |
                                         <a href="46b54d9084ba9783130da16408afb27a4e4620f6bd966e731510c7395b9ddf5c.csv" title="Download CSV"> <i class="bi bi-cloud-arrow-down"
@@ -314,13 +314,13 @@
                     <td>
                         <i class="bi bi-card-checklist"></i> Number of Scenarios
                     </td>
-                    <td>96</td>
+                    <td>104</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-caret-right"></i> Total Number of Test Cases
                     </td>
-                    <td>114</td>
+                    <td>122</td>
                 </tr>
                 <tr scope="row">
                     <td>
@@ -333,14 +333,14 @@
                         <i class="bi bi-stop-circle"></i> Tests
                         Finished
                     </td>
-                    <td>May 16, 2026 22:19:22</td>
+                    <td>May 16, 2026 22:34:40</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stopwatch"></i> Total
                         Duration
                     </td>
-                    <td> 2h  20m 30s</td>
+                    <td> 2h  35m 49s</td>
                 </tr>
                 <tr scope="row">
                     <td>
@@ -367,7 +367,7 @@
                         <i class="bi bi-stopwatch-fill"></i> Total
                         Execution Time
                     </td>
-                    <td> 6m 30s</td>
+                    <td> 7m 0s</td>
                 </tr>
                 </tbody>
             </table>
@@ -696,6 +696,76 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                                                                                                      role="progressbar"
                                                                                                      style="width: 100%; background-color: #b0cf73"
                                                                                                      aria-valuenow="7"
+                                                                                                     title="100% success"
+                                                                                                     aria-valuemin="0"
+                                                                                                     aria-valuemax="100">
+                                                                                                </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                            <a href="b29daff1118acdefb6458c8fced704e9c91f808536e9c52aabbec17b0a3198fc.html"> HU-18 Editar producto quirurgico</a>
+                                                                                    </td>
+                                                                                    <td>8</td>
+                                                                                    <td>Given el usuario ha iniciado sesion en el modulo de produccion
+And existe al menos un producto disponible para editar
+When el usuario selecciona el primer producto para editar su informacion
+And el usuario modifica el nombre del producto
+And el usuario guarda los cambios del producto
+Then el sistema muestra el mensaje de exito de edicion de producto "Producto actualizado exitosamente"
+Given el usuario ha iniciado sesion en el modulo de produccion
+And existe al menos un producto disponible para editar
+When el usuario selecciona el primer producto para actualizar su stock
+And el usuario ingresa una cantidad valida de unidades al stock
+And el usuario confirma la actualizacion de stock
+Then el sistema muestra el mensaje de exito de stock "Stock actualizado exitosamente"
+Given el usuario ha iniciado sesion en el modulo de produccion
+And existe al menos un producto disponible para editar
+When el sistema identifica el primer producto por su codigo de barras
+And el usuario ingresa una cantidad valida de unidades al stock
+And el usuario confirma la actualizacion de stock
+Then el sistema muestra el mensaje de exito de stock "Stock actualizado exitosamente"
+Given el usuario ha iniciado sesion en el modulo de produccion
+And existe al menos un producto disponible para editar
+When el usuario escanea un codigo de barras inexistente en el sistema
+Then el sistema muestra el mensaje de barcode no encontrado "Producto no encontrado"
+Given el usuario ha iniciado sesion en el modulo de produccion
+And existe al menos un producto disponible para editar
+When el usuario selecciona el primer producto para actualizar su stock
+And el usuario ingresa una cantidad invalida de cero unidades
+And el usuario confirma la actualizacion de stock
+Then el sistema muestra el mensaje de error de stock "La cantidad debe ser mayor a 0"
+Given el usuario ha iniciado sesion en el modulo de produccion
+And existe al menos un producto disponible para editar
+When el usuario selecciona el primer producto para editar su informacion
+And el usuario establece un precio invalido de cero
+And el usuario guarda los cambios del producto
+Then el sistema muestra el mensaje de error de edicion de producto "El precio debe ser mayor a 0"
+Given el usuario ha iniciado sesion en el modulo de produccion
+And existe al menos un producto disponible para editar
+When el usuario selecciona el primer producto para editar su informacion
+And el usuario borra el nombre del producto
+And el usuario guarda los cambios del producto
+Then el sistema muestra el mensaje de error de edicion de producto "Todos los campos obligatorios deben ser diligenciados"
+Given el usuario ha iniciado sesion en el modulo de produccion
+And existe al menos un producto disponible para editar
+Given el usuario inicia sesion con el rol "Ventas"
+When el usuario intenta acceder al modulo de edicion de productos
+Then el sistema muestra la pagina de acceso denegado
+And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
+</td>
+                                                                                    <td>8</td>
+                                                                                    <td>100%</td>
+                                                                                    <td>
+                                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <div class="progress">
+                                                                                                <div class="progress-bar"
+                                                                                                     role="progressbar"
+                                                                                                     style="width: 100%; background-color: #b0cf73"
+                                                                                                     aria-valuenow="8"
                                                                                                      title="100% success"
                                                                                                      aria-valuemin="0"
                                                                                                      aria-valuemax="100">
@@ -1160,17 +1230,25 @@ Then el sistema muestra la pagina de acceso denegado
 And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
 </td>
                                                                                     <td>4</td>
-                                                                                    <td>100%</td>
+                                                                                    <td>75%</td>
                                                                                     <td>
-                                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                                                                            <a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon ' title='FAILURE'></i></a>
                                                                                     </td>
                                                                                     <td>
                                                                                         <div class="progress">
                                                                                                 <div class="progress-bar"
                                                                                                      role="progressbar"
-                                                                                                     style="width: 100%; background-color: #b0cf73"
-                                                                                                     aria-valuenow="4"
-                                                                                                     title="100% success"
+                                                                                                     style="width: 75%; background-color: #b0cf73"
+                                                                                                     aria-valuenow="3"
+                                                                                                     title="75% success"
+                                                                                                     aria-valuemin="0"
+                                                                                                     aria-valuemax="100">
+                                                                                                </div>
+                                                                                                <div class="progress-bar"
+                                                                                                     role="progressbar"
+                                                                                                     style="width: 25%; background-color: #fd938e"
+                                                                                                     aria-valuenow="1"
+                                                                                                     title="25% failure"
                                                                                                      aria-valuemin="0"
                                                                                                      aria-valuemax="100">
                                                                                                 </div>
@@ -1386,7 +1464,7 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                                                                             <a href="a0ace456df350117335ad374e8d62c0d8c978db868ea1469e0c5ba32aac965ea.html"><a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon ' title='FAILURE'></i></a> Assertion error</a>
                                                                         </td>
                                                                         <td><span
-                                                                                    class="badge failure-badge">1</span>
+                                                                                    class="badge failure-badge">2</span>
                                                                         </td>
                                                                     </tr>
                                                                 </tbody>
@@ -1396,6 +1474,14 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                                                             <h4>Most Unstable Features</h4>
                                                             <table class="table" style="width:40vw;">
                                                                 <tbody>
+                                                                    <tr>
+                                                                        <td class="failure-color top-list-title">
+                                                                            <a href="8d2ba4dec641d003a9c7800ef006c07300ed82338a827c93559ed54d67f394dc.html">HU-16 Registrar tipo de producto</a>
+                                                                        </td>
+                                                                        <td>
+                                                                            <span class="badge failure-badge">25%</span>
+                                                                        </td>
+                                                                    </tr>
                                                                     <tr>
                                                                         <td class="failure-color top-list-title">
                                                                             <a href="e09e83f8a4a088ab68c1032ae830984b0dd98e982f9cb221333ce41005810ecf.html">HU-10 Registrar cliente</a>
@@ -1422,8 +1508,8 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                                     </span>
                                     </a>
                                     <a href="fb86abb6aa77a6c766e3e9fc4a4b3c559c487e49ca4b38da611830e112c09544.html">
-                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Produccion&nbsp;&nbsp;&nbsp;10
+                                    <span class="tag-badge badge" style="background-color:#fd938e; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Produccion&nbsp;&nbsp;&nbsp;18
                                     </span>
                                     </a>
                                     <a href="68196532d97a024fb6841bab5f2ee7212bb0de64ed98a5cbe32348e112415254.html">
@@ -1465,7 +1551,7 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                             <div>
                                     <a href="46b54d9084ba9783130da16408afb27a4e4620f6bd966e731510c7395b9ddf5c.html">
                                     <span class="tag-badge badge" style="background-color:#fd938e; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Chrome, Linux&nbsp;&nbsp;&nbsp;114
+                                        <i class="bi bi-tag-fill"></i> Chrome, Linux&nbsp;&nbsp;&nbsp;122
                                     </span>
                                     </a>
                             </div>
@@ -1488,18 +1574,18 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                     <td>
                         <i class="bi bi-card-checklist"></i> Number of Scenarios
                     </td>
-                    <td>96</td>
+                    <td>104</td>
                     <td>
                         <i class="bi bi-stopwatch"></i> Total
                         Duration
                     </td>
-                    <td> 2h  20m 30s</td>
+                    <td> 2h  35m 49s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-caret-right"></i> Total Number of Test Cases
                     </td>
-                    <td>114</td>
+                    <td>122</td>
                     <td>
                         <i class="bi bi-trophy"></i> Fastest Test
                     </td>
@@ -1532,12 +1618,12 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                         <i class="bi bi-stop-circle"></i> Tests
                         Finished
                     </td>
-                    <td>May 16, 2026 22:19:22</td>
+                    <td>May 16, 2026 22:34:40</td>
                     <td>
                         <i class="bi bi-stopwatch-fill"></i> Total
                         Execution Time
                     </td>
-                    <td> 6m 30s</td>
+                    <td> 7m 0s</td>
                 </tr>
                 </tbody>
             </table>
@@ -2279,6 +2365,188 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
 </td>
                                                                         <td data-order="1778980684">20:18:04</td>
                                                                         <td>2s 869ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="b29daff1118acdefb6458c8fced704e9c91f808536e9c52aabbec17b0a3198fc.html">HU-18 Editar producto quirurgico</a>
+                                                                        </td>
+                                                                        <td data-order="Edicion exitosa de informacion del producto">
+                                                                                    <a href="bb6eff40911ee6df8231761f2333da1b40b9194b56e20e777d71aa148a6453f2.html">Edicion exitosa de informacion del producto</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
+                                                                        </td>
+                                                                        <td>6</td>
+                                                                        <td>Given el usuario ha iniciado sesion en el modulo de produccion
+And existe al menos un producto disponible para editar
+When el usuario selecciona el primer producto para editar su informacion
+And el usuario modifica el nombre del producto
+And el usuario guarda los cambios del producto
+Then el sistema muestra el mensaje de exito de edicion de producto "Producto actualizado exitosamente"
+</td>
+                                                                        <td data-order="1778988818">22:33:38</td>
+                                                                        <td>4s 497ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="b29daff1118acdefb6458c8fced704e9c91f808536e9c52aabbec17b0a3198fc.html">HU-18 Editar producto quirurgico</a>
+                                                                        </td>
+                                                                        <td data-order="Actualizacion de stock manualmente">
+                                                                                    <a href="564f20f0480b7d78bbc9c423d60f587bd9a0b6538c53e657ef684eb99fa5f81b.html">Actualizacion de stock manualmente</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
+                                                                        </td>
+                                                                        <td>6</td>
+                                                                        <td>Given el usuario ha iniciado sesion en el modulo de produccion
+And existe al menos un producto disponible para editar
+When el usuario selecciona el primer producto para actualizar su stock
+And el usuario ingresa una cantidad valida de unidades al stock
+And el usuario confirma la actualizacion de stock
+Then el sistema muestra el mensaje de exito de stock "Stock actualizado exitosamente"
+</td>
+                                                                        <td data-order="1778988822">22:33:42</td>
+                                                                        <td>3s 613ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="b29daff1118acdefb6458c8fced704e9c91f808536e9c52aabbec17b0a3198fc.html">HU-18 Editar producto quirurgico</a>
+                                                                        </td>
+                                                                        <td data-order="Actualizacion de stock por codigo de barras">
+                                                                                    <a href="8f9d1d8bcec17bde76d657a2f53b5117647a53b24a428b84c887d4d879b01650.html">Actualizacion de stock por codigo de barras</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
+                                                                        </td>
+                                                                        <td>6</td>
+                                                                        <td>Given el usuario ha iniciado sesion en el modulo de produccion
+And existe al menos un producto disponible para editar
+When el sistema identifica el primer producto por su codigo de barras
+And el usuario ingresa una cantidad valida de unidades al stock
+And el usuario confirma la actualizacion de stock
+Then el sistema muestra el mensaje de exito de stock "Stock actualizado exitosamente"
+</td>
+                                                                        <td data-order="1778988826">22:33:46</td>
+                                                                        <td>3s 703ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="b29daff1118acdefb6458c8fced704e9c91f808536e9c52aabbec17b0a3198fc.html">HU-18 Editar producto quirurgico</a>
+                                                                        </td>
+                                                                        <td data-order="Codigo de barras no reconocido">
+                                                                                    <a href="ba3c33bd31cbddcdcc0addc82c9e36bd20648047e7f60fdf1499564c70126760.html">Codigo de barras no reconocido</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
+                                                                        </td>
+                                                                        <td>4</td>
+                                                                        <td>Given el usuario ha iniciado sesion en el modulo de produccion
+And existe al menos un producto disponible para editar
+When el usuario escanea un codigo de barras inexistente en el sistema
+Then el sistema muestra el mensaje de barcode no encontrado "Producto no encontrado"
+</td>
+                                                                        <td data-order="1778988830">22:33:50</td>
+                                                                        <td>3s 527ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="b29daff1118acdefb6458c8fced704e9c91f808536e9c52aabbec17b0a3198fc.html">HU-18 Editar producto quirurgico</a>
+                                                                        </td>
+                                                                        <td data-order="Cantidad de stock invalida">
+                                                                                    <a href="062f3e37f95b90805a5dae035b53909827d8df15a7b534677ba02a0cdfd159a1.html">Cantidad de stock invalida</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
+                                                                        </td>
+                                                                        <td>6</td>
+                                                                        <td>Given el usuario ha iniciado sesion en el modulo de produccion
+And existe al menos un producto disponible para editar
+When el usuario selecciona el primer producto para actualizar su stock
+And el usuario ingresa una cantidad invalida de cero unidades
+And el usuario confirma la actualizacion de stock
+Then el sistema muestra el mensaje de error de stock "La cantidad debe ser mayor a 0"
+</td>
+                                                                        <td data-order="1778988833">22:33:53</td>
+                                                                        <td>3s 440ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="b29daff1118acdefb6458c8fced704e9c91f808536e9c52aabbec17b0a3198fc.html">HU-18 Editar producto quirurgico</a>
+                                                                        </td>
+                                                                        <td data-order="Precio invalido al editar">
+                                                                                    <a href="637b833809a1ee2705ed4818f42e23b8609acbc1ab005604c5f45fbef1b8dec0.html">Precio invalido al editar</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
+                                                                        </td>
+                                                                        <td>6</td>
+                                                                        <td>Given el usuario ha iniciado sesion en el modulo de produccion
+And existe al menos un producto disponible para editar
+When el usuario selecciona el primer producto para editar su informacion
+And el usuario establece un precio invalido de cero
+And el usuario guarda los cambios del producto
+Then el sistema muestra el mensaje de error de edicion de producto "El precio debe ser mayor a 0"
+</td>
+                                                                        <td data-order="1778988837">22:33:57</td>
+                                                                        <td>3s 700ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="b29daff1118acdefb6458c8fced704e9c91f808536e9c52aabbec17b0a3198fc.html">HU-18 Editar producto quirurgico</a>
+                                                                        </td>
+                                                                        <td data-order="Campos obligatorios vacios al editar">
+                                                                                    <a href="90f2dce1ee9d7f1e4f6c527d10b26b0bfee56a0a4b11d3d67b5149d1d110f8ff.html">Campos obligatorios vacios al editar</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
+                                                                        </td>
+                                                                        <td>6</td>
+                                                                        <td>Given el usuario ha iniciado sesion en el modulo de produccion
+And existe al menos un producto disponible para editar
+When el usuario selecciona el primer producto para editar su informacion
+And el usuario borra el nombre del producto
+And el usuario guarda los cambios del producto
+Then el sistema muestra el mensaje de error de edicion de producto "Todos los campos obligatorios deben ser diligenciados"
+</td>
+                                                                        <td data-order="1778988841">22:34:01</td>
+                                                                        <td>3s 339ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="b29daff1118acdefb6458c8fced704e9c91f808536e9c52aabbec17b0a3198fc.html">HU-18 Editar producto quirurgico</a>
+                                                                        </td>
+                                                                        <td data-order="Acceso no autorizado al modulo de edicion de productos">
+                                                                                    <a href="4ebc399c95ac123ac24800a0b42b29813c4fe4189e60074b7ee54c2f4ca12019.html">Acceso no autorizado al modulo de edicion de productos</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
+                                                                        </td>
+                                                                        <td>6</td>
+                                                                        <td>Given el usuario ha iniciado sesion en el modulo de produccion
+And existe al menos un producto disponible para editar
+Given el usuario inicia sesion con el rol "Ventas"
+When el usuario intenta acceder al modulo de edicion de productos
+Then el sistema muestra la pagina de acceso denegado
+And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
+</td>
+                                                                        <td data-order="1778988844">22:34:04</td>
+                                                                        <td>4s 026ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -3213,8 +3481,8 @@ And existe al menos un tipo de producto disponible para seleccionar
 When el usuario registra un producto con todos los campos obligatorios
 Then el sistema muestra el mensaje de exito de producto "Producto registrado exitosamente"
 </td>
-                                                                        <td data-order="1778987930">22:18:50</td>
-                                                                        <td>3s 847ms</td>
+                                                                        <td data-order="1778988848">22:34:08</td>
+                                                                        <td>3s 419ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -3234,8 +3502,8 @@ And existe al menos un tipo de producto disponible para seleccionar
 When el usuario registra un producto incluyendo las caracteristicas del producto
 Then el sistema muestra el mensaje de exito de producto "Producto registrado exitosamente"
 </td>
-                                                                        <td data-order="1778987934">22:18:54</td>
-                                                                        <td>3s 290ms</td>
+                                                                        <td data-order="1778988852">22:34:12</td>
+                                                                        <td>3s 028ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -3255,8 +3523,8 @@ And existe al menos un tipo de producto disponible para seleccionar
 When el usuario intenta registrar un producto con precio cero
 Then el sistema muestra el mensaje de error de producto "El precio debe ser mayor a 0"
 </td>
-                                                                        <td data-order="1778987938">22:18:58</td>
-                                                                        <td>3s 270ms</td>
+                                                                        <td data-order="1778988855">22:34:15</td>
+                                                                        <td>2s 965ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -3276,8 +3544,8 @@ And existe al menos un tipo de producto disponible para seleccionar
 When el usuario intenta registrar un producto sin diligenciar los campos obligatorios
 Then el sistema muestra el mensaje de error de producto "Todos los campos obligatorios deben ser diligenciados"
 </td>
-                                                                        <td data-order="1778987941">22:19:01</td>
-                                                                        <td>2s 859ms</td>
+                                                                        <td data-order="1778988858">22:34:18</td>
+                                                                        <td>2s 698ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -3298,8 +3566,8 @@ When se simula que no hay tipos de producto disponibles en el sistema
 Then el sistema muestra la advertencia de que no hay tipos de producto registrados
 And el boton de registrar producto esta deshabilitado
 </td>
-                                                                        <td data-order="1778987944">22:19:04</td>
-                                                                        <td>2s 863ms</td>
+                                                                        <td data-order="1778988861">22:34:21</td>
+                                                                        <td>3s 332ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -3321,8 +3589,8 @@ When el usuario intenta acceder al modulo de registro de productos
 Then el sistema muestra la pagina de acceso denegado
 And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
 </td>
-                                                                        <td data-order="1778987947">22:19:07</td>
-                                                                        <td>3s 615ms</td>
+                                                                        <td data-order="1778988864">22:34:24</td>
+                                                                        <td>3s 687ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -3341,8 +3609,8 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
 When el usuario registra un tipo de producto con nombre unico
 Then el sistema muestra el mensaje de exito de tipo de producto "Tipo de producto registrado exitosamente"
 </td>
-                                                                        <td data-order="1778987951">22:19:11</td>
-                                                                        <td>2s 517ms</td>
+                                                                        <td data-order="1778988868">22:34:28</td>
+                                                                        <td>3s 680ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -3362,8 +3630,8 @@ Given el usuario registra previamente un tipo de producto
 When el usuario intenta registrar otro tipo de producto con el mismo nombre
 Then el sistema muestra el mensaje de error de tipo de producto "Ya existe un tipo de producto con ese nombre"
 </td>
-                                                                        <td data-order="1778987953">22:19:13</td>
-                                                                        <td>2s 794ms</td>
+                                                                        <td data-order="1778988872">22:34:32</td>
+                                                                        <td>2s 625ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -3382,13 +3650,13 @@ Then el sistema muestra el mensaje de error de tipo de producto "Ya existe un ti
 When el usuario intenta registrar un tipo de producto sin nombre
 Then el sistema muestra el mensaje de error de tipo de producto "El nombre del tipo de producto es obligatorio"
 </td>
-                                                                        <td data-order="1778987956">22:19:16</td>
-                                                                        <td>2s 359ms</td>
+                                                                        <td data-order="1778988874">22:34:34</td>
+                                                                        <td>2s 721ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
                                                                     </tr>
-                                                                    <tr class="scenario-result SUCCESS">
+                                                                    <tr class="scenario-result FAILURE">
                                                                         <td>
                                                                                 <a href="8d2ba4dec641d003a9c7800ef006c07300ed82338a827c93559ed54d67f394dc.html">HU-16 Registrar tipo de producto</a>
                                                                         </td>
@@ -3404,10 +3672,10 @@ When el usuario intenta acceder al modulo de tipos de producto
 Then el sistema muestra la pagina de acceso denegado
 And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
 </td>
-                                                                        <td data-order="1778987959">22:19:19</td>
-                                                                        <td>2s 935ms</td>
-                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
-                                                                                    style="display:none">SUCCESS</span>
+                                                                        <td data-order="1778988877">22:34:37</td>
+                                                                        <td>2s 888ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon ' title='FAILURE'></i></a> <span
+                                                                                    style="display:none">FAILURE</span>
                                                                         </td>
                                                                     </tr>
                                                                     <tr class="scenario-result SUCCESS">
@@ -3670,8 +3938,8 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                                     </span>
                                     </a>
                                     <a href="fb86abb6aa77a6c766e3e9fc4a4b3c559c487e49ca4b38da611830e112c09544.html">
-                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Produccion&nbsp;&nbsp;&nbsp;10
+                                    <span class="tag-badge badge" style="background-color:#fd938e; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Produccion&nbsp;&nbsp;&nbsp;18
                                     </span>
                                     </a>
                                     <a href="68196532d97a024fb6841bab5f2ee7212bb0de64ed98a5cbe32348e112415254.html">
@@ -3713,7 +3981,7 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                             <div>
                                     <a href="46b54d9084ba9783130da16408afb27a4e4620f6bd966e731510c7395b9ddf5c.html">
                                     <span class="tag-badge badge" style="background-color:#fd938e; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Chrome, Linux&nbsp;&nbsp;&nbsp;114
+                                        <i class="bi bi-tag-fill"></i> Chrome, Linux&nbsp;&nbsp;&nbsp;122
                                     </span>
                                     </a>
                             </div>
@@ -3767,7 +4035,7 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
             datasets: [{
                 label: 'Test Results',
                 fill: false,
-                data: [109,4,0,0,0,1,0,0],
+                data: [116,4,0,0,0,2,0,0],
                 backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                 borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                 borderWidth: 1,
@@ -3818,7 +4086,7 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                         ctx.font = fontSize + "em sans-serif";
                         ctx.textBaseline = "middle";
 
-                        var text = "96%"
+                        var text = "95%"
                         textX = 10 + Math.round((width - ctx.measureText(text).width) / 2);
                         textY = (height / 2) - 40;
 
@@ -3863,7 +4131,7 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
             datasets: [
                 {
                     label: 'Automated',
-                    data: [109,4,0,0,0,1,0,0],
+                    data: [116,4,0,0,0,2,0,0],
                     backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                     borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                     borderWidth: 1
@@ -3946,7 +4214,7 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
             datasets: [{
                 label: 'Number of tests per duration',
                 fill: false,
-                data: ['0','114','0','0','0','0','0','0'],
+                data: ['0','122','0','0','0','0','0','0'],
                 backgroundColor: 'rgba(83, 146, 255,0.5)',
                 borderColor: 'rgba(83, 146, 255, 1)',
             }]
@@ -4039,6 +4307,11 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                 link: "09ad04306b0120eebec8aa391510177b3afbc423e9810972099d6f04edec1543.html"
             },
             {
+                title: 'HU-18 Editar producto quirurgico',
+                result: 'SUCCESS',
+                link: "b29daff1118acdefb6458c8fced704e9c91f808536e9c52aabbec17b0a3198fc.html"
+            },
+            {
                 title: 'HU-15 Consultar historial de ventas',
                 result: 'PENDING',
                 link: "4807b62366fec95c2b956079981e61a7beafbce611c32639f05058370a0e7fb3.html"
@@ -4080,7 +4353,7 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
             },
             {
                 title: 'HU-16 Registrar tipo de producto',
-                result: 'SUCCESS',
+                result: 'FAILURE',
                 link: "8d2ba4dec641d003a9c7800ef006c07300ed82338a827c93559ed54d67f394dc.html"
             },
             {
@@ -4102,6 +4375,7 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                 'HU-07 Crear usuario del sistema',
                 'HU-11 Editar informacion de cliente',
                 'HU-05 Editar informacion de empleado',
+                'HU-18 Editar producto quirurgico',
                 'HU-15 Consultar historial de ventas',
                 'HU-12 Listar y buscar clientes',
                 'HU-06 Listar y buscar empleados',
@@ -4117,42 +4391,42 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
             datasets: [
                 {
                     label: ['Passing Tests'],
-                    data: [3,6,4,6,7,7,7,6,7,5,3,5,6,6,4,6,21],
+                    data: [3,6,4,6,7,7,8,7,6,7,5,3,5,6,6,3,6,21],
                     backgroundColor: [ 'rgba(153,204,51,0.5)' ]
                 },
                 {
                     label: ['Pending Tests'],
-                    data: [0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,1,0],
+                    data: [0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,1,0],
                     backgroundColor: [ 'rgba(165, 199, 238, 0.5)' ]
                 },
                 {
                     label: ['Ignored Tests'],
-                    data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                    data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
                     backgroundColor: [ 'rgba(168, 168, 168, 0.5)' ]
                 },
                 {
                     label: ['Skipped Tests'],
-                    data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                    data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
                     backgroundColor: [ 'rgba(238, 224, 152, 0.75)' ]
                 },
                 {
                     label: ['Aborted Tests'],
-                    data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                    data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
                     backgroundColor: [ 'rgba(255, 153, 102, 0.5)' ]
                 },
                 {
                     label: ['Failed Tests'],
-                    data: [0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0],
+                    data: [0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0],
                     backgroundColor: [ 'rgba(255, 22, 49, 0.5)' ]
                 },
                 {
                     label: ['Errors'],
-                    data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                    data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
                     backgroundColor: [ 'rgba(255, 97, 8, 0.5)' ]
                 },
                 {
                     label: ['Compromised Tests'],
-                    data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                    data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
                     backgroundColor: [ 'rgba(255, 104, 255, 0.5)' ]
                 },
             ]

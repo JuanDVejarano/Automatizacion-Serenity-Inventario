@@ -1,0 +1,675 @@
+<html lang='en'><head><link href='prism/prism.css' rel='stylesheet' /></head><body><script src='prism/prism.js'></script><body><div><pre><code class='language-html'>&lt;html lang="en"&gt;<br/>
+ &lt;head&gt;<br/>
+  &lt;script type="module" src="/@vite/client"&gt;&lt;/script&gt;<br/>
+  &lt;meta charset="utf-8"&gt;<br/>
+  &lt;title&gt;Inventario — Sistema de Gestión&lt;/title&gt;<br/>
+  &lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;<br/>
+  &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""&gt;<br/>
+  &lt;link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"&gt;&lt;base href="/"&gt;<br/>
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;<br/>
+  &lt;link rel="icon" type="image/x-icon" href="favicon.ico"&gt;<br/>
+  &lt;link rel="stylesheet" href="styles.css"&gt;<br/>
+  &lt;style&gt;<br/>
+<br/>
+[_nghost-ng-c2767164200] {<br/>
+  display: flex;<br/>
+  min-height: 100vh;<br/>
+}<br/>
+.shell[_ngcontent-ng-c2767164200] {<br/>
+  display: flex;<br/>
+  width: 100%;<br/>
+  min-height: 100vh;<br/>
+  background: var(--clr-bg);<br/>
+}<br/>
+.sidebar[_ngcontent-ng-c2767164200] {<br/>
+  width: 260px;<br/>
+  flex-shrink: 0;<br/>
+  background: #0f1117;<br/>
+  display: flex;<br/>
+  flex-direction: column;<br/>
+  padding: 0 0 1.5rem;<br/>
+  position: sticky;<br/>
+  top: 0;<br/>
+  height: 100vh;<br/>
+  overflow-y: auto;<br/>
+}<br/>
+@media (max-width: 768px) {<br/>
+  .sidebar[_ngcontent-ng-c2767164200] {<br/>
+    display: none;<br/>
+  }<br/>
+}<br/>
+.sidebar-brand[_ngcontent-ng-c2767164200] {<br/>
+  display: flex;<br/>
+  align-items: center;<br/>
+  gap: 0.75rem;<br/>
+  padding: 1.5rem 1.5rem 1rem;<br/>
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);<br/>
+  margin-bottom: 0.75rem;<br/>
+  text-decoration: none;<br/>
+  color: inherit;<br/>
+  transition: opacity 0.15s;<br/>
+}<br/>
+.sidebar-brand[_ngcontent-ng-c2767164200]:hover {<br/>
+  opacity: 0.8;<br/>
+  text-decoration: none;<br/>
+}<br/>
+.sidebar-brand[_ngcontent-ng-c2767164200]   .brand-icon[_ngcontent-ng-c2767164200] {<br/>
+  width: 36px;<br/>
+  height: 36px;<br/>
+  background: var(--clr-primary);<br/>
+  border-radius: 9px;<br/>
+  display: flex;<br/>
+  align-items: center;<br/>
+  justify-content: center;<br/>
+  flex-shrink: 0;<br/>
+}<br/>
+.sidebar-brand[_ngcontent-ng-c2767164200]   .brand-icon[_ngcontent-ng-c2767164200]   svg[_ngcontent-ng-c2767164200] {<br/>
+  width: 18px;<br/>
+  height: 18px;<br/>
+  color: #fff;<br/>
+}<br/>
+.sidebar-brand[_ngcontent-ng-c2767164200]   .brand-name[_ngcontent-ng-c2767164200] {<br/>
+  font-size: 1rem;<br/>
+  font-weight: 700;<br/>
+  color: #f1f5f9;<br/>
+}<br/>
+.sidebar-brand[_ngcontent-ng-c2767164200]   .brand-sub[_ngcontent-ng-c2767164200] {<br/>
+  font-size: 0.7rem;<br/>
+  color: #94a3b8;<br/>
+}<br/>
+.nav-section[_ngcontent-ng-c2767164200] {<br/>
+  padding: 0 0.75rem;<br/>
+  margin-bottom: 0.75rem;<br/>
+}<br/>
+.nav-label[_ngcontent-ng-c2767164200] {<br/>
+  font-size: 0.65rem;<br/>
+  font-weight: 600;<br/>
+  letter-spacing: 0.08em;<br/>
+  text-transform: uppercase;<br/>
+  color: #94a3b8;<br/>
+  padding: 0.5rem 0.75rem 0.25rem;<br/>
+}<br/>
+.nav-item[_ngcontent-ng-c2767164200] {<br/>
+  display: flex;<br/>
+  align-items: center;<br/>
+  gap: 0.625rem;<br/>
+  text-decoration: none;<br/>
+  padding: 0.55rem 0.75rem;<br/>
+  border-radius: 8px;<br/>
+  font-size: 0.875rem;<br/>
+  color: #94a3b8;<br/>
+  cursor: pointer;<br/>
+  text-decoration: none;<br/>
+  transition: background 0.15s, color 0.15s;<br/>
+}<br/>
+.nav-item[_ngcontent-ng-c2767164200]   svg[_ngcontent-ng-c2767164200] {<br/>
+  width: 16px;<br/>
+  height: 16px;<br/>
+  flex-shrink: 0;<br/>
+}<br/>
+.nav-item[_ngcontent-ng-c2767164200]:hover {<br/>
+  background: rgba(255, 255, 255, 0.05);<br/>
+  color: #e2e8f0;<br/>
+  text-decoration: none;<br/>
+}<br/>
+.nav-item.active[_ngcontent-ng-c2767164200] {<br/>
+  background: rgba(236, 72, 153, 0.12);<br/>
+  color: #f472b6;<br/>
+}<br/>
+.nav-item--disabled[_ngcontent-ng-c2767164200] {<br/>
+  opacity: 0.35;<br/>
+  cursor: not-allowed;<br/>
+  pointer-events: none;<br/>
+}<br/>
+.sidebar-footer[_ngcontent-ng-c2767164200] {<br/>
+  margin-top: auto;<br/>
+  padding: 0 0.75rem;<br/>
+}<br/>
+.user-card[_ngcontent-ng-c2767164200] {<br/>
+  display: flex;<br/>
+  align-items: center;<br/>
+  gap: 0.625rem;<br/>
+  background: rgba(255, 255, 255, 0.04);<br/>
+  border-radius: 10px;<br/>
+  padding: 0.625rem 0.75rem;<br/>
+}<br/>
+.avatar[_ngcontent-ng-c2767164200] {<br/>
+  width: 32px;<br/>
+  height: 32px;<br/>
+  background: #ec4899;<br/>
+  border-radius: 50%;<br/>
+  display: flex;<br/>
+  align-items: center;<br/>
+  justify-content: center;<br/>
+  font-size: 0.8rem;<br/>
+  font-weight: 700;<br/>
+  color: #fff;<br/>
+  flex-shrink: 0;<br/>
+}<br/>
+.user-info[_ngcontent-ng-c2767164200] {<br/>
+  flex: 1;<br/>
+  min-width: 0;<br/>
+}<br/>
+.user-name[_ngcontent-ng-c2767164200] {<br/>
+  font-size: 0.8rem;<br/>
+  font-weight: 600;<br/>
+  color: #e2e8f0;<br/>
+  white-space: nowrap;<br/>
+  overflow: hidden;<br/>
+  text-overflow: ellipsis;<br/>
+}<br/>
+.user-role[_ngcontent-ng-c2767164200] {<br/>
+  font-size: 0.7rem;<br/>
+  color: #94a3b8;<br/>
+  white-space: nowrap;<br/>
+  overflow: hidden;<br/>
+  text-overflow: ellipsis;<br/>
+}<br/>
+.btn-logout-icon[_ngcontent-ng-c2767164200] {<br/>
+  background: none;<br/>
+  border: none;<br/>
+  cursor: pointer;<br/>
+  color: #94a3b8;<br/>
+  padding: 4px;<br/>
+}<br/>
+.btn-logout-icon[_ngcontent-ng-c2767164200]   svg[_ngcontent-ng-c2767164200] {<br/>
+  width: 16px;<br/>
+  height: 16px;<br/>
+  display: block;<br/>
+}<br/>
+.btn-logout-icon[_ngcontent-ng-c2767164200]:hover {<br/>
+  color: #e2e8f0;<br/>
+}<br/>
+.main[_ngcontent-ng-c2767164200] {<br/>
+  flex: 1;<br/>
+  display: flex;<br/>
+  flex-direction: column;<br/>
+  min-width: 0;<br/>
+  background: #0f1117;<br/>
+}<br/>
+/*# sourceMappingURL=/produccion-layout.css.map */&lt;/style&gt;<br/>
+  &lt;style&gt;<br/>
+<br/>
+.page-content[_ngcontent-ng-c1803037997] {<br/>
+  display: flex;<br/>
+  flex-direction: column;<br/>
+  flex: 1;<br/>
+  min-height: 100vh;<br/>
+}<br/>
+.topbar[_ngcontent-ng-c1803037997] {<br/>
+  display: flex;<br/>
+  align-items: center;<br/>
+  justify-content: space-between;<br/>
+  padding: 1rem 2rem;<br/>
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);<br/>
+  background: #0f1117;<br/>
+  position: sticky;<br/>
+  top: 0;<br/>
+  z-index: 10;<br/>
+}<br/>
+.topbar-title[_ngcontent-ng-c1803037997]   h2[_ngcontent-ng-c1803037997], <br/>
+.topbar-title[_ngcontent-ng-c1803037997]   h1[_ngcontent-ng-c1803037997] {<br/>
+  font-size: 1.1rem;<br/>
+  font-weight: 700;<br/>
+  color: #f1f5f9;<br/>
+  margin: 0;<br/>
+}<br/>
+.topbar-title[_ngcontent-ng-c1803037997]   span[_ngcontent-ng-c1803037997], <br/>
+.topbar-title[_ngcontent-ng-c1803037997]   p[_ngcontent-ng-c1803037997] {<br/>
+  font-size: 0.75rem;<br/>
+  color: #94a3b8;<br/>
+}<br/>
+.content[_ngcontent-ng-c1803037997] {<br/>
+  flex: 1;<br/>
+  padding: 2rem;<br/>
+}<br/>
+.loading[_ngcontent-ng-c1803037997] {<br/>
+  color: #94a3b8;<br/>
+  font-size: 0.9rem;<br/>
+  padding: 2rem;<br/>
+}<br/>
+.panels[_ngcontent-ng-c1803037997] {<br/>
+  display: grid;<br/>
+  grid-template-columns: 1fr 1fr;<br/>
+  gap: 1.5rem;<br/>
+  align-items: start;<br/>
+}<br/>
+@media (max-width: 900px) {<br/>
+  .panels[_ngcontent-ng-c1803037997] {<br/>
+    grid-template-columns: 1fr;<br/>
+  }<br/>
+}<br/>
+.form-card[_ngcontent-ng-c1803037997] {<br/>
+  background: #161b27;<br/>
+  border: 1px solid rgba(255, 255, 255, 0.06);<br/>
+  border-radius: 16px;<br/>
+  padding: 2rem;<br/>
+}<br/>
+.form-card-header[_ngcontent-ng-c1803037997] {<br/>
+  display: flex;<br/>
+  align-items: center;<br/>
+  gap: 0.75rem;<br/>
+  margin-bottom: 1.75rem;<br/>
+}<br/>
+.form-card-header[_ngcontent-ng-c1803037997]   h3[_ngcontent-ng-c1803037997] {<br/>
+  font-size: 1.05rem;<br/>
+  font-weight: 700;<br/>
+  color: #f1f5f9;<br/>
+  margin: 0;<br/>
+}<br/>
+.form-card-icon[_ngcontent-ng-c1803037997] {<br/>
+  width: 40px;<br/>
+  height: 40px;<br/>
+  background: rgba(236, 72, 153, 0.12);<br/>
+  border-radius: 10px;<br/>
+  display: flex;<br/>
+  align-items: center;<br/>
+  justify-content: center;<br/>
+  flex-shrink: 0;<br/>
+}<br/>
+.form-card-icon[_ngcontent-ng-c1803037997]   svg[_ngcontent-ng-c1803037997] {<br/>
+  width: 20px;<br/>
+  height: 20px;<br/>
+  color: #ec4899;<br/>
+}<br/>
+.form-card-icon.icon-stock[_ngcontent-ng-c1803037997] {<br/>
+  background: rgba(99, 102, 241, 0.12);<br/>
+}<br/>
+.form-card-icon.icon-stock[_ngcontent-ng-c1803037997]   svg[_ngcontent-ng-c1803037997] {<br/>
+  color: #818cf8;<br/>
+}<br/>
+.alert[_ngcontent-ng-c1803037997] {<br/>
+  border-radius: 8px;<br/>
+  padding: 0.75rem 1rem;<br/>
+  font-size: 0.875rem;<br/>
+  margin-bottom: 1.25rem;<br/>
+}<br/>
+.alert-error[_ngcontent-ng-c1803037997] {<br/>
+  background: rgba(239, 68, 68, 0.12);<br/>
+  border: 1px solid rgba(239, 68, 68, 0.3);<br/>
+  color: #fca5a5;<br/>
+}<br/>
+.alert-success[_ngcontent-ng-c1803037997] {<br/>
+  background: rgba(34, 197, 94, 0.1);<br/>
+  border: 1px solid rgba(34, 197, 94, 0.3);<br/>
+  color: #86efac;<br/>
+}<br/>
+.form-grid[_ngcontent-ng-c1803037997] {<br/>
+  display: grid;<br/>
+  grid-template-columns: 1fr 1fr;<br/>
+  gap: 1.25rem 1.5rem;<br/>
+  margin-top: 1.25rem;<br/>
+}<br/>
+@media (max-width: 600px) {<br/>
+  .form-grid[_ngcontent-ng-c1803037997] {<br/>
+    grid-template-columns: 1fr;<br/>
+  }<br/>
+}<br/>
+.form-group[_ngcontent-ng-c1803037997] {<br/>
+  display: flex;<br/>
+  flex-direction: column;<br/>
+  gap: 0.4rem;<br/>
+}<br/>
+.form-group--full[_ngcontent-ng-c1803037997] {<br/>
+  grid-column: 1/-1;<br/>
+}<br/>
+.form-group[_ngcontent-ng-c1803037997]   label[_ngcontent-ng-c1803037997] {<br/>
+  font-size: 0.8rem;<br/>
+  font-weight: 500;<br/>
+  color: #94a3b8;<br/>
+}<br/>
+.form-group[_ngcontent-ng-c1803037997]   input[_ngcontent-ng-c1803037997], <br/>
+.form-group[_ngcontent-ng-c1803037997]   textarea[_ngcontent-ng-c1803037997], <br/>
+.form-group[_ngcontent-ng-c1803037997]   select[_ngcontent-ng-c1803037997] {<br/>
+  background: #0f1117;<br/>
+  border: 1px solid rgba(255, 255, 255, 0.1);<br/>
+  border-radius: 8px;<br/>
+  padding: 0.55rem 0.85rem;<br/>
+  font-size: 0.9rem;<br/>
+  color: #e2e8f0;<br/>
+  outline: none;<br/>
+  transition: border-color 0.15s;<br/>
+  resize: vertical;<br/>
+  font-family: inherit;<br/>
+}<br/>
+.form-group[_ngcontent-ng-c1803037997]   input[_ngcontent-ng-c1803037997]::placeholder, <br/>
+.form-group[_ngcontent-ng-c1803037997]   textarea[_ngcontent-ng-c1803037997]::placeholder, <br/>
+.form-group[_ngcontent-ng-c1803037997]   select[_ngcontent-ng-c1803037997]::placeholder {<br/>
+  color: #475569;<br/>
+}<br/>
+.form-group[_ngcontent-ng-c1803037997]   input[_ngcontent-ng-c1803037997]:focus, <br/>
+.form-group[_ngcontent-ng-c1803037997]   textarea[_ngcontent-ng-c1803037997]:focus, <br/>
+.form-group[_ngcontent-ng-c1803037997]   select[_ngcontent-ng-c1803037997]:focus {<br/>
+  border-color: #ec4899;<br/>
+}<br/>
+.form-group[_ngcontent-ng-c1803037997]   input[_ngcontent-ng-c1803037997]:disabled, <br/>
+.form-group[_ngcontent-ng-c1803037997]   textarea[_ngcontent-ng-c1803037997]:disabled, <br/>
+.form-group[_ngcontent-ng-c1803037997]   select[_ngcontent-ng-c1803037997]:disabled {<br/>
+  opacity: 0.4;<br/>
+  cursor: not-allowed;<br/>
+}<br/>
+.form-group[_ngcontent-ng-c1803037997]   select[_ngcontent-ng-c1803037997] {<br/>
+  cursor: pointer;<br/>
+}<br/>
+.form-group[_ngcontent-ng-c1803037997]   select[_ngcontent-ng-c1803037997]   option[_ngcontent-ng-c1803037997] {<br/>
+  background: #161b27;<br/>
+}<br/>
+.required[_ngcontent-ng-c1803037997] {<br/>
+  color: #f87171;<br/>
+}<br/>
+.form-actions[_ngcontent-ng-c1803037997] {<br/>
+  grid-column: 1/-1;<br/>
+  display: flex;<br/>
+  justify-content: flex-end;<br/>
+  padding-top: 0.5rem;<br/>
+}<br/>
+.btn-primary[_ngcontent-ng-c1803037997] {<br/>
+  background: #ec4899;<br/>
+  color: #fff;<br/>
+  border: none;<br/>
+  border-radius: 9px;<br/>
+  padding: 0.65rem 1.75rem;<br/>
+  font-size: 0.9rem;<br/>
+  font-weight: 600;<br/>
+  cursor: pointer;<br/>
+  transition: background 0.15s, opacity 0.15s;<br/>
+}<br/>
+.btn-primary[_ngcontent-ng-c1803037997]:hover:not(:disabled) {<br/>
+  background: #db2777;<br/>
+}<br/>
+.btn-primary[_ngcontent-ng-c1803037997]:disabled {<br/>
+  opacity: 0.5;<br/>
+  cursor: not-allowed;<br/>
+}<br/>
+.scanner-btn-row[_ngcontent-ng-c1803037997] {<br/>
+  display: flex;<br/>
+  justify-content: flex-start;<br/>
+  margin-top: 1rem;<br/>
+}<br/>
+.btn-scanner[_ngcontent-ng-c1803037997] {<br/>
+  display: flex;<br/>
+  align-items: center;<br/>
+  gap: 0.5rem;<br/>
+  background: rgba(99, 102, 241, 0.12);<br/>
+  border: 1px solid rgba(99, 102, 241, 0.3);<br/>
+  border-radius: 9px;<br/>
+  color: #818cf8;<br/>
+  padding: 0.55rem 1.1rem;<br/>
+  font-size: 0.85rem;<br/>
+  font-weight: 600;<br/>
+  cursor: pointer;<br/>
+  transition: background 0.15s;<br/>
+}<br/>
+.btn-scanner[_ngcontent-ng-c1803037997]   svg[_ngcontent-ng-c1803037997] {<br/>
+  width: 18px;<br/>
+  height: 18px;<br/>
+}<br/>
+.btn-scanner[_ngcontent-ng-c1803037997]:hover {<br/>
+  background: rgba(99, 102, 241, 0.22);<br/>
+}<br/>
+.btn-cancelar[_ngcontent-ng-c1803037997] {<br/>
+  background: rgba(239, 68, 68, 0.1);<br/>
+  border: 1px solid rgba(239, 68, 68, 0.3);<br/>
+  border-radius: 9px;<br/>
+  color: #fca5a5;<br/>
+  padding: 0.55rem 1.1rem;<br/>
+  font-size: 0.85rem;<br/>
+  font-weight: 600;<br/>
+  cursor: pointer;<br/>
+  transition: background 0.15s;<br/>
+  margin-top: 0.75rem;<br/>
+}<br/>
+.btn-cancelar[_ngcontent-ng-c1803037997]:hover {<br/>
+  background: rgba(239, 68, 68, 0.2);<br/>
+}<br/>
+.scanner-section[_ngcontent-ng-c1803037997] {<br/>
+  display: flex;<br/>
+  flex-direction: column;<br/>
+  align-items: center;<br/>
+  gap: 0.75rem;<br/>
+  margin-bottom: 1rem;<br/>
+}<br/>
+.video-wrapper[_ngcontent-ng-c1803037997] {<br/>
+  position: relative;<br/>
+  width: 100%;<br/>
+  max-width: 340px;<br/>
+  border-radius: 12px;<br/>
+  overflow: hidden;<br/>
+  border: 2px solid rgba(99, 102, 241, 0.4);<br/>
+}<br/>
+.video-preview[_ngcontent-ng-c1803037997] {<br/>
+  width: 100%;<br/>
+  display: block;<br/>
+  border-radius: 10px;<br/>
+  background: #0f1117;<br/>
+}<br/>
+.scan-overlay[_ngcontent-ng-c1803037997] {<br/>
+  position: absolute;<br/>
+  inset: 0;<br/>
+  display: flex;<br/>
+  align-items: center;<br/>
+  justify-content: center;<br/>
+  pointer-events: none;<br/>
+}<br/>
+.scan-line[_ngcontent-ng-c1803037997] {<br/>
+  width: 80%;<br/>
+  height: 2px;<br/>
+  background: rgba(99, 102, 241, 0.7);<br/>
+  box-shadow: 0 0 8px rgba(99, 102, 241, 0.8);<br/>
+  animation: _ngcontent-ng-c1803037997_scanAnim 2s ease-in-out infinite;<br/>
+}<br/>
+@keyframes _ngcontent-ng-c1803037997_scanAnim {<br/>
+  0%, 100% {<br/>
+    transform: translateY(-50px);<br/>
+    opacity: 0.6;<br/>
+  }<br/>
+  50% {<br/>
+    transform: translateY(50px);<br/>
+    opacity: 1;<br/>
+  }<br/>
+}<br/>
+.scanner-hint[_ngcontent-ng-c1803037997] {<br/>
+  font-size: 0.78rem;<br/>
+  color: #94a3b8;<br/>
+  text-align: center;<br/>
+  margin: 0;<br/>
+}<br/>
+.producto-info[_ngcontent-ng-c1803037997] {<br/>
+  background: rgba(255, 255, 255, 0.03);<br/>
+  border: 1px solid rgba(255, 255, 255, 0.06);<br/>
+  border-radius: 10px;<br/>
+  padding: 0.85rem 1rem;<br/>
+  margin: 1rem 0 0.5rem;<br/>
+  display: flex;<br/>
+  flex-direction: column;<br/>
+  gap: 0.5rem;<br/>
+}<br/>
+.info-row[_ngcontent-ng-c1803037997] {<br/>
+  display: flex;<br/>
+  justify-content: space-between;<br/>
+  align-items: center;<br/>
+}<br/>
+.info-label[_ngcontent-ng-c1803037997] {<br/>
+  font-size: 0.78rem;<br/>
+  color: #94a3b8;<br/>
+  font-weight: 500;<br/>
+}<br/>
+.info-val[_ngcontent-ng-c1803037997] {<br/>
+  font-size: 0.88rem;<br/>
+  color: #e2e8f0;<br/>
+  font-weight: 600;<br/>
+}<br/>
+.stock-badge[_ngcontent-ng-c1803037997] {<br/>
+  background: rgba(99, 102, 241, 0.15);<br/>
+  border: 1px solid rgba(99, 102, 241, 0.3);<br/>
+  color: #818cf8;<br/>
+  border-radius: 6px;<br/>
+  padding: 0.15rem 0.6rem;<br/>
+  font-size: 0.82rem;<br/>
+}<br/>
+/*# sourceMappingURL=/editar-producto.css.map */&lt;/style&gt;<br/>
+ &lt;/head&gt;<br/>
+ &lt;body&gt;&lt;app-root ng-version="20.3.12"&gt;<br/>
+   &lt;router-outlet&gt;&lt;/router-outlet&gt;<br/>
+   &lt;app-produccion-layout _nghost-ng-c2767164200=""&gt;<br/>
+    &lt;a _ngcontent-ng-c2767164200="" href="#main-content" class="skip-link"&gt;Saltar al contenido principal&lt;/a&gt;<br/>
+    &lt;div _ngcontent-ng-c2767164200="" class="shell"&gt;<br/>
+     &lt;aside _ngcontent-ng-c2767164200="" aria-label="Producción — navegación" class="sidebar"&gt;<br/>
+      &lt;a _ngcontent-ng-c2767164200="" routerlink="/dashboard" aria-label="InvSystem — Volver al dashboard" class="sidebar-brand" href="/dashboard"&gt;<br/>
+       &lt;div _ngcontent-ng-c2767164200="" aria-hidden="true" class="brand-icon"&gt;<br/>
+        &lt;svg _ngcontent-ng-c2767164200="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+         &lt;path _ngcontent-ng-c2767164200="" stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10"&gt;&lt;/path&gt;<br/>
+        &lt;/svg&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div _ngcontent-ng-c2767164200=""&gt;<br/>
+        &lt;div _ngcontent-ng-c2767164200="" class="brand-name"&gt;<br/>
+         InvSystem<br/>
+        &lt;/div&gt;<br/>
+        &lt;div _ngcontent-ng-c2767164200="" class="brand-sub"&gt;<br/>
+         v1.0<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;&lt;/a&gt;<br/>
+      &lt;nav _ngcontent-ng-c2767164200="" aria-label="Producción"&gt;<br/>
+       &lt;div _ngcontent-ng-c2767164200="" class="nav-section"&gt;<br/>
+        &lt;p _ngcontent-ng-c2767164200="" aria-hidden="true" class="nav-label"&gt;Principal&lt;/p&gt;<br/>
+        &lt;ul _ngcontent-ng-c2767164200="" class="nav-list"&gt;<br/>
+         &lt;li _ngcontent-ng-c2767164200=""&gt;&lt;a _ngcontent-ng-c2767164200="" routerlink="/dashboard" class="nav-item" href="/dashboard"&gt;<br/>
+           &lt;svg _ngcontent-ng-c2767164200="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+            &lt;rect _ngcontent-ng-c2767164200="" x="3" y="3" width="7" height="7"&gt;&lt;/rect&gt;&lt;rect _ngcontent-ng-c2767164200="" x="14" y="3" width="7" height="7"&gt;&lt;/rect&gt;&lt;rect _ngcontent-ng-c2767164200="" x="14" y="14" width="7" height="7"&gt;&lt;/rect&gt;&lt;rect _ngcontent-ng-c2767164200="" x="3" y="14" width="7" height="7"&gt;&lt;/rect&gt;<br/>
+           &lt;/svg&gt; Dashboard &lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div _ngcontent-ng-c2767164200="" class="nav-section"&gt;<br/>
+        &lt;p _ngcontent-ng-c2767164200="" aria-hidden="true" class="nav-label"&gt;Productos&lt;/p&gt;<br/>
+        &lt;ul _ngcontent-ng-c2767164200="" class="nav-list"&gt;<br/>
+         &lt;li _ngcontent-ng-c2767164200=""&gt;&lt;a _ngcontent-ng-c2767164200="" routerlink="/produccion/registrar-tipo-producto" routerlinkactive="active" ariacurrentwhenactive="page" class="nav-item" href="/produccion/registrar-tipo-producto"&gt;<br/>
+           &lt;svg _ngcontent-ng-c2767164200="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+            &lt;path _ngcontent-ng-c2767164200="" stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"&gt;&lt;/path&gt;<br/>
+           &lt;/svg&gt; Tipos de producto &lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li _ngcontent-ng-c2767164200=""&gt;&lt;a _ngcontent-ng-c2767164200="" routerlink="/produccion/registrar-producto" routerlinkactive="active" ariacurrentwhenactive="page" class="nav-item" href="/produccion/registrar-producto"&gt;<br/>
+           &lt;svg _ngcontent-ng-c2767164200="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+            &lt;path _ngcontent-ng-c2767164200="" stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10"&gt;&lt;/path&gt;<br/>
+           &lt;/svg&gt; Registrar producto &lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li _ngcontent-ng-c2767164200=""&gt;&lt;a _ngcontent-ng-c2767164200="" routerlink="/produccion/editar-producto" routerlinkactive="active" ariacurrentwhenactive="page" class="nav-item active" href="/produccion/editar-producto" aria-current="page"&gt;<br/>
+           &lt;svg _ngcontent-ng-c2767164200="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+            &lt;path _ngcontent-ng-c2767164200="" stroke-linecap="round" stroke-linejoin="round" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"&gt;&lt;/path&gt;<br/>
+           &lt;/svg&gt; Editar producto &lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div _ngcontent-ng-c2767164200="" class="nav-section"&gt;<br/>
+        &lt;p _ngcontent-ng-c2767164200="" aria-hidden="true" class="nav-label"&gt;Materias Primas&lt;/p&gt;<br/>
+        &lt;ul _ngcontent-ng-c2767164200="" class="nav-list"&gt;<br/>
+         &lt;li _ngcontent-ng-c2767164200=""&gt;&lt;a _ngcontent-ng-c2767164200="" routerlink="/produccion/registrar-materia-prima" routerlinkactive="active" ariacurrentwhenactive="page" class="nav-item" href="/produccion/registrar-materia-prima"&gt;<br/>
+           &lt;svg _ngcontent-ng-c2767164200="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+            &lt;path _ngcontent-ng-c2767164200="" stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"&gt;&lt;/path&gt;<br/>
+           &lt;/svg&gt; Registrar materia prima &lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li _ngcontent-ng-c2767164200=""&gt;&lt;a _ngcontent-ng-c2767164200="" routerlink="/produccion/actualizar-stock-materia-prima" routerlinkactive="active" ariacurrentwhenactive="page" class="nav-item" href="/produccion/actualizar-stock-materia-prima"&gt;<br/>
+           &lt;svg _ngcontent-ng-c2767164200="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+            &lt;path _ngcontent-ng-c2767164200="" stroke-linecap="round" stroke-linejoin="round" d="M7 16V4m0 0L3 8m4-4l4 4M17 8v12m0 0l4-4m-4 4l-4-4"&gt;&lt;/path&gt;<br/>
+           &lt;/svg&gt; Actualizar stock &lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li _ngcontent-ng-c2767164200=""&gt;&lt;a _ngcontent-ng-c2767164200="" routerlink="/produccion/asociar-materia-prima" routerlinkactive="active" ariacurrentwhenactive="page" class="nav-item" href="/produccion/asociar-materia-prima"&gt;<br/>
+           &lt;svg _ngcontent-ng-c2767164200="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+            &lt;path _ngcontent-ng-c2767164200="" stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"&gt;&lt;/path&gt;<br/>
+           &lt;/svg&gt; Asociar a producto &lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div _ngcontent-ng-c2767164200="" class="nav-section"&gt;<br/>
+        &lt;p _ngcontent-ng-c2767164200="" aria-hidden="true" class="nav-label"&gt;Proveedores&lt;/p&gt;<br/>
+        &lt;ul _ngcontent-ng-c2767164200="" class="nav-list"&gt;<br/>
+         &lt;li _ngcontent-ng-c2767164200=""&gt;&lt;a _ngcontent-ng-c2767164200="" routerlink="/produccion/registrar-proveedor" routerlinkactive="active" ariacurrentwhenactive="page" class="nav-item" href="/produccion/registrar-proveedor"&gt;<br/>
+           &lt;svg _ngcontent-ng-c2767164200="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+            &lt;path _ngcontent-ng-c2767164200="" stroke-linecap="round" stroke-linejoin="round" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"&gt;&lt;/path&gt;<br/>
+           &lt;/svg&gt; Registrar proveedor &lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li _ngcontent-ng-c2767164200=""&gt;&lt;a _ngcontent-ng-c2767164200="" routerlink="/produccion/gestionar-proveedores" routerlinkactive="active" ariacurrentwhenactive="page" class="nav-item" href="/produccion/gestionar-proveedores"&gt;<br/>
+           &lt;svg _ngcontent-ng-c2767164200="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+            &lt;path _ngcontent-ng-c2767164200="" stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"&gt;&lt;/path&gt;<br/>
+           &lt;/svg&gt; Ver proveedores &lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li _ngcontent-ng-c2767164200=""&gt;&lt;a _ngcontent-ng-c2767164200="" routerlink="/produccion/asociar-proveedor-materia-prima" routerlinkactive="active" ariacurrentwhenactive="page" class="nav-item" href="/produccion/asociar-proveedor-materia-prima"&gt;<br/>
+           &lt;svg _ngcontent-ng-c2767164200="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+            &lt;path _ngcontent-ng-c2767164200="" stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;<br/>
+           &lt;/svg&gt; Asignar a materia prima &lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div _ngcontent-ng-c2767164200="" class="nav-section"&gt;<br/>
+        &lt;p _ngcontent-ng-c2767164200="" aria-hidden="true" class="nav-label"&gt;Órdenes&lt;/p&gt;<br/>
+        &lt;ul _ngcontent-ng-c2767164200="" class="nav-list"&gt;<br/>
+         &lt;li _ngcontent-ng-c2767164200=""&gt;&lt;a _ngcontent-ng-c2767164200="" routerlink="/produccion/gestionar-ordenes" routerlinkactive="active" ariacurrentwhenactive="page" class="nav-item" href="/produccion/gestionar-ordenes"&gt;<br/>
+           &lt;svg _ngcontent-ng-c2767164200="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+            &lt;path _ngcontent-ng-c2767164200="" stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"&gt;&lt;/path&gt;<br/>
+           &lt;/svg&gt; Órdenes de compra &lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/nav&gt;<br/>
+      &lt;div _ngcontent-ng-c2767164200="" class="sidebar-footer"&gt;<br/>
+       &lt;div _ngcontent-ng-c2767164200="" class="user-card"&gt;<br/>
+        &lt;div _ngcontent-ng-c2767164200="" aria-hidden="true" class="avatar"&gt;<br/>
+         A<br/>
+        &lt;/div&gt;<br/>
+        &lt;div _ngcontent-ng-c2767164200="" class="user-info"&gt;<br/>
+         &lt;div _ngcontent-ng-c2767164200="" class="user-name"&gt;<br/>
+          admin<br/>
+         &lt;/div&gt;<br/>
+         &lt;div _ngcontent-ng-c2767164200="" class="user-role"&gt;<br/>
+          Administrador<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;&lt;button _ngcontent-ng-c2767164200="" aria-label="Cerrar sesión" class="btn-logout-icon"&gt;<br/>
+         &lt;svg _ngcontent-ng-c2767164200="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+          &lt;path _ngcontent-ng-c2767164200="" stroke-linecap="round" stroke-linejoin="round" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"&gt;&lt;/path&gt;<br/>
+         &lt;/svg&gt;&lt;/button&gt;<br/>
+       &lt;/div&gt;&lt;!--container--&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/aside&gt;<br/>
+     &lt;main _ngcontent-ng-c2767164200="" id="main-content" class="main"&gt;<br/>
+      &lt;router-outlet _ngcontent-ng-c2767164200=""&gt;&lt;/router-outlet&gt;&lt;app-editar-producto _nghost-ng-c1803037997=""&gt;<br/>
+       &lt;div _ngcontent-ng-c1803037997="" class="page-content"&gt;<br/>
+        &lt;header _ngcontent-ng-c1803037997="" class="topbar"&gt;<br/>
+         &lt;div _ngcontent-ng-c1803037997="" class="topbar-title"&gt;<br/>
+          &lt;h2 _ngcontent-ng-c1803037997=""&gt;Editar producto&lt;/h2&gt;&lt;span _ngcontent-ng-c1803037997=""&gt;Producción&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/header&gt;<br/>
+        &lt;div _ngcontent-ng-c1803037997="" class="content"&gt;<br/>
+         &lt;!--container--&gt;<br/>
+         &lt;div _ngcontent-ng-c1803037997="" class="panels"&gt;<br/>
+          &lt;div _ngcontent-ng-c1803037997="" class="form-card"&gt;<br/>
+           &lt;div _ngcontent-ng-c1803037997="" class="form-card-header"&gt;<br/>
+            &lt;div _ngcontent-ng-c1803037997="" class="form-card-icon"&gt;<br/>
+             &lt;svg _ngcontent-ng-c1803037997="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+              &lt;path _ngcontent-ng-c1803037997="" stroke-linecap="round" stroke-linejoin="round" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"&gt;&lt;/path&gt;<br/>
+             &lt;/svg&gt;<br/>
+            &lt;/div&gt;<br/>
+            &lt;h3 _ngcontent-ng-c1803037997=""&gt;Editar información del producto&lt;/h3&gt;<br/>
+           &lt;/div&gt;&lt;!--container--&gt;&lt;!--container--&gt;<br/>
+           &lt;div _ngcontent-ng-c1803037997="" class="form-group form-group--full"&gt;<br/>
+            &lt;label _ngcontent-ng-c1803037997="" for="editSelector"&gt;Seleccionar producto&lt;/label&gt;&lt;select _ngcontent-ng-c1803037997="" id="editSelector" name="editSelector" class="ng-untouched ng-pristine ng-valid"&gt;&lt;option _ngcontent-ng-c1803037997="" disabled value="0: null"&gt;Seleccionar producto...&lt;/option&gt;&lt;option _ngcontent-ng-c1803037997="" value="1: 1"&gt;Bisturí quirúrgico&lt;/option&gt;&lt;option _ngcontent-ng-c1803037997="" value="2: 2"&gt;Pinza hemostática&lt;/option&gt;&lt;option _ngcontent-ng-c1803037997="" value="3: 3"&gt;Sutura quirúrgica&lt;/option&gt;&lt;option _ngcontent-ng-c1803037997="" value="4: 4"&gt;Laringoscopio&lt;/option&gt;&lt;option _ngcontent-ng-c1803037997="" value="5: 5"&gt;Espejo quirúrgico&lt;/option&gt;&lt;option _ngcontent-ng-c1803037997="" value="6: 6"&gt;Tijeras quirúrgicas&lt;/option&gt;&lt;option _ngcontent-ng-c1803037997="" value="7: 7"&gt;Prod Edit 215612&lt;/option&gt;&lt;option _ngcontent-ng-c1803037997="" value="8: 8"&gt;Prod Edit 82982&lt;/option&gt;&lt;option _ngcontent-ng-c1803037997="" value="9: 9"&gt;Prod Edit 546473&lt;/option&gt;&lt;option _ngcontent-ng-c1803037997="" value="10: 10"&gt;Prod Edit 84114&lt;/option&gt;&lt;option _ngcontent-ng-c1803037997="" value="11: 11"&gt;Prod Edit 551917&lt;/option&gt;&lt;option _ngcontent-ng-c1803037997="" value="12: 12"&gt;Prod Edit 257621&lt;/option&gt;&lt;option _ngcontent-ng-c1803037997="" value="13: 13"&gt;Prod Edit 983611&lt;/option&gt;&lt;option _ngcontent-ng-c1803037997="" value="14: 14"&gt;Prod Edit 885220&lt;/option&gt;&lt;option _ngcontent-ng-c1803037997="" value="15: 15"&gt;Prod 712424&lt;/option&gt;&lt;option _ngcontent-ng-c1803037997="" value="16: 16"&gt;Prod 768041&lt;/option&gt;&lt;option _ngcontent-ng-c1803037997="" value="17: 17"&gt;Prod Edit 587711&lt;/option&gt;&lt;!--container--&gt;&lt;/select&gt;<br/>
+           &lt;/div&gt;&lt;!--container--&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;div _ngcontent-ng-c1803037997="" class="form-card"&gt;<br/>
+           &lt;div _ngcontent-ng-c1803037997="" class="form-card-header"&gt;<br/>
+            &lt;div _ngcontent-ng-c1803037997="" class="form-card-icon icon-stock"&gt;<br/>
+             &lt;svg _ngcontent-ng-c1803037997="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+              &lt;path _ngcontent-ng-c1803037997="" stroke-linecap="round" stroke-linejoin="round" d="M7 16V4m0 0L3 8m4-4l4 4M17 8v12m0 0l4-4m-4 4l-4-4"&gt;&lt;/path&gt;<br/>
+             &lt;/svg&gt;<br/>
+            &lt;/div&gt;<br/>
+            &lt;h3 _ngcontent-ng-c1803037997=""&gt;Actualizar stock&lt;/h3&gt;<br/>
+           &lt;/div&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;!--container--&gt;<br/>
+           &lt;div _ngcontent-ng-c1803037997="" class="form-group form-group--full"&gt;<br/>
+            &lt;label _ngcontent-ng-c1803037997="" for="stockSelector"&gt;Seleccionar producto&lt;/label&gt;&lt;select _ngcontent-ng-c1803037997="" id="stockSelector" name="stockSelector" class="ng-untouched ng-pristine ng-valid"&gt;&lt;option _ngcontent-ng-c1803037997="" disabled value="0: null"&gt;Seleccionar producto...&lt;/option&gt;&lt;option _ngcontent-ng-c1803037997="" value="1: 1"&gt;Bisturí quirúrgico&lt;/option&gt;&lt;option _ngcontent-ng-c1803037997="" value="2: 2"&gt;Pinza hemostática&lt;/option&gt;&lt;option _ngcontent-ng-c1803037997="" value="3: 3"&gt;Sutura quirúrgica&lt;/option&gt;&lt;option _ngcontent-ng-c1803037997="" value="4: 4"&gt;Laringoscopio&lt;/option&gt;&lt;option _ngcontent-ng-c1803037997="" value="5: 5"&gt;Espejo quirúrgico&lt;/option&gt;&lt;option _ngcontent-ng-c1803037997="" value="6: 6"&gt;Tijeras quirúrgicas&lt;/option&gt;&lt;option _ngcontent-ng-c1803037997="" value="7: 7"&gt;Prod Edit 215612&lt;/option&gt;&lt;option _ngcontent-ng-c1803037997="" value="8: 8"&gt;Prod Edit 82982&lt;/option&gt;&lt;option _ngcontent-ng-c1803037997="" value="9: 9"&gt;Prod Edit 546473&lt;/option&gt;&lt;option _ngcontent-ng-c1803037997="" value="10: 10"&gt;Prod Edit 84114&lt;/option&gt;&lt;option _ngcontent-ng-c1803037997="" value="11: 11"&gt;Prod Edit 551917&lt;/option&gt;&lt;option _ngcontent-ng-c1803037997="" value="12: 12"&gt;Prod Edit 257621&lt;/option&gt;&lt;option _ngcontent-ng-c1803037997="" value="13: 13"&gt;Prod Edit 983611&lt;/option&gt;&lt;option _ngcontent-ng-c1803037997="" value="14: 14"&gt;Prod Edit 885220&lt;/option&gt;&lt;option _ngcontent-ng-c1803037997="" value="15: 15"&gt;Prod 712424&lt;/option&gt;&lt;option _ngcontent-ng-c1803037997="" value="16: 16"&gt;Prod 768041&lt;/option&gt;&lt;option _ngcontent-ng-c1803037997="" value="17: 17"&gt;Prod Edit 587711&lt;/option&gt;&lt;!--container--&gt;&lt;/select&gt;<br/>
+           &lt;/div&gt;<br/>
+           &lt;div _ngcontent-ng-c1803037997="" class="scanner-btn-row"&gt;<br/>
+            &lt;button _ngcontent-ng-c1803037997="" type="button" class="btn-scanner"&gt;<br/>
+             &lt;svg _ngcontent-ng-c1803037997="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+              &lt;path _ngcontent-ng-c1803037997="" stroke-linecap="round" stroke-linejoin="round" d="M12 4v1m6 11h2m-6 0h-2v4m0-11v-4m6 4h2M4 12H2m10 0V4m0 0H8m4 0h4"&gt;&lt;/path&gt;&lt;rect _ngcontent-ng-c1803037997="" x="3" y="3" width="7" height="7" rx="1"&gt;&lt;/rect&gt;&lt;rect _ngcontent-ng-c1803037997="" x="14" y="3" width="7" height="7" rx="1"&gt;&lt;/rect&gt;&lt;rect _ngcontent-ng-c1803037997="" x="3" y="14" width="7" height="7" rx="1"&gt;&lt;/rect&gt;<br/>
+             &lt;/svg&gt; Modo escáner &lt;/button&gt;<br/>
+           &lt;/div&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;!--container--&gt;<br/>
+          &lt;/div&gt;<br/>
+         &lt;/div&gt;&lt;!--container--&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/app-editar-producto&gt;&lt;!--container--&gt;<br/>
+     &lt;/main&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/app-produccion-layout&gt;&lt;!--container--&gt;<br/>
+  &lt;/app-root&gt;<br/>
+  &lt;script src="main.js" type="module"&gt;&lt;/script&gt;<br/>
+ &lt;/body&gt;<br/>
+&lt;/html&gt;</code></pre></div></body></html>

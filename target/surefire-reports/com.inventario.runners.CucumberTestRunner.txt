@@ -1,4 +1,14 @@
 -------------------------------------------------------------------------------
 Test set: com.inventario.runners.CucumberTestRunner
 -------------------------------------------------------------------------------
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 32.14 s -- in com.inventario.runners.CucumberTestRunner
+Tests run: 18, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 63.37 s <<< FAILURE! -- in com.inventario.runners.CucumberTestRunner
+HU-16 Registrar tipo de producto.Acceso no autorizado al modulo de tipos de producto -- Time elapsed: 2.894 s <<< FAILURE!
+java.lang.AssertionError: 
+[El roleGuard debe redirigir a /unauthorized al acceder sin permisos] 
+Expecting actual:
+  "http://localhost:4200/produccion/registrar-tipo-producto"
+to contain:
+  "/unauthorized" 
+	at com.inventario.steps.RolesStepDefinitions.elSistemaMuestraLaPaginaDeAccesoDenegado(RolesStepDefinitions.java:72)
+	at ✽.el sistema muestra la pagina de acceso denegado(file:///home/juanj/Projects-Test/serenity-inventario-login/src/test/resources/features/registrar-tipo-producto.feature:26)
+

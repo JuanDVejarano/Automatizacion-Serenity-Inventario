@@ -152,7 +152,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 16-05-2026 22:19</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 16-05-2026 22:34</span>
     <br style="clear:left"/>
 </div>
 
@@ -202,9 +202,9 @@ Para clasificar y organizar los productos de la organizacion
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon fa-2x' title='FAILURE'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">Acceso no autorizado al modulo de tipos de producto
+                                <span class="failing-color">Acceso no autorizado al modulo de tipos de producto
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -221,14 +221,49 @@ Para clasificar y organizar los productos de la organizacion
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Assertion error: [El roleGuard debe redirigir a /unauthorized al acceder sin permisos] Expecting actual:  'http://localhost:4200/produccion/registrar-tipo-producto'to contain:  '/unauthorized'</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall"
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="bi bi-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>java.lang.AssertionError </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>com.inventario.steps.RolesStepDefinitions.elSistemaMuestraLaPaginaDeAccesoDenegado(RolesStepDefinitions.java:72)<br />✽.el sistema muestra la pagina de acceso denegado(file:///home/juanj/Projects-Test/serenity-inventario-login/src/test/resources/features/registrar-tipo-producto.feature:26)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+                    <div class="panel-body">
+                        <a href="pagesource14789278006160777100.html" target="_blank" class="btn btn-info">HTML Source</a>
+                    </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
                 <img src="e3a23c57dbe3bf8487859f7a9777950de26939a0d9fcddd9fb249a4c4bb95a64.png" title=" Given el usuario ha iniciado sesion en el modulo de produccion" width="0"/>
                 <img src="29fbcbbdaa418e62dfdc2ea8fbd86fd466e96f1fc6cf6028be9e87f05ab6924b.png" title=" Given el usuario inicia sesion con el rol &quot;Ventas&quot;" width="0"/>
                 <img src="29fbcbbdaa418e62dfdc2ea8fbd86fd466e96f1fc6cf6028be9e87f05ab6924b.png" title=" When el usuario intenta acceder al modulo de tipos de producto" width="0"/>
-                <img src="51fb413c85d146e9a3a0a93857913c90f904420741b1b725f49c62030939156f.png" title=" Then el sistema muestra la pagina de acceso denegado" width="0"/>
 
-                <img src="51fb413c85d146e9a3a0a93857913c90f904420741b1b725f49c62030939156f.png" title=" And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo": <span class='success-color'>SUCCESS</span>" width="0"/>
+                <img src="51fb413c85d146e9a3a0a93857913c90f904420741b1b725f49c62030939156f.png" title=" Then el sistema muestra la pagina de acceso denegado: <span class='failing-color'>FAILURE</span>" width="0"/>
             </div>
         </div>
 
