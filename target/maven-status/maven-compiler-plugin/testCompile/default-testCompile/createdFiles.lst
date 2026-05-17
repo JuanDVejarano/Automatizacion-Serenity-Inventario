@@ -6,6 +6,7 @@ com/inventario/pages/LoginPage.class
 com/inventario/steps/RegistrarEmpleadoStepDefinitions.class
 com/inventario/pages/EmpleadosPage.class
 com/inventario/steps/EditarClienteStepDefinitions.class
+com/inventario/steps/RegistrarProductoStepDefinitions.class
 com/inventario/pages/RegistrarEmpleadoPage.class
 com/inventario/steps/LoginStepDefinitions.class
 com/inventario/steps/EditarEmpleadoStepDefinitions.class
@@ -15,6 +16,7 @@ com/inventario/pages/ListaVentasPage.class
 com/inventario/steps/RegistrarTipoProductoStepDefinitions.class
 com/inventario/steps/RegistrarVentaStepDefinitions.class
 com/inventario/pages/CrearUsuarioPage.class
+com/inventario/pages/RegistrarProductoPage.class
 com/inventario/steps/ListarEmpleadosStepDefinitions.class
 com/inventario/pages/DashboardPage.class
 com/inventario/steps/RolesStepDefinitions.class
