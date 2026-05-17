@@ -5,6 +5,7 @@ import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.core.pages.WebElementFacade;
 import net.serenitybdd.annotations.DefaultUrl;
 
+
 @DefaultUrl("http://localhost:4200/rrhh/crear-usuario")
 public class CrearUsuarioPage extends PageObject {
 
@@ -17,7 +18,7 @@ public class CrearUsuarioPage extends PageObject {
     @FindBy(css = ".alert.alert-error")   private WebElementFacade errorAlert;
     @FindBy(css = ".alert.alert-success") private WebElementFacade successAlert;
 
-    // El formulario aparece dentro de @else de @if(cargando()) — esperar el botón
+    // El formulario aparece dentro de @else de @if(cargando())
     public void waitForFormToLoad() {
         waitFor(submitButton);
     }

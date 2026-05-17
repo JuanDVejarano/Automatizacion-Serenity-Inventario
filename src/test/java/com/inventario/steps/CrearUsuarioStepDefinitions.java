@@ -40,6 +40,11 @@ public class CrearUsuarioStepDefinitions {
         loginPage.enterPassword("admin1412");
         loginPage.clickLoginButton();
         dashboardPage.waitForLogoutButton();
+        // Navegar al módulo con token real ya en localStorage.
+        // Pre-carga el lazy module de RRHH y ambas llamadas backend (roles + empleados)
+        // para que los escenarios no esperen lazy-load desde cero con browser fresco.
+        crearUsuarioPage.open();
+        crearUsuarioPage.waitForFormToLoad();
     }
 
     // ── Precondicion: empleado activo ────────────────────────────────────────

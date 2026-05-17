@@ -226,7 +226,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 16-05-2026 18:29:34</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 16-05-2026 20:03:36</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -241,7 +241,7 @@
                         <td width="375px" valign="top">
                             <div class="test-count-summary">
                                 <div class="test-count-title">
-                                    56 tests
+                                    60 tests
 
                                      |
                                         <a href="46b54d9084ba9783130da16408afb27a4e4620f6bd966e731510c7395b9ddf5c.csv" title="Download CSV"> <i class="bi bi-cloud-arrow-down"
@@ -314,33 +314,33 @@
                     <td>
                         <i class="bi bi-card-checklist"></i> Number of Scenarios
                     </td>
-                    <td>38</td>
+                    <td>42</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-caret-right"></i> Total Number of Test Cases
                     </td>
-                    <td>56</td>
+                    <td>60</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-flag-fill"></i> Tests Started
                     </td>
-                    <td>May 16, 2026 18:08:13</td>
+                    <td>May 16, 2026 19:57:15</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stop-circle"></i> Tests
                         Finished
                     </td>
-                    <td>May 16, 2026 18:29:22</td>
+                    <td>May 16, 2026 20:03:26</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stopwatch"></i> Total
                         Duration
                     </td>
-                    <td> 21m 9s</td>
+                    <td> 6m 10s</td>
                 </tr>
                 <tr scope="row">
                     <td>
@@ -367,7 +367,7 @@
                         <i class="bi bi-stopwatch-fill"></i> Total
                         Execution Time
                     </td>
-                    <td> 2m 49s</td>
+                    <td> 3m 7s</td>
                 </tr>
                 </tbody>
             </table>
@@ -397,6 +397,52 @@
                                                                         </tr>
                                                                         </thead>
                                                                         <tbody>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                            <a href="7e45b9bd1bcf6f48929d7b1b58f8b3713abded053c547e77f4771337ba2e2500.html"> HU-08 Asignar rol a usuario</a>
+                                                                                    </td>
+                                                                                    <td>4</td>
+                                                                                    <td>Given el administrador ha iniciado sesion para gestion de usuarios
+Given existe un usuario registrado para la prueba de asignacion de rol
+When el usuario abre el modal de asignacion de rol del primer usuario
+And el usuario selecciona un rol diferente al actual
+And el usuario confirma la asignacion de rol
+Then el sistema muestra el mensaje de exito de asignacion "Rol asignado exitosamente"
+Given el administrador ha iniciado sesion para gestion de usuarios
+Given existe un usuario registrado para la prueba de asignacion de rol
+When el usuario abre el modal de asignacion de rol del primer usuario
+And el usuario confirma la asignacion de rol
+Then el sistema muestra el mensaje de error de asignacion "El usuario ya tiene ese rol asignado"
+Given el administrador ha iniciado sesion para gestion de usuarios
+Given existe un usuario registrado para la prueba de asignacion de rol
+When el usuario abre el modal de asignacion de rol del primer usuario
+And el usuario limpia la seleccion de rol en el modal
+And el usuario confirma la asignacion de rol
+Then el sistema muestra el mensaje de error de asignacion "Debe seleccionar un rol"
+Given el administrador ha iniciado sesion para gestion de usuarios
+Given el usuario inicia sesion con el rol "Ventas"
+When el usuario intenta acceder al modulo de gestion de usuarios
+Then el sistema muestra la pagina de acceso denegado
+And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
+</td>
+                                                                                    <td>4</td>
+                                                                                    <td>100%</td>
+                                                                                    <td>
+                                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <div class="progress">
+                                                                                                <div class="progress-bar"
+                                                                                                     role="progressbar"
+                                                                                                     style="width: 100%; background-color: #b0cf73"
+                                                                                                     aria-valuenow="4"
+                                                                                                     title="100% success"
+                                                                                                     aria-valuemin="0"
+                                                                                                     aria-valuemax="100">
+                                                                                                </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
                                                                                 <tr>
                                                                                     <td>
                                                                                             <a href="f42783cc88fc4153ba445620ba5787cca5517c67e51653366ffe6186606f3e10.html"> HU-07 Crear usuario del sistema</a>
@@ -550,25 +596,17 @@ Then el sistema muestra la pagina de acceso denegado
 And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
 </td>
                                                                                     <td>8</td>
-                                                                                    <td>88%</td>
+                                                                                    <td>100%</td>
                                                                                     <td>
-                                                                                            <a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon ' title='ERROR'></i></a>
+                                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
                                                                                     </td>
                                                                                     <td>
                                                                                         <div class="progress">
                                                                                                 <div class="progress-bar"
                                                                                                      role="progressbar"
-                                                                                                     style="width: 87.5%; background-color: #b0cf73"
-                                                                                                     aria-valuenow="7"
-                                                                                                     title="88% success"
-                                                                                                     aria-valuemin="0"
-                                                                                                     aria-valuemax="100">
-                                                                                                </div>
-                                                                                                <div class="progress-bar"
-                                                                                                     role="progressbar"
-                                                                                                     style="width: 12.5%; background-color: #fe6c2d"
-                                                                                                     aria-valuenow="1"
-                                                                                                     title="13% error"
+                                                                                                     style="width: 100%; background-color: #b0cf73"
+                                                                                                     aria-valuenow="8"
+                                                                                                     title="100% success"
                                                                                                      aria-valuemin="0"
                                                                                                      aria-valuemax="100">
                                                                                                 </div>
@@ -825,43 +863,6 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                                                         </div>
                                                     </div>
 
-                                                    <div class="row">
-                                                        <div class="col-lg-6 col-md-6 col-sm-12">
-                                                            <h3>Test Failure Overview</h3>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-lg-6 col-md-6 col-sm-12">
-                                                            <h4>Most Frequent Failures</h4>
-                                                            <table class="table" style="width:40vw;">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td class="error-color top-list-title">
-                                                                            <a href="a71efafabf12da645d0e4eea8c5a72d4312859b25f1e0d59ce770fe96abf3ccd.html"><a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon ' title='ERROR'></i></a> Javascript exception</a>
-                                                                        </td>
-                                                                        <td><span
-                                                                                    class="badge failure-badge">1</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                        <div class="col-lg-6 col-md-6 col-sm-12">
-                                                            <h4>Most Unstable Features</h4>
-                                                            <table class="table" style="width:40vw;">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td class="failure-color top-list-title">
-                                                                            <a href="6be9193e8ae8fdbf538649435538a63892bd61637ec1bfecc8e5a6fdc10fdf86.html">HU-06 Listar y buscar empleados</a>
-                                                                        </td>
-                                                                        <td>
-                                                                            <span class="badge failure-badge">12%</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </div>
                                             </div>
                                             <div class="container-fluid">
         <div class="row">
@@ -870,9 +871,24 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                     <div class="card">
                         <div class="card-body">
                             <div>
+                                    <a href="76cc7f5d307a675a7adedd9999901990879c858ed6be1ab63d0a80722b07317f.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Roles&nbsp;&nbsp;&nbsp;21
+                                    </span>
+                                    </a>
+                                    <a href="67371ca289d6844984962501254284f8be8dddb290b05d3224ac5377e01e47d9.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Empleados&nbsp;&nbsp;&nbsp;21
+                                    </span>
+                                    </a>
                                     <a href="68196532d97a024fb6841bab5f2ee7212bb0de64ed98a5cbe32348e112415254.html">
                                     <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Usuarios&nbsp;&nbsp;&nbsp;6
+                                        <i class="bi bi-tag-fill"></i> Usuarios&nbsp;&nbsp;&nbsp;10
+                                    </span>
+                                    </a>
+                                    <a href="12ad6c996178bc603652e3adc5c58c81a7e87f1c2679ebb066e02fe6f40cdaed.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Autenticacion&nbsp;&nbsp;&nbsp;8
                                     </span>
                                     </a>
                             </div>
@@ -883,8 +899,8 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                                 <h5 class="card-title">Context</h5>
                             <div>
                                     <a href="46b54d9084ba9783130da16408afb27a4e4620f6bd966e731510c7395b9ddf5c.html">
-                                    <span class="tag-badge badge" style="background-color:#fe6c2d; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Chrome, Linux&nbsp;&nbsp;&nbsp;56
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Chrome, Linux&nbsp;&nbsp;&nbsp;60
                                     </span>
                                     </a>
                             </div>
@@ -907,18 +923,18 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                     <td>
                         <i class="bi bi-card-checklist"></i> Number of Scenarios
                     </td>
-                    <td>38</td>
+                    <td>42</td>
                     <td>
                         <i class="bi bi-stopwatch"></i> Total
                         Duration
                     </td>
-                    <td> 21m 9s</td>
+                    <td> 6m 10s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-caret-right"></i> Total Number of Test Cases
                     </td>
-                    <td>56</td>
+                    <td>60</td>
                     <td>
                         <i class="bi bi-trophy"></i> Fastest Test
                     </td>
@@ -939,7 +955,7 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                     <td>
                         <i class="bi bi-flag-fill"></i> Tests Started
                     </td>
-                    <td>May 16, 2026 18:08:13</td>
+                    <td>May 16, 2026 19:57:15</td>
                     <td>
                         <i class="bi bi-stopwatch"></i> Average
                         Execution Time
@@ -951,12 +967,12 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                         <i class="bi bi-stop-circle"></i> Tests
                         Finished
                     </td>
-                    <td>May 16, 2026 18:29:22</td>
+                    <td>May 16, 2026 20:03:26</td>
                     <td>
                         <i class="bi bi-stopwatch-fill"></i> Total
                         Execution Time
                     </td>
-                    <td> 2m 49s</td>
+                    <td> 3m 7s</td>
                 </tr>
                 </tbody>
             </table>
@@ -981,6 +997,96 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                                                                 <tbody>
                                                                     <tr class="scenario-result SUCCESS">
                                                                         <td>
+                                                                                <a href="7e45b9bd1bcf6f48929d7b1b58f8b3713abded053c547e77f4771337ba2e2500.html">HU-08 Asignar rol a usuario</a>
+                                                                        </td>
+                                                                        <td data-order="Asignacion exitosa de rol">
+                                                                                    <a href="7010a26f3b91d1bf637ed5527ab675c3b24f4db6473bb8b6078320b710deba23.html">Asignacion exitosa de rol</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
+                                                                        </td>
+                                                                        <td>6</td>
+                                                                        <td>Given el administrador ha iniciado sesion para gestion de usuarios
+Given existe un usuario registrado para la prueba de asignacion de rol
+When el usuario abre el modal de asignacion de rol del primer usuario
+And el usuario selecciona un rol diferente al actual
+And el usuario confirma la asignacion de rol
+Then el sistema muestra el mensaje de exito de asignacion "Rol asignado exitosamente"
+</td>
+                                                                        <td data-order="1778979435">19:57:15</td>
+                                                                        <td>4s 804ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="7e45b9bd1bcf6f48929d7b1b58f8b3713abded053c547e77f4771337ba2e2500.html">HU-08 Asignar rol a usuario</a>
+                                                                        </td>
+                                                                        <td data-order="Intento de asignar el mismo rol actual">
+                                                                                    <a href="e11f5edd9ed17ffe71e320d7cea99e7ee86ab6c9555c8d2a848ceaa98de9412c.html">Intento de asignar el mismo rol actual</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
+                                                                        </td>
+                                                                        <td>5</td>
+                                                                        <td>Given el administrador ha iniciado sesion para gestion de usuarios
+Given existe un usuario registrado para la prueba de asignacion de rol
+When el usuario abre el modal de asignacion de rol del primer usuario
+And el usuario confirma la asignacion de rol
+Then el sistema muestra el mensaje de error de asignacion "El usuario ya tiene ese rol asignado"
+</td>
+                                                                        <td data-order="1778979440">19:57:20</td>
+                                                                        <td>4s 265ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="7e45b9bd1bcf6f48929d7b1b58f8b3713abded053c547e77f4771337ba2e2500.html">HU-08 Asignar rol a usuario</a>
+                                                                        </td>
+                                                                        <td data-order="Seleccion de rol vacia al asignar">
+                                                                                    <a href="78feb1eb77edc52a8b6581f603669b51f6950153756270c78d62380f1bcc1338.html">Seleccion de rol vacia al asignar</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
+                                                                        </td>
+                                                                        <td>6</td>
+                                                                        <td>Given el administrador ha iniciado sesion para gestion de usuarios
+Given existe un usuario registrado para la prueba de asignacion de rol
+When el usuario abre el modal de asignacion de rol del primer usuario
+And el usuario limpia la seleccion de rol en el modal
+And el usuario confirma la asignacion de rol
+Then el sistema muestra el mensaje de error de asignacion "Debe seleccionar un rol"
+</td>
+                                                                        <td data-order="1778979444">19:57:24</td>
+                                                                        <td>4s 041ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="7e45b9bd1bcf6f48929d7b1b58f8b3713abded053c547e77f4771337ba2e2500.html">HU-08 Asignar rol a usuario</a>
+                                                                        </td>
+                                                                        <td data-order="Acceso no autorizado al modulo de gestion de usuarios">
+                                                                                    <a href="498d128f5ea7718d3b7f4567c08bdd6b63350072c5a0d22030836742625bebe5.html">Acceso no autorizado al modulo de gestion de usuarios</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
+                                                                        </td>
+                                                                        <td>5</td>
+                                                                        <td>Given el administrador ha iniciado sesion para gestion de usuarios
+Given el usuario inicia sesion con el rol "Ventas"
+When el usuario intenta acceder al modulo de gestion de usuarios
+Then el sistema muestra la pagina de acceso denegado
+And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
+</td>
+                                                                        <td data-order="1778979448">19:57:28</td>
+                                                                        <td>3s 082ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
                                                                                 <a href="f42783cc88fc4153ba445620ba5787cca5517c67e51653366ffe6186606f3e10.html">HU-07 Crear usuario del sistema</a>
                                                                         </td>
                                                                         <td data-order="Creacion exitosa de usuario">
@@ -994,8 +1100,8 @@ Given existe un empleado activo disponible para asignar usuario
 When el usuario diligencia el formulario de creacion de usuario
 Then el sistema muestra el mensaje de exito de usuario "Usuario creado exitosamente"
 </td>
-                                                                        <td data-order="1778974139">18:28:59</td>
-                                                                        <td>4s 871ms</td>
+                                                                        <td data-order="1778979452">19:57:32</td>
+                                                                        <td>3s 473ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1016,8 +1122,8 @@ When el usuario crea un primer usuario para ese empleado con rol "Ventas"
 And el usuario crea un segundo usuario para el mismo empleado con rol "Produccion"
 Then el sistema muestra el mensaje de exito de usuario "Usuario creado exitosamente"
 </td>
-                                                                        <td data-order="1778974144">18:29:04</td>
-                                                                        <td>4s 290ms</td>
+                                                                        <td data-order="1778979455">19:57:35</td>
+                                                                        <td>4s 526ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1038,8 +1144,8 @@ And el usuario crea un usuario de prueba para verificar duplicado
 When el usuario intenta crear otro usuario con el mismo nombre de usuario
 Then el sistema muestra el mensaje de error de usuario "Ya existe un usuario con ese nombre de usuario"
 </td>
-                                                                        <td data-order="1778974148">18:29:08</td>
-                                                                        <td>4s 281ms</td>
+                                                                        <td data-order="1778979460">19:57:40</td>
+                                                                        <td>4s 346ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1059,8 +1165,8 @@ Given existe un empleado activo disponible para asignar usuario
 When el usuario ingresa todos los campos con una contrasena de 6 caracteres
 Then el sistema muestra el mensaje de error de usuario "La contrasena debe tener mas de 6 caracteres"
 </td>
-                                                                        <td data-order="1778974153">18:29:13</td>
-                                                                        <td>3s 737ms</td>
+                                                                        <td data-order="1778979464">19:57:44</td>
+                                                                        <td>3s 629ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1080,8 +1186,8 @@ When el usuario navega al formulario de creacion de usuarios
 And el usuario intenta crear un usuario sin diligenciar los campos
 Then el sistema muestra el mensaje de error de usuario "Todos los campos son obligatorios"
 </td>
-                                                                        <td data-order="1778974156">18:29:16</td>
-                                                                        <td>2s 914ms</td>
+                                                                        <td data-order="1778979468">19:57:48</td>
+                                                                        <td>2s 649ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1102,8 +1208,8 @@ When el usuario intenta acceder al modulo de creacion de usuarios
 Then el sistema muestra la pagina de acceso denegado
 And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
 </td>
-                                                                        <td data-order="1778974159">18:29:19</td>
-                                                                        <td>2s 684ms</td>
+                                                                        <td data-order="1778979471">19:57:51</td>
+                                                                        <td>2s 857ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1125,8 +1231,8 @@ And el usuario actualiza el nombre en el modal a "Nombre Actualizado Test"
 And el usuario guarda los cambios en el modal
 Then el sistema muestra el mensaje de exito de edicion "Empleado actualizado exitosamente"
 </td>
-                                                                        <td data-order="1778972893">18:08:13</td>
-                                                                        <td>4s 607ms</td>
+                                                                        <td data-order="1778979721">20:02:01</td>
+                                                                        <td>5s 535ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1148,8 +1254,8 @@ And el Administrador cambia la cedula del empleado por un valor nuevo
 And el usuario guarda los cambios en el modal
 Then el sistema muestra el mensaje de exito de edicion "Empleado actualizado exitosamente"
 </td>
-                                                                        <td data-order="1778972897">18:08:17</td>
-                                                                        <td>4s 451ms</td>
+                                                                        <td data-order="1778979726">20:02:06</td>
+                                                                        <td>5s 314ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1170,8 +1276,8 @@ And se establece el token de sesion con rol Recursos Humanos
 When el usuario busca y abre el modal de edicion del empleado
 Then el campo cedula esta deshabilitado en el modal de edicion
 </td>
-                                                                        <td data-order="1778972902">18:08:22</td>
-                                                                        <td>3s 984ms</td>
+                                                                        <td data-order="1778979732">20:02:12</td>
+                                                                        <td>4s 478ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1191,8 +1297,8 @@ Given existen dos empleados registrados para la prueba de duplicados en edicion
 When el usuario abre el modal del primer empleado e ingresa el correo del segundo
 Then el sistema muestra el mensaje de error de edicion "Ya existe un empleado con ese correo"
 </td>
-                                                                        <td data-order="1778972906">18:08:26</td>
-                                                                        <td>4s 735ms</td>
+                                                                        <td data-order="1778979736">20:02:16</td>
+                                                                        <td>5s 413ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1212,8 +1318,8 @@ Given existen dos empleados registrados para la prueba de duplicados en edicion
 When el usuario abre el modal del primer empleado e ingresa la cedula del segundo
 Then el sistema muestra el mensaje de error de edicion "Ya existe un empleado con esa cedula"
 </td>
-                                                                        <td data-order="1778972911">18:08:31</td>
-                                                                        <td>5s 464ms</td>
+                                                                        <td data-order="1778979742">20:02:22</td>
+                                                                        <td>5s 734ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1235,8 +1341,8 @@ And el usuario borra los campos obligatorios del modal de edicion
 And el usuario guarda los cambios en el modal
 Then el sistema muestra el mensaje de error de edicion "Todos los campos obligatorios deben ser diligenciados"
 </td>
-                                                                        <td data-order="1778972916">18:08:36</td>
-                                                                        <td>4s 261ms</td>
+                                                                        <td data-order="1778979748">20:02:28</td>
+                                                                        <td>4s 652ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1257,8 +1363,8 @@ When el usuario intenta acceder al modulo de lista de empleados
 Then el sistema muestra la pagina de acceso denegado
 And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
 </td>
-                                                                        <td data-order="1778972921">18:08:41</td>
-                                                                        <td>2s 637ms</td>
+                                                                        <td data-order="1778979752">20:02:32</td>
+                                                                        <td>2s 908ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1279,8 +1385,8 @@ When el usuario navega al modulo de listado de empleados
 Then el sistema muestra la tabla con las columnas de informacion de empleados
 And la tabla contiene al menos un empleado registrado
 </td>
-                                                                        <td data-order="1778972923">18:08:43</td>
-                                                                        <td>3s 581ms</td>
+                                                                        <td data-order="1778979755">20:02:35</td>
+                                                                        <td>4s 921ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1300,8 +1406,8 @@ Given existe un empleado registrado para busqueda en la lista
 When el usuario busca el empleado por nombre en la lista
 Then el sistema muestra el empleado en los resultados de busqueda
 </td>
-                                                                        <td data-order="1778972927">18:08:47</td>
-                                                                        <td>3s 525ms</td>
+                                                                        <td data-order="1778979760">20:02:40</td>
+                                                                        <td>4s 093ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1321,8 +1427,8 @@ When el usuario navega al modulo de listado de empleados
 And el usuario busca por "XYZNOEXISTE99999" en la lista de empleados
 Then el sistema muestra en la lista el mensaje "No se encontraron empleados con ese criterio de busqueda"
 </td>
-                                                                        <td data-order="1778972931">18:08:51</td>
-                                                                        <td>3s 093ms</td>
+                                                                        <td data-order="1778979765">20:02:45</td>
+                                                                        <td>3s 426ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1342,8 +1448,8 @@ Given existe un empleado registrado para busqueda en la lista
 When el usuario busca el empleado por cedula en la lista
 Then el sistema muestra exactamente un empleado en la tabla de resultados
 </td>
-                                                                        <td data-order="1778972934">18:08:54</td>
-                                                                        <td>3s 514ms</td>
+                                                                        <td data-order="1778979768">20:02:48</td>
+                                                                        <td>3s 997ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1363,8 +1469,8 @@ When el usuario navega al modulo de listado de empleados
 And el usuario busca por "00000001" en la lista de empleados
 Then el sistema muestra en la lista el mensaje "No se encontraron empleados con ese criterio de busqueda"
 </td>
-                                                                        <td data-order="1778972937">18:08:57</td>
-                                                                        <td>3s 279ms</td>
+                                                                        <td data-order="1778979772">20:02:52</td>
+                                                                        <td>3s 340ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1385,13 +1491,13 @@ When el usuario navega al modulo de listado de empleados
 And el usuario filtra los empleados por estado "activos"
 Then todos los empleados mostrados tienen el estado Activo
 </td>
-                                                                        <td data-order="1778972941">18:09:01</td>
-                                                                        <td>3s 713ms</td>
+                                                                        <td data-order="1778979776">20:02:56</td>
+                                                                        <td>3s 898ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
                                                                     </tr>
-                                                                    <tr class="scenario-result ERROR">
+                                                                    <tr class="scenario-result SUCCESS">
                                                                         <td>
                                                                                 <a href="6be9193e8ae8fdbf538649435538a63892bd61637ec1bfecc8e5a6fdc10fdf86.html">HU-06 Listar y buscar empleados</a>
                                                                         </td>
@@ -1406,10 +1512,10 @@ When el usuario navega al modulo de listado de empleados
 And se simula que no hay empleados en el sistema
 Then el sistema muestra en la lista el mensaje "No hay empleados registrados"
 </td>
-                                                                        <td data-order="1778972944">18:09:04</td>
-                                                                        <td>2s 986ms</td>
-                                                                        <td><a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon ' title='ERROR'></i></a> <span
-                                                                                    style="display:none">ERROR</span>
+                                                                        <td data-order="1778979780">20:03:00</td>
+                                                                        <td>3s 185ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
                                                                         </td>
                                                                     </tr>
                                                                     <tr class="scenario-result SUCCESS">
@@ -1428,8 +1534,8 @@ When el usuario intenta acceder al modulo de lista de empleados
 Then el sistema muestra la pagina de acceso denegado
 And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
 </td>
-                                                                        <td data-order="1778972947">18:09:07</td>
-                                                                        <td>2s 882ms</td>
+                                                                        <td data-order="1778979783">20:03:03</td>
+                                                                        <td>2s 887ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1450,8 +1556,8 @@ And el usuario ingresa la contrasena "admin1412"
 And el usuario hace clic en el boton iniciar sesion
 Then el sistema redirige al dashboard del usuario
 </td>
-                                                                        <td data-order="1778972950">18:09:10</td>
-                                                                        <td>3s 052ms</td>
+                                                                        <td data-order="1778979531">19:58:51</td>
+                                                                        <td>3s 038ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1472,8 +1578,8 @@ And el usuario ingresa la contrasena "admin1"
 And el usuario hace clic en el boton iniciar sesion
 Then el sistema muestra el mensaje de error "La contrasena debe tener mas de 6 caracteres"
 </td>
-                                                                        <td data-order="1778972954">18:09:14</td>
-                                                                        <td>2s 685ms</td>
+                                                                        <td data-order="1778979534">19:58:54</td>
+                                                                        <td>2s 651ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1494,8 +1600,8 @@ And el usuario ingresa la contrasena "claveIncorrecta"
 And el usuario hace clic en el boton iniciar sesion
 Then el sistema muestra el mensaje de error "Usuario o contrasena incorrectos"
 </td>
-                                                                        <td data-order="1778972956">18:09:16</td>
-                                                                        <td>3s 016ms</td>
+                                                                        <td data-order="1778979537">19:58:57</td>
+                                                                        <td>2s 795ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1514,8 +1620,8 @@ Then el sistema muestra el mensaje de error "Usuario o contrasena incorrectos"
 When el usuario hace clic en el boton iniciar sesion
 Then el sistema muestra el mensaje de error "Todos los campos son obligatorios"
 </td>
-                                                                        <td data-order="1778972959">18:09:19</td>
-                                                                        <td>2s 386ms</td>
+                                                                        <td data-order="1778979540">19:59:00</td>
+                                                                        <td>2s 111ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1536,8 +1642,8 @@ When el usuario intenta acceder al dashboard
 Then el sistema redirige a la pagina de login
 And el sistema muestra el mensaje de sesion "Sesion expirada, por favor inicie sesion nuevamente"
 </td>
-                                                                        <td data-order="1778972962">18:09:22</td>
-                                                                        <td>2s 238ms</td>
+                                                                        <td data-order="1778979542">19:59:02</td>
+                                                                        <td>2s 064ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1558,8 +1664,8 @@ Then el sistema elimina el token JWT del almacenamiento local
 And el sistema redirige al usuario a la pantalla de login
 And el usuario no puede acceder al dashboard sin autenticacion
 </td>
-                                                                        <td data-order="1778972964">18:09:24</td>
-                                                                        <td>3s 305ms</td>
+                                                                        <td data-order="1778979544">19:59:04</td>
+                                                                        <td>2s 492ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1579,8 +1685,8 @@ Given el usuario ha cerrado su sesion
 When el usuario intenta acceder al dashboard directamente
 Then el sistema redirige automaticamente a la pantalla de login
 </td>
-                                                                        <td data-order="1778972968">18:09:28</td>
-                                                                        <td>2s 566ms</td>
+                                                                        <td data-order="1778979547">19:59:07</td>
+                                                                        <td>2s 250ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1600,8 +1706,8 @@ Given el usuario tiene el sistema abierto en otra pestana
 When el usuario cierra sesion desde la pestana actual
 Then las demas pestanas son redirigidas al login con el mensaje "Sesion cerrada en otra pestana"
 </td>
-                                                                        <td data-order="1778972970">18:09:30</td>
-                                                                        <td>3s 178ms</td>
+                                                                        <td data-order="1778979549">19:59:09</td>
+                                                                        <td>2s 715ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1620,8 +1726,8 @@ Then las demas pestanas son redirigidas al login con el mensaje "Sesion cerrada 
 When el usuario registra un empleado con todos los campos obligatorios
 Then el sistema muestra el mensaje de exito "Empleado registrado exitosamente"
 </td>
-                                                                        <td data-order="1778972973">18:09:33</td>
-                                                                        <td>3s 598ms</td>
+                                                                        <td data-order="1778979786">20:03:06</td>
+                                                                        <td>3s 028ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1640,8 +1746,8 @@ Then el sistema muestra el mensaje de exito "Empleado registrado exitosamente"
 When el usuario registra un empleado incluyendo el telefono secundario
 Then el sistema muestra el mensaje de exito "Empleado registrado exitosamente"
 </td>
-                                                                        <td data-order="1778972977">18:09:37</td>
-                                                                        <td>3s 063ms</td>
+                                                                        <td data-order="1778979789">20:03:09</td>
+                                                                        <td>3s 139ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1661,8 +1767,8 @@ Given el usuario registra previamente un empleado en el sistema
 When el usuario intenta registrar otro empleado con la misma cedula
 Then el sistema muestra el mensaje de error del empleado "Ya existe un empleado con esa cedula"
 </td>
-                                                                        <td data-order="1778972980">18:09:40</td>
-                                                                        <td>3s 977ms</td>
+                                                                        <td data-order="1778979792">20:03:12</td>
+                                                                        <td>3s 976ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1682,8 +1788,8 @@ Given el usuario registra previamente un empleado en el sistema
 When el usuario intenta registrar otro empleado con el mismo correo
 Then el sistema muestra el mensaje de error del empleado "Ya existe un empleado con ese correo"
 </td>
-                                                                        <td data-order="1778972984">18:09:44</td>
-                                                                        <td>4s 694ms</td>
+                                                                        <td data-order="1778979796">20:03:16</td>
+                                                                        <td>3s 888ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1702,8 +1808,8 @@ Then el sistema muestra el mensaje de error del empleado "Ya existe un empleado 
 When el usuario intenta registrar un empleado sin diligenciar los campos obligatorios
 Then el sistema muestra el mensaje de error del empleado "Todos los campos obligatorios deben ser diligenciados"
 </td>
-                                                                        <td data-order="1778972989">18:09:49</td>
-                                                                        <td>2s 622ms</td>
+                                                                        <td data-order="1778979800">20:03:20</td>
+                                                                        <td>2s 436ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1724,8 +1830,8 @@ When el usuario intenta acceder al modulo de registro de empleados
 Then el sistema muestra la pagina de acceso denegado
 And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
 </td>
-                                                                        <td data-order="1778972992">18:09:52</td>
-                                                                        <td>2s 635ms</td>
+                                                                        <td data-order="1778979803">20:03:23</td>
+                                                                        <td>2s 956ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1749,8 +1855,8 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
 When el usuario accede al dashboard
 Then el modulo "<modulo>" esta "<estado>" para ese rol
 </td>
-                                                                        <td data-order="1778972994">18:09:54</td>
-                                                                        <td>26s 398ms</td>
+                                                                        <td data-order="1778979574">19:59:34</td>
+                                                                        <td>26s 344ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1769,8 +1875,8 @@ Then el modulo "<modulo>" esta "<estado>" para ese rol
 When el usuario accede al dashboard
 Then no existe una opcion de gestion de roles en el sistema
 </td>
-                                                                        <td data-order="1778973021">18:10:21</td>
-                                                                        <td>2s 331ms</td>
+                                                                        <td data-order="1778979600">20:00:00</td>
+                                                                        <td>2s 515ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1795,8 +1901,8 @@ When el usuario intenta acceder directamente a la ruta "<ruta>"
 Then el sistema muestra la pagina de acceso denegado
 And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
 </td>
-                                                                        <td data-order="1778973023">18:10:23</td>
-                                                                        <td>18s 449ms</td>
+                                                                        <td data-order="1778979603">20:00:03</td>
+                                                                        <td>17s 264ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1823,9 +1929,24 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                     <div class="card">
                         <div class="card-body">
                             <div>
+                                    <a href="76cc7f5d307a675a7adedd9999901990879c858ed6be1ab63d0a80722b07317f.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Roles&nbsp;&nbsp;&nbsp;21
+                                    </span>
+                                    </a>
+                                    <a href="67371ca289d6844984962501254284f8be8dddb290b05d3224ac5377e01e47d9.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Empleados&nbsp;&nbsp;&nbsp;21
+                                    </span>
+                                    </a>
                                     <a href="68196532d97a024fb6841bab5f2ee7212bb0de64ed98a5cbe32348e112415254.html">
                                     <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Usuarios&nbsp;&nbsp;&nbsp;6
+                                        <i class="bi bi-tag-fill"></i> Usuarios&nbsp;&nbsp;&nbsp;10
+                                    </span>
+                                    </a>
+                                    <a href="12ad6c996178bc603652e3adc5c58c81a7e87f1c2679ebb066e02fe6f40cdaed.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Autenticacion&nbsp;&nbsp;&nbsp;8
                                     </span>
                                     </a>
                             </div>
@@ -1836,8 +1957,8 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                                 <h5 class="card-title">Context</h5>
                             <div>
                                     <a href="46b54d9084ba9783130da16408afb27a4e4620f6bd966e731510c7395b9ddf5c.html">
-                                    <span class="tag-badge badge" style="background-color:#fe6c2d; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Chrome, Linux&nbsp;&nbsp;&nbsp;56
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Chrome, Linux&nbsp;&nbsp;&nbsp;60
                                     </span>
                                     </a>
                             </div>
@@ -1891,7 +2012,7 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
             datasets: [{
                 label: 'Test Results',
                 fill: false,
-                data: [55,0,0,0,0,0,1,0],
+                data: [60,0,0,0,0,0,0,0],
                 backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                 borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                 borderWidth: 1,
@@ -1942,7 +2063,7 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                         ctx.font = fontSize + "em sans-serif";
                         ctx.textBaseline = "middle";
 
-                        var text = "98%"
+                        var text = "100%"
                         textX = 10 + Math.round((width - ctx.measureText(text).width) / 2);
                         textY = (height / 2) - 40;
 
@@ -1987,7 +2108,7 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
             datasets: [
                 {
                     label: 'Automated',
-                    data: [55,0,0,0,0,0,1,0],
+                    data: [60,0,0,0,0,0,0,0],
                     backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                     borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                     borderWidth: 1
@@ -2070,7 +2191,7 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
             datasets: [{
                 label: 'Number of tests per duration',
                 fill: false,
-                data: ['0','56','0','0','0','0','0','0'],
+                data: ['0','60','0','0','0','0','0','0'],
                 backgroundColor: 'rgba(83, 146, 255,0.5)',
                 borderColor: 'rgba(83, 146, 255, 1)',
             }]
@@ -2133,6 +2254,11 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
 
         const coverageReports = [
             {
+                title: 'HU-08 Asignar rol a usuario',
+                result: 'SUCCESS',
+                link: "7e45b9bd1bcf6f48929d7b1b58f8b3713abded053c547e77f4771337ba2e2500.html"
+            },
+            {
                 title: 'HU-07 Crear usuario del sistema',
                 result: 'SUCCESS',
                 link: "f42783cc88fc4153ba445620ba5787cca5517c67e51653366ffe6186606f3e10.html"
@@ -2144,7 +2270,7 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
             },
             {
                 title: 'HU-06 Listar y buscar empleados',
-                result: 'ERROR',
+                result: 'SUCCESS',
                 link: "6be9193e8ae8fdbf538649435538a63892bd61637ec1bfecc8e5a6fdc10fdf86.html"
             },
             {
@@ -2170,6 +2296,7 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
         ]
         const coverageData = {
             labels: [
+                'HU-08 Asignar rol a usuario',
                 'HU-07 Crear usuario del sistema',
                 'HU-05 Editar informacion de empleado',
                 'HU-06 Listar y buscar empleados',
@@ -2181,42 +2308,42 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
             datasets: [
                 {
                     label: ['Passing Tests'],
-                    data: [6,7,7,5,3,6,21],
+                    data: [4,6,7,8,5,3,6,21],
                     backgroundColor: [ 'rgba(153,204,51,0.5)' ]
                 },
                 {
                     label: ['Pending Tests'],
-                    data: [0,0,0,0,0,0,0],
+                    data: [0,0,0,0,0,0,0,0],
                     backgroundColor: [ 'rgba(165, 199, 238, 0.5)' ]
                 },
                 {
                     label: ['Ignored Tests'],
-                    data: [0,0,0,0,0,0,0],
+                    data: [0,0,0,0,0,0,0,0],
                     backgroundColor: [ 'rgba(168, 168, 168, 0.5)' ]
                 },
                 {
                     label: ['Skipped Tests'],
-                    data: [0,0,0,0,0,0,0],
+                    data: [0,0,0,0,0,0,0,0],
                     backgroundColor: [ 'rgba(238, 224, 152, 0.75)' ]
                 },
                 {
                     label: ['Aborted Tests'],
-                    data: [0,0,0,0,0,0,0],
+                    data: [0,0,0,0,0,0,0,0],
                     backgroundColor: [ 'rgba(255, 153, 102, 0.5)' ]
                 },
                 {
                     label: ['Failed Tests'],
-                    data: [0,0,0,0,0,0,0],
+                    data: [0,0,0,0,0,0,0,0],
                     backgroundColor: [ 'rgba(255, 22, 49, 0.5)' ]
                 },
                 {
                     label: ['Errors'],
-                    data: [0,0,1,0,0,0,0],
+                    data: [0,0,0,0,0,0,0,0],
                     backgroundColor: [ 'rgba(255, 97, 8, 0.5)' ]
                 },
                 {
                     label: ['Compromised Tests'],
-                    data: [0,0,0,0,0,0,0],
+                    data: [0,0,0,0,0,0,0,0],
                     backgroundColor: [ 'rgba(255, 104, 255, 0.5)' ]
                 },
             ]
