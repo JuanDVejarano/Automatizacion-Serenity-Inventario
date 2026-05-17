@@ -1,14 +1,89 @@
 -------------------------------------------------------------------------------
 Test set: com.inventario.runners.CucumberTestRunner
 -------------------------------------------------------------------------------
-Tests run: 18, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 63.37 s <<< FAILURE! -- in com.inventario.runners.CucumberTestRunner
-HU-16 Registrar tipo de producto.Acceso no autorizado al modulo de tipos de producto -- Time elapsed: 2.894 s <<< FAILURE!
+Tests run: 137, Failures: 3, Errors: 11, Skipped: 0, Time elapsed: 418.4 s <<< FAILURE! -- in com.inventario.runners.CucumberTestRunner
+HU-05 Editar informacion de empleado.Acceso no autorizado al modulo de lista de empleados -- Time elapsed: 2.680 s <<< FAILURE!
 java.lang.AssertionError: 
 [El roleGuard debe redirigir a /unauthorized al acceder sin permisos] 
 Expecting actual:
-  "http://localhost:4200/produccion/registrar-tipo-producto"
+  "http://localhost:4200/rrhh/empleados"
 to contain:
   "/unauthorized" 
 	at com.inventario.steps.RolesStepDefinitions.elSistemaMuestraLaPaginaDeAccesoDenegado(RolesStepDefinitions.java:72)
-	at ✽.el sistema muestra la pagina de acceso denegado(file:///home/juanj/Projects-Test/serenity-inventario-login/src/test/resources/features/registrar-tipo-producto.feature:26)
+	at ✽.el sistema muestra la pagina de acceso denegado(file:///home/juanj/Projects-Test/serenity-inventario-login/src/test/resources/features/editar-empleado.feature:50)
+
+HU-15 Consultar historial de ventas.Lista vacia de ventas -- Time elapsed: 2.521 s <<< ERROR!
+io.cucumber.java.PendingException: Este escenario requiere una base de datos sin ventas registradas.
+	at com.inventario.steps.ConsultarHistorialVentasStepDefinitions.elHistorialNoTieneVentasRegistradasParaEstaPrueba(ConsultarHistorialVentasStepDefinitions.java:102)
+	at ✽.el historial no tiene ventas registradas para esta prueba(file:///home/juanj/Projects-Test/serenity-inventario-login/src/test/resources/features/historial-ventas.feature:41)
+
+HU-12 Listar y buscar clientes.Lista vacia de clientes -- Time elapsed: 2.681 s <<< ERROR!
+io.cucumber.java.PendingException: Este escenario requiere una base de datos sin clientes registrados.
+	at com.inventario.steps.ListarClientesStepDefinitions.seSimulaQueNoHayClientesEnElSistema(ListarClientesStepDefinitions.java:77)
+	at ✽.se simula que no hay clientes en el sistema(file:///home/juanj/Projects-Test/serenity-inventario-login/src/test/resources/features/listar-clientes.feature:39)
+
+HU-06 Listar y buscar empleados.Lista vacia de empleados -- Time elapsed: 2.788 s <<< ERROR!
+io.cucumber.java.PendingException: Este escenario requiere una base de datos sin empleados registrados.
+	at com.inventario.steps.ListarEmpleadosStepDefinitions.seSimulaQueNoHayEmpleadosEnElSistema(ListarEmpleadosStepDefinitions.java:110)
+	at ✽.se simula que no hay empleados en el sistema(file:///home/juanj/Projects-Test/serenity-inventario-login/src/test/resources/features/listar-empleados.feature:45)
+
+HU-06 Listar y buscar empleados.Acceso denegado para roles no autorizados al modulo de empleados -- Time elapsed: 2.435 s <<< FAILURE!
+java.lang.AssertionError: 
+[El roleGuard debe redirigir a /unauthorized al acceder sin permisos] 
+Expecting actual:
+  "http://localhost:4200/rrhh/empleados"
+to contain:
+  "/unauthorized" 
+	at com.inventario.steps.RolesStepDefinitions.elSistemaMuestraLaPaginaDeAccesoDenegado(RolesStepDefinitions.java:72)
+	at ✽.el sistema muestra la pagina de acceso denegado(file:///home/juanj/Projects-Test/serenity-inventario-login/src/test/resources/features/listar-empleados.feature:51)
+
+HU-19 MCP de gestion de productos.Tool 1 - Listar productos cuando no hay ninguno registrado -- Time elapsed: 0.011 s <<< ERROR!
+io.cucumber.java.PendingException: Sin evidencia — no ejecutado en esta iteracion.
+	at com.inventario.steps.McpProductosManualStepDefinitions.ejecutarListarVacia(McpProductosManualStepDefinitions.java:85)
+	at ✽.se ejecuta la tool listar_productos sin parametros con lista vacia(file:///home/juanj/Projects-Test/serenity-inventario-login/src/test/resources/features/mcp-productos.feature:19)
+
+HU-19 MCP de gestion de productos.Tool 3 - Sin materiales faltantes para producir -- Time elapsed: 0.012 s <<< ERROR!
+io.cucumber.java.PendingException: Sin evidencia — no ejecutado en esta iteracion.
+	at com.inventario.steps.McpProductosManualStepDefinitions.ejecutarSinFaltantes(McpProductosManualStepDefinitions.java:144)
+	at ✽.se ejecuta la tool generar_opciones_orden_compra y no hay materiales faltantes(file:///home/juanj/Projects-Test/serenity-inventario-login/src/test/resources/features/mcp-productos.feature:46)
+
+HU-19 MCP de gestion de productos.Tool 3 - Sin proveedor que cubra todos los materiales -- Time elapsed: 0.011 s <<< ERROR!
+io.cucumber.java.PendingException: Sin evidencia — no ejecutado en esta iteracion.
+	at com.inventario.steps.McpProductosManualStepDefinitions.ejecutarSinProveedorUnico(McpProductosManualStepDefinitions.java:171)
+	at ✽.se ejecuta la tool generar_opciones_orden_compra y ningun proveedor cubre todos los materiales(file:///home/juanj/Projects-Test/serenity-inventario-login/src/test/resources/features/mcp-productos.feature:58)
+
+HU-19 MCP de gestion de productos.Tool 4 - Sin caja configurada en el sistema -- Time elapsed: 0.013 s <<< ERROR!
+io.cucumber.java.PendingException: Sin evidencia — no ejecutado en esta iteracion.
+	at com.inventario.steps.McpProductosManualStepDefinitions.ejecutarSinCaja(McpProductosManualStepDefinitions.java:221)
+	at ✽.se ejecuta la tool validar_presupuesto_caja sin que haya una caja registrada(file:///home/juanj/Projects-Test/serenity-inventario-login/src/test/resources/features/mcp-productos.feature:79)
+
+HU-19 MCP de gestion de productos.Tool 5 - Fondos insuficientes al crear orden -- Time elapsed: 0.010 s <<< ERROR!
+io.cucumber.java.PendingException: Sin evidencia — no ejecutado en esta iteracion.
+	at com.inventario.steps.McpProductosManualStepDefinitions.ejecutarOrdenSinFondos(McpProductosManualStepDefinitions.java:251)
+	at ✽.se ejecuta la tool crear_orden_compra con un costo que supera el capital en caja(file:///home/juanj/Projects-Test/serenity-inventario-login/src/test/resources/features/mcp-productos.feature:94)
+
+HU-19 MCP de gestion de productos.Tool 5 - Sin proveedor para algun material -- Time elapsed: 0.015 s <<< ERROR!
+io.cucumber.java.PendingException: Sin evidencia — no ejecutado en esta iteracion.
+	at com.inventario.steps.McpProductosManualStepDefinitions.ejecutarOrdenSinProveedor(McpProductosManualStepDefinitions.java:266)
+	at ✽.se ejecuta la tool crear_orden_compra con un material que no tiene proveedor asociado(file:///home/juanj/Projects-Test/serenity-inventario-login/src/test/resources/features/mcp-productos.feature:101)
+
+HU-19 MCP de gestion de productos.Tool 5 - Estado Pendiente no configurado -- Time elapsed: 0.011 s <<< ERROR!
+io.cucumber.java.PendingException: Sin evidencia — no ejecutado en esta iteracion.
+	at com.inventario.steps.McpProductosManualStepDefinitions.ejecutarOrdenSinEstado(McpProductosManualStepDefinitions.java:276)
+	at ✽.se ejecuta la tool crear_orden_compra sin que exista el estado Pendiente en la base de datos(file:///home/juanj/Projects-Test/serenity-inventario-login/src/test/resources/features/mcp-productos.feature:108)
+
+HU-13 Crear venta.Venta completada genera movimiento en caja -- Time elapsed: 2.654 s <<< ERROR!
+io.cucumber.java.PendingException: Este escenario requiere crear una venta y verificar el movimiento en el modulo de Caja.
+	at com.inventario.steps.RegistrarVentaStepDefinitions.existeUnaVentaCreadaEnEstadoALaEsperaDeReparto(RegistrarVentaStepDefinitions.java:65)
+	at ✽.existe una venta creada en estado A la espera de reparto(file:///home/juanj/Projects-Test/serenity-inventario-login/src/test/resources/features/registrar-venta.feature:41)
+
+HU-03 Roles predefinidos del sistema.Acceso denegado al intentar acceder a un modulo no permitido #6 -- Time elapsed: 1.852 s <<< FAILURE!
+java.lang.AssertionError: 
+[El roleGuard debe redirigir a /unauthorized al acceder sin permisos] 
+Expecting actual:
+  "http://localhost:4200/rrhh/empleados"
+to contain:
+  "/unauthorized" 
+	at com.inventario.steps.RolesStepDefinitions.elSistemaMuestraLaPaginaDeAccesoDenegado(RolesStepDefinitions.java:72)
+	at ✽.el sistema muestra la pagina de acceso denegado(file:///home/juanj/Projects-Test/serenity-inventario-login/src/test/resources/features/roles.feature:35)
 

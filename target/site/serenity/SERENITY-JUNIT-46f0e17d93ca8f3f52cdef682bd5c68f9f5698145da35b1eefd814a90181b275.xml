@@ -1,1 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="HU-06 Listar y buscar empleados" skipped="1" tests="8" time="27.76" timestamp="2026-05-16 08:18:07"><testcase name="Listar todos los empleados con sus datos"/><testcase name="Buscar empleado por nombre"/><testcase name="Busqueda por nombre sin resultados"/><testcase name="Buscar empleado por cedula"/><testcase name="Busqueda por cedula sin resultados"/><testcase name="Filtrar empleados por estado activo"/><testcase name="Lista vacia de empleados"><skipped/></testcase><testcase name="Acceso denegado para roles no autorizados al modulo de empleados"/></testsuite>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="1" name="HU-06 Listar y buscar empleados" skipped="1" tests="8" time="25.91" timestamp="2026-05-16 11:46:10"><testcase name="Listar todos los empleados con sus datos"/><testcase name="Buscar empleado por nombre"/><testcase name="Busqueda por nombre sin resultados"/><testcase name="Buscar empleado por cedula"/><testcase name="Busqueda por cedula sin resultados"/><testcase name="Filtrar empleados por estado activo"/><testcase name="Lista vacia de empleados"><skipped/></testcase><testcase name="Acceso denegado para roles no autorizados al modulo de empleados"><failure message="[El roleGuard debe redirigir a /unauthorized al acceder sin permisos] &#10;Expecting actual:&#10;  &quot;http://localhost:4200/rrhh/empleados&quot;&#10;to contain:&#10;  &quot;/unauthorized&quot; " type="java.lang.AssertionError">[El roleGuard debe redirigir a /unauthorized al acceder sin permisos] 
+Expecting actual:
+  "http://localhost:4200/rrhh/empleados"
+to contain:
+  "/unauthorized" </failure><system-err>[El roleGuard debe redirigir a /unauthorized al acceder sin permisos] 
+Expecting actual:
+  "http://localhost:4200/rrhh/empleados"
+to contain:
+  "/unauthorized" 
+com.inventario.steps.RolesStepDefinitions.elSistemaMuestraLaPaginaDeAccesoDenegado(RolesStepDefinitions.java:72)
+✽.el sistema muestra la pagina de acceso denegado(file:///home/juanj/Projects-Test/serenity-inventario-login/src/test/resources/features/listar-empleados.feature:51)
+</system-err></testcase></testsuite>

@@ -226,7 +226,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 16-05-2026 22:34:49</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 16-05-2026 23:50:10</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -326,21 +326,21 @@
                     <td>
                         <i class="bi bi-flag-fill"></i> Tests Started
                     </td>
-                    <td>May 16, 2026 22:03:35</td>
+                    <td>May 16, 2026 23:42:46</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stop-circle"></i> Tests
                         Finished
                     </td>
-                    <td>May 16, 2026 22:05:02</td>
+                    <td>May 16, 2026 23:48:45</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stopwatch"></i> Total
                         Duration
                     </td>
-                    <td> 1m 26s</td>
+                    <td> 5m 58s</td>
                 </tr>
                 <tr scope="row">
                     <td>
@@ -353,21 +353,21 @@
                         <i class="bi bi-skip-start"></i> Slowest
                         Test
                     </td>
-                    <td>6s</td>
+                    <td>5s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stopwatch"></i> Average
                         Execution Time
                     </td>
-                    <td>4s</td>
+                    <td>3s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stopwatch-fill"></i> Total
                         Execution Time
                     </td>
-                    <td> 1m 25s</td>
+                    <td> 1m 22s</td>
                 </tr>
                 </tbody>
             </table>
@@ -653,7 +653,7 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                         <i class="bi bi-stopwatch"></i> Total
                         Duration
                     </td>
-                    <td> 1m 26s</td>
+                    <td> 5m 58s</td>
                 </tr>
                 <tr scope="row">
                     <td>
@@ -674,30 +674,30 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                         <i class="bi bi-skip-start"></i> Slowest
                         Test
                     </td>
-                    <td>6s</td>
+                    <td>5s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-flag-fill"></i> Tests Started
                     </td>
-                    <td>May 16, 2026 22:03:35</td>
+                    <td>May 16, 2026 23:42:46</td>
                     <td>
                         <i class="bi bi-stopwatch"></i> Average
                         Execution Time
                     </td>
-                    <td>4s</td>
+                    <td>3s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stop-circle"></i> Tests
                         Finished
                     </td>
-                    <td>May 16, 2026 22:05:02</td>
+                    <td>May 16, 2026 23:48:45</td>
                     <td>
                         <i class="bi bi-stopwatch-fill"></i> Total
                         Execution Time
                     </td>
-                    <td> 1m 25s</td>
+                    <td> 1m 22s</td>
                 </tr>
                 </tbody>
             </table>
@@ -735,8 +735,8 @@ And el usuario esta en el formulario de nueva venta con cliente seleccionado
 When el usuario busca un producto por nombre y selecciona el primero disponible
 Then el producto aparece en el detalle de la venta con total mayor a cero
 </td>
-                                                                        <td data-order="1778987015">22:03:35</td>
-                                                                        <td>3s 982ms</td>
+                                                                        <td data-order="1778992966">23:42:46</td>
+                                                                        <td>3s 057ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -756,8 +756,8 @@ And el usuario esta en el formulario de nueva venta con cliente seleccionado
 When el usuario agrega un producto usando su ID como codigo de barras
 Then el producto aparece en el detalle de la venta con total mayor a cero
 </td>
-                                                                        <td data-order="1778987019">22:03:39</td>
-                                                                        <td>3s 029ms</td>
+                                                                        <td data-order="1778992969">23:42:49</td>
+                                                                        <td>2s 846ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -777,8 +777,8 @@ And el usuario esta en el formulario de nueva venta con cliente seleccionado
 When el usuario ingresa un codigo de barras que no existe en el sistema
 Then el sistema muestra el mensaje de error en ventas "Producto no encontrado"
 </td>
-                                                                        <td data-order="1778987022">22:03:42</td>
-                                                                        <td>3s 013ms</td>
+                                                                        <td data-order="1778992972">23:42:52</td>
+                                                                        <td>2s 622ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -799,8 +799,8 @@ Given el usuario ha agregado un producto al carrito de venta
 When el usuario modifica la cantidad del producto en el detalle
 Then el campo de cantidad refleja el cambio y el total sigue siendo mayor a cero
 </td>
-                                                                        <td data-order="1778987025">22:03:45</td>
-                                                                        <td>3s 147ms</td>
+                                                                        <td data-order="1778992975">23:42:55</td>
+                                                                        <td>3s 013ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -821,8 +821,8 @@ Given el usuario ha agregado un producto al carrito de venta
 When el usuario elimina el producto del carrito de venta
 Then el carrito de la venta queda vacio
 </td>
-                                                                        <td data-order="1778987029">22:03:49</td>
-                                                                        <td>2s 943ms</td>
+                                                                        <td data-order="1778992978">23:42:58</td>
+                                                                        <td>3s 235ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -844,8 +844,8 @@ When el usuario intenta acceder al modulo de lista de ventas
 Then el sistema muestra la pagina de acceso denegado
 And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
 </td>
-                                                                        <td data-order="1778987032">22:03:52</td>
-                                                                        <td>3s 479ms</td>
+                                                                        <td data-order="1778992981">23:43:01</td>
+                                                                        <td>3s 135ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -866,8 +866,8 @@ Given existe al menos una venta registrada en el historial
 Then el sistema muestra la tabla de ventas con las columnas requeridas
 And la tabla de ventas contiene al menos una venta
 </td>
-                                                                        <td data-order="1778987035">22:03:55</td>
-                                                                        <td>5s 164ms</td>
+                                                                        <td data-order="1778993113">23:45:13</td>
+                                                                        <td>5s 136ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -888,8 +888,8 @@ Given existe al menos una venta registrada en el historial
 When el usuario filtra las ventas por estado "A la espera de reparto"
 Then la tabla de ventas contiene al menos una venta
 </td>
-                                                                        <td data-order="1778987040">22:04:00</td>
-                                                                        <td>5s 555ms</td>
+                                                                        <td data-order="1778993118">23:45:18</td>
+                                                                        <td>5s 734ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -909,8 +909,8 @@ And el usuario navega al historial de ventas
 When el usuario filtra las ventas por un rango de fechas futuro
 Then el sistema muestra en el historial el mensaje "No hay ventas en ese rango de fechas"
 </td>
-                                                                        <td data-order="1778987046">22:04:06</td>
-                                                                        <td>2s 601ms</td>
+                                                                        <td data-order="1778993124">23:45:24</td>
+                                                                        <td>2s 562ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -930,8 +930,8 @@ And el usuario navega al historial de ventas
 When el usuario busca en el historial ventas del cliente "XYZNOEXISTEENVENTA99"
 Then el sistema muestra en el historial el mensaje "No se encontraron ventas para ese cliente"
 </td>
-                                                                        <td data-order="1778987049">22:04:09</td>
-                                                                        <td>2s 680ms</td>
+                                                                        <td data-order="1778993126">23:45:26</td>
+                                                                        <td>2s 598ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -952,8 +952,8 @@ Given existe al menos una venta registrada en el historial
 When el usuario abre el detalle de la primera venta de la lista
 Then el sistema muestra el modal con el detalle de la venta
 </td>
-                                                                        <td data-order="1778987052">22:04:12</td>
-                                                                        <td>5s 782ms</td>
+                                                                        <td data-order="1778993129">23:45:29</td>
+                                                                        <td>5s 509ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -974,8 +974,8 @@ Given existe una venta disponible para cambio de estado en el historial
 When el usuario cambia la venta al siguiente estado disponible
 Then el sistema muestra el mensaje de exito en ventas "Estado de venta actualizado exitosamente"
 </td>
-                                                                        <td data-order="1778987057">22:04:17</td>
-                                                                        <td>5s 406ms</td>
+                                                                        <td data-order="1778993135">23:45:35</td>
+                                                                        <td>5s 251ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -995,8 +995,8 @@ And el usuario navega al historial de ventas
 When el historial no tiene ventas registradas para esta prueba
 Then el sistema muestra en el historial el mensaje "No hay ventas registradas"
 </td>
-                                                                        <td data-order="1778987063">22:04:23</td>
-                                                                        <td>2s 947ms</td>
+                                                                        <td data-order="1778993140">23:45:40</td>
+                                                                        <td>2s 517ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-hourglass-top pending-icon ' title='PENDING'></i></a> <span
                                                                                     style="display:none">PENDING</span>
                                                                         </td>
@@ -1018,8 +1018,8 @@ When el usuario intenta acceder al modulo de lista de ventas
 Then el sistema muestra la pagina de acceso denegado
 And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
 </td>
-                                                                        <td data-order="1778987066">22:04:26</td>
-                                                                        <td>3s 104ms</td>
+                                                                        <td data-order="1778993143">23:45:43</td>
+                                                                        <td>3s 067ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1042,8 +1042,8 @@ And el usuario busca y agrega un producto disponible al carrito
 And el usuario confirma la venta
 Then el sistema muestra el mensaje de exito en ventas "Venta registrada exitosamente"
 </td>
-                                                                        <td data-order="1778987069">22:04:29</td>
-                                                                        <td>5s 788ms</td>
+                                                                        <td data-order="1778993292">23:48:12</td>
+                                                                        <td>5s 355ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1066,8 +1066,8 @@ And el usuario agrega mas de un producto al carrito de la venta
 And el usuario confirma la venta
 Then el sistema muestra el mensaje de exito en ventas "Venta registrada exitosamente"
 </td>
-                                                                        <td data-order="1778987075">22:04:35</td>
-                                                                        <td>6s 054ms</td>
+                                                                        <td data-order="1778993298">23:48:18</td>
+                                                                        <td>5s 766ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1089,8 +1089,8 @@ And el usuario selecciona el cliente de prueba en el paso 1
 And el usuario intenta agregar al carrito un producto con stock cero
 Then el sistema muestra el mensaje de error en ventas "Stock insuficiente para el producto seleccionado"
 </td>
-                                                                        <td data-order="1778987081">22:04:41</td>
-                                                                        <td>4s 920ms</td>
+                                                                        <td data-order="1778993304">23:48:24</td>
+                                                                        <td>4s 855ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1111,8 +1111,8 @@ When el usuario navega a registrar una nueva venta
 And el usuario selecciona el cliente de prueba en el paso 1
 Then el boton de confirmar venta esta deshabilitado mientras el carrito esta vacio
 </td>
-                                                                        <td data-order="1778987086">22:04:46</td>
-                                                                        <td>5s 108ms</td>
+                                                                        <td data-order="1778993308">23:48:28</td>
+                                                                        <td>4s 896ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1132,8 +1132,8 @@ Given existe una venta creada en estado A la espera de reparto
 When el usuario cambia el estado de la venta a Completada
 Then el sistema registra un movimiento de ingreso en caja por el total de la venta
 </td>
-                                                                        <td data-order="1778987091">22:04:51</td>
-                                                                        <td>2s 185ms</td>
+                                                                        <td data-order="1778993313">23:48:33</td>
+                                                                        <td>2s 651ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-hourglass-top pending-icon ' title='PENDING'></i></a> <span
                                                                                     style="display:none">PENDING</span>
                                                                         </td>
@@ -1157,8 +1157,8 @@ And el usuario confirma la venta
 And el usuario cancela la venta recien creada
 Then el sistema muestra el mensaje de exito en ventas "Estado de venta actualizado exitosamente"
 </td>
-                                                                        <td data-order="1778987094">22:04:54</td>
-                                                                        <td>5s 560ms</td>
+                                                                        <td data-order="1778993316">23:48:36</td>
+                                                                        <td>5s 715ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1179,8 +1179,8 @@ When el usuario intenta acceder al modulo de lista de ventas
 Then el sistema muestra la pagina de acceso denegado
 And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
 </td>
-                                                                        <td data-order="1778987099">22:04:59</td>
-                                                                        <td>2s 938ms</td>
+                                                                        <td data-order="1778993322">23:48:42</td>
+                                                                        <td>2s 635ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>

@@ -9,7 +9,7 @@ Cubre 7 historias de usuario con 50+ escenarios de prueba organizados por módul
 ## Requisitos previos
 
 | Herramienta | Versión mínima |
-|-------------|----------------|
+| ----------- | -------------- |
 | Java        | 17             |
 | Maven       | 3.8+           |
 
@@ -74,6 +74,10 @@ mvn verify -Dcucumber.filter.tags="not @empleados"
 
 ## Ver el reporte HTML
 
+```bash
+mvn verify -DskipTests
+```
+
 Después de ejecutar los tests, el reporte se genera automáticamente en:
 
 ```
@@ -92,98 +96,98 @@ explorer.exe $(wslpath -w target/site/serenity/index.html)
 
 ### `@autenticacion` — HU-01 y HU-02
 
-| HU | Escenario |
-|----|-----------|
-| HU-01 | Inicio de sesión exitoso con credenciales válidas |
-| HU-01 | Error al ingresar contraseña de 6 caracteres o menos |
-| HU-01 | Error al ingresar credenciales incorrectas |
-| HU-01 | Error al dejar los campos vacíos |
+| HU    | Escenario                                              |
+| ----- | ------------------------------------------------------ |
+| HU-01 | Inicio de sesión exitoso con credenciales válidas      |
+| HU-01 | Error al ingresar contraseña de 6 caracteres o menos   |
+| HU-01 | Error al ingresar credenciales incorrectas             |
+| HU-01 | Error al dejar los campos vacíos                       |
 | HU-01 | Redirección al login cuando el token JWT está expirado |
-| HU-02 | Cierre de sesión exitoso |
-| HU-02 | Intento de acceso tras cerrar sesión |
-| HU-02 | Cierre de sesión detectado desde otra pestaña |
+| HU-02 | Cierre de sesión exitoso                               |
+| HU-02 | Intento de acceso tras cerrar sesión                   |
+| HU-02 | Cierre de sesión detectado desde otra pestaña          |
 
 ### `@roles` — HU-03
 
-| HU | Escenario |
-|----|-----------|
-| HU-03 | Los módulos del dashboard reflejan el acceso según rol (12 ejemplos) |
-| HU-03 | Los roles no pueden gestionarse desde la interfaz |
+| HU    | Escenario                                                                 |
+| ----- | ------------------------------------------------------------------------- |
+| HU-03 | Los módulos del dashboard reflejan el acceso según rol (12 ejemplos)      |
+| HU-03 | Los roles no pueden gestionarse desde la interfaz                         |
 | HU-03 | Acceso denegado al intentar acceder a un módulo no permitido (8 ejemplos) |
 
 ### `@empleados` — HU-04, HU-05 y HU-06
 
-| HU | Escenario |
-|----|-----------|
-| HU-04 | Registro exitoso de empleado |
-| HU-04 | Registro con teléfono secundario |
-| HU-04 | Cédula duplicada |
-| HU-04 | Correo duplicado |
-| HU-04 | Campos obligatorios vacíos |
-| HU-04 | Acceso no autorizado al módulo de registro |
-| HU-05 | Edición exitosa de información general |
-| HU-05 | Edición de cédula por Administrador |
-| HU-05 | Campo cédula deshabilitado para rol Recursos Humanos |
-| HU-05 | Correo duplicado al editar |
-| HU-05 | Cédula duplicada al editar |
-| HU-05 | Campos obligatorios vacíos al editar |
-| HU-05 | Acceso no autorizado al módulo de edición |
-| HU-06 | Listar todos los empleados con sus datos |
-| HU-06 | Buscar empleado por nombre |
-| HU-06 | Búsqueda por nombre sin resultados |
-| HU-06 | Buscar empleado por cédula |
-| HU-06 | Búsqueda por cédula sin resultados |
-| HU-06 | Filtrar empleados por estado activo |
+| HU    | Escenario                                                                               |
+| ----- | --------------------------------------------------------------------------------------- |
+| HU-04 | Registro exitoso de empleado                                                            |
+| HU-04 | Registro con teléfono secundario                                                        |
+| HU-04 | Cédula duplicada                                                                        |
+| HU-04 | Correo duplicado                                                                        |
+| HU-04 | Campos obligatorios vacíos                                                              |
+| HU-04 | Acceso no autorizado al módulo de registro                                              |
+| HU-05 | Edición exitosa de información general                                                  |
+| HU-05 | Edición de cédula por Administrador                                                     |
+| HU-05 | Campo cédula deshabilitado para rol Recursos Humanos                                    |
+| HU-05 | Correo duplicado al editar                                                              |
+| HU-05 | Cédula duplicada al editar                                                              |
+| HU-05 | Campos obligatorios vacíos al editar                                                    |
+| HU-05 | Acceso no autorizado al módulo de edición                                               |
+| HU-06 | Listar todos los empleados con sus datos                                                |
+| HU-06 | Buscar empleado por nombre                                                              |
+| HU-06 | Búsqueda por nombre sin resultados                                                      |
+| HU-06 | Buscar empleado por cédula                                                              |
+| HU-06 | Búsqueda por cédula sin resultados                                                      |
+| HU-06 | Filtrar empleados por estado activo                                                     |
 | HU-06 | Lista vacía de empleados _(requiere BD vacía — tag `@pendiente`, excluido por defecto)_ |
-| HU-06 | Acceso denegado para roles no autorizados |
+| HU-06 | Acceso denegado para roles no autorizados                                               |
 
 ### `@usuarios` — HU-07
 
-| HU | Escenario |
-|----|-----------|
-| HU-07 | Creación exitosa de usuario |
-| HU-07 | Empleado con múltiples usuarios |
-| HU-07 | Nombre de usuario duplicado |
-| HU-07 | Contraseña inválida |
-| HU-07 | Campos obligatorios vacíos |
+| HU    | Escenario                                              |
+| ----- | ------------------------------------------------------ |
+| HU-07 | Creación exitosa de usuario                            |
+| HU-07 | Empleado con múltiples usuarios                        |
+| HU-07 | Nombre de usuario duplicado                            |
+| HU-07 | Contraseña inválida                                    |
+| HU-07 | Campos obligatorios vacíos                             |
 | HU-07 | Acceso no autorizado al módulo de creación de usuarios |
 
 ### `@clientes` — HU-10
 
-| HU | Escenario |
-|----|-----------|
-| HU-10 | Registro exitoso de cliente |
-| HU-10 | Registro con teléfono secundario |
-| HU-10 | Cédula o NIT duplicado |
-| HU-10 | Correo duplicado en clientes |
-| HU-10 | Campos obligatorios vacíos |
-| HU-10 | Acceso no autorizado al módulo de clientes |
-| HU-11 | Edición exitosa de información general del cliente |
-| HU-11 | Edición de cédula o NIT por Administrador |
-| HU-11 | Campo cédula deshabilitado para rol Ventas |
-| HU-11 | Correo duplicado al editar cliente |
-| HU-11 | Cédula duplicada al editar cliente |
-| HU-11 | Campos obligatorios vacíos al editar cliente |
-| HU-11 | Acceso no autorizado al módulo de edición de clientes |
-| HU-12 | Listar todos los clientes con sus datos |
-| HU-12 | Buscar cliente por nombre |
-| HU-12 | Búsqueda por nombre sin resultados |
-| HU-12 | Buscar cliente por cédula o NIT |
-| HU-12 | Búsqueda por cédula sin resultados |
+| HU    | Escenario                                                    |
+| ----- | ------------------------------------------------------------ |
+| HU-10 | Registro exitoso de cliente                                  |
+| HU-10 | Registro con teléfono secundario                             |
+| HU-10 | Cédula o NIT duplicado                                       |
+| HU-10 | Correo duplicado en clientes                                 |
+| HU-10 | Campos obligatorios vacíos                                   |
+| HU-10 | Acceso no autorizado al módulo de clientes                   |
+| HU-11 | Edición exitosa de información general del cliente           |
+| HU-11 | Edición de cédula o NIT por Administrador                    |
+| HU-11 | Campo cédula deshabilitado para rol Ventas                   |
+| HU-11 | Correo duplicado al editar cliente                           |
+| HU-11 | Cédula duplicada al editar cliente                           |
+| HU-11 | Campos obligatorios vacíos al editar cliente                 |
+| HU-11 | Acceso no autorizado al módulo de edición de clientes        |
+| HU-12 | Listar todos los clientes con sus datos                      |
+| HU-12 | Buscar cliente por nombre                                    |
+| HU-12 | Búsqueda por nombre sin resultados                           |
+| HU-12 | Buscar cliente por cédula o NIT                              |
+| HU-12 | Búsqueda por cédula sin resultados                           |
 | HU-12 | Lista vacía de clientes _(requiere BD vacía — `@pendiente`)_ |
-| HU-12 | Acceso no autorizado al módulo de listado de clientes |
+| HU-12 | Acceso no autorizado al módulo de listado de clientes        |
 
 ### `@ventas` — HU-13
 
-| HU | Escenario |
-|----|-----------|
-| HU-13 | Creación exitosa de venta |
-| HU-13 | Agregar múltiples productos al detalle |
-| HU-13 | Stock insuficiente |
-| HU-13 | Venta sin productos en el detalle |
+| HU    | Escenario                                                                          |
+| ----- | ---------------------------------------------------------------------------------- |
+| HU-13 | Creación exitosa de venta                                                          |
+| HU-13 | Agregar múltiples productos al detalle                                             |
+| HU-13 | Stock insuficiente                                                                 |
+| HU-13 | Venta sin productos en el detalle                                                  |
 | HU-13 | Venta completada genera movimiento en caja _(requiere módulo Caja — `@pendiente`)_ |
-| HU-13 | Venta cancelada |
-| HU-13 | Acceso no autorizado al módulo de ventas |
+| HU-13 | Venta cancelada                                                                    |
+| HU-13 | Acceso no autorizado al módulo de ventas                                           |
 
 ---
 
