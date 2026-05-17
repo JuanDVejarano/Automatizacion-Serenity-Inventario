@@ -6,6 +6,7 @@
 /home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/pages/LoginPage.java
 /home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/pages/RegistrarEmpleadoPage.java
 /home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/pages/RegistrarVentaPage.java
+/home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/pages/TipoProductoPage.java
 /home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/pages/UnauthorizedPage.java
 /home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/pages/UsuariosPage.java
 /home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/runners/CucumberTestRunner.java
@@ -22,5 +23,6 @@
 /home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/steps/LogoutStepDefinitions.java
 /home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/steps/RegistrarClienteStepDefinitions.java
 /home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/steps/RegistrarEmpleadoStepDefinitions.java
+/home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/steps/RegistrarTipoProductoStepDefinitions.java
 /home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/steps/RegistrarVentaStepDefinitions.java
 /home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/steps/RolesStepDefinitions.java

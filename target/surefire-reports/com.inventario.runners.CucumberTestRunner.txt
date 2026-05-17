@@ -1,14 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.inventario.runners.CucumberTestRunner
 -------------------------------------------------------------------------------
-Tests run: 21, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 88.05 s <<< FAILURE! -- in com.inventario.runners.CucumberTestRunner
-HU-15 Consultar historial de ventas.Lista vacia de ventas -- Time elapsed: 2.951 s <<< ERROR!
-io.cucumber.java.PendingException: Este escenario requiere una base de datos sin ventas registradas.
-	at com.inventario.steps.ConsultarHistorialVentasStepDefinitions.elHistorialNoTieneVentasRegistradasParaEstaPrueba(ConsultarHistorialVentasStepDefinitions.java:102)
-	at ✽.el historial no tiene ventas registradas para esta prueba(file:///home/juanj/Projects-Test/serenity-inventario-login/src/test/resources/features/historial-ventas.feature:41)
-
-HU-13 Crear venta.Venta completada genera movimiento en caja -- Time elapsed: 2.188 s <<< ERROR!
-io.cucumber.java.PendingException: Este escenario requiere crear una venta y verificar el movimiento en el modulo de Caja.
-	at com.inventario.steps.RegistrarVentaStepDefinitions.existeUnaVentaCreadaEnEstadoALaEsperaDeReparto(RegistrarVentaStepDefinitions.java:65)
-	at ✽.existe una venta creada en estado A la espera de reparto(file:///home/juanj/Projects-Test/serenity-inventario-login/src/test/resources/features/registrar-venta.feature:41)
-
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.40 s -- in com.inventario.runners.CucumberTestRunner

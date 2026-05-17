@@ -1,7 +1,7 @@
-Serenity report generated 16-05-2026 22:05:16
+Serenity report generated 16-05-2026 22:14:53
 
-Test Cases:         86  (including 20 rows of test data)
-Passed:             81
+Test Cases:         90  (including 20 rows of test data)
+Passed:             85
 Failed:             1
 Failed with errors: 0
 Compromised:        0

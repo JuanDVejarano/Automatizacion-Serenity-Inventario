@@ -12,6 +12,7 @@ com/inventario/steps/EditarEmpleadoStepDefinitions.class
 com/inventario/steps/LogoutStepDefinitions.class
 com/inventario/steps/ActivarDesactivarUsuarioStepDefinitions.class
 com/inventario/pages/ListaVentasPage.class
+com/inventario/steps/RegistrarTipoProductoStepDefinitions.class
 com/inventario/steps/RegistrarVentaStepDefinitions.class
 com/inventario/pages/CrearUsuarioPage.class
 com/inventario/steps/ListarEmpleadosStepDefinitions.class
@@ -22,5 +23,6 @@ com/inventario/pages/UnauthorizedPage.class
 com/inventario/steps/CrearUsuarioStepDefinitions.class
 com/inventario/steps/ListarClientesStepDefinitions.class
 com/inventario/pages/UsuariosPage.class
+com/inventario/pages/TipoProductoPage.class
 com/inventario/steps/AgregarProductoVentaStepDefinitions.class
 com/inventario/runners/CucumberTestRunner.class
