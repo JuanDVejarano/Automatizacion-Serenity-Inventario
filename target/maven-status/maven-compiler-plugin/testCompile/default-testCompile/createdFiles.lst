@@ -20,8 +20,10 @@ com/inventario/steps/RolesStepDefinitions.class
 com/inventario/steps/ListarClientesStepDefinitions.class
 com/inventario/pages/TipoProductoPage.class
 com/inventario/steps/AgregarProductoVentaStepDefinitions.class
+com/inventario/steps/McpAgenteManualStepDefinitions.class
 com/inventario/runners/CucumberTestRunner.class
 com/inventario/steps/RegistrarProveedorStepDefinitions.class
+com/inventario/steps/ChatAgenteManualStepDefinitions.class
 com/inventario/pages/RegistrarVentaPage.class
 com/inventario/steps/McpProductosManualStepDefinitions.class
 com/inventario/steps/RegistrarClienteStepDefinitions.class

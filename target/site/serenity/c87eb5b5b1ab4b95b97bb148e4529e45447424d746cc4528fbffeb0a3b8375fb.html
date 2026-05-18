@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Serenity Reports</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.13.1/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.13.1/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.13.1/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0.min.js"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- JQuery-UI -->
+<link type="text/css" href="jqueryui/1.11.2-start/jquery-ui.min.css" rel="Stylesheet" />
+<script type="text/javascript" src="jqueryui/1.11.2-start/jquery-ui.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.13.1/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.13.1/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.13.1/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+
+
+
+    <script class="code" type="text/javascript">$(document).ready(function () {
+
+
+            $("#scenario-results").DataTable({
+                "order": [[0, "asc",], [3, "asc",]],
+                "language": {
+                    searchPlaceholder: "Filter",
+                    search: ""
+                },
+                columnDefs: [
+                    {type: 'time-elapsed-dhms', targets: 4}
+                ]
+            })
+            $("#manual-scenario-results").DataTable({
+                "order": [[0, "asc",], [1, "asc",]],
+                "language": {
+                    searchPlaceholder: "Filter",
+                    search: ""
+                },
+            })
+
+        // Results table
+        $('#test-results-table').DataTable({
+            "order": [[0, "asc",], [3, "asc",]],
+            "pageLength": 100,
+            "lengthMenu": [[25, 50, 100, 200, -1], [25, 50, 100, 200, "All"]]
+        });
+
+    })
+    ;
+    </script>
+</head>
+
+<body class="results-page">
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">InvSystem - Pruebas de Login</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+
+
+    <div id="contenttop">
+        <div class="middlebg">
+        <span class="breadcrumbs"><a href="index.html">Home</a>
+                > Tag 
+                > <span
+                    class="truncate-60">Clientes > Duration 1 To 10 Seconds</span>
+        </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 18-05-2026 01:21:27</span>
+    <br style="clear:left"/>
+</div>
+    <div class="clr"></div>
+    <div id="beforetable"></div>
+    <div id="results-dashboard">
+        <div class="middlb">
+            <div class="table">
+
+                <h2><i class='bi bi-tags'></i> Tag: Clientes > Duration 1 To 10 Seconds</h2>
+                <table class='overview'>
+                    <tr>
+                        <td width="375px" valign="top">
+                            <div class="test-count-summary">
+                                <div>
+
+                                    20 tests
+
+                                     |
+                                        <a href="f18eb9021c3636c270049d504902e0d45dffe463cefcb8d53378dade3f9b1169.csv" title="Download CSV"> <i class="bi bi-cloud-arrow-down" title="Download CSV"></i></a>
+
+                                    <p class="report-info"><i class="bi bi-info-circle"></i> Note that results include
+                                        data-driven scenarios containing tests ,
+                                        which may also contain results other than tests .</p>
+
+
+
+                                </div>
+                            </div>
+
+                            <div>
+                                <ul class="nav nav-tabs">
+                                    <li class="active">
+                                        <a data-toggle="tab" href="#summary"><i class="bi bi-house-door"></i> Summary</a>
+                                    </li>
+                                    <li>
+                                        <a data-toggle="tab" href="#tests"><i class="bi bi-speedometer"></i> Test
+                                            Results</a>
+                                    </li>
+                                </ul>
+
+                                <div class="card border">
+                                    <div class="tab-content" id="pills-tabContent">
+                                        <div id="summary" class="tab-pane fade in active">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-sm-4">
+    <div>
+        <h3><i class="bi bi-speedometer2"></i> Key Statistics</h3>
+        <div>
+            <table class="table table-striped table-hover">
+                <tbody>
+                <tr scope="row">
+                    <td>
+                        <i class="bi bi-card-checklist"></i> Number of Scenarios
+                    </td>
+                    <td>20</td>
+                </tr>
+                <tr scope="row">
+                    <td>
+                        <i class="bi bi-caret-right"></i> Total Number of Test Cases
+                    </td>
+                    <td>20</td>
+                </tr>
+                <tr scope="row">
+                    <td>
+                        <i class="bi bi-flag-fill"></i> Tests Started
+                    </td>
+                    <td>May 18, 2026 01:13:15</td>
+                </tr>
+                <tr scope="row">
+                    <td>
+                        <i class="bi bi-stop-circle"></i> Tests
+                        Finished
+                    </td>
+                    <td>May 18, 2026 01:17:46</td>
+                </tr>
+                <tr scope="row">
+                    <td>
+                        <i class="bi bi-stopwatch"></i> Total
+                        Duration
+                    </td>
+                    <td> 4m 30s</td>
+                </tr>
+                <tr scope="row">
+                    <td>
+                        <i class="bi bi-trophy"></i> Fastest Test
+                    </td>
+                    <td>2s</td>
+                </tr>
+                <tr scope="row">
+                    <td>
+                        <i class="bi bi-skip-start"></i> Slowest
+                        Test
+                    </td>
+                    <td>6s</td>
+                </tr>
+                <tr scope="row">
+                    <td>
+                        <i class="bi bi-stopwatch"></i> Average
+                        Execution Time
+                    </td>
+                    <td>3s</td>
+                </tr>
+                <tr scope="row">
+                    <td>
+                        <i class="bi bi-stopwatch-fill"></i> Total
+                        Execution Time
+                    </td>
+                    <td> 1m 17s</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <h4><i class="bi bi-check-square"></i> Test Outcomes</h4>
+                                                        <!-- Severity bar chart -->
+                                                        <div class="chart-container" style="position: relative; width:30vw">
+                                                            <canvas id="severityChart" width="300" height="300"></canvas>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-sm-4">
+                                                        <h4><i class="bi bi-graph-up"></i> Test Performance</h4>
+
+                                                        <!-- Duration bar chart -->
+                                                        <div class="chart-container" style="position: relative; width:30vw">
+                                                            <canvas id="durationChart" width="300" height="300"></canvas>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <!-- High level coverage bar chart -->
+                                                            <div class="chart-container" style="position: relative; width:60vw">
+                                                                <h3><i class="bi bi-reception-3"></i> Functional Coverage Overview</h3>
+                                                                <h4>Features</h4>
+                                                                <canvas id="coverageChart"></canvas>
+                                                            </div>
+                                                        </div>
+                                                </div>
+                                                    <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <h3>Tags</h3>
+
+                                                                <div class="card">
+                                                                    <div class="card-body">
+                                                                        <div>
+                                                                                <a href="e173e6e85602d9be589a9f0ed1a67e5dba634f57cc053f2565e96d857854da7f.html">
+                                                                                    <span class="badge" style="background-color:#a5c7ed; margin:1em;padding:4px;">
+                                                                                        <i class="bi bi-tag"></i> Pendiente&nbsp;&nbsp;&nbsp;1
+                                                                                    </span>
+                                                                                </a>
+                                                                                <a href="0e6526d506a8a0c1396ab20dbfcad94ad30533372cdf8874f7c88f3d03d954be.html">
+                                                                                    <span class="badge" style="background-color:#a5c7ed; margin:1em;padding:4px;">
+                                                                                        <i class="bi bi-tag"></i> Clientes&nbsp;&nbsp;&nbsp;20
+                                                                                    </span>
+                                                                                </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card">
+                                                                    <div class="card-body">
+                                                                            <h5 class="card-title">Context</h5>
+                                                                        <div>
+                                                                                <a href="46b54d9084ba9783130da16408afb27a4e4620f6bd966e731510c7395b9ddf5c.html">
+                                                                                    <span class="badge" style="background-color:#a5c7ed; margin:1em;padding:4px;">
+                                                                                        <i class="bi bi-tag"></i> Chrome, Linux&nbsp;&nbsp;&nbsp;20
+                                                                                    </span>
+                                                                                </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                        </div>
+                                                    </div>
+                                            </div>
+
+                                            <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="col-sm-11">
+                                                            <h3>Functional Coverage Details</h3>
+
+
+                                                                    <h4>Features</h4>
+
+                                                                    <table class="table feature-coverage-table" id="Feature">
+                                                                        <thead>
+                                                                        <tr>
+                                                                            <th>Feature</th>
+                                                                            <th style="width:1em;">Test&nbsp;Cases</th>
+                                                                            <th style="width:1em;">Scenarios</th>
+                                                                            <th style="width:1em;">%&nbsp;Pass</th>
+                                                                            <th style="width:1em;">Result</th>
+                                                                            <th>Coverage</th>
+                                                                        </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                            <a href="3b7665bdbaf870d9316cb201c00d0e98bbb88109d7906cffb3cd00293c1d1b7b.html" > HU-11 Editar informacion de cliente</a>
+                                                                                    </td>
+                                                                                    <td>7</td>
+                                                                                    <td>7</td>
+                                                                                    <td>100%</td>
+                                                                                    <td>
+                                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <div class="progress">
+                                                                                                <div class="progress-bar"
+                                                                                                     role="progressbar"
+                                                                                                     style="width: 100%; background-color: #b0cf73"
+                                                                                                     aria-valuenow="7"
+                                                                                                     title="100% success"
+                                                                                                     aria-valuemin="0"
+                                                                                                     aria-valuemax="100">
+                                                                                                </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                            <a href="89584cbc147852c3504fa4b3e50850f3bd8ff1ce84784ed32d78cc8eee4e489e.html" > HU-12 Listar y buscar clientes</a>
+                                                                                    </td>
+                                                                                    <td>7</td>
+                                                                                    <td>7</td>
+                                                                                    <td>86%</td>
+                                                                                    <td>
+                                                                                            <a href='##beforetable'><i class='bi bi-hourglass-top pending-icon ' title='PENDING'></i></a>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <div class="progress">
+                                                                                                <div class="progress-bar"
+                                                                                                     role="progressbar"
+                                                                                                     style="width: 85.714286%; background-color: #b0cf73"
+                                                                                                     aria-valuenow="6"
+                                                                                                     title="86% success"
+                                                                                                     aria-valuemin="0"
+                                                                                                     aria-valuemax="100">
+                                                                                                </div>
+                                                                                                <div class="progress-bar"
+                                                                                                     role="progressbar"
+                                                                                                     style="width: 14.285714%; background-color: #a5c7ed"
+                                                                                                     aria-valuenow="1"
+                                                                                                     title="14% pending"
+                                                                                                     aria-valuemin="0"
+                                                                                                     aria-valuemax="100">
+                                                                                                </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                            <a href="e09e83f8a4a088ab68c1032ae830984b0dd98e982f9cb221333ce41005810ecf.html" > HU-10 Registrar cliente</a>
+                                                                                    </td>
+                                                                                    <td>6</td>
+                                                                                    <td>6</td>
+                                                                                    <td>100%</td>
+                                                                                    <td>
+                                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <div class="progress">
+                                                                                                <div class="progress-bar"
+                                                                                                     role="progressbar"
+                                                                                                     style="width: 100%; background-color: #b0cf73"
+                                                                                                     aria-valuenow="6"
+                                                                                                     title="100% success"
+                                                                                                     aria-valuemin="0"
+                                                                                                     aria-valuemax="100">
+                                                                                                </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                        </div>
+                                                    </div>
+
+                                            </div>
+                                            <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <h3>Tags</h3>
+                    <div class="card">
+                        <div class="card-body">
+                            <div>
+                                    <a href="e173e6e85602d9be589a9f0ed1a67e5dba634f57cc053f2565e96d857854da7f.html">
+                                    <span class="tag-badge badge" style="background-color:#a5c7ed; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Pendiente&nbsp;&nbsp;&nbsp;1
+                                    </span>
+                                    </a>
+                                    <a href="0e6526d506a8a0c1396ab20dbfcad94ad30533372cdf8874f7c88f3d03d954be.html">
+                                    <span class="tag-badge badge" style="background-color:#a5c7ed; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Clientes&nbsp;&nbsp;&nbsp;20
+                                    </span>
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                                <h5 class="card-title">Context</h5>
+                            <div>
+                                    <a href="46b54d9084ba9783130da16408afb27a4e4620f6bd966e731510c7395b9ddf5c.html">
+                                    <span class="tag-badge badge" style="background-color:#a5c7ed; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Chrome, Linux&nbsp;&nbsp;&nbsp;20
+                                    </span>
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+                                            </div>
+                                        </div>
+                                        <div id="tests" class="tab-pane fade in">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <h3><i class="bi bi-gear"></i> Automated Tests</h3>
+
+                                            <table class="scenario-result-table table" id="scenario-results">
+                                                <thead>
+                                                <tr>
+                                                    <th>feature</th>
+                                                    <th class="test-name-column">Scenario</th>
+                                                    <th>Steps</th>
+                                                    <th>Started</th>
+                                                    <th>Total Duration</th>
+                                                    <th>Result</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                        <tr class="scenario-result SUCCESS">
+                                                            <td>
+                                                                    <a href="3b7665bdbaf870d9316cb201c00d0e98bbb88109d7906cffb3cd00293c1d1b7b.html">HU-11 Editar informacion de cliente</a>
+                                                            </td>
+                                                            <td><a href="e2d22d185bb1f95d12cb885ce643f96086bc88d1ad33da4227822e6d1721eff4.html">Edicion exitosa de informacion general del cliente</a>
+                                                            </td>
+                                                            <td>6</td>
+                                                            <td>01:13:15</td>
+                                                            <td>4s 698ms</td>
+                                                            <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="scenario-result SUCCESS">
+                                                            <td>
+                                                                    <a href="3b7665bdbaf870d9316cb201c00d0e98bbb88109d7906cffb3cd00293c1d1b7b.html">HU-11 Editar informacion de cliente</a>
+                                                            </td>
+                                                            <td><a href="5bad877793ffb6ed1feabb793ce24817f99589a51b25ca4aa5ae1503c9429d8d.html">Edicion de cedula o NIT por Administrador</a>
+                                                            </td>
+                                                            <td>6</td>
+                                                            <td>01:13:20</td>
+                                                            <td>4s 775ms</td>
+                                                            <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="scenario-result SUCCESS">
+                                                            <td>
+                                                                    <a href="3b7665bdbaf870d9316cb201c00d0e98bbb88109d7906cffb3cd00293c1d1b7b.html">HU-11 Editar informacion de cliente</a>
+                                                            </td>
+                                                            <td><a href="5d7c030a3259cd17f7130313b3be6d7899531954a130c81e65a69ff0820c2e54.html">Campo cedula deshabilitado para rol Ventas</a>
+                                                            </td>
+                                                            <td>5</td>
+                                                            <td>01:13:25</td>
+                                                            <td>4s 387ms</td>
+                                                            <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="scenario-result SUCCESS">
+                                                            <td>
+                                                                    <a href="3b7665bdbaf870d9316cb201c00d0e98bbb88109d7906cffb3cd00293c1d1b7b.html">HU-11 Editar informacion de cliente</a>
+                                                            </td>
+                                                            <td><a href="60cd2194a7656efd82b2193ffc6d2e10423e8a2e755d63a1d8b026332ae43f14.html">Correo duplicado al editar cliente</a>
+                                                            </td>
+                                                            <td>4</td>
+                                                            <td>01:13:29</td>
+                                                            <td>6s 238ms</td>
+                                                            <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="scenario-result SUCCESS">
+                                                            <td>
+                                                                    <a href="3b7665bdbaf870d9316cb201c00d0e98bbb88109d7906cffb3cd00293c1d1b7b.html">HU-11 Editar informacion de cliente</a>
+                                                            </td>
+                                                            <td><a href="6010042bea5b64521fd42fb6852cbe3eb5414eaf29701c4b1acdbcd2a4180aa8.html">Cedula duplicada al editar cliente</a>
+                                                            </td>
+                                                            <td>4</td>
+                                                            <td>01:13:36</td>
+                                                            <td>6s 591ms</td>
+                                                            <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="scenario-result SUCCESS">
+                                                            <td>
+                                                                    <a href="3b7665bdbaf870d9316cb201c00d0e98bbb88109d7906cffb3cd00293c1d1b7b.html">HU-11 Editar informacion de cliente</a>
+                                                            </td>
+                                                            <td><a href="6c1b9461f21cecc99a692ce9fe00b4cec3ee9acbbd59f49263bf5f4479e7fda6.html">Campos obligatorios vacios al editar cliente</a>
+                                                            </td>
+                                                            <td>6</td>
+                                                            <td>01:13:42</td>
+                                                            <td>4s 837ms</td>
+                                                            <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="scenario-result SUCCESS">
+                                                            <td>
+                                                                    <a href="3b7665bdbaf870d9316cb201c00d0e98bbb88109d7906cffb3cd00293c1d1b7b.html">HU-11 Editar informacion de cliente</a>
+                                                            </td>
+                                                            <td><a href="23eb3a687d35abfd52d9f94f5fb819c3c1453462802d07999eafa72fcc72d71d.html">Acceso no autorizado al modulo de edicion de clientes</a>
+                                                            </td>
+                                                            <td>5</td>
+                                                            <td>01:13:47</td>
+                                                            <td>2s 677ms</td>
+                                                            <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="scenario-result SUCCESS">
+                                                            <td>
+                                                                    <a href="89584cbc147852c3504fa4b3e50850f3bd8ff1ce84784ed32d78cc8eee4e489e.html">HU-12 Listar y buscar clientes</a>
+                                                            </td>
+                                                            <td><a href="fb44239d0a23711a7065d97a2f4687137ce6064b992a60324ceded250d5d7446.html">Listar todos los clientes con sus datos</a>
+                                                            </td>
+                                                            <td>5</td>
+                                                            <td>01:16:12</td>
+                                                            <td>4s 026ms</td>
+                                                            <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="scenario-result SUCCESS">
+                                                            <td>
+                                                                    <a href="89584cbc147852c3504fa4b3e50850f3bd8ff1ce84784ed32d78cc8eee4e489e.html">HU-12 Listar y buscar clientes</a>
+                                                            </td>
+                                                            <td><a href="4a5f746c96e2ae02090a3cfda29bfb28ff24fc79e606e3c2f8c4e5c3e7a31b58.html">Buscar cliente por nombre</a>
+                                                            </td>
+                                                            <td>4</td>
+                                                            <td>01:16:16</td>
+                                                            <td>4s 798ms</td>
+                                                            <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="scenario-result SUCCESS">
+                                                            <td>
+                                                                    <a href="89584cbc147852c3504fa4b3e50850f3bd8ff1ce84784ed32d78cc8eee4e489e.html">HU-12 Listar y buscar clientes</a>
+                                                            </td>
+                                                            <td><a href="37d3c3ca2e62ea0364896e6a737826b5c204f57691b06e622e1f26768edc0526.html">Busqueda por nombre sin resultados</a>
+                                                            </td>
+                                                            <td>4</td>
+                                                            <td>01:16:21</td>
+                                                            <td>2s 883ms</td>
+                                                            <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="scenario-result SUCCESS">
+                                                            <td>
+                                                                    <a href="89584cbc147852c3504fa4b3e50850f3bd8ff1ce84784ed32d78cc8eee4e489e.html">HU-12 Listar y buscar clientes</a>
+                                                            </td>
+                                                            <td><a href="4060c4cf6a44db9c45a9c8f3da081ea2e901fe616562210cabab9f09ddb0045a.html">Buscar cliente por cedula o NIT</a>
+                                                            </td>
+                                                            <td>4</td>
+                                                            <td>01:16:24</td>
+                                                            <td>4s 489ms</td>
+                                                            <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="scenario-result SUCCESS">
+                                                            <td>
+                                                                    <a href="89584cbc147852c3504fa4b3e50850f3bd8ff1ce84784ed32d78cc8eee4e489e.html">HU-12 Listar y buscar clientes</a>
+                                                            </td>
+                                                            <td><a href="ad06da4b553576509b5e83b21e27cb7ab3b9a40c1c02100be990b63fef0907d3.html">Busqueda por cedula sin resultados</a>
+                                                            </td>
+                                                            <td>4</td>
+                                                            <td>01:16:29</td>
+                                                            <td>2s 835ms</td>
+                                                            <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="scenario-result PENDING">
+                                                            <td>
+                                                                    <a href="89584cbc147852c3504fa4b3e50850f3bd8ff1ce84784ed32d78cc8eee4e489e.html">HU-12 Listar y buscar clientes</a>
+                                                            </td>
+                                                            <td><a href="23e730c61ad1c39f8b98cd3e8107c73bd9a78a6cadc6e70f2dbe5b7a88789e49.html">Lista vacia de clientes</a>
+                                                            </td>
+                                                            <td>4</td>
+                                                            <td>01:16:32</td>
+                                                            <td>2s 220ms</td>
+                                                            <td><a href='##beforetable'><i class='bi bi-hourglass-top pending-icon ' title='PENDING'></i></a> <span style="display:none">PENDING</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="scenario-result SUCCESS">
+                                                            <td>
+                                                                    <a href="89584cbc147852c3504fa4b3e50850f3bd8ff1ce84784ed32d78cc8eee4e489e.html">HU-12 Listar y buscar clientes</a>
+                                                            </td>
+                                                            <td><a href="54fbea01238e327e9f7f0c5991cad129a63242c7b60fae30bdd8fe42eca62d77.html">Acceso no autorizado al modulo de listado de clientes</a>
+                                                            </td>
+                                                            <td>5</td>
+                                                            <td>01:16:34</td>
+                                                            <td>2s 732ms</td>
+                                                            <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="scenario-result SUCCESS">
+                                                            <td>
+                                                                    <a href="e09e83f8a4a088ab68c1032ae830984b0dd98e982f9cb221333ce41005810ecf.html">HU-10 Registrar cliente</a>
+                                                            </td>
+                                                            <td><a href="641e0662cd204952381f54010fbb15fcfc39c311ec993d5c5bf70f1c4dbef2a6.html">Registro exitoso de cliente</a>
+                                                            </td>
+                                                            <td>3</td>
+                                                            <td>01:17:26</td>
+                                                            <td>2s 526ms</td>
+                                                            <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="scenario-result SUCCESS">
+                                                            <td>
+                                                                    <a href="e09e83f8a4a088ab68c1032ae830984b0dd98e982f9cb221333ce41005810ecf.html">HU-10 Registrar cliente</a>
+                                                            </td>
+                                                            <td><a href="93efc957633ab832a49dee0e6e55da6ed68521662d6ea0f09c6afdf8bcc13bb5.html">Registro con telefono secundario</a>
+                                                            </td>
+                                                            <td>3</td>
+                                                            <td>01:17:29</td>
+                                                            <td>2s 685ms</td>
+                                                            <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="scenario-result SUCCESS">
+                                                            <td>
+                                                                    <a href="e09e83f8a4a088ab68c1032ae830984b0dd98e982f9cb221333ce41005810ecf.html">HU-10 Registrar cliente</a>
+                                                            </td>
+                                                            <td><a href="3a1e6da875c2a2322e959974f4bf34b7f58ad4afbfb26268f47cba53de60cc21.html">Cedula o NIT duplicado</a>
+                                                            </td>
+                                                            <td>4</td>
+                                                            <td>01:17:31</td>
+                                                            <td>4s 520ms</td>
+                                                            <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="scenario-result SUCCESS">
+                                                            <td>
+                                                                    <a href="e09e83f8a4a088ab68c1032ae830984b0dd98e982f9cb221333ce41005810ecf.html">HU-10 Registrar cliente</a>
+                                                            </td>
+                                                            <td><a href="388c9ae6548043bc1c8f5dac69f4421aa130a1ace56c937c4147976be73c45a5.html">Correo duplicado en clientes</a>
+                                                            </td>
+                                                            <td>4</td>
+                                                            <td>01:17:36</td>
+                                                            <td>4s 552ms</td>
+                                                            <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="scenario-result SUCCESS">
+                                                            <td>
+                                                                    <a href="e09e83f8a4a088ab68c1032ae830984b0dd98e982f9cb221333ce41005810ecf.html">HU-10 Registrar cliente</a>
+                                                            </td>
+                                                            <td><a href="76bbf6dbe0ad18d0bb4da631d4dfc64b10c27dfcd1186a6d8bfdb5b631115938.html">Campos obligatorios vacios en clientes</a>
+                                                            </td>
+                                                            <td>4</td>
+                                                            <td>01:17:41</td>
+                                                            <td>2s 328ms</td>
+                                                            <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="scenario-result SUCCESS">
+                                                            <td>
+                                                                    <a href="e09e83f8a4a088ab68c1032ae830984b0dd98e982f9cb221333ce41005810ecf.html">HU-10 Registrar cliente</a>
+                                                            </td>
+                                                            <td><a href="dff7319971d43346d19d9e05cd9ec77ba8f298dd9574f65cb8f6b8a733dfa9f8.html">Acceso no autorizado al modulo de clientes</a>
+                                                            </td>
+                                                            <td>5</td>
+                                                            <td>01:17:43</td>
+                                                            <td>2s 695ms</td>
+                                                            <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
+                                                            </td>
+                                                        </tr>
+                                                </tbody>
+                                            </table>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <h3><i class="bi bi-hand-index-thumb"></i> Manual Tests</h3>
+
+                                                No manual tests were recorded
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <h3>Tags</h3>
+                    <div class="card">
+                        <div class="card-body">
+                            <div>
+                                    <a href="e173e6e85602d9be589a9f0ed1a67e5dba634f57cc053f2565e96d857854da7f.html">
+                                    <span class="tag-badge badge" style="background-color:#a5c7ed; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Pendiente&nbsp;&nbsp;&nbsp;1
+                                    </span>
+                                    </a>
+                                    <a href="0e6526d506a8a0c1396ab20dbfcad94ad30533372cdf8874f7c88f3d03d954be.html">
+                                    <span class="tag-badge badge" style="background-color:#a5c7ed; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Clientes&nbsp;&nbsp;&nbsp;20
+                                    </span>
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                                <h5 class="card-title">Context</h5>
+                            <div>
+                                    <a href="46b54d9084ba9783130da16408afb27a4e4620f6bd966e731510c7395b9ddf5c.html">
+                                    <span class="tag-badge badge" style="background-color:#a5c7ed; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Chrome, Linux&nbsp;&nbsp;&nbsp;20
+                                    </span>
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="beforefooter"></div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <span class="version">Serenity BDD version 4.1.20</span>
+        </div>
+    </div>
+</div>
+
+<!-- Chart data -->
+    <!-- PIE CHART -->
+    <script>
+
+        // The results pie chart
+        const outcomeChartCtx = document.getElementById('resultChart');
+
+        // Options define for display value on top of bars
+        const outcomeDetailsReports = [
+            { title: 'Passing Test Cases', link: "ecbc9d9e0640f91b4d0f4838875712da275899f8cfa92fa1fef88528147e490d.html" },
+            { title: 'Pending Test Cases', link: "0f49a0777ba6a052b2d4f4e44eb114b41e5d53985290bb7ad777105c9ee83ff1.html" },
+            { title: 'Ignored Test Cases', link: "ae178d4b8d2cfc719b9d5e3e1243c4dc6ec02ab048cd3b3ec59b949c0d191ed4.html" },
+            { title: 'Skipped Test Cases', link: "6237c8e075b0493b2d52a19dff9a1f5825afd1dab719647b98222349e6125b0f.html" },
+            { title: 'Aborted Test Cases',  link: "ec29e268e24cc9343ef492fd2201bac5ca03979f2683b123ab7460436ed9d4b5.html"},
+            { title: 'Failed Test Cases', link: "d763cd0ea90e3328ec904fb6f462f3d0f77380c774ea7c77a30bc44f6622e649.html"  },
+            { title: 'Broken Test Cases', link: "983fd44990fa0ce4d450ca04a2ee99b8db18d799fe44b8e5f23495acec71372c.html"    },
+            { title: 'Compromised Test Cases',  link: "ec83b5736ed618427c61b6f9170b8ff74be36e9b5961afa82a0c98ea98a05750.html" },
+        ]
+        const outcomeData = {
+            labels: ['Passing Test Cases', 'Pending Test Cases', 'Ignored Test Cases', 'Skipped Test Cases', 'Aborted Test Cases', 'Failed Test Cases', 'Broken Test Cases', 'Compromised Test Cases','Undefined Test Cases'],
+            datasets: [{
+                label: 'Test Results',
+                fill: false,
+                data: [{meta: 'Passing tests', value: 19}, {meta: 'Pending tests', value: 1}, {meta: 'Ignored tests', value: 0}, {meta: 'Skipped tests', value: 0}, {meta: 'Aborted tests', value: 0}, {meta: 'Failing tests', value: 0}, {meta: 'Broken tests', value: 0}, {meta: 'Compromised tests', value: 0}],
+                backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
+                borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
+                borderWidth: 1,
+            }]
+        }
+        const outcomeOptions = {
+            responsive: true,
+            plugins: {
+                legend: {
+                    display: true,
+                    position: 'bottom'
+                },
+                // Change options for ALL labels of THIS CHART
+                datalabels: {
+                    color: '#444444',
+                    'font.weight': 'bold',
+                    formatter: (value, ctx) => {
+                        let sum = 0;
+                        let dataArr = ctx.chart.data.datasets[0].data;
+                        dataArr.map(data => {
+                            sum += data;
+                        });
+                        let percentage = (value * 100 / sum).toFixed(0) + "%";
+                        if (percentage === '0%' || percentage === 'NaN%') {
+                            return '';
+                        } else {
+                            return percentage;
+                        }
+                    },
+                },
+            }
+        }
+
+        const outcomeChart = new Chart(outcomeChartCtx, {
+            type: 'doughnut',
+            data: outcomeData,
+            options: outcomeOptions,
+            plugins: [
+                {
+                    id: 'text',
+                    beforeDraw: function (chart, a, b) {
+                        var width = chart.width,
+                            height = chart.height,
+                            ctx = chart.ctx;
+
+                        ctx.restore();
+                        var fontSize = (height / 200).toFixed(1);
+                        ctx.font = fontSize + "em sans-serif";
+                        ctx.textBaseline = "middle";
+
+                        var text = "95%"
+                        textX = 10 + Math.round((width - ctx.measureText(text).width) / 2);
+                        textY = (height / 2) - 40;
+
+                        ctx.fillText(text, textX, textY);
+                        ctx.save();
+                    }
+                }]
+        });
+
+        function clickHandler(click) {
+            const points = outcomeChart.getElementsAtEventForMode(click, 'nearest', {intersect: true}, true);
+            if (points.length) {
+                const firstPoint = points[0];
+                window.open(outcomeDetailsReports[firstPoint.index].link, "_self")
+
+            }
+        }
+        outcomeChartCtx.onclick = clickHandler;
+    </script>
+    <!-- END PIE CHART -->
+
+    <!-- SUMMARY BAR CHART -->
+    <script>
+
+        // The Severity bar chart
+        const severityChartCtx = document.getElementById('severityChart');
+
+        // Options define for display value on top of bars
+
+        const severityDetailsReports = [
+            { title: 'Passing Scenarios', link: "ecbc9d9e0640f91b4d0f4838875712da275899f8cfa92fa1fef88528147e490d.html" },
+            { title: 'Pending Scenarios', link: "0f49a0777ba6a052b2d4f4e44eb114b41e5d53985290bb7ad777105c9ee83ff1.html" },
+            { title: 'Ignored Scenarios', link: "ae178d4b8d2cfc719b9d5e3e1243c4dc6ec02ab048cd3b3ec59b949c0d191ed4.html" },
+            { title: 'Skipped Scenarios', link: "6237c8e075b0493b2d52a19dff9a1f5825afd1dab719647b98222349e6125b0f.html" },
+            { title: 'Aborted Scenarios',  link: "ec29e268e24cc9343ef492fd2201bac5ca03979f2683b123ab7460436ed9d4b5.html"},
+            { title: 'Failed Scenarios', link: "d763cd0ea90e3328ec904fb6f462f3d0f77380c774ea7c77a30bc44f6622e649.html"  },
+            { title: 'Broken Scenarios', link: "983fd44990fa0ce4d450ca04a2ee99b8db18d799fe44b8e5f23495acec71372c.html"    },
+            { title: 'Compromised Scenarios',  link: "ec83b5736ed618427c61b6f9170b8ff74be36e9b5961afa82a0c98ea98a05750.html" },
+        ]
+        const severityData = {
+            labels: ['Passing', 'Pending', 'Ignored', 'Skipped', 'Aborted', 'Failed', 'Broken', 'Compromised'],
+            datasets: [
+                {
+                    label: 'Automated',
+                    data: [19,1,0,0,0,0,0,0],
+                    backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
+                    borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
+                    borderWidth: 1
+                },
+                {
+                    label: 'Manual',
+                    data: [0,0,0,0,0,0,0,0],
+                    backgroundColor: ['rgba(153,204,51,0.25)','rgba(165, 199, 238, 0.25)','rgba(168, 168, 168, 0.25)','rgba(238, 224, 152, 0.375)','rgba(255, 153, 102, 0.25)','rgba(255, 22, 49, 0.25)','rgba(255, 97, 8, 0.25)','rgba(255, 104, 255, 0.25)','rgba(83, 50, 168, 0.25)'],
+                    borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
+                    borderWidth: 1
+                },
+
+            ]
+        }
+        const severityOptions = {
+            responsive: true,
+            skipNull: true,
+            scales: {
+                x: {
+                    stacked: true,
+                },
+                y: {
+                    stacked: true,
+                }
+            },
+            plugins: {
+                // Change options for ALL labels of THIS CHART
+                datalabels: {
+                    color: '#444444',
+                    'font.weight': 'bold',
+                    formatter: (value, ctx) => {
+                        if (value === 0) {
+                            return '';
+                        } else {
+                            return value;
+                        }
+                    },
+                }
+            }
+        }
+        const severityChart = new Chart(severityChartCtx, {
+            type: 'bar',
+            data: severityData,
+            options: severityOptions
+        });
+
+        function clickHandler(click) {
+            const points = severityChart.getElementsAtEventForMode(click, 'nearest', {intersect: true}, true);
+            if (points.length) {
+                const firstPoint = points[0];
+                window.open(severityDetailsReports[firstPoint.index].link, "_self")
+
+            }
+        }
+        severityChartCtx.onclick = clickHandler;
+    </script>
+    <!-- END SUMMARY CHART -->
+
+    <!-- DURATION CHART -->
+    <script>
+
+        // Options define for display value on top of bars
+        const durationDetailsReports = [
+                {title: "Under 1 second", link: "dd0426aaf5beb5e428576a9da03b18945e3c6f8d7a0fa36d27cd92015ca341be.html"},
+                {title: "1 to 10 seconds", link: "c87eb5b5b1ab4b95b97bb148e4529e45447424d746cc4528fbffeb0a3b8375fb.html"},
+                {title: "10 to 30 seconds", link: "404ff215252063c5a2725a438d4dba66e028bf2d9a58c9b0740b3634f0d51de0.html"},
+                {title: "30 to 60 seconds", link: "6284fc27eb0719f23205f050b8ca32e1e8b2ad136433933673f2cf948ee26e4d.html"},
+                {title: "1 to 2 minutes", link: "3fff5cf89ec06cec590a494535a45a3b665de1cec8af28b58ad5fa644850cccb.html"},
+                {title: "2 to 5 minutes", link: "ca9255c97892b7921bd8cfa86c5a61094a86c39dd5a102c3aede72933740fa4d.html"},
+                {title: "5 to 10 minutes", link: "dc377ea68764d39bbda44dcc81281271f5aa4ba02f98e8ae2c231d0ebe8edcfb.html"},
+                {title: "10 minutes or over", link: "5eed8675a79bdb4ec2db821d3a15f1d28c5b62ecec322d2f6a92e48078d694e0.html"},
+        ]
+        // The Severity bar chart
+        const durationChartCtx = document.getElementById('durationChart');
+
+        // Options define for display value on top of bars
+
+        const durationData = {
+            labels: ['Under 1 second','1 to 10 seconds','10 to 30 seconds','30 to 60 seconds','1 to 2 minutes','2 to 5 minutes','5 to 10 minutes','10 minutes or over'],
+            datasets: [{
+                label: 'Number of tests per duration',
+                fill: false,
+                data: ['0','20','0','0','0','0','0','0'],
+                backgroundColor: 'rgba(83, 146, 255,0.5)',
+                borderColor: 'rgba(83, 146, 255, 1)',
+            }]
+        }
+        const durationOptions = {
+            responsive: true,
+            plugins: {
+                // Change options for ALL labels of THIS CHART
+                datalabels: {
+                    color: '#444444',
+                    'font.weight': 'bold',
+                    formatter: (value, ctx) => {
+                        if (value > 0) {
+                            return value;
+                        } else {
+                            return '';
+                        }
+                    },
+                },
+                tooltip: {
+                    enabled: true,
+                    usePointStyle: true,
+                    callbacks: {
+                        label: (data) => {
+                            return data.parsed.y + ' tests'
+                        }
+                    },
+                },
+            },
+        }
+
+        const durationChart = new Chart(durationChartCtx, {
+            type: 'bar',
+            data: durationData,
+            options: durationOptions
+        });
+
+        function durationClickHandler(click) {
+            const points = durationChart.getElementsAtEventForMode(click, 'nearest', {intersect: true}, true);
+            if (points.length) {
+                const firstPoint = points[0];
+                window.open(durationDetailsReports[firstPoint.index].link, "_self")
+
+            }
+        }
+
+        durationChartCtx.onclick = durationClickHandler;
+    </script>
+    <!-- END DURATION CHART -->
+
+
+
+    <!-- COVERAGE BAR CHART -->
+    <script>
+
+        // The coverage bar chart
+        const coverageChartCtx = document.getElementById('coverageChart');
+
+        // Options define for display value on top of bars
+
+        const coverageReports = [
+            {
+                title: 'HU-11 Editar informacion de cliente',
+                result: 'SUCCESS',
+                link: "3b7665bdbaf870d9316cb201c00d0e98bbb88109d7906cffb3cd00293c1d1b7b.html"
+            },
+            {
+                title: 'HU-12 Listar y buscar clientes',
+                result: 'PENDING',
+                link: "89584cbc147852c3504fa4b3e50850f3bd8ff1ce84784ed32d78cc8eee4e489e.html"
+            },
+            {
+                title: 'HU-10 Registrar cliente',
+                result: 'SUCCESS',
+                link: "e09e83f8a4a088ab68c1032ae830984b0dd98e982f9cb221333ce41005810ecf.html"
+            },
+        ]
+        const coverageData = {
+            labels: [
+                'HU-11 Editar informacion de cliente',
+                'HU-12 Listar y buscar clientes',
+                'HU-10 Registrar cliente',
+            ],
+            datasets: [
+                {
+                    label: ['Passing Tests'],
+                    data: [7,6,6],
+                    backgroundColor: [ 'rgba(153,204,51,0.5)' ]
+                },
+                {
+                    label: ['Pending Tests'],
+                    data: [0,1,0],
+                    backgroundColor: [ 'rgba(165, 199, 238, 0.5)' ]
+                },
+                {
+                    label: ['Ignored Tests'],
+                    data: [0,0,0],
+                    backgroundColor: [ 'rgba(168, 168, 168, 0.5)' ]
+                },
+                {
+                    label: ['Skipped Tests'],
+                    data: [0,0,0],
+                    backgroundColor: [ 'rgba(238, 224, 152, 0.75)' ]
+                },
+                {
+                    label: ['Aborted Tests'],
+                    data: [0,0,0],
+                    backgroundColor: [ 'rgba(255, 153, 102, 0.5)' ]
+                },
+                {
+                    label: ['Failed Tests'],
+                    data: [0,0,0],
+                    backgroundColor: [ 'rgba(255, 22, 49, 0.5)' ]
+                },
+                {
+                    label: ['Errors'],
+                    data: [0,0,0],
+                    backgroundColor: [ 'rgba(255, 97, 8, 0.5)' ]
+                },
+                {
+                    label: ['Compromised Tests'],
+                    data: [0,0,0],
+                    backgroundColor: [ 'rgba(255, 104, 255, 0.5)' ]
+                },
+            ]
+        }
+        const coverageOptions = {
+            responsive: true,
+            indexAxis: 'y',
+            // barPercentage: ,
+            barThickness: 'flex',
+            maxBarThickness: 30,
+            minBarLength: 2,
+            skipNull: true,
+            scales: {
+                x: {
+                    stacked: true,
+                },
+                y: {
+                    stacked: true,
+                }
+            },
+            plugins: {
+                // Change options for ALL labels of THIS CHART
+                datalabels: {
+                    color: '#444444',
+                    'font.weight': 'bold'
+                },
+                tooltip: {
+                    enabled: true,
+                    usePointStyle: true,
+                },
+            },
+        }
+
+        const coverageChart = new Chart(coverageChartCtx, {
+            type: 'bar',
+            data: coverageData,
+            options: coverageOptions
+        });
+
+        function coverageClickHandler(click) {
+            const points = coverageChart.getElementsAtEventForMode(click, 'nearest', {intersect: true}, true);
+            if (points.length) {
+                const firstPoint = points[0];
+                if (coverageReports[firstPoint.index].link) {
+                    window.open(coverageReports[firstPoint.index].link, "_self")
+                }
+            }
+        }
+
+        coverageChartCtx.onclick = coverageClickHandler;
+    </script>
+    <!-- END COVERAGE CHART -->
+
+</body>
+</html>

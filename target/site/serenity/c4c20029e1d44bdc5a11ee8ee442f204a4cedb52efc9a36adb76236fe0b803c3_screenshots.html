@@ -1,0 +1,284 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.13.1/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.13.1/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.13.1/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0.min.js"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">InvSystem - Pruebas de Login</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="96df0a8bd1e2a91ea603f34bd90b4704220d8adafc98d0c228f479677042bbe6.html">Roles</a></span>
+                > <span class="truncate-60"><a
+                    href="c4c20029e1d44bdc5a11ee8ee442f204a4cedb52efc9a36adb76236fe0b803c3.html">Acceso denegado al intentar acceder a un modulo no permitido </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 18-05-2026 01:20</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">HU-03 Roles Predefinidos Del Sistema </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                Como administrador del sistema<br />
+Quiero que el sistema tenga roles predefinidos<br />
+Para controlar el acceso a los modulos segun la funcion de cada usuario
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="6c5512236937b92cd7a296b24edb966c2bd94be46b8910f8b129a42d6150eb25.html">1 To 10 Seconds
+                                        (Duration)
+                                </a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Acceso denegado al intentar acceder a un modulo no permitido
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given el usuario inicia sesion con el rol "&lt;rol&gt;"<br>When el usuario intenta acceder directamente a la ruta "&lt;ruta&gt;"<br>Then el sistema muestra la pagina de acceso denegado<br>And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="16639a28f581f5c77d71eca2dcbbd879e25d3a6f85393d1f808eb3bb7a8b9e27.png" title=" 1: Acceso denegado al intentar acceder a un modulo no permitido ({rol=Ventas, ruta=/caja/saldo})" width="0"/>
+                <img src="16639a28f581f5c77d71eca2dcbbd879e25d3a6f85393d1f808eb3bb7a8b9e27.png" title=" Given el usuario inicia sesion con el rol &quot;Ventas&quot;" width="0"/>
+                <img src="16639a28f581f5c77d71eca2dcbbd879e25d3a6f85393d1f808eb3bb7a8b9e27.png" title=" When el usuario intenta acceder directamente a la ruta &quot;/caja/saldo&quot;" width="0"/>
+                <img src="51fb413c85d146e9a3a0a93857913c90f904420741b1b725f49c62030939156f.png" title=" Then el sistema muestra la pagina de acceso denegado" width="0"/>
+                <img src="51fb413c85d146e9a3a0a93857913c90f904420741b1b725f49c62030939156f.png" title=" And el sistema muestra el mensaje &quot;No tiene permisos para acceder a este modulo&quot;" width="0"/>
+                <img src="51fb413c85d146e9a3a0a93857913c90f904420741b1b725f49c62030939156f.png" title=" 1: Acceso denegado al intentar acceder a un modulo no permitido ({rol=Ventas, ruta=/caja/saldo}) (completed)" width="0"/>
+                <img src="16639a28f581f5c77d71eca2dcbbd879e25d3a6f85393d1f808eb3bb7a8b9e27.png" title=" 2: Acceso denegado al intentar acceder a un modulo no permitido ({rol=Ventas, ruta=/rrhh/empleados})" width="0"/>
+                <img src="16639a28f581f5c77d71eca2dcbbd879e25d3a6f85393d1f808eb3bb7a8b9e27.png" title=" Given el usuario inicia sesion con el rol &quot;Ventas&quot;" width="0"/>
+                <img src="51fb413c85d146e9a3a0a93857913c90f904420741b1b725f49c62030939156f.png" title=" When el usuario intenta acceder directamente a la ruta &quot;/rrhh/empleados&quot;" width="0"/>
+                <img src="51fb413c85d146e9a3a0a93857913c90f904420741b1b725f49c62030939156f.png" title=" Then el sistema muestra la pagina de acceso denegado" width="0"/>
+                <img src="51fb413c85d146e9a3a0a93857913c90f904420741b1b725f49c62030939156f.png" title=" And el sistema muestra el mensaje &quot;No tiene permisos para acceder a este modulo&quot;" width="0"/>
+                <img src="51fb413c85d146e9a3a0a93857913c90f904420741b1b725f49c62030939156f.png" title=" 2: Acceso denegado al intentar acceder a un modulo no permitido ({rol=Ventas, ruta=/rrhh/empleados}) (completed)" width="0"/>
+                <img src="16639a28f581f5c77d71eca2dcbbd879e25d3a6f85393d1f808eb3bb7a8b9e27.png" title=" 3: Acceso denegado al intentar acceder a un modulo no permitido ({rol=Tesoreria, ruta=/ventas/ventas})" width="0"/>
+                <img src="16639a28f581f5c77d71eca2dcbbd879e25d3a6f85393d1f808eb3bb7a8b9e27.png" title=" Given el usuario inicia sesion con el rol &quot;Tesoreria&quot;" width="0"/>
+                <img src="16639a28f581f5c77d71eca2dcbbd879e25d3a6f85393d1f808eb3bb7a8b9e27.png" title=" When el usuario intenta acceder directamente a la ruta &quot;/ventas/ventas&quot;" width="0"/>
+                <img src="51fb413c85d146e9a3a0a93857913c90f904420741b1b725f49c62030939156f.png" title=" Then el sistema muestra la pagina de acceso denegado" width="0"/>
+                <img src="51fb413c85d146e9a3a0a93857913c90f904420741b1b725f49c62030939156f.png" title=" And el sistema muestra el mensaje &quot;No tiene permisos para acceder a este modulo&quot;" width="0"/>
+                <img src="51fb413c85d146e9a3a0a93857913c90f904420741b1b725f49c62030939156f.png" title=" 3: Acceso denegado al intentar acceder a un modulo no permitido ({rol=Tesoreria, ruta=/ventas/ventas}) (completed)" width="0"/>
+                <img src="1a8eaeafb1b61b0cf18df4e648a78589d90e8892ba1d1c470e1b15a1e8f036cf.png" title=" 4: Acceso denegado al intentar acceder a un modulo no permitido ({rol=Tesoreria, ruta=/rrhh/empleados})" width="0"/>
+                <img src="1a8eaeafb1b61b0cf18df4e648a78589d90e8892ba1d1c470e1b15a1e8f036cf.png" title=" Given el usuario inicia sesion con el rol &quot;Tesoreria&quot;" width="0"/>
+                <img src="51fb413c85d146e9a3a0a93857913c90f904420741b1b725f49c62030939156f.png" title=" When el usuario intenta acceder directamente a la ruta &quot;/rrhh/empleados&quot;" width="0"/>
+                <img src="51fb413c85d146e9a3a0a93857913c90f904420741b1b725f49c62030939156f.png" title=" Then el sistema muestra la pagina de acceso denegado" width="0"/>
+                <img src="51fb413c85d146e9a3a0a93857913c90f904420741b1b725f49c62030939156f.png" title=" And el sistema muestra el mensaje &quot;No tiene permisos para acceder a este modulo&quot;" width="0"/>
+                <img src="51fb413c85d146e9a3a0a93857913c90f904420741b1b725f49c62030939156f.png" title=" 4: Acceso denegado al intentar acceder a un modulo no permitido ({rol=Tesoreria, ruta=/rrhh/empleados}) (completed)" width="0"/>
+                <img src="16639a28f581f5c77d71eca2dcbbd879e25d3a6f85393d1f808eb3bb7a8b9e27.png" title=" 5: Acceso denegado al intentar acceder a un modulo no permitido ({rol=Produccion, ruta=/ventas/ventas})" width="0"/>
+                <img src="16639a28f581f5c77d71eca2dcbbd879e25d3a6f85393d1f808eb3bb7a8b9e27.png" title=" Given el usuario inicia sesion con el rol &quot;Produccion&quot;" width="0"/>
+                <img src="51fb413c85d146e9a3a0a93857913c90f904420741b1b725f49c62030939156f.png" title=" When el usuario intenta acceder directamente a la ruta &quot;/ventas/ventas&quot;" width="0"/>
+                <img src="51fb413c85d146e9a3a0a93857913c90f904420741b1b725f49c62030939156f.png" title=" Then el sistema muestra la pagina de acceso denegado" width="0"/>
+                <img src="51fb413c85d146e9a3a0a93857913c90f904420741b1b725f49c62030939156f.png" title=" And el sistema muestra el mensaje &quot;No tiene permisos para acceder a este modulo&quot;" width="0"/>
+                <img src="51fb413c85d146e9a3a0a93857913c90f904420741b1b725f49c62030939156f.png" title=" 5: Acceso denegado al intentar acceder a un modulo no permitido ({rol=Produccion, ruta=/ventas/ventas}) (completed)" width="0"/>
+                <img src="16639a28f581f5c77d71eca2dcbbd879e25d3a6f85393d1f808eb3bb7a8b9e27.png" title=" 6: Acceso denegado al intentar acceder a un modulo no permitido ({rol=Produccion, ruta=/rrhh/empleados})" width="0"/>
+                <img src="16639a28f581f5c77d71eca2dcbbd879e25d3a6f85393d1f808eb3bb7a8b9e27.png" title=" Given el usuario inicia sesion con el rol &quot;Produccion&quot;" width="0"/>
+                <img src="16639a28f581f5c77d71eca2dcbbd879e25d3a6f85393d1f808eb3bb7a8b9e27.png" title=" When el usuario intenta acceder directamente a la ruta &quot;/rrhh/empleados&quot;" width="0"/>
+                <img src="51fb413c85d146e9a3a0a93857913c90f904420741b1b725f49c62030939156f.png" title=" Then el sistema muestra la pagina de acceso denegado" width="0"/>
+                <img src="51fb413c85d146e9a3a0a93857913c90f904420741b1b725f49c62030939156f.png" title=" And el sistema muestra el mensaje &quot;No tiene permisos para acceder a este modulo&quot;" width="0"/>
+                <img src="51fb413c85d146e9a3a0a93857913c90f904420741b1b725f49c62030939156f.png" title=" 6: Acceso denegado al intentar acceder a un modulo no permitido ({rol=Produccion, ruta=/rrhh/empleados}) (completed)" width="0"/>
+                <img src="16639a28f581f5c77d71eca2dcbbd879e25d3a6f85393d1f808eb3bb7a8b9e27.png" title=" 7: Acceso denegado al intentar acceder a un modulo no permitido ({rol=Recursos Humanos, ruta=/ventas/ventas})" width="0"/>
+                <img src="16639a28f581f5c77d71eca2dcbbd879e25d3a6f85393d1f808eb3bb7a8b9e27.png" title=" Given el usuario inicia sesion con el rol &quot;Recursos Humanos&quot;" width="0"/>
+                <img src="51fb413c85d146e9a3a0a93857913c90f904420741b1b725f49c62030939156f.png" title=" When el usuario intenta acceder directamente a la ruta &quot;/ventas/ventas&quot;" width="0"/>
+                <img src="51fb413c85d146e9a3a0a93857913c90f904420741b1b725f49c62030939156f.png" title=" Then el sistema muestra la pagina de acceso denegado" width="0"/>
+                <img src="51fb413c85d146e9a3a0a93857913c90f904420741b1b725f49c62030939156f.png" title=" And el sistema muestra el mensaje &quot;No tiene permisos para acceder a este modulo&quot;" width="0"/>
+                <img src="51fb413c85d146e9a3a0a93857913c90f904420741b1b725f49c62030939156f.png" title=" 7: Acceso denegado al intentar acceder a un modulo no permitido ({rol=Recursos Humanos, ruta=/ventas/ventas}) (completed)" width="0"/>
+                <img src="16639a28f581f5c77d71eca2dcbbd879e25d3a6f85393d1f808eb3bb7a8b9e27.png" title=" 8: Acceso denegado al intentar acceder a un modulo no permitido ({rol=Recursos Humanos, ruta=/caja/saldo})" width="0"/>
+                <img src="16639a28f581f5c77d71eca2dcbbd879e25d3a6f85393d1f808eb3bb7a8b9e27.png" title=" Given el usuario inicia sesion con el rol &quot;Recursos Humanos&quot;" width="0"/>
+                <img src="51fb413c85d146e9a3a0a93857913c90f904420741b1b725f49c62030939156f.png" title=" When el usuario intenta acceder directamente a la ruta &quot;/caja/saldo&quot;" width="0"/>
+                <img src="51fb413c85d146e9a3a0a93857913c90f904420741b1b725f49c62030939156f.png" title=" Then el sistema muestra la pagina de acceso denegado" width="0"/>
+                <img src="51fb413c85d146e9a3a0a93857913c90f904420741b1b725f49c62030939156f.png" title=" And el sistema muestra el mensaje &quot;No tiene permisos para acceder a este modulo&quot;" width="0"/>
+
+                <img src="51fb413c85d146e9a3a0a93857913c90f904420741b1b725f49c62030939156f.png" title=" 8: Acceso denegado al intentar acceder a un modulo no permitido ({rol=Recursos Humanos, ruta=/caja/saldo}) (completed): <span class='success-color'>SUCCESS</span>" width="0"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 4.1.20</span>
+</div>
+</body>
+</html>
