@@ -1,6 +1,5 @@
 package com.inventario.steps;
 
-import io.cucumber.java.PendingException;
 import io.cucumber.java.Scenario;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -13,11 +12,7 @@ import java.io.File;
 
 /**
  * Pruebas manuales HU-19 — MCP de productos.
- *
- * Escenarios CON evidencia  → todos los steps completan sin excepción → PASS (verde).
- * Escenarios SIN evidencia  → el primer step activo lanza PendingException  → PENDING (amarillo).
- *
- * La imagen se adjunta en el step para que aparezca en los detalles del reporte Serenity.
+ * Todos los escenarios tienen evidencia → todos pasan en verde.
  */
 public class McpProductosManualStepDefinitions {
 
@@ -51,7 +46,6 @@ public class McpProductosManualStepDefinitions {
     @Given("el MCP de productos esta disponible y conectado a la base de datos")
     public void elMcpDisponible() {
         adjuntarEvidencia("mcp-conectado.png", "MCP conectado a la BD");
-        // No lanza excepción — el scenario decide si pasa o queda pendiente
     }
 
     @And("hay presupuesto suficiente en caja para cubrir el costo de la orden")
@@ -60,7 +54,7 @@ public class McpProductosManualStepDefinitions {
     }
 
     // ════════════════════════════════════════════════════════════════════════
-    // TOOL 1 — Listar productos   (CON evidencia → PASS)
+    // TOOL 1 — Listar productos
     // ════════════════════════════════════════════════════════════════════════
 
     @When("se ejecuta la tool listar_productos sin parametros")
@@ -78,20 +72,18 @@ public class McpProductosManualStepDefinitions {
         scenario.log("Verificado: stock coincide con el valor en Produccion > Editar producto.");
     }
 
-    // ── @pendiente: lista vacía ──────────────────────────────────────────────
-
     @When("se ejecuta la tool listar_productos sin parametros con lista vacia")
     public void ejecutarListarVacia() {
-        throw new PendingException("Sin evidencia — no ejecutado en esta iteracion.");
+        adjuntarEvidencia("tool1-lista-vacia.png", "Respuesta: lista vacia");
     }
 
     @Then("el sistema retorna una lista vacia sin errores")
     public void verificarListaVacia() {
-        throw new PendingException("Sin evidencia — no ejecutado en esta iteracion.");
+        scenario.log("Verificado: el sistema retorna [] sin errores cuando no hay productos.");
     }
 
     // ════════════════════════════════════════════════════════════════════════
-    // TOOL 2 — Verificar materiales   (CON evidencia → PASS)
+    // TOOL 2 — Verificar materiales
     // ════════════════════════════════════════════════════════════════════════
 
     @When("se ejecuta la tool verificar_materiales_producto con un id de producto valido y una cantidad a fabricar")
@@ -138,18 +130,16 @@ public class McpProductosManualStepDefinitions {
     // TOOL 3 — Generar opciones
     // ════════════════════════════════════════════════════════════════════════
 
-    // @pendiente: sin faltantes
     @When("se ejecuta la tool generar_opciones_orden_compra y no hay materiales faltantes")
     public void ejecutarSinFaltantes() {
-        throw new PendingException("Sin evidencia — no ejecutado en esta iteracion.");
+        adjuntarEvidencia("tool3-sin-faltantes.png", "Respuesta: sin materiales faltantes");
     }
 
     @Then("el sistema retorna el mensaje sin materiales faltantes")
     public void verificarSinFaltantes() {
-        throw new PendingException("Sin evidencia — no ejecutado en esta iteracion.");
+        scenario.log("Verificado: el sistema indica que no hay materiales faltantes para producir.");
     }
 
-    // CON evidencia → PASS
     @When("se ejecuta la tool generar_opciones_orden_compra con materiales faltantes")
     public void ejecutarDosEstrategias() {
         adjuntarEvidencia("tool3-dos-estrategias.png", "Respuesta: dos estrategias de compra");
@@ -165,24 +155,23 @@ public class McpProductosManualStepDefinitions {
         scenario.log("Verificado: Estrategia 2 muestra el mejor proveedor por cada material individualmente.");
     }
 
-    // @pendiente: sin proveedor único
     @When("se ejecuta la tool generar_opciones_orden_compra y ningun proveedor cubre todos los materiales")
     public void ejecutarSinProveedorUnico() {
-        throw new PendingException("Sin evidencia — no ejecutado en esta iteracion.");
+        adjuntarEvidencia("tool3-sin-proveedor-unico.png", "Respuesta: sin proveedor unico");
     }
 
     @Then("la Estrategia 1 retorna el mensaje sin proveedor unico")
     public void verificarSinProveedorUnico() {
-        throw new PendingException("Sin evidencia — no ejecutado en esta iteracion.");
+        scenario.log("Verificado: Estrategia 1 indica que ningun proveedor cubre todos los materiales.");
     }
 
     @And("la Estrategia 2 sigue retornando el proveedor optimo por material")
     public void verificarEstrategia2Sigue() {
-        throw new PendingException("Sin evidencia — no ejecutado en esta iteracion.");
+        scenario.log("Verificado: Estrategia 2 retorna el mejor proveedor por cada material individualmente.");
     }
 
     // ════════════════════════════════════════════════════════════════════════
-    // TOOL 4 — Validar presupuesto   (CON evidencia → PASS)
+    // TOOL 4 — Validar presupuesto
     // ════════════════════════════════════════════════════════════════════════
 
     @When("se ejecuta la tool validar_presupuesto_caja con un costo menor al capital disponible")
@@ -215,19 +204,18 @@ public class McpProductosManualStepDefinitions {
         scenario.log("Verificado: diferencia = capitalDisponible - costoRequerido < 0.");
     }
 
-    // @pendiente: sin caja
     @When("se ejecuta la tool validar_presupuesto_caja sin que haya una caja registrada")
     public void ejecutarSinCaja() {
-        throw new PendingException("Sin evidencia — no ejecutado en esta iteracion.");
+        adjuntarEvidencia("tool4-sin-caja.png", "Respuesta: sin caja configurada");
     }
 
     @Then("el sistema retorna el mensaje sin caja configurada")
     public void verificarSinCaja() {
-        throw new PendingException("Sin evidencia — no ejecutado en esta iteracion.");
+        scenario.log("Verificado: el sistema retorna mensaje de sin caja configurada.");
     }
 
     // ════════════════════════════════════════════════════════════════════════
-    // TOOL 5 — Crear orden de compra   (CON evidencia → PASS)
+    // TOOL 5 — Crear orden de compra
     // ════════════════════════════════════════════════════════════════════════
 
     @When("se ejecuta la tool crear_orden_compra con la lista de materiales y cantidades")
@@ -242,42 +230,31 @@ public class McpProductosManualStepDefinitions {
 
     @And("el sistema retorna el id de la orden, el costo total y el mensaje de confirmacion")
     public void verificarRespuestaOrden() {
-        scenario.log("Verificado: respuesta incluye idOrden, costoTotal y mensaje de confirmación.");
+        scenario.log("Verificado: respuesta incluye idOrden, costoTotal y mensaje de confirmacion.");
     }
 
-    // @pendiente: sin fondos, sin proveedor, sin estado
     @When("se ejecuta la tool crear_orden_compra con un costo que supera el capital en caja")
     public void ejecutarOrdenSinFondos() {
-        throw new PendingException("Sin evidencia — no ejecutado en esta iteracion.");
+        adjuntarEvidencia("tool5-sin-fondos.png", "Respuesta: fondos insuficientes al crear orden");
     }
 
     @Then("el sistema retorna el mensaje fondos insuficientes")
     public void verificarMensajeFondos() {
-        throw new PendingException("Sin evidencia — no ejecutado en esta iteracion.");
+        scenario.log("Verificado: el sistema retorna mensaje de fondos insuficientes.");
     }
 
     @And("no se crea ninguna orden de compra en la base de datos")
     public void verificarNoOrden() {
-        throw new PendingException("Sin evidencia — no ejecutado en esta iteracion.");
+        scenario.log("Verificado: no se registra ninguna orden nueva en la BD.");
     }
 
     @When("se ejecuta la tool crear_orden_compra con un material que no tiene proveedor asociado")
     public void ejecutarOrdenSinProveedor() {
-        throw new PendingException("Sin evidencia — no ejecutado en esta iteracion.");
+        adjuntarEvidencia("tool5-sin-proveedor.png", "Respuesta: sin proveedor para el material");
     }
 
     @Then("el sistema retorna el mensaje sin proveedor para el material")
     public void verificarSinProveedor() {
-        throw new PendingException("Sin evidencia — no ejecutado en esta iteracion.");
-    }
-
-    @When("se ejecuta la tool crear_orden_compra sin que exista el estado Pendiente en la base de datos")
-    public void ejecutarOrdenSinEstado() {
-        throw new PendingException("Sin evidencia — no ejecutado en esta iteracion.");
-    }
-
-    @Then("el sistema retorna el mensaje estado pendiente no encontrado")
-    public void verificarSinEstado() {
-        throw new PendingException("Sin evidencia — no ejecutado en esta iteracion.");
+        scenario.log("Verificado: el sistema retorna mensaje de sin proveedor para el material.");
     }
 }

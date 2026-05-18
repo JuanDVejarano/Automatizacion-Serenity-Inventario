@@ -154,7 +154,7 @@
             $("#requirements-tabs").tabs();
             $("#test-tabs").tabs();
 
-            var requirementsTree = [{"text":"HU-24 Actualizar stock de materia prima","type":"feature","href":"92740861904b491d354e578e3a286e880469508e0d0783f15e859bf09524d729.html","nodes":[],"selectable":false,"tags":["\u003ca href\u003d\u0027##beforetable\u0027\u003e\u003ci class\u003d\u0027bi bi-check-circle-fill success-icon \u0027 title\u003d\u0027SUCCESS\u0027\u003e\u003c/i\u003e\u003c/a\u003e","\u003cspan class\u003d\u0027feature-count\u0027\u003e5 scenarios\u003c/span\u003e, \u003cspan class\u003d\u0027feature-count\u0027\u003e5 test cases\u003c/span\u003e"]}];
+            var requirementsTree = [];
 
             $('#tree').treeview({
                 data: requirementsTree,
@@ -225,7 +225,7 @@
             <a href="#"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 17-05-2026 21:54</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated </span>
     <br style="clear:left"/>
 </div>
 
@@ -240,22 +240,11 @@
                         <div clas="table">
                             <div class="row">
 
-                                <div class="col-sm-8">
+                                    <div class="col-sm-12">
                                         <span>
                                             <h2><i class="bi bi-book"></i> Feature: HU-24 actualizar stock de materia prima</h2>
                                         </span>
                                     </div>
-                                        <div class="col-sm-4">
-                                        <span class="feature-tags">
-                                            <p class="tag">
-                                                <span class="badge feature-tag tag-badge" style="background:default;">
-                                                        <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink"
-                                                                                               style="background:default;"
-                                                                                               href="20457f8d775ec86ef6f6dab99b8613662d370802469eb99f3df39e3e8912ec9e.html">materiaPrima (tag)</a>
-                                                    </span>
-                                            </p>
-                                        </span>
-                                        </div>
                                 </div>
                             </div>
                         </div>
@@ -292,348 +281,83 @@ Para reflejar las entradas y salidas de insumos del proceso de produccion
                                                 <h3>Feature Coverage By Scenario</h3>
 
                                                 <!-- REQUIREMENTS PIE CHART -->
-                                                    <div class="chart-container" style="position: relative; width:30vw">
-                                                        <canvas id="requirementChart" width="300" height="300"></canvas>
-                                                    </div>
 
                                             </div>
                                             <div class="col-sm-8">
-                                                <!--- TOC --->
-                                                <div id="toc">
-                                                    <h3>Overview</h3>
-                                                    <table class="table" id="toc-table">
-                                                                    <tr>
-                                                                        <td style="width:95%;" class="toc-title">
-                                                                            <span class="orphan-scenario-toc-entry">
-                                                                                    <a href="#8fd5212f84108ac87ca38d6fc926968f1151b0c2b6516ebba83904f3ec73ca03"
-                                                                                       title="View scenario details">
-                                                                                        <i class="bi bi-chat-dots"></i> Scenario: Aumentar stock de materia prima manualmente
-                                                                                    </a>
-                                                                                </span>
-                                                                        </td>
-                                                                        <td>
+                                                <h3>Requirements Overview</h3>
 
-                                                                        </td>
-                                                                        <td style="width:5%;">
-                                                                            <table>
-                                                                                <tr>
-                                                                                    <td class="icons-bar">
-                                                                                        <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                           href="b92e15ba4a4c2d20e870d8bd7b0658480f78400b7dcd4f1a89b559e030abe341.html"
-                                                                                           title="View test results">
-                                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
-                                                                                            </a>
+                                                <div id="tree"></div>
 
-
-                                                                                            <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                               href="b92e15ba4a4c2d20e870d8bd7b0658480f78400b7dcd4f1a89b559e030abe341.html"
-                                                                                               title="View test results">
-                                                                                                <i class="bi bi-eyeglasses"></i>
-                                                                                            </a>
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </table>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td style="width:95%;" class="toc-title">
-                                                                            <span class="orphan-scenario-toc-entry">
-                                                                                    <a href="#90497e356f9c35071df5c9589162a2c1396f34ce74af96301f6e9f9475c74a14"
-                                                                                       title="View scenario details">
-                                                                                        <i class="bi bi-chat-dots"></i> Scenario: Reducir stock de materia prima manualmente
-                                                                                    </a>
-                                                                                </span>
-                                                                        </td>
-                                                                        <td>
-
-                                                                        </td>
-                                                                        <td style="width:5%;">
-                                                                            <table>
-                                                                                <tr>
-                                                                                    <td class="icons-bar">
-                                                                                        <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                           href="170393231f9633512d2960e09529035e098c0fad268a7bba315a9f325b8eac9e.html"
-                                                                                           title="View test results">
-                                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
-                                                                                            </a>
-
-
-                                                                                            <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                               href="170393231f9633512d2960e09529035e098c0fad268a7bba315a9f325b8eac9e.html"
-                                                                                               title="View test results">
-                                                                                                <i class="bi bi-eyeglasses"></i>
-                                                                                            </a>
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </table>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td style="width:95%;" class="toc-title">
-                                                                            <span class="orphan-scenario-toc-entry">
-                                                                                    <a href="#0726d6b0cfbe6e9e22730535d7cc1b269e964c7b4de98cd230f1bb22ad9e4277"
-                                                                                       title="View scenario details">
-                                                                                        <i class="bi bi-chat-dots"></i> Scenario: Stock insuficiente para reducir
-                                                                                    </a>
-                                                                                </span>
-                                                                        </td>
-                                                                        <td>
-
-                                                                        </td>
-                                                                        <td style="width:5%;">
-                                                                            <table>
-                                                                                <tr>
-                                                                                    <td class="icons-bar">
-                                                                                        <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                           href="43d7502f64fde85004bf5e2fbed6b216ca7095549ed052a31eac0e56af531c2f.html"
-                                                                                           title="View test results">
-                                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
-                                                                                            </a>
-
-
-                                                                                            <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                               href="43d7502f64fde85004bf5e2fbed6b216ca7095549ed052a31eac0e56af531c2f.html"
-                                                                                               title="View test results">
-                                                                                                <i class="bi bi-eyeglasses"></i>
-                                                                                            </a>
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </table>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td style="width:95%;" class="toc-title">
-                                                                            <span class="orphan-scenario-toc-entry">
-                                                                                    <a href="#742fdf9e2d59911d570a44c63094dd828ee2245900dd9784a9d1cce2351846c0"
-                                                                                       title="View scenario details">
-                                                                                        <i class="bi bi-chat-dots"></i> Scenario: Cantidad invalida al actualizar stock
-                                                                                    </a>
-                                                                                </span>
-                                                                        </td>
-                                                                        <td>
-
-                                                                        </td>
-                                                                        <td style="width:5%;">
-                                                                            <table>
-                                                                                <tr>
-                                                                                    <td class="icons-bar">
-                                                                                        <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                           href="fa6375a005c7f0bc0122938000b5581715c0032c646a9e1c9b46e964c4c7cfbc.html"
-                                                                                           title="View test results">
-                                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
-                                                                                            </a>
-
-
-                                                                                            <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                               href="fa6375a005c7f0bc0122938000b5581715c0032c646a9e1c9b46e964c4c7cfbc.html"
-                                                                                               title="View test results">
-                                                                                                <i class="bi bi-eyeglasses"></i>
-                                                                                            </a>
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </table>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td style="width:95%;" class="toc-title">
-                                                                            <span class="orphan-scenario-toc-entry">
-                                                                                    <a href="#3e7b051601325258190129bdd12d4750f7aac06efe2e4261abb8deb9770fb98f"
-                                                                                       title="View scenario details">
-                                                                                        <i class="bi bi-chat-dots"></i> Scenario: Modulo no visible para roles no autorizados
-                                                                                    </a>
-                                                                                </span>
-                                                                        </td>
-                                                                        <td>
-
-                                                                        </td>
-                                                                        <td style="width:5%;">
-                                                                            <table>
-                                                                                <tr>
-                                                                                    <td class="icons-bar">
-                                                                                        <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                           href="5ed4796c1317b2cc5d51750eaaa61816bfa7248e04bcb469529249e84f86d5d9.html"
-                                                                                           title="View test results">
-                                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
-                                                                                            </a>
-
-
-                                                                                            <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                               href="5ed4796c1317b2cc5d51750eaaa61816bfa7248e04bcb469529249e84f86d5d9.html"
-                                                                                               title="View test results">
-                                                                                                <i class="bi bi-eyeglasses"></i>
-                                                                                            </a>
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </table>
-                                                                        </td>
-                                                                    </tr>
-                                                    </table>
-                                                </div>
-                                                <!--- END OF TOC --->
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                                <h3>Scenarios</h3>
-
-                                                    <a name="8ab83111-ddfc-4c47-95bd-170d71b3cab2"></a>
-                                                    <p class="rule-tags inline-tag">
-                                                    </p>
-                                                        <div class="scenario-docs card">
-                                                            <div class="scenario-docs card-header"
-                                                                 style="min-height:1.5em;">
-                                                                    <span class="scenario-heading">
-                                                                    Background: </span>
-                                                                </span>
-                                                            </div>
-                                                            <div class="scenario-docs card-body">
-                                                                    <p>Given el usuario accede al modulo de actualizar stock de materia prima</p>
-                                                            </div>
-                                                        </div>
-
-
-                                                        <div class="scenario-docs card" id="8fd5212f84108ac87ca38d6fc926968f1151b0c2b6516ebba83904f3ec73ca03">
-                                                            <div class="scenario-docs card-header success"
-                                                                 style="min-height:1.5em;">
-                                                                <div>
-                                                                        <span class="scenario-heading">
-                                                                            <a href="b92e15ba4a4c2d20e870d8bd7b0658480f78400b7dcd4f1a89b559e030abe341.html"
-                                                                               title="View test results">Scenario: Aumentar stock de materia prima manualmente</a>
-                                                                        </span>
-
-                                                                        <span class="example-tags inline-tag">
-                                                                        </span>
-
-                                                                    <span class="scenario-result-icon">
-                                                                    
-
-                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
-                                                                        </span>
-                                                                </div>
-
-                                                            </div>
-                                                            <div class="scenario-docs card-body">
-                                                                    <p>When el usuario aumenta el stock de la primera materia prima en 10 unidades</p>
-                                                                    <p>Then el sistema muestra el mensaje de exito de actualizacion de stock &quot;Stock actualizado exitosamente&quot;</p>
-                                                                <div class="examples">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="scenario-docs card" id="90497e356f9c35071df5c9589162a2c1396f34ce74af96301f6e9f9475c74a14">
-                                                            <div class="scenario-docs card-header success"
-                                                                 style="min-height:1.5em;">
-                                                                <div>
-                                                                        <span class="scenario-heading">
-                                                                            <a href="170393231f9633512d2960e09529035e098c0fad268a7bba315a9f325b8eac9e.html"
-                                                                               title="View test results">Scenario: Reducir stock de materia prima manualmente</a>
-                                                                        </span>
-
-                                                                        <span class="example-tags inline-tag">
-                                                                        </span>
-
-                                                                    <span class="scenario-result-icon">
-                                                                    
-
-                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
-                                                                        </span>
-                                                                </div>
-
-                                                            </div>
-                                                            <div class="scenario-docs card-body">
-                                                                    <p>Given la materia prima tiene stock disponible para reducir</p>
-                                                                    <p>When el usuario reduce el stock de la primera materia prima en 5 unidades</p>
-                                                                    <p>Then el sistema muestra el mensaje de exito de actualizacion de stock &quot;Stock actualizado exitosamente&quot;</p>
-                                                                <div class="examples">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="scenario-docs card" id="0726d6b0cfbe6e9e22730535d7cc1b269e964c7b4de98cd230f1bb22ad9e4277">
-                                                            <div class="scenario-docs card-header success"
-                                                                 style="min-height:1.5em;">
-                                                                <div>
-                                                                        <span class="scenario-heading">
-                                                                            <a href="43d7502f64fde85004bf5e2fbed6b216ca7095549ed052a31eac0e56af531c2f.html"
-                                                                               title="View test results">Scenario: Stock insuficiente para reducir</a>
-                                                                        </span>
-
-                                                                        <span class="example-tags inline-tag">
-                                                                        </span>
-
-                                                                    <span class="scenario-result-icon">
-                                                                    
-
-                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
-                                                                        </span>
-                                                                </div>
-
-                                                            </div>
-                                                            <div class="scenario-docs card-body">
-                                                                    <p>When el usuario intenta reducir el stock en una cantidad mayor al disponible</p>
-                                                                    <p>Then el sistema muestra el mensaje de error de actualizacion de stock &quot;Stock insuficiente para realizar la reduccion&quot;</p>
-                                                                <div class="examples">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="scenario-docs card" id="742fdf9e2d59911d570a44c63094dd828ee2245900dd9784a9d1cce2351846c0">
-                                                            <div class="scenario-docs card-header success"
-                                                                 style="min-height:1.5em;">
-                                                                <div>
-                                                                        <span class="scenario-heading">
-                                                                            <a href="fa6375a005c7f0bc0122938000b5581715c0032c646a9e1c9b46e964c4c7cfbc.html"
-                                                                               title="View test results">Scenario: Cantidad invalida al actualizar stock</a>
-                                                                        </span>
-
-                                                                        <span class="example-tags inline-tag">
-                                                                        </span>
-
-                                                                    <span class="scenario-result-icon">
-                                                                    
-
-                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
-                                                                        </span>
-                                                                </div>
-
-                                                            </div>
-                                                            <div class="scenario-docs card-body">
-                                                                    <p>When el usuario intenta actualizar el stock con cantidad cero</p>
-                                                                    <p>Then el sistema muestra el mensaje de error de actualizacion de stock &quot;La cantidad debe ser mayor a 0&quot;</p>
-                                                                <div class="examples">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="scenario-docs card" id="3e7b051601325258190129bdd12d4750f7aac06efe2e4261abb8deb9770fb98f">
-                                                            <div class="scenario-docs card-header success"
-                                                                 style="min-height:1.5em;">
-                                                                <div>
-                                                                        <span class="scenario-heading">
-                                                                            <a href="5ed4796c1317b2cc5d51750eaaa61816bfa7248e04bcb469529249e84f86d5d9.html"
-                                                                               title="View test results">Scenario: Modulo no visible para roles no autorizados</a>
-                                                                        </span>
-
-                                                                        <span class="example-tags inline-tag">
-                                                                        </span>
-
-                                                                    <span class="scenario-result-icon">
-                                                                    
-
-                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
-                                                                        </span>
-                                                                </div>
-
-                                                            </div>
-                                                            <div class="scenario-docs card-body">
-                                                                    <p>Given el usuario inicia sesion con el rol &quot;Ventas&quot;</p>
-                                                                    <p>When el usuario intenta acceder al modulo de actualizar stock de materia prima</p>
-                                                                    <p>Then el sistema muestra la pagina de acceso denegado</p>
-                                                                    <p>And el sistema muestra el mensaje &quot;No tiene permisos para acceder a este modulo&quot;</p>
-                                                                <div class="examples">
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                                <!-- STATS -->
+    <div>
+        <h3><i class="bi bi-speedometer2"></i> Key Statistics</h3>
+        <div>
+            <table class="table table-striped table-hover">
+                <tbody>
+                <tr scope="row">
+                    <td>
+                        <i class="bi bi-card-checklist"></i> Number of Scenarios
+                    </td>
+                    <td>0</td>
+                </tr>
+                <tr scope="row">
+                    <td>
+                        <i class="bi bi-caret-right"></i> Total Number of Test Cases
+                    </td>
+                    <td>0</td>
+                </tr>
+                <tr scope="row">
+                    <td>
+                        <i class="bi bi-flag-fill"></i> Tests Started
+                    </td>
+                    <td></td>
+                </tr>
+                <tr scope="row">
+                    <td>
+                        <i class="bi bi-stop-circle"></i> Tests
+                        Finished
+                    </td>
+                    <td></td>
+                </tr>
+                <tr scope="row">
+                    <td>
+                        <i class="bi bi-stopwatch"></i> Total
+                        Duration
+                    </td>
+                    <td>0ms</td>
+                </tr>
+                <tr scope="row">
+                    <td>
+                        <i class="bi bi-trophy"></i> Fastest Test
+                    </td>
+                    <td>0ms</td>
+                </tr>
+                <tr scope="row">
+                    <td>
+                        <i class="bi bi-skip-start"></i> Slowest
+                        Test
+                    </td>
+                    <td>0ms</td>
+                </tr>
+                <tr scope="row">
+                    <td>
+                        <i class="bi bi-stopwatch"></i> Average
+                        Execution Time
+                    </td>
+                    <td>0ms</td>
+                </tr>
+                <tr scope="row">
+                    <td>
+                        <i class="bi bi-stopwatch-fill"></i> Total
+                        Execution Time
+                    </td>
+                    <td>0ms</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+                                                <!-- END STATS -->
                                             </div>
                                         </div>
                                     </div>
@@ -645,9 +369,6 @@ Para reflejar las entradas y salidas de insumos del proceso de produccion
                                             <div class="col-sm-4">
                                                 <h3>Feature Coverage By Scenario</h3>
                                                 <!-- TEST RESULT PIE CHART -->
-                                                    <div class="chart-container" style="position: relative; width:30vw">
-                                                        <canvas id="resultChart" width="300" height="300"></canvas>
-                                                    </div>
                                             </div>
                                             <div class="col-sm-4">
                                                 <h4><i class="bi bi-check-square"></i> Test Outcomes</h4>
@@ -679,22 +400,22 @@ Para reflejar las entradas y salidas de insumos del proceso de produccion
                     <td>
                         <i class="bi bi-card-checklist"></i> Number of Scenarios
                     </td>
-                    <td>5</td>
+                    <td>0</td>
                     <td>
                         <i class="bi bi-stopwatch"></i> Total
                         Duration
                     </td>
-                    <td>13s</td>
+                    <td>0ms</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-caret-right"></i> Total Number of Test Cases
                     </td>
-                    <td>5</td>
+                    <td>0</td>
                     <td>
                         <i class="bi bi-trophy"></i> Fastest Test
                     </td>
-                    <td>2s</td>
+                    <td>0ms</td>
                 </tr>
                 <tr scope="row">
                     <td>
@@ -705,30 +426,30 @@ Para reflejar las entradas y salidas de insumos del proceso de produccion
                         <i class="bi bi-skip-start"></i> Slowest
                         Test
                     </td>
-                    <td>2s</td>
+                    <td>0ms</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-flag-fill"></i> Tests Started
                     </td>
-                    <td>May 17, 2026 21:54:48</td>
+                    <td></td>
                     <td>
                         <i class="bi bi-stopwatch"></i> Average
                         Execution Time
                     </td>
-                    <td>2s</td>
+                    <td>0ms</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stop-circle"></i> Tests
                         Finished
                     </td>
-                    <td>May 17, 2026 21:55:01</td>
+                    <td></td>
                     <td>
                         <i class="bi bi-stopwatch-fill"></i> Total
                         Execution Time
                     </td>
-                    <td>12s</td>
+                    <td>0ms</td>
                 </tr>
                 </tbody>
             </table>
@@ -750,79 +471,79 @@ Para reflejar las entradas y salidas de insumos del proceso de produccion
                                                         </tr>
                                                         </thead>
                                                         <tbody>
-                                                                <tr class="scenario-result SUCCESS">
+                                                                <tr class="scenario-result UNDEFINED">
                                                                     <td>
                                                                             <a href="#">HU-24 Actualizar stock de materia prima</a>
                                                                     </td>
                                                                     <td>
-                                                                            <a href="b92e15ba4a4c2d20e870d8bd7b0658480f78400b7dcd4f1a89b559e030abe341.html">Aumentar stock de materia prima manualmente</a>
+                                                                            <a href="">Aumentar stock de materia prima manualmente</a>
                                                                     </td>
-                                                                    <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
+                                                                    <td><span class='context-icon'></span><span style="display:none"></span>
                                                                     </td>
                                                                     <td>2</td>
-                                                                    <td>21:54:48</td>
-                                                                    <td>2s 561ms</td>
-                                                                    <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td><i class='bi bi-pause-circle undefined-icon ' title='No test has been implemented yet'></i> <span style="display:none">UNDEFINED</span>
                                                                     </td>
                                                                 </tr>
-                                                                <tr class="scenario-result SUCCESS">
+                                                                <tr class="scenario-result UNDEFINED">
                                                                     <td>
                                                                             <a href="#">HU-24 Actualizar stock de materia prima</a>
                                                                     </td>
                                                                     <td>
-                                                                            <a href="170393231f9633512d2960e09529035e098c0fad268a7bba315a9f325b8eac9e.html">Reducir stock de materia prima manualmente</a>
+                                                                            <a href="">Reducir stock de materia prima manualmente</a>
                                                                     </td>
-                                                                    <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
+                                                                    <td><span class='context-icon'></span><span style="display:none"></span>
                                                                     </td>
                                                                     <td>3</td>
-                                                                    <td>21:54:51</td>
-                                                                    <td>2s 707ms</td>
-                                                                    <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td><i class='bi bi-pause-circle undefined-icon ' title='No test has been implemented yet'></i> <span style="display:none">UNDEFINED</span>
                                                                     </td>
                                                                 </tr>
-                                                                <tr class="scenario-result SUCCESS">
+                                                                <tr class="scenario-result UNDEFINED">
                                                                     <td>
                                                                             <a href="#">HU-24 Actualizar stock de materia prima</a>
                                                                     </td>
                                                                     <td>
-                                                                            <a href="43d7502f64fde85004bf5e2fbed6b216ca7095549ed052a31eac0e56af531c2f.html">Stock insuficiente para reducir</a>
+                                                                            <a href="">Stock insuficiente para reducir</a>
                                                                     </td>
-                                                                    <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
+                                                                    <td><span class='context-icon'></span><span style="display:none"></span>
                                                                     </td>
                                                                     <td>2</td>
-                                                                    <td>21:54:53</td>
-                                                                    <td>2s 324ms</td>
-                                                                    <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td><i class='bi bi-pause-circle undefined-icon ' title='No test has been implemented yet'></i> <span style="display:none">UNDEFINED</span>
                                                                     </td>
                                                                 </tr>
-                                                                <tr class="scenario-result SUCCESS">
+                                                                <tr class="scenario-result UNDEFINED">
                                                                     <td>
                                                                             <a href="#">HU-24 Actualizar stock de materia prima</a>
                                                                     </td>
                                                                     <td>
-                                                                            <a href="fa6375a005c7f0bc0122938000b5581715c0032c646a9e1c9b46e964c4c7cfbc.html">Cantidad invalida al actualizar stock</a>
+                                                                            <a href="">Cantidad invalida al actualizar stock</a>
                                                                     </td>
-                                                                    <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
+                                                                    <td><span class='context-icon'></span><span style="display:none"></span>
                                                                     </td>
                                                                     <td>2</td>
-                                                                    <td>21:54:56</td>
-                                                                    <td>2s 319ms</td>
-                                                                    <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td><i class='bi bi-pause-circle undefined-icon ' title='No test has been implemented yet'></i> <span style="display:none">UNDEFINED</span>
                                                                     </td>
                                                                 </tr>
-                                                                <tr class="scenario-result SUCCESS">
+                                                                <tr class="scenario-result UNDEFINED">
                                                                     <td>
                                                                             <a href="#">HU-24 Actualizar stock de materia prima</a>
                                                                     </td>
                                                                     <td>
-                                                                            <a href="5ed4796c1317b2cc5d51750eaaa61816bfa7248e04bcb469529249e84f86d5d9.html">Modulo no visible para roles no autorizados</a>
+                                                                            <a href="">Modulo no visible para roles no autorizados</a>
                                                                     </td>
-                                                                    <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
+                                                                    <td><span class='context-icon'></span><span style="display:none"></span>
                                                                     </td>
                                                                     <td>4</td>
-                                                                    <td>21:54:58</td>
-                                                                    <td>2s 951ms</td>
-                                                                    <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td><i class='bi bi-pause-circle undefined-icon ' title='No test has been implemented yet'></i> <span style="display:none">UNDEFINED</span>
                                                                     </td>
                                                                 </tr>
                                                         </tbody>
@@ -840,34 +561,6 @@ Para reflejar las entradas y salidas de insumos del proceso de produccion
                                             </div>
                                         </div>
 
-        <div class="row">
-            <div class="col-sm-12">
-                <h3>Tags</h3>
-                    <div class="card">
-                        <div class="card-body">
-                            <div>
-                                    <a href="20457f8d775ec86ef6f6dab99b8613662d370802469eb99f3df39e3e8912ec9e.html">
-                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Materia Prima&nbsp;&nbsp;&nbsp;5
-                                    </span>
-                                    </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                                <h5 class="card-title">Context</h5>
-                            <div>
-                                    <a href="46b54d9084ba9783130da16408afb27a4e4620f6bd966e731510c7395b9ddf5c.html">
-                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Chrome, Linux&nbsp;&nbsp;&nbsp;5
-                                    </span>
-                                    </a>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-        </div>
                                     </div>
                                 </div>
                             </div>
@@ -908,7 +601,7 @@ Para reflejar las entradas y salidas de insumos del proceso de produccion
             datasets: [{
                 label: 'Test Results',
                 fill: false,
-                data: [{meta: 'Passing tests', value: 5}, {meta: 'Pending tests', value: 0}, {meta: 'Ignored tests', value: 0}, {meta: 'Skipped tests', value: 0}, {meta: 'Aborted tests', value: 0}, {meta: 'Failing tests', value: 0}, {meta: 'Broken tests', value: 0}, {meta: 'Compromised tests', value: 0}],
+                data: [{meta: 'Passing tests', value: 0}, {meta: 'Pending tests', value: 0}, {meta: 'Ignored tests', value: 0}, {meta: 'Skipped tests', value: 0}, {meta: 'Aborted tests', value: 0}, {meta: 'Failing tests', value: 0}, {meta: 'Broken tests', value: 0}, {meta: 'Compromised tests', value: 0}],
                 backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                 borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                 borderWidth: 1,
@@ -959,7 +652,7 @@ Para reflejar las entradas y salidas de insumos del proceso de produccion
                         ctx.font = fontSize + "em sans-serif";
                         ctx.textBaseline = "middle";
 
-                        var text = "100%"
+                        var text = " "
                         textX = 10 + Math.round((width - ctx.measureText(text).width) / 2);
                         textY = (height / 2) - 40;
 
@@ -1003,7 +696,7 @@ Para reflejar las entradas y salidas de insumos del proceso de produccion
             datasets: [{
                 label: 'Feature Coverage',
                 fill: false,
-                data: [{meta: 'Passing tests', value: 5}, {meta: 'Pending tests', value: 0}, {meta: 'Ignored tests', value: 0}, {meta: 'Skipped tests', value: 0}, {meta: 'Aborted tests', value: 0}, {meta: 'Failing tests', value: 0}, {meta: 'Broken tests', value: 0}, {meta: 'Compromised tests', value: 0}],
+                data: [{meta: 'Passing tests', value: 0}, {meta: 'Pending tests', value: 0}, {meta: 'Ignored tests', value: 0}, {meta: 'Skipped tests', value: 0}, {meta: 'Aborted tests', value: 0}, {meta: 'Failing tests', value: 0}, {meta: 'Broken tests', value: 0}, {meta: 'Compromised tests', value: 0}],
                 backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                 borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                 borderWidth: 1,
@@ -1054,7 +747,7 @@ Para reflejar las entradas y salidas de insumos del proceso de produccion
                         ctx.font = fontSize + "em sans-serif";
                         ctx.textBaseline = "middle";
 
-                        var text = "100%"
+                        var text = " "
                         textX = 10 + Math.round((width - ctx.measureText(text).width) / 2);
                         textY = (height / 2) - 40;
 
@@ -1099,7 +792,7 @@ Para reflejar las entradas y salidas de insumos del proceso de produccion
             datasets: [
                 {
                     label: 'Automated',
-                    data: [5,0,0,0,0,0,0,0],
+                    data: [0,0,0,0,0,0,0,0],
                     backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                     borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                     borderWidth: 1
@@ -1182,7 +875,7 @@ Para reflejar las entradas y salidas de insumos del proceso de produccion
             datasets: [{
                 label: 'Number of tests per duration',
                 fill: false,
-                data: ['0','5','0','0','0','0','0','0'],
+                data: ['0','0','0','0','0','0','0','0'],
                 backgroundColor: 'rgba(83, 146, 255,0.5)',
                 borderColor: 'rgba(83, 146, 255, 1)',
             }]

@@ -49,3 +49,4 @@ com/inventario/pages/UnauthorizedPage.class
 com/inventario/steps/CrearUsuarioStepDefinitions.class
 com/inventario/pages/UsuariosPage.class
 com/inventario/pages/AsociarProveedorMateriaPrimaPage.class
+com/inventario/steps/McpFinanzasManualStepDefinitions.class

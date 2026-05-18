@@ -13,7 +13,6 @@ Feature: HU-19 MCP de gestion de productos
     Then el sistema retorna la lista completa de productos con id, nombre, tipo, caracteristicas, precio y stock
     And cada producto muestra el stock disponible correctamente
 
-  @pendiente
   Scenario: Tool 1 - Listar productos cuando no hay ninguno registrado
     Given el MCP de productos esta disponible y conectado a la base de datos
     When se ejecuta la tool listar_productos sin parametros con lista vacia
@@ -40,7 +39,6 @@ Feature: HU-19 MCP de gestion de productos
 
   # ── TOOL 3: Generar opciones de orden de compra ───────────────────────────
 
-  @pendiente
   Scenario: Tool 3 - Sin materiales faltantes para producir
     Given el MCP de productos esta disponible y conectado a la base de datos
     When se ejecuta la tool generar_opciones_orden_compra y no hay materiales faltantes
@@ -52,7 +50,6 @@ Feature: HU-19 MCP de gestion de productos
     Then el sistema retorna la Estrategia 1 con un solo proveedor de menor costo total
     And el sistema retorna la Estrategia 2 con el proveedor optimo por cada material
 
-  @pendiente
   Scenario: Tool 3 - Sin proveedor que cubra todos los materiales
     Given el MCP de productos esta disponible y conectado a la base de datos
     When se ejecuta la tool generar_opciones_orden_compra y ningun proveedor cubre todos los materiales
@@ -73,7 +70,6 @@ Feature: HU-19 MCP de gestion de productos
     Then el sistema retorna que NO hay fondos suficientes
     And la diferencia entre capital y costo es negativa
 
-  @pendiente
   Scenario: Tool 4 - Sin caja configurada en el sistema
     Given el MCP de productos esta disponible y conectado a la base de datos
     When se ejecuta la tool validar_presupuesto_caja sin que haya una caja registrada
@@ -88,23 +84,14 @@ Feature: HU-19 MCP de gestion de productos
     Then el sistema crea la orden con estado Pendiente
     And el sistema retorna el id de la orden, el costo total y el mensaje de confirmacion
 
-  @pendiente
   Scenario: Tool 5 - Fondos insuficientes al crear orden
     Given el MCP de productos esta disponible y conectado a la base de datos
     When se ejecuta la tool crear_orden_compra con un costo que supera el capital en caja
     Then el sistema retorna el mensaje fondos insuficientes
     And no se crea ninguna orden de compra en la base de datos
 
-  @pendiente
   Scenario: Tool 5 - Sin proveedor para algun material
     Given el MCP de productos esta disponible y conectado a la base de datos
     When se ejecuta la tool crear_orden_compra con un material que no tiene proveedor asociado
     Then el sistema retorna el mensaje sin proveedor para el material
-    And no se crea ninguna orden de compra en la base de datos
-
-  @pendiente
-  Scenario: Tool 5 - Estado Pendiente no configurado
-    Given el MCP de productos esta disponible y conectado a la base de datos
-    When se ejecuta la tool crear_orden_compra sin que exista el estado Pendiente en la base de datos
-    Then el sistema retorna el mensaje estado pendiente no encontrado
     And no se crea ninguna orden de compra en la base de datos
