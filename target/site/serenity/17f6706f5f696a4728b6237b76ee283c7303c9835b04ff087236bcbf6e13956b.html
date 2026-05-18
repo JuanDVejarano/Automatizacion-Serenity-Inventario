@@ -226,7 +226,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 17-05-2026 21:33:40</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 17-05-2026 22:17:10</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -241,7 +241,7 @@
                         <td width="375px" valign="top">
                             <div class="test-count-summary">
                                 <div class="test-count-title">
-                                    30 tests
+                                    15 tests
 
                                      |
                                         <a href="17f6706f5f696a4728b6237b76ee283c7303c9835b04ff087236bcbf6e13956b.csv" title="Download CSV"> <i class="bi bi-cloud-arrow-down"
@@ -320,54 +320,54 @@
                     <td>
                         <i class="bi bi-caret-right"></i> Total Number of Test Cases
                     </td>
-                    <td>30</td>
+                    <td>15</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-flag-fill"></i> Tests Started
                     </td>
-                    <td>May 16, 2026 23:41:43</td>
+                    <td>May 17, 2026 22:00:21</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stop-circle"></i> Tests
                         Finished
                     </td>
-                    <td>May 16, 2026 23:46:59</td>
+                    <td>May 17, 2026 22:00:21</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stopwatch"></i> Total
                         Duration
                     </td>
-                    <td> 5m 16s</td>
+                    <td>166ms</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-trophy"></i> Fastest Test
                     </td>
-                    <td>6ms</td>
+                    <td>4ms</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-skip-start"></i> Slowest
                         Test
                     </td>
-                    <td>115ms</td>
+                    <td>13ms</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stopwatch"></i> Average
                         Execution Time
                     </td>
-                    <td>18ms</td>
+                    <td>6ms</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stopwatch-fill"></i> Total
                         Execution Time
                     </td>
-                    <td>567ms</td>
+                    <td>92ms</td>
                 </tr>
                 </tbody>
             </table>
@@ -474,80 +474,8 @@ Given el MCP de productos esta disponible y conectado a la base de datos
 When se ejecuta la tool crear_orden_compra sin que exista el estado Pendiente en la base de datos
 Then el sistema retorna el mensaje estado pendiente no encontrado
 And no se crea ninguna orden de compra en la base de datos
-Given el MCP de productos esta disponible y conectado a la base de datos
-When se ejecuta la tool listar_productos sin parametros
-Then el sistema retorna la lista completa de productos con id, nombre, tipo, caracteristicas, precio y stock
-Verificado: la respuesta contiene id, nombre, tipo, caracteristicas, precio y stock.
-And cada producto muestra el stock disponible correctamente
-Verificado: stock coincide con el valor en Produccion > Editar producto.
-Given el MCP de productos esta disponible y conectado a la base de datos
-When se ejecuta la tool listar_productos sin parametros con lista vacia
-Then el sistema retorna una lista vacia sin errores
-Given el MCP de productos esta disponible y conectado a la base de datos
-When se ejecuta la tool verificar_materiales_producto con un id de producto valido y una cantidad a fabricar
-Then el sistema retorna por cada material el nombre, cantidad necesaria, stock actual y cantidad faltante
-Verificado: respuesta incluye nombre, cantidadNecesaria, stockActual, cantidadFaltante.
-And el sistema indica que es posible producir la cantidad solicitada
-Verificado: puedeProceder = true.
-Given el MCP de productos esta disponible y conectado a la base de datos
-When se ejecuta la tool verificar_materiales_producto con una cantidad mayor al stock disponible
-Then el sistema retorna los materiales faltantes con su cantidad insuficiente
-Verificado: cantidadFaltante > 0 para materiales sin stock suficiente.
-And el sistema indica que NO es posible producir la cantidad solicitada
-Verificado: puedeProceder = false.
-Given el MCP de productos esta disponible y conectado a la base de datos
-When se ejecuta la tool verificar_materiales_producto con un id de producto que no existe
-Then el sistema retorna el mensaje de error producto no encontrado
-Verificado: respuesta contiene 'Producto con ID {id} no encontrado'.
-Given el MCP de productos esta disponible y conectado a la base de datos
-When se ejecuta la tool generar_opciones_orden_compra y no hay materiales faltantes
-Then el sistema retorna el mensaje sin materiales faltantes
-Given el MCP de productos esta disponible y conectado a la base de datos
-When se ejecuta la tool generar_opciones_orden_compra con materiales faltantes
-Then el sistema retorna la Estrategia 1 con un solo proveedor de menor costo total
-Verificado: Estrategia 1 muestra un proveedor con menor costo total para todos los materiales.
-And el sistema retorna la Estrategia 2 con el proveedor optimo por cada material
-Verificado: Estrategia 2 muestra el mejor proveedor por cada material individualmente.
-Given el MCP de productos esta disponible y conectado a la base de datos
-When se ejecuta la tool generar_opciones_orden_compra y ningun proveedor cubre todos los materiales
-Then la Estrategia 1 retorna el mensaje sin proveedor unico
-And la Estrategia 2 sigue retornando el proveedor optimo por material
-Given el MCP de productos esta disponible y conectado a la base de datos
-When se ejecuta la tool validar_presupuesto_caja con un costo menor al capital disponible
-Then el sistema retorna el capital disponible, el costo requerido y confirma que hay fondos suficientes
-Verificado: capitalDisponible, costoRequerido, fondosSuficientes: true.
-And la diferencia entre capital y costo es positiva
-Verificado: diferencia = capitalDisponible - costoRequerido > 0.
-Given el MCP de productos esta disponible y conectado a la base de datos
-When se ejecuta la tool validar_presupuesto_caja con un costo mayor al capital disponible
-Then el sistema retorna que NO hay fondos suficientes
-Verificado: fondosSuficientes: false.
-And la diferencia entre capital y costo es negativa
-Verificado: diferencia = capitalDisponible - costoRequerido < 0.
-Given el MCP de productos esta disponible y conectado a la base de datos
-When se ejecuta la tool validar_presupuesto_caja sin que haya una caja registrada
-Then el sistema retorna el mensaje sin caja configurada
-Given el MCP de productos esta disponible y conectado a la base de datos
-And hay presupuesto suficiente en caja para cubrir el costo de la orden
-When se ejecuta la tool crear_orden_compra con la lista de materiales y cantidades
-Then el sistema crea la orden con estado Pendiente
-Verificado: orden creada en BD con estado 'Pendiente' y detalle de materiales.
-And el sistema retorna el id de la orden, el costo total y el mensaje de confirmacion
-Verificado: respuesta incluye idOrden, costoTotal y mensaje de confirmación.
-Given el MCP de productos esta disponible y conectado a la base de datos
-When se ejecuta la tool crear_orden_compra con un costo que supera el capital en caja
-Then el sistema retorna el mensaje fondos insuficientes
-And no se crea ninguna orden de compra en la base de datos
-Given el MCP de productos esta disponible y conectado a la base de datos
-When se ejecuta la tool crear_orden_compra con un material que no tiene proveedor asociado
-Then el sistema retorna el mensaje sin proveedor para el material
-And no se crea ninguna orden de compra en la base de datos
-Given el MCP de productos esta disponible y conectado a la base de datos
-When se ejecuta la tool crear_orden_compra sin que exista el estado Pendiente en la base de datos
-Then el sistema retorna el mensaje estado pendiente no encontrado
-And no se crea ninguna orden de compra en la base de datos
 </td>
-                                                                                    <td>30</td>
+                                                                                    <td>15</td>
                                                                                     <td>53%</td>
                                                                                     <td>
                                                                                             <a href='##beforetable'><i class='bi bi-hourglass-top pending-icon ' title='PENDING'></i></a>
@@ -557,7 +485,7 @@ And no se crea ninguna orden de compra en la base de datos
                                                                                                 <div class="progress-bar"
                                                                                                      role="progressbar"
                                                                                                      style="width: 53.333333%; background-color: #b0cf73"
-                                                                                                     aria-valuenow="16"
+                                                                                                     aria-valuenow="8"
                                                                                                      title="53% success"
                                                                                                      aria-valuemin="0"
                                                                                                      aria-valuemax="100">
@@ -565,7 +493,7 @@ And no se crea ninguna orden de compra en la base de datos
                                                                                                 <div class="progress-bar"
                                                                                                      role="progressbar"
                                                                                                      style="width: 46.666667%; background-color: #a5c7ed"
-                                                                                                     aria-valuenow="14"
+                                                                                                     aria-valuenow="7"
                                                                                                      title="47% pending"
                                                                                                      aria-valuemin="0"
                                                                                                      aria-valuemax="100">
@@ -588,12 +516,12 @@ And no se crea ninguna orden de compra en la base de datos
                             <div>
                                     <a href="17f6706f5f696a4728b6237b76ee283c7303c9835b04ff087236bcbf6e13956b.html">
                                     <span class="tag-badge badge" style="background-color:#a5c7ed; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Ia&nbsp;&nbsp;&nbsp;30
+                                        <i class="bi bi-tag-fill"></i> Ia&nbsp;&nbsp;&nbsp;15
                                     </span>
                                     </a>
                                     <a href="e173e6e85602d9be589a9f0ed1a67e5dba634f57cc053f2565e96d857854da7f.html">
                                     <span class="tag-badge badge" style="background-color:#a5c7ed; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Pendiente&nbsp;&nbsp;&nbsp;14
+                                        <i class="bi bi-tag-fill"></i> Pendiente&nbsp;&nbsp;&nbsp;7
                                     </span>
                                     </a>
                             </div>
@@ -633,17 +561,17 @@ And no se crea ninguna orden de compra en la base de datos
                         <i class="bi bi-stopwatch"></i> Total
                         Duration
                     </td>
-                    <td> 5m 16s</td>
+                    <td>166ms</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-caret-right"></i> Total Number of Test Cases
                     </td>
-                    <td>30</td>
+                    <td>15</td>
                     <td>
                         <i class="bi bi-trophy"></i> Fastest Test
                     </td>
-                    <td>6ms</td>
+                    <td>4ms</td>
                 </tr>
                 <tr scope="row">
                     <td>
@@ -654,30 +582,30 @@ And no se crea ninguna orden de compra en la base de datos
                         <i class="bi bi-skip-start"></i> Slowest
                         Test
                     </td>
-                    <td>115ms</td>
+                    <td>13ms</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-flag-fill"></i> Tests Started
                     </td>
-                    <td>May 16, 2026 23:41:43</td>
+                    <td>May 17, 2026 22:00:21</td>
                     <td>
                         <i class="bi bi-stopwatch"></i> Average
                         Execution Time
                     </td>
-                    <td>18ms</td>
+                    <td>6ms</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stop-circle"></i> Tests
                         Finished
                     </td>
-                    <td>May 16, 2026 23:46:59</td>
+                    <td>May 17, 2026 22:00:21</td>
                     <td>
                         <i class="bi bi-stopwatch-fill"></i> Total
                         Execution Time
                     </td>
-                    <td>567ms</td>
+                    <td>92ms</td>
                 </tr>
                 </tbody>
             </table>
@@ -705,318 +633,6 @@ And no se crea ninguna orden de compra en la base de datos
                                                                                 <a href="83b1e7f241f9659214be98c299f164b1b91c9ee71ab3fbaf278dad5406412470.html">HU-19 MCP de gestion de productos</a>
                                                                         </td>
                                                                         <td data-order="Tool 1 - Listar todos los productos">
-                                                                                    <a href="5131b14ea1143e9855886f43fe1661e6f065726ab328679585a1c3359183b647.html">Tool 1 - Listar todos los productos</a>
-                                                                        </td>
-                                                                        <td><span style="display:none"></span>
-                                                                        </td>
-                                                                        <td>4</td>
-                                                                        <td>Given el MCP de productos esta disponible y conectado a la base de datos
-When se ejecuta la tool listar_productos sin parametros
-Then el sistema retorna la lista completa de productos con id, nombre, tipo, caracteristicas, precio y stock
-And cada producto muestra el stock disponible correctamente
-</td>
-                                                                        <td data-order="1778992903">23:41:43</td>
-                                                                        <td>115ms</td>
-                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
-                                                                                    style="display:none">SUCCESS</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr class="scenario-result PENDING">
-                                                                        <td>
-                                                                                <a href="83b1e7f241f9659214be98c299f164b1b91c9ee71ab3fbaf278dad5406412470.html">HU-19 MCP de gestion de productos</a>
-                                                                        </td>
-                                                                        <td data-order="Tool 1 - Listar productos cuando no hay ninguno registrado">
-                                                                                    <a href="c9b53945cb70c3a225d23f10b8e0cd1400c9aa69af9bd2e306328ec3e05da259.html">Tool 1 - Listar productos cuando no hay ninguno registrado</a>
-                                                                        </td>
-                                                                        <td><span style="display:none"></span>
-                                                                        </td>
-                                                                        <td>3</td>
-                                                                        <td>Given el MCP de productos esta disponible y conectado a la base de datos
-When se ejecuta la tool listar_productos sin parametros con lista vacia
-Then el sistema retorna una lista vacia sin errores
-</td>
-                                                                        <td data-order="1778992903">23:41:43</td>
-                                                                        <td>040ms</td>
-                                                                        <td><a href='##beforetable'><i class='bi bi-hourglass-top pending-icon ' title='PENDING'></i></a> <span
-                                                                                    style="display:none">PENDING</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr class="scenario-result SUCCESS">
-                                                                        <td>
-                                                                                <a href="83b1e7f241f9659214be98c299f164b1b91c9ee71ab3fbaf278dad5406412470.html">HU-19 MCP de gestion de productos</a>
-                                                                        </td>
-                                                                        <td data-order="Tool 2 - Verificar materiales con stock suficiente">
-                                                                                    <a href="b3bcea4581040ffe9e9fc83aa5a580232c856eeb6d60428387f6c5e6bfbb3ddf.html">Tool 2 - Verificar materiales con stock suficiente</a>
-                                                                        </td>
-                                                                        <td><span style="display:none"></span>
-                                                                        </td>
-                                                                        <td>4</td>
-                                                                        <td>Given el MCP de productos esta disponible y conectado a la base de datos
-When se ejecuta la tool verificar_materiales_producto con un id de producto valido y una cantidad a fabricar
-Then el sistema retorna por cada material el nombre, cantidad necesaria, stock actual y cantidad faltante
-And el sistema indica que es posible producir la cantidad solicitada
-</td>
-                                                                        <td data-order="1778992903">23:41:43</td>
-                                                                        <td>031ms</td>
-                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
-                                                                                    style="display:none">SUCCESS</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr class="scenario-result SUCCESS">
-                                                                        <td>
-                                                                                <a href="83b1e7f241f9659214be98c299f164b1b91c9ee71ab3fbaf278dad5406412470.html">HU-19 MCP de gestion de productos</a>
-                                                                        </td>
-                                                                        <td data-order="Tool 2 - Verificar materiales con stock insuficiente">
-                                                                                    <a href="1f34bbcfd3990de75907cfc2b00689916f2389162685f340821ad6d1c6798130.html">Tool 2 - Verificar materiales con stock insuficiente</a>
-                                                                        </td>
-                                                                        <td><span style="display:none"></span>
-                                                                        </td>
-                                                                        <td>4</td>
-                                                                        <td>Given el MCP de productos esta disponible y conectado a la base de datos
-When se ejecuta la tool verificar_materiales_producto con una cantidad mayor al stock disponible
-Then el sistema retorna los materiales faltantes con su cantidad insuficiente
-And el sistema indica que NO es posible producir la cantidad solicitada
-</td>
-                                                                        <td data-order="1778992903">23:41:43</td>
-                                                                        <td>044ms</td>
-                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
-                                                                                    style="display:none">SUCCESS</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr class="scenario-result SUCCESS">
-                                                                        <td>
-                                                                                <a href="83b1e7f241f9659214be98c299f164b1b91c9ee71ab3fbaf278dad5406412470.html">HU-19 MCP de gestion de productos</a>
-                                                                        </td>
-                                                                        <td data-order="Tool 2 - Verificar materiales de producto inexistente">
-                                                                                    <a href="b6d8b55234364885037ebf07d98844c27c5e72816b0ede662c7719fd6f7027f5.html">Tool 2 - Verificar materiales de producto inexistente</a>
-                                                                        </td>
-                                                                        <td><span style="display:none"></span>
-                                                                        </td>
-                                                                        <td>3</td>
-                                                                        <td>Given el MCP de productos esta disponible y conectado a la base de datos
-When se ejecuta la tool verificar_materiales_producto con un id de producto que no existe
-Then el sistema retorna el mensaje de error producto no encontrado
-</td>
-                                                                        <td data-order="1778992903">23:41:43</td>
-                                                                        <td>041ms</td>
-                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
-                                                                                    style="display:none">SUCCESS</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr class="scenario-result PENDING">
-                                                                        <td>
-                                                                                <a href="83b1e7f241f9659214be98c299f164b1b91c9ee71ab3fbaf278dad5406412470.html">HU-19 MCP de gestion de productos</a>
-                                                                        </td>
-                                                                        <td data-order="Tool 3 - Sin materiales faltantes para producir">
-                                                                                    <a href="9d00e03b2b745ddefda3abe8220bbfaf6fb07096ad46466110f46ea9190a3cab.html">Tool 3 - Sin materiales faltantes para producir</a>
-                                                                        </td>
-                                                                        <td><span style="display:none"></span>
-                                                                        </td>
-                                                                        <td>3</td>
-                                                                        <td>Given el MCP de productos esta disponible y conectado a la base de datos
-When se ejecuta la tool generar_opciones_orden_compra y no hay materiales faltantes
-Then el sistema retorna el mensaje sin materiales faltantes
-</td>
-                                                                        <td data-order="1778992903">23:41:43</td>
-                                                                        <td>019ms</td>
-                                                                        <td><a href='##beforetable'><i class='bi bi-hourglass-top pending-icon ' title='PENDING'></i></a> <span
-                                                                                    style="display:none">PENDING</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr class="scenario-result SUCCESS">
-                                                                        <td>
-                                                                                <a href="83b1e7f241f9659214be98c299f164b1b91c9ee71ab3fbaf278dad5406412470.html">HU-19 MCP de gestion de productos</a>
-                                                                        </td>
-                                                                        <td data-order="Tool 3 - Con materiales faltantes retorna dos estrategias">
-                                                                                    <a href="9c3fd01d593686fc034310fb556139f5d19e3baeb1ee5d7b8bba68af0ea7d5b8.html">Tool 3 - Con materiales faltantes retorna dos estrategias</a>
-                                                                        </td>
-                                                                        <td><span style="display:none"></span>
-                                                                        </td>
-                                                                        <td>4</td>
-                                                                        <td>Given el MCP de productos esta disponible y conectado a la base de datos
-When se ejecuta la tool generar_opciones_orden_compra con materiales faltantes
-Then el sistema retorna la Estrategia 1 con un solo proveedor de menor costo total
-And el sistema retorna la Estrategia 2 con el proveedor optimo por cada material
-</td>
-                                                                        <td data-order="1778992904">23:41:44</td>
-                                                                        <td>016ms</td>
-                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
-                                                                                    style="display:none">SUCCESS</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr class="scenario-result PENDING">
-                                                                        <td>
-                                                                                <a href="83b1e7f241f9659214be98c299f164b1b91c9ee71ab3fbaf278dad5406412470.html">HU-19 MCP de gestion de productos</a>
-                                                                        </td>
-                                                                        <td data-order="Tool 3 - Sin proveedor que cubra todos los materiales">
-                                                                                    <a href="19ab8f49ed2b52b0ad13eb8a10507c40e4dee2a1dddd0866b25005e65864b5bd.html">Tool 3 - Sin proveedor que cubra todos los materiales</a>
-                                                                        </td>
-                                                                        <td><span style="display:none"></span>
-                                                                        </td>
-                                                                        <td>4</td>
-                                                                        <td>Given el MCP de productos esta disponible y conectado a la base de datos
-When se ejecuta la tool generar_opciones_orden_compra y ningun proveedor cubre todos los materiales
-Then la Estrategia 1 retorna el mensaje sin proveedor unico
-And la Estrategia 2 sigue retornando el proveedor optimo por material
-</td>
-                                                                        <td data-order="1778992904">23:41:44</td>
-                                                                        <td>014ms</td>
-                                                                        <td><a href='##beforetable'><i class='bi bi-hourglass-top pending-icon ' title='PENDING'></i></a> <span
-                                                                                    style="display:none">PENDING</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr class="scenario-result SUCCESS">
-                                                                        <td>
-                                                                                <a href="83b1e7f241f9659214be98c299f164b1b91c9ee71ab3fbaf278dad5406412470.html">HU-19 MCP de gestion de productos</a>
-                                                                        </td>
-                                                                        <td data-order="Tool 4 - Fondos suficientes en caja">
-                                                                                    <a href="3ee62224f0848806245045bf54eb3fecd0f191c9c9a5874d0d99c0dd86aff8e5.html">Tool 4 - Fondos suficientes en caja</a>
-                                                                        </td>
-                                                                        <td><span style="display:none"></span>
-                                                                        </td>
-                                                                        <td>4</td>
-                                                                        <td>Given el MCP de productos esta disponible y conectado a la base de datos
-When se ejecuta la tool validar_presupuesto_caja con un costo menor al capital disponible
-Then el sistema retorna el capital disponible, el costo requerido y confirma que hay fondos suficientes
-And la diferencia entre capital y costo es positiva
-</td>
-                                                                        <td data-order="1778992904">23:41:44</td>
-                                                                        <td>021ms</td>
-                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
-                                                                                    style="display:none">SUCCESS</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr class="scenario-result SUCCESS">
-                                                                        <td>
-                                                                                <a href="83b1e7f241f9659214be98c299f164b1b91c9ee71ab3fbaf278dad5406412470.html">HU-19 MCP de gestion de productos</a>
-                                                                        </td>
-                                                                        <td data-order="Tool 4 - Fondos insuficientes en caja">
-                                                                                    <a href="34860f2efcd577bc82d650d7bdc6e575e85fa0c966bfd7eceebf991c82495fa5.html">Tool 4 - Fondos insuficientes en caja</a>
-                                                                        </td>
-                                                                        <td><span style="display:none"></span>
-                                                                        </td>
-                                                                        <td>4</td>
-                                                                        <td>Given el MCP de productos esta disponible y conectado a la base de datos
-When se ejecuta la tool validar_presupuesto_caja con un costo mayor al capital disponible
-Then el sistema retorna que NO hay fondos suficientes
-And la diferencia entre capital y costo es negativa
-</td>
-                                                                        <td data-order="1778992904">23:41:44</td>
-                                                                        <td>028ms</td>
-                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
-                                                                                    style="display:none">SUCCESS</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr class="scenario-result PENDING">
-                                                                        <td>
-                                                                                <a href="83b1e7f241f9659214be98c299f164b1b91c9ee71ab3fbaf278dad5406412470.html">HU-19 MCP de gestion de productos</a>
-                                                                        </td>
-                                                                        <td data-order="Tool 4 - Sin caja configurada en el sistema">
-                                                                                    <a href="60e03d307d8b69d2291a631409e7b6c1acb85accb1fb0f164fcc39ea89483b62.html">Tool 4 - Sin caja configurada en el sistema</a>
-                                                                        </td>
-                                                                        <td><span style="display:none"></span>
-                                                                        </td>
-                                                                        <td>3</td>
-                                                                        <td>Given el MCP de productos esta disponible y conectado a la base de datos
-When se ejecuta la tool validar_presupuesto_caja sin que haya una caja registrada
-Then el sistema retorna el mensaje sin caja configurada
-</td>
-                                                                        <td data-order="1778992904">23:41:44</td>
-                                                                        <td>019ms</td>
-                                                                        <td><a href='##beforetable'><i class='bi bi-hourglass-top pending-icon ' title='PENDING'></i></a> <span
-                                                                                    style="display:none">PENDING</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr class="scenario-result SUCCESS">
-                                                                        <td>
-                                                                                <a href="83b1e7f241f9659214be98c299f164b1b91c9ee71ab3fbaf278dad5406412470.html">HU-19 MCP de gestion de productos</a>
-                                                                        </td>
-                                                                        <td data-order="Tool 5 - Crear orden de compra exitosamente">
-                                                                                    <a href="2f79cdf440332d5badb355dc1261b5bdd85b4a457ffe4f0968287e19e9b66a89.html">Tool 5 - Crear orden de compra exitosamente</a>
-                                                                        </td>
-                                                                        <td><span style="display:none"></span>
-                                                                        </td>
-                                                                        <td>5</td>
-                                                                        <td>Given el MCP de productos esta disponible y conectado a la base de datos
-And hay presupuesto suficiente en caja para cubrir el costo de la orden
-When se ejecuta la tool crear_orden_compra con la lista de materiales y cantidades
-Then el sistema crea la orden con estado Pendiente
-And el sistema retorna el id de la orden, el costo total y el mensaje de confirmacion
-</td>
-                                                                        <td data-order="1778992904">23:41:44</td>
-                                                                        <td>022ms</td>
-                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
-                                                                                    style="display:none">SUCCESS</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr class="scenario-result PENDING">
-                                                                        <td>
-                                                                                <a href="83b1e7f241f9659214be98c299f164b1b91c9ee71ab3fbaf278dad5406412470.html">HU-19 MCP de gestion de productos</a>
-                                                                        </td>
-                                                                        <td data-order="Tool 5 - Fondos insuficientes al crear orden">
-                                                                                    <a href="ab155b760c9ba2c2a28583778d99955fc9414337b2ac926f905700719e989c1f.html">Tool 5 - Fondos insuficientes al crear orden</a>
-                                                                        </td>
-                                                                        <td><span style="display:none"></span>
-                                                                        </td>
-                                                                        <td>4</td>
-                                                                        <td>Given el MCP de productos esta disponible y conectado a la base de datos
-When se ejecuta la tool crear_orden_compra con un costo que supera el capital en caja
-Then el sistema retorna el mensaje fondos insuficientes
-And no se crea ninguna orden de compra en la base de datos
-</td>
-                                                                        <td data-order="1778992904">23:41:44</td>
-                                                                        <td>016ms</td>
-                                                                        <td><a href='##beforetable'><i class='bi bi-hourglass-top pending-icon ' title='PENDING'></i></a> <span
-                                                                                    style="display:none">PENDING</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr class="scenario-result PENDING">
-                                                                        <td>
-                                                                                <a href="83b1e7f241f9659214be98c299f164b1b91c9ee71ab3fbaf278dad5406412470.html">HU-19 MCP de gestion de productos</a>
-                                                                        </td>
-                                                                        <td data-order="Tool 5 - Sin proveedor para algun material">
-                                                                                    <a href="42fe84efb95225b76b194a144220fea7e132bc29f6356babcdbbcf471dfa950a.html">Tool 5 - Sin proveedor para algun material</a>
-                                                                        </td>
-                                                                        <td><span style="display:none"></span>
-                                                                        </td>
-                                                                        <td>4</td>
-                                                                        <td>Given el MCP de productos esta disponible y conectado a la base de datos
-When se ejecuta la tool crear_orden_compra con un material que no tiene proveedor asociado
-Then el sistema retorna el mensaje sin proveedor para el material
-And no se crea ninguna orden de compra en la base de datos
-</td>
-                                                                        <td data-order="1778992904">23:41:44</td>
-                                                                        <td>013ms</td>
-                                                                        <td><a href='##beforetable'><i class='bi bi-hourglass-top pending-icon ' title='PENDING'></i></a> <span
-                                                                                    style="display:none">PENDING</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr class="scenario-result PENDING">
-                                                                        <td>
-                                                                                <a href="83b1e7f241f9659214be98c299f164b1b91c9ee71ab3fbaf278dad5406412470.html">HU-19 MCP de gestion de productos</a>
-                                                                        </td>
-                                                                        <td data-order="Tool 5 - Estado Pendiente no configurado">
-                                                                                    <a href="f861e5a1b3adeec009137e62830d9257051ab6de96ff5143e298edcdc58595f7.html">Tool 5 - Estado Pendiente no configurado</a>
-                                                                        </td>
-                                                                        <td><span style="display:none"></span>
-                                                                        </td>
-                                                                        <td>4</td>
-                                                                        <td>Given el MCP de productos esta disponible y conectado a la base de datos
-When se ejecuta la tool crear_orden_compra sin que exista el estado Pendiente en la base de datos
-Then el sistema retorna el mensaje estado pendiente no encontrado
-And no se crea ninguna orden de compra en la base de datos
-</td>
-                                                                        <td data-order="1778992904">23:41:44</td>
-                                                                        <td>011ms</td>
-                                                                        <td><a href='##beforetable'><i class='bi bi-hourglass-top pending-icon ' title='PENDING'></i></a> <span
-                                                                                    style="display:none">PENDING</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr class="scenario-result SUCCESS">
-                                                                        <td>
-                                                                                <a href="83b1e7f241f9659214be98c299f164b1b91c9ee71ab3fbaf278dad5406412470.html">HU-19 MCP de gestion de productos</a>
-                                                                        </td>
-                                                                        <td data-order="Tool 1 - Listar todos los productos">
                                                                                     <a href="dc6f2dc17af5b56c21f3a1b536f45666c917f34220e47202be829023f12fbe08.html">Tool 1 - Listar todos los productos</a>
                                                                         </td>
                                                                         <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
@@ -1027,8 +643,8 @@ When se ejecuta la tool listar_productos sin parametros
 Then el sistema retorna la lista completa de productos con id, nombre, tipo, caracteristicas, precio y stock
 And cada producto muestra el stock disponible correctamente
 </td>
-                                                                        <td data-order="1778993219">23:46:59</td>
-                                                                        <td>010ms</td>
+                                                                        <td data-order="1779073221">22:00:21</td>
+                                                                        <td>013ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1047,8 +663,8 @@ And cada producto muestra el stock disponible correctamente
 When se ejecuta la tool listar_productos sin parametros con lista vacia
 Then el sistema retorna una lista vacia sin errores
 </td>
-                                                                        <td data-order="1778993219">23:46:59</td>
-                                                                        <td>007ms</td>
+                                                                        <td data-order="1779073221">22:00:21</td>
+                                                                        <td>004ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-hourglass-top pending-icon ' title='PENDING'></i></a> <span
                                                                                     style="display:none">PENDING</span>
                                                                         </td>
@@ -1068,7 +684,7 @@ When se ejecuta la tool verificar_materiales_producto con un id de producto vali
 Then el sistema retorna por cada material el nombre, cantidad necesaria, stock actual y cantidad faltante
 And el sistema indica que es posible producir la cantidad solicitada
 </td>
-                                                                        <td data-order="1778993219">23:46:59</td>
+                                                                        <td data-order="1779073221">22:00:21</td>
                                                                         <td>006ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
@@ -1089,8 +705,8 @@ When se ejecuta la tool verificar_materiales_producto con una cantidad mayor al 
 Then el sistema retorna los materiales faltantes con su cantidad insuficiente
 And el sistema indica que NO es posible producir la cantidad solicitada
 </td>
-                                                                        <td data-order="1778993219">23:46:59</td>
-                                                                        <td>009ms</td>
+                                                                        <td data-order="1779073221">22:00:21</td>
+                                                                        <td>006ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1109,8 +725,8 @@ And el sistema indica que NO es posible producir la cantidad solicitada
 When se ejecuta la tool verificar_materiales_producto con un id de producto que no existe
 Then el sistema retorna el mensaje de error producto no encontrado
 </td>
-                                                                        <td data-order="1778993219">23:46:59</td>
-                                                                        <td>008ms</td>
+                                                                        <td data-order="1779073221">22:00:21</td>
+                                                                        <td>005ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1129,8 +745,8 @@ Then el sistema retorna el mensaje de error producto no encontrado
 When se ejecuta la tool generar_opciones_orden_compra y no hay materiales faltantes
 Then el sistema retorna el mensaje sin materiales faltantes
 </td>
-                                                                        <td data-order="1778993219">23:46:59</td>
-                                                                        <td>008ms</td>
+                                                                        <td data-order="1779073221">22:00:21</td>
+                                                                        <td>005ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-hourglass-top pending-icon ' title='PENDING'></i></a> <span
                                                                                     style="display:none">PENDING</span>
                                                                         </td>
@@ -1150,8 +766,8 @@ When se ejecuta la tool generar_opciones_orden_compra con materiales faltantes
 Then el sistema retorna la Estrategia 1 con un solo proveedor de menor costo total
 And el sistema retorna la Estrategia 2 con el proveedor optimo por cada material
 </td>
-                                                                        <td data-order="1778993219">23:46:59</td>
-                                                                        <td>009ms</td>
+                                                                        <td data-order="1779073221">22:00:21</td>
+                                                                        <td>006ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1171,8 +787,8 @@ When se ejecuta la tool generar_opciones_orden_compra y ningun proveedor cubre t
 Then la Estrategia 1 retorna el mensaje sin proveedor unico
 And la Estrategia 2 sigue retornando el proveedor optimo por material
 </td>
-                                                                        <td data-order="1778993219">23:46:59</td>
-                                                                        <td>006ms</td>
+                                                                        <td data-order="1779073221">22:00:21</td>
+                                                                        <td>005ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-hourglass-top pending-icon ' title='PENDING'></i></a> <span
                                                                                     style="display:none">PENDING</span>
                                                                         </td>
@@ -1192,8 +808,8 @@ When se ejecuta la tool validar_presupuesto_caja con un costo menor al capital d
 Then el sistema retorna el capital disponible, el costo requerido y confirma que hay fondos suficientes
 And la diferencia entre capital y costo es positiva
 </td>
-                                                                        <td data-order="1778993219">23:46:59</td>
-                                                                        <td>009ms</td>
+                                                                        <td data-order="1779073221">22:00:21</td>
+                                                                        <td>005ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1213,8 +829,8 @@ When se ejecuta la tool validar_presupuesto_caja con un costo mayor al capital d
 Then el sistema retorna que NO hay fondos suficientes
 And la diferencia entre capital y costo es negativa
 </td>
-                                                                        <td data-order="1778993219">23:46:59</td>
-                                                                        <td>009ms</td>
+                                                                        <td data-order="1779073221">22:00:21</td>
+                                                                        <td>011ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1233,8 +849,8 @@ And la diferencia entre capital y costo es negativa
 When se ejecuta la tool validar_presupuesto_caja sin que haya una caja registrada
 Then el sistema retorna el mensaje sin caja configurada
 </td>
-                                                                        <td data-order="1778993219">23:46:59</td>
-                                                                        <td>008ms</td>
+                                                                        <td data-order="1779073221">22:00:21</td>
+                                                                        <td>004ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-hourglass-top pending-icon ' title='PENDING'></i></a> <span
                                                                                     style="display:none">PENDING</span>
                                                                         </td>
@@ -1255,8 +871,8 @@ When se ejecuta la tool crear_orden_compra con la lista de materiales y cantidad
 Then el sistema crea la orden con estado Pendiente
 And el sistema retorna el id de la orden, el costo total y el mensaje de confirmacion
 </td>
-                                                                        <td data-order="1778993219">23:46:59</td>
-                                                                        <td>008ms</td>
+                                                                        <td data-order="1779073221">22:00:21</td>
+                                                                        <td>006ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -1276,7 +892,7 @@ When se ejecuta la tool crear_orden_compra con un costo que supera el capital en
 Then el sistema retorna el mensaje fondos insuficientes
 And no se crea ninguna orden de compra en la base de datos
 </td>
-                                                                        <td data-order="1778993219">23:46:59</td>
+                                                                        <td data-order="1779073221">22:00:21</td>
                                                                         <td>006ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-hourglass-top pending-icon ' title='PENDING'></i></a> <span
                                                                                     style="display:none">PENDING</span>
@@ -1297,8 +913,8 @@ When se ejecuta la tool crear_orden_compra con un material que no tiene proveedo
 Then el sistema retorna el mensaje sin proveedor para el material
 And no se crea ninguna orden de compra en la base de datos
 </td>
-                                                                        <td data-order="1778993219">23:46:59</td>
-                                                                        <td>008ms</td>
+                                                                        <td data-order="1779073221">22:00:21</td>
+                                                                        <td>005ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-hourglass-top pending-icon ' title='PENDING'></i></a> <span
                                                                                     style="display:none">PENDING</span>
                                                                         </td>
@@ -1318,8 +934,8 @@ When se ejecuta la tool crear_orden_compra sin que exista el estado Pendiente en
 Then el sistema retorna el mensaje estado pendiente no encontrado
 And no se crea ninguna orden de compra en la base de datos
 </td>
-                                                                        <td data-order="1778993219">23:46:59</td>
-                                                                        <td>006ms</td>
+                                                                        <td data-order="1779073221">22:00:21</td>
+                                                                        <td>005ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-hourglass-top pending-icon ' title='PENDING'></i></a> <span
                                                                                     style="display:none">PENDING</span>
                                                                         </td>
@@ -1348,12 +964,12 @@ And no se crea ninguna orden de compra en la base de datos
                             <div>
                                     <a href="17f6706f5f696a4728b6237b76ee283c7303c9835b04ff087236bcbf6e13956b.html">
                                     <span class="tag-badge badge" style="background-color:#a5c7ed; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Ia&nbsp;&nbsp;&nbsp;30
+                                        <i class="bi bi-tag-fill"></i> Ia&nbsp;&nbsp;&nbsp;15
                                     </span>
                                     </a>
                                     <a href="e173e6e85602d9be589a9f0ed1a67e5dba634f57cc053f2565e96d857854da7f.html">
                                     <span class="tag-badge badge" style="background-color:#a5c7ed; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Pendiente&nbsp;&nbsp;&nbsp;14
+                                        <i class="bi bi-tag-fill"></i> Pendiente&nbsp;&nbsp;&nbsp;7
                                     </span>
                                     </a>
                             </div>
@@ -1419,7 +1035,7 @@ And no se crea ninguna orden de compra en la base de datos
             datasets: [{
                 label: 'Test Results',
                 fill: false,
-                data: [16,14,0,0,0,0,0,0],
+                data: [8,7,0,0,0,0,0,0],
                 backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                 borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                 borderWidth: 1,
@@ -1515,7 +1131,7 @@ And no se crea ninguna orden de compra en la base de datos
             datasets: [
                 {
                     label: 'Automated',
-                    data: [16,14,0,0,0,0,0,0],
+                    data: [8,7,0,0,0,0,0,0],
                     backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                     borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                     borderWidth: 1
@@ -1598,7 +1214,7 @@ And no se crea ninguna orden de compra en la base de datos
             datasets: [{
                 label: 'Number of tests per duration',
                 fill: false,
-                data: ['30','0','0','0','0','0','0','0'],
+                data: ['15','0','0','0','0','0','0','0'],
                 backgroundColor: 'rgba(83, 146, 255,0.5)',
                 borderColor: 'rgba(83, 146, 255, 1)',
             }]
@@ -1673,12 +1289,12 @@ And no se crea ninguna orden de compra en la base de datos
             datasets: [
                 {
                     label: ['Passing Tests'],
-                    data: [16],
+                    data: [8],
                     backgroundColor: [ 'rgba(153,204,51,0.5)' ]
                 },
                 {
                     label: ['Pending Tests'],
-                    data: [14],
+                    data: [7],
                     backgroundColor: [ 'rgba(165, 199, 238, 0.5)' ]
                 },
                 {

@@ -1,12 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="1" name="HU-03 Roles predefinidos del sistema" skipped="0" tests="21" time="44.85" timestamp="2026-05-16 11:48:45"><testcase name="Los modulos del dashboard reflejan el acceso segun el rol asignado"/><testcase name="Los roles no pueden gestionarse desde la interfaz"/><testcase name="Acceso denegado al intentar acceder a un modulo no permitido"><failure message="[El roleGuard debe redirigir a /unauthorized al acceder sin permisos] &#10;Expecting actual:&#10;  &quot;http://localhost:4200/rrhh/empleados&quot;&#10;to contain:&#10;  &quot;/unauthorized&quot; " type="java.lang.AssertionError">[El roleGuard debe redirigir a /unauthorized al acceder sin permisos] 
-Expecting actual:
-  "http://localhost:4200/rrhh/empleados"
-to contain:
-  "/unauthorized" </failure><system-err>[El roleGuard debe redirigir a /unauthorized al acceder sin permisos] 
-Expecting actual:
-  "http://localhost:4200/rrhh/empleados"
-to contain:
-  "/unauthorized" 
-com.inventario.steps.RolesStepDefinitions.elSistemaMuestraLaPaginaDeAccesoDenegado(RolesStepDefinitions.java:72)
-✽.el sistema muestra la pagina de acceso denegado(file:///home/juanj/Projects-Test/serenity-inventario-login/src/test/resources/features/roles.feature:35)
-</system-err></testcase></testsuite>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="HU-03 Roles predefinidos del sistema" skipped="0" tests="21" time="42.32" timestamp="2026-05-17 10:02:51"><testcase name="Los modulos del dashboard reflejan el acceso segun el rol asignado"/><testcase name="Los roles no pueden gestionarse desde la interfaz"/><testcase name="Acceso denegado al intentar acceder a un modulo no permitido"/></testsuite>

@@ -5,6 +5,7 @@ com/inventario/pages/AsociarMateriaPrimaPage.class
 com/inventario/steps/AsociarProveedorMateriaPrimaStepDefinitions.class
 com/inventario/steps/LoginStepDefinitions.class
 com/inventario/steps/EditarEmpleadoStepDefinitions.class
+com/inventario/pages/GestionarOrdenesPage.class
 com/inventario/steps/LogoutStepDefinitions.class
 com/inventario/steps/EditarProductoStepDefinitions.class
 com/inventario/steps/ActivarDesactivarUsuarioStepDefinitions.class
@@ -22,16 +23,19 @@ com/inventario/steps/RegistrarProveedorStepDefinitions.class
 com/inventario/pages/RegistrarVentaPage.class
 com/inventario/steps/McpProductosManualStepDefinitions.class
 com/inventario/steps/RegistrarClienteStepDefinitions.class
+com/inventario/steps/ActualizarStockMateriaPrimaStepDefinitions.class
 com/inventario/steps/ConsultarHistorialVentasStepDefinitions.class
 com/inventario/pages/LoginPage.class
 com/inventario/steps/RegistrarEmpleadoStepDefinitions.class
 com/inventario/pages/EmpleadosPage.class
 com/inventario/steps/EditarClienteStepDefinitions.class
 com/inventario/steps/RegistrarProductoStepDefinitions.class
+com/inventario/steps/GestionarOrdenesStepDefinitions.class
 com/inventario/pages/RegistrarMateriaPrimaPage.class
 com/inventario/steps/RegistrarTipoProductoStepDefinitions.class
 com/inventario/steps/RegistrarVentaStepDefinitions.class
 com/inventario/steps/AsociarMateriaPrimaStepDefinitions.class
+com/inventario/pages/ActualizarStockMateriaPrimaPage.class
 com/inventario/steps/ListarEmpleadosStepDefinitions.class
 com/inventario/steps/AsignarRolStepDefinitions.class
 com/inventario/pages/RegistrarProveedorPage.class
