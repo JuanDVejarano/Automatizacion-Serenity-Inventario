@@ -11,6 +11,7 @@ com/inventario/steps/LogoutStepDefinitions.class
 com/inventario/steps/EditarProductoStepDefinitions.class
 com/inventario/steps/ActivarDesactivarUsuarioStepDefinitions.class
 com/inventario/pages/ListaVentasPage.class
+com/inventario/pages/HistorialCajaPage.class
 com/inventario/steps/RegistrarMateriaPrimaStepDefinitions.class
 com/inventario/pages/CrearUsuarioPage.class
 com/inventario/pages/RegistrarProductoPage.class
@@ -31,6 +32,7 @@ com/inventario/steps/RegistrarEmpleadoStepDefinitions.class
 com/inventario/pages/EmpleadosPage.class
 com/inventario/steps/EditarClienteStepDefinitions.class
 com/inventario/steps/RegistrarProductoStepDefinitions.class
+com/inventario/steps/HistorialCajaStepDefinitions.class
 com/inventario/steps/GestionarOrdenesStepDefinitions.class
 com/inventario/steps/SaldoCajaStepDefinitions.class
 com/inventario/pages/RegistrarMateriaPrimaPage.class

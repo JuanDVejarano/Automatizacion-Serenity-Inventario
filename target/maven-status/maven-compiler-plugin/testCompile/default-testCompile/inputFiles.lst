@@ -7,6 +7,7 @@
 /home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/pages/EditarProductoPage.java
 /home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/pages/EmpleadosPage.java
 /home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/pages/GestionarOrdenesPage.java
+/home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/pages/HistorialCajaPage.java
 /home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/pages/ListaVentasPage.java
 /home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/pages/LoginPage.java
 /home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/pages/RegistrarEmpleadoPage.java
@@ -32,6 +33,7 @@
 /home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/steps/EditarEmpleadoStepDefinitions.java
 /home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/steps/EditarProductoStepDefinitions.java
 /home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/steps/GestionarOrdenesStepDefinitions.java
+/home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/steps/HistorialCajaStepDefinitions.java
 /home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/steps/ListarClientesStepDefinitions.java
 /home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/steps/ListarEmpleadosStepDefinitions.java
 /home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/steps/LoginStepDefinitions.java
