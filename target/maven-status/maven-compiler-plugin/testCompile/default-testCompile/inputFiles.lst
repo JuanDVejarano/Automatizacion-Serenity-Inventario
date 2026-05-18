@@ -1,4 +1,5 @@
 /home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/pages/AsociarMateriaPrimaPage.java
+/home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/pages/AsociarProveedorMateriaPrimaPage.java
 /home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/pages/ClientesPage.java
 /home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/pages/CrearUsuarioPage.java
 /home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/pages/DashboardPage.java
@@ -19,6 +20,7 @@
 /home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/steps/AgregarProductoVentaStepDefinitions.java
 /home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/steps/AsignarRolStepDefinitions.java
 /home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/steps/AsociarMateriaPrimaStepDefinitions.java
+/home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/steps/AsociarProveedorMateriaPrimaStepDefinitions.java
 /home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/steps/ConsultarHistorialVentasStepDefinitions.java
 /home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/steps/CrearUsuarioStepDefinitions.java
 /home/juanj/Projects-Test/serenity-inventario-login/src/test/java/com/inventario/steps/EditarClienteStepDefinitions.java

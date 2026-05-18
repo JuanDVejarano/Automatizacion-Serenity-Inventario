@@ -221,7 +221,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 17-05-2026 21:28:30</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 17-05-2026 21:33:40</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -236,7 +236,7 @@
                         <td width="375px" valign="top">
                             <div class="test-count-summary">
                                 <div class="test-count-title">
-                                    172 tests
+                                    180 tests
 
                                     
 
@@ -306,13 +306,13 @@
                     <td>
                         <i class="bi bi-card-checklist"></i> Number of Scenarios
                     </td>
-                    <td>139</td>
+                    <td>147</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-caret-right"></i> Total Number of Test Cases
                     </td>
-                    <td>172</td>
+                    <td>180</td>
                 </tr>
                 <tr scope="row">
                     <td>
@@ -325,14 +325,14 @@
                         <i class="bi bi-stop-circle"></i> Tests
                         Finished
                     </td>
-                    <td>May 17, 2026 21:28:20</td>
+                    <td>May 17, 2026 21:32:56</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stopwatch"></i> Total
                         Duration
                     </td>
-                    <td> 21h  46m 36s</td>
+                    <td> 21h  51m 12s</td>
                 </tr>
                 <tr scope="row">
                     <td>
@@ -359,7 +359,7 @@
                         <i class="bi bi-stopwatch-fill"></i> Total
                         Execution Time
                     </td>
-                    <td> 7m 57s</td>
+                    <td> 8m 28s</td>
                 </tr>
                 </tbody>
             </table>
@@ -557,6 +557,60 @@ Then el sistema muestra la advertencia de que no hay materias primas disponibles
 Given el usuario accede al modulo de asociar materia prima
 Given el usuario inicia sesion con el rol "Ventas"
 When el usuario intenta acceder al modulo de asociar materia prima a producto
+Then el sistema muestra la pagina de acceso denegado
+And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
+</td>
+                                                                                    <td>8</td>
+                                                                                    <td>100%</td>
+                                                                                    <td>
+                                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <div class="progress">
+                                                                                                <div class="progress-bar"
+                                                                                                     role="progressbar"
+                                                                                                     style="width: 100%; background-color: #b0cf73"
+                                                                                                     aria-valuenow="8"
+                                                                                                     title="100% success"
+                                                                                                     aria-valuemin="0"
+                                                                                                     aria-valuemax="100">
+                                                                                                </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                            <a href="eea3eea936a756001d59a533f7bfd16c0b826730f84a0a7ed24b4a1b249ae5e7.html"> HU-23 Asociar proveedor a materia prima</a>
+                                                                                    </td>
+                                                                                    <td>8</td>
+                                                                                    <td>Given el usuario accede al modulo de asociar proveedor a materia prima
+When el usuario selecciona el primer proveedor y asocia la primera materia prima con costo 5000
+Then la materia prima queda registrada en la lista de asociaciones del proveedor
+Given el usuario accede al modulo de asociar proveedor a materia prima
+When el usuario selecciona el primer proveedor y asocia la primera materia prima con costo 3000
+And el usuario asocia la segunda materia prima disponible al proveedor con costo 2000
+Then el sistema muestra al menos 2 materias primas asociadas al proveedor
+Given el usuario accede al modulo de asociar proveedor a materia prima
+Given existe al menos una materia prima asociada al proveedor seleccionado
+When el usuario intenta asociar la misma materia prima al mismo proveedor nuevamente
+Then el sistema muestra el mensaje de error de asociacion proveedor "Ese proveedor ya esta asociado a esa materia prima"
+Given el usuario accede al modulo de asociar proveedor a materia prima
+When el usuario selecciona el primer proveedor y una materia prima con costo invalido de cero
+Then el sistema muestra el mensaje de error de asociacion proveedor "El costo por unidad debe ser mayor a 0"
+Given el usuario accede al modulo de asociar proveedor a materia prima
+Given existe al menos una materia prima asociada al proveedor seleccionado
+When el usuario edita el costo de la primera asociacion del proveedor a 9500
+Then el sistema muestra el mensaje de exito de edicion de asociacion proveedor "Costo actualizado exitosamente"
+Given el usuario accede al modulo de asociar proveedor a materia prima
+Given existe al menos una materia prima asociada al proveedor seleccionado
+When el usuario elimina la primera asociacion del proveedor a materia prima
+Then la asociacion queda eliminada de la lista del proveedor
+Given el usuario accede al modulo de asociar proveedor a materia prima
+When el usuario selecciona el primer proveedor y no hay materias primas en el sistema
+Then el sistema muestra la advertencia de que no hay materias primas disponibles para el proveedor
+Given el usuario accede al modulo de asociar proveedor a materia prima
+Given el usuario inicia sesion con el rol "Ventas"
+When el usuario intenta acceder al modulo de asociar proveedor a materia prima
 Then el sistema muestra la pagina de acceso denegado
 And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
 </td>
@@ -1854,7 +1908,7 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                                     </a>
                                     <a href="59833438c6f26ce6a948f014f0ed24af60e84cbbbc3d726e67c0d48d63c18157.html">
                                     <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Proveedores&nbsp;&nbsp;&nbsp;7
+                                        <i class="bi bi-tag-fill"></i> Proveedores&nbsp;&nbsp;&nbsp;15
                                     </span>
                                     </a>
                                     <a href="e173e6e85602d9be589a9f0ed1a67e5dba634f57cc053f2565e96d857854da7f.html">
@@ -1896,7 +1950,7 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                             <div>
                                     <a href="46b54d9084ba9783130da16408afb27a4e4620f6bd966e731510c7395b9ddf5c.html">
                                     <span class="tag-badge badge" style="background-color:#fd938e; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Chrome, Linux&nbsp;&nbsp;&nbsp;157
+                                        <i class="bi bi-tag-fill"></i> Chrome, Linux&nbsp;&nbsp;&nbsp;165
                                     </span>
                                     </a>
                             </div>
@@ -1919,18 +1973,18 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                     <td>
                         <i class="bi bi-card-checklist"></i> Number of Scenarios
                     </td>
-                    <td>139</td>
+                    <td>147</td>
                     <td>
                         <i class="bi bi-stopwatch"></i> Total
                         Duration
                     </td>
-                    <td> 21h  46m 36s</td>
+                    <td> 21h  51m 12s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-caret-right"></i> Total Number of Test Cases
                     </td>
-                    <td>172</td>
+                    <td>180</td>
                     <td>
                         <i class="bi bi-trophy"></i> Fastest Test
                     </td>
@@ -1963,12 +2017,12 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                         <i class="bi bi-stop-circle"></i> Tests
                         Finished
                     </td>
-                    <td>May 17, 2026 21:28:20</td>
+                    <td>May 17, 2026 21:32:56</td>
                     <td>
                         <i class="bi bi-stopwatch-fill"></i> Total
                         Execution Time
                     </td>
-                    <td> 7m 57s</td>
+                    <td> 8m 28s</td>
                 </tr>
                 </tbody>
             </table>
@@ -2437,6 +2491,172 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
 </td>
                                                                         <td data-order="1779070359">21:12:39</td>
                                                                         <td>4s 247ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="eea3eea936a756001d59a533f7bfd16c0b826730f84a0a7ed24b4a1b249ae5e7.html">HU-23 Asociar proveedor a materia prima</a>
+                                                                        </td>
+                                                                        <td data-order="Asociacion exitosa de proveedor a materia prima">
+                                                                                    <a href="91b9848d6f30ae657477c36f9a8febf284a1e0cea2d13271caa656051e4cfbfa.html">Asociacion exitosa de proveedor a materia prima</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
+                                                                        </td>
+                                                                        <td>3</td>
+                                                                        <td>Given el usuario accede al modulo de asociar proveedor a materia prima
+When el usuario selecciona el primer proveedor y asocia la primera materia prima con costo 5000
+Then la materia prima queda registrada en la lista de asociaciones del proveedor
+</td>
+                                                                        <td data-order="1779071523">21:32:03</td>
+                                                                        <td>4s 206ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="eea3eea936a756001d59a533f7bfd16c0b826730f84a0a7ed24b4a1b249ae5e7.html">HU-23 Asociar proveedor a materia prima</a>
+                                                                        </td>
+                                                                        <td data-order="Asociar multiples materias primas a un proveedor">
+                                                                                    <a href="1391e9dc0f570761a110b10d38b28fb21b366937901f9ad9fd8536ab5baa5ed3.html">Asociar multiples materias primas a un proveedor</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
+                                                                        </td>
+                                                                        <td>4</td>
+                                                                        <td>Given el usuario accede al modulo de asociar proveedor a materia prima
+When el usuario selecciona el primer proveedor y asocia la primera materia prima con costo 3000
+And el usuario asocia la segunda materia prima disponible al proveedor con costo 2000
+Then el sistema muestra al menos 2 materias primas asociadas al proveedor
+</td>
+                                                                        <td data-order="1779071527">21:32:07</td>
+                                                                        <td>3s 437ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="eea3eea936a756001d59a533f7bfd16c0b826730f84a0a7ed24b4a1b249ae5e7.html">HU-23 Asociar proveedor a materia prima</a>
+                                                                        </td>
+                                                                        <td data-order="Asociacion duplicada de proveedor a materia prima">
+                                                                                    <a href="345f15244c409c268ea52aca59ff3ddf7cf69612d2f637f1f9dd05d6abfb910a.html">Asociacion duplicada de proveedor a materia prima</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
+                                                                        </td>
+                                                                        <td>4</td>
+                                                                        <td>Given el usuario accede al modulo de asociar proveedor a materia prima
+Given existe al menos una materia prima asociada al proveedor seleccionado
+When el usuario intenta asociar la misma materia prima al mismo proveedor nuevamente
+Then el sistema muestra el mensaje de error de asociacion proveedor "Ese proveedor ya esta asociado a esa materia prima"
+</td>
+                                                                        <td data-order="1779071531">21:32:11</td>
+                                                                        <td>3s 647ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="eea3eea936a756001d59a533f7bfd16c0b826730f84a0a7ed24b4a1b249ae5e7.html">HU-23 Asociar proveedor a materia prima</a>
+                                                                        </td>
+                                                                        <td data-order="Costo por unidad invalido">
+                                                                                    <a href="6e8de5bbd05cd1693f5091b4b006588eed511372402752a39519e0a4e89b51c3.html">Costo por unidad invalido</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
+                                                                        </td>
+                                                                        <td>3</td>
+                                                                        <td>Given el usuario accede al modulo de asociar proveedor a materia prima
+When el usuario selecciona el primer proveedor y una materia prima con costo invalido de cero
+Then el sistema muestra el mensaje de error de asociacion proveedor "El costo por unidad debe ser mayor a 0"
+</td>
+                                                                        <td data-order="1779071534">21:32:14</td>
+                                                                        <td>3s 423ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="eea3eea936a756001d59a533f7bfd16c0b826730f84a0a7ed24b4a1b249ae5e7.html">HU-23 Asociar proveedor a materia prima</a>
+                                                                        </td>
+                                                                        <td data-order="Editar costo por unidad de asociacion existente">
+                                                                                    <a href="30c9731835353a6eff860f76e8c211b353b4bd91d328bf6704c756c751d661c6.html">Editar costo por unidad de asociacion existente</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
+                                                                        </td>
+                                                                        <td>4</td>
+                                                                        <td>Given el usuario accede al modulo de asociar proveedor a materia prima
+Given existe al menos una materia prima asociada al proveedor seleccionado
+When el usuario edita el costo de la primera asociacion del proveedor a 9500
+Then el sistema muestra el mensaje de exito de edicion de asociacion proveedor "Costo actualizado exitosamente"
+</td>
+                                                                        <td data-order="1779071538">21:32:18</td>
+                                                                        <td>3s 736ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="eea3eea936a756001d59a533f7bfd16c0b826730f84a0a7ed24b4a1b249ae5e7.html">HU-23 Asociar proveedor a materia prima</a>
+                                                                        </td>
+                                                                        <td data-order="Eliminar asociacion de proveedor a materia prima">
+                                                                                    <a href="69c6e182bec5d21ec8ccb02d864ee16d76855af8733f30066779efacd00f06e9.html">Eliminar asociacion de proveedor a materia prima</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
+                                                                        </td>
+                                                                        <td>4</td>
+                                                                        <td>Given el usuario accede al modulo de asociar proveedor a materia prima
+Given existe al menos una materia prima asociada al proveedor seleccionado
+When el usuario elimina la primera asociacion del proveedor a materia prima
+Then la asociacion queda eliminada de la lista del proveedor
+</td>
+                                                                        <td data-order="1779071542">21:32:22</td>
+                                                                        <td>3s 688ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="eea3eea936a756001d59a533f7bfd16c0b826730f84a0a7ed24b4a1b249ae5e7.html">HU-23 Asociar proveedor a materia prima</a>
+                                                                        </td>
+                                                                        <td data-order="No hay materias primas registradas para el proveedor">
+                                                                                    <a href="e94c34e12881211f8384eb4ad78f5850be32b7d3b69e781dcc9581d4dafed10f.html">No hay materias primas registradas para el proveedor</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
+                                                                        </td>
+                                                                        <td>3</td>
+                                                                        <td>Given el usuario accede al modulo de asociar proveedor a materia prima
+When el usuario selecciona el primer proveedor y no hay materias primas en el sistema
+Then el sistema muestra la advertencia de que no hay materias primas disponibles para el proveedor
+</td>
+                                                                        <td data-order="1779071545">21:32:25</td>
+                                                                        <td>3s 447ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="eea3eea936a756001d59a533f7bfd16c0b826730f84a0a7ed24b4a1b249ae5e7.html">HU-23 Asociar proveedor a materia prima</a>
+                                                                        </td>
+                                                                        <td data-order="Modulo no visible para roles no autorizados">
+                                                                                    <a href="37e4c50387560b1b3b17d63c16775fd40a9cd5f3d489b96cd91dd3dbe1253c0b.html">Modulo no visible para roles no autorizados</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
+                                                                        </td>
+                                                                        <td>5</td>
+                                                                        <td>Given el usuario accede al modulo de asociar proveedor a materia prima
+Given el usuario inicia sesion con el rol "Ventas"
+When el usuario intenta acceder al modulo de asociar proveedor a materia prima
+Then el sistema muestra la pagina de acceso denegado
+And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
+</td>
+                                                                        <td data-order="1779071549">21:32:29</td>
+                                                                        <td>4s 170ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -4847,8 +5067,8 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
 When el usuario registra un proveedor con todos los campos obligatorios
 Then el sistema muestra el mensaje de exito de proveedor "Proveedor registrado exitosamente"
 </td>
-                                                                        <td data-order="1779071278">21:27:58</td>
-                                                                        <td>3s 412ms</td>
+                                                                        <td data-order="1779071553">21:32:33</td>
+                                                                        <td>2s 680ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -4867,8 +5087,8 @@ Then el sistema muestra el mensaje de exito de proveedor "Proveedor registrado e
 When el usuario registra un proveedor con todos los campos incluyendo opcionales
 Then el sistema muestra el mensaje de exito de proveedor "Proveedor registrado exitosamente"
 </td>
-                                                                        <td data-order="1779071282">21:28:02</td>
-                                                                        <td>3s 040ms</td>
+                                                                        <td data-order="1779071556">21:32:36</td>
+                                                                        <td>2s 980ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -4888,8 +5108,8 @@ Given existe un proveedor registrado en el sistema
 When el usuario intenta registrar un proveedor con el mismo NIT
 Then el sistema muestra el mensaje de error de proveedor "Ya existe un proveedor con ese NIT"
 </td>
-                                                                        <td data-order="1779071285">21:28:05</td>
-                                                                        <td>3s 236ms</td>
+                                                                        <td data-order="1779071559">21:32:39</td>
+                                                                        <td>3s 501ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -4909,8 +5129,8 @@ Given existe un proveedor registrado en el sistema
 When el usuario intenta registrar un proveedor con el mismo nombre
 Then el sistema muestra el mensaje de error de proveedor "Ya existe un proveedor con ese nombre"
 </td>
-                                                                        <td data-order="1779071288">21:28:08</td>
-                                                                        <td>3s 190ms</td>
+                                                                        <td data-order="1779071563">21:32:43</td>
+                                                                        <td>3s 932ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -4930,8 +5150,8 @@ Given existe un proveedor registrado en el sistema
 When el usuario intenta registrar un proveedor con el mismo correo
 Then el sistema muestra el mensaje de error de proveedor "Ya existe un proveedor con ese correo"
 </td>
-                                                                        <td data-order="1779071291">21:28:11</td>
-                                                                        <td>3s 263ms</td>
+                                                                        <td data-order="1779071567">21:32:47</td>
+                                                                        <td>3s 417ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -4950,8 +5170,8 @@ Then el sistema muestra el mensaje de error de proveedor "Ya existe un proveedor
 When el usuario intenta registrar un proveedor sin diligenciar los campos obligatorios
 Then el sistema muestra el mensaje de error de proveedor "Todos los campos obligatorios deben ser diligenciados"
 </td>
-                                                                        <td data-order="1779071295">21:28:15</td>
-                                                                        <td>2s 548ms</td>
+                                                                        <td data-order="1779071570">21:32:50</td>
+                                                                        <td>2s 637ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -4972,8 +5192,8 @@ When el usuario intenta acceder al modulo de registro de proveedores
 Then el sistema muestra la pagina de acceso denegado
 And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
 </td>
-                                                                        <td data-order="1779071297">21:28:17</td>
-                                                                        <td>2s 561ms</td>
+                                                                        <td data-order="1779071573">21:32:53</td>
+                                                                        <td>2s 936ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -5339,7 +5559,7 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                                     </a>
                                     <a href="59833438c6f26ce6a948f014f0ed24af60e84cbbbc3d726e67c0d48d63c18157.html">
                                     <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Proveedores&nbsp;&nbsp;&nbsp;7
+                                        <i class="bi bi-tag-fill"></i> Proveedores&nbsp;&nbsp;&nbsp;15
                                     </span>
                                     </a>
                                     <a href="e173e6e85602d9be589a9f0ed1a67e5dba634f57cc053f2565e96d857854da7f.html">
@@ -5381,7 +5601,7 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                             <div>
                                     <a href="46b54d9084ba9783130da16408afb27a4e4620f6bd966e731510c7395b9ddf5c.html">
                                     <span class="tag-badge badge" style="background-color:#fd938e; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Chrome, Linux&nbsp;&nbsp;&nbsp;157
+                                        <i class="bi bi-tag-fill"></i> Chrome, Linux&nbsp;&nbsp;&nbsp;165
                                     </span>
                                     </a>
                             </div>
@@ -5435,7 +5655,7 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
             datasets: [{
                 label: 'Test Results',
                 fill: false,
-                data: [151,18,0,0,0,3,0,0],
+                data: [159,18,0,0,0,3,0,0],
                 backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                 borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                 borderWidth: 1,
@@ -5531,7 +5751,7 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
             datasets: [
                 {
                     label: 'Automated',
-                    data: [151,18,0,0,0,3,0,0],
+                    data: [159,18,0,0,0,3,0,0],
                     backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                     borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                     borderWidth: 1
@@ -5614,7 +5834,7 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
             datasets: [{
                 label: 'Number of tests per duration',
                 fill: false,
-                data: ['30','142','0','0','0','0','0','0'],
+                data: ['30','150','0','0','0','0','0','0'],
                 backgroundColor: 'rgba(83, 146, 255,0.5)',
                 borderColor: 'rgba(83, 146, 255, 1)',
             }]
@@ -5695,6 +5915,11 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                 title: 'HU-21 Asociar materia prima a producto',
                 result: 'SUCCESS',
                 link: "de6883593bd01403075c618b2f7b617352e4e9d20f9e60e4695c73211505228f.html"
+            },
+            {
+                title: 'HU-23 Asociar proveedor a materia prima',
+                result: 'SUCCESS',
+                link: "eea3eea936a756001d59a533f7bfd16c0b826730f84a0a7ed24b4a1b249ae5e7.html"
             },
             {
                 title: 'HU-07 Crear usuario del sistema',
@@ -5793,6 +6018,7 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                 'HU-14 Agregar productos al detalle de venta',
                 'HU-08 Asignar rol a usuario',
                 'HU-21 Asociar materia prima a producto',
+                'HU-23 Asociar proveedor a materia prima',
                 'HU-07 Crear usuario del sistema',
                 'HU-11 Editar informacion de cliente',
                 'HU-05 Editar informacion de empleado',
@@ -5815,42 +6041,42 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
             datasets: [
                 {
                     label: ['Passing Tests'],
-                    data: [3,6,4,8,6,7,6,8,7,6,6,5,3,16,6,6,5,6,7,4,6,20],
+                    data: [3,6,4,8,8,6,7,6,8,7,6,6,5,3,16,6,6,5,6,7,4,6,20],
                     backgroundColor: [ 'rgba(153,204,51,0.5)' ]
                 },
                 {
                     label: ['Pending Tests'],
-                    data: [0,0,0,0,0,0,0,0,1,1,1,0,0,14,0,0,0,0,0,0,1,0],
+                    data: [0,0,0,0,0,0,0,0,0,1,1,1,0,0,14,0,0,0,0,0,0,1,0],
                     backgroundColor: [ 'rgba(165, 199, 238, 0.5)' ]
                 },
                 {
                     label: ['Ignored Tests'],
-                    data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                    data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
                     backgroundColor: [ 'rgba(168, 168, 168, 0.5)' ]
                 },
                 {
                     label: ['Skipped Tests'],
-                    data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                    data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
                     backgroundColor: [ 'rgba(238, 224, 152, 0.75)' ]
                 },
                 {
                     label: ['Aborted Tests'],
-                    data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                    data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
                     backgroundColor: [ 'rgba(255, 153, 102, 0.5)' ]
                 },
                 {
                     label: ['Failed Tests'],
-                    data: [0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1],
+                    data: [0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1],
                     backgroundColor: [ 'rgba(255, 22, 49, 0.5)' ]
                 },
                 {
                     label: ['Errors'],
-                    data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                    data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
                     backgroundColor: [ 'rgba(255, 97, 8, 0.5)' ]
                 },
                 {
                     label: ['Compromised Tests'],
-                    data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                    data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
                     backgroundColor: [ 'rgba(255, 104, 255, 0.5)' ]
                 },
             ]
