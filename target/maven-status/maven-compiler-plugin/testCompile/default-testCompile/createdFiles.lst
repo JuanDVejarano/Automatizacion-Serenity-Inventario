@@ -37,9 +37,11 @@ com/inventario/pages/RegistrarMateriaPrimaPage.class
 com/inventario/steps/RegistrarTipoProductoStepDefinitions.class
 com/inventario/steps/RegistrarVentaStepDefinitions.class
 com/inventario/steps/AsociarMateriaPrimaStepDefinitions.class
+com/inventario/pages/RegistrarMovimientoPage.class
 com/inventario/pages/ActualizarStockMateriaPrimaPage.class
 com/inventario/steps/ListarEmpleadosStepDefinitions.class
 com/inventario/steps/AsignarRolStepDefinitions.class
+com/inventario/steps/RegistrarMovimientoStepDefinitions.class
 com/inventario/pages/RegistrarProveedorPage.class
 com/inventario/pages/UnauthorizedPage.class
 com/inventario/steps/CrearUsuarioStepDefinitions.class

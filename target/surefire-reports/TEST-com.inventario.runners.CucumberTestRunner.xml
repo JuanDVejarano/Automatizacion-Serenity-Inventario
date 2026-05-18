@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.inventario.runners.CucumberTestRunner" time="11.185" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.inventario.runners.CucumberTestRunner" time="27.976" tests="12" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ES"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-21-openjdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/juanj/Projects-Test/serenity-inventario-login/target/surefire/surefirebooter-20260517222954250_3.jar /home/juanj/Projects-Test/serenity-inventario-login/target/surefire 2026-05-17T22-29-54_166-jvmRun1 surefire-20260517222954250_1tmp surefire_0-20260517222954250_2tmp"/>
+    <property name="sun.java.command" value="/home/juanj/Projects-Test/serenity-inventario-login/target/surefire/surefirebooter-20260517223449367_3.jar /home/juanj/Projects-Test/serenity-inventario-login/target/surefire 2026-05-17T22-34-49_285-jvmRun1 surefire-20260517223449367_1tmp surefire_0-20260517223449367_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/juanj/Projects-Test/serenity-inventario-login/target/test-classes:/home/juanj/Projects-Test/serenity-inventario-login/target/classes:/home/juanj/.m2/repository/net/serenity-bdd/serenity-core/4.1.20/serenity-core-4.1.20.jar:/home/juanj/.m2/repository/net/serenity-bdd/serenity-model/4.1.20/serenity-model-4.1.20.jar:/home/juanj/.m2/repository/org/apache/commons/commons-text/1.11.0/commons-text-1.11.0.jar:/home/juanj/.m2/repository/commons-net/commons-net/3.10.0/commons-net-3.10.0.jar:/home/juanj/.m2/repository/com/google/guava/guava/33.1.0-jre/guava-33.1.0-jre.jar:/home/juanj/.m2/repository/com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.jar:/home/juanj/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/juanj/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/home/juanj/.m2/repository/org/checkerframework/checker-qual/3.42.0/checker-qual-3.42.0.jar:/home/juanj/.m2/repository/com/google/errorprone/error_prone_annotations/2.26.1/error_prone_annotations-2.26.1.jar:/home/juanj/.m2/repository/com/google/j2objc/j2objc-annotations/3.0.0/j2objc-annotations-3.0.0.jar:/home/juanj/.m2/repository/org/jsoup/jsoup/1.15.4/jsoup-1.15.4.jar:/home/juanj/.m2/repository/com/thoughtworks/xstream/xstream/1.4.20/xstream-1.4.20.jar:/home/juanj/.m2/repository/io/github/x-stream/mxparser/1.2.2/mxparser-1.2.2.jar:/home/juanj/.m2/repository/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.jar:/home/juanj/.m2/repository/com/typesafe/config/1.4.3/config-1.4.3.jar:/home/juanj/.m2/repository/org/imgscalr/imgscalr-lib/4.2/imgscalr-lib-4.2.jar:/home/juanj/.m2/repository/org/awaitility/awaitility/4.2.0/awaitility-4.2.0.jar:/home/juanj/.m2/repository/org/freemarker/freemarker/2.3.32/freemarker-2.3.32.jar:/home/juanj/.m2/repository/io/github/classgraph/classgraph/4.8.157/classgraph-4.8.157.jar:/home/juanj/.m2/repository/com/github/ben-manes/caffeine/caffeine/2.9.2/caffeine-2.9.2.jar:/home/juanj/.m2/repository/org/ehcache/ehcache/3.10.8/ehcache-3.10.8.jar:/home/juanj/.m2/repository/javax/cache/cache-api/1.1.0/cache-api-1.1.0.jar:/home/juanj/.m2/repository/net/sourceforge/jexcelapi/jxl/2.6.12/jxl-2.6.12.jar:/home/juanj/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.15/byte-buddy-agent-1.14.15.jar:/home/juanj/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-all/0.64.8/flexmark-all-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark/0.64.8/flexmark-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-abbreviation/0.64.8/flexmark-ext-abbreviation-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-admonition/0.64.8/flexmark-ext-admonition-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-anchorlink/0.64.8/flexmark-ext-anchorlink-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-aside/0.64.8/flexmark-ext-aside-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-attributes/0.64.8/flexmark-ext-attributes-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-autolink/0.64.8/flexmark-ext-autolink-0.64.8.jar:/home/juanj/.m2/repository/org/nibor/autolink/autolink/0.6.0/autolink-0.6.0.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-definition/0.64.8/flexmark-ext-definition-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-emoji/0.64.8/flexmark-ext-emoji-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-enumerated-reference/0.64.8/flexmark-ext-enumerated-reference-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-escaped-character/0.64.8/flexmark-ext-escaped-character-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-footnotes/0.64.8/flexmark-ext-footnotes-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-gfm-issues/0.64.8/flexmark-ext-gfm-issues-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-gfm-strikethrough/0.64.8/flexmark-ext-gfm-strikethrough-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-gfm-tasklist/0.64.8/flexmark-ext-gfm-tasklist-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-gfm-users/0.64.8/flexmark-ext-gfm-users-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-gitlab/0.64.8/flexmark-ext-gitlab-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-jekyll-front-matter/0.64.8/flexmark-ext-jekyll-front-matter-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-jekyll-tag/0.64.8/flexmark-ext-jekyll-tag-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-media-tags/0.64.8/flexmark-ext-media-tags-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-macros/0.64.8/flexmark-ext-macros-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-ins/0.64.8/flexmark-ext-ins-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-xwiki-macros/0.64.8/flexmark-ext-xwiki-macros-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-superscript/0.64.8/flexmark-ext-superscript-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-toc/0.64.8/flexmark-ext-toc-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-typographic/0.64.8/flexmark-ext-typographic-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-wikilink/0.64.8/flexmark-ext-wikilink-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-yaml-front-matter/0.64.8/flexmark-ext-yaml-front-matter-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-youtube-embedded/0.64.8/flexmark-ext-youtube-embedded-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-html2md-converter/0.64.8/flexmark-html2md-converter-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-jira-converter/0.64.8/flexmark-jira-converter-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-pdf-converter/0.64.8/flexmark-pdf-converter-0.64.8.jar:/home/juanj/.m2/repository/com/openhtmltopdf/openhtmltopdf-core/1.0.10/openhtmltopdf-core-1.0.10.jar:/home/juanj/.m2/repository/com/openhtmltopdf/openhtmltopdf-pdfbox/1.0.10/openhtmltopdf-pdfbox-1.0.10.jar:/home/juanj/.m2/repository/org/apache/pdfbox/pdfbox/2.0.24/pdfbox-2.0.24.jar:/home/juanj/.m2/repository/org/apache/pdfbox/fontbox/2.0.24/fontbox-2.0.24.jar:/home/juanj/.m2/repository/org/apache/pdfbox/xmpbox/2.0.24/xmpbox-2.0.24.jar:/home/juanj/.m2/repository/de/rototor/pdfbox/graphics2d/0.32/graphics2d-0.32.jar:/home/juanj/.m2/repository/com/openhtmltopdf/openhtmltopdf-rtl-support/1.0.10/openhtmltopdf-rtl-support-1.0.10.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-profile-pegdown/0.64.8/flexmark-profile-pegdown-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util-ast/0.64.8/flexmark-util-ast-0.64.8.jar:/home/juanj/.m2/repository/org/jetbrains/annotations/24.0.1/annotations-24.0.1.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util-builder/0.64.8/flexmark-util-builder-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util-collection/0.64.8/flexmark-util-collection-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util-data/0.64.8/flexmark-util-data-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util-dependency/0.64.8/flexmark-util-dependency-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util-format/0.64.8/flexmark-util-format-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util-html/0.64.8/flexmark-util-html-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util-misc/0.64.8/flexmark-util-misc-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util-options/0.64.8/flexmark-util-options-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util-sequence/0.64.8/flexmark-util-sequence-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util-visitor/0.64.8/flexmark-util-visitor-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-youtrack-converter/0.64.8/flexmark-youtrack-converter-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-resizable-image/0.64.8/flexmark-ext-resizable-image-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-tables/0.64.8/flexmark-ext-tables-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util/0.64.8/flexmark-util-0.64.8.jar:/home/juanj/.m2/repository/net/serenity-bdd/serenity-reports/4.1.20/serenity-reports-4.1.20.jar:/home/juanj/.m2/repository/net/serenity-bdd/serenity-stats/4.1.20/serenity-stats-4.1.20.jar:/home/juanj/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/1.9.24/kotlin-stdlib-1.9.24.jar:/home/juanj/.m2/repository/net/serenity-bdd/serenity-reports-configuration/4.1.20/serenity-reports-configuration-4.1.20.jar:/home/juanj/.m2/repository/com/ibm/icu/icu4j/72.1/icu4j-72.1.jar:/home/juanj/.m2/repository/es/nitaur/markdown/txtmark/0.16/txtmark-0.16.jar:/home/juanj/.m2/repository/net/serenity-bdd/serenity-report-resources/4.1.20/serenity-report-resources-4.1.20.jar:/home/juanj/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/home/juanj/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.0/jackson-core-2.17.0.jar:/home/juanj/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.0/jackson-databind-2.17.0.jar:/home/juanj/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.0/jackson-annotations-2.17.0.jar:/home/juanj/.m2/repository/commons-codec/commons-codec/1.16.1/commons-codec-1.16.1.jar:/home/juanj/.m2/repository/commons-io/commons-io/2.15.1/commons-io-2.15.1.jar:/home/juanj/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/juanj/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/home/juanj/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-java/4.21.0/selenium-java-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v123/4.21.0/selenium-devtools-v123-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v124/4.21.0/selenium-devtools-v124-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v125/4.21.0/selenium-devtools-v125-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.21.0/selenium-devtools-v85-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.21.0/selenium-remote-driver-4.21.0.jar:/home/juanj/.m2/repository/io/opentelemetry/semconv/opentelemetry-semconv/1.25.0-alpha/opentelemetry-semconv-1.25.0-alpha.jar:/home/juanj/.m2/repository/io/opentelemetry/opentelemetry-api/1.38.0/opentelemetry-api-1.38.0.jar:/home/juanj/.m2/repository/io/opentelemetry/opentelemetry-context/1.38.0/opentelemetry-context-1.38.0.jar:/home/juanj/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.38.0/opentelemetry-exporter-logging-1.38.0.jar:/home/juanj/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.38.0/opentelemetry-sdk-common-1.38.0.jar:/home/juanj/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.38.0/opentelemetry-sdk-extension-autoconfigure-spi-1.38.0.jar:/home/juanj/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.38.0/opentelemetry-sdk-extension-autoconfigure-1.38.0.jar:/home/juanj/.m2/repository/io/opentelemetry/opentelemetry-api-incubator/1.38.0-alpha/opentelemetry-api-incubator-1.38.0-alpha.jar:/home/juanj/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.38.0/opentelemetry-sdk-trace-1.38.0.jar:/home/juanj/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.38.0/opentelemetry-sdk-1.38.0.jar:/home/juanj/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.38.0/opentelemetry-sdk-metrics-1.38.0.jar:/home/juanj/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.38.0/opentelemetry-sdk-logs-1.38.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-os/4.21.0/selenium-os-4.21.0.jar:/home/juanj/.m2/repository/org/apache/commons/commons-exec/1.4.0/commons-exec-1.4.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.21.0/selenium-safari-driver-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-api/4.21.0/selenium-api-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-support/4.21.0/selenium-support-4.21.0.jar:/home/juanj/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-json/4.21.0/selenium-json-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.21.0/selenium-chrome-driver-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.21.0/selenium-chromium-driver-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.21.0/selenium-manager-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.21.0/selenium-firefox-driver-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-http/4.21.0/selenium-http-4.21.0.jar:/home/juanj/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.21.0/selenium-edge-driver-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.21.0/selenium-ie-driver-4.21.0.jar:/home/juanj/.m2/repository/org/htmlunit/htmlunit/4.1.0/htmlunit-4.1.0.jar:/home/juanj/.m2/repository/org/apache/httpcomponents/httpmime/4.5.14/httpmime-4.5.14.jar:/home/juanj/.m2/repository/org/htmlunit/htmlunit-core-js/4.1.0/htmlunit-core-js-4.1.0.jar:/home/juanj/.m2/repository/org/htmlunit/neko-htmlunit/4.1.0/neko-htmlunit-4.1.0.jar:/home/juanj/.m2/repository/org/htmlunit/htmlunit-cssparser/4.1.0/htmlunit-cssparser-4.1.0.jar:/home/juanj/.m2/repository/org/htmlunit/htmlunit-xpath/4.1.0/htmlunit-xpath-4.1.0.jar:/home/juanj/.m2/repository/org/htmlunit/htmlunit-csp/4.1.0/htmlunit-csp-4.1.0.jar:/home/juanj/.m2/repository/org/htmlunit/htmlunit-websocket-client/4.1.0/htmlunit-websocket-client-4.1.0.jar:/home/juanj/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/htmlunit3-driver/4.21.0/htmlunit3-driver-4.21.0.jar:/home/juanj/.m2/repository/io/appium/java-client/9.2.2/java-client-9.2.2.jar:/home/juanj/.m2/repository/org/apache/groovy/groovy/4.0.13/groovy-4.0.13.jar:/home/juanj/.m2/repository/net/sf/opencsv/opencsv/2.1/opencsv-2.1.jar:/home/juanj/.m2/repository/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar:/home/juanj/.m2/repository/org/apache/commons/commons-compress/1.26.0/commons-compress-1.26.0.jar:/home/juanj/.m2/repository/org/fluentlenium/fluentlenium-core/0.10.2/fluentlenium-core-0.10.2.jar:/home/juanj/.m2/repository/com/jhlabs/filters/2.0.235/filters-2.0.235.jar:/home/juanj/.m2/repository/com/paulhammant/ngwebdriver/1.1.6/ngwebdriver-1.1.6.jar:/home/juanj/.m2/repository/joda-time/joda-time/2.12.7/joda-time-2.12.7.jar:/home/juanj/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/juanj/.m2/repository/com/google/jimfs/jimfs/1.3.0/jimfs-1.3.0.jar:/home/juanj/.m2/repository/org/mockito/mockito-core/3.3.3/mockito-core-3.3.3.jar:/home/juanj/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/home/juanj/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/home/juanj/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-core-2.3.0.1.jar:/home/juanj/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.3/jaxb-impl-2.3.3.jar:/home/juanj/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/home/juanj/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/home/juanj/.m2/repository/javax/activation/activation/1.1.1/activation-1.1.1.jar:/home/juanj/.m2/repository/net/serenity-bdd/serenity-cucumber/4.1.20/serenity-cucumber-4.1.20.jar:/home/juanj/.m2/repository/net/serenity-bdd/serenity-screenplay/4.1.20/serenity-screenplay-4.1.20.jar:/home/juanj/.m2/repository/net/serenity-bdd/serenity-screenplay-webdriver/4.1.20/serenity-screenplay-webdriver-4.1.20.jar:/home/juanj/.m2/repository/io/cucumber/cucumber-core/7.17.0/cucumber-core-7.17.0.jar:/home/juanj/.m2/repository/io/cucumber/cucumber-gherkin/7.17.0/cucumber-gherkin-7.17.0.jar:/home/juanj/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.17.0/cucumber-gherkin-messages-7.17.0.jar:/home/juanj/.m2/repository/io/cucumber/gherkin/28.0.0/gherkin-28.0.0.jar:/home/juanj/.m2/repository/io/cucumber/messages/24.1.0/messages-24.1.0.jar:/home/juanj/.m2/repository/io/cucumber/testng-xml-formatter/0.1.0/testng-xml-formatter-0.1.0.jar:/home/juanj/.m2/repository/io/cucumber/query/12.2.0/query-12.2.0.jar:/home/juanj/.m2/repository/io/cucumber/tag-expressions/6.1.0/tag-expressions-6.1.0.jar:/home/juanj/.m2/repository/io/cucumber/cucumber-expressions/17.1.0/cucumber-expressions-17.1.0.jar:/home/juanj/.m2/repository/io/cucumber/datatable/7.17.0/datatable-7.17.0.jar:/home/juanj/.m2/repository/io/cucumber/cucumber-plugin/7.17.0/cucumber-plugin-7.17.0.jar:/home/juanj/.m2/repository/io/cucumber/docstring/7.17.0/docstring-7.17.0.jar:/home/juanj/.m2/repository/io/cucumber/html-formatter/21.3.1/html-formatter-21.3.1.jar:/home/juanj/.m2/repository/io/cucumber/junit-xml-formatter/0.4.0/junit-xml-formatter-0.4.0.jar:/home/juanj/.m2/repository/io/cucumber/ci-environment/10.0.1/ci-environment-10.0.1.jar:/home/juanj/.m2/repository/io/cucumber/cucumber-java/7.17.0/cucumber-java-7.17.0.jar:/home/juanj/.m2/repository/io/cucumber/cucumber-junit/7.17.0/cucumber-junit-7.17.0.jar:/home/juanj/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/juanj/.m2/repository/org/apache/commons/commons-csv/1.5/commons-csv-1.5.jar:/home/juanj/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/home/juanj/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/juanj/.m2/repository/org/assertj/assertj-core/3.25.3/assertj-core-3.25.3.jar:/home/juanj/.m2/repository/net/bytebuddy/byte-buddy/1.14.11/byte-buddy-1.14.11.jar:/home/juanj/.m2/repository/org/slf4j/slf4j-simple/2.0.12/slf4j-simple-2.0.12.jar:/home/juanj/.m2/repository/org/slf4j/slf4j-api/2.0.12/slf4j-api-2.0.12.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -27,7 +27,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/home/juanj/Projects-Test/serenity-inventario-login/target/surefire/surefirebooter-20260517222954250_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/juanj/Projects-Test/serenity-inventario-login/target/surefire/surefirebooter-20260517223449367_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.10+7-Ubuntu-122.04"/>
     <property name="user.name" value="juanj"/>
@@ -55,12 +55,13 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="Consulta exitosa del saldo de caja" classname="HU-26 Consultar saldo de caja" time="3.634">
+  <testcase name="Registrar gasto operativo" classname="HU-27 Registrar movimiento de caja" time="3.016">
     <system-out><![CDATA[
 @caja
-Scenario: Consulta exitosa del saldo de caja                            &amp#27;[90m# src/test/resources/features/saldo-caja.feature:10&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario accede al modulo de saldo de caja&amp#27;[0m                    &amp#27;[90m# com.inventario.steps.SaldoCajaStepDefinitions.elUsuarioAccedeAlModuloDeSaldoDeCaja()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra la tarjeta de saldo con el capital disponible&amp#27;[0m &amp#27;[90m# com.inventario.steps.SaldoCajaStepDefinitions.elSistemaMuestraLaTarjetaDeSaldoConElCapitalDisponible()&amp#27;[0m
+Scenario: Registrar gasto operativo                                                               &amp#27;[90m# src/test/resources/features/registrar-movimiento.feature:10&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario accede al modulo de registrar movimiento de caja&amp#27;[0m                               &amp#27;[90m# com.inventario.steps.RegistrarMovimientoStepDefinitions.elUsuarioAccedeAlModuloDeRegistrarMovimientoDeCaja()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario registra un movimiento de tipo &amp#27;[0m&amp#27;[32m&amp#27;[1m"Gasto operativo"&amp#27;[0m&amp#27;[32m con valor &amp#27;[0m&amp#27;[32m&amp#27;[1m5000&amp#27;[0m                 &amp#27;[90m# com.inventario.steps.RegistrarMovimientoStepDefinitions.elUsuarioRegistraUnMovimientoDeTipoConValor(java.lang.String,double)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra el mensaje de exito del movimiento &amp#27;[0m&amp#27;[32m&amp#27;[1m"Movimiento registrado exitosamente"&amp#27;[0m &amp#27;[90m# com.inventario.steps.RegistrarMovimientoStepDefinitions.elSistemaMuestraElMensajeDeExitoDelMovimiento(java.lang.String)&amp#27;[0m
 ]]></system-out>
     <system-err><![CDATA[[main] INFO  - 
 
@@ -99,13 +100,274 @@ Scenario: Consulta exitosa del saldo de caja                            &amp#27;
 [main] INFO  - Test Suite Started: HU-10 Registrar cliente
 [main] INFO  - Test Suite Started: HU-04 Registrar empleado
 [main] INFO  - Test Suite Started: HU-20 Registrar materia prima
+[main] INFO  - Test Suite Started: HU-27 Registrar movimiento de caja
 [main] INFO  - Test Suite Started: HU-17 Registrar producto quirurgico
 [main] INFO  - Test Suite Started: HU-22 Registrar proveedor
 [main] INFO  - Test Suite Started: HU-16 Registrar tipo de producto
 [main] INFO  - Test Suite Started: HU-13 Crear venta
 [main] INFO  - Test Suite Started: HU-03 Roles predefinidos del sistema
 [main] INFO  - Test Suite Started: HU-26 Consultar saldo de caja
-[main] INFO  - Test Suite Started: HU-26 Consultar saldo de caja
+[main] INFO  - Test Suite Started: HU-27 Registrar movimiento de caja
+[main] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Registrar gasto operativo(hu-27-registrar-movimiento-de-caja;registrar-gasto-operativo)
+--------------------------------------------------------------------------------
+[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
+may 17, 2026 10:34:51 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find CDP implementation matching 148
+may 17, 2026 10:34:51 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[main] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Registrar gasto operativo
+----------------------------------------------------------------------
+]]></system-err>
+  </testcase>
+  <testcase name="Registrar ingreso externo" classname="HU-27 Registrar movimiento de caja" time="2.248">
+    <system-out><![CDATA[
+@caja
+Scenario: Registrar ingreso externo                                                               &amp#27;[90m# src/test/resources/features/registrar-movimiento.feature:14&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario accede al modulo de registrar movimiento de caja&amp#27;[0m                               &amp#27;[90m# com.inventario.steps.RegistrarMovimientoStepDefinitions.elUsuarioAccedeAlModuloDeRegistrarMovimientoDeCaja()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario registra un movimiento de tipo &amp#27;[0m&amp#27;[32m&amp#27;[1m"Ingreso externo"&amp#27;[0m&amp#27;[32m con valor &amp#27;[0m&amp#27;[32m&amp#27;[1m10000&amp#27;[0m                &amp#27;[90m# com.inventario.steps.RegistrarMovimientoStepDefinitions.elUsuarioRegistraUnMovimientoDeTipoConValor(java.lang.String,double)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra el mensaje de exito del movimiento &amp#27;[0m&amp#27;[32m&amp#27;[1m"Movimiento registrado exitosamente"&amp#27;[0m &amp#27;[90m# com.inventario.steps.RegistrarMovimientoStepDefinitions.elSistemaMuestraElMensajeDeExitoDelMovimiento(java.lang.String)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[[main] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Registrar ingreso externo(hu-27-registrar-movimiento-de-caja;registrar-ingreso-externo)
+--------------------------------------------------------------------------------
+[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
+may 17, 2026 10:34:53 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find CDP implementation matching 148
+may 17, 2026 10:34:53 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[main] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Registrar ingreso externo
+----------------------------------------------------------------------
+]]></system-err>
+  </testcase>
+  <testcase name="Inyeccion de capital por Administrador" classname="HU-27 Registrar movimiento de caja" time="2.158">
+    <system-out><![CDATA[
+@caja
+Scenario: Inyeccion de capital por Administrador                                              &amp#27;[90m# src/test/resources/features/registrar-movimiento.feature:18&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario accede al modulo de registrar movimiento de caja&amp#27;[0m                           &amp#27;[90m# com.inventario.steps.RegistrarMovimientoStepDefinitions.elUsuarioAccedeAlModuloDeRegistrarMovimientoDeCaja()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario registra un movimiento de tipo &amp#27;[0m&amp#27;[32m&amp#27;[1m"Inyeccion de capital"&amp#27;[0m&amp#27;[32m con valor &amp#27;[0m&amp#27;[32m&amp#27;[1m50000&amp#27;[0m       &amp#27;[90m# com.inventario.steps.RegistrarMovimientoStepDefinitions.elUsuarioRegistraUnMovimientoDeTipoConValor(java.lang.String,double)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra el mensaje de exito del movimiento &amp#27;[0m&amp#27;[32m&amp#27;[1m"Capital inyectado exitosamente"&amp#27;[0m &amp#27;[90m# com.inventario.steps.RegistrarMovimientoStepDefinitions.elSistemaMuestraElMensajeDeExitoDelMovimiento(java.lang.String)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[[main] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Inyeccion de capital por Administrador(hu-27-registrar-movimiento-de-caja;inyeccion-de-capital-por-administrador)
+--------------------------------------------------------------------------------
+[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
+may 17, 2026 10:34:55 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find CDP implementation matching 148
+may 17, 2026 10:34:55 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[main] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Inyeccion de capital por Administrador
+----------------------------------------------------------------------
+]]></system-err>
+  </testcase>
+  <testcase name="Deduccion de saldo por Administrador" classname="HU-27 Registrar movimiento de caja" time="2.191">
+    <system-out><![CDATA[
+@caja
+Scenario: Deduccion de saldo por Administrador                                                   &amp#27;[90m# src/test/resources/features/registrar-movimiento.feature:22&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario accede al modulo de registrar movimiento de caja&amp#27;[0m                              &amp#27;[90m# com.inventario.steps.RegistrarMovimientoStepDefinitions.elUsuarioAccedeAlModuloDeRegistrarMovimientoDeCaja()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario registra un movimiento de tipo &amp#27;[0m&amp#27;[32m&amp#27;[1m"Deduccion de saldo"&amp#27;[0m&amp#27;[32m con valor &amp#27;[0m&amp#27;[32m&amp#27;[1m1000&amp#27;[0m             &amp#27;[90m# com.inventario.steps.RegistrarMovimientoStepDefinitions.elUsuarioRegistraUnMovimientoDeTipoConValor(java.lang.String,double)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra el mensaje de exito del movimiento &amp#27;[0m&amp#27;[32m&amp#27;[1m"Deduccion registrada exitosamente"&amp#27;[0m &amp#27;[90m# com.inventario.steps.RegistrarMovimientoStepDefinitions.elSistemaMuestraElMensajeDeExitoDelMovimiento(java.lang.String)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[[main] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Deduccion de saldo por Administrador(hu-27-registrar-movimiento-de-caja;deduccion-de-saldo-por-administrador)
+--------------------------------------------------------------------------------
+[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
+may 17, 2026 10:34:58 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find CDP implementation matching 148
+may 17, 2026 10:34:58 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[main] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Deduccion de saldo por Administrador
+----------------------------------------------------------------------
+]]></system-err>
+  </testcase>
+  <testcase name="Capital insuficiente para gasto o deduccion" classname="HU-27 Registrar movimiento de caja" time="2.391">
+    <system-out><![CDATA[
+@caja
+Scenario: Capital insuficiente para gasto o deduccion                                        &amp#27;[90m# src/test/resources/features/registrar-movimiento.feature:26&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario accede al modulo de registrar movimiento de caja&amp#27;[0m                          &amp#27;[90m# com.inventario.steps.RegistrarMovimientoStepDefinitions.elUsuarioAccedeAlModuloDeRegistrarMovimientoDeCaja()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario intenta registrar un gasto operativo con valor mayor al capital disponible&amp#27;[0m &amp#27;[90m# com.inventario.steps.RegistrarMovimientoStepDefinitions.elUsuarioIntentaRegistrarUnGastoOperativoConValorMayorAlCapitalDisponible()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra el mensaje de error del movimiento &amp#27;[0m&amp#27;[32m&amp#27;[1m"Capital insuficiente"&amp#27;[0m          &amp#27;[90m# com.inventario.steps.RegistrarMovimientoStepDefinitions.elSistemaMuestraElMensajeDeErrorDelMovimiento(java.lang.String)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[[main] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Capital insuficiente para gasto o deduccion(hu-27-registrar-movimiento-de-caja;capital-insuficiente-para-gasto-o-deduccion)
+--------------------------------------------------------------------------------
+[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
+may 17, 2026 10:35:00 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find CDP implementation matching 148
+may 17, 2026 10:35:00 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[main] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Capital insuficiente para gasto o deduccion
+----------------------------------------------------------------------
+]]></system-err>
+  </testcase>
+  <testcase name="Valor invalido en movimiento de caja" classname="HU-27 Registrar movimiento de caja" time="1.851">
+    <system-out><![CDATA[
+@caja
+Scenario: Valor invalido en movimiento de caja                                                               &amp#27;[90m# src/test/resources/features/registrar-movimiento.feature:30&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario accede al modulo de registrar movimiento de caja&amp#27;[0m                                          &amp#27;[90m# com.inventario.steps.RegistrarMovimientoStepDefinitions.elUsuarioAccedeAlModuloDeRegistrarMovimientoDeCaja()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario intenta registrar un movimiento con valor cero&amp#27;[0m                                             &amp#27;[90m# com.inventario.steps.RegistrarMovimientoStepDefinitions.elUsuarioIntentaRegistrarUnMovimientoConValorCero()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra el error de validacion del movimiento &amp#27;[0m&amp#27;[32m&amp#27;[1m"El valor del movimiento debe ser mayor a 0"&amp#27;[0m &amp#27;[90m# com.inventario.steps.RegistrarMovimientoStepDefinitions.elSistemaMuestraElErrorDeValidacionDelMovimiento(java.lang.String)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[[main] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Valor invalido en movimiento de caja(hu-27-registrar-movimiento-de-caja;valor-invalido-en-movimiento-de-caja)
+--------------------------------------------------------------------------------
+[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
+may 17, 2026 10:35:02 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find CDP implementation matching 148
+may 17, 2026 10:35:02 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[main] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Valor invalido en movimiento de caja
+----------------------------------------------------------------------
+]]></system-err>
+  </testcase>
+  <testcase name="Inyeccion y deduccion no visibles para Tesoreria" classname="HU-27 Registrar movimiento de caja" time="1.877">
+    <system-out><![CDATA[
+@caja
+Scenario: Inyeccion y deduccion no visibles para Tesoreria                              &amp#27;[90m# src/test/resources/features/registrar-movimiento.feature:34&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario accede al modulo de registrar movimiento de caja&amp#27;[0m                     &amp#27;[90m# com.inventario.steps.RegistrarMovimientoStepDefinitions.elUsuarioAccedeAlModuloDeRegistrarMovimientoDeCaja()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mse simula el acceso al modulo con rol Tesoreria&amp#27;[0m                                  &amp#27;[90m# com.inventario.steps.RegistrarMovimientoStepDefinitions.seSimulaElAccesoAlModuloConRolTesoreria()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel tipo de movimiento &amp#27;[0m&amp#27;[32m&amp#27;[1m"Inyeccion de capital"&amp#27;[0m&amp#27;[32m no debe aparecer en el formulario&amp#27;[0m   &amp#27;[90m# com.inventario.steps.RegistrarMovimientoStepDefinitions.elTipoDeMovimientoNoDebeAparecerEnElFormulario(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel tipo de movimiento &amp#27;[0m&amp#27;[32m&amp#27;[1m"Deduccion de saldo"&amp#27;[0m&amp#27;[32m no debe aparecer en el formulario&amp#27;[0m      &amp#27;[90m# com.inventario.steps.RegistrarMovimientoStepDefinitions.elTipoDeMovimientoNoDebeAparecerEnElFormulario(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel formulario debe mostrar solo los tipos de movimiento permitidos para Tesoreria&amp#27;[0m &amp#27;[90m# com.inventario.steps.RegistrarMovimientoStepDefinitions.elFormularioDebeMostrarSoloLosTiposPermitidosParaTesoreria()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[[main] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Inyeccion y deduccion no visibles para Tesoreria(hu-27-registrar-movimiento-de-caja;inyeccion-y-deduccion-no-visibles-para-tesoreria)
+--------------------------------------------------------------------------------
+[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
+may 17, 2026 10:35:04 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find CDP implementation matching 148
+may 17, 2026 10:35:04 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[main] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Inyeccion y deduccion no visibles para Tesoreria
+----------------------------------------------------------------------
+]]></system-err>
+  </testcase>
+  <testcase name="Modulo no visible para roles no autorizados" classname="HU-27 Registrar movimiento de caja" time="2.74">
+    <system-out><![CDATA[
+@caja
+Scenario: Modulo no visible para roles no autorizados                              &amp#27;[90m# src/test/resources/features/registrar-movimiento.feature:40&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario accede al modulo de registrar movimiento de caja&amp#27;[0m                &amp#27;[90m# com.inventario.steps.RegistrarMovimientoStepDefinitions.elUsuarioAccedeAlModuloDeRegistrarMovimientoDeCaja()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario inicia sesion con el rol &amp#27;[0m&amp#27;[32m&amp#27;[1m"Produccion"&amp#27;[0m                           &amp#27;[90m# com.inventario.steps.RolesStepDefinitions.elUsuarioIniciaSesionConElRol(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario intenta acceder al modulo de registrar movimiento&amp#27;[0m                &amp#27;[90m# com.inventario.steps.RegistrarMovimientoStepDefinitions.elUsuarioIntentaAccederAlModuloDeRegistrarMovimiento()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra la pagina de acceso denegado&amp#27;[0m                             &amp#27;[90m# com.inventario.steps.RolesStepDefinitions.elSistemaMuestraLaPaginaDeAccesoDenegado()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel sistema muestra el mensaje &amp#27;[0m&amp#27;[32m&amp#27;[1m"No tiene permisos para acceder a este modulo"&amp#27;[0m &amp#27;[90m# com.inventario.steps.RolesStepDefinitions.elSistemaMuestraElMensaje(java.lang.String)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[[main] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Modulo no visible para roles no autorizados(hu-27-registrar-movimiento-de-caja;modulo-no-visible-para-roles-no-autorizados)
+--------------------------------------------------------------------------------
+[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
+may 17, 2026 10:35:06 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find CDP implementation matching 148
+may 17, 2026 10:35:06 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[main] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Modulo no visible para roles no autorizados
+----------------------------------------------------------------------
+]]></system-err>
+  </testcase>
+  <testcase name="Consulta exitosa del saldo de caja" classname="HU-26 Consultar saldo de caja" time="1.973">
+    <system-out><![CDATA[
+@caja
+Scenario: Consulta exitosa del saldo de caja                            &amp#27;[90m# src/test/resources/features/saldo-caja.feature:10&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario accede al modulo de saldo de caja&amp#27;[0m                    &amp#27;[90m# com.inventario.steps.SaldoCajaStepDefinitions.elUsuarioAccedeAlModuloDeSaldoDeCaja()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra la tarjeta de saldo con el capital disponible&amp#27;[0m &amp#27;[90m# com.inventario.steps.SaldoCajaStepDefinitions.elSistemaMuestraLaTarjetaDeSaldoConElCapitalDisponible()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[[main] INFO  - Test Suite Started: HU-26 Consultar saldo de caja
 [main] INFO  - 
   _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
  |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
@@ -116,9 +378,9 @@ Consulta exitosa del saldo de caja(hu-26-consultar-saldo-de-caja;consulta-exitos
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 17, 2026 10:29:56 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 17, 2026 10:35:09 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 17, 2026 10:29:56 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 17, 2026 10:35:09 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -130,7 +392,7 @@ Consulta exitosa del saldo de caja
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Saldo de caja en cero" classname="HU-26 Consultar saldo de caja" time="2.062">
+  <testcase name="Saldo de caja en cero" classname="HU-26 Consultar saldo de caja" time="2.096">
     <system-out><![CDATA[
 @caja
 Scenario: Saldo de caja en cero                                      &amp#27;[90m# src/test/resources/features/saldo-caja.feature:13&amp#27;[0m
@@ -148,9 +410,9 @@ Saldo de caja en cero(hu-26-consultar-saldo-de-caja;saldo-de-caja-en-cero)
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 17, 2026 10:29:59 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 17, 2026 10:35:11 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 17, 2026 10:29:59 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 17, 2026 10:35:11 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -162,7 +424,7 @@ Saldo de caja en cero
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="No hay caja configurada en el sistema" classname="HU-26 Consultar saldo de caja" time="1.987">
+  <testcase name="No hay caja configurada en el sistema" classname="HU-26 Consultar saldo de caja" time="1.967">
     <system-out><![CDATA[
 @caja
 Scenario: No hay caja configurada en el sistema                                                                     &amp#27;[90m# src/test/resources/features/saldo-caja.feature:17&amp#27;[0m
@@ -180,9 +442,9 @@ No hay caja configurada en el sistema(hu-26-consultar-saldo-de-caja;no-hay-caja-
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 17, 2026 10:30:01 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 17, 2026 10:35:13 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 17, 2026 10:30:01 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 17, 2026 10:35:13 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -194,7 +456,7 @@ No hay caja configurada en el sistema
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Modulo no visible para roles no autorizados" classname="HU-26 Consultar saldo de caja" time="2.564">
+  <testcase name="Modulo no visible para roles no autorizados" classname="HU-26 Consultar saldo de caja" time="2.63">
     <system-out><![CDATA[
 @caja
 Scenario: Modulo no visible para roles no autorizados                              &amp#27;[90m# src/test/resources/features/saldo-caja.feature:21&amp#27;[0m
@@ -214,9 +476,9 @@ Modulo no visible para roles no autorizados(hu-26-consultar-saldo-de-caja;modulo
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 17, 2026 10:30:03 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 17, 2026 10:35:15 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 17, 2026 10:30:03 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 17, 2026 10:35:15 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  

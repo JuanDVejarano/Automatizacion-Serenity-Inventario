@@ -226,7 +226,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 17-05-2026 22:30:14</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 17-05-2026 22:35:28</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -241,7 +241,7 @@
                         <td width="375px" valign="top">
                             <div class="test-count-summary">
                                 <div class="test-count-title">
-                                    183 tests
+                                    191 tests
 
                                      |
                                         <a href="46b54d9084ba9783130da16408afb27a4e4620f6bd966e731510c7395b9ddf5c.csv" title="Download CSV"> <i class="bi bi-cloud-arrow-down"
@@ -314,13 +314,13 @@
                     <td>
                         <i class="bi bi-card-checklist"></i> Number of Scenarios
                     </td>
-                    <td>165</td>
+                    <td>173</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-caret-right"></i> Total Number of Test Cases
                     </td>
-                    <td>183</td>
+                    <td>191</td>
                 </tr>
                 <tr scope="row">
                     <td>
@@ -333,14 +333,14 @@
                         <i class="bi bi-stop-circle"></i> Tests
                         Finished
                     </td>
-                    <td>May 17, 2026 22:30:05</td>
+                    <td>May 17, 2026 22:35:17</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stopwatch"></i> Total
                         Duration
                     </td>
-                    <td> 35m 29s</td>
+                    <td> 40m 41s</td>
                 </tr>
                 <tr scope="row">
                     <td>
@@ -367,7 +367,7 @@
                         <i class="bi bi-stopwatch-fill"></i> Total
                         Execution Time
                     </td>
-                    <td> 8m 58s</td>
+                    <td> 9m 15s</td>
                 </tr>
                 </tbody>
             </table>
@@ -1512,6 +1512,58 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                                                                                 </tr>
                                                                                 <tr>
                                                                                     <td>
+                                                                                            <a href="826fbebdcc79d6870d77bbe2d24c137c1dd71ba4b9daee7f85108eb4b8532a80.html"> HU-27 Registrar movimiento de caja</a>
+                                                                                    </td>
+                                                                                    <td>8</td>
+                                                                                    <td>Given el usuario accede al modulo de registrar movimiento de caja
+When el usuario registra un movimiento de tipo "Gasto operativo" con valor 5000
+Then el sistema muestra el mensaje de exito del movimiento "Movimiento registrado exitosamente"
+Given el usuario accede al modulo de registrar movimiento de caja
+When el usuario registra un movimiento de tipo "Ingreso externo" con valor 10000
+Then el sistema muestra el mensaje de exito del movimiento "Movimiento registrado exitosamente"
+Given el usuario accede al modulo de registrar movimiento de caja
+When el usuario registra un movimiento de tipo "Inyeccion de capital" con valor 50000
+Then el sistema muestra el mensaje de exito del movimiento "Capital inyectado exitosamente"
+Given el usuario accede al modulo de registrar movimiento de caja
+When el usuario registra un movimiento de tipo "Deduccion de saldo" con valor 1000
+Then el sistema muestra el mensaje de exito del movimiento "Deduccion registrada exitosamente"
+Given el usuario accede al modulo de registrar movimiento de caja
+When el usuario intenta registrar un gasto operativo con valor mayor al capital disponible
+Then el sistema muestra el mensaje de error del movimiento "Capital insuficiente"
+Given el usuario accede al modulo de registrar movimiento de caja
+When el usuario intenta registrar un movimiento con valor cero
+Then el sistema muestra el error de validacion del movimiento "El valor del movimiento debe ser mayor a 0"
+Given el usuario accede al modulo de registrar movimiento de caja
+When se simula el acceso al modulo con rol Tesoreria
+Then el tipo de movimiento "Inyeccion de capital" no debe aparecer en el formulario
+And el tipo de movimiento "Deduccion de saldo" no debe aparecer en el formulario
+And el formulario debe mostrar solo los tipos de movimiento permitidos para Tesoreria
+Given el usuario accede al modulo de registrar movimiento de caja
+Given el usuario inicia sesion con el rol "Produccion"
+When el usuario intenta acceder al modulo de registrar movimiento
+Then el sistema muestra la pagina de acceso denegado
+And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
+</td>
+                                                                                    <td>8</td>
+                                                                                    <td>100%</td>
+                                                                                    <td>
+                                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <div class="progress">
+                                                                                                <div class="progress-bar"
+                                                                                                     role="progressbar"
+                                                                                                     style="width: 100%; background-color: #b0cf73"
+                                                                                                     aria-valuenow="8"
+                                                                                                     title="100% success"
+                                                                                                     aria-valuemin="0"
+                                                                                                     aria-valuemax="100">
+                                                                                                </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>
                                                                                             <a href="13c2e0759ebffea1486f1c41107f28843ef30d870a305d7327a9d918ac313be5.html"> HU-17 Registrar producto quirurgico</a>
                                                                                     </td>
                                                                                     <td>6</td>
@@ -1906,7 +1958,7 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                                     </a>
                                     <a href="02ba77018d0f4497edca9c3354f8e3ee2cfe699e27ae5151c36266b8e4dc4426.html">
                                     <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Caja&nbsp;&nbsp;&nbsp;4
+                                        <i class="bi bi-tag-fill"></i> Caja&nbsp;&nbsp;&nbsp;12
                                     </span>
                                     </a>
                                     <a href="a961cbc8cebae2262f8554ce659df7b6b73982f0c02adeb1802040e8cffebe1f.html">
@@ -1963,7 +2015,7 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                             <div>
                                     <a href="46b54d9084ba9783130da16408afb27a4e4620f6bd966e731510c7395b9ddf5c.html">
                                     <span class="tag-badge badge" style="background-color:#a5c7ed; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Chrome, Linux&nbsp;&nbsp;&nbsp;183
+                                        <i class="bi bi-tag-fill"></i> Chrome, Linux&nbsp;&nbsp;&nbsp;191
                                     </span>
                                     </a>
                             </div>
@@ -1986,18 +2038,18 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                     <td>
                         <i class="bi bi-card-checklist"></i> Number of Scenarios
                     </td>
-                    <td>165</td>
+                    <td>173</td>
                     <td>
                         <i class="bi bi-stopwatch"></i> Total
                         Duration
                     </td>
-                    <td> 35m 29s</td>
+                    <td> 40m 41s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-caret-right"></i> Total Number of Test Cases
                     </td>
-                    <td>183</td>
+                    <td>191</td>
                     <td>
                         <i class="bi bi-trophy"></i> Fastest Test
                     </td>
@@ -2030,12 +2082,12 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                         <i class="bi bi-stop-circle"></i> Tests
                         Finished
                     </td>
-                    <td>May 17, 2026 22:30:05</td>
+                    <td>May 17, 2026 22:35:17</td>
                     <td>
                         <i class="bi bi-stopwatch-fill"></i> Total
                         Execution Time
                     </td>
-                    <td> 8m 58s</td>
+                    <td> 9m 15s</td>
                 </tr>
                 </tbody>
             </table>
@@ -4916,6 +4968,170 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                                                                     </tr>
                                                                     <tr class="scenario-result SUCCESS">
                                                                         <td>
+                                                                                <a href="826fbebdcc79d6870d77bbe2d24c137c1dd71ba4b9daee7f85108eb4b8532a80.html">HU-27 Registrar movimiento de caja</a>
+                                                                        </td>
+                                                                        <td data-order="Registrar gasto operativo">
+                                                                                    <a href="c257fcbad47ba846522d08f02407c19a8c76ef36f3484772db2c22dc0e23b16a.html">Registrar gasto operativo</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
+                                                                        </td>
+                                                                        <td>3</td>
+                                                                        <td>Given el usuario accede al modulo de registrar movimiento de caja
+When el usuario registra un movimiento de tipo "Gasto operativo" con valor 5000
+Then el sistema muestra el mensaje de exito del movimiento "Movimiento registrado exitosamente"
+</td>
+                                                                        <td data-order="1779075290">22:34:50</td>
+                                                                        <td>2s 758ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="826fbebdcc79d6870d77bbe2d24c137c1dd71ba4b9daee7f85108eb4b8532a80.html">HU-27 Registrar movimiento de caja</a>
+                                                                        </td>
+                                                                        <td data-order="Registrar ingreso externo">
+                                                                                    <a href="4e0002366df7e3d159293e261aacef026bf90480383a59345692ea9554f5555f.html">Registrar ingreso externo</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
+                                                                        </td>
+                                                                        <td>3</td>
+                                                                        <td>Given el usuario accede al modulo de registrar movimiento de caja
+When el usuario registra un movimiento de tipo "Ingreso externo" con valor 10000
+Then el sistema muestra el mensaje de exito del movimiento "Movimiento registrado exitosamente"
+</td>
+                                                                        <td data-order="1779075293">22:34:53</td>
+                                                                        <td>2s 165ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="826fbebdcc79d6870d77bbe2d24c137c1dd71ba4b9daee7f85108eb4b8532a80.html">HU-27 Registrar movimiento de caja</a>
+                                                                        </td>
+                                                                        <td data-order="Inyeccion de capital por Administrador">
+                                                                                    <a href="7fcacb80aa8b594ee90c7161b99abe78b006f7029a838d28a2e4023584615e5a.html">Inyeccion de capital por Administrador</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
+                                                                        </td>
+                                                                        <td>3</td>
+                                                                        <td>Given el usuario accede al modulo de registrar movimiento de caja
+When el usuario registra un movimiento de tipo "Inyeccion de capital" con valor 50000
+Then el sistema muestra el mensaje de exito del movimiento "Capital inyectado exitosamente"
+</td>
+                                                                        <td data-order="1779075295">22:34:55</td>
+                                                                        <td>2s 081ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="826fbebdcc79d6870d77bbe2d24c137c1dd71ba4b9daee7f85108eb4b8532a80.html">HU-27 Registrar movimiento de caja</a>
+                                                                        </td>
+                                                                        <td data-order="Deduccion de saldo por Administrador">
+                                                                                    <a href="c7f4f655fc4aa946996cf5e33322cb7ce8b7cd375aba0057591e8f647933791c.html">Deduccion de saldo por Administrador</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
+                                                                        </td>
+                                                                        <td>3</td>
+                                                                        <td>Given el usuario accede al modulo de registrar movimiento de caja
+When el usuario registra un movimiento de tipo "Deduccion de saldo" con valor 1000
+Then el sistema muestra el mensaje de exito del movimiento "Deduccion registrada exitosamente"
+</td>
+                                                                        <td data-order="1779075297">22:34:57</td>
+                                                                        <td>2s 111ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="826fbebdcc79d6870d77bbe2d24c137c1dd71ba4b9daee7f85108eb4b8532a80.html">HU-27 Registrar movimiento de caja</a>
+                                                                        </td>
+                                                                        <td data-order="Capital insuficiente para gasto o deduccion">
+                                                                                    <a href="8d391bb574ff177092fd4042a42f6dd146761d8b4a36b33e893f69a697e18b63.html">Capital insuficiente para gasto o deduccion</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
+                                                                        </td>
+                                                                        <td>3</td>
+                                                                        <td>Given el usuario accede al modulo de registrar movimiento de caja
+When el usuario intenta registrar un gasto operativo con valor mayor al capital disponible
+Then el sistema muestra el mensaje de error del movimiento "Capital insuficiente"
+</td>
+                                                                        <td data-order="1779075299">22:34:59</td>
+                                                                        <td>2s 315ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="826fbebdcc79d6870d77bbe2d24c137c1dd71ba4b9daee7f85108eb4b8532a80.html">HU-27 Registrar movimiento de caja</a>
+                                                                        </td>
+                                                                        <td data-order="Valor invalido en movimiento de caja">
+                                                                                    <a href="e36ea767ba0d2662ce4bb7645884f2e007c495f47a705d979f473c5b76941851.html">Valor invalido en movimiento de caja</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
+                                                                        </td>
+                                                                        <td>3</td>
+                                                                        <td>Given el usuario accede al modulo de registrar movimiento de caja
+When el usuario intenta registrar un movimiento con valor cero
+Then el sistema muestra el error de validacion del movimiento "El valor del movimiento debe ser mayor a 0"
+</td>
+                                                                        <td data-order="1779075302">22:35:02</td>
+                                                                        <td>1s 775ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="826fbebdcc79d6870d77bbe2d24c137c1dd71ba4b9daee7f85108eb4b8532a80.html">HU-27 Registrar movimiento de caja</a>
+                                                                        </td>
+                                                                        <td data-order="Inyeccion y deduccion no visibles para Tesoreria">
+                                                                                    <a href="a8714c1805b002f3f3b67409afe922896040107638522b7d19490c53a3b756e2.html">Inyeccion y deduccion no visibles para Tesoreria</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
+                                                                        </td>
+                                                                        <td>5</td>
+                                                                        <td>Given el usuario accede al modulo de registrar movimiento de caja
+When se simula el acceso al modulo con rol Tesoreria
+Then el tipo de movimiento "Inyeccion de capital" no debe aparecer en el formulario
+And el tipo de movimiento "Deduccion de saldo" no debe aparecer en el formulario
+And el formulario debe mostrar solo los tipos de movimiento permitidos para Tesoreria
+</td>
+                                                                        <td data-order="1779075304">22:35:04</td>
+                                                                        <td>1s 798ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="826fbebdcc79d6870d77bbe2d24c137c1dd71ba4b9daee7f85108eb4b8532a80.html">HU-27 Registrar movimiento de caja</a>
+                                                                        </td>
+                                                                        <td data-order="Modulo no visible para roles no autorizados">
+                                                                                    <a href="8bddcf93fdd66c0eeb357592236f033eca0d5b26bb4932b5377907226c41ab15.html">Modulo no visible para roles no autorizados</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
+                                                                        </td>
+                                                                        <td>5</td>
+                                                                        <td>Given el usuario accede al modulo de registrar movimiento de caja
+Given el usuario inicia sesion con el rol "Produccion"
+When el usuario intenta acceder al modulo de registrar movimiento
+Then el sistema muestra la pagina de acceso denegado
+And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
+</td>
+                                                                        <td data-order="1779075306">22:35:06</td>
+                                                                        <td>2s 663ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
                                                                                 <a href="13c2e0759ebffea1486f1c41107f28843ef30d870a305d7327a9d918ac313be5.html">HU-17 Registrar producto quirurgico</a>
                                                                         </td>
                                                                         <td data-order="Registro exitoso de producto">
@@ -5516,8 +5732,8 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                                                                         <td>Given el usuario accede al modulo de saldo de caja
 Then el sistema muestra la tarjeta de saldo con el capital disponible
 </td>
-                                                                        <td data-order="1779074995">22:29:55</td>
-                                                                        <td>3s 327ms</td>
+                                                                        <td data-order="1779075308">22:35:08</td>
+                                                                        <td>1s 899ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -5536,8 +5752,8 @@ Then el sistema muestra la tarjeta de saldo con el capital disponible
 When se simula que el capital de la caja es cero
 Then el sistema muestra la alerta de que no hay capital disponible
 </td>
-                                                                        <td data-order="1779074998">22:29:58</td>
-                                                                        <td>1s 976ms</td>
+                                                                        <td data-order="1779075310">22:35:10</td>
+                                                                        <td>2s 021ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -5556,8 +5772,8 @@ Then el sistema muestra la alerta de que no hay capital disponible
 When se simula que no hay caja configurada
 Then el sistema muestra el mensaje de sin caja "No hay caja configurada en el sistema, contacte al administrador"
 </td>
-                                                                        <td data-order="1779075000">22:30:00</td>
-                                                                        <td>1s 907ms</td>
+                                                                        <td data-order="1779075312">22:35:12</td>
+                                                                        <td>1s 894ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -5578,8 +5794,8 @@ When el usuario intenta acceder al modulo de saldo de caja
 Then el sistema muestra la pagina de acceso denegado
 And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
 </td>
-                                                                        <td data-order="1779075002">22:30:02</td>
-                                                                        <td>2s 489ms</td>
+                                                                        <td data-order="1779075314">22:35:14</td>
+                                                                        <td>2s 556ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -5623,7 +5839,7 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                                     </a>
                                     <a href="02ba77018d0f4497edca9c3354f8e3ee2cfe699e27ae5151c36266b8e4dc4426.html">
                                     <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Caja&nbsp;&nbsp;&nbsp;4
+                                        <i class="bi bi-tag-fill"></i> Caja&nbsp;&nbsp;&nbsp;12
                                     </span>
                                     </a>
                                     <a href="a961cbc8cebae2262f8554ce659df7b6b73982f0c02adeb1802040e8cffebe1f.html">
@@ -5680,7 +5896,7 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                             <div>
                                     <a href="46b54d9084ba9783130da16408afb27a4e4620f6bd966e731510c7395b9ddf5c.html">
                                     <span class="tag-badge badge" style="background-color:#a5c7ed; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Chrome, Linux&nbsp;&nbsp;&nbsp;183
+                                        <i class="bi bi-tag-fill"></i> Chrome, Linux&nbsp;&nbsp;&nbsp;191
                                     </span>
                                     </a>
                             </div>
@@ -5734,7 +5950,7 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
             datasets: [{
                 label: 'Test Results',
                 fill: false,
-                data: [170,13,0,0,0,0,0,0],
+                data: [178,13,0,0,0,0,0,0],
                 backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                 borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                 borderWidth: 1,
@@ -5830,7 +6046,7 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
             datasets: [
                 {
                     label: 'Automated',
-                    data: [170,13,0,0,0,0,0,0],
+                    data: [178,13,0,0,0,0,0,0],
                     backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                     borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                     borderWidth: 1
@@ -5913,7 +6129,7 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
             datasets: [{
                 label: 'Number of tests per duration',
                 fill: false,
-                data: ['15','168','0','0','0','0','0','0'],
+                data: ['15','176','0','0','0','0','0','0'],
                 backgroundColor: 'rgba(83, 146, 255,0.5)',
                 borderColor: 'rgba(83, 146, 255, 1)',
             }]
@@ -6076,6 +6292,11 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                 link: "ad7abc7c691bf789b0dba7c54006ceb28f36b14f2f9c8e01b5e1b9141ea0b033.html"
             },
             {
+                title: 'HU-27 Registrar movimiento de caja',
+                result: 'SUCCESS',
+                link: "826fbebdcc79d6870d77bbe2d24c137c1dd71ba4b9daee7f85108eb4b8532a80.html"
+            },
+            {
                 title: 'HU-17 Registrar producto quirurgico',
                 result: 'SUCCESS',
                 link: "13c2e0759ebffea1486f1c41107f28843ef30d870a305d7327a9d918ac313be5.html"
@@ -6128,6 +6349,7 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
                 'HU-10 Registrar cliente',
                 'HU-04 Registrar empleado',
                 'HU-20 Registrar materia prima',
+                'HU-27 Registrar movimiento de caja',
                 'HU-17 Registrar producto quirurgico',
                 'HU-22 Registrar proveedor',
                 'HU-16 Registrar tipo de producto',
@@ -6138,42 +6360,42 @@ And el sistema muestra el mensaje "No tiene permisos para acceder a este modulo"
             datasets: [
                 {
                     label: ['Passing Tests'],
-                    data: [3,5,6,4,8,8,6,7,7,8,7,7,6,7,5,3,8,6,6,5,6,7,4,6,21,4],
+                    data: [3,5,6,4,8,8,6,7,7,8,7,7,6,7,5,3,8,6,6,5,8,6,7,4,6,21,4],
                     backgroundColor: [ 'rgba(153,204,51,0.5)' ]
                 },
                 {
                     label: ['Pending Tests'],
-                    data: [0,0,0,0,0,0,0,0,0,0,2,1,1,1,0,0,7,0,0,0,0,0,0,1,0,0],
+                    data: [0,0,0,0,0,0,0,0,0,0,2,1,1,1,0,0,7,0,0,0,0,0,0,0,1,0,0],
                     backgroundColor: [ 'rgba(165, 199, 238, 0.5)' ]
                 },
                 {
                     label: ['Ignored Tests'],
-                    data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                    data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
                     backgroundColor: [ 'rgba(168, 168, 168, 0.5)' ]
                 },
                 {
                     label: ['Skipped Tests'],
-                    data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                    data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
                     backgroundColor: [ 'rgba(238, 224, 152, 0.75)' ]
                 },
                 {
                     label: ['Aborted Tests'],
-                    data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                    data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
                     backgroundColor: [ 'rgba(255, 153, 102, 0.5)' ]
                 },
                 {
                     label: ['Failed Tests'],
-                    data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                    data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
                     backgroundColor: [ 'rgba(255, 22, 49, 0.5)' ]
                 },
                 {
                     label: ['Errors'],
-                    data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                    data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
                     backgroundColor: [ 'rgba(255, 97, 8, 0.5)' ]
                 },
                 {
                     label: ['Compromised Tests'],
-                    data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                    data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
                     backgroundColor: [ 'rgba(255, 104, 255, 0.5)' ]
                 },
             ]
