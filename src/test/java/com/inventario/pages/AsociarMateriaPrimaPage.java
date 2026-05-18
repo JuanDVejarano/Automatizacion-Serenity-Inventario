@@ -41,12 +41,23 @@ public class AsociarMateriaPrimaPage extends PageObject {
         }
     }
 
-    public void waitForAssociationCount(int expectedCount) {
+    public void waitForAssociationCount(int minCount) {
         long deadline = System.currentTimeMillis() + 8_000;
         while (System.currentTimeMillis() < deadline) {
             try {
                 Object count = evaluateJavascript(GUARD + "return _c.asociaciones().length;");
-                if (count instanceof Long && ((Long) count).intValue() == expectedCount) return;
+                if (count instanceof Long && ((Long) count).intValue() >= minCount) return;
+            } catch (Exception ignored) {}
+            try { Thread.sleep(200); } catch (InterruptedException e) { break; }
+        }
+    }
+
+    public void waitForAssociationCountBelow(int previousCount) {
+        long deadline = System.currentTimeMillis() + 8_000;
+        while (System.currentTimeMillis() < deadline) {
+            try {
+                Object count = evaluateJavascript(GUARD + "return _c.asociaciones().length;");
+                if (count instanceof Long && ((Long) count).intValue() < previousCount) return;
             } catch (Exception ignored) {}
             try { Thread.sleep(200); } catch (InterruptedException e) { break; }
         }

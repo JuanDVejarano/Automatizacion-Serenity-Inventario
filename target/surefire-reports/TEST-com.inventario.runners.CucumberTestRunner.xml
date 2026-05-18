@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.inventario.runners.CucumberTestRunner" time="106.601" tests="13" errors="0" skipped="0" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.inventario.runners.CucumberTestRunner" time="48.494" tests="13" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ES"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-21-openjdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/juanj/Projects-Test/serenity-inventario-login/target/surefire/surefirebooter-20260517000928787_3.jar /home/juanj/Projects-Test/serenity-inventario-login/target/surefire 2026-05-17T00-09-28_716-jvmRun1 surefire-20260517000928787_1tmp surefire_0-20260517000928787_2tmp"/>
+    <property name="sun.java.command" value="/home/juanj/Projects-Test/serenity-inventario-login/target/surefire/surefirebooter-20260517211210851_3.jar /home/juanj/Projects-Test/serenity-inventario-login/target/surefire 2026-05-17T21-12-10_752-jvmRun1 surefire-20260517211210851_1tmp surefire_0-20260517211210851_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/juanj/Projects-Test/serenity-inventario-login/target/test-classes:/home/juanj/Projects-Test/serenity-inventario-login/target/classes:/home/juanj/.m2/repository/net/serenity-bdd/serenity-core/4.1.20/serenity-core-4.1.20.jar:/home/juanj/.m2/repository/net/serenity-bdd/serenity-model/4.1.20/serenity-model-4.1.20.jar:/home/juanj/.m2/repository/org/apache/commons/commons-text/1.11.0/commons-text-1.11.0.jar:/home/juanj/.m2/repository/commons-net/commons-net/3.10.0/commons-net-3.10.0.jar:/home/juanj/.m2/repository/com/google/guava/guava/33.1.0-jre/guava-33.1.0-jre.jar:/home/juanj/.m2/repository/com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.jar:/home/juanj/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/juanj/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/home/juanj/.m2/repository/org/checkerframework/checker-qual/3.42.0/checker-qual-3.42.0.jar:/home/juanj/.m2/repository/com/google/errorprone/error_prone_annotations/2.26.1/error_prone_annotations-2.26.1.jar:/home/juanj/.m2/repository/com/google/j2objc/j2objc-annotations/3.0.0/j2objc-annotations-3.0.0.jar:/home/juanj/.m2/repository/org/jsoup/jsoup/1.15.4/jsoup-1.15.4.jar:/home/juanj/.m2/repository/com/thoughtworks/xstream/xstream/1.4.20/xstream-1.4.20.jar:/home/juanj/.m2/repository/io/github/x-stream/mxparser/1.2.2/mxparser-1.2.2.jar:/home/juanj/.m2/repository/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.jar:/home/juanj/.m2/repository/com/typesafe/config/1.4.3/config-1.4.3.jar:/home/juanj/.m2/repository/org/imgscalr/imgscalr-lib/4.2/imgscalr-lib-4.2.jar:/home/juanj/.m2/repository/org/awaitility/awaitility/4.2.0/awaitility-4.2.0.jar:/home/juanj/.m2/repository/org/freemarker/freemarker/2.3.32/freemarker-2.3.32.jar:/home/juanj/.m2/repository/io/github/classgraph/classgraph/4.8.157/classgraph-4.8.157.jar:/home/juanj/.m2/repository/com/github/ben-manes/caffeine/caffeine/2.9.2/caffeine-2.9.2.jar:/home/juanj/.m2/repository/org/ehcache/ehcache/3.10.8/ehcache-3.10.8.jar:/home/juanj/.m2/repository/javax/cache/cache-api/1.1.0/cache-api-1.1.0.jar:/home/juanj/.m2/repository/net/sourceforge/jexcelapi/jxl/2.6.12/jxl-2.6.12.jar:/home/juanj/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.15/byte-buddy-agent-1.14.15.jar:/home/juanj/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-all/0.64.8/flexmark-all-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark/0.64.8/flexmark-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-abbreviation/0.64.8/flexmark-ext-abbreviation-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-admonition/0.64.8/flexmark-ext-admonition-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-anchorlink/0.64.8/flexmark-ext-anchorlink-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-aside/0.64.8/flexmark-ext-aside-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-attributes/0.64.8/flexmark-ext-attributes-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-autolink/0.64.8/flexmark-ext-autolink-0.64.8.jar:/home/juanj/.m2/repository/org/nibor/autolink/autolink/0.6.0/autolink-0.6.0.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-definition/0.64.8/flexmark-ext-definition-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-emoji/0.64.8/flexmark-ext-emoji-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-enumerated-reference/0.64.8/flexmark-ext-enumerated-reference-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-escaped-character/0.64.8/flexmark-ext-escaped-character-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-footnotes/0.64.8/flexmark-ext-footnotes-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-gfm-issues/0.64.8/flexmark-ext-gfm-issues-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-gfm-strikethrough/0.64.8/flexmark-ext-gfm-strikethrough-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-gfm-tasklist/0.64.8/flexmark-ext-gfm-tasklist-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-gfm-users/0.64.8/flexmark-ext-gfm-users-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-gitlab/0.64.8/flexmark-ext-gitlab-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-jekyll-front-matter/0.64.8/flexmark-ext-jekyll-front-matter-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-jekyll-tag/0.64.8/flexmark-ext-jekyll-tag-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-media-tags/0.64.8/flexmark-ext-media-tags-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-macros/0.64.8/flexmark-ext-macros-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-ins/0.64.8/flexmark-ext-ins-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-xwiki-macros/0.64.8/flexmark-ext-xwiki-macros-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-superscript/0.64.8/flexmark-ext-superscript-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-toc/0.64.8/flexmark-ext-toc-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-typographic/0.64.8/flexmark-ext-typographic-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-wikilink/0.64.8/flexmark-ext-wikilink-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-yaml-front-matter/0.64.8/flexmark-ext-yaml-front-matter-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-youtube-embedded/0.64.8/flexmark-ext-youtube-embedded-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-html2md-converter/0.64.8/flexmark-html2md-converter-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-jira-converter/0.64.8/flexmark-jira-converter-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-pdf-converter/0.64.8/flexmark-pdf-converter-0.64.8.jar:/home/juanj/.m2/repository/com/openhtmltopdf/openhtmltopdf-core/1.0.10/openhtmltopdf-core-1.0.10.jar:/home/juanj/.m2/repository/com/openhtmltopdf/openhtmltopdf-pdfbox/1.0.10/openhtmltopdf-pdfbox-1.0.10.jar:/home/juanj/.m2/repository/org/apache/pdfbox/pdfbox/2.0.24/pdfbox-2.0.24.jar:/home/juanj/.m2/repository/org/apache/pdfbox/fontbox/2.0.24/fontbox-2.0.24.jar:/home/juanj/.m2/repository/org/apache/pdfbox/xmpbox/2.0.24/xmpbox-2.0.24.jar:/home/juanj/.m2/repository/de/rototor/pdfbox/graphics2d/0.32/graphics2d-0.32.jar:/home/juanj/.m2/repository/com/openhtmltopdf/openhtmltopdf-rtl-support/1.0.10/openhtmltopdf-rtl-support-1.0.10.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-profile-pegdown/0.64.8/flexmark-profile-pegdown-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util-ast/0.64.8/flexmark-util-ast-0.64.8.jar:/home/juanj/.m2/repository/org/jetbrains/annotations/24.0.1/annotations-24.0.1.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util-builder/0.64.8/flexmark-util-builder-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util-collection/0.64.8/flexmark-util-collection-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util-data/0.64.8/flexmark-util-data-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util-dependency/0.64.8/flexmark-util-dependency-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util-format/0.64.8/flexmark-util-format-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util-html/0.64.8/flexmark-util-html-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util-misc/0.64.8/flexmark-util-misc-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util-options/0.64.8/flexmark-util-options-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util-sequence/0.64.8/flexmark-util-sequence-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util-visitor/0.64.8/flexmark-util-visitor-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-youtrack-converter/0.64.8/flexmark-youtrack-converter-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-resizable-image/0.64.8/flexmark-ext-resizable-image-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-ext-tables/0.64.8/flexmark-ext-tables-0.64.8.jar:/home/juanj/.m2/repository/com/vladsch/flexmark/flexmark-util/0.64.8/flexmark-util-0.64.8.jar:/home/juanj/.m2/repository/net/serenity-bdd/serenity-reports/4.1.20/serenity-reports-4.1.20.jar:/home/juanj/.m2/repository/net/serenity-bdd/serenity-stats/4.1.20/serenity-stats-4.1.20.jar:/home/juanj/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/1.9.24/kotlin-stdlib-1.9.24.jar:/home/juanj/.m2/repository/net/serenity-bdd/serenity-reports-configuration/4.1.20/serenity-reports-configuration-4.1.20.jar:/home/juanj/.m2/repository/com/ibm/icu/icu4j/72.1/icu4j-72.1.jar:/home/juanj/.m2/repository/es/nitaur/markdown/txtmark/0.16/txtmark-0.16.jar:/home/juanj/.m2/repository/net/serenity-bdd/serenity-report-resources/4.1.20/serenity-report-resources-4.1.20.jar:/home/juanj/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/home/juanj/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.0/jackson-core-2.17.0.jar:/home/juanj/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.0/jackson-databind-2.17.0.jar:/home/juanj/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.0/jackson-annotations-2.17.0.jar:/home/juanj/.m2/repository/commons-codec/commons-codec/1.16.1/commons-codec-1.16.1.jar:/home/juanj/.m2/repository/commons-io/commons-io/2.15.1/commons-io-2.15.1.jar:/home/juanj/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/juanj/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/home/juanj/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-java/4.21.0/selenium-java-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v123/4.21.0/selenium-devtools-v123-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v124/4.21.0/selenium-devtools-v124-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v125/4.21.0/selenium-devtools-v125-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.21.0/selenium-devtools-v85-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.21.0/selenium-remote-driver-4.21.0.jar:/home/juanj/.m2/repository/io/opentelemetry/semconv/opentelemetry-semconv/1.25.0-alpha/opentelemetry-semconv-1.25.0-alpha.jar:/home/juanj/.m2/repository/io/opentelemetry/opentelemetry-api/1.38.0/opentelemetry-api-1.38.0.jar:/home/juanj/.m2/repository/io/opentelemetry/opentelemetry-context/1.38.0/opentelemetry-context-1.38.0.jar:/home/juanj/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.38.0/opentelemetry-exporter-logging-1.38.0.jar:/home/juanj/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.38.0/opentelemetry-sdk-common-1.38.0.jar:/home/juanj/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.38.0/opentelemetry-sdk-extension-autoconfigure-spi-1.38.0.jar:/home/juanj/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.38.0/opentelemetry-sdk-extension-autoconfigure-1.38.0.jar:/home/juanj/.m2/repository/io/opentelemetry/opentelemetry-api-incubator/1.38.0-alpha/opentelemetry-api-incubator-1.38.0-alpha.jar:/home/juanj/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.38.0/opentelemetry-sdk-trace-1.38.0.jar:/home/juanj/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.38.0/opentelemetry-sdk-1.38.0.jar:/home/juanj/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.38.0/opentelemetry-sdk-metrics-1.38.0.jar:/home/juanj/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.38.0/opentelemetry-sdk-logs-1.38.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-os/4.21.0/selenium-os-4.21.0.jar:/home/juanj/.m2/repository/org/apache/commons/commons-exec/1.4.0/commons-exec-1.4.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.21.0/selenium-safari-driver-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-api/4.21.0/selenium-api-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-support/4.21.0/selenium-support-4.21.0.jar:/home/juanj/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-json/4.21.0/selenium-json-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.21.0/selenium-chrome-driver-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.21.0/selenium-chromium-driver-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.21.0/selenium-manager-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.21.0/selenium-firefox-driver-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-http/4.21.0/selenium-http-4.21.0.jar:/home/juanj/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.21.0/selenium-edge-driver-4.21.0.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.21.0/selenium-ie-driver-4.21.0.jar:/home/juanj/.m2/repository/org/htmlunit/htmlunit/4.1.0/htmlunit-4.1.0.jar:/home/juanj/.m2/repository/org/apache/httpcomponents/httpmime/4.5.14/httpmime-4.5.14.jar:/home/juanj/.m2/repository/org/htmlunit/htmlunit-core-js/4.1.0/htmlunit-core-js-4.1.0.jar:/home/juanj/.m2/repository/org/htmlunit/neko-htmlunit/4.1.0/neko-htmlunit-4.1.0.jar:/home/juanj/.m2/repository/org/htmlunit/htmlunit-cssparser/4.1.0/htmlunit-cssparser-4.1.0.jar:/home/juanj/.m2/repository/org/htmlunit/htmlunit-xpath/4.1.0/htmlunit-xpath-4.1.0.jar:/home/juanj/.m2/repository/org/htmlunit/htmlunit-csp/4.1.0/htmlunit-csp-4.1.0.jar:/home/juanj/.m2/repository/org/htmlunit/htmlunit-websocket-client/4.1.0/htmlunit-websocket-client-4.1.0.jar:/home/juanj/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/home/juanj/.m2/repository/org/seleniumhq/selenium/htmlunit3-driver/4.21.0/htmlunit3-driver-4.21.0.jar:/home/juanj/.m2/repository/io/appium/java-client/9.2.2/java-client-9.2.2.jar:/home/juanj/.m2/repository/org/apache/groovy/groovy/4.0.13/groovy-4.0.13.jar:/home/juanj/.m2/repository/net/sf/opencsv/opencsv/2.1/opencsv-2.1.jar:/home/juanj/.m2/repository/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar:/home/juanj/.m2/repository/org/apache/commons/commons-compress/1.26.0/commons-compress-1.26.0.jar:/home/juanj/.m2/repository/org/fluentlenium/fluentlenium-core/0.10.2/fluentlenium-core-0.10.2.jar:/home/juanj/.m2/repository/com/jhlabs/filters/2.0.235/filters-2.0.235.jar:/home/juanj/.m2/repository/com/paulhammant/ngwebdriver/1.1.6/ngwebdriver-1.1.6.jar:/home/juanj/.m2/repository/joda-time/joda-time/2.12.7/joda-time-2.12.7.jar:/home/juanj/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/juanj/.m2/repository/com/google/jimfs/jimfs/1.3.0/jimfs-1.3.0.jar:/home/juanj/.m2/repository/org/mockito/mockito-core/3.3.3/mockito-core-3.3.3.jar:/home/juanj/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/home/juanj/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/home/juanj/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-core-2.3.0.1.jar:/home/juanj/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.3/jaxb-impl-2.3.3.jar:/home/juanj/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/home/juanj/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/home/juanj/.m2/repository/javax/activation/activation/1.1.1/activation-1.1.1.jar:/home/juanj/.m2/repository/net/serenity-bdd/serenity-cucumber/4.1.20/serenity-cucumber-4.1.20.jar:/home/juanj/.m2/repository/net/serenity-bdd/serenity-screenplay/4.1.20/serenity-screenplay-4.1.20.jar:/home/juanj/.m2/repository/net/serenity-bdd/serenity-screenplay-webdriver/4.1.20/serenity-screenplay-webdriver-4.1.20.jar:/home/juanj/.m2/repository/io/cucumber/cucumber-core/7.17.0/cucumber-core-7.17.0.jar:/home/juanj/.m2/repository/io/cucumber/cucumber-gherkin/7.17.0/cucumber-gherkin-7.17.0.jar:/home/juanj/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.17.0/cucumber-gherkin-messages-7.17.0.jar:/home/juanj/.m2/repository/io/cucumber/gherkin/28.0.0/gherkin-28.0.0.jar:/home/juanj/.m2/repository/io/cucumber/messages/24.1.0/messages-24.1.0.jar:/home/juanj/.m2/repository/io/cucumber/testng-xml-formatter/0.1.0/testng-xml-formatter-0.1.0.jar:/home/juanj/.m2/repository/io/cucumber/query/12.2.0/query-12.2.0.jar:/home/juanj/.m2/repository/io/cucumber/tag-expressions/6.1.0/tag-expressions-6.1.0.jar:/home/juanj/.m2/repository/io/cucumber/cucumber-expressions/17.1.0/cucumber-expressions-17.1.0.jar:/home/juanj/.m2/repository/io/cucumber/datatable/7.17.0/datatable-7.17.0.jar:/home/juanj/.m2/repository/io/cucumber/cucumber-plugin/7.17.0/cucumber-plugin-7.17.0.jar:/home/juanj/.m2/repository/io/cucumber/docstring/7.17.0/docstring-7.17.0.jar:/home/juanj/.m2/repository/io/cucumber/html-formatter/21.3.1/html-formatter-21.3.1.jar:/home/juanj/.m2/repository/io/cucumber/junit-xml-formatter/0.4.0/junit-xml-formatter-0.4.0.jar:/home/juanj/.m2/repository/io/cucumber/ci-environment/10.0.1/ci-environment-10.0.1.jar:/home/juanj/.m2/repository/io/cucumber/cucumber-java/7.17.0/cucumber-java-7.17.0.jar:/home/juanj/.m2/repository/io/cucumber/cucumber-junit/7.17.0/cucumber-junit-7.17.0.jar:/home/juanj/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/juanj/.m2/repository/org/apache/commons/commons-csv/1.5/commons-csv-1.5.jar:/home/juanj/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/home/juanj/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/juanj/.m2/repository/org/assertj/assertj-core/3.25.3/assertj-core-3.25.3.jar:/home/juanj/.m2/repository/net/bytebuddy/byte-buddy/1.14.11/byte-buddy-1.14.11.jar:/home/juanj/.m2/repository/org/slf4j/slf4j-simple/2.0.12/slf4j-simple-2.0.12.jar:/home/juanj/.m2/repository/org/slf4j/slf4j-api/2.0.12/slf4j-api-2.0.12.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -27,7 +27,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/home/juanj/Projects-Test/serenity-inventario-login/target/surefire/surefirebooter-20260517000928787_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/juanj/Projects-Test/serenity-inventario-login/target/surefire/surefirebooter-20260517211210851_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.10+7-Ubuntu-122.04"/>
     <property name="user.name" value="juanj"/>
@@ -55,7 +55,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="Asociacion exitosa de materia prima a producto" classname="HU-21 Asociar materia prima a producto" time="13.278">
+  <testcase name="Asociacion exitosa de materia prima a producto" classname="HU-21 Asociar materia prima a producto" time="4.595">
     <system-out><![CDATA[
 @materiaPrima
 Scenario: Asociacion exitosa de materia prima a producto                                         &amp#27;[90m# src/test/resources/features/asociar-materia-prima.feature:10&amp#27;[0m
@@ -112,9 +112,9 @@ Asociacion exitosa de materia prima a producto(hu-21-asociar-materia-prima-a-pro
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 17, 2026 12:09:30 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 17, 2026 9:12:12 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 17, 2026 12:09:30 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 17, 2026 9:12:12 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -126,26 +126,14 @@ Asociacion exitosa de materia prima a producto
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Asociar multiples materias primas a un producto" classname="HU-21 Asociar materia prima a producto" time="19.895">
-    <failure message="[Deben haber exactamente 2 materias primas asociadas] expected:&lt;[2]&gt; but was:&lt;[5]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: [Deben haber exactamente 2 materias primas asociadas] expected:<[2]> but was:<[5]>
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at com.inventario.steps.AsociarMateriaPrimaStepDefinitions.elSistemaMuestra2MateriasPrimasAsociadasAlProducto(AsociarMateriaPrimaStepDefinitions.java:119)
-	at ✽.el sistema muestra 2 materias primas asociadas al producto(file:///home/juanj/Projects-Test/serenity-inventario-login/src/test/resources/features/asociar-materia-prima.feature:17)
-]]></failure>
+  <testcase name="Asociar multiples materias primas a un producto" classname="HU-21 Asociar materia prima a producto" time="3.996">
     <system-out><![CDATA[
 @materiaPrima
 Scenario: Asociar multiples materias primas a un producto                                        &amp#27;[90m# src/test/resources/features/asociar-materia-prima.feature:14&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario accede al modulo de asociar materia prima&amp#27;[0m                                     &amp#27;[90m# com.inventario.steps.AsociarMateriaPrimaStepDefinitions.elUsuarioAccedeAlModuloDeAsociarMateriaPrima()&amp#27;[0m
   &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario selecciona el primer producto y asocia la primera materia prima con cantidad 3&amp#27;[0m &amp#27;[90m# com.inventario.steps.AsociarMateriaPrimaStepDefinitions.elUsuarioSeleccionaElPrimerProductoYAsociaLaPrimeraMateriaPrimaConCantidad3()&amp#27;[0m
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel usuario asocia la segunda materia prima disponible con cantidad 2&amp#27;[0m                       &amp#27;[90m# com.inventario.steps.AsociarMateriaPrimaStepDefinitions.elUsuarioAsociaLaSegundaMateriaPrimaDisponibleConCantidad2()&amp#27;[0m
-  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mel sistema muestra 2 materias primas asociadas al producto&amp#27;[0m                                &amp#27;[90m# com.inventario.steps.AsociarMateriaPrimaStepDefinitions.elSistemaMuestra2MateriasPrimasAsociadasAlProducto()&amp#27;[0m
-      &amp#27;[31morg.junit.ComparisonFailure: [Deben haber exactamente 2 materias primas asociadas] expected:<[2]> but was:<[5]>
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at com.inventario.steps.AsociarMateriaPrimaStepDefinitions.elSistemaMuestra2MateriasPrimasAsociadasAlProducto(AsociarMateriaPrimaStepDefinitions.java:119)
-	at ✽.el sistema muestra 2 materias primas asociadas al producto(file:///home/juanj/Projects-Test/serenity-inventario-login/src/test/resources/features/asociar-materia-prima.feature:17)
-&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra 2 materias primas asociadas al producto&amp#27;[0m                                &amp#27;[90m# com.inventario.steps.AsociarMateriaPrimaStepDefinitions.elSistemaMuestra2MateriasPrimasAsociadasAlProducto()&amp#27;[0m
 ]]></system-out>
     <system-err><![CDATA[[main] INFO  - 
   _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
@@ -157,13 +145,21 @@ Asociar multiples materias primas a un producto(hu-21-asociar-materia-prima-a-pr
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 17, 2026 12:09:43 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 17, 2026 9:12:16 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 17, 2026 12:09:43 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 17, 2026 9:12:16 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[main] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Asociar multiples materias primas a un producto
+----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Materia prima ya asociada al producto" classname="HU-21 Asociar materia prima a producto" time="11.812">
+  <testcase name="Materia prima ya asociada al producto" classname="HU-21 Asociar materia prima a producto" time="3.893">
     <system-out><![CDATA[
 @materiaPrima
 Scenario: Materia prima ya asociada al producto                                                                  &amp#27;[90m# src/test/resources/features/asociar-materia-prima.feature:19&amp#27;[0m
@@ -172,17 +168,7 @@ Scenario: Materia prima ya asociada al producto                                 
   &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario intenta asociar la misma materia prima al mismo producto nuevamente&amp#27;[0m                            &amp#27;[90m# com.inventario.steps.AsociarMateriaPrimaStepDefinitions.elUsuarioIntentaAsociarLaMismaMateriaPrimaAlMismoProductoNuevamente()&amp#27;[0m
   &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra el mensaje de error de asociacion &amp#27;[0m&amp#27;[32m&amp#27;[1m"Esa materia prima ya esta asociada a este producto"&amp#27;[0m &amp#27;[90m# com.inventario.steps.AsociarMateriaPrimaStepDefinitions.elSistemaMuestraElMensajeDeErrorDeAsociacion(java.lang.String)&amp#27;[0m
 ]]></system-out>
-    <system-err><![CDATA[[main] ERROR  - 
-  _____   ___   ___   _____     ___     _     ___   _      ___   ___  
- |_   _| | __| / __| |_   _|   | __|   /_\   |_ _| | |    | __| |   \ 
-   | |   | _|  \__ \   | |     | _|   / _ \   | |  | |__  | _|  | |) |
-   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___| |____| |___| |___/ 
-
-Asociar multiples materias primas a un producto
------------------------------------------------------------------------
-[main] ERROR  -     Test failed at step: Then el sistema muestra 2 materias primas asociadas al producto
-[main] ERROR  -     [Deben haber exactamente 2 materias primas asociadas] expected:<[2]> but was:<[5]>
-[main] INFO  - 
+    <system-err><![CDATA[[main] INFO  - 
   _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
  |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
    | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
@@ -192,9 +178,9 @@ Materia prima ya asociada al producto(hu-21-asociar-materia-prima-a-producto;mat
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 17, 2026 12:10:03 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 17, 2026 9:12:20 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 17, 2026 12:10:03 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 17, 2026 9:12:20 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -206,7 +192,7 @@ Materia prima ya asociada al producto
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Cantidad invalida al asociar" classname="HU-21 Asociar materia prima a producto" time="3.596">
+  <testcase name="Cantidad invalida al asociar" classname="HU-21 Asociar materia prima a producto" time="3.747">
     <system-out><![CDATA[
 @materiaPrima
 Scenario: Cantidad invalida al asociar                                                            &amp#27;[90m# src/test/resources/features/asociar-materia-prima.feature:24&amp#27;[0m
@@ -224,9 +210,9 @@ Cantidad invalida al asociar(hu-21-asociar-materia-prima-a-producto;cantidad-inv
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 17, 2026 12:10:15 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 17, 2026 9:12:24 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 17, 2026 12:10:15 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 17, 2026 9:12:24 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -238,7 +224,7 @@ Cantidad invalida al asociar
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Editar cantidad de materia prima asociada" classname="HU-21 Asociar materia prima a producto" time="12.683">
+  <testcase name="Editar cantidad de materia prima asociada" classname="HU-21 Asociar materia prima a producto" time="3.766">
     <system-out><![CDATA[
 @materiaPrima
 Scenario: Editar cantidad de materia prima asociada                                                        &amp#27;[90m# src/test/resources/features/asociar-materia-prima.feature:28&amp#27;[0m
@@ -257,9 +243,9 @@ Editar cantidad de materia prima asociada(hu-21-asociar-materia-prima-a-producto
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 17, 2026 12:10:18 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 17, 2026 9:12:28 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 17, 2026 12:10:18 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 17, 2026 9:12:28 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -271,26 +257,14 @@ Editar cantidad de materia prima asociada
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Eliminar asociacion de materia prima" classname="HU-21 Asociar materia prima a producto" time="20.535">
-    <failure message="[La lista de asociaciones debe estar vacia tras la eliminacion] expected:&lt;[0]&gt; but was:&lt;[7]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: [La lista de asociaciones debe estar vacia tras la eliminacion] expected:<[0]> but was:<[7]>
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at com.inventario.steps.AsociarMateriaPrimaStepDefinitions.laAsociacionQuedaEliminadaDeLaListaDelProducto(AsociarMateriaPrimaStepDefinitions.java:175)
-	at ✽.la asociacion queda eliminada de la lista del producto(file:///home/juanj/Projects-Test/serenity-inventario-login/src/test/resources/features/asociar-materia-prima.feature:36)
-]]></failure>
+  <testcase name="Eliminar asociacion de materia prima" classname="HU-21 Asociar materia prima a producto" time="3.921">
     <system-out><![CDATA[
 @materiaPrima
 Scenario: Eliminar asociacion de materia prima                              &amp#27;[90m# src/test/resources/features/asociar-materia-prima.feature:33&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mel usuario accede al modulo de asociar materia prima&amp#27;[0m                &amp#27;[90m# com.inventario.steps.AsociarMateriaPrimaStepDefinitions.elUsuarioAccedeAlModuloDeAsociarMateriaPrima()&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mexiste al menos una materia prima asociada al producto seleccionado&amp#27;[0m &amp#27;[90m# com.inventario.steps.AsociarMateriaPrimaStepDefinitions.existeAlMenosUnaMateriaPrimaAsociadaAlProductoSeleccionado()&amp#27;[0m
   &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario elimina la primera materia prima asociada al producto&amp#27;[0m     &amp#27;[90m# com.inventario.steps.AsociarMateriaPrimaStepDefinitions.elUsuarioEliminaLaPrimeraMateriaPrimaAsociadaAlProducto()&amp#27;[0m
-  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mla asociacion queda eliminada de la lista del producto&amp#27;[0m               &amp#27;[90m# com.inventario.steps.AsociarMateriaPrimaStepDefinitions.laAsociacionQuedaEliminadaDeLaListaDelProducto()&amp#27;[0m
-      &amp#27;[31morg.junit.ComparisonFailure: [La lista de asociaciones debe estar vacia tras la eliminacion] expected:<[0]> but was:<[7]>
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at com.inventario.steps.AsociarMateriaPrimaStepDefinitions.laAsociacionQuedaEliminadaDeLaListaDelProducto(AsociarMateriaPrimaStepDefinitions.java:175)
-	at ✽.la asociacion queda eliminada de la lista del producto(file:///home/juanj/Projects-Test/serenity-inventario-login/src/test/resources/features/asociar-materia-prima.feature:36)
-&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mla asociacion queda eliminada de la lista del producto&amp#27;[0m               &amp#27;[90m# com.inventario.steps.AsociarMateriaPrimaStepDefinitions.laAsociacionQuedaEliminadaDeLaListaDelProducto()&amp#27;[0m
 ]]></system-out>
     <system-err><![CDATA[[main] INFO  - 
   _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
@@ -302,13 +276,21 @@ Eliminar asociacion de materia prima(hu-21-asociar-materia-prima-a-producto;elim
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 17, 2026 12:10:31 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 17, 2026 9:12:32 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 17, 2026 12:10:31 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 17, 2026 9:12:32 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[main] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Eliminar asociacion de materia prima
+----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="No hay materias primas registradas" classname="HU-21 Asociar materia prima a producto" time="4.347">
+  <testcase name="No hay materias primas registradas" classname="HU-21 Asociar materia prima a producto" time="3.967">
     <system-out><![CDATA[
 @materiaPrima
 Scenario: No hay materias primas registradas                                           &amp#27;[90m# src/test/resources/features/asociar-materia-prima.feature:38&amp#27;[0m
@@ -316,17 +298,7 @@ Scenario: No hay materias primas registradas                                    
   &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario selecciona el primer producto y no hay materias primas en el sistema&amp#27;[0m &amp#27;[90m# com.inventario.steps.AsociarMateriaPrimaStepDefinitions.elUsuarioSeleccionaElPrimerProductoYNoHayMateriasPrimasEnElSistema()&amp#27;[0m
   &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel sistema muestra la advertencia de que no hay materias primas disponibles&amp#27;[0m     &amp#27;[90m# com.inventario.steps.AsociarMateriaPrimaStepDefinitions.elSistemaMuestraLaAdvertenciaDeQueNoHayMateriasPrimasDisponibles()&amp#27;[0m
 ]]></system-out>
-    <system-err><![CDATA[[main] ERROR  - 
-  _____   ___   ___   _____     ___     _     ___   _      ___   ___  
- |_   _| | __| / __| |_   _|   | __|   /_\   |_ _| | |    | __| |   \ 
-   | |   | _|  \__ \   | |     | _|   / _ \   | |  | |__  | _|  | |) |
-   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___| |____| |___| |___/ 
-
-Eliminar asociacion de materia prima
------------------------------------------------------------------------
-[main] ERROR  -     Test failed at step: Then la asociacion queda eliminada de la lista del producto
-[main] ERROR  -     [La lista de asociaciones debe estar vacia tras la eliminacion] expected:<[0]> but was:<[7]>
-[main] INFO  - 
+    <system-err><![CDATA[[main] INFO  - 
   _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
  |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
    | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
@@ -336,9 +308,9 @@ No hay materias primas registradas(hu-21-asociar-materia-prima-a-producto;no-hay
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 17, 2026 12:10:52 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 17, 2026 9:12:36 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 17, 2026 12:10:52 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 17, 2026 9:12:36 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -350,7 +322,7 @@ No hay materias primas registradas
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Modulo no visible para roles no autorizados" classname="HU-21 Asociar materia prima a producto" time="4.363">
+  <testcase name="Modulo no visible para roles no autorizados" classname="HU-21 Asociar materia prima a producto" time="4.321">
     <system-out><![CDATA[
 @materiaPrima
 Scenario: Modulo no visible para roles no autorizados                              &amp#27;[90m# src/test/resources/features/asociar-materia-prima.feature:42&amp#27;[0m
@@ -370,9 +342,9 @@ Modulo no visible para roles no autorizados(hu-21-asociar-materia-prima-a-produc
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 17, 2026 12:10:56 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 17, 2026 9:12:40 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 17, 2026 12:10:56 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 17, 2026 9:12:40 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -384,7 +356,7 @@ Modulo no visible para roles no autorizados
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Registro exitoso de materia prima" classname="HU-20 Registrar materia prima" time="2.663">
+  <testcase name="Registro exitoso de materia prima" classname="HU-20 Registrar materia prima" time="2.561">
     <system-out><![CDATA[
 @materiaPrima
 Scenario: Registro exitoso de materia prima                                                            &amp#27;[90m# src/test/resources/features/registrar-materia-prima.feature:10&amp#27;[0m
@@ -403,9 +375,9 @@ Registro exitoso de materia prima(hu-20-registrar-materia-prima;registro-exitoso
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 17, 2026 12:11:00 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 17, 2026 9:12:44 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 17, 2026 12:11:00 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 17, 2026 9:12:44 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -417,7 +389,7 @@ Registro exitoso de materia prima
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Registro exitoso de materia prima con descripcion" classname="HU-20 Registrar materia prima" time="3.145">
+  <testcase name="Registro exitoso de materia prima con descripcion" classname="HU-20 Registrar materia prima" time="3.106">
     <system-out><![CDATA[
 @materiaPrima
 Scenario: Registro exitoso de materia prima con descripcion                                            &amp#27;[90m# src/test/resources/features/registrar-materia-prima.feature:14&amp#27;[0m
@@ -435,9 +407,9 @@ Registro exitoso de materia prima con descripcion(hu-20-registrar-materia-prima;
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 17, 2026 12:11:03 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 17, 2026 9:12:46 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 17, 2026 12:11:03 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 17, 2026 9:12:46 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -449,7 +421,7 @@ Registro exitoso de materia prima con descripcion
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Nombre de materia prima duplicado" classname="HU-20 Registrar materia prima" time="3.315">
+  <testcase name="Nombre de materia prima duplicado" classname="HU-20 Registrar materia prima" time="3.514">
     <system-out><![CDATA[
 @materiaPrima
 Scenario: Nombre de materia prima duplicado                                                                 &amp#27;[90m# src/test/resources/features/registrar-materia-prima.feature:18&amp#27;[0m
@@ -468,9 +440,9 @@ Nombre de materia prima duplicado(hu-20-registrar-materia-prima;nombre-de-materi
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 17, 2026 12:11:06 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 17, 2026 9:12:50 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 17, 2026 12:11:06 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 17, 2026 9:12:50 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -482,7 +454,7 @@ Nombre de materia prima duplicado
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Campo nombre vacio" classname="HU-20 Registrar materia prima" time="2.878">
+  <testcase name="Campo nombre vacio" classname="HU-20 Registrar materia prima" time="3.075">
     <system-out><![CDATA[
 @materiaPrima
 Scenario: Campo nombre vacio                                                                                  &amp#27;[90m# src/test/resources/features/registrar-materia-prima.feature:23&amp#27;[0m
@@ -500,9 +472,9 @@ Campo nombre vacio(hu-20-registrar-materia-prima;campo-nombre-vacio)
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 17, 2026 12:11:09 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 17, 2026 9:12:53 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 17, 2026 12:11:09 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 17, 2026 9:12:53 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -514,7 +486,7 @@ Campo nombre vacio
 ----------------------------------------------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="Modulo no visible para roles no autorizados" classname="HU-20 Registrar materia prima" time="3.103">
+  <testcase name="Modulo no visible para roles no autorizados" classname="HU-20 Registrar materia prima" time="3.186">
     <system-out><![CDATA[
 @materiaPrima
 Scenario: Modulo no visible para roles no autorizados                              &amp#27;[90m# src/test/resources/features/registrar-materia-prima.feature:27&amp#27;[0m
@@ -534,9 +506,9 @@ Modulo no visible para roles no autorizados(hu-20-registrar-materia-prima;modulo
 --------------------------------------------------------------------------------
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--no-sandbox,--headless=new...], extensions: []}}
-may 17, 2026 12:11:12 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 17, 2026 9:12:56 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 148
-may 17, 2026 12:11:12 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+may 17, 2026 9:12:56 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 148.0.7778.167. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [main] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  

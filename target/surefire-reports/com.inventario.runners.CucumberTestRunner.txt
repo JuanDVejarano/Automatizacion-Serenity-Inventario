@@ -1,18 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.inventario.runners.CucumberTestRunner
 -------------------------------------------------------------------------------
-Tests run: 13, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 106.6 s <<< FAILURE! -- in com.inventario.runners.CucumberTestRunner
-HU-21 Asociar materia prima a producto.Asociar multiples materias primas a un producto -- Time elapsed: 19.90 s <<< FAILURE!
-org.junit.ComparisonFailure: [Deben haber exactamente 2 materias primas asociadas] expected:<[2]> but was:<[5]>
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at com.inventario.steps.AsociarMateriaPrimaStepDefinitions.elSistemaMuestra2MateriasPrimasAsociadasAlProducto(AsociarMateriaPrimaStepDefinitions.java:119)
-	at ✽.el sistema muestra 2 materias primas asociadas al producto(file:///home/juanj/Projects-Test/serenity-inventario-login/src/test/resources/features/asociar-materia-prima.feature:17)
-
-HU-21 Asociar materia prima a producto.Eliminar asociacion de materia prima -- Time elapsed: 20.53 s <<< FAILURE!
-org.junit.ComparisonFailure: [La lista de asociaciones debe estar vacia tras la eliminacion] expected:<[0]> but was:<[7]>
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at com.inventario.steps.AsociarMateriaPrimaStepDefinitions.laAsociacionQuedaEliminadaDeLaListaDelProducto(AsociarMateriaPrimaStepDefinitions.java:175)
-	at ✽.la asociacion queda eliminada de la lista del producto(file:///home/juanj/Projects-Test/serenity-inventario-login/src/test/resources/features/asociar-materia-prima.feature:36)
-
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 48.49 s -- in com.inventario.runners.CucumberTestRunner
