@@ -65,7 +65,22 @@ public class RegistrarVentaPage extends PageObject {
         searchButton.click();
         // Esperar que aparezca al menos un resultado
         waitFor(firstAddButton);
-        firstAddButton.click();
+        // Usar ng.getComponent() para agregar el primer producto con stock > 0
+        // El btn-agregar queda [disabled] cuando stock=0, por lo que el click() de
+        // Serenity lanza ElementShouldBeEnabledException en esos casos.
+        evaluateJavascript(
+            "var comp = ng.getComponent(document.querySelector('app-registrar-venta'));" +
+            "var prods = comp.productosResultados();" +
+            "var disponible = prods.find(function(p){ return p.stock > 0; });" +
+            "if(disponible){ comp.agregarAlCarrito(disponible); }");
+        // Esperar que el ítem aparezca en el carrito
+        long deadline = System.currentTimeMillis() + 5_000;
+        while (System.currentTimeMillis() < deadline) {
+            Object count = evaluateJavascript(
+                "return document.querySelectorAll('.carrito-table tbody tr').length;");
+            if (count instanceof Long && (Long) count > 0) return;
+            try { Thread.sleep(200); } catch (InterruptedException e) { break; }
+        }
     }
 
     public void clickConfirm() {
@@ -110,14 +125,17 @@ public class RegistrarVentaPage extends PageObject {
         searchButton.click();
         waitFor(firstAddButton);
 
-        // Paso 2: leer el ID del primer resultado
+        // Paso 2: leer el ID del primer resultado CON stock > 0
+        // r[0] podría tener stock=0 (de ejecuciones previas), lo que hace que
+        // buscarPorBarcode() encuentre el producto pero no pueda agregarlo al carrito.
         Object id = evaluateJavascript(
             "var comp = ng.getComponent(document.querySelector('app-registrar-venta'));" +
             "var r = comp.productosResultados();" +
-            "return r.length > 0 ? r[0].id : null;");
+            "var disponible = r.find(function(p){ return p.stock > 0; });" +
+            "return disponible ? disponible.id : null;");
 
         if (!(id instanceof Long) || (Long) id <= 0) {
-            throw new IllegalStateException("No hay productos disponibles para la busqueda: " + searchTerm);
+            throw new IllegalStateException("No hay productos con stock disponible para la busqueda: " + searchTerm);
         }
         int productId = ((Long) id).intValue();
 

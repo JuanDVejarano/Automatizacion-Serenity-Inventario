@@ -1,0 +1,1293 @@
+<html lang='en'><head><link href='prism/prism.css' rel='stylesheet' /></head><body><script src='prism/prism.js'></script><body><div><pre><code class='language-html'>&lt;html lang="en"&gt;<br/>
+ &lt;head&gt;<br/>
+  &lt;script type="module" src="/@vite/client"&gt;&lt;/script&gt;<br/>
+  &lt;meta charset="utf-8"&gt;<br/>
+  &lt;title&gt;Inventario — Sistema de Gestión&lt;/title&gt;<br/>
+  &lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;<br/>
+  &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""&gt;<br/>
+  &lt;link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"&gt;&lt;base href="/"&gt;<br/>
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;<br/>
+  &lt;link rel="icon" type="image/x-icon" href="favicon.ico"&gt;<br/>
+  &lt;link rel="stylesheet" href="styles.css"&gt;<br/>
+  &lt;style&gt;<br/>
+<br/>
+[_nghost-ng-c3732484115] {<br/>
+  display: flex;<br/>
+  min-height: 100vh;<br/>
+}<br/>
+.shell[_ngcontent-ng-c3732484115] {<br/>
+  display: flex;<br/>
+  width: 100%;<br/>
+  min-height: 100vh;<br/>
+  background: var(--clr-bg);<br/>
+}<br/>
+.sidebar[_ngcontent-ng-c3732484115] {<br/>
+  width: 260px;<br/>
+  flex-shrink: 0;<br/>
+  background: #0f1117;<br/>
+  display: flex;<br/>
+  flex-direction: column;<br/>
+  padding: 0 0 1.5rem;<br/>
+  position: sticky;<br/>
+  top: 0;<br/>
+  height: 100vh;<br/>
+  overflow-y: auto;<br/>
+}<br/>
+@media (max-width: 768px) {<br/>
+  .sidebar[_ngcontent-ng-c3732484115] {<br/>
+    display: none;<br/>
+  }<br/>
+}<br/>
+.sidebar-brand[_ngcontent-ng-c3732484115] {<br/>
+  display: flex;<br/>
+  align-items: center;<br/>
+  gap: 0.75rem;<br/>
+  padding: 1.5rem 1.5rem 1rem;<br/>
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);<br/>
+  margin-bottom: 0.75rem;<br/>
+  text-decoration: none;<br/>
+  color: inherit;<br/>
+  transition: opacity 0.15s;<br/>
+}<br/>
+.sidebar-brand[_ngcontent-ng-c3732484115]:hover {<br/>
+  opacity: 0.8;<br/>
+  text-decoration: none;<br/>
+}<br/>
+.sidebar-brand[_ngcontent-ng-c3732484115]   .brand-icon[_ngcontent-ng-c3732484115] {<br/>
+  width: 36px;<br/>
+  height: 36px;<br/>
+  background: var(--clr-primary);<br/>
+  border-radius: 9px;<br/>
+  display: flex;<br/>
+  align-items: center;<br/>
+  justify-content: center;<br/>
+  flex-shrink: 0;<br/>
+}<br/>
+.sidebar-brand[_ngcontent-ng-c3732484115]   .brand-icon[_ngcontent-ng-c3732484115]   svg[_ngcontent-ng-c3732484115] {<br/>
+  width: 18px;<br/>
+  height: 18px;<br/>
+  color: #fff;<br/>
+}<br/>
+.sidebar-brand[_ngcontent-ng-c3732484115]   .brand-name[_ngcontent-ng-c3732484115] {<br/>
+  font-size: 1rem;<br/>
+  font-weight: 700;<br/>
+  color: #f1f5f9;<br/>
+}<br/>
+.sidebar-brand[_ngcontent-ng-c3732484115]   .brand-sub[_ngcontent-ng-c3732484115] {<br/>
+  font-size: 0.7rem;<br/>
+  color: #94a3b8;<br/>
+}<br/>
+.nav-section[_ngcontent-ng-c3732484115] {<br/>
+  padding: 0 0.75rem;<br/>
+  margin-bottom: 0.75rem;<br/>
+}<br/>
+.nav-label[_ngcontent-ng-c3732484115] {<br/>
+  font-size: 0.65rem;<br/>
+  font-weight: 600;<br/>
+  letter-spacing: 0.08em;<br/>
+  text-transform: uppercase;<br/>
+  color: #94a3b8;<br/>
+  padding: 0.5rem 0.75rem 0.25rem;<br/>
+}<br/>
+.nav-item[_ngcontent-ng-c3732484115] {<br/>
+  display: flex;<br/>
+  align-items: center;<br/>
+  gap: 0.625rem;<br/>
+  padding: 0.55rem 0.75rem;<br/>
+  border-radius: 8px;<br/>
+  font-size: 0.875rem;<br/>
+  color: #94a3b8;<br/>
+  cursor: pointer;<br/>
+  text-decoration: none;<br/>
+  transition: background 0.15s, color 0.15s;<br/>
+}<br/>
+.nav-item[_ngcontent-ng-c3732484115]   svg[_ngcontent-ng-c3732484115] {<br/>
+  width: 16px;<br/>
+  height: 16px;<br/>
+  flex-shrink: 0;<br/>
+}<br/>
+.nav-item[_ngcontent-ng-c3732484115]:hover {<br/>
+  background: rgba(255, 255, 255, 0.05);<br/>
+  color: #e2e8f0;<br/>
+  text-decoration: none;<br/>
+}<br/>
+.nav-item.active[_ngcontent-ng-c3732484115] {<br/>
+  background: rgba(99, 102, 241, 0.15);<br/>
+  color: #a5b4fc;<br/>
+}<br/>
+.sidebar-footer[_ngcontent-ng-c3732484115] {<br/>
+  margin-top: auto;<br/>
+  padding: 0 0.75rem;<br/>
+}<br/>
+.user-card[_ngcontent-ng-c3732484115] {<br/>
+  display: flex;<br/>
+  align-items: center;<br/>
+  gap: 0.625rem;<br/>
+  background: rgba(255, 255, 255, 0.04);<br/>
+  border-radius: 10px;<br/>
+  padding: 0.625rem 0.75rem;<br/>
+}<br/>
+.avatar[_ngcontent-ng-c3732484115] {<br/>
+  width: 32px;<br/>
+  height: 32px;<br/>
+  background: #6366f1;<br/>
+  border-radius: 50%;<br/>
+  display: flex;<br/>
+  align-items: center;<br/>
+  justify-content: center;<br/>
+  font-size: 0.8rem;<br/>
+  font-weight: 700;<br/>
+  color: #fff;<br/>
+  flex-shrink: 0;<br/>
+}<br/>
+.user-info[_ngcontent-ng-c3732484115] {<br/>
+  flex: 1;<br/>
+  min-width: 0;<br/>
+}<br/>
+.user-name[_ngcontent-ng-c3732484115] {<br/>
+  font-size: 0.8rem;<br/>
+  font-weight: 600;<br/>
+  color: #e2e8f0;<br/>
+  white-space: nowrap;<br/>
+  overflow: hidden;<br/>
+  text-overflow: ellipsis;<br/>
+}<br/>
+.user-role[_ngcontent-ng-c3732484115] {<br/>
+  font-size: 0.7rem;<br/>
+  color: #94a3b8;<br/>
+  white-space: nowrap;<br/>
+  overflow: hidden;<br/>
+  text-overflow: ellipsis;<br/>
+}<br/>
+.btn-logout-icon[_ngcontent-ng-c3732484115] {<br/>
+  background: none;<br/>
+  border: none;<br/>
+  cursor: pointer;<br/>
+  color: #94a3b8;<br/>
+  padding: 4px;<br/>
+}<br/>
+.btn-logout-icon[_ngcontent-ng-c3732484115]   svg[_ngcontent-ng-c3732484115] {<br/>
+  width: 16px;<br/>
+  height: 16px;<br/>
+  display: block;<br/>
+}<br/>
+.btn-logout-icon[_ngcontent-ng-c3732484115]:hover {<br/>
+  color: #e2e8f0;<br/>
+}<br/>
+.main[_ngcontent-ng-c3732484115] {<br/>
+  flex: 1;<br/>
+  display: flex;<br/>
+  flex-direction: column;<br/>
+  min-width: 0;<br/>
+  background: #0f1117;<br/>
+}<br/>
+/*# sourceMappingURL=/caja-layout.css.map */&lt;/style&gt;<br/>
+  &lt;style&gt;@charset "UTF-8";<br/>
+<br/>
+<br/>
+<br/>
+.page-content[_ngcontent-ng-c1456286184] {<br/>
+  display: flex;<br/>
+  flex-direction: column;<br/>
+  flex: 1;<br/>
+  min-height: 100vh;<br/>
+}<br/>
+.topbar[_ngcontent-ng-c1456286184] {<br/>
+  display: flex;<br/>
+  align-items: center;<br/>
+  justify-content: space-between;<br/>
+  padding: 1rem 2rem;<br/>
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);<br/>
+  background: #0f1117;<br/>
+  position: sticky;<br/>
+  top: 0;<br/>
+  z-index: 10;<br/>
+}<br/>
+.topbar-title[_ngcontent-ng-c1456286184]   h2[_ngcontent-ng-c1456286184] {<br/>
+  font-size: 1.1rem;<br/>
+  font-weight: 700;<br/>
+  color: #f1f5f9;<br/>
+  margin: 0;<br/>
+}<br/>
+.topbar-title[_ngcontent-ng-c1456286184]   span[_ngcontent-ng-c1456286184] {<br/>
+  font-size: 0.75rem;<br/>
+  color: #94a3b8;<br/>
+}<br/>
+.content[_ngcontent-ng-c1456286184] {<br/>
+  flex: 1;<br/>
+  padding: 2rem;<br/>
+  display: flex;<br/>
+  flex-direction: column;<br/>
+  gap: 1.25rem;<br/>
+}<br/>
+.filters-bar[_ngcontent-ng-c1456286184] {<br/>
+  display: flex;<br/>
+  align-items: flex-end;<br/>
+  gap: 1rem;<br/>
+  flex-wrap: wrap;<br/>
+}<br/>
+.filter-group[_ngcontent-ng-c1456286184] {<br/>
+  display: flex;<br/>
+  flex-direction: column;<br/>
+  gap: 0.35rem;<br/>
+}<br/>
+.filter-group[_ngcontent-ng-c1456286184]   label[_ngcontent-ng-c1456286184] {<br/>
+  font-size: 0.75rem;<br/>
+  font-weight: 500;<br/>
+  color: #94a3b8;<br/>
+}<br/>
+.filter-group[_ngcontent-ng-c1456286184]   select[_ngcontent-ng-c1456286184], <br/>
+.filter-group[_ngcontent-ng-c1456286184]   input[_ngcontent-ng-c1456286184] {<br/>
+  background: #161b27;<br/>
+  border: 1px solid rgba(255, 255, 255, 0.1);<br/>
+  border-radius: 8px;<br/>
+  padding: 0.45rem 0.8rem;<br/>
+  font-size: 0.875rem;<br/>
+  color: #e2e8f0;<br/>
+  outline: none;<br/>
+  font-family: inherit;<br/>
+}<br/>
+.filter-group[_ngcontent-ng-c1456286184]   select[_ngcontent-ng-c1456286184]:focus, <br/>
+.filter-group[_ngcontent-ng-c1456286184]   input[_ngcontent-ng-c1456286184]:focus {<br/>
+  border-color: #6366f1;<br/>
+}<br/>
+.filter-group[_ngcontent-ng-c1456286184]   select[_ngcontent-ng-c1456286184]   option[_ngcontent-ng-c1456286184], <br/>
+.filter-group[_ngcontent-ng-c1456286184]   input[_ngcontent-ng-c1456286184]   option[_ngcontent-ng-c1456286184] {<br/>
+  background: #161b27;<br/>
+}<br/>
+.btn-reset[_ngcontent-ng-c1456286184] {<br/>
+  align-self: flex-end;<br/>
+  background: none;<br/>
+  border: 1px solid rgba(255, 255, 255, 0.12);<br/>
+  border-radius: 8px;<br/>
+  padding: 0.45rem 0.9rem;<br/>
+  font-size: 0.8rem;<br/>
+  color: #94a3b8;<br/>
+  cursor: pointer;<br/>
+}<br/>
+.btn-reset[_ngcontent-ng-c1456286184]:hover {<br/>
+  background: rgba(255, 255, 255, 0.05);<br/>
+  color: #e2e8f0;<br/>
+}<br/>
+.count-badge[_ngcontent-ng-c1456286184] {<br/>
+  margin-left: auto;<br/>
+  align-self: flex-end;<br/>
+  background: rgba(99, 102, 241, 0.12);<br/>
+  color: #a5b4fc;<br/>
+  font-size: 0.78rem;<br/>
+  font-weight: 600;<br/>
+  padding: 0.3rem 0.75rem;<br/>
+  border-radius: 999px;<br/>
+  white-space: nowrap;<br/>
+}<br/>
+.section-card[_ngcontent-ng-c1456286184] {<br/>
+  background: #161b27;<br/>
+  border: 1px solid rgba(255, 255, 255, 0.06);<br/>
+  border-radius: 16px;<br/>
+  padding: 1.5rem;<br/>
+  width: 100%;<br/>
+}<br/>
+.detail-card[_ngcontent-ng-c1456286184] {<br/>
+  border-color: rgba(99, 102, 241, 0.25);<br/>
+}<br/>
+.table-wrap[_ngcontent-ng-c1456286184] {<br/>
+  overflow-x: auto;<br/>
+  border-radius: 10px;<br/>
+  border: 1px solid rgba(255, 255, 255, 0.06);<br/>
+}<br/>
+table[_ngcontent-ng-c1456286184] {<br/>
+  width: 100%;<br/>
+  border-collapse: collapse;<br/>
+  font-size: 0.875rem;<br/>
+}<br/>
+table[_ngcontent-ng-c1456286184]   thead[_ngcontent-ng-c1456286184] {<br/>
+  background: rgba(255, 255, 255, 0.03);<br/>
+}<br/>
+table[_ngcontent-ng-c1456286184]   thead[_ngcontent-ng-c1456286184]   th[_ngcontent-ng-c1456286184] {<br/>
+  padding: 0.65rem 1rem;<br/>
+  text-align: left;<br/>
+  font-size: 0.72rem;<br/>
+  font-weight: 600;<br/>
+  color: #94a3b8;<br/>
+  text-transform: uppercase;<br/>
+  letter-spacing: 0.05em;<br/>
+  white-space: nowrap;<br/>
+}<br/>
+table[_ngcontent-ng-c1456286184]   tbody[_ngcontent-ng-c1456286184]   tr[_ngcontent-ng-c1456286184] {<br/>
+  border-top: 1px solid rgba(255, 255, 255, 0.04);<br/>
+  transition: background 0.1s;<br/>
+}<br/>
+table[_ngcontent-ng-c1456286184]   tbody[_ngcontent-ng-c1456286184]   tr[_ngcontent-ng-c1456286184]:hover {<br/>
+  background: rgba(255, 255, 255, 0.025);<br/>
+}<br/>
+table[_ngcontent-ng-c1456286184]   tbody[_ngcontent-ng-c1456286184]   tr.row--active[_ngcontent-ng-c1456286184] {<br/>
+  background: rgba(99, 102, 241, 0.08);<br/>
+}<br/>
+table[_ngcontent-ng-c1456286184]   tbody[_ngcontent-ng-c1456286184]   tr[_ngcontent-ng-c1456286184]   td[_ngcontent-ng-c1456286184] {<br/>
+  padding: 0.65rem 1rem;<br/>
+  color: #cbd5e1;<br/>
+  white-space: nowrap;<br/>
+}<br/>
+.mono[_ngcontent-ng-c1456286184] {<br/>
+  font-variant-numeric: tabular-nums;<br/>
+  font-family: monospace;<br/>
+  font-size: 0.875rem;<br/>
+}<br/>
+.val--pos[_ngcontent-ng-c1456286184] {<br/>
+  color: #86efac;<br/>
+}<br/>
+.val--neg[_ngcontent-ng-c1456286184] {<br/>
+  color: #fca5a5;<br/>
+}<br/>
+.saldo-cell[_ngcontent-ng-c1456286184] {<br/>
+  color: #a5b4fc;<br/>
+  font-weight: 600;<br/>
+}<br/>
+.op-badge[_ngcontent-ng-c1456286184] {<br/>
+  display: inline-block;<br/>
+  font-size: 0.72rem;<br/>
+  font-weight: 600;<br/>
+  padding: 0.2rem 0.55rem;<br/>
+  border-radius: 999px;<br/>
+}<br/>
+.op-badge--ingreso[_ngcontent-ng-c1456286184] {<br/>
+  background: rgba(34, 197, 94, 0.12);<br/>
+  color: #86efac;<br/>
+}<br/>
+.op-badge--egreso[_ngcontent-ng-c1456286184] {<br/>
+  background: rgba(239, 68, 68, 0.12);<br/>
+  color: #fca5a5;<br/>
+}<br/>
+.ref-tag[_ngcontent-ng-c1456286184] {<br/>
+  display: inline-block;<br/>
+  font-size: 0.75rem;<br/>
+  font-weight: 500;<br/>
+  padding: 0.18rem 0.5rem;<br/>
+  border-radius: 6px;<br/>
+}<br/>
+.ref-tag--venta[_ngcontent-ng-c1456286184] {<br/>
+  background: rgba(99, 102, 241, 0.12);<br/>
+  color: #a5b4fc;<br/>
+}<br/>
+.ref-tag--orden[_ngcontent-ng-c1456286184] {<br/>
+  background: rgba(245, 158, 11, 0.12);<br/>
+  color: #fcd34d;<br/>
+}<br/>
+.ref-tag--manual[_ngcontent-ng-c1456286184] {<br/>
+  background: rgba(100, 116, 139, 0.12);<br/>
+  color: #94a3b8;<br/>
+}<br/>
+.btn-detail[_ngcontent-ng-c1456286184] {<br/>
+  background: none;<br/>
+  border: none;<br/>
+  cursor: pointer;<br/>
+  color: #94a3b8;<br/>
+  padding: 4px;<br/>
+}<br/>
+.btn-detail[_ngcontent-ng-c1456286184]   svg[_ngcontent-ng-c1456286184] {<br/>
+  width: 16px;<br/>
+  height: 16px;<br/>
+  display: block;<br/>
+}<br/>
+.btn-detail[_ngcontent-ng-c1456286184]:hover {<br/>
+  color: #a5b4fc;<br/>
+}<br/>
+.detail-header[_ngcontent-ng-c1456286184] {<br/>
+  display: flex;<br/>
+  align-items: center;<br/>
+  gap: 0.75rem;<br/>
+  margin-bottom: 1.5rem;<br/>
+}<br/>
+.detail-header[_ngcontent-ng-c1456286184]   h3[_ngcontent-ng-c1456286184] {<br/>
+  font-size: 0.95rem;<br/>
+  font-weight: 700;<br/>
+  color: #f1f5f9;<br/>
+  margin: 0;<br/>
+  flex: 1;<br/>
+}<br/>
+.btn-close[_ngcontent-ng-c1456286184] {<br/>
+  background: none;<br/>
+  border: none;<br/>
+  cursor: pointer;<br/>
+  color: #94a3b8;<br/>
+  padding: 4px;<br/>
+}<br/>
+.btn-close[_ngcontent-ng-c1456286184]   svg[_ngcontent-ng-c1456286184] {<br/>
+  width: 16px;<br/>
+  height: 16px;<br/>
+  display: block;<br/>
+}<br/>
+.btn-close[_ngcontent-ng-c1456286184]:hover {<br/>
+  color: #e2e8f0;<br/>
+}<br/>
+.detail-grid[_ngcontent-ng-c1456286184] {<br/>
+  display: flex;<br/>
+  flex-wrap: wrap;<br/>
+  gap: 1.5rem;<br/>
+  margin-bottom: 1.25rem;<br/>
+}<br/>
+.detail-item[_ngcontent-ng-c1456286184] {<br/>
+  display: flex;<br/>
+  flex-direction: column;<br/>
+  gap: 0.25rem;<br/>
+  min-width: 140px;<br/>
+}<br/>
+.detail-label[_ngcontent-ng-c1456286184] {<br/>
+  font-size: 0.7rem;<br/>
+  font-weight: 600;<br/>
+  color: #94a3b8;<br/>
+  text-transform: uppercase;<br/>
+  letter-spacing: 0.05em;<br/>
+}<br/>
+.detail-value[_ngcontent-ng-c1456286184] {<br/>
+  font-size: 0.875rem;<br/>
+  color: #cbd5e1;<br/>
+}<br/>
+.materias-section[_ngcontent-ng-c1456286184] {<br/>
+  display: flex;<br/>
+  flex-direction: column;<br/>
+  gap: 0.5rem;<br/>
+  margin-top: 0.75rem;<br/>
+}<br/>
+.materias-section[_ngcontent-ng-c1456286184]   .detail-label[_ngcontent-ng-c1456286184] {<br/>
+  margin-bottom: 0.25rem;<br/>
+}<br/>
+.materias-list[_ngcontent-ng-c1456286184] {<br/>
+  border: 1px solid rgba(255, 255, 255, 0.06);<br/>
+  border-radius: 8px;<br/>
+  overflow: hidden;<br/>
+}<br/>
+.materia-row[_ngcontent-ng-c1456286184] {<br/>
+  display: flex;<br/>
+  justify-content: space-between;<br/>
+  align-items: center;<br/>
+  padding: 0.5rem 0.875rem;<br/>
+  font-size: 0.875rem;<br/>
+  color: #cbd5e1;<br/>
+}<br/>
+.materia-row[_ngcontent-ng-c1456286184]:not(:last-child) {<br/>
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);<br/>
+}<br/>
+.manual-msg[_ngcontent-ng-c1456286184] {<br/>
+  color: #94a3b8;<br/>
+  font-size: 0.875rem;<br/>
+  margin: 0;<br/>
+}<br/>
+.empty-state[_ngcontent-ng-c1456286184] {<br/>
+  color: #94a3b8;<br/>
+  font-size: 0.9rem;<br/>
+  padding: 2rem 0;<br/>
+  text-align: center;<br/>
+}<br/>
+.loading[_ngcontent-ng-c1456286184] {<br/>
+  color: #94a3b8;<br/>
+  font-size: 0.9rem;<br/>
+  padding: 2rem 0;<br/>
+}<br/>
+/*# sourceMappingURL=/historial-caja.css.map */&lt;/style&gt;<br/>
+ &lt;/head&gt;<br/>
+ &lt;body&gt;&lt;app-root ng-version="20.3.12"&gt;<br/>
+   &lt;router-outlet&gt;&lt;/router-outlet&gt;<br/>
+   &lt;app-caja-layout _nghost-ng-c3732484115=""&gt;<br/>
+    &lt;a _ngcontent-ng-c3732484115="" href="#main-content" class="skip-link"&gt;Saltar al contenido principal&lt;/a&gt;<br/>
+    &lt;div _ngcontent-ng-c3732484115="" class="shell"&gt;<br/>
+     &lt;aside _ngcontent-ng-c3732484115="" aria-label="Finanzas — navegación" class="sidebar"&gt;<br/>
+      &lt;a _ngcontent-ng-c3732484115="" routerlink="/dashboard" aria-label="InvSystem — Volver al dashboard" class="sidebar-brand" href="/dashboard"&gt;<br/>
+       &lt;div _ngcontent-ng-c3732484115="" aria-hidden="true" class="brand-icon"&gt;<br/>
+        &lt;svg _ngcontent-ng-c3732484115="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+         &lt;path _ngcontent-ng-c3732484115="" stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10"&gt;&lt;/path&gt;<br/>
+        &lt;/svg&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div _ngcontent-ng-c3732484115=""&gt;<br/>
+        &lt;div _ngcontent-ng-c3732484115="" class="brand-name"&gt;<br/>
+         InvSystem<br/>
+        &lt;/div&gt;<br/>
+        &lt;div _ngcontent-ng-c3732484115="" class="brand-sub"&gt;<br/>
+         v1.0<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;&lt;/a&gt;<br/>
+      &lt;nav _ngcontent-ng-c3732484115="" aria-label="Finanzas"&gt;<br/>
+       &lt;div _ngcontent-ng-c3732484115="" class="nav-section"&gt;<br/>
+        &lt;p _ngcontent-ng-c3732484115="" aria-hidden="true" class="nav-label"&gt;Principal&lt;/p&gt;<br/>
+        &lt;ul _ngcontent-ng-c3732484115="" class="nav-list"&gt;<br/>
+         &lt;li _ngcontent-ng-c3732484115=""&gt;&lt;a _ngcontent-ng-c3732484115="" routerlink="/dashboard" class="nav-item" href="/dashboard"&gt;<br/>
+           &lt;svg _ngcontent-ng-c3732484115="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+            &lt;rect _ngcontent-ng-c3732484115="" x="3" y="3" width="7" height="7"&gt;&lt;/rect&gt;&lt;rect _ngcontent-ng-c3732484115="" x="14" y="3" width="7" height="7"&gt;&lt;/rect&gt;&lt;rect _ngcontent-ng-c3732484115="" x="14" y="14" width="7" height="7"&gt;&lt;/rect&gt;&lt;rect _ngcontent-ng-c3732484115="" x="3" y="14" width="7" height="7"&gt;&lt;/rect&gt;<br/>
+           &lt;/svg&gt; Dashboard &lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div _ngcontent-ng-c3732484115="" class="nav-section"&gt;<br/>
+        &lt;p _ngcontent-ng-c3732484115="" aria-hidden="true" class="nav-label"&gt;Finanzas&lt;/p&gt;<br/>
+        &lt;ul _ngcontent-ng-c3732484115="" class="nav-list"&gt;<br/>
+         &lt;li _ngcontent-ng-c3732484115=""&gt;&lt;a _ngcontent-ng-c3732484115="" routerlink="/caja/saldo" routerlinkactive="active" ariacurrentwhenactive="page" class="nav-item" href="/caja/saldo"&gt;<br/>
+           &lt;svg _ngcontent-ng-c3732484115="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+            &lt;path _ngcontent-ng-c3732484115="" stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"&gt;&lt;/path&gt;<br/>
+           &lt;/svg&gt; Saldo de caja &lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li _ngcontent-ng-c3732484115=""&gt;&lt;a _ngcontent-ng-c3732484115="" routerlink="/caja/movimiento" routerlinkactive="active" ariacurrentwhenactive="page" class="nav-item" href="/caja/movimiento"&gt;<br/>
+           &lt;svg _ngcontent-ng-c3732484115="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+            &lt;path _ngcontent-ng-c3732484115="" stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"&gt;&lt;/path&gt;<br/>
+           &lt;/svg&gt; Registrar movimiento &lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li _ngcontent-ng-c3732484115=""&gt;&lt;a _ngcontent-ng-c3732484115="" routerlink="/caja/historial" routerlinkactive="active" ariacurrentwhenactive="page" class="nav-item active" href="/caja/historial" aria-current="page"&gt;<br/>
+           &lt;svg _ngcontent-ng-c3732484115="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+            &lt;path _ngcontent-ng-c3732484115="" stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"&gt;&lt;/path&gt;<br/>
+           &lt;/svg&gt; Historial de caja &lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/nav&gt;<br/>
+      &lt;div _ngcontent-ng-c3732484115="" class="sidebar-footer"&gt;<br/>
+       &lt;div _ngcontent-ng-c3732484115="" class="user-card"&gt;<br/>
+        &lt;div _ngcontent-ng-c3732484115="" aria-hidden="true" class="avatar"&gt;<br/>
+         A<br/>
+        &lt;/div&gt;<br/>
+        &lt;div _ngcontent-ng-c3732484115="" class="user-info"&gt;<br/>
+         &lt;div _ngcontent-ng-c3732484115="" class="user-name"&gt;<br/>
+          admin<br/>
+         &lt;/div&gt;<br/>
+         &lt;div _ngcontent-ng-c3732484115="" class="user-role"&gt;<br/>
+          Administrador<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;&lt;button _ngcontent-ng-c3732484115="" aria-label="Cerrar sesión" class="btn-logout-icon"&gt;<br/>
+         &lt;svg _ngcontent-ng-c3732484115="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+          &lt;path _ngcontent-ng-c3732484115="" stroke-linecap="round" stroke-linejoin="round" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"&gt;&lt;/path&gt;<br/>
+         &lt;/svg&gt;&lt;/button&gt;<br/>
+       &lt;/div&gt;&lt;!--container--&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/aside&gt;<br/>
+     &lt;main _ngcontent-ng-c3732484115="" id="main-content" class="main"&gt;<br/>
+      &lt;router-outlet _ngcontent-ng-c3732484115=""&gt;&lt;/router-outlet&gt;&lt;app-historial-caja _nghost-ng-c1456286184=""&gt;<br/>
+       &lt;div _ngcontent-ng-c1456286184="" class="page-content"&gt;<br/>
+        &lt;header _ngcontent-ng-c1456286184="" class="topbar"&gt;<br/>
+         &lt;div _ngcontent-ng-c1456286184="" class="topbar-title"&gt;<br/>
+          &lt;h2 _ngcontent-ng-c1456286184=""&gt;Historial de caja&lt;/h2&gt;&lt;span _ngcontent-ng-c1456286184=""&gt;Finanzas&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/header&gt;<br/>
+        &lt;div _ngcontent-ng-c1456286184="" class="content"&gt;<br/>
+         &lt;!--container--&gt;<br/>
+         &lt;div _ngcontent-ng-c1456286184="" class="filters-bar"&gt;<br/>
+          &lt;div _ngcontent-ng-c1456286184="" class="filter-group"&gt;<br/>
+           &lt;label _ngcontent-ng-c1456286184=""&gt;Tipo de movimiento&lt;/label&gt;&lt;select _ngcontent-ng-c1456286184="" class="ng-untouched ng-pristine ng-valid"&gt;&lt;option _ngcontent-ng-c1456286184="" value=""&gt;Todos los tipos&lt;/option&gt;&lt;option _ngcontent-ng-c1456286184="" value="1"&gt;Ingreso por venta de productos&lt;/option&gt;&lt;option _ngcontent-ng-c1456286184="" value="2"&gt;Egreso por orden de compra&lt;/option&gt;&lt;option _ngcontent-ng-c1456286184="" value="4"&gt;Gasto operativo&lt;/option&gt;&lt;option _ngcontent-ng-c1456286184="" value="6"&gt;Inyección de capital&lt;/option&gt;&lt;option _ngcontent-ng-c1456286184="" value="3"&gt;Egreso por cancelación de venta&lt;/option&gt;&lt;option _ngcontent-ng-c1456286184="" value="5"&gt;Ingreso externo&lt;/option&gt;&lt;option _ngcontent-ng-c1456286184="" value="7"&gt;Deducción de saldo&lt;/option&gt;&lt;!--container--&gt;&lt;/select&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;div _ngcontent-ng-c1456286184="" class="filter-group"&gt;<br/>
+           &lt;label _ngcontent-ng-c1456286184=""&gt;Operación&lt;/label&gt;&lt;select _ngcontent-ng-c1456286184="" class="ng-untouched ng-pristine ng-valid"&gt;&lt;option _ngcontent-ng-c1456286184="" value="Todos"&gt;Todos&lt;/option&gt;&lt;option _ngcontent-ng-c1456286184="" value="Ingresos"&gt;Ingresos&lt;/option&gt;&lt;option _ngcontent-ng-c1456286184="" value="Egresos"&gt;Egresos&lt;/option&gt;&lt;!--container--&gt;&lt;/select&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;div _ngcontent-ng-c1456286184="" class="filter-group"&gt;<br/>
+           &lt;label _ngcontent-ng-c1456286184=""&gt;Desde&lt;/label&gt;&lt;input _ngcontent-ng-c1456286184="" type="date" class="ng-untouched ng-pristine ng-valid"&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;div _ngcontent-ng-c1456286184="" class="filter-group"&gt;<br/>
+           &lt;label _ngcontent-ng-c1456286184=""&gt;Hasta&lt;/label&gt;&lt;input _ngcontent-ng-c1456286184="" type="date" class="ng-untouched ng-pristine ng-valid"&gt;<br/>
+          &lt;/div&gt;&lt;!--container--&gt;&lt;span _ngcontent-ng-c1456286184="" class="count-badge"&gt;57 movimiento(s)&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div _ngcontent-ng-c1456286184="" class="section-card"&gt;<br/>
+          &lt;!--container--&gt;<br/>
+          &lt;div _ngcontent-ng-c1456286184="" class="table-wrap"&gt;<br/>
+           &lt;table _ngcontent-ng-c1456286184=""&gt;<br/>
+            &lt;thead _ngcontent-ng-c1456286184=""&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;th _ngcontent-ng-c1456286184=""&gt;Fecha&lt;/th&gt;<br/>
+              &lt;th _ngcontent-ng-c1456286184=""&gt;Tipo de movimiento&lt;/th&gt;<br/>
+              &lt;th _ngcontent-ng-c1456286184=""&gt;Operación&lt;/th&gt;<br/>
+              &lt;th _ngcontent-ng-c1456286184=""&gt;Valor&lt;/th&gt;<br/>
+              &lt;th _ngcontent-ng-c1456286184=""&gt;Referencia&lt;/th&gt;<br/>
+              &lt;th _ngcontent-ng-c1456286184=""&gt;Saldo resultante&lt;/th&gt;<br/>
+              &lt;th _ngcontent-ng-c1456286184=""&gt;&lt;/th&gt;<br/>
+             &lt;/tr&gt;<br/>
+            &lt;/thead&gt;<br/>
+            &lt;tbody _ngcontent-ng-c1456286184=""&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184="" class="row--active"&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2026-05-18T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Ingreso por venta de productos&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--ingreso"&gt; Ingreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--pos"&gt;+$&nbsp;1.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;!--container--&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--orden"&gt;Orden #13&lt;/span&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;123.995.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2026-05-18T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Egreso por orden de compra&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--egreso"&gt; Egreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--neg"&gt;-$&nbsp;1.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;!--container--&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--orden"&gt;Orden #12&lt;/span&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;123.994.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2026-05-18T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Ingreso por venta de productos&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--ingreso"&gt; Ingreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--pos"&gt;+$&nbsp;1.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;!--container--&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--orden"&gt;Orden #12&lt;/span&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;123.995.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2026-05-05T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Ingreso por venta de productos&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--ingreso"&gt; Ingreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--pos"&gt;+$&nbsp;1.200.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--venta"&gt;Venta #28&lt;/span&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;123.994.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2026-04-30T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Gasto operativo&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--egreso"&gt; Egreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--neg"&gt;-$&nbsp;1.800.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--manual"&gt;Manual&lt;/span&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;122.794.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2026-04-12T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Ingreso por venta de productos&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--ingreso"&gt; Ingreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--pos"&gt;+$&nbsp;2.460.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--venta"&gt;Venta #27&lt;/span&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;124.594.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2026-03-31T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Gasto operativo&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--egreso"&gt; Egreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--neg"&gt;-$&nbsp;2.200.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--manual"&gt;Manual&lt;/span&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;122.134.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2026-03-31T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Inyección de capital&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--ingreso"&gt; Ingreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--pos"&gt;+$&nbsp;20.000.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--manual"&gt;Manual&lt;/span&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;124.334.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2026-03-20T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Egreso por cancelación de venta&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--egreso"&gt; Egreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--neg"&gt;-$&nbsp;816.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--venta"&gt;Venta #26&lt;/span&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;104.334.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2026-03-08T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Ingreso por venta de productos&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--ingreso"&gt; Ingreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--pos"&gt;+$&nbsp;2.974.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--venta"&gt;Venta #25&lt;/span&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;105.150.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2026-02-25T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Ingreso por venta de productos&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--ingreso"&gt; Ingreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--pos"&gt;+$&nbsp;2.860.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--venta"&gt;Venta #24&lt;/span&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;102.176.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2026-02-12T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Egreso por orden de compra&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--egreso"&gt; Egreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--neg"&gt;-$&nbsp;178.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;!--container--&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--orden"&gt;Orden #9&lt;/span&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;99.316.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2026-02-10T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Ingreso por venta de productos&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--ingreso"&gt; Ingreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--pos"&gt;+$&nbsp;1.440.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--venta"&gt;Venta #23&lt;/span&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;99.494.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2026-01-31T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Gasto operativo&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--egreso"&gt; Egreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--neg"&gt;-$&nbsp;2.000.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--manual"&gt;Manual&lt;/span&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;98.054.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2026-01-15T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Ingreso por venta de productos&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--ingreso"&gt; Ingreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--pos"&gt;+$&nbsp;2.026.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--venta"&gt;Venta #22&lt;/span&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;100.054.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2026-01-12T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Egreso por orden de compra&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--egreso"&gt; Egreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--neg"&gt;-$&nbsp;760.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;!--container--&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--orden"&gt;Orden #8&lt;/span&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;98.028.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2025-12-31T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Gasto operativo&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--egreso"&gt; Egreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--neg"&gt;-$&nbsp;2.500.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--manual"&gt;Manual&lt;/span&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;98.788.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2025-12-20T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Ingreso externo&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--ingreso"&gt; Ingreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--pos"&gt;+$&nbsp;8.000.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--manual"&gt;Manual&lt;/span&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;101.288.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2025-12-18T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Ingreso por venta de productos&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--ingreso"&gt; Ingreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--pos"&gt;+$&nbsp;1.230.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--venta"&gt;Venta #21&lt;/span&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;93.288.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2025-12-03T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Ingreso por venta de productos&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--ingreso"&gt; Ingreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--pos"&gt;+$&nbsp;3.430.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--venta"&gt;Venta #20&lt;/span&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;92.058.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2025-11-20T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Ingreso por venta de productos&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--ingreso"&gt; Ingreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--pos"&gt;+$&nbsp;2.040.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--venta"&gt;Venta #19&lt;/span&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;88.628.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2025-11-15T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Egreso por orden de compra&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--egreso"&gt; Egreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--neg"&gt;-$&nbsp;460.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;!--container--&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--orden"&gt;Orden #7&lt;/span&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;86.588.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2025-11-06T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Ingreso por venta de productos&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--ingreso"&gt; Ingreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--pos"&gt;+$&nbsp;1.116.800&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--venta"&gt;Venta #18&lt;/span&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;87.048.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2025-10-31T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Gasto operativo&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--egreso"&gt; Egreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--neg"&gt;-$&nbsp;1.900.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--manual"&gt;Manual&lt;/span&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;85.931.200&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2025-10-10T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Ingreso por venta de productos&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--ingreso"&gt; Ingreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--pos"&gt;+$&nbsp;1.945.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--venta"&gt;Venta #17&lt;/span&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;87.831.200&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2025-09-30T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Gasto operativo&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--egreso"&gt; Egreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--neg"&gt;-$&nbsp;1.700.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--manual"&gt;Manual&lt;/span&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;85.886.200&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2025-09-30T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Inyección de capital&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--ingreso"&gt; Ingreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--pos"&gt;+$&nbsp;15.000.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--manual"&gt;Manual&lt;/span&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;87.586.200&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2025-09-23T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Ingreso por venta de productos&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--ingreso"&gt; Ingreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--pos"&gt;+$&nbsp;1.784.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--venta"&gt;Venta #16&lt;/span&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;72.586.200&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2025-09-05T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Ingreso por venta de productos&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--ingreso"&gt; Ingreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--pos"&gt;+$&nbsp;1.416.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--venta"&gt;Venta #15&lt;/span&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;70.802.200&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2025-08-14T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Ingreso por venta de productos&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--ingreso"&gt; Ingreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--pos"&gt;+$&nbsp;1.696.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--venta"&gt;Venta #14&lt;/span&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;69.386.200&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2025-08-10T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Egreso por orden de compra&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--egreso"&gt; Egreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--neg"&gt;-$&nbsp;488.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;!--container--&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--orden"&gt;Orden #5&lt;/span&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;67.690.200&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2025-07-31T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Gasto operativo&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--egreso"&gt; Egreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--neg"&gt;-$&nbsp;2.000.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--manual"&gt;Manual&lt;/span&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;68.178.200&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2025-07-31T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Ingreso externo&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--ingreso"&gt; Ingreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--pos"&gt;+$&nbsp;3.000.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--manual"&gt;Manual&lt;/span&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;70.178.200&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2025-07-19T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Ingreso por venta de productos&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--ingreso"&gt; Ingreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--pos"&gt;+$&nbsp;1.469.600&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--venta"&gt;Venta #13&lt;/span&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;67.178.200&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2025-07-07T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Ingreso por venta de productos&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--ingreso"&gt; Ingreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--pos"&gt;+$&nbsp;480.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--venta"&gt;Venta #12&lt;/span&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;65.708.600&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2025-06-30T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Deducción de saldo&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--egreso"&gt; Egreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--neg"&gt;-$&nbsp;500.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--manual"&gt;Manual&lt;/span&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;65.228.600&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2025-06-12T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Egreso por orden de compra&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--egreso"&gt; Egreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--neg"&gt;-$&nbsp;270.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;!--container--&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--orden"&gt;Orden #4&lt;/span&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;65.728.600&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2025-06-10T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Ingreso por venta de productos&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--ingreso"&gt; Ingreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--pos"&gt;+$&nbsp;1.108.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--venta"&gt;Venta #11&lt;/span&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;65.998.600&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2025-05-31T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Gasto operativo&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--egreso"&gt; Egreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--neg"&gt;-$&nbsp;1.600.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--manual"&gt;Manual&lt;/span&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;64.890.600&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2025-05-22T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Ingreso por venta de productos&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--ingreso"&gt; Ingreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--pos"&gt;+$&nbsp;1.000.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--venta"&gt;Venta #10&lt;/span&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;66.490.600&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2025-05-08T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Ingreso por venta de productos&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--ingreso"&gt; Ingreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--pos"&gt;+$&nbsp;716.800&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--venta"&gt;Venta #9&lt;/span&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;65.490.600&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2025-04-20T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Ingreso por venta de productos&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--ingreso"&gt; Ingreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--pos"&gt;+$&nbsp;441.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--venta"&gt;Venta #8&lt;/span&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;64.773.800&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2025-04-12T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Egreso por orden de compra&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--egreso"&gt; Egreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--neg"&gt;-$&nbsp;160.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;!--container--&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--orden"&gt;Orden #3&lt;/span&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;64.332.800&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2025-04-03T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Ingreso por venta de productos&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--ingreso"&gt; Ingreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--pos"&gt;+$&nbsp;1.530.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--venta"&gt;Venta #7&lt;/span&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;64.492.800&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2025-03-31T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Gasto operativo&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--egreso"&gt; Egreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--neg"&gt;-$&nbsp;1.800.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--manual"&gt;Manual&lt;/span&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;62.962.800&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2025-03-31T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Inyección de capital&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--ingreso"&gt; Ingreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--pos"&gt;+$&nbsp;10.000.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--manual"&gt;Manual&lt;/span&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;64.762.800&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2025-03-25T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Egreso por cancelación de venta&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--egreso"&gt; Egreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--neg"&gt;-$&nbsp;240.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--venta"&gt;Venta #6&lt;/span&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;54.762.800&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2025-03-12T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Ingreso por venta de productos&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--ingreso"&gt; Ingreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--pos"&gt;+$&nbsp;1.048.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--venta"&gt;Venta #5&lt;/span&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;55.002.800&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2025-02-28T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Gasto operativo&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--egreso"&gt; Egreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--neg"&gt;-$&nbsp;1.200.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--manual"&gt;Manual&lt;/span&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;53.954.800&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2025-02-18T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Ingreso por venta de productos&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--ingreso"&gt; Ingreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--pos"&gt;+$&nbsp;713.600&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--venta"&gt;Venta #4&lt;/span&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;55.154.800&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2025-02-14T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Egreso por orden de compra&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--egreso"&gt; Egreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--neg"&gt;-$&nbsp;320.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;!--container--&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--orden"&gt;Orden #2&lt;/span&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;54.441.200&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2025-02-05T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Ingreso por venta de productos&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--ingreso"&gt; Ingreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--pos"&gt;+$&nbsp;459.200&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--venta"&gt;Venta #3&lt;/span&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;54.761.200&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2025-01-31T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Gasto operativo&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--egreso"&gt; Egreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--neg"&gt;-$&nbsp;1.500.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--manual"&gt;Manual&lt;/span&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;54.302.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2025-01-31T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Ingreso externo&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--ingreso"&gt; Ingreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--pos"&gt;+$&nbsp;5.000.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--manual"&gt;Manual&lt;/span&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;55.802.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2025-01-22T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Ingreso por venta de productos&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--ingreso"&gt; Ingreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--pos"&gt;+$&nbsp;400.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--venta"&gt;Venta #2&lt;/span&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;50.802.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2025-01-20T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Egreso por orden de compra&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--egreso"&gt; Egreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--neg"&gt;-$&nbsp;493.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;!--container--&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--orden"&gt;Orden #1&lt;/span&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;50.402.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr _ngcontent-ng-c1456286184=""&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;2025-01-10T05:00:00.000Z&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;Ingreso por venta de productos&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;span _ngcontent-ng-c1456286184="" class="op-badge op-badge--ingreso"&gt; Ingreso &lt;/span&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono val--pos"&gt;+$&nbsp;699.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="ref-cell"&gt;&lt;span _ngcontent-ng-c1456286184="" class="ref-tag ref-tag--venta"&gt;Venta #1&lt;/span&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184="" class="mono saldo-cell"&gt;$&nbsp;50.895.000&lt;/td&gt;<br/>
+              &lt;td _ngcontent-ng-c1456286184=""&gt;&lt;button _ngcontent-ng-c1456286184="" title="Ver detalle" class="btn-detail"&gt;&lt;!--container--&gt;<br/>
+                &lt;svg _ngcontent-ng-c1456286184="" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;<br/>
+                 &lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"&gt;&lt;/path&gt;&lt;path _ngcontent-ng-c1456286184="" stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"&gt;&lt;/path&gt;<br/>
+                &lt;/svg&gt;&lt;!--container--&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;&lt;!--container--&gt;<br/>
+            &lt;/tbody&gt;<br/>
+           &lt;/table&gt;<br/>
+          &lt;/div&gt;&lt;!--container--&gt;<br/>
+         &lt;/div&gt;&lt;!--container--&gt;&lt;!--container--&gt;&lt;!--container--&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/app-historial-caja&gt;&lt;!--container--&gt;<br/>
+     &lt;/main&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/app-caja-layout&gt;&lt;!--container--&gt;<br/>
+  &lt;/app-root&gt;<br/>
+  &lt;script src="main.js" type="module"&gt;&lt;/script&gt;<br/>
+ &lt;/body&gt;<br/>
+&lt;/html&gt;</code></pre></div></body></html>
