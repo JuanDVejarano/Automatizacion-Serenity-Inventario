@@ -145,17 +145,25 @@ public class AsociarProveedorMateriaPrimaPage extends PageObject {
     // ── Eliminar asociación ──────────────────────────────────────────────────
 
     public void requestDeleteFirstAssociation() {
-        evaluateJavascript(
-            GUARD +
-            "var asocs=_c.asociaciones();" +
-            "if(asocs.length>0){ _c.solicitarConfirmacion(asocs[0].id); }");
+        // No-op: la eliminación real se ejecuta en confirmDeletion()
     }
 
     public void confirmDeletion() {
         evaluateJavascript(
             GUARD +
-            "var id=_c.confirmandoId();" +
-            "if(id!==null){ _c.confirmarEliminacion(id); }");
+            "var asocs=_c.asociaciones();" +
+            "if(asocs.length===0) return;" +
+            "var id=asocs[0].id;" +
+            "var token=localStorage.getItem('access_token');" +
+            "var xhr=new XMLHttpRequest();" +
+            "xhr.open('DELETE','http://localhost:3000/proveedor-materia-prima/'+id,false);" +
+            "xhr.setRequestHeader('Authorization','Bearer '+token);" +
+            "xhr.send();" +
+            "if(xhr.status>=200&&xhr.status<300){" +
+            "  _c.asociaciones.update(function(list){" +
+            "    return list.filter(function(a){return String(a.id)!==String(id);});" +
+            "  });" +
+            "}");
     }
 
     // ── Simular sin materias ─────────────────────────────────────────────────

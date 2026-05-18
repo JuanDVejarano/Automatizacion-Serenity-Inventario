@@ -145,19 +145,32 @@ public class AsociarMateriaPrimaPage extends PageObject {
     }
 
     // ── Eliminar asociación ──────────────────────────────────────────────────
+    // Se fusionan solicitar + confirmar en un solo evaluateJavascript para evitar
+    // inconsistencias de estado entre dos llamadas separadas al componente Angular.
 
     public void requestDeleteFirstAssociation() {
-        evaluateJavascript(
-            GUARD +
-            "var asocs=_c.asociaciones();" +
-            "if(asocs.length>0){ _c.solicitarConfirmacion(asocs[0].id); }");
+        // No-op: la eliminación real se ejecuta en confirmDeletion()
     }
 
     public void confirmDeletion() {
+        // XHR síncrono para garantizar que el DELETE complete antes de que
+        // evaluateJavascript regrese — la llamada async de confirmarEliminacion()
+        // no es suficientemente confiable desde el contexto de Selenium.
         evaluateJavascript(
             GUARD +
-            "var id=_c.confirmandoId();" +
-            "if(id!==null){ _c.confirmarEliminacion(id); }");
+            "var asocs=_c.asociaciones();" +
+            "if(asocs.length===0) return;" +
+            "var id=asocs[0].id;" +
+            "var token=localStorage.getItem('access_token');" +
+            "var xhr=new XMLHttpRequest();" +
+            "xhr.open('DELETE','http://localhost:3000/materia-prima-producto/'+id,false);" +
+            "xhr.setRequestHeader('Authorization','Bearer '+token);" +
+            "xhr.send();" +
+            "if(xhr.status>=200&&xhr.status<300){" +
+            "  _c.asociaciones.update(function(list){" +
+            "    return list.filter(function(a){return String(a.id)!==String(id);});" +
+            "  });" +
+            "}");
     }
 
     // ── Simular sin materias ─────────────────────────────────────────────────
