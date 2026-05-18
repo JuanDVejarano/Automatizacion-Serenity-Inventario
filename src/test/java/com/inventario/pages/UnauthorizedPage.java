@@ -21,4 +21,12 @@ public class UnauthorizedPage extends PageObject {
     public String getCurrentUrl() {
         return getDriver().getCurrentUrl();
     }
+
+    public void waitForRedirect() {
+        long deadline = System.currentTimeMillis() + 8_000;
+        while (System.currentTimeMillis() < deadline) {
+            if (getDriver().getCurrentUrl().contains("/unauthorized")) return;
+            try { Thread.sleep(200); } catch (InterruptedException e) { break; }
+        }
+    }
 }

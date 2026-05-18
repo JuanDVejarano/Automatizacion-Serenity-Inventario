@@ -67,6 +67,7 @@ public class RolesStepDefinitions {
 
     @Then("el sistema muestra la pagina de acceso denegado")
     public void elSistemaMuestraLaPaginaDeAccesoDenegado() {
+        unauthorizedPage.waitForRedirect();
         assertThat(unauthorizedPage.getCurrentUrl())
             .as("El roleGuard debe redirigir a /unauthorized al acceder sin permisos")
             .contains("/unauthorized");
